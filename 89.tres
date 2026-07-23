@@ -1,0 +1,1008 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_dt8in"]
+
+[resource]
+script = ExtResource("1_dt8in")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Mabel", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Mabel",
+&"id": "10",
+&"next_id": "11",
+&"text": "That's sooo embarassing",
+&"type": "dialogue"
+},
+"11": {
+&"id": "11",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_clear",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 14,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "12",
+&"type": "mutation"
+},
+"12": {
+&"character": "Mabel",
+&"id": "12",
+&"next_id": "13",
+&"text": "I need to replace your brain so you'd forget about that 🧐",
+&"type": "dialogue"
+},
+"13": {
+&"id": "13",
+&"next_id": "14",
+&"responses": PackedStringArray("13", "71"),
+&"text": "Or replace me entirely",
+&"type": "response"
+},
+"14": {
+&"character": "Player",
+&"id": "14",
+&"next_id": "15",
+&"text": "Or replace me entirely",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Mabel",
+&"id": "15",
+&"next_id": "16",
+&"text": "Thought: Oh this is one of his jokes",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Mabel",
+&"id": "16",
+&"next_id": "17",
+&"text": "Thought: I won't cave this time sweetheart",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Mabel",
+&"id": "17",
+&"next_id": "18",
+&"text": "Hehe that would work too 🤭",
+&"type": "dialogue"
+},
+"18": {
+&"id": "18",
+&"next_id": "19",
+&"responses": PackedStringArray("18", "56"),
+&"tags": PackedStringArray("lust"),
+&"text": "Sounds like you already have someone in mind",
+&"type": "response"
+},
+"19": {
+&"id": "19",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_desire"
+}, {
+&"i": 23,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 26,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "20",
+&"type": "mutation"
+},
+"2": {
+&"character": "Mabel",
+&"id": "2",
+&"next_id": "3",
+&"text": "I'm so exhausted omg 😩😩",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Player",
+&"id": "20",
+&"next_id": "21",
+&"text": "Sounds like you already have someone in mind",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Mabel",
+&"id": "21",
+&"next_id": "22",
+&"text": "Well maybe I do! 😌",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Mabel",
+&"id": "22",
+&"next_id": "23",
+&"text": "Thought: I'm not gonna lose",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Player",
+&"id": "23",
+&"next_id": "24",
+&"text": "Figures",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Player",
+&"id": "24",
+&"next_id": "25",
+&"text": "Lots of cute guys on campus",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Mabel",
+&"id": "25",
+&"next_id": "26",
+&"text": "Mhmm! So many to choose from",
+&"type": "dialogue"
+},
+"26": {
+&"id": "26",
+&"next_id": "27",
+&"responses": PackedStringArray("26", "48"),
+&"tags": PackedStringArray("distrust"),
+&"text": "Nice 🤤",
+&"type": "response"
+},
+"27": {
+&"id": "27",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "-="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "28",
+&"type": "mutation"
+},
+"28": {
+&"character": "Player",
+&"id": "28",
+&"next_id": "29",
+&"text": "Nice 🤤",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Mabel",
+&"id": "29",
+&"next_id": "30",
+&"text": "Babe 😆",
+&"type": "dialogue"
+},
+"3": {
+&"id": "3",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_set",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 12,
+&"type": &"array",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 13,
+&"type": &"string",
+&"value": "41"
+}, {
+&"i": 17,
+&"type": &"bracket_close"
+}])])
+}, {
+&"i": 18,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "4",
+&"type": "mutation"
+},
+"30": {
+&"character": "Mabel",
+&"id": "30",
+&"next_id": "31",
+&"text": "Your answers are scaring me 😅",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Mabel",
+&"id": "31",
+&"next_id": "32",
+&"text": "This was a joke right?",
+&"type": "dialogue"
+},
+"32": {
+&"id": "32",
+&"next_id": "33",
+&"responses": PackedStringArray("32", "36"),
+&"text": "Of course!",
+&"type": "response"
+},
+"33": {
+&"character": "Player",
+&"id": "33",
+&"next_id": "34",
+&"text": "Of course!",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Mabel",
+&"id": "34",
+&"next_id": "35",
+&"text": "How did we even get to this omg",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Mabel",
+&"id": "35",
+&"next_id": "85",
+&"text": "Sometimes I seriously ask for it by following up with this 🙃",
+&"type": "dialogue"
+},
+"36": {
+&"id": "36",
+&"next_id": "37",
+&"tags": PackedStringArray("distrust"),
+&"text": "Nope",
+&"type": "response"
+},
+"37": {
+&"id": "37",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "-="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "38",
+&"type": "mutation"
+},
+"38": {
+&"character": "Player",
+&"id": "38",
+&"next_id": "39",
+&"text": "Nope",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Mabel",
+&"id": "39",
+&"next_id": "40",
+&"text": "Omg you know I'd never ever never ever ever never EVER do anything like that!!",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Player",
+&"id": "4",
+&"next_id": "5",
+&"text": "Same!",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Mabel",
+&"id": "40",
+&"next_id": "41",
+&"text": "You've been with me practically my whole life 😭",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Mabel",
+&"id": "41",
+&"next_id": "42",
+&"text": "And I love you 🥹❤️",
+&"type": "dialogue"
+},
+"42": {
+&"id": "42",
+&"next_id": "43",
+&"responses": PackedStringArray("42", "45"),
+&"tags": PackedStringArray("love"),
+&"text": "Love you too!",
+&"type": "response"
+},
+"43": {
+&"id": "43",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "44",
+&"type": "mutation"
+},
+"44": {
+&"character": "Player",
+&"id": "44",
+&"next_id": "85",
+&"text": "Love you too!",
+&"type": "dialogue"
+},
+"45": {
+&"id": "45",
+&"next_id": "46",
+&"tags": PackedStringArray("distrust"),
+&"text": "Thanks babe",
+&"type": "response"
+},
+"46": {
+&"id": "46",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "-="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "47",
+&"type": "mutation"
+},
+"47": {
+&"character": "Player",
+&"id": "47",
+&"next_id": "85",
+&"text": "Thanks babe",
+&"type": "dialogue"
+},
+"48": {
+&"id": "48",
+&"next_id": "49",
+&"tags": PackedStringArray("trust"),
+&"text": "Really? 🥹",
+&"type": "response"
+},
+"49": {
+&"id": "49",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "50",
+&"type": "mutation"
+},
+"5": {
+&"character": "Mabel",
+&"id": "5",
+&"next_id": "6",
+&"text": "I don't know if I can survive this",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Player",
+&"id": "50",
+&"next_id": "51",
+&"text": "Really?",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Mabel",
+&"id": "51",
+&"next_id": "52",
+&"text": "NO not really you silly goose",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Mabel",
+&"id": "52",
+&"next_id": "53",
+&"text": "I love only you ❤️",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Mabel",
+&"id": "53",
+&"next_id": "54",
+&"text": "But it was fun to tease you about it a little for a change 😌",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Player",
+&"id": "54",
+&"next_id": "55",
+&"text": "Was it? 😆",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Mabel",
+&"id": "55",
+&"next_id": "85",
+&"text": "Yeah you're always teasing me hehe so this is my revenge 🥰",
+&"type": "dialogue"
+},
+"56": {
+&"id": "56",
+&"next_id": "57",
+&"tags": PackedStringArray("love"),
+&"text": "Then I'll have to spend my whole life winning you back",
+&"type": "response"
+},
+"57": {
+&"id": "57",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_desire"
+}, {
+&"i": 23,
+&"type": &"assignment",
+&"value": "-="
+}, {
+&"i": 26,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "58",
+&"type": "mutation"
+},
+"58": {
+&"character": "Player",
+&"id": "58",
+&"next_id": "59",
+&"text": "Then I'll have to spend my whole life winning you back",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Mabel",
+&"id": "59",
+&"next_id": "60",
+&"text": "I...",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Mabel",
+&"id": "6",
+&"next_id": "7",
+&"text": "I barely have any stamina as it is",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Mabel",
+&"id": "60",
+&"next_id": "61",
+&"text": "What's gotten into you today babe!?",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Mabel",
+&"id": "61",
+&"next_id": "62",
+&"text": "You're suddenly SO random and cute!",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Player",
+&"id": "62",
+&"next_id": "63",
+&"text": "😁",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Mabel",
+&"id": "63",
+&"next_id": "64",
+&"text": "Oh you 🥰",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Mabel",
+&"id": "64",
+&"next_id": "65",
+&"text": "Thought: You're weird sometimes but at least I have you all to myself ☺️",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Player",
+&"id": "65",
+&"next_id": "66",
+&"text": "Always!",
+&"type": "dialogue"
+},
+"66": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 5,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 10,
+&"type": &"dot"
+}, {
+&"i": 11,
+&"type": &"variable",
+&"value": "mabel_desire"
+}, {
+&"i": 24,
+&"type": &"comparison",
+&"value": "<="
+}, {
+&"i": 27,
+&"type": &"number",
+&"value": -7
+}])
+},
+&"id": "66",
+&"next_id": "67",
+&"next_id_after": "85",
+&"next_sibling_id": "69",
+&"type": "condition"
+},
+"67": {
+&"character": "Mabel",
+&"id": "67",
+&"next_id": "68",
+&"text": "Jeez just look how hard I'm blushing",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Mabel",
+&"id": "68",
+&"next_id": "85",
+&"text": "img: mabel/42",
+&"type": "dialogue"
+},
+"69": {
+&"condition": {},
+&"id": "69",
+&"next_id": "70",
+&"next_id_after": "85",
+&"type": "condition"
+},
+"7": {
+&"character": "Mabel",
+&"id": "7",
+&"next_id": "8",
+&"text": "I was the slowest runner in school too 💀",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Mabel",
+&"id": "70",
+&"next_id": "85",
+&"text": "Jeez... 🙈",
+&"type": "dialogue"
+},
+"71": {
+&"id": "71",
+&"next_id": "72",
+&"text": "Anything but work on your stamina huh? 😁",
+&"type": "response"
+},
+"72": {
+&"character": "Player",
+&"id": "72",
+&"next_id": "73",
+&"text": "Anything but work on your stamina huh?",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Mabel",
+&"id": "73",
+&"next_id": "74",
+&"text": "I tried everything!!",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Mabel",
+&"id": "74",
+&"next_id": "75",
+&"text": "There's no way 😭",
+&"type": "dialogue"
+},
+"75": {
+&"id": "75",
+&"next_id": "76",
+&"responses": PackedStringArray("75", "81"),
+&"tags": PackedStringArray("lust"),
+&"text": "You could ask Nina...",
+&"type": "response"
+},
+"76": {
+&"id": "76",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_desire"
+}, {
+&"i": 23,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 26,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "77",
+&"type": "mutation"
+},
+"77": {
+&"character": "Player",
+&"id": "77",
+&"next_id": "78",
+&"text": "You could ask Nina...",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Mabel",
+&"id": "78",
+&"next_id": "79",
+&"text": "Ask her for what?",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Mabel",
+&"id": "79",
+&"next_id": "80",
+&"text": "Help with my stamina? 😅",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Player",
+&"id": "8",
+&"next_id": "9",
+&"text": "They had to make a pity participation badge just for you 😁",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Mabel",
+&"id": "80",
+&"next_id": "85",
+&"text": "I don't remember her doing any sports but uhm... sure!",
+&"type": "dialogue"
+},
+"81": {
+&"id": "81",
+&"next_id": "82",
+&"text": "No idea then lol",
+&"type": "response"
+},
+"82": {
+&"character": "Player",
+&"id": "82",
+&"next_id": "83",
+&"text": "No idea then lol",
+&"type": "dialogue"
+},
+"83": {
+&"character": "Mabel",
+&"id": "83",
+&"next_id": "84",
+&"text": "I'm a chubby slowpoke deep down inside babe 🥹",
+&"type": "dialogue"
+},
+"84": {
+&"character": "Player",
+&"id": "84",
+&"next_id": "85",
+&"text": "You're far from chubby come on 😆",
+&"type": "dialogue"
+},
+"85": {
+&"character": "Mabel",
+&"id": "85",
+&"next_id": "86",
+&"text": "Today was a long day babe",
+&"type": "dialogue"
+},
+"86": {
+&"character": "Mabel",
+&"id": "86",
+&"next_id": "87",
+&"text": "I can barely move",
+&"type": "dialogue"
+},
+"87": {
+&"character": "Mabel",
+&"id": "87",
+&"next_id": "88",
+&"text": "and eyes closing",
+&"type": "dialogue"
+},
+"88": {
+&"character": "Player",
+&"id": "88",
+&"next_id": "89",
+&"text": "Get some sleep then",
+&"type": "dialogue"
+},
+"89": {
+&"character": "Mabel",
+&"id": "89",
+&"next_id": "90",
+&"text": "Sory bab",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Mabel",
+&"id": "9",
+&"next_id": "10",
+&"text": "Omg DON'T remind me!!",
+&"type": "dialogue"
+},
+"90": {
+&"character": "Mabel",
+&"id": "90",
+&"next_id": "91",
+&"text": "fallinn sleeepy",
+&"type": "dialogue"
+},
+"91": {
+&"character": "Player",
+&"id": "91",
+&"next_id": "92",
+&"text": "Good night!",
+&"type": "dialogue"
+},
+"92": {
+&"id": "92",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"93": {
+&"id": "93",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+Mabel: I'm so exhausted omg 😩😩
+do echo_set([\"41\"])
+Player: Same!
+Mabel: I don't know if I can survive this
+Mabel: I barely have any stamina as it is
+Mabel: I was the slowest runner in school too 💀
+Player: They had to make a pity participation badge just for you 😁
+Mabel: Omg DON'T remind me!!
+Mabel: That's sooo embarassing
+do echo_clear()
+Mabel: I need to replace your brain so you'd forget about that 🧐
+- Or replace me entirely
+	Player: Or replace me entirely
+	Mabel: Thought: Oh this is one of his jokes
+	Mabel: Thought: I won't cave this time sweetheart
+	Mabel: Hehe that would work too 🤭
+	- Sounds like you already have someone in mind [#lust]
+		set Story.mabel_desire += 1
+		Player: Sounds like you already have someone in mind
+		Mabel: Well maybe I do! 😌
+		Mabel: Thought: I'm not gonna lose
+		Player: Figures
+		Player: Lots of cute guys on campus
+		Mabel: Mhmm! So many to choose from
+		- Nice 🤤 [#distrust]
+			set Story.mabel_trust -= 1
+			Player: Nice 🤤
+			Mabel: Babe 😆
+			Mabel: Your answers are scaring me 😅
+			Mabel: This was a joke right?
+			- Of course!
+				Player: Of course!
+				Mabel: How did we even get to this omg
+				Mabel: Sometimes I seriously ask for it by following up with this 🙃
+			- Nope [#distrust]
+				set Story.mabel_trust -= 1
+				Player: Nope
+				Mabel: Omg you know I'd never ever never ever ever never EVER do anything like that!!
+				Mabel: You've been with me practically my whole life 😭
+				Mabel: And I love you 🥹❤️
+				- Love you too! [#love]
+					set Story.mabel_trust += 1
+					Player: Love you too!
+				- Thanks babe [#distrust]
+					set Story.mabel_trust -= 1
+					Player: Thanks babe
+		- Really? 🥹 [#trust]
+			set Story.mabel_trust += 1
+			Player: Really?
+			Mabel: NO not really you silly goose
+			Mabel: I love only you ❤️
+			Mabel: But it was fun to tease you about it a little for a change 😌
+			Player: Was it? 😆
+			Mabel: Yeah you're always teasing me hehe so this is my revenge 🥰
+	- Then I'll have to spend my whole life winning you back [#love]
+		set Story.mabel_desire -= 1
+		Player: Then I'll have to spend my whole life winning you back
+		Mabel: I...
+		Mabel: What's gotten into you today babe!?
+		Mabel: You're suddenly SO random and cute!
+		Player: 😁
+		Mabel: Oh you 🥰
+		Mabel: Thought: You're weird sometimes but at least I have you all to myself ☺️
+		Player: Always!
+		if Story.mabel_desire <= -7:
+			Mabel: Jeez just look how hard I'm blushing
+			Mabel: img: mabel/42
+		else:
+			Mabel: Jeez... 🙈
+- Anything but work on your stamina huh? 😁
+	Player: Anything but work on your stamina huh?
+	Mabel: I tried everything!!
+	Mabel: There's no way 😭
+	- You could ask Nina... [#lust]
+		set Story.mabel_desire += 1
+		Player: You could ask Nina...
+		Mabel: Ask her for what?
+		Mabel: Help with my stamina? 😅
+		Mabel: I don't remember her doing any sports but uhm... sure!
+	- No idea then lol
+		Player: No idea then lol
+		Mabel: I'm a chubby slowpoke deep down inside babe 🥹
+		Player: You're far from chubby come on 😆
+Mabel: Today was a long day babe
+Mabel: I can barely move
+Mabel: and eyes closing
+Player: Get some sleep then
+Mabel: Sory bab
+Mabel: fallinn sleeepy
+Player: Good night!
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

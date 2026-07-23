@@ -1,0 +1,1022 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_8lj85"]
+
+[resource]
+script = ExtResource("1_8lj85")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Mabel", "Jason", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "lecture_hall"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "3",
+&"type": "mutation"
+},
+"10": {
+&"character": "Mabel",
+&"id": "10",
+&"next_id": "12",
+&"text": "Thought: Babe DEFINITELY does not need to know about this!!",
+&"type": "dialogue"
+},
+"100": {
+&"character": "Jason",
+&"id": "100",
+&"next_id": "101",
+&"text": "After having sex like I've never had before with those 2 sorority chics",
+&"type": "dialogue"
+},
+"101": {
+&"character": "Jason",
+&"id": "101",
+&"next_id": "102",
+&"text": "I fuckin believe it",
+&"type": "dialogue"
+},
+"102": {
+&"character": "Jason",
+&"id": "102",
+&"next_id": "103",
+&"text": "One took me all the way in and the other clamped down on me harder than my own grip strength",
+&"type": "dialogue"
+},
+"103": {
+&"character": "Player",
+&"id": "103",
+&"next_id": "104",
+&"text": "😲",
+&"type": "dialogue"
+},
+"104": {
+&"character": "Jason",
+&"id": "104",
+&"next_id": "105",
+&"text": "I know lol",
+&"type": "dialogue"
+},
+"105": {
+&"character": "Jason",
+&"id": "105",
+&"next_id": "106",
+&"text": "Anyway I'll see you on Saturday chief",
+&"type": "dialogue"
+},
+"106": {
+&"character": "Jason",
+&"id": "106",
+&"next_id": "107",
+&"text": "Oh right, one more thing",
+&"type": "dialogue"
+},
+"107": {
+&"character": "Jason",
+&"id": "107",
+&"next_id": "108",
+&"text": "The tickets are color coded",
+&"type": "dialogue"
+},
+"108": {
+&"character": "Jason",
+&"id": "108",
+&"next_id": "109",
+&"text": "So you can only get to really hang around one of the girls",
+&"type": "dialogue"
+},
+"109": {
+&"character": "Jason",
+&"id": "109",
+&"next_id": "110",
+&"text": "I got the yellow ticket and the brown one",
+&"type": "dialogue"
+},
+"11": {
+&"id": "11",
+&"next_id": "12",
+&"type": ""
+},
+"110": {
+&"character": "Jason",
+&"id": "110",
+&"next_id": "111",
+&"text": "I'll let you pick since I tasted both 😛",
+&"type": "dialogue"
+},
+"111": {
+&"id": "111",
+&"next_id": "112",
+&"responses": PackedStringArray("111"),
+&"tags": PackedStringArray("yellowheart", "check hearts"),
+&"text": "Gimme Blondie",
+&"type": "response"
+},
+"112": {
+&"character": "Player",
+&"id": "112",
+&"next_id": "113",
+&"text": "Gimme Blondie",
+&"type": "dialogue"
+},
+"113": {
+&"character": "Jason",
+&"id": "113",
+&"next_id": "114",
+&"text": "Aye that was my choice too",
+&"type": "dialogue"
+},
+"114": {
+&"id": "114",
+&"next_id": "115",
+&"responses": PackedStringArray("114"),
+&"tags": PackedStringArray("brownheart", "check hearts"),
+&"text": "Brunette all the way",
+&"type": "response"
+},
+"115": {
+&"character": "Player",
+&"id": "115",
+&"next_id": "116",
+&"text": "Brunette all the way",
+&"type": "dialogue"
+},
+"116": {
+&"character": "Jason",
+&"id": "116",
+&"next_id": "117",
+&"text": "You like'm compact and cute haha",
+&"type": "dialogue"
+},
+"117": {
+&"character": "Jason",
+&"id": "117",
+&"next_id": "118",
+&"text": "You're the boss",
+&"type": "dialogue"
+},
+"118": {
+&"character": "Jason",
+&"id": "118",
+&"next_id": "119",
+&"text": "Alright gotta run",
+&"type": "dialogue"
+},
+"119": {
+&"character": "Jason",
+&"id": "119",
+&"next_id": "120",
+&"text": "The girl who does my laundry for me wants to fuck LOL",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Jason",
+&"id": "12",
+&"next_id": "13",
+&"text": "Guess who got tickets to the sorority party on Saturday",
+&"type": "dialogue"
+},
+"120": {
+&"character": "Player",
+&"id": "120",
+&"next_id": "121",
+&"text": "🤦‍♂️",
+&"type": "dialogue"
+},
+"121": {
+&"character": "Jason",
+&"id": "121",
+&"next_id": "122",
+&"text": "😉",
+&"type": "dialogue"
+},
+"122": {
+&"id": "122",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"123": {
+&"id": "123",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"13": {
+&"character": "Player",
+&"id": "13",
+&"next_id": "14",
+&"text": "What seriously?",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Player",
+&"id": "14",
+&"next_id": "15",
+&"text": "I saw those flyers, exclusive stuff",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Jason",
+&"id": "15",
+&"next_id": "16",
+&"text": "Well... yours truly was balls deep in two of them",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Jason",
+&"id": "16",
+&"next_id": "17",
+&"text": "So I got TWO tickets",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Jason",
+&"id": "17",
+&"next_id": "18",
+&"text": "One for EACH",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Jason",
+&"id": "18",
+&"next_id": "19",
+&"text": "Or could be one for each nut lmao",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Player",
+&"id": "19",
+&"next_id": "20",
+&"text": "No way",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"type": ""
+},
+"20": {
+&"character": "Jason",
+&"id": "20",
+&"next_id": "21",
+&"text": "Yes way, and guess who's going with?",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Jason",
+&"id": "21",
+&"next_id": "23",
+&"text": "🫵",
+&"type": "dialogue"
+},
+"22": {
+&"id": "22",
+&"next_id": "23",
+&"type": ""
+},
+"23": {
+&"character": "Jason",
+&"id": "23",
+&"next_id": "24",
+&"notes": "ME meme",
+&"text": "LMAOOO",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Jason",
+&"id": "24",
+&"next_id": "25",
+&"text": "You've been saving that haven't you",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Player",
+&"id": "25",
+&"next_id": "26",
+&"text": "Maybe. That's a secret.",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Jason",
+&"id": "26",
+&"next_id": "27",
+&"text": "Haha, well whaddya say chief?",
+&"type": "dialogue"
+},
+"27": {
+&"id": "27",
+&"next_id": "28",
+&"responses": PackedStringArray("27"),
+&"text": "I have plans unfortunately",
+&"type": "response"
+},
+"28": {
+&"character": "Player",
+&"id": "28",
+&"next_id": "29",
+&"text": "I have plans unfortunately",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Jason",
+&"id": "29",
+&"next_id": "30",
+&"text": "Booo",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Mabel",
+&"id": "3",
+&"next_id": "5",
+&"notes": "SECTION FOR LATER",
+&"text": "Thought: Huh what's this?",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Jason",
+&"id": "30",
+&"next_id": "31",
+&"text": "Seriously?",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Jason",
+&"id": "31",
+&"next_id": "32",
+&"text": "Bro it's a one time ticket",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Player",
+&"id": "32",
+&"next_id": "33",
+&"text": "Yeah I'm a little busy 😅",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Jason",
+&"id": "33",
+&"next_id": "34",
+&"text": "Seriously dawg? I actually went through the trouble of asking for the second ticket lmao",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Player",
+&"id": "34",
+&"next_id": "35",
+&"text": "Sorry",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Jason",
+&"id": "35",
+&"next_id": "36",
+&"text": "Meh, fine",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Jason",
+&"id": "36",
+&"next_id": "37",
+&"text": "Fwiw I wanted to chill with you",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Jason",
+&"id": "37",
+&"next_id": "38",
+&"text": "Now I gotta find some schmuck or sell the ticket lol",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Player",
+&"id": "38",
+&"next_id": "39",
+&"text": "Maybe next time?",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Jason",
+&"id": "39",
+&"next_id": "40",
+&"text": "You better not leave me hangin again dude",
+&"type": "dialogue"
+},
+"4": {
+&"id": "4",
+&"next_id": "5",
+&"type": ""
+},
+"40": {
+&"character": "Jason",
+&"id": "40",
+&"next_id": "41",
+&"text": "Or that mayo in your next sandwich might be homemade",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Player",
+&"id": "41",
+&"next_id": "42",
+&"text": "GROSS DUDE 😂",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Jason",
+&"id": "42",
+&"next_id": "43",
+&"text": "Yeah I'm scary aren't I 😜",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Jason",
+&"id": "43",
+&"next_id": "44",
+&"text": "Dw bro, enjoy your thing",
+&"type": "dialogue"
+},
+"44": {
+&"id": "44",
+&"next_id": "45",
+&"responses": PackedStringArray("44"),
+&"text": "Hell yeah I'm there!",
+&"type": "response"
+},
+"45": {
+&"character": "Player",
+&"id": "45",
+&"next_id": "46",
+&"text": "Hell yeah I'm there!",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Jason",
+&"id": "46",
+&"next_id": "47",
+&"text": "I knew you wouldn't let me down chief!!",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Jason",
+&"id": "47",
+&"next_id": "48",
+&"text": "Let's fucking go",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Player",
+&"id": "48",
+&"next_id": "49",
+&"text": "So what is this about?",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Jason",
+&"id": "49",
+&"next_id": "50",
+&"text": "We get to hang out in their club house",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Mabel",
+&"id": "5",
+&"next_id": "6",
+&"notes": "Echo mabel wet panties",
+&"text": "PinkThought: Wait. Why am I...",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Jason",
+&"id": "50",
+&"next_id": "51",
+&"text": "Some dudes get lucky and dragged into the bedrooms upstairs",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Jason",
+&"id": "51",
+&"next_id": "52",
+&"text": "I heard they literally built those bedrooms to be fuckrooms",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Player",
+&"id": "52",
+&"next_id": "53",
+&"text": "Whoa, that's like college lore right there",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Jason",
+&"id": "53",
+&"next_id": "54",
+&"text": "Hell yeah dude, believe it",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Jason",
+&"id": "54",
+&"next_id": "55",
+&"text": "The founder was a FREAK apparently lmaoo",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Jason",
+&"id": "55",
+&"next_id": "56",
+&"text": "Anyway, we might not get so lucky since the frat has first dibs",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Player",
+&"id": "56",
+&"next_id": "57",
+&"text": "The frat?",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Jason",
+&"id": "57",
+&"next_id": "58",
+&"text": "Just a bunch of jock fellas swingin their dicks around and calling the shots",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Jason",
+&"id": "58",
+&"next_id": "59",
+&"text": "Some of them even take a girl from the sorority to basically be their property lol",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Player",
+&"id": "59",
+&"next_id": "60",
+&"text": "Whaddya mean?",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Mabel",
+&"id": "6",
+&"next_id": "7",
+&"text": "PinkThought: Down there... I'm all",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Jason",
+&"id": "60",
+&"next_id": "61",
+&"text": "Like the two girls I was with weren't \"taken\" per se",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Jason",
+&"id": "61",
+&"next_id": "62",
+&"text": "They were free sorority girls",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Jason",
+&"id": "62",
+&"next_id": "63",
+&"text": "But anyday a jock could step in and be like, this girl is mine from today on",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Jason",
+&"id": "63",
+&"next_id": "64",
+&"text": "And they all just play along",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Jason",
+&"id": "64",
+&"next_id": "65",
+&"text": "She starts living in his dorm room and spreading her legs whenever for him",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Player",
+&"id": "65",
+&"next_id": "66",
+&"text": "Dang dude, that's some dedication",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Jason",
+&"id": "66",
+&"next_id": "67",
+&"text": "Told you that this college was CRAZY",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Jason",
+&"id": "67",
+&"next_id": "68",
+&"text": "Well, we're on the know at least",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Jason",
+&"id": "68",
+&"next_id": "69",
+&"text": "Not many people know this shit",
+&"type": "dialogue"
+},
+"69": {
+&"character": "Jason",
+&"id": "69",
+&"next_id": "70",
+&"text": "My goal is to join the frat boys",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Mabel",
+&"id": "7",
+&"next_id": "8",
+&"text": "Thought: When did THAT even happen?? I didn't dream anything",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Player",
+&"id": "70",
+&"next_id": "71",
+&"text": "You signed up?",
+&"type": "dialogue"
+},
+"71": {
+&"character": "Jason",
+&"id": "71",
+&"next_id": "72",
+&"text": "Yeah I did",
+&"type": "dialogue"
+},
+"72": {
+&"character": "Jason",
+&"id": "72",
+&"next_id": "73",
+&"text": "I filled out the form and the kid who took the form memorized my phone number and ate the paper in one go",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Player",
+&"id": "73",
+&"next_id": "74",
+&"text": "What??",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Jason",
+&"id": "74",
+&"next_id": "75",
+&"text": "That was his initiation lmfao",
+&"type": "dialogue"
+},
+"75": {
+&"character": "Jason",
+&"id": "75",
+&"next_id": "76",
+&"text": "Anyway yeah, you get so many bitches when you get through bro",
+&"type": "dialogue"
+},
+"76": {
+&"character": "Jason",
+&"id": "76",
+&"next_id": "77",
+&"text": "Pick whoever you want and make'm yours",
+&"type": "dialogue"
+},
+"77": {
+&"character": "Jason",
+&"id": "77",
+&"next_id": "78",
+&"text": "Except their queen",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Jason",
+&"id": "78",
+&"next_id": "79",
+&"text": "The queen is on the top",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Jason",
+&"id": "79",
+&"next_id": "80",
+&"text": "If she picks you, it's like the biggest honor ever lol",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Mabel",
+&"id": "8",
+&"next_id": "9",
+&"text": "PinkThought: ...or did I?",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Player",
+&"id": "80",
+&"next_id": "81",
+&"text": "She with anyone right now?",
+&"type": "dialogue"
+},
+"81": {
+&"character": "Jason",
+&"id": "81",
+&"next_id": "82",
+&"text": "Last I heard, the person she was with graduated",
+&"type": "dialogue"
+},
+"82": {
+&"character": "Jason",
+&"id": "82",
+&"next_id": "83",
+&"text": "She's been on the lookout for good meat ever since",
+&"type": "dialogue"
+},
+"83": {
+&"character": "Player",
+&"id": "83",
+&"next_id": "84",
+&"text": "Damn",
+&"type": "dialogue"
+},
+"84": {
+&"character": "Jason",
+&"id": "84",
+&"next_id": "85",
+&"text": "So many benefits eh?",
+&"type": "dialogue"
+},
+"85": {
+&"character": "Jason",
+&"id": "85",
+&"next_id": "86",
+&"text": "Imagine keeping any of those girls at home as your pet hehe",
+&"type": "dialogue"
+},
+"86": {
+&"character": "Jason",
+&"id": "86",
+&"next_id": "87",
+&"text": "You suddenly interested in the frats? 😏",
+&"type": "dialogue"
+},
+"87": {
+&"id": "87",
+&"next_id": "88",
+&"responses": PackedStringArray("87"),
+&"text": "Fuck yeah dude, sign me up",
+&"type": "response"
+},
+"88": {
+&"character": "Player",
+&"id": "88",
+&"next_id": "89",
+&"text": "Fuck yeah dude, sign me up",
+&"type": "dialogue"
+},
+"89": {
+&"character": "Jason",
+&"id": "89",
+&"next_id": "90",
+&"text": "That's what I like to hear my man",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Mabel",
+&"id": "9",
+&"next_id": "10",
+&"text": "Thought: Okay NO. Not thinking about this. Pretend it's nothing.",
+&"type": "dialogue"
+},
+"90": {
+&"character": "Jason",
+&"id": "90",
+&"next_id": "91",
+&"text": "I'll see what I can do to get you signed up",
+&"type": "dialogue"
+},
+"91": {
+&"character": "Jason",
+&"id": "91",
+&"next_id": "92",
+&"text": "It'll be a late application but I'll do what I can",
+&"type": "dialogue"
+},
+"92": {
+&"character": "Player",
+&"id": "92",
+&"next_id": "93",
+&"text": "Please do 🙏",
+&"type": "dialogue"
+},
+"93": {
+&"character": "Jason",
+&"id": "93",
+&"next_id": "94",
+&"text": "Be ready for anything 🤪",
+&"type": "dialogue"
+},
+"94": {
+&"id": "94",
+&"next_id": "95",
+&"responses": PackedStringArray("94"),
+&"text": "Not really",
+&"type": "response"
+},
+"95": {
+&"character": "Player",
+&"id": "95",
+&"next_id": "96",
+&"text": "Not really",
+&"type": "dialogue"
+},
+"96": {
+&"character": "Player",
+&"id": "96",
+&"next_id": "97",
+&"text": "I don't even know what she looks like",
+&"type": "dialogue"
+},
+"97": {
+&"character": "Jason",
+&"id": "97",
+&"next_id": "98",
+&"text": "They say she can rock you harder than anyone in the country",
+&"type": "dialogue"
+},
+"98": {
+&"character": "Player",
+&"id": "98",
+&"next_id": "99",
+&"text": "Is she a college girl or a legend? 😂",
+&"type": "dialogue"
+},
+"99": {
+&"character": "Jason",
+&"id": "99",
+&"next_id": "100",
+&"text": "I believe it bro",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"lecture_hall\")
+## SECTION FOR LATER
+Mabel: Thought: Huh what's this?
+## Echo mabel wet panties
+Mabel: PinkThought: Wait. Why am I...
+Mabel: PinkThought: Down there... I'm all
+Mabel: Thought: When did THAT even happen?? I didn't dream anything
+Mabel: PinkThought: ...or did I?
+Mabel: Thought: Okay NO. Not thinking about this. Pretend it's nothing.
+Mabel: Thought: Babe DEFINITELY does not need to know about this!!
+
+Jason: Guess who got tickets to the sorority party on Saturday
+Player: What seriously?
+Player: I saw those flyers, exclusive stuff
+Jason: Well... yours truly was balls deep in two of them
+Jason: So I got TWO tickets
+Jason: One for EACH 
+Jason: Or could be one for each nut lmao
+Player: No way
+Jason: Yes way, and guess who's going with?
+Jason: 🫵
+##ME meme
+Jason: LMAOOO
+Jason: You've been saving that haven't you
+Player: Maybe. That's a secret.
+Jason: Haha, well whaddya say chief?
+- I have plans unfortunately
+    Player: I have plans unfortunately
+    Jason: Booo
+    Jason: Seriously?
+    Jason: Bro it's a one time ticket
+    Player: Yeah I'm a little busy 😅
+    Jason: Seriously dawg? I actually went through the trouble of asking for the second ticket lmao
+    Player: Sorry
+    Jason: Meh, fine
+    Jason: Fwiw I wanted to chill with you
+    Jason: Now I gotta find some schmuck or sell the ticket lol
+    Player: Maybe next time?
+    Jason: You better not leave me hangin again dude
+    Jason: Or that mayo in your next sandwich might be homemade
+    Player: GROSS DUDE 😂
+    Jason: Yeah I'm scary aren't I 😜
+    Jason: Dw bro, enjoy your thing
+- Hell yeah I'm there!
+    Player: Hell yeah I'm there!
+    Jason: I knew you wouldn't let me down chief!!
+    Jason: Let's fucking go
+    Player: So what is this about?
+    Jason: We get to hang out in their club house
+    Jason: Some dudes get lucky and dragged into the bedrooms upstairs
+    Jason: I heard they literally built those bedrooms to be fuckrooms
+    Player: Whoa, that's like college lore right there
+    Jason: Hell yeah dude, believe it
+    Jason: The founder was a FREAK apparently lmaoo
+    Jason: Anyway, we might not get so lucky since the frat has first dibs
+    Player: The frat?
+    Jason: Just a bunch of jock fellas swingin their dicks around and calling the shots
+    Jason: Some of them even take a girl from the sorority to basically be their property lol
+    Player: Whaddya mean?
+    Jason: Like the two girls I was with weren't \"taken\" per se
+    Jason: They were free sorority girls
+    Jason: But anyday a jock could step in and be like, this girl is mine from today on
+    Jason: And they all just play along
+    Jason: She starts living in his dorm room and spreading her legs whenever for him
+    Player: Dang dude, that's some dedication
+    Jason: Told you that this college was CRAZY
+    Jason: Well, we're on the know at least
+    Jason: Not many people know this shit
+    Jason: My goal is to join the frat boys
+    Player: You signed up?
+    Jason: Yeah I did
+    Jason: I filled out the form and the kid who took the form memorized my phone number and ate the paper in one go
+    Player: What??
+    Jason: That was his initiation lmfao
+    Jason: Anyway yeah, you get so many bitches when you get through bro
+    Jason: Pick whoever you want and make'm yours
+    Jason: Except their queen
+    Jason: The queen is on the top
+    Jason: If she picks you, it's like the biggest honor ever lol
+    Player: She with anyone right now?
+    Jason: Last I heard, the person she was with graduated
+    Jason: She's been on the lookout for good meat ever since
+    Player: Damn
+    Jason: So many benefits eh?
+    Jason: Imagine keeping any of those girls at home as your pet hehe
+    Jason: You suddenly interested in the frats? 😏
+    - Fuck yeah dude, sign me up
+        Player: Fuck yeah dude, sign me up
+        Jason: That's what I like to hear my man
+        Jason: I'll see what I can do to get you signed up
+        Jason: It'll be a late application but I'll do what I can
+        Player: Please do 🙏
+        Jason: Be ready for anything 🤪
+    - Not really
+        Player: Not really
+        Player: I don't even know what she looks like
+        Jason: They say she can rock you harder than anyone in the country
+        Player: Is she a college girl or a legend? 😂
+        Jason: I believe it bro
+        Jason: After having sex like I've never had before with those 2 sorority chics
+        Jason: I fuckin believe it
+        Jason: One took me all the way in and the other clamped down on me harder than my own grip strength
+        Player: 😲
+        Jason: I know lol
+    Jason: Anyway I'll see you on Saturday chief
+    Jason: Oh right, one more thing
+    Jason: The tickets are color coded
+    Jason: So you can only get to really hang around one of the girls
+    Jason: I got the yellow ticket and the brown one
+    Jason: I'll let you pick since I tasted both 😛
+    - Gimme Blondie [#yellowheart] [##check hearts]
+        Player: Gimme Blondie
+        Jason: Aye that was my choice too
+    - Brunette all the way [#brownheart] [##check hearts]
+        Player: Brunette all the way
+        Jason: You like'm compact and cute haha
+        Jason: You're the boss
+Jason: Alright gotta run
+Jason: The girl who does my laundry for me wants to fuck LOL
+Player: 🤦‍♂️
+Jason: 😉
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

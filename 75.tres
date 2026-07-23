@@ -1,0 +1,3542 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_atwd8"]
+
+[resource]
+script = ExtResource("1_atwd8")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Mabel", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Player",
+&"id": "10",
+&"next_id": "11",
+&"text": "Let me guess, you're nervous? 😁",
+&"type": "dialogue"
+},
+"100": {
+&"id": "100",
+&"next_id": "101",
+&"responses": PackedStringArray("100", "103"),
+&"text": "You, duh!",
+&"type": "response"
+},
+"101": {
+&"character": "Player",
+&"id": "101",
+&"next_id": "102",
+&"text": "You, duh!",
+&"type": "dialogue"
+},
+"102": {
+&"character": "Mabel",
+&"id": "102",
+&"next_id": "106",
+&"text": "Hehe love you 😚",
+&"type": "dialogue"
+},
+"103": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 14,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 19,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 20,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 29,
+&"type": &"string",
+&"value": "Naomi1"
+}, {
+&"i": 37,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"condition_as_text": "Story.has_flag(\"Naomi1\")",
+&"id": "103",
+&"next_id": "104",
+&"text": "Close one",
+&"type": "response"
+},
+"104": {
+&"character": "Player",
+&"id": "104",
+&"next_id": "105",
+&"text": "Close one",
+&"type": "dialogue"
+},
+"105": {
+&"character": "Mabel",
+&"id": "105",
+&"next_id": "106",
+&"text": "You're supposed to choose meee silly",
+&"type": "dialogue"
+},
+"106": {
+&"character": "Player",
+&"id": "106",
+&"next_id": "107",
+&"text": "Come sit next to me instead",
+&"type": "dialogue"
+},
+"107": {
+&"character": "Mabel",
+&"id": "107",
+&"next_id": "108",
+&"text": "Oki 🥰",
+&"type": "dialogue"
+},
+"108": {
+&"id": "108",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "advance_time",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"number",
+&"value": 0
+}]), Array[Dictionary]([{
+&"i": 19,
+&"type": &"number",
+&"value": 13
+}, {
+&"i": 21,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "109",
+&"type": "mutation"
+},
+"109": {
+&"character": "Player",
+&"id": "109",
+&"next_id": "110",
+&"text": "img: mabel/167",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Mabel",
+&"id": "11",
+&"next_id": "12",
+&"text": "No way!!",
+&"type": "dialogue"
+},
+"110": {
+&"character": "Mabel",
+&"id": "110",
+&"next_id": "111",
+&"text": "🙈🙈🙈",
+&"type": "dialogue"
+},
+"111": {
+&"character": "Mabel",
+&"id": "111",
+&"next_id": "112",
+&"text": "Don't make me blush here 👊",
+&"type": "dialogue"
+},
+"112": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "JasonRt"
+}, {
+&"i": 27,
+&"type": &"parens_close"
+}])])
+}, {
+&"i": 29,
+&"type": &"and_or",
+&"value": "or"
+}, {
+&"i": 32,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 37,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 38,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 47,
+&"type": &"string",
+&"value": "JasonNaomiEvent"
+}, {
+&"i": 64,
+&"type": &"parens_close"
+}])])
+}, {
+&"i": 66,
+&"type": &"and_or",
+&"value": "or"
+}, {
+&"i": 69,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 74,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 75,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 84,
+&"type": &"string",
+&"value": "JasonPaigeEvent"
+}, {
+&"i": 101,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "112",
+&"next_id": "113",
+&"next_id_after": "118",
+&"type": "condition"
+},
+"113": {
+&"id": "113",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "advance_time",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"number",
+&"value": 0
+}]), Array[Dictionary]([{
+&"i": 19,
+&"type": &"number",
+&"value": 4
+}, {
+&"i": 20,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "114",
+&"type": "mutation"
+},
+"114": {
+&"character": "Mabel",
+&"id": "114",
+&"next_id": "115",
+&"text": "img: jason/7",
+&"type": "dialogue"
+},
+"115": {
+&"character": "Mabel",
+&"id": "115",
+&"next_id": "116",
+&"text": "Your friend arrived btw!",
+&"type": "dialogue"
+},
+"116": {
+&"character": "Player",
+&"id": "116",
+&"next_id": "117",
+&"text": "Oh! Was just talking to Caleb",
+&"type": "dialogue"
+},
+"117": {
+&"character": "Player",
+&"id": "117",
+&"next_id": "118",
+&"text": "Coming",
+&"type": "dialogue"
+},
+"118": {
+&"id": "118",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "advance_time",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"number",
+&"value": 0
+}]), Array[Dictionary]([{
+&"i": 19,
+&"type": &"number",
+&"value": 16
+}, {
+&"i": 21,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "119",
+&"type": "mutation"
+},
+"119": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "CalebRt"
+}, {
+&"i": 27,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "119",
+&"next_id": "120",
+&"next_id_after": "130",
+&"next_sibling_id": "124",
+&"type": "condition"
+},
+"12": {
+&"character": "Mabel",
+&"id": "12",
+&"next_id": "13",
+&"text": "I'm totally a party animal!",
+&"type": "dialogue"
+},
+"120": {
+&"character": "Player",
+&"id": "120",
+&"next_id": "121",
+&"text": "img: mabel/168",
+&"type": "dialogue"
+},
+"121": {
+&"character": "Player",
+&"id": "121",
+&"next_id": "122",
+&"text": "😂???",
+&"type": "dialogue"
+},
+"122": {
+&"character": "Mabel",
+&"id": "122",
+&"next_id": "123",
+&"text": "Forget you saw anything 😭",
+&"type": "dialogue"
+},
+"123": {
+&"character": "Mabel",
+&"id": "123",
+&"next_id": "130",
+&"text": "Thought: I lost a bet ugh",
+&"type": "dialogue"
+},
+"124": {
+&"condition": {},
+&"id": "124",
+&"next_id": "125",
+&"next_id_after": "130",
+&"type": "condition"
+},
+"125": {
+&"character": "Mabel",
+&"id": "125",
+&"next_id": "126",
+&"text": "Look behind you 🤭",
+&"type": "dialogue"
+},
+"126": {
+&"character": "Player",
+&"id": "126",
+&"next_id": "127",
+&"text": "👀",
+&"type": "dialogue"
+},
+"127": {
+&"character": "Player",
+&"id": "127",
+&"next_id": "128",
+&"text": "😆",
+&"type": "dialogue"
+},
+"128": {
+&"character": "Player",
+&"id": "128",
+&"next_id": "129",
+&"text": "img: mabel/169",
+&"type": "dialogue"
+},
+"129": {
+&"character": "Mabel",
+&"id": "129",
+&"next_id": "130",
+&"text": "👋😊",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Player",
+&"id": "13",
+&"next_id": "14",
+&"text": "Riiight",
+&"type": "dialogue"
+},
+"130": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "JasonRt"
+}, {
+&"i": 27,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "130",
+&"next_id": "131",
+&"next_id_after": "135",
+&"type": "condition"
+},
+"131": {
+&"character": "Player",
+&"id": "131",
+&"next_id": "132",
+&"text": "img: jason/8",
+&"type": "dialogue"
+},
+"132": {
+&"character": "Mabel",
+&"id": "132",
+&"next_id": "133",
+&"text": "So many pics 😵‍💫",
+&"type": "dialogue"
+},
+"133": {
+&"character": "Mabel",
+&"id": "133",
+&"next_id": "134",
+&"text": "I'll look at them later but keep sending 😊",
+&"type": "dialogue"
+},
+"134": {
+&"character": "Mabel",
+&"id": "134",
+&"next_id": "135",
+&"text": "I wanna store them in an album later hehe",
+&"type": "dialogue"
+},
+"135": {
+&"id": "135",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "advance_time",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"number",
+&"value": 0
+}]), Array[Dictionary]([{
+&"i": 19,
+&"type": &"number",
+&"value": 28
+}, {
+&"i": 21,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "136",
+&"type": "mutation"
+},
+"136": {
+&"character": "Mabel",
+&"id": "136",
+&"next_id": "137",
+&"text": "Uhm.. babe?",
+&"type": "dialogue"
+},
+"137": {
+&"character": "Player",
+&"id": "137",
+&"next_id": "138",
+&"text": "Yeah?",
+&"type": "dialogue"
+},
+"138": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "JasonNaomiEvent"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "138",
+&"next_id": "139",
+&"next_id_after": "148",
+&"type": "condition"
+},
+"139": {
+&"character": "Mabel",
+&"id": "139",
+&"next_id": "140",
+&"text": "img: naomi/33",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Mabel",
+&"id": "14",
+&"next_id": "15",
+&"text": "img: mabel/163",
+&"type": "dialogue"
+},
+"140": {
+&"character": "Mabel",
+&"id": "140",
+&"next_id": "141",
+&"text": "😱😱😱",
+&"type": "dialogue"
+},
+"141": {
+&"character": "Mabel",
+&"id": "141",
+&"next_id": "142",
+&"text": "Caleb is okay with it??",
+&"type": "dialogue"
+},
+"142": {
+&"character": "Player",
+&"id": "142",
+&"next_id": "143",
+&"text": "I think so, he's still here 😄",
+&"type": "dialogue"
+},
+"143": {
+&"character": "Mabel",
+&"id": "143",
+&"next_id": "144",
+&"text": "😣",
+&"type": "dialogue"
+},
+"144": {
+&"character": "Mabel",
+&"id": "144",
+&"next_id": "145",
+&"text": "Would you..?",
+&"type": "dialogue"
+},
+"145": {
+&"character": "Mabel",
+&"id": "145",
+&"next_id": "146",
+&"text": "Thought: Would babe let me do something like that?",
+&"type": "dialogue"
+},
+"146": {
+&"character": "Mabel",
+&"id": "146",
+&"next_id": "147",
+&"text": "Thought: Not that I'd want to ever do that!!",
+&"type": "dialogue"
+},
+"147": {
+&"character": "Mabel",
+&"id": "147",
+&"next_id": "148",
+&"text": "Nevermind!!",
+&"type": "dialogue"
+},
+"148": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "JasonPaigeEvent"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "148",
+&"next_id": "149",
+&"next_id_after": "154",
+&"type": "condition"
+},
+"149": {
+&"character": "Mabel",
+&"id": "149",
+&"next_id": "150",
+&"text": "img: paige/14",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Mabel",
+&"id": "15",
+&"next_id": "16",
+&"text": "I went to a party before, remember?!",
+&"type": "dialogue"
+},
+"150": {
+&"character": "Mabel",
+&"id": "150",
+&"next_id": "151",
+&"text": "😱😱😱",
+&"type": "dialogue"
+},
+"151": {
+&"character": "Player",
+&"id": "151",
+&"next_id": "152",
+&"text": "I was right huh 🤣",
+&"type": "dialogue"
+},
+"152": {
+&"character": "Mabel",
+&"id": "152",
+&"next_id": "153",
+&"text": "Is it that easy for a girl to just...",
+&"type": "dialogue"
+},
+"153": {
+&"character": "Mabel",
+&"id": "153",
+&"next_id": "154",
+&"text": "Nevermind actually",
+&"type": "dialogue"
+},
+"154": {
+&"id": "154",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "advance_time",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"number",
+&"value": 0
+}]), Array[Dictionary]([{
+&"i": 19,
+&"type": &"number",
+&"value": 14
+}, {
+&"i": 21,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "155",
+&"type": "mutation"
+},
+"155": {
+&"character": "Mabel",
+&"id": "155",
+&"next_id": "156",
+&"text": "Omg they're gonna start the dumb games 😭",
+&"type": "dialogue"
+},
+"156": {
+&"character": "Player",
+&"id": "156",
+&"next_id": "157",
+&"text": "Good luck babe 😘",
+&"type": "dialogue"
+},
+"157": {
+&"character": "Mabel",
+&"id": "157",
+&"next_id": "158",
+&"text": "What does being lucky even mean 🥹",
+&"type": "dialogue"
+},
+"158": {
+&"id": "158",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "advance_time",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"number",
+&"value": 0
+}]), Array[Dictionary]([{
+&"i": 19,
+&"type": &"number",
+&"value": 5
+}, {
+&"i": 20,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "159",
+&"type": "mutation"
+},
+"159": {
+&"id": "159",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_set",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 12,
+&"type": &"array",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 13,
+&"type": &"string",
+&"value": "170"
+}, {
+&"i": 18,
+&"type": &"bracket_close"
+}])])
+}, {
+&"i": 19,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "160",
+&"type": "mutation"
+},
+"16": {
+&"character": "Mabel",
+&"id": "16",
+&"next_id": "17",
+&"text": "I'm THE party princess hehe",
+&"type": "dialogue"
+},
+"160": {
+&"id": "160",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "heart",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 9,
+&"type": &"number",
+&"value": 1
+}, {
+&"i": 10,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "161",
+&"type": "mutation"
+},
+"161": {
+&"character": "Player",
+&"id": "161",
+&"next_id": "162",
+&"text": "It's your turn 😆",
+&"type": "dialogue"
+},
+"162": {
+&"character": "Mabel",
+&"id": "162",
+&"next_id": "163",
+&"text": "Uhm.. okay, I just needed the bathroom 😣",
+&"type": "dialogue"
+},
+"163": {
+&"character": "Player",
+&"id": "163",
+&"next_id": "164",
+&"text": "Come out or Naomi is gonna drag you out",
+&"type": "dialogue"
+},
+"164": {
+&"character": "Mabel",
+&"id": "164",
+&"next_id": "165",
+&"text": "😱",
+&"type": "dialogue"
+},
+"165": {
+&"character": "Mabel",
+&"id": "165",
+&"next_id": "166",
+&"text": "Is she really??",
+&"type": "dialogue"
+},
+"166": {
+&"character": "Player",
+&"id": "166",
+&"next_id": "167",
+&"text": "Nah I'm just teasing you 😘",
+&"type": "dialogue"
+},
+"167": {
+&"character": "Mabel",
+&"id": "167",
+&"next_id": "168",
+&"text": "Naomi would never do that silly 😒",
+&"type": "dialogue"
+},
+"168": {
+&"character": "Mabel",
+&"id": "168",
+&"next_id": "169",
+&"text": "But you're totally right, I don't wanna hold everyone up cause I'm a big scaredy cat",
+&"type": "dialogue"
+},
+"169": {
+&"character": "Mabel",
+&"id": "169",
+&"next_id": "170",
+&"text": "Thought: You can do it Mabel, stop being a total chicken",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Player",
+&"id": "17",
+&"next_id": "18",
+&"text": "I guess that's half true 😁",
+&"type": "dialogue"
+},
+"170": {
+&"character": "Mabel",
+&"id": "170",
+&"next_id": "171",
+&"text": "Thought: It's just a dumb kiss...",
+&"type": "dialogue"
+},
+"171": {
+&"id": "171",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_clear",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 14,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "172",
+&"type": "mutation"
+},
+"172": {
+&"id": "172",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "advance_time",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"number",
+&"value": 0
+}]), Array[Dictionary]([{
+&"i": 19,
+&"type": &"number",
+&"value": 8
+}, {
+&"i": 20,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "173",
+&"type": "mutation"
+},
+"173": {
+&"id": "173",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "heart",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 9,
+&"type": &"number",
+&"value": 0
+}, {
+&"i": 10,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "174",
+&"type": "mutation"
+},
+"174": {
+&"character": "Mabel",
+&"id": "174",
+&"next_id": "175",
+&"text": "It's so dark in here omg",
+&"type": "dialogue"
+},
+"175": {
+&"character": "Player",
+&"id": "175",
+&"next_id": "176",
+&"text": "No using your phone 😂",
+&"type": "dialogue"
+},
+"176": {
+&"character": "Mabel",
+&"id": "176",
+&"next_id": "177",
+&"text": "Omg... fiiine",
+&"type": "dialogue"
+},
+"177": {
+&"id": "177",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "heart",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 9,
+&"type": &"number",
+&"value": 1
+}, {
+&"i": 10,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "178",
+&"type": "mutation"
+},
+"178": {
+&"character": "Mabel",
+&"id": "178",
+&"next_id": "179",
+&"text": "Thought: Wha?",
+&"type": "dialogue"
+},
+"179": {
+&"character": "Mabel",
+&"id": "179",
+&"next_id": "180",
+&"text": "Thought: Who's there??",
+&"type": "dialogue"
+},
+"18": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "NTSKiss"
+}, {
+&"i": 27,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "18",
+&"next_id": "19",
+&"next_id_after": "39",
+&"next_sibling_id": "33",
+&"type": "condition"
+},
+"180": {
+&"character": "Mabel",
+&"id": "180",
+&"next_id": "181",
+&"text": "Thought: He's way too close",
+&"type": "dialogue"
+},
+"181": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "CalebRt"
+}, {
+&"i": 27,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "181",
+&"next_id": "182",
+&"next_id_after": "223",
+&"type": "condition"
+},
+"182": {
+&"character": "Mabel",
+&"id": "182",
+&"next_id": "183",
+&"text": "Thought: Uhm okay..",
+&"type": "dialogue"
+},
+"183": {
+&"character": "Mabel",
+&"id": "183",
+&"next_id": "184",
+&"text": "Thought: Where are your lips",
+&"type": "dialogue"
+},
+"184": {
+&"character": "Mabel",
+&"id": "184",
+&"next_id": "185",
+&"text": "Thought: Hurry up so I can get out omg",
+&"type": "dialogue"
+},
+"185": {
+&"character": "Mabel",
+&"id": "185",
+&"next_id": "186",
+&"text": "Thought: I hate this tension",
+&"type": "dialogue"
+},
+"186": {
+&"id": "186",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_set",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 12,
+&"type": &"array",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 13,
+&"type": &"string",
+&"value": "171"
+}, {
+&"i": 18,
+&"type": &"bracket_close"
+}])])
+}, {
+&"i": 19,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "187",
+&"type": "mutation"
+},
+"187": {
+&"character": "Mabel",
+&"id": "187",
+&"next_id": "188",
+&"text": "Thought: Oh, I found his chin I think",
+&"type": "dialogue"
+},
+"188": {
+&"character": "Mabel",
+&"id": "188",
+&"next_id": "189",
+&"text": "Thought: This is so silly omg",
+&"type": "dialogue"
+},
+"189": {
+&"character": "Mabel",
+&"id": "189",
+&"next_id": "190",
+&"text": "Thought: But his hand is soft and a little shaky... is he just as nervous??",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Mabel",
+&"id": "19",
+&"next_id": "20",
+&"text": "Seems like things are going so fast these days",
+&"type": "dialogue"
+},
+"190": {
+&"character": "Mabel",
+&"id": "190",
+&"next_id": "191",
+&"text": "Thought: I wonder wh-",
+&"type": "dialogue"
+},
+"191": {
+&"id": "191",
+&"next_id": "192",
+&"responses": PackedStringArray("191"),
+&"text": "[continue]",
+&"type": "response"
+},
+"192": {
+&"id": "192",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_clear",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 14,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "193",
+&"type": "mutation"
+},
+"193": {
+&"id": "193",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "heart",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 9,
+&"type": &"number",
+&"value": 3
+}, {
+&"i": 10,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "194",
+&"type": "mutation"
+},
+"194": {
+&"character": "Mabel",
+&"id": "194",
+&"next_id": "195",
+&"text": "sfx: lick1: *mmmf*",
+&"type": "dialogue"
+},
+"195": {
+&"id": "195",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_set",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 12,
+&"type": &"array",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 13,
+&"type": &"string",
+&"value": "172"
+}, {
+&"i": 18,
+&"type": &"bracket_close"
+}])])
+}, {
+&"i": 19,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "196",
+&"type": "mutation"
+},
+"196": {
+&"id": "196",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "mabel_kissed",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "Caleb"
+}, {
+&"i": 29,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "197",
+&"type": "mutation"
+},
+"197": {
+&"character": "Mabel",
+&"id": "197",
+&"next_id": "198",
+&"text": "sfx: kiss7: *smooch*",
+&"type": "dialogue"
+},
+"198": {
+&"character": "Mabel",
+&"id": "198",
+&"next_id": "199",
+&"text": "PinkThought: I can't",
+&"type": "dialogue"
+},
+"199": {
+&"character": "Mabel",
+&"id": "199",
+&"next_id": "200",
+&"text": "PinkThought: Is it cause its dark? I can feel everything",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Mabel",
+&"id": "2",
+&"next_id": "3",
+&"text": "Babe!",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Player",
+&"id": "20",
+&"next_id": "21",
+&"text": "What do you mean?",
+&"type": "dialogue"
+},
+"200": {
+&"character": "Mabel",
+&"id": "200",
+&"next_id": "201",
+&"text": "PinkThought: I can feel our lips pressed together",
+&"type": "dialogue"
+},
+"201": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_first_kiss"
+}, {
+&"i": 27,
+&"type": &"comparison",
+&"value": "=="
+}, {
+&"i": 30,
+&"type": &"string",
+&"value": "Player"
+}])
+},
+&"id": "201",
+&"next_id": "202",
+&"next_id_after": "209",
+&"type": "condition"
+},
+"202": {
+&"character": "Mabel",
+&"id": "202",
+&"next_id": "203",
+&"text": "sfx: kiss4: *mmwah*",
+&"type": "dialogue"
+},
+"203": {
+&"character": "Mabel",
+&"id": "203",
+&"next_id": "204",
+&"text": "PinkThought: This is... totally different from how babe did it",
+&"type": "dialogue"
+},
+"204": {
+&"character": "Mabel",
+&"id": "204",
+&"next_id": "205",
+&"text": "sfx: kiss5: *smooch*",
+&"type": "dialogue"
+},
+"205": {
+&"character": "Mabel",
+&"id": "205",
+&"next_id": "206",
+&"text": "sfx: kiss2: *mmch*",
+&"type": "dialogue"
+},
+"206": {
+&"character": "Mabel",
+&"id": "206",
+&"next_id": "207",
+&"text": "PinkThought: Babes lips were a bit more rough",
+&"type": "dialogue"
+},
+"207": {
+&"character": "Mabel",
+&"id": "207",
+&"next_id": "208",
+&"text": "PinkThought: His are a bit softer",
+&"type": "dialogue"
+},
+"208": {
+&"character": "Mabel",
+&"id": "208",
+&"next_id": "209",
+&"text": "PinkThought: Why am I thinking that",
+&"type": "dialogue"
+},
+"209": {
+&"id": "209",
+&"next_id": "210",
+&"responses": PackedStringArray("209"),
+&"text": "[continue]",
+&"type": "response"
+},
+"21": {
+&"character": "Mabel",
+&"id": "21",
+&"next_id": "22",
+&"text": "Well we just.. y'know",
+&"type": "dialogue"
+},
+"210": {
+&"character": "Mabel",
+&"id": "210",
+&"next_id": "211",
+&"text": "sfx: lick2: *mmmh*",
+&"type": "dialogue"
+},
+"211": {
+&"character": "Mabel",
+&"id": "211",
+&"next_id": "212",
+&"text": "sfx: kiss2: *mwch*",
+&"type": "dialogue"
+},
+"212": {
+&"character": "Mabel",
+&"id": "212",
+&"next_id": "213",
+&"text": "PinkThought: He's leading me on, I can't even stop",
+&"type": "dialogue"
+},
+"213": {
+&"character": "Mabel",
+&"id": "213",
+&"next_id": "214",
+&"text": "PinkThought: Why can't I stop... Why can't I push him away",
+&"type": "dialogue"
+},
+"214": {
+&"character": "Mabel",
+&"id": "214",
+&"next_id": "215",
+&"text": "PinkThought: I... I'm pulling him instead",
+&"type": "dialogue"
+},
+"215": {
+&"id": "215",
+&"next_id": "216",
+&"responses": PackedStringArray("215"),
+&"text": "[continue]",
+&"type": "response"
+},
+"216": {
+&"character": "Mabel",
+&"id": "216",
+&"next_id": "217",
+&"text": "sfx: lick9: *mmh*",
+&"type": "dialogue"
+},
+"217": {
+&"character": "Mabel",
+&"id": "217",
+&"next_id": "218",
+&"text": "sfx: kiss12: *mlch*",
+&"type": "dialogue"
+},
+"218": {
+&"character": "Mabel",
+&"id": "218",
+&"next_id": "219",
+&"text": "PinkThought: Ugh, why does my body feel so hot",
+&"type": "dialogue"
+},
+"219": {
+&"character": "Mabel",
+&"id": "219",
+&"next_id": "220",
+&"text": "PinkThought: Where am I sweating from?",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Mabel",
+&"id": "22",
+&"next_id": "23",
+&"text": "Had our first kiss yesterday and today I might..",
+&"type": "dialogue"
+},
+"220": {
+&"character": "Mabel",
+&"id": "220",
+&"next_id": "221",
+&"text": "PinkThought: Everywhere? Even... from there..",
+&"type": "dialogue"
+},
+"221": {
+&"character": "Mabel",
+&"id": "221",
+&"next_id": "222",
+&"text": "sfx: kiss11: *mmh*",
+&"type": "dialogue"
+},
+"222": {
+&"character": "Mabel",
+&"id": "222",
+&"next_id": "223",
+&"text": "sfx: kiss2: *mlch*",
+&"type": "dialogue"
+},
+"223": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "JasonRt"
+}, {
+&"i": 27,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "223",
+&"next_id": "224",
+&"next_id_after": "274",
+&"type": "condition"
+},
+"224": {
+&"character": "Mabel",
+&"id": "224",
+&"next_id": "225",
+&"text": "Thought: Eep, my waist",
+&"type": "dialogue"
+},
+"225": {
+&"character": "Mabel",
+&"id": "225",
+&"next_id": "226",
+&"text": "Thought: And my neck??",
+&"type": "dialogue"
+},
+"226": {
+&"character": "Mabel",
+&"id": "226",
+&"next_id": "227",
+&"text": "sfx: cutemoanm17: Hold on a minu-",
+&"type": "dialogue"
+},
+"227": {
+&"character": "Mabel",
+&"id": "227",
+&"next_id": "228",
+&"text": "Thought: He's making me step back.. I can't see the wall",
+&"type": "dialogue"
+},
+"228": {
+&"character": "Mabel",
+&"id": "228",
+&"next_id": "229",
+&"text": "Thought: Ahh there it is..",
+&"type": "dialogue"
+},
+"229": {
+&"character": "Mabel",
+&"id": "229",
+&"next_id": "230",
+&"text": "sfx: cutemoanm18: AH-",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Mabel",
+&"id": "23",
+&"next_id": "24",
+&"text": "Thought: Is it really normal for girls to try kissing different guys?",
+&"type": "dialogue"
+},
+"230": {
+&"id": "230",
+&"next_id": "231",
+&"responses": PackedStringArray("230"),
+&"text": "[continue]",
+&"type": "response"
+},
+"231": {
+&"character": "Mabel",
+&"id": "231",
+&"next_id": "232",
+&"text": "Thought: The wall is so cold",
+&"type": "dialogue"
+},
+"232": {
+&"character": "Mabel",
+&"id": "232",
+&"next_id": "233",
+&"text": "PinkThought: He's pressing against me gently",
+&"type": "dialogue"
+},
+"233": {
+&"character": "Mabel",
+&"id": "233",
+&"next_id": "234",
+&"text": "PinkThought: This is SO embarassing",
+&"type": "dialogue"
+},
+"234": {
+&"character": "Mabel",
+&"id": "234",
+&"next_id": "235",
+&"text": "PinkThought: I'm so glad I can't see my boobs right now",
+&"type": "dialogue"
+},
+"235": {
+&"character": "Mabel",
+&"id": "235",
+&"next_id": "236",
+&"text": "PinkThought: They feel so hard..",
+&"type": "dialogue"
+},
+"236": {
+&"id": "236",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_set",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 12,
+&"type": &"array",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 13,
+&"type": &"string",
+&"value": "173"
+}, {
+&"i": 18,
+&"type": &"bracket_close"
+}])])
+}, {
+&"i": 19,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "237",
+&"type": "mutation"
+},
+"237": {
+&"character": "Mabel",
+&"id": "237",
+&"next_id": "238",
+&"text": "sfx: none: Hold on a minu-",
+&"type": "dialogue"
+},
+"238": {
+&"id": "238",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "mabel_kissed",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "Jason"
+}, {
+&"i": 29,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "239",
+&"type": "mutation"
+},
+"239": {
+&"id": "239",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "heart",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 9,
+&"type": &"number",
+&"value": 3
+}, {
+&"i": 10,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "240",
+&"type": "mutation"
+},
+"24": {
+&"character": "Mabel",
+&"id": "24",
+&"next_id": "25",
+&"text": "Nevermind, I shouldn't think about this omg",
+&"type": "dialogue"
+},
+"240": {
+&"character": "Mabel",
+&"id": "240",
+&"next_id": "241",
+&"text": "sfx: lick3: *mmmf*",
+&"type": "dialogue"
+},
+"241": {
+&"id": "241",
+&"next_id": "242",
+&"responses": PackedStringArray("241"),
+&"text": "[continue]",
+&"type": "response"
+},
+"242": {
+&"character": "Mabel",
+&"id": "242",
+&"next_id": "243",
+&"text": "PinkThought: Ack... I can't even breathe",
+&"type": "dialogue"
+},
+"243": {
+&"character": "Mabel",
+&"id": "243",
+&"next_id": "244",
+&"text": "PinkThought: He's all over me",
+&"type": "dialogue"
+},
+"244": {
+&"character": "Mabel",
+&"id": "244",
+&"next_id": "245",
+&"text": "sfx: lick2: *lick*",
+&"type": "dialogue"
+},
+"245": {
+&"character": "Mabel",
+&"id": "245",
+&"next_id": "246",
+&"text": "PinkThought: Is he licking my lips..",
+&"type": "dialogue"
+},
+"246": {
+&"character": "Mabel",
+&"id": "246",
+&"next_id": "247",
+&"text": "PinkThought: I can't tell...",
+&"type": "dialogue"
+},
+"247": {
+&"character": "Mabel",
+&"id": "247",
+&"next_id": "248",
+&"text": "PinkThought: It's so overwhelming",
+&"type": "dialogue"
+},
+"248": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_first_kiss"
+}, {
+&"i": 27,
+&"type": &"comparison",
+&"value": "=="
+}, {
+&"i": 30,
+&"type": &"string",
+&"value": "Player"
+}])
+},
+&"id": "248",
+&"next_id": "249",
+&"next_id_after": "255",
+&"type": "condition"
+},
+"249": {
+&"character": "Mabel",
+&"id": "249",
+&"next_id": "250",
+&"text": "sfx: kiss13: *lick*",
+&"type": "dialogue"
+},
+"25": {
+&"id": "25",
+&"next_id": "26",
+&"responses": PackedStringArray("25", "30"),
+&"text": "Still on your mind?",
+&"type": "response"
+},
+"250": {
+&"character": "Mabel",
+&"id": "250",
+&"next_id": "251",
+&"text": "PinkThought: This is... totally different from how babe did it",
+&"type": "dialogue"
+},
+"251": {
+&"character": "Mabel",
+&"id": "251",
+&"next_id": "252",
+&"text": "PinkThought: It's so aggressive but...",
+&"type": "dialogue"
+},
+"252": {
+&"character": "Mabel",
+&"id": "252",
+&"next_id": "253",
+&"text": "PinkThought: When he stops it's...",
+&"type": "dialogue"
+},
+"253": {
+&"character": "Mabel",
+&"id": "253",
+&"next_id": "254",
+&"text": "sfx: kiss5: *mch*",
+&"type": "dialogue"
+},
+"254": {
+&"character": "Mabel",
+&"id": "254",
+&"next_id": "255",
+&"text": "PinkThought: Can't even focus...",
+&"type": "dialogue"
+},
+"255": {
+&"id": "255",
+&"next_id": "256",
+&"responses": PackedStringArray("255"),
+&"text": "[continue]",
+&"type": "response"
+},
+"256": {
+&"character": "Mabel",
+&"id": "256",
+&"next_id": "257",
+&"text": "sfx: kiss8: *smack*",
+&"type": "dialogue"
+},
+"257": {
+&"character": "Mabel",
+&"id": "257",
+&"next_id": "258",
+&"text": "sfx: kiss5: *smooch*",
+&"type": "dialogue"
+},
+"258": {
+&"character": "Mabel",
+&"id": "258",
+&"next_id": "259",
+&"text": "PinkThought: What is this feeling?? It's like I'm being eaten up...",
+&"type": "dialogue"
+},
+"259": {
+&"character": "Mabel",
+&"id": "259",
+&"next_id": "260",
+&"text": "PinkThought: I can taste something strong",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Player",
+&"id": "26",
+&"next_id": "27",
+&"text": "Still on your mind?",
+&"type": "dialogue"
+},
+"260": {
+&"character": "Mabel",
+&"id": "260",
+&"next_id": "261",
+&"text": "sfx: lick4: *lick*",
+&"type": "dialogue"
+},
+"261": {
+&"character": "Mabel",
+&"id": "261",
+&"next_id": "262",
+&"text": "PinkThought: Is that... beer?",
+&"type": "dialogue"
+},
+"262": {
+&"character": "Mabel",
+&"id": "262",
+&"next_id": "263",
+&"text": "PinkThought: It's probably something stronger",
+&"type": "dialogue"
+},
+"263": {
+&"character": "Mabel",
+&"id": "263",
+&"next_id": "264",
+&"text": "sfx: kiss3: *mmch*",
+&"type": "dialogue"
+},
+"264": {
+&"character": "Mabel",
+&"id": "264",
+&"next_id": "265",
+&"text": "sfx: kiss9: *chu*",
+&"type": "dialogue"
+},
+"265": {
+&"character": "Mabel",
+&"id": "265",
+&"next_id": "266",
+&"text": "PinkThought: Ah, it's...",
+&"type": "dialogue"
+},
+"266": {
+&"character": "Mabel",
+&"id": "266",
+&"next_id": "267",
+&"text": "PinkThought: It's getting in my mouth and it stings",
+&"type": "dialogue"
+},
+"267": {
+&"id": "267",
+&"next_id": "268",
+&"responses": PackedStringArray("267"),
+&"text": "[continue]",
+&"type": "response"
+},
+"268": {
+&"character": "Mabel",
+&"id": "268",
+&"next_id": "269",
+&"text": "sfx: kiss13: *smack*",
+&"type": "dialogue"
+},
+"269": {
+&"character": "Mabel",
+&"id": "269",
+&"next_id": "270",
+&"text": "PinkThought: I",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Mabel",
+&"id": "27",
+&"next_id": "28",
+&"text": "Duh 🥰",
+&"type": "dialogue"
+},
+"270": {
+&"character": "Mabel",
+&"id": "270",
+&"next_id": "271",
+&"text": "sfx: kiss14: *smackk*",
+&"type": "dialogue"
+},
+"271": {
+&"character": "Mabel",
+&"id": "271",
+&"next_id": "272",
+&"text": "PinkThought: Can't even",
+&"type": "dialogue"
+},
+"272": {
+&"character": "Mabel",
+&"id": "272",
+&"next_id": "273",
+&"text": "sfx: kiss15: *smackkk*",
+&"type": "dialogue"
+},
+"273": {
+&"character": "Mabel",
+&"id": "273",
+&"next_id": "274",
+&"text": "PinkThought: Think straight",
+&"type": "dialogue"
+},
+"274": {
+&"character": "Mabel",
+&"id": "274",
+&"next_id": "275",
+&"text": "Thought: Is it just me or is it getting even darker?",
+&"type": "dialogue"
+},
+"275": {
+&"character": "Mabel",
+&"id": "275",
+&"next_id": "276",
+&"text": "Thought: That can't be right...",
+&"type": "dialogue"
+},
+"276": {
+&"character": "Mabel",
+&"id": "276",
+&"next_id": "277",
+&"text": "Thought: Zzz..",
+&"type": "dialogue"
+},
+"277": {
+&"id": "277",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_clear",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 14,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "278",
+&"type": "mutation"
+},
+"278": {
+&"character": "Mabel",
+&"id": "278",
+&"next_id": "279",
+&"text": "sfx: none: *THUD*",
+&"type": "dialogue"
+},
+"279": {
+&"id": "279",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "heart",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 9,
+&"type": &"number",
+&"value": 0
+}, {
+&"i": 10,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "280",
+&"type": "mutation"
+},
+"28": {
+&"character": "Mabel",
+&"id": "28",
+&"next_id": "29",
+&"text": "Maybe I was no good at it but hopefully we can practice more 😚",
+&"type": "dialogue"
+},
+"280": {
+&"id": "280",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "advance_time",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"number",
+&"value": 1
+}]), Array[Dictionary]([{
+&"i": 19,
+&"type": &"number",
+&"value": 0
+}, {
+&"i": 20,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "281",
+&"type": "mutation"
+},
+"281": {
+&"id": "281",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "mabel_kissed",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "Player"
+}, {
+&"i": 30,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "282",
+&"type": "mutation"
+},
+"282": {
+&"character": "Player",
+&"id": "282",
+&"next_id": "283",
+&"text": "How are you feeling?",
+&"type": "dialogue"
+},
+"283": {
+&"character": "Mabel",
+&"id": "283",
+&"next_id": "284",
+&"text": "I told you I'm fine babe 😊",
+&"type": "dialogue"
+},
+"284": {
+&"character": "Mabel",
+&"id": "284",
+&"next_id": "285",
+&"text": "I was just a little dehydrated is all",
+&"type": "dialogue"
+},
+"285": {
+&"character": "Mabel",
+&"id": "285",
+&"next_id": "286",
+&"text": "Thought: Nervousness overload again",
+&"type": "dialogue"
+},
+"286": {
+&"character": "Player",
+&"id": "286",
+&"next_id": "287",
+&"text": "You did drink a lot of water when you woke up",
+&"type": "dialogue"
+},
+"287": {
+&"character": "Player",
+&"id": "287",
+&"next_id": "288",
+&"text": "But still I'm a little worried",
+&"type": "dialogue"
+},
+"288": {
+&"character": "Mabel",
+&"id": "288",
+&"next_id": "289",
+&"text": "You don't need to worry at all silly",
+&"type": "dialogue"
+},
+"289": {
+&"character": "Mabel",
+&"id": "289",
+&"next_id": "290",
+&"text": "I was happy when I woke up on your lap 🥰",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Player",
+&"id": "29",
+&"next_id": "39",
+&"text": "Practice makes perfect 😘",
+&"type": "dialogue"
+},
+"290": {
+&"character": "Player",
+&"id": "290",
+&"next_id": "291",
+&"text": "img: mabel/174",
+&"type": "dialogue"
+},
+"291": {
+&"character": "Player",
+&"id": "291",
+&"next_id": "292",
+&"text": "You slept so well, you even snored",
+&"type": "dialogue"
+},
+"292": {
+&"character": "Mabel",
+&"id": "292",
+&"next_id": "293",
+&"text": "Am I gonna embarrass myself 24/7 😑",
+&"type": "dialogue"
+},
+"293": {
+&"character": "Mabel",
+&"id": "293",
+&"next_id": "294",
+&"text": "Y'know what, I don't even care hehe 😚",
+&"type": "dialogue"
+},
+"294": {
+&"character": "Mabel",
+&"id": "294",
+&"next_id": "295",
+&"text": "Thought: The perfect face to wake up to hehe",
+&"type": "dialogue"
+},
+"295": {
+&"character": "Mabel",
+&"id": "295",
+&"next_id": "296",
+&"text": "I was in heaven",
+&"type": "dialogue"
+},
+"296": {
+&"character": "Player",
+&"id": "296",
+&"next_id": "297",
+&"text": "Don't joke about heaven silly, you're gonna stay with me",
+&"type": "dialogue"
+},
+"297": {
+&"character": "Mabel",
+&"id": "297",
+&"next_id": "298",
+&"text": "Can't help it ☺️",
+&"type": "dialogue"
+},
+"298": {
+&"character": "Mabel",
+&"id": "298",
+&"next_id": "299",
+&"text": "And uhm... I couldn't stop myself from kissing you then and there too",
+&"type": "dialogue"
+},
+"299": {
+&"character": "Mabel",
+&"id": "299",
+&"next_id": "300",
+&"text": "Sorry if it was a little abrupt 🤭",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Mabel",
+&"id": "3",
+&"next_id": "4",
+&"text": "Are you ready yet!?",
+&"type": "dialogue"
+},
+"30": {
+&"id": "30",
+&"next_id": "31",
+&"text": "Who knows. You might enjoy your next kiss more 👀",
+&"type": "response"
+},
+"300": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "mabel_get_kiss_times",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 30,
+&"type": &"parens_close"
+}])])
+}, {
+&"i": 32,
+&"type": &"comparison",
+&"value": "=="
+}, {
+&"i": 35,
+&"type": &"number",
+&"value": 2
+}])
+},
+&"id": "300",
+&"next_id": "301",
+&"next_id_after": "302",
+&"type": "condition"
+},
+"301": {
+&"character": "Mabel",
+&"id": "301",
+&"next_id": "302",
+&"text": "PinkThought: I just had to make sure we kissed",
+&"type": "dialogue"
+},
+"302": {
+&"character": "Player",
+&"id": "302",
+&"next_id": "303",
+&"text": "I didn't mind haha 🥰",
+&"type": "dialogue"
+},
+"303": {
+&"character": "Mabel",
+&"id": "303",
+&"next_id": "304",
+&"text": "Sure? You looked so red and cute",
+&"type": "dialogue"
+},
+"304": {
+&"character": "Player",
+&"id": "304",
+&"next_id": "305",
+&"text": "Of course not, I was totally ready for it 😌",
+&"type": "dialogue"
+},
+"305": {
+&"character": "Mabel",
+&"id": "305",
+&"next_id": "306",
+&"text": "Suuure 😘",
+&"type": "dialogue"
+},
+"306": {
+&"character": "Mabel",
+&"id": "306",
+&"next_id": "307",
+&"text": "I just went for it without thinking hehe, nervousness later!",
+&"type": "dialogue"
+},
+"307": {
+&"character": "Mabel",
+&"id": "307",
+&"next_id": "308",
+&"text": "Did your bus arrive yet?",
+&"type": "dialogue"
+},
+"308": {
+&"character": "Mabel",
+&"id": "308",
+&"next_id": "309",
+&"text": "You stayed for so long, I thought you were going to miss the last bus omg",
+&"type": "dialogue"
+},
+"309": {
+&"character": "Player",
+&"id": "309",
+&"next_id": "310",
+&"text": "It's almost here",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Player",
+&"id": "31",
+&"next_id": "32",
+&"text": "Who knows. You might enjoy your next kiss more 👀",
+&"type": "dialogue"
+},
+"310": {
+&"character": "Player",
+&"id": "310",
+&"next_id": "311",
+&"text": "What about you?",
+&"type": "dialogue"
+},
+"311": {
+&"character": "Mabel",
+&"id": "311",
+&"next_id": "312",
+&"text": "I'm helping pack up some of the party stuff but I'll go home after",
+&"type": "dialogue"
+},
+"312": {
+&"character": "Player",
+&"id": "312",
+&"next_id": "313",
+&"text": "Don't push yourself too hard!",
+&"type": "dialogue"
+},
+"313": {
+&"character": "Mabel",
+&"id": "313",
+&"next_id": "314",
+&"text": "You and her both say the same stuff 😂",
+&"type": "dialogue"
+},
+"314": {
+&"character": "Mabel",
+&"id": "314",
+&"next_id": "315",
+&"text": "I won't babe, and we're almost done! 🩷",
+&"type": "dialogue"
+},
+"315": {
+&"character": "Mabel",
+&"id": "315",
+&"next_id": "316",
+&"text": "Everyone is already leaving",
+&"type": "dialogue"
+},
+"316": {
+&"character": "Mabel",
+&"id": "316",
+&"next_id": "317",
+&"text": "Naomi said someone should walk me home just in case",
+&"type": "dialogue"
+},
+"317": {
+&"character": "Player",
+&"id": "317",
+&"next_id": "318",
+&"text": "That's a good idea!",
+&"type": "dialogue"
+},
+"318": {
+&"character": "Player",
+&"id": "318",
+&"next_id": "319",
+&"text": "I would do it myself",
+&"type": "dialogue"
+},
+"319": {
+&"character": "Mabel",
+&"id": "319",
+&"next_id": "320",
+&"text": "Don't worry at all!!",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Mabel",
+&"id": "32",
+&"next_id": "39",
+&"text": "I might totally chicken out 🐔🙈",
+&"type": "dialogue"
+},
+"320": {
+&"character": "Mabel",
+&"id": "320",
+&"next_id": "321",
+&"text": "I'll be fine",
+&"type": "dialogue"
+},
+"321": {
+&"character": "Mabel",
+&"id": "321",
+&"next_id": "322",
+&"text": "Your girl is strong!",
+&"type": "dialogue"
+},
+"322": {
+&"character": "Player",
+&"id": "322",
+&"next_id": "323",
+&"text": "Haha, let me know if you need anything",
+&"type": "dialogue"
+},
+"323": {
+&"character": "Mabel",
+&"id": "323",
+&"next_id": "324",
+&"text": "I'll message you once I get home and clear my head!",
+&"type": "dialogue"
+},
+"324": {
+&"character": "Mabel",
+&"id": "324",
+&"next_id": "325",
+&"text": "I'm gonna relax here a bit more hehe",
+&"type": "dialogue"
+},
+"325": {
+&"character": "Player",
+&"id": "325",
+&"next_id": "326",
+&"text": "Take care then!",
+&"type": "dialogue"
+},
+"326": {
+&"id": "326",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"327": {
+&"id": "327",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"33": {
+&"condition": {},
+&"id": "33",
+&"next_id": "34",
+&"next_id_after": "39",
+&"type": "condition"
+},
+"34": {
+&"character": "Player",
+&"id": "34",
+&"next_id": "35",
+&"text": "You'll have no problem with any of the party games then?",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Mabel",
+&"id": "35",
+&"next_id": "36",
+&"text": "OMGG",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Mabel",
+&"id": "36",
+&"next_id": "37",
+&"text": "I yield!!",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Mabel",
+&"id": "37",
+&"next_id": "38",
+&"text": "Please don't remind me of that 😭",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Player",
+&"id": "38",
+&"next_id": "39",
+&"text": "My bad mabes 😆",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Mabel",
+&"id": "39",
+&"next_id": "40",
+&"text": "Naomi just had to add something like that didn't she 🫠",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Player",
+&"id": "4",
+&"next_id": "5",
+&"text": "For what?",
+&"type": "dialogue"
+},
+"40": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "Naomi1"
+}, {
+&"i": 26,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "40",
+&"next_id": "41",
+&"next_id_after": "44",
+&"type": "condition"
+},
+"41": {
+&"character": "Mabel",
+&"id": "41",
+&"next_id": "42",
+&"text": "Thought: I won't lose to Naomi though",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Mabel",
+&"id": "42",
+&"next_id": "43",
+&"text": "Thought: I want to do what makes babe happy and get all cuddled up with him hehe",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Mabel",
+&"id": "43",
+&"next_id": "44",
+&"text": "Thought: Even though it's a little crazy",
+&"type": "dialogue"
+},
+"44": {
+&"id": "44",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "advance_time",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"number",
+&"value": 4
+}]), Array[Dictionary]([{
+&"i": 19,
+&"type": &"number",
+&"value": 0
+}, {
+&"i": 20,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "45",
+&"type": "mutation"
+},
+"45": {
+&"character": "Mabel",
+&"id": "45",
+&"next_id": "46",
+&"text": "Uhm babe? You gonna be here soon?",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Player",
+&"id": "46",
+&"next_id": "47",
+&"text": "Yeah on the way",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Mabel",
+&"id": "47",
+&"next_id": "48",
+&"text": "Oh great..",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Mabel",
+&"id": "48",
+&"next_id": "49",
+&"text": "Quick question. Does this outfit look good?",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Mabel",
+&"id": "49",
+&"next_id": "50",
+&"text": "img: mabel/164",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Mabel",
+&"id": "5",
+&"next_id": "6",
+&"text": "The party!!",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Mabel",
+&"id": "50",
+&"next_id": "51",
+&"text": "Let me know if its a bit too much 😅",
+&"type": "dialogue"
+},
+"51": {
+&"id": "51",
+&"next_id": "52",
+&"responses": PackedStringArray("51", "55"),
+&"text": "It's not too much",
+&"type": "response"
+},
+"52": {
+&"character": "Player",
+&"id": "52",
+&"next_id": "53",
+&"text": "It's not too much",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Player",
+&"id": "53",
+&"next_id": "54",
+&"text": "I like it",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Mabel",
+&"id": "54",
+&"next_id": "60",
+&"text": "Phew",
+&"type": "dialogue"
+},
+"55": {
+&"id": "55",
+&"next_id": "56",
+&"text": "Damn Mabes!",
+&"type": "response"
+},
+"56": {
+&"character": "Player",
+&"id": "56",
+&"next_id": "57",
+&"text": "Damn Mabes!",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Mabel",
+&"id": "57",
+&"next_id": "58",
+&"text": "Omg too, much too much isn't it",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Player",
+&"id": "58",
+&"next_id": "59",
+&"text": "Not at all",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Player",
+&"id": "59",
+&"next_id": "60",
+&"text": "It's great",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Player",
+&"id": "6",
+&"next_id": "7",
+&"text": "The party isn't for another few hours though",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Mabel",
+&"id": "60",
+&"next_id": "61",
+&"text": "I don't know what to expect",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Player",
+&"id": "61",
+&"next_id": "62",
+&"text": "What happened to being the party princess",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Mabel",
+&"id": "62",
+&"next_id": "63",
+&"text": "Oh would you look at the time!",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Mabel",
+&"id": "63",
+&"next_id": "64",
+&"text": "Gotta go 😇",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Player",
+&"id": "64",
+&"next_id": "65",
+&"text": "😆",
+&"type": "dialogue"
+},
+"65": {
+&"id": "65",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "advance_time",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"number",
+&"value": 0
+}]), Array[Dictionary]([{
+&"i": 19,
+&"type": &"number",
+&"value": 17
+}, {
+&"i": 21,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "66",
+&"type": "mutation"
+},
+"66": {
+&"id": "66",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "college_square_gardens"
+}, {
+&"i": 46,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "67",
+&"type": "mutation"
+},
+"67": {
+&"character": "Player",
+&"id": "67",
+&"next_id": "68",
+&"text": "Just got here",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Mabel",
+&"id": "68",
+&"next_id": "69",
+&"text": "Great! I'm omw",
+&"type": "dialogue"
+},
+"69": {
+&"character": "Mabel",
+&"id": "69",
+&"next_id": "70",
+&"text": "Almost there",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Mabel",
+&"id": "7",
+&"next_id": "8",
+&"text": "But aren't we supposed to be there like super duper early just in case?",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Mabel",
+&"id": "70",
+&"next_id": "71",
+&"text": "img: mabel/165",
+&"type": "dialogue"
+},
+"71": {
+&"character": "Mabel",
+&"id": "71",
+&"next_id": "72",
+&"text": "I feel like I stand out too much",
+&"type": "dialogue"
+},
+"72": {
+&"character": "Mabel",
+&"id": "72",
+&"next_id": "73",
+&"text": "Or that Because I stand out, I fit in...",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Mabel",
+&"id": "73",
+&"next_id": "74",
+&"text": "Does that make any sense?",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Player",
+&"id": "74",
+&"next_id": "75",
+&"text": "Not one bit",
+&"type": "dialogue"
+},
+"75": {
+&"character": "Mabel",
+&"id": "75",
+&"next_id": "76",
+&"text": "😒",
+&"type": "dialogue"
+},
+"76": {
+&"character": "Player",
+&"id": "76",
+&"next_id": "77",
+&"text": "😇",
+&"type": "dialogue"
+},
+"77": {
+&"character": "Mabel",
+&"id": "77",
+&"next_id": "78",
+&"text": "Thought: Gee it feels like everyone I pass looks at me",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Mabel",
+&"id": "78",
+&"next_id": "79",
+&"text": "Thought: I should walk a little faster",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Player",
+&"id": "79",
+&"next_id": "80",
+&"text": "Can't wait to see you",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Player",
+&"id": "8",
+&"next_id": "9",
+&"text": "Uhh I don't think so 😆",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Mabel",
+&"id": "80",
+&"next_id": "81",
+&"text": "Me neither 🥰",
+&"type": "dialogue"
+},
+"81": {
+&"id": "81",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "advance_time",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"number",
+&"value": 1
+}]), Array[Dictionary]([{
+&"i": 19,
+&"type": &"number",
+&"value": 0
+}, {
+&"i": 20,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "82",
+&"type": "mutation"
+},
+"82": {
+&"id": "82",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "photography_club_house"
+}, {
+&"i": 46,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "83",
+&"type": "mutation"
+},
+"83": {
+&"character": "Player",
+&"id": "83",
+&"next_id": "84",
+&"text": "Where did you go?",
+&"type": "dialogue"
+},
+"84": {
+&"character": "Mabel",
+&"id": "84",
+&"next_id": "85",
+&"text": "Bathroom nervousness lol",
+&"type": "dialogue"
+},
+"85": {
+&"character": "Player",
+&"id": "85",
+&"next_id": "86",
+&"text": "You're gonna miss all the snacks",
+&"type": "dialogue"
+},
+"86": {
+&"character": "Player",
+&"id": "86",
+&"next_id": "87",
+&"text": "img: other/10",
+&"type": "dialogue"
+},
+"87": {
+&"character": "Mabel",
+&"id": "87",
+&"next_id": "88",
+&"text": "Omg",
+&"type": "dialogue"
+},
+"88": {
+&"character": "Mabel",
+&"id": "88",
+&"next_id": "89",
+&"text": "SAVE SOME FOR ME IM COMING BACK!!!",
+&"type": "dialogue"
+},
+"89": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "Paige1"
+}, {
+&"i": 26,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "89",
+&"next_id": "90",
+&"next_id_after": "91",
+&"type": "condition"
+},
+"9": {
+&"character": "Mabel",
+&"id": "9",
+&"next_id": "10",
+&"text": "Oh okay then 🥹",
+&"type": "dialogue"
+},
+"90": {
+&"character": "Player",
+&"id": "90",
+&"next_id": "91",
+&"text": "img: paige/13",
+&"type": "dialogue"
+},
+"91": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "Naomi1"
+}, {
+&"i": 26,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "91",
+&"next_id": "92",
+&"next_id_after": "93",
+&"type": "condition"
+},
+"92": {
+&"character": "Player",
+&"id": "92",
+&"next_id": "93",
+&"text": "img: naomi/32",
+&"type": "dialogue"
+},
+"93": {
+&"character": "Player",
+&"id": "93",
+&"next_id": "94",
+&"text": "Idk Paige and Naomi are hammering through them",
+&"type": "dialogue"
+},
+"94": {
+&"character": "Mabel",
+&"id": "94",
+&"next_id": "95",
+&"text": "Gahh! Stop them babe!!",
+&"type": "dialogue"
+},
+"95": {
+&"character": "Player",
+&"id": "95",
+&"next_id": "96",
+&"text": "I'm about to join them 😂",
+&"type": "dialogue"
+},
+"96": {
+&"id": "96",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "advance_time",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"number",
+&"value": 0
+}]), Array[Dictionary]([{
+&"i": 19,
+&"type": &"number",
+&"value": 7
+}, {
+&"i": 20,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "97",
+&"type": "mutation"
+},
+"97": {
+&"character": "Mabel",
+&"id": "97",
+&"next_id": "98",
+&"text": "Caleb took this for me",
+&"type": "dialogue"
+},
+"98": {
+&"character": "Mabel",
+&"id": "98",
+&"next_id": "99",
+&"text": "img: mabel/166",
+&"type": "dialogue"
+},
+"99": {
+&"character": "Mabel",
+&"id": "99",
+&"next_id": "100",
+&"text": "Who's prettier hehe",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+Mabel: Babe!
+Mabel: Are you ready yet!?
+Player: For what?
+Mabel: The party!!
+Player: The party isn't for another few hours though
+Mabel: But aren't we supposed to be there like super duper early just in case?
+Player: Uhh I don't think so 😆
+Mabel: Oh okay then 🥹
+Player: Let me guess, you're nervous? 😁
+Mabel: No way!!
+Mabel: I'm totally a party animal!
+Player: Riiight
+Mabel: img: mabel/163
+Mabel: I went to a party before, remember?!
+Mabel: I'm THE party princess hehe
+Player: I guess that's half true 😁
+if Story.has_flag(\"NTSKiss\"):
+	Mabel: Seems like things are going so fast these days
+	Player: What do you mean?
+	Mabel: Well we just.. y'know
+	Mabel: Had our first kiss yesterday and today I might..
+	Mabel: Thought: Is it really normal for girls to try kissing different guys?
+	Mabel: Nevermind, I shouldn't think about this omg
+	- Still on your mind?
+		Player: Still on your mind?
+		Mabel: Duh 🥰
+		Mabel: Maybe I was no good at it but hopefully we can practice more 😚
+		Player: Practice makes perfect 😘
+	- Who knows. You might enjoy your next kiss more 👀
+		Player: Who knows. You might enjoy your next kiss more 👀
+		Mabel: I might totally chicken out 🐔🙈
+else:
+	Player: You'll have no problem with any of the party games then?
+	Mabel: OMGG
+	Mabel: I yield!!
+	Mabel: Please don't remind me of that 😭
+	Player: My bad mabes 😆
+Mabel: Naomi just had to add something like that didn't she 🫠
+if Story.has_flag(\"Naomi1\"):
+	Mabel: Thought: I won't lose to Naomi though
+	Mabel: Thought: I want to do what makes babe happy and get all cuddled up with him hehe
+	Mabel: Thought: Even though it's a little crazy
+do advance_time(4, 0)
+Mabel: Uhm babe? You gonna be here soon?
+Player: Yeah on the way
+Mabel: Oh great..
+Mabel: Quick question. Does this outfit look good?
+Mabel: img: mabel/164
+Mabel: Let me know if its a bit too much 😅
+- It's not too much
+	Player: It's not too much
+	Player: I like it
+	Mabel: Phew
+- Damn Mabes!
+	Player: Damn Mabes!
+	Mabel: Omg too, much too much isn't it
+	Player: Not at all
+	Player: It's great
+Mabel: I don't know what to expect
+Player: What happened to being the party princess
+Mabel: Oh would you look at the time!
+Mabel: Gotta go 😇
+Player: 😆
+do advance_time(0, 17)
+do Story.set_location(\"college_square_gardens\")
+Player: Just got here
+Mabel: Great! I'm omw
+Mabel: Almost there
+Mabel: img: mabel/165
+Mabel: I feel like I stand out too much
+Mabel: Or that Because I stand out, I fit in...
+Mabel: Does that make any sense?
+Player: Not one bit
+Mabel: 😒
+Player: 😇
+Mabel: Thought: Gee it feels like everyone I pass looks at me
+Mabel: Thought: I should walk a little faster
+Player: Can't wait to see you
+Mabel: Me neither 🥰
+do advance_time(1, 0)
+do Story.set_location(\"photography_club_house\")
+Player: Where did you go?
+Mabel: Bathroom nervousness lol
+Player: You're gonna miss all the snacks
+Player: img: other/10
+Mabel: Omg
+Mabel: SAVE SOME FOR ME IM COMING BACK!!!
+if Story.has_flag(\"Paige1\"):
+	Player: img: paige/13
+if Story.has_flag(\"Naomi1\"):
+	Player: img: naomi/32
+Player: Idk Paige and Naomi are hammering through them
+Mabel: Gahh! Stop them babe!!
+Player: I'm about to join them 😂
+do advance_time(0, 7)
+Mabel: Caleb took this for me
+Mabel: img: mabel/166
+Mabel: Who's prettier hehe
+- You, duh!
+	Player: You, duh!
+	Mabel: Hehe love you 😚
+- Close one [if Story.has_flag(\"Naomi1\")]
+	Player: Close one
+	Mabel: You're supposed to choose meee silly
+Player: Come sit next to me instead
+Mabel: Oki 🥰
+do advance_time(0, 13)
+Player: img: mabel/167
+Mabel: 🙈🙈🙈
+Mabel: Don't make me blush here 👊
+if Story.has_flag(\"JasonRt\") or Story.has_flag(\"JasonNaomiEvent\") or Story.has_flag(\"JasonPaigeEvent\"):
+	do advance_time(0, 4)
+	Mabel: img: jason/7
+	Mabel: Your friend arrived btw!
+	Player: Oh! Was just talking to Caleb
+	Player: Coming
+do advance_time(0, 16)
+if Story.has_flag(\"CalebRt\"):
+	Player: img: mabel/168
+	Player: 😂???
+	Mabel: Forget you saw anything 😭
+	Mabel: Thought: I lost a bet ugh
+else:
+	Mabel: Look behind you 🤭
+	Player: 👀
+	Player: 😆
+	Player: img: mabel/169
+	Mabel: 👋😊
+if Story.has_flag(\"JasonRt\"):
+	Player: img: jason/8
+	Mabel: So many pics 😵‍💫
+	Mabel: I'll look at them later but keep sending 😊
+	Mabel: I wanna store them in an album later hehe
+do advance_time(0, 28)
+Mabel: Uhm.. babe?
+Player: Yeah?
+if Story.has_flag(\"JasonNaomiEvent\"):
+	Mabel: img: naomi/33
+	Mabel: 😱😱😱
+	Mabel: Caleb is okay with it??
+	Player: I think so, he's still here 😄
+	Mabel: 😣
+	Mabel: Would you..?
+	Mabel: Thought: Would babe let me do something like that?
+	Mabel: Thought: Not that I'd want to ever do that!!
+	Mabel: Nevermind!!
+if Story.has_flag(\"JasonPaigeEvent\"):
+	Mabel: img: paige/14
+	Mabel: 😱😱😱
+	Player: I was right huh 🤣
+	Mabel: Is it that easy for a girl to just...
+	Mabel: Nevermind actually
+do advance_time(0, 14)
+Mabel: Omg they're gonna start the dumb games 😭
+Player: Good luck babe 😘
+Mabel: What does being lucky even mean 🥹
+do advance_time(0, 5)
+do echo_set([\"170\"])
+do heart(1)
+Player: It's your turn 😆
+Mabel: Uhm.. okay, I just needed the bathroom 😣
+Player: Come out or Naomi is gonna drag you out
+Mabel: 😱
+Mabel: Is she really??
+Player: Nah I'm just teasing you 😘
+Mabel: Naomi would never do that silly 😒
+Mabel: But you're totally right, I don't wanna hold everyone up cause I'm a big scaredy cat
+Mabel: Thought: You can do it Mabel, stop being a total chicken
+Mabel: Thought: It's just a dumb kiss...
+do echo_clear()
+do advance_time(0, 8)
+do heart(0)
+Mabel: It's so dark in here omg
+Player: No using your phone 😂
+Mabel: Omg... fiiine
+do heart(1)
+Mabel: Thought: Wha?
+Mabel: Thought: Who's there??
+Mabel: Thought: He's way too close
+if Story.has_flag(\"CalebRt\"):
+	Mabel: Thought: Uhm okay..
+	Mabel: Thought: Where are your lips
+	Mabel: Thought: Hurry up so I can get out omg
+	Mabel: Thought: I hate this tension
+	do echo_set([\"171\"])
+	Mabel: Thought: Oh, I found his chin I think
+	Mabel: Thought: This is so silly omg
+	Mabel: Thought: But his hand is soft and a little shaky... is he just as nervous??
+	Mabel: Thought: I wonder wh-
+	- [continue]
+	do echo_clear()
+	do heart(3)
+	Mabel: sfx: lick1: *mmmf*
+	do echo_set([\"172\"])
+	do Story.mabel_kissed(\"Caleb\")
+	Mabel: sfx: kiss7: *smooch*
+	Mabel: PinkThought: I can't
+	Mabel: PinkThought: Is it cause its dark? I can feel everything
+	Mabel: PinkThought: I can feel our lips pressed together
+	if Story.mabel_first_kiss == \"Player\":
+		Mabel: sfx: kiss4: *mmwah*
+		Mabel: PinkThought: This is... totally different from how babe did it
+		Mabel: sfx: kiss5: *smooch*
+		Mabel: sfx: kiss2: *mmch*
+		Mabel: PinkThought: Babes lips were a bit more rough
+		Mabel: PinkThought: His are a bit softer
+		Mabel: PinkThought: Why am I thinking that
+	- [continue]
+	Mabel: sfx: lick2: *mmmh*
+	Mabel: sfx: kiss2: *mwch*
+	Mabel: PinkThought: He's leading me on, I can't even stop
+	Mabel: PinkThought: Why can't I stop... Why can't I push him away
+	Mabel: PinkThought: I... I'm pulling him instead
+	- [continue]
+	Mabel: sfx: lick9: *mmh*
+	Mabel: sfx: kiss12: *mlch*
+	Mabel: PinkThought: Ugh, why does my body feel so hot
+	Mabel: PinkThought: Where am I sweating from?
+	Mabel: PinkThought: Everywhere? Even... from there..
+	Mabel: sfx: kiss11: *mmh*
+	Mabel: sfx: kiss2: *mlch*
+if Story.has_flag(\"JasonRt\"):
+	Mabel: Thought: Eep, my waist
+	Mabel: Thought: And my neck??
+	Mabel: sfx: cutemoanm17: Hold on a minu-
+	Mabel: Thought: He's making me step back.. I can't see the wall
+	Mabel: Thought: Ahh there it is..
+	Mabel: sfx: cutemoanm18: AH-
+	- [continue]
+	Mabel: Thought: The wall is so cold
+	Mabel: PinkThought: He's pressing against me gently
+	Mabel: PinkThought: This is SO embarassing
+	Mabel: PinkThought: I'm so glad I can't see my boobs right now
+	Mabel: PinkThought: They feel so hard..
+	do echo_set([\"173\"])
+	Mabel: sfx: none: Hold on a minu-
+	do Story.mabel_kissed(\"Jason\")
+	do heart(3)
+	Mabel: sfx: lick3: *mmmf*
+	- [continue]
+	Mabel: PinkThought: Ack... I can't even breathe
+	Mabel: PinkThought: He's all over me
+	Mabel: sfx: lick2: *lick*
+	Mabel: PinkThought: Is he licking my lips..
+	Mabel: PinkThought: I can't tell...
+	Mabel: PinkThought: It's so overwhelming
+	if Story.mabel_first_kiss == \"Player\":
+		Mabel: sfx: kiss13: *lick*
+		Mabel: PinkThought: This is... totally different from how babe did it
+		Mabel: PinkThought: It's so aggressive but...
+		Mabel: PinkThought: When he stops it's...
+		Mabel: sfx: kiss5: *mch*
+		Mabel: PinkThought: Can't even focus...
+	- [continue]
+	Mabel: sfx: kiss8: *smack*
+	Mabel: sfx: kiss5: *smooch*
+	Mabel: PinkThought: What is this feeling?? It's like I'm being eaten up...
+	Mabel: PinkThought: I can taste something strong
+	Mabel: sfx: lick4: *lick*
+	Mabel: PinkThought: Is that... beer?
+	Mabel: PinkThought: It's probably something stronger
+	Mabel: sfx: kiss3: *mmch*
+	Mabel: sfx: kiss9: *chu*
+	Mabel: PinkThought: Ah, it's...
+	Mabel: PinkThought: It's getting in my mouth and it stings
+	- [continue]
+	Mabel: sfx: kiss13: *smack*
+	Mabel: PinkThought: I
+	Mabel: sfx: kiss14: *smackk*
+	Mabel: PinkThought: Can't even
+	Mabel: sfx: kiss15: *smackkk*
+	Mabel: PinkThought: Think straight
+Mabel: Thought: Is it just me or is it getting even darker?
+Mabel: Thought: That can't be right...
+Mabel: Thought: Zzz..
+do echo_clear()
+Mabel: sfx: none: *THUD*
+do heart(0)
+do advance_time(1, 0)
+do Story.mabel_kissed(\"Player\")
+Player: How are you feeling?
+Mabel: I told you I'm fine babe 😊
+Mabel: I was just a little dehydrated is all
+Mabel: Thought: Nervousness overload again
+Player: You did drink a lot of water when you woke up
+Player: But still I'm a little worried
+Mabel: You don't need to worry at all silly
+Mabel: I was happy when I woke up on your lap 🥰
+Player: img: mabel/174
+Player: You slept so well, you even snored
+Mabel: Am I gonna embarrass myself 24/7 😑
+Mabel: Y'know what, I don't even care hehe 😚
+Mabel: Thought: The perfect face to wake up to hehe
+Mabel: I was in heaven
+Player: Don't joke about heaven silly, you're gonna stay with me
+Mabel: Can't help it ☺️
+Mabel: And uhm... I couldn't stop myself from kissing you then and there too
+Mabel: Sorry if it was a little abrupt 🤭
+if Story.mabel_get_kiss_times() == 2:
+	Mabel: PinkThought: I just had to make sure we kissed
+Player: I didn't mind haha 🥰
+Mabel: Sure? You looked so red and cute
+Player: Of course not, I was totally ready for it 😌
+Mabel: Suuure 😘
+Mabel: I just went for it without thinking hehe, nervousness later!
+Mabel: Did your bus arrive yet?
+Mabel: You stayed for so long, I thought you were going to miss the last bus omg
+Player: It's almost here
+Player: What about you?
+Mabel: I'm helping pack up some of the party stuff but I'll go home after
+Player: Don't push yourself too hard!
+Mabel: You and her both say the same stuff 😂
+Mabel: I won't babe, and we're almost done! 🩷
+Mabel: Everyone is already leaving
+Mabel: Naomi said someone should walk me home just in case
+Player: That's a good idea!
+Player: I would do it myself
+Mabel: Don't worry at all!!
+Mabel: I'll be fine
+Mabel: Your girl is strong!
+Player: Haha, let me know if you need anything
+Mabel: I'll message you once I get home and clear my head!
+Mabel: I'm gonna relax here a bit more hehe
+Player: Take care then!
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

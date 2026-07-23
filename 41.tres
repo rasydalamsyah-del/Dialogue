@@ -1,0 +1,752 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_setcy"]
+
+[resource]
+script = ExtResource("1_setcy")
+using_states = PackedStringArray()
+titles = {
+"start": "2"
+}
+character_names = PackedStringArray("Nina", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "2",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"10": {
+&"character": "Nina",
+&"id": "10",
+&"next_id": "11",
+&"text": "You actually have a death wish huh",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Nina",
+&"id": "11",
+&"next_id": "12",
+&"text": "You seriously don't know who you're fucking with",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Nina",
+&"id": "12",
+&"next_id": "13",
+&"text": "Even told Jess hell no",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Nina",
+&"id": "13",
+&"next_id": "14",
+&"text": "And she STILL hit me with that \"rules are rules\" crap 🙄",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Nina",
+&"id": "14",
+&"next_id": "15",
+&"text": "So now I'm stuck blowing my fucking Saturday on you",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Player",
+&"id": "15",
+&"next_id": "16",
+&"text": "So is that a no?",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Nina",
+&"id": "16",
+&"next_id": "17",
+&"text": "Ha. Wish it was, bucko",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Nina",
+&"id": "17",
+&"next_id": "18",
+&"text": "And you didn't even hesitate",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Nina",
+&"id": "18",
+&"next_id": "19",
+&"text": "You just blurted it out like a damn puppy 🖕",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Nina",
+&"id": "19",
+&"next_id": "20",
+&"text": "Congrats. You bought yourself a whole Saturday of me",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "3",
+&"type": "mutation"
+},
+"20": {
+&"character": "Nina",
+&"id": "20",
+&"next_id": "21",
+&"text": "img: nina/19",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Nina",
+&"id": "21",
+&"next_id": "22",
+&"text": "You'll pay the price",
+&"type": "dialogue"
+},
+"22": {
+&"id": "22",
+&"next_id": "23",
+&"responses": PackedStringArray("22", "29"),
+&"tags": PackedStringArray("blackheart"),
+&"text": "Feeling shy?",
+&"type": "response"
+},
+"23": {
+&"id": "23",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "black_heart"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "24",
+&"type": "mutation"
+},
+"24": {
+&"character": "Player",
+&"id": "24",
+&"next_id": "25",
+&"text": "Feeling shy?",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Nina",
+&"id": "25",
+&"next_id": "26",
+&"text": "HAH, not in your wildest dreams punk",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Nina",
+&"id": "26",
+&"next_id": "27",
+&"text": "img: nina/20",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Nina",
+&"id": "27",
+&"next_id": "28",
+&"text": "I don't give a fuck",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Nina",
+&"id": "28",
+&"next_id": "32",
+&"text": "Think of it as pity since you'll never get your grimy little fingers on anything",
+&"type": "dialogue"
+},
+"29": {
+&"id": "29",
+&"next_id": "30",
+&"text": "That was rude",
+&"type": "response"
+},
+"3": {
+&"character": "Nina",
+&"id": "3",
+&"next_id": "4",
+&"notes": "8:27pm",
+&"text": "You've gotta be the dumbest cub in that whole frat",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Player",
+&"id": "30",
+&"next_id": "31",
+&"text": "That was rude",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Nina",
+&"id": "31",
+&"next_id": "32",
+&"text": "Well get used to it punk",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Nina",
+&"id": "32",
+&"next_id": "33",
+&"text": "Besides",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Nina",
+&"id": "33",
+&"next_id": "34",
+&"text": "Let's not pretend I don't know exactly who you are",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Nina",
+&"id": "34",
+&"next_id": "35",
+&"text": "You think Maple's your little house pet",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Nina",
+&"id": "35",
+&"next_id": "36",
+&"text": "The one with a girlfriend, sniffing around MY skirt?",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Nina",
+&"id": "36",
+&"next_id": "37",
+&"text": "Does she even know how much of a sleazebag you are?",
+&"type": "dialogue"
+},
+"37": {
+&"id": "37",
+&"next_id": "38",
+&"responses": PackedStringArray("37", "41"),
+&"text": "I'm just following the rules",
+&"type": "response"
+},
+"38": {
+&"character": "Player",
+&"id": "38",
+&"next_id": "39",
+&"text": "I'm just following the rules",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Player",
+&"id": "39",
+&"next_id": "40",
+&"text": "Same as you",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Nina",
+&"id": "4",
+&"next_id": "5",
+&"text": "You actually named my ass for your weird date",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Nina",
+&"id": "40",
+&"next_id": "45",
+&"text": "Don't fucking use that as your shield",
+&"type": "dialogue"
+},
+"41": {
+&"id": "41",
+&"next_id": "42",
+&"text": "It's not like that",
+&"type": "response"
+},
+"42": {
+&"character": "Player",
+&"id": "42",
+&"next_id": "43",
+&"text": "It's not like that",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Nina",
+&"id": "43",
+&"next_id": "44",
+&"text": "It's never \"like that\"",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Nina",
+&"id": "44",
+&"next_id": "45",
+&"text": "You'll say that right up until the end and it'll never work",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Nina",
+&"id": "45",
+&"next_id": "46",
+&"text": "I know your type",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Nina",
+&"id": "46",
+&"next_id": "47",
+&"text": "Seriously remind me of someone I knew",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Nina",
+&"id": "47",
+&"next_id": "48",
+&"text": "But you're all the fucking same",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Player",
+&"id": "48",
+&"next_id": "49",
+&"text": "I guess you have your mind made up about me",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Nina",
+&"id": "49",
+&"next_id": "50",
+&"text": "Pfft",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Nina",
+&"id": "5",
+&"next_id": "6",
+&"text": "The one bitch in the house who can't stand the sight of you",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Nina",
+&"id": "50",
+&"next_id": "51",
+&"text": "You know what's annoying about you?",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Player",
+&"id": "51",
+&"next_id": "52",
+&"text": "?",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Nina",
+&"id": "52",
+&"next_id": "53",
+&"text": "Most of the new cubs freeze up and drool when I so much as look at them",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Nina",
+&"id": "53",
+&"next_id": "54",
+&"text": "You talk back like you're worth shit",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Nina",
+&"id": "54",
+&"next_id": "55",
+&"text": "You really stand out in the worst way possible",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Nina",
+&"id": "55",
+&"next_id": "56",
+&"text": "It's less boring but don't let it go to your head",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Player",
+&"id": "56",
+&"next_id": "57",
+&"text": "Wouldn't dream of it",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Nina",
+&"id": "57",
+&"next_id": "58",
+&"text": "Good",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Player",
+&"id": "58",
+&"next_id": "59",
+&"text": "Strong feelings but we should probably plan our date",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Nina",
+&"id": "59",
+&"next_id": "60",
+&"text": "Fuck it. Saturday",
+&"type": "dialogue"
+},
+"6": {
+&"id": "6",
+&"next_id": "7",
+&"responses": PackedStringArray("6", "8"),
+&"text": "I did",
+&"type": "response"
+},
+"60": {
+&"character": "Nina",
+&"id": "60",
+&"next_id": "61",
+&"text": "We do this MY way or we don't do it at all",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Nina",
+&"id": "61",
+&"next_id": "62",
+&"text": "I pick the place, I pick the time, you show up and you shut up",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Player",
+&"id": "62",
+&"next_id": "63",
+&"text": "And if I don't?",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Nina",
+&"id": "63",
+&"next_id": "64",
+&"text": "Then you waste a free night AND piss me off",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Nina",
+&"id": "64",
+&"next_id": "65",
+&"text": "Your call, genius",
+&"type": "dialogue"
+},
+"65": {
+&"id": "65",
+&"next_id": "66",
+&"responses": PackedStringArray("65", "68"),
+&"text": "Fine, your rules",
+&"type": "response"
+},
+"66": {
+&"character": "Player",
+&"id": "66",
+&"next_id": "67",
+&"text": "Fine. Your rules",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Nina",
+&"id": "67",
+&"next_id": "74",
+&"text": "So you CAN learn",
+&"type": "dialogue"
+},
+"68": {
+&"id": "68",
+&"next_id": "69",
+&"tags": PackedStringArray("blackheart"),
+&"text": "I think I can handle you",
+&"type": "response"
+},
+"69": {
+&"id": "69",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "black_heart"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "70",
+&"type": "mutation"
+},
+"7": {
+&"character": "Player",
+&"id": "7",
+&"next_id": "10",
+&"text": "I did",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Player",
+&"id": "70",
+&"next_id": "71",
+&"text": "I think I can handle you",
+&"type": "dialogue"
+},
+"71": {
+&"character": "Nina",
+&"id": "71",
+&"next_id": "72",
+&"text": "HAH",
+&"type": "dialogue"
+},
+"72": {
+&"character": "Nina",
+&"id": "72",
+&"next_id": "73",
+&"text": "Oh that's adorable",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Nina",
+&"id": "73",
+&"next_id": "74",
+&"text": "You have no idea what you just signed up for",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Nina",
+&"id": "74",
+&"next_id": "75",
+&"text": "I'll send you the details later",
+&"type": "dialogue"
+},
+"75": {
+&"character": "Nina",
+&"id": "75",
+&"next_id": "76",
+&"text": "Do yourself a favor",
+&"type": "dialogue"
+},
+"76": {
+&"character": "Nina",
+&"id": "76",
+&"next_id": "77",
+&"text": "Keep an eye on that girl you call yours this week heh",
+&"type": "dialogue"
+},
+"77": {
+&"character": "Player",
+&"id": "77",
+&"next_id": "78",
+&"text": "You're just trying to get in my head",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Nina",
+&"id": "78",
+&"next_id": "79",
+&"text": "Trying?",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Nina",
+&"id": "79",
+&"next_id": "80",
+&"text": "I'm already in there, loser 🖕",
+&"type": "dialogue"
+},
+"8": {
+&"id": "8",
+&"next_id": "9",
+&"text": "😝",
+&"type": "response"
+},
+"80": {
+&"character": "Player",
+&"id": "80",
+&"next_id": "81",
+&"text": "Well, good night!",
+&"type": "dialogue"
+},
+"81": {
+&"character": "Nina",
+&"id": "81",
+&"next_id": "82",
+&"text": "img: nina/21",
+&"type": "dialogue"
+},
+"82": {
+&"character": "Nina",
+&"id": "82",
+&"next_id": "83",
+&"text": "Ugh just. fuck. off.",
+&"type": "dialogue"
+},
+"83": {
+&"id": "83",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"84": {
+&"id": "84",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"9": {
+&"character": "Player",
+&"id": "9",
+&"next_id": "10",
+&"text": "😝",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+##8:27pm
+do Story.set_location(\"mabels_room\")
+Nina: You've gotta be the dumbest cub in that whole frat
+Nina: You actually named my ass for your weird date
+Nina: The one bitch in the house who can't stand the sight of you
+- I did
+	Player: I did
+- 😝
+	Player: 😝
+Nina: You actually have a death wish huh
+Nina: You seriously don't know who you're fucking with
+Nina: Even told Jess hell no
+Nina: And she STILL hit me with that \"rules are rules\" crap 🙄
+Nina: So now I'm stuck blowing my fucking Saturday on you
+Player: So is that a no?
+Nina: Ha. Wish it was, bucko
+Nina: And you didn't even hesitate
+Nina: You just blurted it out like a damn puppy 🖕
+Nina: Congrats. You bought yourself a whole Saturday of me
+Nina: img: nina/19
+Nina: You'll pay the price
+- Feeling shy? [#blackheart]
+	set Story.black_heart += 1
+	Player: Feeling shy?
+	Nina: HAH, not in your wildest dreams punk
+	Nina: img: nina/20
+	Nina: I don't give a fuck
+	Nina: Think of it as pity since you'll never get your grimy little fingers on anything
+- That was rude
+	Player: That was rude
+	Nina: Well get used to it punk
+Nina: Besides
+Nina: Let's not pretend I don't know exactly who you are
+Nina: You think Maple's your little house pet
+Nina: The one with a girlfriend, sniffing around MY skirt?
+Nina: Does she even know how much of a sleazebag you are?
+- I'm just following the rules
+	Player: I'm just following the rules
+	Player: Same as you
+	Nina: Don't fucking use that as your shield
+- It's not like that
+	Player: It's not like that
+	Nina: It's never \"like that\"
+	Nina: You'll say that right up until the end and it'll never work
+Nina: I know your type
+Nina: Seriously remind me of someone I knew
+Nina: But you're all the fucking same
+Player: I guess you have your mind made up about me
+Nina: Pfft
+Nina: You know what's annoying about you?
+Player: ?
+Nina: Most of the new cubs freeze up and drool when I so much as look at them
+Nina: You talk back like you're worth shit
+Nina: You really stand out in the worst way possible
+Nina: It's less boring but don't let it go to your head
+Player: Wouldn't dream of it
+Nina: Good
+Player: Strong feelings but we should probably plan our date
+Nina: Fuck it. Saturday
+Nina: We do this MY way or we don't do it at all
+Nina: I pick the place, I pick the time, you show up and you shut up
+Player: And if I don't?
+Nina: Then you waste a free night AND piss me off
+Nina: Your call, genius
+- Fine, your rules
+	Player: Fine. Your rules
+	Nina: So you CAN learn
+- I think I can handle you [#blackheart]
+	set Story.black_heart += 1
+	Player: I think I can handle you
+	Nina: HAH
+	Nina: Oh that's adorable
+	Nina: You have no idea what you just signed up for
+Nina: I'll send you the details later
+Nina: Do yourself a favor
+Nina: Keep an eye on that girl you call yours this week heh
+Player: You're just trying to get in my head
+Nina: Trying?
+Nina: I'm already in there, loser 🖕
+Player: Well, good night!
+Nina: img: nina/21
+Nina: Ugh just. fuck. off.
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

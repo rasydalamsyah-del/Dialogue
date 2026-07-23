@@ -1,0 +1,2348 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_053pg"]
+
+[resource]
+script = ExtResource("1_053pg")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Mabel", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Mabel",
+&"id": "10",
+&"next_id": "11",
+&"text": "World's greatest spy has reached the dorm room",
+&"type": "dialogue"
+},
+"100": {
+&"character": "Player",
+&"id": "100",
+&"next_id": "101",
+&"text": "I hope so too!",
+&"type": "dialogue"
+},
+"101": {
+&"character": "Mabel",
+&"id": "101",
+&"next_id": "102",
+&"text": "I have to start unpacking all these boxes omg",
+&"type": "dialogue"
+},
+"102": {
+&"character": "Mabel",
+&"id": "102",
+&"next_id": "103",
+&"text": "Mom packed SO much stuff",
+&"type": "dialogue"
+},
+"103": {
+&"character": "Player",
+&"id": "103",
+&"next_id": "104",
+&"text": "Like what?",
+&"type": "dialogue"
+},
+"104": {
+&"character": "Mabel",
+&"id": "104",
+&"next_id": "105",
+&"text": "Okay so",
+&"type": "dialogue"
+},
+"105": {
+&"character": "Mabel",
+&"id": "105",
+&"next_id": "106",
+&"text": "She packed Mr Buttons",
+&"type": "dialogue"
+},
+"106": {
+&"character": "Player",
+&"id": "106",
+&"next_id": "107",
+&"text": "The bear?",
+&"type": "dialogue"
+},
+"107": {
+&"character": "Mabel",
+&"id": "107",
+&"next_id": "108",
+&"text": "YES the bear",
+&"type": "dialogue"
+},
+"108": {
+&"character": "Mabel",
+&"id": "108",
+&"next_id": "109",
+&"text": "He's been with me since I was like 5",
+&"type": "dialogue"
+},
+"109": {
+&"character": "Mabel",
+&"id": "109",
+&"next_id": "110",
+&"text": "I can't sleep without him okay!!",
+&"type": "dialogue"
+},
+"11": {
+&"id": "11",
+&"next_id": "12",
+&"responses": PackedStringArray("11", "19"),
+&"tags": PackedStringArray("trust"),
+&"text": "[Play Along]",
+&"type": "response"
+},
+"110": {
+&"character": "Mabel",
+&"id": "110",
+&"next_id": "111",
+&"text": "Don't judge me plss 🥹",
+&"type": "dialogue"
+},
+"111": {
+&"character": "Player",
+&"id": "111",
+&"next_id": "112",
+&"text": "😂 I didn't even say anything",
+&"type": "dialogue"
+},
+"112": {
+&"character": "Mabel",
+&"id": "112",
+&"next_id": "113",
+&"text": "Good 😇",
+&"type": "dialogue"
+},
+"113": {
+&"character": "Mabel",
+&"id": "113",
+&"next_id": "114",
+&"text": "She also packed my lucky blanket",
+&"type": "dialogue"
+},
+"114": {
+&"character": "Mabel",
+&"id": "114",
+&"next_id": "115",
+&"text": "And like 50 photos",
+&"type": "dialogue"
+},
+"115": {
+&"character": "Mabel",
+&"id": "115",
+&"next_id": "116",
+&"text": "And a whole box of snacks \"in case the cafeteria food is bad\"",
+&"type": "dialogue"
+},
+"116": {
+&"character": "Player",
+&"id": "116",
+&"next_id": "117",
+&"text": "That's a lot of stuff!",
+&"type": "dialogue"
+},
+"117": {
+&"character": "Player",
+&"id": "117",
+&"next_id": "118",
+&"text": "You gonna have room for all that?",
+&"type": "dialogue"
+},
+"118": {
+&"character": "Mabel",
+&"id": "118",
+&"next_id": "119",
+&"text": "I'll make it work!",
+&"type": "dialogue"
+},
+"119": {
+&"character": "Player",
+&"id": "119",
+&"next_id": "120",
+&"text": "Your mom is precious",
+&"type": "dialogue"
+},
+"12": {
+&"id": "12",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "13",
+&"type": "mutation"
+},
+"120": {
+&"character": "Mabel",
+&"id": "120",
+&"next_id": "121",
+&"text": "She really is 🥹",
+&"type": "dialogue"
+},
+"121": {
+&"character": "Mabel",
+&"id": "121",
+&"next_id": "122",
+&"text": "Thought: I miss her already",
+&"type": "dialogue"
+},
+"122": {
+&"character": "Player",
+&"id": "122",
+&"next_id": "123",
+&"text": "How's the new phone?",
+&"type": "dialogue"
+},
+"123": {
+&"character": "Mabel",
+&"id": "123",
+&"next_id": "124",
+&"text": "Omg SOOO helpful!!",
+&"type": "dialogue"
+},
+"124": {
+&"character": "Mabel",
+&"id": "124",
+&"next_id": "125",
+&"text": "I was able to sort out stuff on my calendar like a todo list",
+&"type": "dialogue"
+},
+"125": {
+&"character": "Mabel",
+&"id": "125",
+&"next_id": "126",
+&"text": "I love Social Scene too",
+&"type": "dialogue"
+},
+"126": {
+&"character": "Mabel",
+&"id": "126",
+&"next_id": "127",
+&"text": "I get to see what mom and kitty are up to!",
+&"type": "dialogue"
+},
+"127": {
+&"character": "Mabel",
+&"id": "127",
+&"next_id": "128",
+&"text": "Thank you so much ❤️ I love it",
+&"type": "dialogue"
+},
+"128": {
+&"character": "Player",
+&"id": "128",
+&"next_id": "129",
+&"text": "I'm glad! 😊",
+&"type": "dialogue"
+},
+"129": {
+&"character": "Player",
+&"id": "129",
+&"next_id": "130",
+&"text": "I got one for me too",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Player",
+&"id": "13",
+&"next_id": "14",
+&"text": "Mabel007, this is HQ",
+&"type": "dialogue"
+},
+"130": {
+&"character": "Mabel",
+&"id": "130",
+&"next_id": "131",
+&"text": "It must have cost you a lot 😭",
+&"type": "dialogue"
+},
+"131": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 36,
+&"type": &"variable",
+&"value": "PhoneUnlocks"
+}, {
+&"i": 48,
+&"type": &"dot"
+}, {
+&"function": "is_claimed",
+&"i": 49,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 60,
+&"type": &"string",
+&"value": "Day1Money"
+}, {
+&"i": 71,
+&"type": &"parens_close"
+}])])
+}, {
+&"i": 73,
+&"type": &"comparison",
+&"value": "=="
+}, {
+&"i": 76,
+&"type": &"variable",
+&"value": "false"
+}])
+},
+&"condition_as_text": "PhoneUnlocks.is_claimed(\"Day1Money\") == false",
+&"id": "131",
+&"next_id": "132",
+&"responses": PackedStringArray("131", "136", "140"),
+&"tags": PackedStringArray("dollar"),
+&"text": "It was really nothing",
+&"type": "response"
+},
+"132": {
+&"id": "132",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "PhoneUnlocks"
+}, {
+&"i": 16,
+&"type": &"dot"
+}, {
+&"i": 17,
+&"type": &"variable",
+&"value": "claim"
+}, {
+&"i": 23,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 25,
+&"type": &"string",
+&"value": "Day1Money"
+}]),
+&"is_blocking": true
+},
+&"next_id": "133",
+&"type": "mutation"
+},
+"133": {
+&"character": "Player",
+&"id": "133",
+&"next_id": "134",
+&"text": "It was really nothing",
+&"type": "dialogue"
+},
+"134": {
+&"character": "Player",
+&"id": "134",
+&"next_id": "135",
+&"text": "I have some to spare",
+&"type": "dialogue"
+},
+"135": {
+&"character": "Mabel",
+&"id": "135",
+&"next_id": "143",
+&"text": "Glad to hear that buuut",
+&"type": "dialogue"
+},
+"136": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 26,
+&"type": &"variable",
+&"value": "PhoneUnlocks"
+}, {
+&"i": 38,
+&"type": &"dot"
+}, {
+&"function": "is_claimed",
+&"i": 39,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 50,
+&"type": &"string",
+&"value": "Day1Money"
+}, {
+&"i": 61,
+&"type": &"parens_close"
+}])])
+}, {
+&"i": 63,
+&"type": &"comparison",
+&"value": "=="
+}, {
+&"i": 66,
+&"type": &"variable",
+&"value": "true"
+}])
+},
+&"condition_as_text": "PhoneUnlocks.is_claimed(\"Day1Money\") == true",
+&"id": "136",
+&"next_id": "137",
+&"text": "It was really nothing",
+&"type": "response"
+},
+"137": {
+&"character": "Player",
+&"id": "137",
+&"next_id": "138",
+&"text": "It was really nothing",
+&"type": "dialogue"
+},
+"138": {
+&"character": "Player",
+&"id": "138",
+&"next_id": "139",
+&"text": "I have some to spare",
+&"type": "dialogue"
+},
+"139": {
+&"character": "Mabel",
+&"id": "139",
+&"next_id": "143",
+&"text": "Glad to hear that buuut",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Player",
+&"id": "14",
+&"next_id": "15",
+&"text": "What's your status? Over.",
+&"type": "dialogue"
+},
+"140": {
+&"id": "140",
+&"next_id": "141",
+&"text": "They weren't cheap for sure",
+&"type": "response"
+},
+"141": {
+&"character": "Player",
+&"id": "141",
+&"next_id": "142",
+&"text": "They weren't cheap for sure",
+&"type": "dialogue"
+},
+"142": {
+&"character": "Player",
+&"id": "142",
+&"next_id": "143",
+&"text": "It was worth it",
+&"type": "dialogue"
+},
+"143": {
+&"character": "Mabel",
+&"id": "143",
+&"next_id": "144",
+&"text": "I feel like I should pay you back for this somehow",
+&"type": "dialogue"
+},
+"144": {
+&"character": "Mabel",
+&"id": "144",
+&"next_id": "145",
+&"text": "Is there anything I can do 🥰",
+&"type": "dialogue"
+},
+"145": {
+&"character": "Player",
+&"id": "145",
+&"next_id": "146",
+&"text": "There is one thing",
+&"type": "dialogue"
+},
+"146": {
+&"character": "Player",
+&"id": "146",
+&"next_id": "147",
+&"text": "My gallery is empty and sad",
+&"type": "dialogue"
+},
+"147": {
+&"character": "Mabel",
+&"id": "147",
+&"next_id": "148",
+&"text": "You want a picture?",
+&"type": "dialogue"
+},
+"148": {
+&"character": "Mabel",
+&"id": "148",
+&"next_id": "149",
+&"text": "I'm still no good at those",
+&"type": "dialogue"
+},
+"149": {
+&"character": "Mabel",
+&"id": "149",
+&"next_id": "150",
+&"text": "Thought: Pictures make me self conscious too",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Mabel",
+&"id": "15",
+&"next_id": "16",
+&"text": "😂",
+&"type": "dialogue"
+},
+"150": {
+&"character": "Mabel",
+&"id": "150",
+&"next_id": "151",
+&"text": "Okay, I can do that I think",
+&"type": "dialogue"
+},
+"151": {
+&"character": "Mabel",
+&"id": "151",
+&"next_id": "152",
+&"text": "Let me fix my hair first",
+&"type": "dialogue"
+},
+"152": {
+&"character": "Player",
+&"id": "152",
+&"next_id": "153",
+&"text": "Take your time",
+&"type": "dialogue"
+},
+"153": {
+&"character": "Mabel",
+&"id": "153",
+&"next_id": "154",
+&"text": "It's really messy from the long trip lol",
+&"type": "dialogue"
+},
+"154": {
+&"character": "Mabel",
+&"id": "154",
+&"next_id": "155",
+&"text": "Okay done",
+&"type": "dialogue"
+},
+"155": {
+&"character": "Mabel",
+&"id": "155",
+&"next_id": "156",
+&"text": "img: mabel/3",
+&"type": "dialogue"
+},
+"156": {
+&"character": "Mabel",
+&"id": "156",
+&"next_id": "157",
+&"text": "I look tired don't I? 🙃",
+&"type": "dialogue"
+},
+"157": {
+&"character": "Mabel",
+&"id": "157",
+&"next_id": "158",
+&"text": "The drive was seriously long, I fell asleep on the way",
+&"type": "dialogue"
+},
+"158": {
+&"character": "Mabel",
+&"id": "158",
+&"next_id": "159",
+&"text": "Thought: So far away from home",
+&"type": "dialogue"
+},
+"159": {
+&"id": "159",
+&"next_id": "160",
+&"responses": PackedStringArray("159", "164", "171"),
+&"text": "CUTE",
+&"type": "response"
+},
+"16": {
+&"character": "Mabel",
+&"id": "16",
+&"next_id": "17",
+&"text": "HQ this is agent Mabel007",
+&"type": "dialogue"
+},
+"160": {
+&"character": "Player",
+&"id": "160",
+&"next_id": "161",
+&"text": "CUTE",
+&"type": "dialogue"
+},
+"161": {
+&"character": "Mabel",
+&"id": "161",
+&"next_id": "162",
+&"text": "🥺",
+&"type": "dialogue"
+},
+"162": {
+&"character": "Mabel",
+&"id": "162",
+&"next_id": "163",
+&"text": "Thanks ❤️",
+&"type": "dialogue"
+},
+"163": {
+&"character": "Mabel",
+&"id": "163",
+&"next_id": "180",
+&"text": "Thought: I had to fix my hair hehe",
+&"type": "dialogue"
+},
+"164": {
+&"id": "164",
+&"next_id": "165",
+&"text": "You do look a little tired",
+&"type": "response"
+},
+"165": {
+&"id": "165",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "Day1Picture"
+}]),
+&"is_blocking": true
+},
+&"next_id": "166",
+&"type": "mutation"
+},
+"166": {
+&"character": "Player",
+&"id": "166",
+&"next_id": "167",
+&"text": "You do look a little tired",
+&"type": "dialogue"
+},
+"167": {
+&"character": "Player",
+&"id": "167",
+&"next_id": "168",
+&"text": "Make sure you get some good sleep tonight",
+&"type": "dialogue"
+},
+"168": {
+&"character": "Mabel",
+&"id": "168",
+&"next_id": "169",
+&"text": "I do need it 😊",
+&"type": "dialogue"
+},
+"169": {
+&"character": "Mabel",
+&"id": "169",
+&"next_id": "170",
+&"text": "I'll take a better one for you later, promise",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Mabel",
+&"id": "17",
+&"next_id": "18",
+&"text": "The eagle has landed, I repeat, the eagle has landed",
+&"type": "dialogue"
+},
+"170": {
+&"character": "Player",
+&"id": "170",
+&"next_id": "180",
+&"text": "Can't wait!",
+&"type": "dialogue"
+},
+"171": {
+&"id": "171",
+&"next_id": "172",
+&"text": "What are those boxes behind you",
+&"type": "response"
+},
+"172": {
+&"id": "172",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "BoxInvestigation"
+}]),
+&"is_blocking": true
+},
+&"next_id": "173",
+&"type": "mutation"
+},
+"173": {
+&"character": "Player",
+&"id": "173",
+&"next_id": "174",
+&"text": "What's that behind you btw?",
+&"type": "dialogue"
+},
+"174": {
+&"character": "Mabel",
+&"id": "174",
+&"next_id": "175",
+&"text": "Oh the boxes?",
+&"type": "dialogue"
+},
+"175": {
+&"character": "Mabel",
+&"id": "175",
+&"next_id": "176",
+&"text": "They're my stuff I still need to unpack but one of them is FREE STUFF apparently! 🥳",
+&"type": "dialogue"
+},
+"176": {
+&"character": "Mabel",
+&"id": "176",
+&"next_id": "177",
+&"text": "The last girl who lived here left them behind",
+&"type": "dialogue"
+},
+"177": {
+&"character": "Player",
+&"id": "177",
+&"next_id": "178",
+&"text": "Score!?",
+&"type": "dialogue"
+},
+"178": {
+&"character": "Mabel",
+&"id": "178",
+&"next_id": "179",
+&"text": "Right?? I have so much to unpack though so",
+&"type": "dialogue"
+},
+"179": {
+&"character": "Mabel",
+&"id": "179",
+&"next_id": "180",
+&"text": "I'll investigate later",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Mabel",
+&"id": "18",
+&"next_id": "29",
+&"text": "Thought: People would think we're lame but I don't mind being lame when it's with you",
+&"type": "dialogue"
+},
+"180": {
+&"character": "Mabel",
+&"id": "180",
+&"next_id": "181",
+&"text": "Wait so are we in the same dorm building or what?",
+&"type": "dialogue"
+},
+"181": {
+&"character": "Mabel",
+&"id": "181",
+&"next_id": "182",
+&"text": "Can you come by?",
+&"type": "dialogue"
+},
+"182": {
+&"character": "Player",
+&"id": "182",
+&"next_id": "183",
+&"text": "Sure, just give me 45 minutes",
+&"type": "dialogue"
+},
+"183": {
+&"character": "Mabel",
+&"id": "183",
+&"next_id": "184",
+&"text": "Whaaat 😭",
+&"type": "dialogue"
+},
+"184": {
+&"character": "Mabel",
+&"id": "184",
+&"next_id": "185",
+&"text": "That's SO far",
+&"type": "dialogue"
+},
+"185": {
+&"character": "Mabel",
+&"id": "185",
+&"next_id": "186",
+&"text": "I thought we'd be like... neighbors again 😭",
+&"type": "dialogue"
+},
+"186": {
+&"character": "Player",
+&"id": "186",
+&"next_id": "187",
+&"text": "Different campuses Mabes 😔",
+&"type": "dialogue"
+},
+"187": {
+&"character": "Mabel",
+&"id": "187",
+&"next_id": "188",
+&"text": "I KNOW but still",
+&"type": "dialogue"
+},
+"188": {
+&"character": "Mabel",
+&"id": "188",
+&"next_id": "189",
+&"text": "When am I gonna see you?",
+&"type": "dialogue"
+},
+"189": {
+&"character": "Player",
+&"id": "189",
+&"next_id": "190",
+&"text": "I'll come by though eventually, don't worry",
+&"type": "dialogue"
+},
+"19": {
+&"id": "19",
+&"next_id": "20",
+&"text": "Nice, how's the room?",
+&"type": "response"
+},
+"190": {
+&"character": "Player",
+&"id": "190",
+&"next_id": "191",
+&"text": "I need to figure out the bus schedule once they start running",
+&"type": "dialogue"
+},
+"191": {
+&"character": "Mabel",
+&"id": "191",
+&"next_id": "192",
+&"text": "Promise?",
+&"type": "dialogue"
+},
+"192": {
+&"id": "192",
+&"next_id": "193",
+&"responses": PackedStringArray("192", "200"),
+&"tags": PackedStringArray("love", "trust"),
+&"text": "I promise",
+&"type": "response"
+},
+"193": {
+&"id": "193",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "194",
+&"type": "mutation"
+},
+"194": {
+&"id": "194",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_desire"
+}, {
+&"i": 23,
+&"type": &"assignment",
+&"value": "-="
+}, {
+&"i": 26,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "195",
+&"type": "mutation"
+},
+"195": {
+&"character": "Player",
+&"id": "195",
+&"next_id": "196",
+&"text": "I promise",
+&"type": "dialogue"
+},
+"196": {
+&"character": "Player",
+&"id": "196",
+&"next_id": "197",
+&"text": "We'll make it work ❤️",
+&"type": "dialogue"
+},
+"197": {
+&"character": "Mabel",
+&"id": "197",
+&"next_id": "198",
+&"text": "❤️",
+&"type": "dialogue"
+},
+"198": {
+&"character": "Mabel",
+&"id": "198",
+&"next_id": "199",
+&"text": "Thought: I believe you",
+&"type": "dialogue"
+},
+"199": {
+&"character": "Mabel",
+&"id": "199",
+&"next_id": "205",
+&"text": "Okay that makes me feel better",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "unlock_gallery_image",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 24,
+&"type": &"string",
+&"value": "mabel"
+}]), Array[Dictionary]([{
+&"i": 33,
+&"type": &"string",
+&"value": "1"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "3",
+&"type": "mutation"
+},
+"20": {
+&"character": "Player",
+&"id": "20",
+&"next_id": "21",
+&"text": "Nice, how's the room?",
+&"type": "dialogue"
+},
+"200": {
+&"id": "200",
+&"next_id": "201",
+&"tags": PackedStringArray("distrust"),
+&"text": "Yeah for sure",
+&"type": "response"
+},
+"201": {
+&"id": "201",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "-="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "202",
+&"type": "mutation"
+},
+"202": {
+&"character": "Player",
+&"id": "202",
+&"next_id": "203",
+&"text": "Yeah for sure",
+&"type": "dialogue"
+},
+"203": {
+&"character": "Mabel",
+&"id": "203",
+&"next_id": "204",
+&"text": "Thought: Was that a promise?",
+&"type": "dialogue"
+},
+"204": {
+&"character": "Mabel",
+&"id": "204",
+&"next_id": "205",
+&"text": "Okie dokes",
+&"type": "dialogue"
+},
+"205": {
+&"character": "Mabel",
+&"id": "205",
+&"next_id": "206",
+&"text": "It's just weird you know?",
+&"type": "dialogue"
+},
+"206": {
+&"character": "Mabel",
+&"id": "206",
+&"next_id": "207",
+&"text": "We've always been close by",
+&"type": "dialogue"
+},
+"207": {
+&"character": "Mabel",
+&"id": "207",
+&"next_id": "208",
+&"text": "Now I can't even see you whenever",
+&"type": "dialogue"
+},
+"208": {
+&"character": "Player",
+&"id": "208",
+&"next_id": "209",
+&"text": "We'll make it work",
+&"type": "dialogue"
+},
+"209": {
+&"character": "Player",
+&"id": "209",
+&"next_id": "210",
+&"text": "Don't let it bring you down",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Mabel",
+&"id": "21",
+&"next_id": "22",
+&"text": "Oh",
+&"type": "dialogue"
+},
+"210": {
+&"character": "Mabel",
+&"id": "210",
+&"next_id": "211",
+&"text": "Yeah",
+&"type": "dialogue"
+},
+"211": {
+&"character": "Mabel",
+&"id": "211",
+&"next_id": "212",
+&"text": "Yeah you're right",
+&"type": "dialogue"
+},
+"212": {
+&"character": "Mabel",
+&"id": "212",
+&"next_id": "213",
+&"text": "Thought: I hope so",
+&"type": "dialogue"
+},
+"213": {
+&"character": "Mabel",
+&"id": "213",
+&"next_id": "214",
+&"text": "Okay I should probably start unpacking",
+&"type": "dialogue"
+},
+"214": {
+&"character": "Mabel",
+&"id": "214",
+&"next_id": "215",
+&"text": "It's gonna take a while",
+&"type": "dialogue"
+},
+"215": {
+&"character": "Mabel",
+&"id": "215",
+&"next_id": "216",
+&"text": "Then I need to go explore a bit",
+&"type": "dialogue"
+},
+"216": {
+&"character": "Mabel",
+&"id": "216",
+&"next_id": "217",
+&"text": "See where everything is like the grocery store",
+&"type": "dialogue"
+},
+"217": {
+&"character": "Mabel",
+&"id": "217",
+&"next_id": "218",
+&"text": "Before it gets dark",
+&"type": "dialogue"
+},
+"218": {
+&"character": "Player",
+&"id": "218",
+&"next_id": "219",
+&"text": "Good idea!",
+&"type": "dialogue"
+},
+"219": {
+&"character": "Mabel",
+&"id": "219",
+&"next_id": "220",
+&"text": "😊",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Mabel",
+&"id": "22",
+&"next_id": "23",
+&"text": "Thought: Guess he's not in the mood",
+&"type": "dialogue"
+},
+"220": {
+&"character": "Mabel",
+&"id": "220",
+&"next_id": "221",
+&"text": "Hey",
+&"type": "dialogue"
+},
+"221": {
+&"character": "Mabel",
+&"id": "221",
+&"next_id": "222",
+&"text": "Thanks for being here",
+&"type": "dialogue"
+},
+"222": {
+&"character": "Mabel",
+&"id": "222",
+&"next_id": "223",
+&"text": "Even if it's just through the phone for now",
+&"type": "dialogue"
+},
+"223": {
+&"character": "Mabel",
+&"id": "223",
+&"next_id": "224",
+&"text": "It helps",
+&"type": "dialogue"
+},
+"224": {
+&"id": "224",
+&"next_id": "225",
+&"responses": PackedStringArray("224", "230"),
+&"tags": PackedStringArray("love"),
+&"text": "I'm always here for you",
+&"type": "response"
+},
+"225": {
+&"id": "225",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_desire"
+}, {
+&"i": 23,
+&"type": &"assignment",
+&"value": "-="
+}, {
+&"i": 26,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "226",
+&"type": "mutation"
+},
+"226": {
+&"character": "Player",
+&"id": "226",
+&"next_id": "227",
+&"text": "I'm always here for you",
+&"type": "dialogue"
+},
+"227": {
+&"character": "Player",
+&"id": "227",
+&"next_id": "228",
+&"text": "You know that right?",
+&"type": "dialogue"
+},
+"228": {
+&"character": "Mabel",
+&"id": "228",
+&"next_id": "229",
+&"text": "I know ❤️",
+&"type": "dialogue"
+},
+"229": {
+&"character": "Mabel",
+&"id": "229",
+&"next_id": "233",
+&"text": "PinkThought: Seriously giving me goosebumps",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Mabel",
+&"id": "23",
+&"next_id": "24",
+&"text": "It's okayish",
+&"type": "dialogue"
+},
+"230": {
+&"id": "230",
+&"next_id": "231",
+&"text": "No problem",
+&"type": "response"
+},
+"231": {
+&"character": "Player",
+&"id": "231",
+&"next_id": "232",
+&"text": "No problem",
+&"type": "dialogue"
+},
+"232": {
+&"character": "Mabel",
+&"id": "232",
+&"next_id": "233",
+&"text": "😊",
+&"type": "dialogue"
+},
+"233": {
+&"character": "Mabel",
+&"id": "233",
+&"next_id": "234",
+&"text": "Okay agent Mabel signing out 😉",
+&"type": "dialogue"
+},
+"234": {
+&"character": "Mabel",
+&"id": "234",
+&"next_id": "235",
+&"text": "Talk later alligator 🐊",
+&"type": "dialogue"
+},
+"235": {
+&"character": "Player",
+&"id": "235",
+&"next_id": "236",
+&"text": "Later Mabes",
+&"type": "dialogue"
+},
+"236": {
+&"character": "Mabel",
+&"id": "236",
+&"next_id": "237",
+&"text": "😘",
+&"type": "dialogue"
+},
+"237": {
+&"id": "237",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "social_post",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 15,
+&"type": &"string",
+&"value": "collegelife_intro"
+}, {
+&"i": 34,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "238",
+&"type": "mutation"
+},
+"238": {
+&"id": "238",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "social_post",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 15,
+&"type": &"string",
+&"value": "suzanna_new_semester"
+}, {
+&"i": 37,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "239",
+&"type": "mutation"
+},
+"239": {
+&"id": "239",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "queue_social_post",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 21,
+&"type": &"string",
+&"value": "mabel_intro"
+}, {
+&"i": 34,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "240",
+&"type": "mutation"
+},
+"24": {
+&"character": "Mabel",
+&"id": "24",
+&"next_id": "25",
+&"text": "Small",
+&"type": "dialogue"
+},
+"240": {
+&"id": "240",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"241": {
+&"id": "241",
+&"next_id": "242",
+&"type": ""
+},
+"242": {
+&"id": "242",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"25": {
+&"character": "Mabel",
+&"id": "25",
+&"next_id": "26",
+&"text": "Very small",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Mabel",
+&"id": "26",
+&"next_id": "27",
+&"text": "sfx: bedcreak2: *creak*",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Mabel",
+&"id": "27",
+&"next_id": "28",
+&"text": "And the bed is loud",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Mabel",
+&"id": "28",
+&"next_id": "29",
+&"text": "Thought: I'm never getting over this bed",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Mabel",
+&"id": "29",
+&"next_id": "30",
+&"text": "I can't believe we're actually college students now",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Mabel",
+&"id": "3",
+&"next_id": "4",
+&"text": "Guess who 😎",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Mabel",
+&"id": "30",
+&"next_id": "31",
+&"text": "Like REAL hairy adults",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Mabel",
+&"id": "31",
+&"next_id": "32",
+&"text": "Living on our own, doing our own laundry and dishes and scrubbing the toilets",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Mabel",
+&"id": "32",
+&"next_id": "33",
+&"text": "The kind of people children fear 👻",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Player",
+&"id": "33",
+&"next_id": "34",
+&"text": "Scary huh?",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Mabel",
+&"id": "34",
+&"next_id": "35",
+&"text": "SUPER scary",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Player",
+&"id": "35",
+&"next_id": "36",
+&"text": "Solo room though right?",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Mabel",
+&"id": "36",
+&"next_id": "37",
+&"text": "Yeah thank god",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Mabel",
+&"id": "37",
+&"next_id": "38",
+&"text": "I could NOT handle a roommate",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Player",
+&"id": "38",
+&"next_id": "39",
+&"text": "What, afraid they'd have a pet tarantula?",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Mabel",
+&"id": "39",
+&"next_id": "40",
+&"text": "DON'T EVEN JOKE ABOUT THAT",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Player",
+&"id": "4",
+&"next_id": "5",
+&"text": "Hey Mabel",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Mabel",
+&"id": "40",
+&"next_id": "41",
+&"text": "What if they snored??",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Mabel",
+&"id": "41",
+&"next_id": "42",
+&"text": "Or had people over all the time??",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Mabel",
+&"id": "42",
+&"next_id": "43",
+&"text": "Or what if they were just... weird?",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Mabel",
+&"id": "43",
+&"next_id": "44",
+&"text": "Like... weirder than me 😱",
+&"type": "dialogue"
+},
+"44": {
+&"id": "44",
+&"next_id": "45",
+&"responses": PackedStringArray("44", "52", "56"),
+&"tags": PackedStringArray("love"),
+&"text": "You're perfect the way you are",
+&"type": "response"
+},
+"45": {
+&"id": "45",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_desire"
+}, {
+&"i": 23,
+&"type": &"assignment",
+&"value": "-="
+}, {
+&"i": 26,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "46",
+&"type": "mutation"
+},
+"46": {
+&"character": "Player",
+&"id": "46",
+&"next_id": "47",
+&"text": "You're perfect the way you are",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Mabel",
+&"id": "47",
+&"next_id": "48",
+&"text": "Gah! 🥰",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Mabel",
+&"id": "48",
+&"next_id": "49",
+&"text": "Don't flirt with me so suddenly omg",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Mabel",
+&"id": "49",
+&"next_id": "50",
+&"text": "Let me at least catch my breath from all this moving business",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Player",
+&"id": "5",
+&"next_id": "6",
+&"text": "Did you make it to the dorms?",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Mabel",
+&"id": "50",
+&"next_id": "51",
+&"text": "PinkThought: Jeez you really know how to treat a girl",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Player",
+&"id": "51",
+&"next_id": "64",
+&"text": "I can't help it! 😘",
+&"type": "dialogue"
+},
+"52": {
+&"id": "52",
+&"next_id": "53",
+&"text": "I'd be the same honestly",
+&"type": "response"
+},
+"53": {
+&"character": "Player",
+&"id": "53",
+&"next_id": "54",
+&"text": "I'd be the same honestly",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Player",
+&"id": "54",
+&"next_id": "55",
+&"text": "Living with a stranger sounds like anything can go wrong easily",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Mabel",
+&"id": "55",
+&"next_id": "64",
+&"text": "RIGHT??",
+&"type": "dialogue"
+},
+"56": {
+&"id": "56",
+&"next_id": "57",
+&"tags": PackedStringArray("distrust"),
+&"text": "Nobody is as weird as you 😂",
+&"type": "response"
+},
+"57": {
+&"id": "57",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "-="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "58",
+&"type": "mutation"
+},
+"58": {
+&"character": "Player",
+&"id": "58",
+&"next_id": "59",
+&"text": "That's not even possible",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Player",
+&"id": "59",
+&"next_id": "60",
+&"text": "Nobody is as weird as you 😂",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Mabel",
+&"id": "6",
+&"next_id": "7",
+&"text": "Funny you should ask",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Mabel",
+&"id": "60",
+&"next_id": "61",
+&"text": "😒 Meanie",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Player",
+&"id": "61",
+&"next_id": "62",
+&"text": "I'm saying you'd be fine",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Mabel",
+&"id": "62",
+&"next_id": "63",
+&"text": "I guess",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Mabel",
+&"id": "63",
+&"next_id": "64",
+&"text": "Aaanyway",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Mabel",
+&"id": "64",
+&"next_id": "65",
+&"text": "I can't believe I had to say bye to Mom",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Mabel",
+&"id": "65",
+&"next_id": "66",
+&"text": "Like I never had to LEAVE LEAVE you know what I mean?",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Player",
+&"id": "66",
+&"next_id": "67",
+&"text": "I know the feeling",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Mabel",
+&"id": "67",
+&"next_id": "68",
+&"text": "She cried",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Mabel",
+&"id": "68",
+&"next_id": "69",
+&"text": "I cried",
+&"type": "dialogue"
+},
+"69": {
+&"character": "Mabel",
+&"id": "69",
+&"next_id": "70",
+&"text": "It was a whole thing",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Mabel",
+&"id": "7",
+&"next_id": "8",
+&"text": "Yes, yes I did",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Player",
+&"id": "70",
+&"next_id": "71",
+&"text": "Aww",
+&"type": "dialogue"
+},
+"71": {
+&"character": "Mabel",
+&"id": "71",
+&"next_id": "72",
+&"text": "She kept hugging me and saying \"my baby's all grown up\"",
+&"type": "dialogue"
+},
+"72": {
+&"character": "Mabel",
+&"id": "72",
+&"next_id": "73",
+&"text": "I was like MOM PEOPLE ARE WATCHING 😭",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Mabel",
+&"id": "73",
+&"next_id": "74",
+&"text": "But I was crying too so it looked so silly",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Mabel",
+&"id": "74",
+&"next_id": "75",
+&"text": "Is that lame?",
+&"type": "dialogue"
+},
+"75": {
+&"character": "Player",
+&"id": "75",
+&"next_id": "76",
+&"text": "That's cute",
+&"type": "dialogue"
+},
+"76": {
+&"character": "Player",
+&"id": "76",
+&"next_id": "77",
+&"text": "You two are close, nothing wrong with that",
+&"type": "dialogue"
+},
+"77": {
+&"character": "Mabel",
+&"id": "77",
+&"next_id": "78",
+&"text": "🥺",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Mabel",
+&"id": "78",
+&"next_id": "79",
+&"text": "Thanks",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Mabel",
+&"id": "79",
+&"next_id": "80",
+&"text": "Thought: I love that you don't judge me",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Mabel",
+&"id": "8",
+&"next_id": "9",
+&"text": "Agent007 🕵️",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Mabel",
+&"id": "80",
+&"next_id": "81",
+&"text": "The worst part was saying bye to Ms Whiskers",
+&"type": "dialogue"
+},
+"81": {
+&"character": "Mabel",
+&"id": "81",
+&"next_id": "82",
+&"text": "She didn't even look at me when I left LOL",
+&"type": "dialogue"
+},
+"82": {
+&"character": "Mabel",
+&"id": "82",
+&"next_id": "83",
+&"text": "She was just hanging out like nothing special was happening",
+&"type": "dialogue"
+},
+"83": {
+&"id": "83",
+&"next_id": "84",
+&"responses": PackedStringArray("83", "87"),
+&"tags": PackedStringArray("trust"),
+&"text": "I'm sure she'll miss you",
+&"type": "response"
+},
+"84": {
+&"id": "84",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "85",
+&"type": "mutation"
+},
+"85": {
+&"character": "Player",
+&"id": "85",
+&"next_id": "86",
+&"text": "I'm sure she'll miss you",
+&"type": "dialogue"
+},
+"86": {
+&"character": "Mabel",
+&"id": "86",
+&"next_id": "91",
+&"text": "I know but still 😭",
+&"type": "dialogue"
+},
+"87": {
+&"id": "87",
+&"next_id": "88",
+&"tags": PackedStringArray("distrust"),
+&"text": "Cats are zero loyalty",
+&"type": "response"
+},
+"88": {
+&"id": "88",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "-="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "89",
+&"type": "mutation"
+},
+"89": {
+&"character": "Player",
+&"id": "89",
+&"next_id": "90",
+&"text": "Cats are like that 😂 Zero loyalty",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Mabel",
+&"id": "9",
+&"next_id": "10",
+&"text": "Everest, Mabel Everest",
+&"type": "dialogue"
+},
+"90": {
+&"character": "Mabel",
+&"id": "90",
+&"next_id": "91",
+&"text": "Omg don't say that about my baby",
+&"type": "dialogue"
+},
+"91": {
+&"character": "Mabel",
+&"id": "91",
+&"next_id": "92",
+&"text": "You remember how silly she was? 🥺",
+&"type": "dialogue"
+},
+"92": {
+&"character": "Player",
+&"id": "92",
+&"next_id": "93",
+&"text": "Of course, she doesn't let me anywhere near you 😆",
+&"type": "dialogue"
+},
+"93": {
+&"character": "Player",
+&"id": "93",
+&"next_id": "94",
+&"text": "I have battle scars to prove it",
+&"type": "dialogue"
+},
+"94": {
+&"character": "Mabel",
+&"id": "94",
+&"next_id": "95",
+&"text": "😂 She's just protective",
+&"type": "dialogue"
+},
+"95": {
+&"character": "Mabel",
+&"id": "95",
+&"next_id": "96",
+&"text": "Thought: She really loved you actually",
+&"type": "dialogue"
+},
+"96": {
+&"character": "Mabel",
+&"id": "96",
+&"next_id": "97",
+&"text": "Thought: She would meow at the door when you'd leave",
+&"type": "dialogue"
+},
+"97": {
+&"character": "Mabel",
+&"id": "97",
+&"next_id": "98",
+&"text": "Thought: It made me a little jealous",
+&"type": "dialogue"
+},
+"98": {
+&"character": "Mabel",
+&"id": "98",
+&"next_id": "99",
+&"text": "Mom promised to send me pictures of her every day 🥹",
+&"type": "dialogue"
+},
+"99": {
+&"character": "Mabel",
+&"id": "99",
+&"next_id": "100",
+&"text": "I hope I get to see her soon",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+do unlock_gallery_image(\"mabel\", \"1\")
+Mabel: Guess who 😎
+Player: Hey Mabel
+Player: Did you make it to the dorms?
+Mabel: Funny you should ask
+Mabel: Yes, yes I did
+Mabel: Agent007 🕵️
+Mabel: Everest, Mabel Everest
+Mabel: World's greatest spy has reached the dorm room
+- [Play Along] [#trust]
+	set Story.mabel_trust += 1
+	Player: Mabel007, this is HQ
+	Player: What's your status? Over.
+	Mabel: 😂
+	Mabel: HQ this is agent Mabel007
+	Mabel: The eagle has landed, I repeat, the eagle has landed
+	Mabel: Thought: People would think we're lame but I don't mind being lame when it's with you
+- Nice, how's the room?
+	Player: Nice, how's the room?
+	Mabel: Oh
+	Mabel: Thought: Guess he's not in the mood
+	Mabel: It's okayish
+	Mabel: Small
+	Mabel: Very small
+	Mabel: sfx: bedcreak2: *creak*
+	Mabel: And the bed is loud
+	Mabel: Thought: I'm never getting over this bed
+Mabel: I can't believe we're actually college students now
+Mabel: Like REAL hairy adults
+Mabel: Living on our own, doing our own laundry and dishes and scrubbing the toilets
+Mabel: The kind of people children fear 👻
+Player: Scary huh?
+Mabel: SUPER scary
+Player: Solo room though right?
+Mabel: Yeah thank god
+Mabel: I could NOT handle a roommate
+Player: What, afraid they'd have a pet tarantula?
+Mabel: DON'T EVEN JOKE ABOUT THAT
+Mabel: What if they snored??
+Mabel: Or had people over all the time??
+Mabel: Or what if they were just... weird?
+Mabel: Like... weirder than me 😱
+- You're perfect the way you are [#love]
+	set Story.mabel_desire -= 1
+	Player: You're perfect the way you are
+	Mabel: Gah! 🥰
+	Mabel: Don't flirt with me so suddenly omg
+	Mabel: Let me at least catch my breath from all this moving business
+	Mabel: PinkThought: Jeez you really know how to treat a girl
+	Player: I can't help it! 😘
+- I'd be the same honestly
+	Player: I'd be the same honestly
+	Player: Living with a stranger sounds like anything can go wrong easily
+	Mabel: RIGHT??
+- Nobody is as weird as you 😂 [#distrust]
+	set Story.mabel_trust -= 1
+	Player: That's not even possible
+	Player: Nobody is as weird as you 😂
+	Mabel: 😒 Meanie
+	Player: I'm saying you'd be fine
+	Mabel: I guess
+	Mabel: Aaanyway
+Mabel: I can't believe I had to say bye to Mom
+Mabel: Like I never had to LEAVE LEAVE you know what I mean?
+Player: I know the feeling
+Mabel: She cried
+Mabel: I cried
+Mabel: It was a whole thing
+Player: Aww
+Mabel: She kept hugging me and saying \"my baby's all grown up\"
+Mabel: I was like MOM PEOPLE ARE WATCHING 😭
+Mabel: But I was crying too so it looked so silly
+Mabel: Is that lame?
+Player: That's cute
+Player: You two are close, nothing wrong with that
+Mabel: 🥺
+Mabel: Thanks
+Mabel: Thought: I love that you don't judge me
+Mabel: The worst part was saying bye to Ms Whiskers
+Mabel: She didn't even look at me when I left LOL
+Mabel: She was just hanging out like nothing special was happening
+- I'm sure she'll miss you [#trust]
+	set Story.mabel_trust += 1
+	Player: I'm sure she'll miss you
+	Mabel: I know but still 😭
+- Cats are zero loyalty [#distrust]
+	set Story.mabel_trust -= 1
+	Player: Cats are like that 😂 Zero loyalty
+	Mabel: Omg don't say that about my baby
+Mabel: You remember how silly she was? 🥺
+Player: Of course, she doesn't let me anywhere near you 😆
+Player: I have battle scars to prove it
+Mabel: 😂 She's just protective
+Mabel: Thought: She really loved you actually
+Mabel: Thought: She would meow at the door when you'd leave
+Mabel: Thought: It made me a little jealous
+Mabel: Mom promised to send me pictures of her every day 🥹
+Mabel: I hope I get to see her soon
+Player: I hope so too!
+Mabel: I have to start unpacking all these boxes omg
+Mabel: Mom packed SO much stuff
+Player: Like what?
+Mabel: Okay so
+Mabel: She packed Mr Buttons
+Player: The bear?
+Mabel: YES the bear
+Mabel: He's been with me since I was like 5
+Mabel: I can't sleep without him okay!!
+Mabel: Don't judge me plss 🥹
+Player: 😂 I didn't even say anything
+Mabel: Good 😇
+Mabel: She also packed my lucky blanket
+Mabel: And like 50 photos
+Mabel: And a whole box of snacks \"in case the cafeteria food is bad\"
+Player: That's a lot of stuff!
+Player: You gonna have room for all that?
+Mabel: I'll make it work!
+Player: Your mom is precious
+Mabel: She really is 🥹
+Mabel: Thought: I miss her already
+Player: How's the new phone?
+Mabel: Omg SOOO helpful!!
+Mabel: I was able to sort out stuff on my calendar like a todo list
+Mabel: I love Social Scene too
+Mabel: I get to see what mom and kitty are up to!
+Mabel: Thank you so much ❤️ I love it
+Player: I'm glad! 😊
+Player: I got one for me too
+Mabel: It must have cost you a lot 😭
+- It was really nothing [#dollar] [if PhoneUnlocks.is_claimed(\"Day1Money\") == false]
+	set PhoneUnlocks.claim = \"Day1Money\"
+	Player: It was really nothing
+	Player: I have some to spare
+	Mabel: Glad to hear that buuut
+- It was really nothing [if PhoneUnlocks.is_claimed(\"Day1Money\") == true]
+	Player: It was really nothing
+	Player: I have some to spare
+	Mabel: Glad to hear that buuut
+- They weren't cheap for sure
+	Player: They weren't cheap for sure
+	Player: It was worth it 
+Mabel: I feel like I should pay you back for this somehow
+Mabel: Is there anything I can do 🥰
+Player: There is one thing
+Player: My gallery is empty and sad
+Mabel: You want a picture?
+Mabel: I'm still no good at those
+Mabel: Thought: Pictures make me self conscious too
+Mabel: Okay, I can do that I think
+Mabel: Let me fix my hair first
+Player: Take your time
+Mabel: It's really messy from the long trip lol
+Mabel: Okay done
+Mabel: img: mabel/3
+Mabel: I look tired don't I? 🙃
+Mabel: The drive was seriously long, I fell asleep on the way
+Mabel: Thought: So far away from home
+- CUTE
+	Player: CUTE
+	Mabel: 🥺
+	Mabel: Thanks ❤️
+	Mabel: Thought: I had to fix my hair hehe
+- You do look a little tired
+	set Story.flag = \"Day1Picture\"
+	Player: You do look a little tired
+	Player: Make sure you get some good sleep tonight
+	Mabel: I do need it 😊
+	Mabel: I'll take a better one for you later, promise
+	Player: Can't wait!
+- What are those boxes behind you
+	set Story.flag = \"BoxInvestigation\"
+	Player: What's that behind you btw?
+	Mabel: Oh the boxes?
+	Mabel: They're my stuff I still need to unpack but one of them is FREE STUFF apparently! 🥳
+	Mabel: The last girl who lived here left them behind
+	Player: Score!?
+	Mabel: Right?? I have so much to unpack though so
+	Mabel: I'll investigate later
+Mabel: Wait so are we in the same dorm building or what?
+Mabel: Can you come by?
+Player: Sure, just give me 45 minutes
+Mabel: Whaaat 😭
+Mabel: That's SO far
+Mabel: I thought we'd be like... neighbors again 😭
+Player: Different campuses Mabes 😔
+Mabel: I KNOW but still
+Mabel: When am I gonna see you?
+Player: I'll come by though eventually, don't worry
+Player: I need to figure out the bus schedule once they start running
+Mabel: Promise?
+- I promise [#love] [#trust]
+	set Story.mabel_trust += 1
+	set Story.mabel_desire -= 1
+	Player: I promise
+	Player: We'll make it work ❤️
+	Mabel: ❤️
+	Mabel: Thought: I believe you
+	Mabel: Okay that makes me feel better
+- Yeah for sure [#distrust]
+	set Story.mabel_trust -= 1
+	Player: Yeah for sure
+	Mabel: Thought: Was that a promise?
+	Mabel: Okie dokes
+Mabel: It's just weird you know?
+Mabel: We've always been close by
+Mabel: Now I can't even see you whenever
+Player: We'll make it work
+Player: Don't let it bring you down
+Mabel: Yeah
+Mabel: Yeah you're right
+Mabel: Thought: I hope so
+Mabel: Okay I should probably start unpacking
+Mabel: It's gonna take a while
+Mabel: Then I need to go explore a bit
+Mabel: See where everything is like the grocery store
+Mabel: Before it gets dark
+Player: Good idea!
+Mabel: 😊
+Mabel: Hey
+Mabel: Thanks for being here
+Mabel: Even if it's just through the phone for now
+Mabel: It helps
+- I'm always here for you [#love]
+	set Story.mabel_desire -= 1
+	Player: I'm always here for you
+	Player: You know that right?
+	Mabel: I know ❤️
+	Mabel: PinkThought: Seriously giving me goosebumps
+- No problem
+	Player: No problem
+	Mabel: 😊
+Mabel: Okay agent Mabel signing out 😉
+Mabel: Talk later alligator 🐊
+Player: Later Mabes
+Mabel: 😘
+do social_post(\"collegelife_intro\")
+do social_post(\"suzanna_new_semester\")
+do queue_social_post(\"mabel_intro\")
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

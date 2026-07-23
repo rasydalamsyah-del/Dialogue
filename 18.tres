@@ -1,0 +1,1297 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_62l4x"]
+
+[resource]
+script = ExtResource("1_62l4x")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Caleb", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "forest_trail"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Caleb",
+&"id": "10",
+&"next_id": "11",
+&"text": "I like to try to snapshot them in that moment",
+&"type": "dialogue"
+},
+"100": {
+&"character": "Caleb",
+&"id": "100",
+&"next_id": "101",
+&"text": "You have the other ones btw?",
+&"type": "dialogue"
+},
+"101": {
+&"character": "Player",
+&"id": "101",
+&"next_id": "102",
+&"text": "Oh right",
+&"type": "dialogue"
+},
+"102": {
+&"character": "Player",
+&"id": "102",
+&"next_id": "103",
+&"text": "img: alice/3",
+&"type": "dialogue"
+},
+"103": {
+&"character": "Caleb",
+&"id": "103",
+&"next_id": "104",
+&"text": "This one came out nicely too!",
+&"type": "dialogue"
+},
+"104": {
+&"character": "Caleb",
+&"id": "104",
+&"next_id": "105",
+&"text": "Not gonna lie, I kinda wanted to take a swim after seeing this haha",
+&"type": "dialogue"
+},
+"105": {
+&"character": "Player",
+&"id": "105",
+&"next_id": "106",
+&"text": "The weather was great!",
+&"type": "dialogue"
+},
+"106": {
+&"character": "Caleb",
+&"id": "106",
+&"next_id": "107",
+&"text": "Yep!",
+&"type": "dialogue"
+},
+"107": {
+&"character": "Caleb",
+&"id": "107",
+&"next_id": "108",
+&"text": "Show me that last one",
+&"type": "dialogue"
+},
+"108": {
+&"character": "Player",
+&"id": "108",
+&"next_id": "109",
+&"text": "img: alice/4",
+&"type": "dialogue"
+},
+"109": {
+&"character": "Player",
+&"id": "109",
+&"next_id": "110",
+&"text": "Here",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Player",
+&"id": "11",
+&"next_id": "12",
+&"text": "Almost like a wildlife photographer lol",
+&"type": "dialogue"
+},
+"110": {
+&"character": "Caleb",
+&"id": "110",
+&"next_id": "111",
+&"text": "This one's probably the perfect submission",
+&"type": "dialogue"
+},
+"111": {
+&"character": "Caleb",
+&"id": "111",
+&"next_id": "112",
+&"text": "Pictures that really make you think are always good",
+&"type": "dialogue"
+},
+"112": {
+&"character": "Player",
+&"id": "112",
+&"next_id": "113",
+&"text": "I agree",
+&"type": "dialogue"
+},
+"113": {
+&"character": "Player",
+&"id": "113",
+&"next_id": "114",
+&"text": "Were these okay to take though?",
+&"type": "dialogue"
+},
+"114": {
+&"character": "Caleb",
+&"id": "114",
+&"next_id": "115",
+&"text": "I'm gonna show the ones I took to Naomi and see if we can somehow cheer Alice up",
+&"type": "dialogue"
+},
+"115": {
+&"character": "Caleb",
+&"id": "115",
+&"next_id": "116",
+&"text": "I want her to have a better time in college and these might just clue us in on what we can do for her",
+&"type": "dialogue"
+},
+"116": {
+&"character": "Player",
+&"id": "116",
+&"next_id": "117",
+&"text": "That's sounds nice!",
+&"type": "dialogue"
+},
+"117": {
+&"character": "Caleb",
+&"id": "117",
+&"next_id": "118",
+&"text": "Thanks 😄 I do what I can to help",
+&"type": "dialogue"
+},
+"118": {
+&"character": "Caleb",
+&"id": "118",
+&"next_id": "119",
+&"text": "Alright then",
+&"type": "dialogue"
+},
+"119": {
+&"character": "Caleb",
+&"id": "119",
+&"next_id": "120",
+&"text": "You don't have to worry about the application process",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Caleb",
+&"id": "12",
+&"next_id": "13",
+&"text": "Exactly!",
+&"type": "dialogue"
+},
+"120": {
+&"character": "Caleb",
+&"id": "120",
+&"next_id": "121",
+&"text": "Since we're a pretty small club, I can submit yours directly to Naomi who handles all the paperwork",
+&"type": "dialogue"
+},
+"121": {
+&"character": "Player",
+&"id": "121",
+&"next_id": "122",
+&"text": "Wow convenient!",
+&"type": "dialogue"
+},
+"122": {
+&"character": "Caleb",
+&"id": "122",
+&"next_id": "123",
+&"text": "delete: What are friends for!",
+&"type": "dialogue"
+},
+"123": {
+&"character": "Caleb",
+&"id": "123",
+&"next_id": "124",
+&"text": "Ah didn't want to assume anything but happy to help!",
+&"type": "dialogue"
+},
+"124": {
+&"id": "124",
+&"next_id": "125",
+&"responses": PackedStringArray("124", "130"),
+&"text": "I think of you as a friend!",
+&"type": "response"
+},
+"125": {
+&"id": "125",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "CalebFriend"
+}]),
+&"is_blocking": true
+},
+&"next_id": "126",
+&"type": "mutation"
+},
+"126": {
+&"character": "Player",
+&"id": "126",
+&"next_id": "127",
+&"text": "I think of you as a friend!",
+&"type": "dialogue"
+},
+"127": {
+&"character": "Caleb",
+&"id": "127",
+&"next_id": "128",
+&"text": "😁 Awesome, I do too!",
+&"type": "dialogue"
+},
+"128": {
+&"character": "Caleb",
+&"id": "128",
+&"next_id": "129",
+&"text": "I can't wait to make this all official so our little band of friends grows!",
+&"type": "dialogue"
+},
+"129": {
+&"character": "Caleb",
+&"id": "129",
+&"next_id": "132",
+&"text": "Group chat's been a little quiet lately haha",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Caleb",
+&"id": "13",
+&"next_id": "14",
+&"text": "I like to try to understand people and their story and struggles and display them in the work",
+&"type": "dialogue"
+},
+"130": {
+&"id": "130",
+&"next_id": "131",
+&"text": "Thanks!",
+&"type": "response"
+},
+"131": {
+&"character": "Player",
+&"id": "131",
+&"next_id": "132",
+&"text": "Thanks!",
+&"type": "dialogue"
+},
+"132": {
+&"character": "Caleb",
+&"id": "132",
+&"next_id": "133",
+&"text": "Alright, gotta go put this together",
+&"type": "dialogue"
+},
+"133": {
+&"character": "Caleb",
+&"id": "133",
+&"next_id": "134",
+&"text": "Be seeing you!",
+&"type": "dialogue"
+},
+"134": {
+&"character": "Player",
+&"id": "134",
+&"next_id": "135",
+&"text": "Good night!",
+&"type": "dialogue"
+},
+"135": {
+&"id": "135",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"136": {
+&"id": "136",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"14": {
+&"character": "Caleb",
+&"id": "14",
+&"next_id": "15",
+&"text": "With some limits of course, we shouldn't stalk or bother anyone!",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Caleb",
+&"id": "15",
+&"next_id": "16",
+&"text": "There are some good places for us to check out",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Caleb",
+&"id": "16",
+&"next_id": "17",
+&"text": "I recommend the beach or the city",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Caleb",
+&"id": "17",
+&"next_id": "18",
+&"text": "Both are good options",
+&"type": "dialogue"
+},
+"18": {
+&"id": "18",
+&"next_id": "19",
+&"responses": PackedStringArray("18", "21"),
+&"text": "Beach",
+&"type": "response"
+},
+"19": {
+&"character": "Player",
+&"id": "19",
+&"next_id": "20",
+&"text": "Beach sounds like a nice peaceful location",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Caleb",
+&"id": "2",
+&"next_id": "3",
+&"text": "Hey!",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Caleb",
+&"id": "20",
+&"next_id": "26",
+&"text": "It really is!",
+&"type": "dialogue"
+},
+"21": {
+&"id": "21",
+&"next_id": "22",
+&"text": "City",
+&"type": "response"
+},
+"22": {
+&"id": "22",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "CitySubmission"
+}]),
+&"is_blocking": true
+},
+&"next_id": "23",
+&"type": "mutation"
+},
+"23": {
+&"character": "Player",
+&"id": "23",
+&"next_id": "24",
+&"text": "City might have some good stories to tell",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Caleb",
+&"id": "24",
+&"next_id": "25",
+&"text": "Quite a lot going on in the city",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Caleb",
+&"id": "25",
+&"next_id": "26",
+&"text": "We'll definitely find something",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Caleb",
+&"id": "26",
+&"next_id": "27",
+&"text": "Alright almost there, we can meet at your station in 5 minutes",
+&"type": "dialogue"
+},
+"27": {
+&"id": "27",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_clear",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 14,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "28",
+&"type": "mutation"
+},
+"28": {
+&"character": "Player",
+&"id": "28",
+&"next_id": "29",
+&"text": "Sounds good!",
+&"type": "dialogue"
+},
+"29": {
+&"id": "29",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "advance_time",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"number",
+&"value": 3
+}]), Array[Dictionary]([{
+&"i": 19,
+&"type": &"number",
+&"value": 5
+}, {
+&"i": 20,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "30",
+&"type": "mutation"
+},
+"3": {
+&"character": "Player",
+&"id": "3",
+&"next_id": "4",
+&"text": "Hey Caleb",
+&"type": "dialogue"
+},
+"30": {
+&"id": "30",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "31",
+&"type": "mutation"
+},
+"31": {
+&"character": "Caleb",
+&"id": "31",
+&"next_id": "32",
+&"text": "Good job with the pictures today!",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Caleb",
+&"id": "32",
+&"next_id": "33",
+&"text": "You got some really good ones!",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Player",
+&"id": "33",
+&"next_id": "34",
+&"text": "Thanks",
+&"type": "dialogue"
+},
+"34": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "CitySubmission"
+}, {
+&"i": 34,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "34",
+&"next_id": "35",
+&"next_id_after": "46",
+&"next_sibling_id": "38",
+&"type": "condition"
+},
+"35": {
+&"character": "Caleb",
+&"id": "35",
+&"next_id": "36",
+&"text": "I still can't believe we ran into Professor Suzanna",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Player",
+&"id": "36",
+&"next_id": "37",
+&"text": "Mabel's professor right?",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Caleb",
+&"id": "37",
+&"next_id": "46",
+&"text": "Yup, and she's our club sponsor!",
+&"type": "dialogue"
+},
+"38": {
+&"condition": {},
+&"id": "38",
+&"next_id": "39",
+&"next_id_after": "46",
+&"type": "condition"
+},
+"39": {
+&"character": "Caleb",
+&"id": "39",
+&"next_id": "40",
+&"text": "I still can't believe we ran into Alice",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Caleb",
+&"id": "4",
+&"next_id": "5",
+&"text": "I'll be there soon",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Player",
+&"id": "40",
+&"next_id": "41",
+&"text": "This was that girl that hides out in the Photography Club room right?",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Caleb",
+&"id": "41",
+&"next_id": "42",
+&"text": "Yeah 😅",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Caleb",
+&"id": "42",
+&"next_id": "43",
+&"text": "Because she gets picked on, poor thing",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Caleb",
+&"id": "43",
+&"next_id": "44",
+&"text": "Naomi actually convinced her to join the club",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Player",
+&"id": "44",
+&"next_id": "45",
+&"text": "Oh that's interesting",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Caleb",
+&"id": "45",
+&"next_id": "46",
+&"text": "Yep so she'll be a new member hopefully!",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Caleb",
+&"id": "46",
+&"next_id": "47",
+&"text": "But what a coincidence huh?",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Player",
+&"id": "47",
+&"next_id": "48",
+&"text": "Unexpected for sure!",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Caleb",
+&"id": "48",
+&"next_id": "49",
+&"text": "We took some pretty good pictures of her",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Caleb",
+&"id": "49",
+&"next_id": "50",
+&"text": "Let's go through what we have now for a submission then",
+&"type": "dialogue"
+},
+"5": {
+&"id": "5",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_set",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 12,
+&"type": &"array",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 13,
+&"type": &"string",
+&"value": "78"
+}, {
+&"i": 17,
+&"type": &"bracket_close"
+}])])
+}, {
+&"i": 18,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "6",
+&"type": "mutation"
+},
+"50": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "CitySubmission"
+}, {
+&"i": 34,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "50",
+&"next_id": "51",
+&"next_id_after": "118",
+&"next_sibling_id": "85",
+&"type": "condition"
+},
+"51": {
+&"character": "Player",
+&"id": "51",
+&"next_id": "52",
+&"text": "Sure thing",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Player",
+&"id": "52",
+&"next_id": "53",
+&"text": "img: suzanna/2",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Caleb",
+&"id": "53",
+&"next_id": "54",
+&"text": "Looks like a nice start to her night",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Caleb",
+&"id": "54",
+&"next_id": "55",
+&"text": "She's really pretty isn't she?",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Player",
+&"id": "55",
+&"next_id": "56",
+&"text": "She is!",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Caleb",
+&"id": "56",
+&"next_id": "57",
+&"text": "It's a good picture too",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Caleb",
+&"id": "57",
+&"next_id": "58",
+&"text": "Makes you think what kind of person the guy is when they're out of frame!",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Caleb",
+&"id": "58",
+&"next_id": "59",
+&"text": "Let's see what else there was",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Player",
+&"id": "59",
+&"next_id": "60",
+&"text": "img: suzanna/3",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Caleb",
+&"id": "6",
+&"next_id": "7",
+&"text": "Got anything in mind for a submission?",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Player",
+&"id": "60",
+&"next_id": "61",
+&"text": "This one too",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Caleb",
+&"id": "61",
+&"next_id": "62",
+&"text": "She didn't recognize you so you were able to get pretty close!",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Player",
+&"id": "62",
+&"next_id": "63",
+&"text": "She did not look like she's having a good time 😓",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Caleb",
+&"id": "63",
+&"next_id": "64",
+&"text": "Yeah, we'll probably hear about this tomorrow 😟",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Caleb",
+&"id": "64",
+&"next_id": "65",
+&"text": "Ms Suzanna is quite open with these things, maybe even a little too open sometimes 😅",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Caleb",
+&"id": "65",
+&"next_id": "66",
+&"text": "All her confidence comes back though and she tries again when we root for her!",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Player",
+&"id": "66",
+&"next_id": "67",
+&"text": "That's great to hear",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Player",
+&"id": "67",
+&"next_id": "68",
+&"text": "But was it okay to take pictures of her like this, while she's so down?",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Caleb",
+&"id": "68",
+&"next_id": "69",
+&"text": "I thought the same at first but I showed her a picture similar to this and it really brightened up her day",
+&"type": "dialogue"
+},
+"69": {
+&"character": "Caleb",
+&"id": "69",
+&"next_id": "70",
+&"text": "She told me that after seeing the picture, she no longer thought of it as \"the worst day of her life\"",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Player",
+&"id": "7",
+&"next_id": "8",
+&"text": "Not really! Hoping you could fill me in",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Caleb",
+&"id": "70",
+&"next_id": "71",
+&"text": "I took some pictures myself that I'm going to show her afterwards, I'm sure they'll cheer her up!",
+&"type": "dialogue"
+},
+"71": {
+&"character": "Player",
+&"id": "71",
+&"next_id": "72",
+&"text": "That's a relief!",
+&"type": "dialogue"
+},
+"72": {
+&"character": "Caleb",
+&"id": "72",
+&"next_id": "73",
+&"text": "You have one more right?",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Player",
+&"id": "73",
+&"next_id": "74",
+&"text": "img: suzanna/4",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Player",
+&"id": "74",
+&"next_id": "75",
+&"text": "That's the last one!",
+&"type": "dialogue"
+},
+"75": {
+&"character": "Caleb",
+&"id": "75",
+&"next_id": "76",
+&"text": "This one is so good",
+&"type": "dialogue"
+},
+"76": {
+&"character": "Caleb",
+&"id": "76",
+&"next_id": "77",
+&"text": "Really poetic don't you think?",
+&"type": "dialogue"
+},
+"77": {
+&"character": "Player",
+&"id": "77",
+&"next_id": "78",
+&"text": "Really sad yeah",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Caleb",
+&"id": "78",
+&"next_id": "79",
+&"text": "I wish I took this one cause then I could show her right away!",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Caleb",
+&"id": "79",
+&"next_id": "80",
+&"text": "But I think this is perfect for your submission",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Caleb",
+&"id": "8",
+&"next_id": "9",
+&"text": "No worries, I can do that",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Caleb",
+&"id": "80",
+&"next_id": "81",
+&"text": "And if she looks through the submissions herself, she'll probably see this anyway!",
+&"type": "dialogue"
+},
+"81": {
+&"character": "Caleb",
+&"id": "81",
+&"next_id": "82",
+&"text": "But I got some nice ones too I can show her 😁",
+&"type": "dialogue"
+},
+"82": {
+&"character": "Player",
+&"id": "82",
+&"next_id": "83",
+&"text": "Phew that was an interesting experience",
+&"type": "dialogue"
+},
+"83": {
+&"character": "Caleb",
+&"id": "83",
+&"next_id": "84",
+&"text": "Glad you thought so!",
+&"type": "dialogue"
+},
+"84": {
+&"id": "84",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "queue_social_post",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 21,
+&"type": &"string",
+&"value": "suzanna_city_evening"
+}, {
+&"i": 43,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "118",
+&"type": "mutation"
+},
+"85": {
+&"condition": {},
+&"id": "85",
+&"next_id": "86",
+&"next_id_after": "118",
+&"type": "condition"
+},
+"86": {
+&"character": "Player",
+&"id": "86",
+&"next_id": "87",
+&"text": "This is the first one I took",
+&"type": "dialogue"
+},
+"87": {
+&"character": "Player",
+&"id": "87",
+&"next_id": "88",
+&"text": "img: alice/2",
+&"type": "dialogue"
+},
+"88": {
+&"character": "Caleb",
+&"id": "88",
+&"next_id": "89",
+&"text": "I've actually never seen Alice smile!",
+&"type": "dialogue"
+},
+"89": {
+&"character": "Caleb",
+&"id": "89",
+&"next_id": "90",
+&"text": "She has a rough time in college",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Caleb",
+&"id": "9",
+&"next_id": "10",
+&"text": "What I like to do is pick a spot and find someone interesting",
+&"type": "dialogue"
+},
+"90": {
+&"character": "Caleb",
+&"id": "90",
+&"next_id": "91",
+&"text": "But seems like she's at peace here",
+&"type": "dialogue"
+},
+"91": {
+&"character": "Player",
+&"id": "91",
+&"next_id": "92",
+&"text": "Yeah",
+&"type": "dialogue"
+},
+"92": {
+&"character": "Caleb",
+&"id": "92",
+&"next_id": "93",
+&"text": "Good thing she didn't notice us",
+&"type": "dialogue"
+},
+"93": {
+&"character": "Caleb",
+&"id": "93",
+&"next_id": "94",
+&"text": "I didn't wanna bother her alone time but these pictures are so pretty",
+&"type": "dialogue"
+},
+"94": {
+&"character": "Caleb",
+&"id": "94",
+&"next_id": "95",
+&"text": "This is basically what it's like being in the photography club",
+&"type": "dialogue"
+},
+"95": {
+&"character": "Caleb",
+&"id": "95",
+&"next_id": "96",
+&"text": "Usually there's a given task or event though that we go out to record",
+&"type": "dialogue"
+},
+"96": {
+&"character": "Caleb",
+&"id": "96",
+&"next_id": "97",
+&"text": "Sometimes it'll be modeling shoots too",
+&"type": "dialogue"
+},
+"97": {
+&"character": "Player",
+&"id": "97",
+&"next_id": "98",
+&"text": "Oh sounds like a lot of variety",
+&"type": "dialogue"
+},
+"98": {
+&"character": "Caleb",
+&"id": "98",
+&"next_id": "99",
+&"text": "It is",
+&"type": "dialogue"
+},
+"99": {
+&"character": "Caleb",
+&"id": "99",
+&"next_id": "100",
+&"text": "You'll never get bored",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"forest_trail\")
+Caleb: Hey!
+Player: Hey Caleb
+Caleb: I'll be there soon
+do echo_set([\"78\"])
+Caleb: Got anything in mind for a submission?
+Player: Not really! Hoping you could fill me in
+Caleb: No worries, I can do that
+Caleb: What I like to do is pick a spot and find someone interesting
+Caleb: I like to try to snapshot them in that moment
+Player: Almost like a wildlife photographer lol
+Caleb: Exactly! 
+Caleb: I like to try to understand people and their story and struggles and display them in the work
+Caleb: With some limits of course, we shouldn't stalk or bother anyone!
+Caleb: There are some good places for us to check out
+Caleb: I recommend the beach or the city
+Caleb: Both are good options
+- Beach
+	Player: Beach sounds like a nice peaceful location
+	Caleb: It really is!
+- City
+	set Story.flag = \"CitySubmission\"
+	Player: City might have some good stories to tell
+	Caleb: Quite a lot going on in the city
+	Caleb: We'll definitely find something
+Caleb: Alright almost there, we can meet at your station in 5 minutes
+do echo_clear()
+Player: Sounds good!
+do advance_time(3, 5)
+do Story.set_location(\"mabels_room\")
+Caleb: Good job with the pictures today!
+Caleb: You got some really good ones!
+Player: Thanks
+if Story.has_flag(\"CitySubmission\"):
+	Caleb: I still can't believe we ran into Professor Suzanna
+	Player: Mabel's professor right?
+	Caleb: Yup, and she's our club sponsor!
+else:
+	Caleb: I still can't believe we ran into Alice
+	Player: This was that girl that hides out in the Photography Club room right?
+	Caleb: Yeah 😅
+	Caleb: Because she gets picked on, poor thing
+	Caleb: Naomi actually convinced her to join the club
+	Player: Oh that's interesting
+	Caleb: Yep so she'll be a new member hopefully!
+Caleb: But what a coincidence huh?
+Player: Unexpected for sure!
+Caleb: We took some pretty good pictures of her
+Caleb: Let's go through what we have now for a submission then
+if Story.has_flag(\"CitySubmission\"):
+	Player: Sure thing
+	Player: img: suzanna/2
+	Caleb: Looks like a nice start to her night
+	Caleb: She's really pretty isn't she?
+	Player: She is! 
+	Caleb: It's a good picture too
+	Caleb: Makes you think what kind of person the guy is when they're out of frame!
+	Caleb: Let's see what else there was
+	Player: img: suzanna/3
+	Player: This one too
+	Caleb: She didn't recognize you so you were able to get pretty close!
+	Player: She did not look like she's having a good time 😓
+	Caleb: Yeah, we'll probably hear about this tomorrow 😟
+	Caleb: Ms Suzanna is quite open with these things, maybe even a little too open sometimes 😅
+	Caleb: All her confidence comes back though and she tries again when we root for her!
+	Player: That's great to hear
+	Player: But was it okay to take pictures of her like this, while she's so down?
+	Caleb: I thought the same at first but I showed her a picture similar to this and it really brightened up her day
+	Caleb: She told me that after seeing the picture, she no longer thought of it as \"the worst day of her life\"
+	Caleb: I took some pictures myself that I'm going to show her afterwards, I'm sure they'll cheer her up!
+	Player: That's a relief!
+	Caleb: You have one more right?
+	Player: img: suzanna/4
+	Player: That's the last one!
+	Caleb: This one is so good
+	Caleb: Really poetic don't you think?
+	Player: Really sad yeah
+	Caleb: I wish I took this one cause then I could show her right away!
+	Caleb: But I think this is perfect for your submission
+	Caleb: And if she looks through the submissions herself, she'll probably see this anyway!
+	Caleb: But I got some nice ones too I can show her 😁
+	Player: Phew that was an interesting experience
+	Caleb: Glad you thought so!
+	do queue_social_post(\"suzanna_city_evening\")
+else:
+	Player: This is the first one I took
+	Player: img: alice/2
+	Caleb: I've actually never seen Alice smile!
+	Caleb: She has a rough time in college
+	Caleb: But seems like she's at peace here
+	Player: Yeah
+	Caleb: Good thing she didn't notice us
+	Caleb: I didn't wanna bother her alone time but these pictures are so pretty
+	Caleb: This is basically what it's like being in the photography club
+	Caleb: Usually there's a given task or event though that we go out to record
+	Caleb: Sometimes it'll be modeling shoots too
+	Player: Oh sounds like a lot of variety
+	Caleb: It is
+	Caleb: You'll never get bored
+	Caleb: You have the other ones btw?
+	Player: Oh right
+	Player: img: alice/3
+	Caleb: This one came out nicely too!
+	Caleb: Not gonna lie, I kinda wanted to take a swim after seeing this haha
+	Player: The weather was great!
+	Caleb: Yep!
+	Caleb: Show me that last one
+	Player: img: alice/4
+	Player: Here
+	Caleb: This one's probably the perfect submission
+	Caleb: Pictures that really make you think are always good
+	Player: I agree
+	Player: Were these okay to take though?
+	Caleb: I'm gonna show the ones I took to Naomi and see if we can somehow cheer Alice up
+	Caleb: I want her to have a better time in college and these might just clue us in on what we can do for her
+	Player: That's sounds nice!
+	Caleb: Thanks 😄 I do what I can to help
+Caleb: Alright then
+Caleb: You don't have to worry about the application process
+Caleb: Since we're a pretty small club, I can submit yours directly to Naomi who handles all the paperwork
+Player: Wow convenient!
+Caleb: delete: What are friends for!
+Caleb: Ah didn't want to assume anything but happy to help!
+- I think of you as a friend!
+	set Story.flag = \"CalebFriend\"
+	Player: I think of you as a friend!
+	Caleb: 😁 Awesome, I do too!
+	Caleb: I can't wait to make this all official so our little band of friends grows!
+	Caleb: Group chat's been a little quiet lately haha
+- Thanks!
+	Player: Thanks!
+Caleb: Alright, gotta go put this together
+Caleb: Be seeing you!
+Player: Good night!
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

@@ -1,0 +1,870 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_iweaw"]
+
+[resource]
+script = ExtResource("1_iweaw")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Naomi", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "forest_trail"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Naomi",
+&"id": "10",
+&"next_id": "11",
+&"text": "Don't worry, your submission will be a part of it",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Naomi",
+&"id": "11",
+&"next_id": "12",
+&"text": "We'll get on the next bus together",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Player",
+&"id": "12",
+&"next_id": "13",
+&"text": "👍",
+&"type": "dialogue"
+},
+"13": {
+&"id": "13",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "advance_time",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"number",
+&"value": 2
+}]), Array[Dictionary]([{
+&"i": 19,
+&"type": &"number",
+&"value": 45
+}, {
+&"i": 21,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "14",
+&"type": "mutation"
+},
+"14": {
+&"id": "14",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "15",
+&"type": "mutation"
+},
+"15": {
+&"character": "Naomi",
+&"id": "15",
+&"next_id": "16",
+&"text": "That was a lot of fun!",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Naomi",
+&"id": "16",
+&"next_id": "17",
+&"text": "I had a great time 🥰 thanks for inviting me",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Player",
+&"id": "17",
+&"next_id": "18",
+&"text": "Same!",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Naomi",
+&"id": "18",
+&"next_id": "19",
+&"text": "I almost forgot we were taking pictures for your club application haha",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Naomi",
+&"id": "19",
+&"next_id": "20",
+&"text": "Even though it wasn't very scenic near you, we made do",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Naomi",
+&"id": "2",
+&"next_id": "3",
+&"text": "Hey!",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Naomi",
+&"id": "20",
+&"next_id": "21",
+&"text": "I can't believe you said I was the only thing worth taking pictures of in a square mile around us 😂",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Player",
+&"id": "21",
+&"next_id": "22",
+&"text": "It's true!!",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Naomi",
+&"id": "22",
+&"next_id": "23",
+&"text": "I've honestly never had someone submit pictures of me as their application 🤭",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Naomi",
+&"id": "23",
+&"next_id": "24",
+&"text": "Did you like the pictures then? 😉",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Player",
+&"id": "24",
+&"next_id": "25",
+&"text": "Yeah, I did 😁",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Player",
+&"id": "25",
+&"next_id": "26",
+&"text": "You're really attractive!",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Naomi",
+&"id": "26",
+&"next_id": "27",
+&"text": "Flattery won't add points to your submission you know 😏",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Naomi",
+&"id": "27",
+&"next_id": "28",
+&"text": "But I appreciate it! 😊",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Naomi",
+&"id": "28",
+&"next_id": "29",
+&"text": "Alright you can send me the first one",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Naomi",
+&"id": "29",
+&"next_id": "30",
+&"text": "I'll start putting together the paperwork now",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Naomi",
+&"id": "3",
+&"next_id": "4",
+&"text": "Almost there!",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Player",
+&"id": "30",
+&"next_id": "31",
+&"text": "Now? Isn't it a bit late 😄",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Naomi",
+&"id": "31",
+&"next_id": "32",
+&"text": "I've got a lot to do tomorrow so I'd rather handle things now!",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Player",
+&"id": "32",
+&"next_id": "33",
+&"text": "No problem",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Player",
+&"id": "33",
+&"next_id": "34",
+&"text": "img: naomi/7",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Naomi",
+&"id": "34",
+&"next_id": "35",
+&"text": "Really like the background here",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Naomi",
+&"id": "35",
+&"next_id": "36",
+&"text": "Looks so quiet and carefree",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Player",
+&"id": "36",
+&"next_id": "37",
+&"text": "True",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Player",
+&"id": "37",
+&"next_id": "38",
+&"text": "I think you need it with all the work you do",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Naomi",
+&"id": "38",
+&"next_id": "39",
+&"text": "Haha I do don't I",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Naomi",
+&"id": "39",
+&"next_id": "40",
+&"text": "I should find a bit of time to relax",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Player",
+&"id": "4",
+&"next_id": "5",
+&"text": "I'm already here",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Player",
+&"id": "40",
+&"next_id": "41",
+&"text": "img: naomi/8",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Naomi",
+&"id": "41",
+&"next_id": "42",
+&"text": "I was wondering if you took a picture here",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Player",
+&"id": "42",
+&"next_id": "43",
+&"text": "Yeah this one didn't come out as nice as I'd thought!",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Naomi",
+&"id": "43",
+&"next_id": "44",
+&"text": "It's not bad! But the bus interior isn't so interesting is it 😁",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Naomi",
+&"id": "44",
+&"next_id": "45",
+&"text": "At least there's a little peek of the outside!",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Player",
+&"id": "45",
+&"next_id": "46",
+&"text": "img: other/8",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Player",
+&"id": "46",
+&"next_id": "47",
+&"text": "I didn't know there was a direct bus to something like this",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Naomi",
+&"id": "47",
+&"next_id": "48",
+&"text": "There are so many cool places like this around",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Naomi",
+&"id": "48",
+&"next_id": "49",
+&"text": "Caleb knows all of them!",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Naomi",
+&"id": "49",
+&"next_id": "50",
+&"text": "I've been meaning to visit this area to take a look around and had a modeling idea 🤭",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Player",
+&"id": "5",
+&"next_id": "6",
+&"text": "I think I see your bus",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Player",
+&"id": "50",
+&"next_id": "51",
+&"text": "You sure did 😏",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Player",
+&"id": "51",
+&"next_id": "52",
+&"text": "img: naomi/9",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Naomi",
+&"id": "52",
+&"next_id": "53",
+&"text": "I can still feel the prickly grass on my butt 😱",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Player",
+&"id": "53",
+&"next_id": "54",
+&"text": "Haha, I could imagine",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Naomi",
+&"id": "54",
+&"next_id": "55",
+&"text": "Well? What do you think?",
+&"type": "dialogue"
+},
+"55": {
+&"id": "55",
+&"next_id": "56",
+&"responses": PackedStringArray("55", "60"),
+&"text": "I think this one is good",
+&"type": "response"
+},
+"56": {
+&"character": "Player",
+&"id": "56",
+&"next_id": "57",
+&"text": "I think this one is good",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Naomi",
+&"id": "57",
+&"next_id": "58",
+&"text": "I think so too",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Naomi",
+&"id": "58",
+&"next_id": "59",
+&"text": "I don't think it's great though",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Naomi",
+&"id": "59",
+&"next_id": "70",
+&"text": "My ideas sometimes don't pan out the way I expect",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Naomi",
+&"id": "6",
+&"next_id": "7",
+&"text": "Perfectly timed!",
+&"type": "dialogue"
+},
+"60": {
+&"id": "60",
+&"next_id": "61",
+&"text": "Super hot",
+&"type": "response"
+},
+"61": {
+&"character": "Player",
+&"id": "61",
+&"next_id": "62",
+&"text": "Super hot",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Naomi",
+&"id": "62",
+&"next_id": "63",
+&"text": "😂",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Naomi",
+&"id": "63",
+&"next_id": "64",
+&"text": "I guess you'd think that",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Naomi",
+&"id": "64",
+&"next_id": "65",
+&"text": "Caleb doesn't usually give me answers like that when we're out like this",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Player",
+&"id": "65",
+&"next_id": "66",
+&"text": "Sorry 😁",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Naomi",
+&"id": "66",
+&"next_id": "67",
+&"text": "Don't be, it was great to hear",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Naomi",
+&"id": "67",
+&"next_id": "68",
+&"text": "I guess it can't be helped that laying down like that in front of you invited some sexy thoughts 🤭",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Player",
+&"id": "68",
+&"next_id": "69",
+&"text": "I plead guilty ✋",
+&"type": "dialogue"
+},
+"69": {
+&"character": "Naomi",
+&"id": "69",
+&"next_id": "70",
+&"text": "☺️",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Naomi",
+&"id": "7",
+&"next_id": "8",
+&"text": "Actually, I finally have an excuse to try this shoot I've been wanting to try 🤭",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Naomi",
+&"id": "70",
+&"next_id": "71",
+&"text": "I expect the next one came out well",
+&"type": "dialogue"
+},
+"71": {
+&"character": "Player",
+&"id": "71",
+&"next_id": "72",
+&"text": "img: naomi/10",
+&"type": "dialogue"
+},
+"72": {
+&"character": "Player",
+&"id": "72",
+&"next_id": "73",
+&"text": "This one looks great!",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Naomi",
+&"id": "73",
+&"next_id": "74",
+&"text": "Wow you're right!",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Naomi",
+&"id": "74",
+&"next_id": "75",
+&"text": "Those panties are the cherry on top 😍",
+&"type": "dialogue"
+},
+"75": {
+&"character": "Naomi",
+&"id": "75",
+&"next_id": "76",
+&"text": "You didn't need to turn around when I was taking them off",
+&"type": "dialogue"
+},
+"76": {
+&"id": "76",
+&"next_id": "77",
+&"responses": PackedStringArray("76", "80"),
+&"text": "It just felt appropriate haha",
+&"type": "response"
+},
+"77": {
+&"character": "Player",
+&"id": "77",
+&"next_id": "78",
+&"text": "Ah... it just felt appropriate haha",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Naomi",
+&"id": "78",
+&"next_id": "79",
+&"text": "Don't be so stiff haha",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Naomi",
+&"id": "79",
+&"next_id": "84",
+&"text": "I'm easy to be around, trust me ❤️",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Naomi",
+&"id": "8",
+&"next_id": "9",
+&"text": "I'm gonna drag you there with me if you don't mind 😇",
+&"type": "dialogue"
+},
+"80": {
+&"id": "80",
+&"next_id": "81",
+&"text": "Next time I won't",
+&"type": "response"
+},
+"81": {
+&"character": "Player",
+&"id": "81",
+&"next_id": "82",
+&"text": "Next time I won't",
+&"type": "dialogue"
+},
+"82": {
+&"character": "Naomi",
+&"id": "82",
+&"next_id": "83",
+&"text": "Didn't say you can look, just that you don't have to turn around 😏🤭",
+&"type": "dialogue"
+},
+"83": {
+&"character": "Naomi",
+&"id": "83",
+&"next_id": "84",
+&"text": "You're cute",
+&"type": "dialogue"
+},
+"84": {
+&"character": "Naomi",
+&"id": "84",
+&"next_id": "85",
+&"text": "Glad you took this one though",
+&"type": "dialogue"
+},
+"85": {
+&"character": "Naomi",
+&"id": "85",
+&"next_id": "86",
+&"text": "I can attach it as your submission",
+&"type": "dialogue"
+},
+"86": {
+&"character": "Naomi",
+&"id": "86",
+&"next_id": "87",
+&"text": "Feels weird attaching myself to a student's submission but I think Caleb would agree this is the best of the bunch",
+&"type": "dialogue"
+},
+"87": {
+&"character": "Naomi",
+&"id": "87",
+&"next_id": "88",
+&"text": "Maybe with a lot of bias though!",
+&"type": "dialogue"
+},
+"88": {
+&"character": "Naomi",
+&"id": "88",
+&"next_id": "89",
+&"text": "Speaking of, I'm gonna brag to Caleb about this one",
+&"type": "dialogue"
+},
+"89": {
+&"character": "Player",
+&"id": "89",
+&"next_id": "90",
+&"text": "Glad I could help!",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Player",
+&"id": "9",
+&"next_id": "10",
+&"text": "Fine with me",
+&"type": "dialogue"
+},
+"90": {
+&"character": "Naomi",
+&"id": "90",
+&"next_id": "91",
+&"text": "Speaking of, I'll get to see Mabel's submission tomorrow",
+&"type": "dialogue"
+},
+"91": {
+&"character": "Naomi",
+&"id": "91",
+&"next_id": "92",
+&"text": "I wonder what it is",
+&"type": "dialogue"
+},
+"92": {
+&"character": "Naomi",
+&"id": "92",
+&"next_id": "93",
+&"text": "Of course I won't be able to share it with you but I am looking forward to it 🤭",
+&"type": "dialogue"
+},
+"93": {
+&"character": "Player",
+&"id": "93",
+&"next_id": "94",
+&"text": "It'll be something good, she's an artistic person",
+&"type": "dialogue"
+},
+"94": {
+&"character": "Naomi",
+&"id": "94",
+&"next_id": "95",
+&"text": "I don't doubt that",
+&"type": "dialogue"
+},
+"95": {
+&"character": "Naomi",
+&"id": "95",
+&"next_id": "96",
+&"text": "Well, you have yourself a good night",
+&"type": "dialogue"
+},
+"96": {
+&"character": "Player",
+&"id": "96",
+&"next_id": "97",
+&"text": "Thanks, you too!",
+&"type": "dialogue"
+},
+"97": {
+&"character": "Naomi",
+&"id": "97",
+&"next_id": "98",
+&"text": "👋",
+&"type": "dialogue"
+},
+"98": {
+&"id": "98",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"99": {
+&"id": "99",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"forest_trail\")
+Naomi: Hey!
+Naomi: Almost there!
+Player: I'm already here
+Player: I think I see your bus
+Naomi: Perfectly timed!
+Naomi: Actually, I finally have an excuse to try this shoot I've been wanting to try 🤭
+Naomi: I'm gonna drag you there with me if you don't mind 😇
+Player: Fine with me
+Naomi: Don't worry, your submission will be a part of it
+Naomi: We'll get on the next bus together
+Player: 👍
+do advance_time(2, 45)
+do Story.set_location(\"mabels_room\")
+Naomi: That was a lot of fun!
+Naomi: I had a great time 🥰 thanks for inviting me
+Player: Same!
+Naomi: I almost forgot we were taking pictures for your club application haha
+Naomi: Even though it wasn't very scenic near you, we made do
+Naomi: I can't believe you said I was the only thing worth taking pictures of in a square mile around us 😂
+Player: It's true!!
+Naomi: I've honestly never had someone submit pictures of me as their application 🤭
+Naomi: Did you like the pictures then? 😉
+Player: Yeah, I did 😁
+Player: You're really attractive!
+Naomi: Flattery won't add points to your submission you know 😏
+Naomi: But I appreciate it! 😊
+Naomi: Alright you can send me the first one
+Naomi: I'll start putting together the paperwork now
+Player: Now? Isn't it a bit late 😄
+Naomi: I've got a lot to do tomorrow so I'd rather handle things now!
+Player: No problem
+Player: img: naomi/7
+Naomi: Really like the background here
+Naomi: Looks so quiet and carefree
+Player: True
+Player: I think you need it with all the work you do
+Naomi: Haha I do don't I
+Naomi: I should find a bit of time to relax
+Player: img: naomi/8
+Naomi: I was wondering if you took a picture here
+Player: Yeah this one didn't come out as nice as I'd thought!
+Naomi: It's not bad! But the bus interior isn't so interesting is it 😁
+Naomi: At least there's a little peek of the outside!
+Player: img: other/8
+Player: I didn't know there was a direct bus to something like this
+Naomi: There are so many cool places like this around
+Naomi: Caleb knows all of them!
+Naomi: I've been meaning to visit this area to take a look around and had a modeling idea 🤭
+Player: You sure did 😏
+Player: img: naomi/9
+Naomi: I can still feel the prickly grass on my butt 😱
+Player: Haha, I could imagine
+Naomi: Well? What do you think?
+- I think this one is good
+	Player: I think this one is good
+	Naomi: I think so too
+	Naomi: I don't think it's great though
+	Naomi: My ideas sometimes don't pan out the way I expect
+- Super hot
+	Player: Super hot
+	Naomi: 😂
+	Naomi: I guess you'd think that
+	Naomi: Caleb doesn't usually give me answers like that when we're out like this
+	Player: Sorry 😁
+	Naomi: Don't be, it was great to hear
+	Naomi: I guess it can't be helped that laying down like that in front of you invited some sexy thoughts 🤭
+	Player: I plead guilty ✋
+	Naomi: ☺️
+Naomi: I expect the next one came out well
+Player: img: naomi/10
+Player: This one looks great!
+Naomi: Wow you're right!
+Naomi: Those panties are the cherry on top 😍
+Naomi: You didn't need to turn around when I was taking them off
+- It just felt appropriate haha
+	Player: Ah... it just felt appropriate haha
+	Naomi: Don't be so stiff haha
+	Naomi: I'm easy to be around, trust me ❤️
+- Next time I won't
+	Player: Next time I won't
+	Naomi: Didn't say you can look, just that you don't have to turn around 😏🤭
+	Naomi: You're cute
+Naomi: Glad you took this one though
+Naomi: I can attach it as your submission
+Naomi: Feels weird attaching myself to a student's submission but I think Caleb would agree this is the best of the bunch
+Naomi: Maybe with a lot of bias though!
+Naomi: Speaking of, I'm gonna brag to Caleb about this one
+Player: Glad I could help!
+Naomi: Speaking of, I'll get to see Mabel's submission tomorrow
+Naomi: I wonder what it is
+Naomi: Of course I won't be able to share it with you but I am looking forward to it 🤭
+Player: It'll be something good, she's an artistic person
+Naomi: I don't doubt that
+Naomi: Well, you have yourself a good night
+Player: Thanks, you too!
+Naomi: 👋
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

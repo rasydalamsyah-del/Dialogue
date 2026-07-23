@@ -1,0 +1,759 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_si7ha"]
+
+[resource]
+script = ExtResource("1_si7ha")
+using_states = PackedStringArray()
+titles = {
+"start": "2"
+}
+character_names = PackedStringArray("Mabel")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "2",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"10": {
+&"character": "Mabel",
+&"id": "10",
+&"next_id": "11",
+&"text": "Thought: Come on.. eyes closed and brain off",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Mabel",
+&"id": "11",
+&"next_id": "12",
+&"text": "Thought: Sleep... NOW!... NOW!! Hayaah!",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Mabel",
+&"id": "12",
+&"next_id": "13",
+&"text": "sfx2: bedcreakm3: *creak*",
+&"type": "dialogue"
+},
+"13": {
+&"id": "13",
+&"next_id": "14",
+&"responses": PackedStringArray("13"),
+&"text": "[continue]",
+&"type": "response"
+},
+"14": {
+&"id": "14",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_clear",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 14,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "15",
+&"type": "mutation"
+},
+"15": {
+&"character": "Mabel",
+&"id": "15",
+&"next_id": "16",
+&"text": "Thought: This is SO not working... ugh",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Mabel",
+&"id": "16",
+&"next_id": "17",
+&"text": "sfx2: bedcreakm2: *creak*",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Mabel",
+&"id": "17",
+&"next_id": "18",
+&"text": "Thought: ...",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Mabel",
+&"id": "18",
+&"next_id": "19",
+&"text": "sfx2: bedcreakm1: *creak*",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Mabel",
+&"id": "19",
+&"next_id": "20",
+&"text": "sfx2: bedcreakm3: *creak*",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "3",
+&"type": "mutation"
+},
+"20": {
+&"character": "Mabel",
+&"id": "20",
+&"next_id": "21",
+&"text": "Thought: Oh you have GOT to be kidding me",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Mabel",
+&"id": "21",
+&"next_id": "22",
+&"text": "sfx2: bedcreakm4: *creak creak*",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Mabel",
+&"id": "22",
+&"next_id": "23",
+&"text": "Thought: Not again, it's so laaate 😩",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Mabel",
+&"id": "23",
+&"next_id": "24",
+&"text": "sfx3: coveredmoanm2: *mmf...*",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Mabel",
+&"id": "24",
+&"next_id": "25",
+&"text": "Thought: ...was that",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Mabel",
+&"id": "25",
+&"next_id": "26",
+&"text": "Thought: Nope. Not thinking about it. SLEEP TIME",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Mabel",
+&"id": "26",
+&"next_id": "27",
+&"text": "Thought: ...",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Mabel",
+&"id": "27",
+&"next_id": "28",
+&"text": "Thought: ....",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Mabel",
+&"id": "28",
+&"next_id": "29",
+&"text": "Thought: .....",
+&"type": "dialogue"
+},
+"29": {
+&"id": "29",
+&"next_id": "30",
+&"responses": PackedStringArray("29"),
+&"text": "[continue]",
+&"type": "response"
+},
+"3": {
+&"id": "3",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "social_post",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 15,
+&"type": &"string",
+&"value": "mabel_cram_study"
+}, {
+&"i": 33,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "4",
+&"type": "mutation"
+},
+"30": {
+&"id": "30",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_clear",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 14,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "31",
+&"type": "mutation"
+},
+"31": {
+&"character": "Mabel",
+&"id": "31",
+&"next_id": "32",
+&"text": "sfx2: bedcreakm2: *creak*",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Mabel",
+&"id": "32",
+&"next_id": "33",
+&"text": "sfx3: coveredmoanm1: *ahh...*",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Mabel",
+&"id": "33",
+&"next_id": "34",
+&"text": "Thought: ...that's DEFINITELY a girl",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Mabel",
+&"id": "34",
+&"next_id": "35",
+&"text": "Thought: So there really is someone in there with him",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Mabel",
+&"id": "35",
+&"next_id": "36",
+&"text": "PinkThought: What are they even doing to make a sound like that",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Mabel",
+&"id": "36",
+&"next_id": "37",
+&"text": "Thought: Stop it Mabel, that's so nosy!!",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Mabel",
+&"id": "37",
+&"next_id": "38",
+&"text": "Thought: But it's RIGHT there. How am I supposed to NOT hear it",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Mabel",
+&"id": "38",
+&"next_id": "39",
+&"text": "PinkThought: ...okay... juuust for a second",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Mabel",
+&"id": "39",
+&"next_id": "40",
+&"text": "PinkThought: Only because I'm awake anyway",
+&"type": "dialogue"
+},
+"4": {
+&"id": "4",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_set",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 12,
+&"type": &"array",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 13,
+&"type": &"string",
+&"value": "182"
+}, {
+&"i": 18,
+&"type": &"bracket_close"
+}])])
+}, {
+&"i": 19,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "5",
+&"type": "mutation"
+},
+"40": {
+&"character": "Mabel",
+&"id": "40",
+&"next_id": "41",
+&"text": "sfx3: coveredmoanm1: *ah..*",
+&"type": "dialogue"
+},
+"41": {
+&"id": "41",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_set",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 12,
+&"type": &"array",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 13,
+&"type": &"string",
+&"value": "183"
+}, {
+&"i": 18,
+&"type": &"bracket_close"
+}])])
+}, {
+&"i": 19,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "42",
+&"type": "mutation"
+},
+"42": {
+&"character": "Mabel",
+&"id": "42",
+&"next_id": "43",
+&"text": "Thought: If I just... put my ear here...",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Mabel",
+&"id": "43",
+&"next_id": "44",
+&"text": "PinkThought: I can hear her really close...",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Mabel",
+&"id": "44",
+&"next_id": "45",
+&"text": "PinkThought: I really shouldn't be doing this",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Mabel",
+&"id": "45",
+&"next_id": "46",
+&"text": "sfx3: coveredmoanm3: *uhh..*",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Mabel",
+&"id": "46",
+&"next_id": "47",
+&"text": "PinkThought: She sounds like she's in pain??",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Mabel",
+&"id": "47",
+&"next_id": "48",
+&"text": "PinkThought: But... enjoying it!?",
+&"type": "dialogue"
+},
+"48": {
+&"id": "48",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "heart",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 9,
+&"type": &"number",
+&"value": 1
+}, {
+&"i": 10,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "49",
+&"type": "mutation"
+},
+"49": {
+&"id": "49",
+&"next_id": "50",
+&"responses": PackedStringArray("49"),
+&"text": "[continue]",
+&"type": "response"
+},
+"5": {
+&"character": "Mabel",
+&"id": "5",
+&"next_id": "6",
+&"notes": "11pm",
+&"text": "Thought: 11pm already...",
+&"type": "dialogue"
+},
+"50": {
+&"id": "50",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_clear",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 14,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "51",
+&"type": "mutation"
+},
+"51": {
+&"id": "51",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_set",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 12,
+&"type": &"array",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 13,
+&"type": &"string",
+&"value": "184"
+}, {
+&"i": 18,
+&"type": &"bracket_close"
+}])])
+}, {
+&"i": 19,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "52",
+&"type": "mutation"
+},
+"52": {
+&"character": "Mabel",
+&"id": "52",
+&"next_id": "53",
+&"text": "PinkThought: Why is my heart going so fast",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Mabel",
+&"id": "53",
+&"next_id": "54",
+&"text": "PinkThought: I feel all warm and weird",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Mabel",
+&"id": "54",
+&"next_id": "55",
+&"text": "PinkThought: This is making me a little nauseous",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Mabel",
+&"id": "55",
+&"next_id": "56",
+&"text": "PinkThought: ...I-I can't keep listening to this",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Mabel",
+&"id": "56",
+&"next_id": "57",
+&"text": "sfx3: coveredmoanm2: *Mmh!*",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Mabel",
+&"id": "57",
+&"next_id": "58",
+&"text": "PinkThought: But I can't stop for some reason..",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Mabel",
+&"id": "58",
+&"next_id": "59",
+&"text": "sfx3: coveredmoanm3: *mmph*",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Mabel",
+&"id": "59",
+&"next_id": "60",
+&"text": "sfx3: coveredmoanm4: *ahh*",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Mabel",
+&"id": "6",
+&"next_id": "7",
+&"text": "Thought: I really need to sleep, got my presentation tomorrow",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Mabel",
+&"id": "60",
+&"next_id": "61",
+&"text": "Thought: ...ugh please just go to sleep already",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Mabel",
+&"id": "61",
+&"next_id": "62",
+&"text": "Thought: I can't take it anymore!",
+&"type": "dialogue"
+},
+"62": {
+&"id": "62",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "heart",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 9,
+&"type": &"number",
+&"value": 0
+}, {
+&"i": 10,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "63",
+&"type": "mutation"
+},
+"63": {
+&"character": "Mabel",
+&"id": "63",
+&"next_id": "64",
+&"text": "Thought: Go to sleep. Ignore it.",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Mabel",
+&"id": "64",
+&"next_id": "65",
+&"text": "Thought: ...",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Mabel",
+&"id": "65",
+&"next_id": "66",
+&"text": "PinkThought: I wonder if it'll happen again tomorrow...",
+&"type": "dialogue"
+},
+"66": {
+&"id": "66",
+&"next_id": "67",
+&"responses": PackedStringArray("66"),
+&"text": "[continue]",
+&"type": "response"
+},
+"67": {
+&"id": "67",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_clear",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 14,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "68",
+&"type": "mutation"
+},
+"68": {
+&"id": "68",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "social_post",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 15,
+&"type": &"string",
+&"value": "jason_club_closed_ntr"
+}, {
+&"i": 38,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "69",
+&"type": "mutation"
+},
+"69": {
+&"id": "69",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"7": {
+&"character": "Mabel",
+&"id": "7",
+&"next_id": "8",
+&"text": "Thought: What the heck is this \"sleep uniform\" supposed to be anyway??",
+&"type": "dialogue"
+},
+"70": {
+&"id": "70",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"8": {
+&"character": "Mabel",
+&"id": "8",
+&"next_id": "9",
+&"text": "sfx2: bedcreakm1: *creak*",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Mabel",
+&"id": "9",
+&"next_id": "10",
+&"text": "Thought: I feel almost naked.. I wish I could wear my PJs instead",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+## 11pm
+do Story.set_location(\"mabels_room\")
+do social_post(\"mabel_cram_study\")
+do echo_set([\"182\"])
+Mabel: Thought: 11pm already...
+Mabel: Thought: I really need to sleep, got my presentation tomorrow
+Mabel: Thought: What the heck is this \"sleep uniform\" supposed to be anyway??
+Mabel: sfx2: bedcreakm1: *creak*
+Mabel: Thought: I feel almost naked.. I wish I could wear my PJs instead
+Mabel: Thought: Come on.. eyes closed and brain off
+Mabel: Thought: Sleep... NOW!... NOW!! Hayaah!
+Mabel: sfx2: bedcreakm3: *creak*
+- [continue]
+do echo_clear()
+Mabel: Thought: This is SO not working... ugh
+Mabel: sfx2: bedcreakm2: *creak*
+Mabel: Thought: ...
+Mabel: sfx2: bedcreakm1: *creak*
+Mabel: sfx2: bedcreakm3: *creak*
+Mabel: Thought: Oh you have GOT to be kidding me
+Mabel: sfx2: bedcreakm4: *creak creak*
+Mabel: Thought: Not again, it's so laaate 😩
+Mabel: sfx3: coveredmoanm2: *mmf...*
+Mabel: Thought: ...was that
+Mabel: Thought: Nope. Not thinking about it. SLEEP TIME
+Mabel: Thought: ...
+Mabel: Thought: ....
+Mabel: Thought: .....
+- [continue]
+do echo_clear()
+Mabel: sfx2: bedcreakm2: *creak*
+Mabel: sfx3: coveredmoanm1: *ahh...*
+Mabel: Thought: ...that's DEFINITELY a girl
+Mabel: Thought: So there really is someone in there with him
+Mabel: PinkThought: What are they even doing to make a sound like that
+Mabel: Thought: Stop it Mabel, that's so nosy!!
+Mabel: Thought: But it's RIGHT there. How am I supposed to NOT hear it
+Mabel: PinkThought: ...okay... juuust for a second
+Mabel: PinkThought: Only because I'm awake anyway
+Mabel: sfx3: coveredmoanm1: *ah..*
+do echo_set([\"183\"])
+Mabel: Thought: If I just... put my ear here...
+Mabel: PinkThought: I can hear her really close...
+Mabel: PinkThought: I really shouldn't be doing this
+Mabel: sfx3: coveredmoanm3: *uhh..*
+Mabel: PinkThought: She sounds like she's in pain??
+Mabel: PinkThought: But... enjoying it!?
+do heart(1)
+- [continue]
+do echo_clear()
+do echo_set([\"184\"])
+Mabel: PinkThought: Why is my heart going so fast
+Mabel: PinkThought: I feel all warm and weird
+Mabel: PinkThought: This is making me a little nauseous
+Mabel: PinkThought: ...I-I can't keep listening to this
+Mabel: sfx3: coveredmoanm2: *Mmh!*
+Mabel: PinkThought: But I can't stop for some reason..
+Mabel: sfx3: coveredmoanm3: *mmph*
+Mabel: sfx3: coveredmoanm4: *ahh*
+Mabel: Thought: ...ugh please just go to sleep already
+Mabel: Thought: I can't take it anymore!
+do heart(0)
+Mabel: Thought: Go to sleep. Ignore it.
+Mabel: Thought: ...
+Mabel: PinkThought: I wonder if it'll happen again tomorrow...
+- [continue]
+do echo_clear()
+do social_post(\"jason_club_closed_ntr\")
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

@@ -1,0 +1,201 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_iudv7"]
+
+[resource]
+script = ExtResource("1_iudv7")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Naomi", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "photography_club_house"
+}, {
+&"i": 46,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Naomi",
+&"id": "10",
+&"next_id": "11",
+&"text": "And she's opening up about a few things to me 👀",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Player",
+&"id": "11",
+&"next_id": "12",
+&"text": "About??",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Naomi",
+&"id": "12",
+&"next_id": "13",
+&"text": "You can't just ask that, that's secret girl talk! 😉",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Naomi",
+&"id": "13",
+&"next_id": "14",
+&"text": "But I will say this, the way she talks about you seriously makes me a little jealous hehe 🥰",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Player",
+&"id": "14",
+&"next_id": "15",
+&"text": "😳",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Naomi",
+&"id": "15",
+&"next_id": "16",
+&"text": "I think you'll find out soon 🤭",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Naomi",
+&"id": "16",
+&"next_id": "17",
+&"text": "Well we're about to have lunch now",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Naomi",
+&"id": "17",
+&"next_id": "18",
+&"text": "Ciao!",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Player",
+&"id": "18",
+&"next_id": "19",
+&"text": "Bye!",
+&"type": "dialogue"
+},
+"19": {
+&"id": "19",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"2": {
+&"character": "Naomi",
+&"id": "2",
+&"next_id": "3",
+&"text": "img: mabel/112",
+&"type": "dialogue"
+},
+"20": {
+&"id": "20",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"3": {
+&"character": "Naomi",
+&"id": "3",
+&"next_id": "4",
+&"text": "👀",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Player",
+&"id": "4",
+&"next_id": "5",
+&"text": "Wow! 😳",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Player",
+&"id": "5",
+&"next_id": "6",
+&"text": "Is it going well?",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Naomi",
+&"id": "6",
+&"next_id": "7",
+&"text": "She claims she's never done anything like this before but I'm not buying it lol 😂",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Player",
+&"id": "7",
+&"next_id": "8",
+&"text": "Sounds like a yes 😄",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Naomi",
+&"id": "8",
+&"next_id": "9",
+&"text": "Your girl has a lot of hidden sex appeal 😏",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Naomi",
+&"id": "9",
+&"next_id": "10",
+&"text": "It's a super yes 😄",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"photography_club_house\")
+Naomi: img: mabel/112
+Naomi: 👀
+Player: Wow! 😳
+Player: Is it going well?
+Naomi: She claims she's never done anything like this before but I'm not buying it lol 😂
+Player: Sounds like a yes 😄
+Naomi: Your girl has a lot of hidden sex appeal 😏
+Naomi: It's a super yes 😄
+Naomi: And she's opening up about a few things to me 👀
+Player: About??
+Naomi: You can't just ask that, that's secret girl talk! 😉
+Naomi: But I will say this, the way she talks about you seriously makes me a little jealous hehe 🥰
+Player: 😳
+Naomi: I think you'll find out soon 🤭
+Naomi: Well we're about to have lunch now
+Naomi: Ciao!
+Player: Bye!
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

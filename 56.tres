@@ -1,0 +1,907 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_6xq0s"]
+
+[resource]
+script = ExtResource("1_6xq0s")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Player", "Jason")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Jason",
+&"id": "10",
+&"next_id": "11",
+&"text": "I was but after about like 10 of them you kinda get bored",
+&"type": "dialogue"
+},
+"100": {
+&"character": "Jason",
+&"id": "100",
+&"next_id": "101",
+&"text": "Thanks chief, for the spot 😉",
+&"type": "dialogue"
+},
+"101": {
+&"character": "Jason",
+&"id": "101",
+&"next_id": "102",
+&"text": "I gotta get you a lady too in exchange",
+&"type": "dialogue"
+},
+"102": {
+&"character": "Player",
+&"id": "102",
+&"next_id": "103",
+&"text": "Don't worry about it 😁",
+&"type": "dialogue"
+},
+"103": {
+&"character": "Jason",
+&"id": "103",
+&"next_id": "104",
+&"text": "Night my hero",
+&"type": "dialogue"
+},
+"104": {
+&"character": "Player",
+&"id": "104",
+&"next_id": "105",
+&"text": "Good night! 😂",
+&"type": "dialogue"
+},
+"105": {
+&"id": "105",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"106": {
+&"id": "106",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"11": {
+&"character": "Player",
+&"id": "11",
+&"next_id": "12",
+&"text": "Wow lol",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Player",
+&"id": "12",
+&"next_id": "13",
+&"text": "When does the club reopen?",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Jason",
+&"id": "13",
+&"next_id": "14",
+&"text": "No idea... Not even over the weekend",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Jason",
+&"id": "14",
+&"next_id": "15",
+&"text": "Maybe Monday or Tuesday?",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Jason",
+&"id": "15",
+&"next_id": "16",
+&"text": "I got no plans!!",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Jason",
+&"id": "16",
+&"next_id": "17",
+&"text": "I hate it",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Jason",
+&"id": "17",
+&"next_id": "18",
+&"text": "img: jason/5",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Player",
+&"id": "18",
+&"next_id": "19",
+&"text": "Dang",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Player",
+&"id": "19",
+&"next_id": "20",
+&"text": "The life's drained from your eyes",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Player",
+&"id": "2",
+&"next_id": "3",
+&"text": "Hey",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Jason",
+&"id": "20",
+&"next_id": "21",
+&"text": "Tell me about it..",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Player",
+&"id": "21",
+&"next_id": "22",
+&"text": "Lonely evenings then? 😅",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Jason",
+&"id": "22",
+&"next_id": "23",
+&"text": "For real, can't even get a girl in bed this week",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Jason",
+&"id": "23",
+&"next_id": "24",
+&"text": "I've been trying to beat off ngl but there ain't that many college cuties my type 😂",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Player",
+&"id": "24",
+&"next_id": "25",
+&"text": "Maybe I could help 😌",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Jason",
+&"id": "25",
+&"next_id": "26",
+&"text": "No offense dude, but I ain't beatin off to you",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Jason",
+&"id": "26",
+&"next_id": "27",
+&"text": "I'm sure you got a nice personality and all..",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Player",
+&"id": "27",
+&"next_id": "28",
+&"text": "Not what I meant 😆",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Jason",
+&"id": "28",
+&"next_id": "29",
+&"text": "Lol just busting your balls chief",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Jason",
+&"id": "29",
+&"next_id": "30",
+&"text": "What's on your mind?",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Player",
+&"id": "3",
+&"next_id": "4",
+&"text": "I see you online at this time lol",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Player",
+&"id": "30",
+&"next_id": "31",
+&"text": "My girlfriend might be able to help?",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Jason",
+&"id": "31",
+&"next_id": "32",
+&"text": "Seriously bro?",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Jason",
+&"id": "32",
+&"next_id": "33",
+&"text": "You sending her over to me or something?",
+&"type": "dialogue"
+},
+"33": {
+&"id": "33",
+&"next_id": "34",
+&"responses": PackedStringArray("33", "36"),
+&"text": "No 😆",
+&"type": "response"
+},
+"34": {
+&"character": "Player",
+&"id": "34",
+&"next_id": "35",
+&"text": "No 😆",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Jason",
+&"id": "35",
+&"next_id": "39",
+&"text": "You greedy boy",
+&"type": "dialogue"
+},
+"36": {
+&"id": "36",
+&"next_id": "37",
+&"text": "Not yet 😏",
+&"type": "response"
+},
+"37": {
+&"character": "Player",
+&"id": "37",
+&"next_id": "38",
+&"text": "Not yet 😏",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Jason",
+&"id": "38",
+&"next_id": "39",
+&"text": "It was just a joke but damn you really are too nice",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Player",
+&"id": "39",
+&"next_id": "40",
+&"text": "I just mean I got a spicy pic if you're interested.. 👀",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Jason",
+&"id": "4",
+&"next_id": "5",
+&"text": "Yoo, been a while",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Jason",
+&"id": "40",
+&"next_id": "41",
+&"text": "Damn, that's exactly what I need",
+&"type": "dialogue"
+},
+"41": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "JasonKnowsMabel"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "41",
+&"next_id": "42",
+&"next_id_after": "45",
+&"next_sibling_id": "43",
+&"type": "condition"
+},
+"42": {
+&"character": "Jason",
+&"id": "42",
+&"next_id": "45",
+&"text": "I remember her yo, she was FINE",
+&"type": "dialogue"
+},
+"43": {
+&"condition": {},
+&"id": "43",
+&"next_id": "44",
+&"next_id_after": "45",
+&"type": "condition"
+},
+"44": {
+&"character": "Jason",
+&"id": "44",
+&"next_id": "45",
+&"text": "I finally get to see what all your fuss is about haha",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Player",
+&"id": "45",
+&"next_id": "46",
+&"text": "Sure?",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Jason",
+&"id": "46",
+&"next_id": "47",
+&"text": "Stop teasing me",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Player",
+&"id": "47",
+&"next_id": "48",
+&"text": "img: mabel/150",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Jason",
+&"id": "48",
+&"next_id": "49",
+&"text": "Damn bro this is insaaaane",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Jason",
+&"id": "49",
+&"next_id": "50",
+&"text": "Please tell me you got a little more",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Player",
+&"id": "5",
+&"next_id": "6",
+&"text": "You're not... \"busy\" are you? 😁",
+&"type": "dialogue"
+},
+"50": {
+&"id": "50",
+&"next_id": "51",
+&"responses": PackedStringArray("50", "57"),
+&"text": "[Show]",
+&"type": "response"
+},
+"51": {
+&"character": "Player",
+&"id": "51",
+&"next_id": "52",
+&"text": "Sure do!",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Player",
+&"id": "52",
+&"next_id": "53",
+&"text": "img: mabel/115",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Jason",
+&"id": "53",
+&"next_id": "54",
+&"text": "Bro..",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Jason",
+&"id": "54",
+&"next_id": "55",
+&"text": "img: jason/6",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Player",
+&"id": "55",
+&"next_id": "56",
+&"text": "Haha 🤣",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Jason",
+&"id": "56",
+&"next_id": "61",
+&"text": "I'm rock hard rn",
+&"type": "dialogue"
+},
+"57": {
+&"id": "57",
+&"next_id": "58",
+&"text": "[Don't show]",
+&"type": "response"
+},
+"58": {
+&"character": "Player",
+&"id": "58",
+&"next_id": "59",
+&"text": "Nope, that's all you get right now haha",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Jason",
+&"id": "59",
+&"next_id": "60",
+&"text": "You monster!",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Jason",
+&"id": "6",
+&"next_id": "7",
+&"text": "I WISH BRO",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Jason",
+&"id": "60",
+&"next_id": "61",
+&"text": "But you're an awesome monster haha",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Player",
+&"id": "61",
+&"next_id": "62",
+&"text": "Would you go on a date with someone like her?",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Jason",
+&"id": "62",
+&"next_id": "63",
+&"text": "Heck yeah??",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Jason",
+&"id": "63",
+&"next_id": "64",
+&"text": "Is that even a serious question?",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Player",
+&"id": "64",
+&"next_id": "65",
+&"text": "Just checking if you're the dating type lol",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Jason",
+&"id": "65",
+&"next_id": "66",
+&"text": "Yeah sometimes",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Jason",
+&"id": "66",
+&"next_id": "67",
+&"text": "You mind if I smash it to this pic? 😜",
+&"type": "dialogue"
+},
+"67": {
+&"id": "67",
+&"next_id": "68",
+&"responses": PackedStringArray("67", "70"),
+&"text": "Not at all",
+&"type": "response"
+},
+"68": {
+&"character": "Player",
+&"id": "68",
+&"next_id": "69",
+&"text": "Not at all",
+&"type": "dialogue"
+},
+"69": {
+&"character": "Player",
+&"id": "69",
+&"next_id": "72",
+&"text": "Enjoy",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Jason",
+&"id": "7",
+&"next_id": "8",
+&"text": "My main club's under maintenance and the other ones are no good",
+&"type": "dialogue"
+},
+"70": {
+&"id": "70",
+&"next_id": "71",
+&"text": "I'd mind if you didn't",
+&"type": "response"
+},
+"71": {
+&"character": "Player",
+&"id": "71",
+&"next_id": "72",
+&"text": "I'd mind if you didn't",
+&"type": "dialogue"
+},
+"72": {
+&"character": "Jason",
+&"id": "72",
+&"next_id": "73",
+&"text": "Damn bro, you're a saint",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Jason",
+&"id": "73",
+&"next_id": "74",
+&"text": "I got my head primed with dirty thoughts now 😂",
+&"type": "dialogue"
+},
+"74": {
+&"id": "74",
+&"next_id": "75",
+&"responses": PackedStringArray("74", "79"),
+&"text": "Well you can keep those to yourself LOL",
+&"type": "response"
+},
+"75": {
+&"character": "Player",
+&"id": "75",
+&"next_id": "76",
+&"text": "Well you can keep those to yourself LOL",
+&"type": "dialogue"
+},
+"76": {
+&"character": "Jason",
+&"id": "76",
+&"next_id": "77",
+&"text": "Deffo",
+&"type": "dialogue"
+},
+"77": {
+&"character": "Jason",
+&"id": "77",
+&"next_id": "78",
+&"text": "They're so dirty",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Player",
+&"id": "78",
+&"next_id": "103",
+&"text": "😆",
+&"type": "dialogue"
+},
+"79": {
+&"id": "79",
+&"next_id": "80",
+&"text": "Maybe I wanna hear some of them",
+&"type": "response"
+},
+"8": {
+&"character": "Jason",
+&"id": "8",
+&"next_id": "9",
+&"text": "I've been trying other ones but they're just older ladies y'know",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Player",
+&"id": "80",
+&"next_id": "81",
+&"text": "Maybe I wanna hear some of them",
+&"type": "dialogue"
+},
+"81": {
+&"character": "Jason",
+&"id": "81",
+&"next_id": "82",
+&"text": "I don't usually do that but since you've been a bro",
+&"type": "dialogue"
+},
+"82": {
+&"character": "Jason",
+&"id": "82",
+&"next_id": "83",
+&"text": "Why the hell not",
+&"type": "dialogue"
+},
+"83": {
+&"character": "Player",
+&"id": "83",
+&"next_id": "84",
+&"text": "🧐",
+&"type": "dialogue"
+},
+"84": {
+&"character": "Jason",
+&"id": "84",
+&"next_id": "85",
+&"text": "Damn bro",
+&"type": "dialogue"
+},
+"85": {
+&"character": "Jason",
+&"id": "85",
+&"next_id": "86",
+&"text": "Your girl seems like she's soft in all the right places",
+&"type": "dialogue"
+},
+"86": {
+&"character": "Jason",
+&"id": "86",
+&"next_id": "87",
+&"text": "I wanna know how those tits feel against my face bro and my dick",
+&"type": "dialogue"
+},
+"87": {
+&"character": "Jason",
+&"id": "87",
+&"next_id": "88",
+&"text": "Holy, she's a mashmallow girl",
+&"type": "dialogue"
+},
+"88": {
+&"character": "Player",
+&"id": "88",
+&"next_id": "89",
+&"text": "She is a softie",
+&"type": "dialogue"
+},
+"89": {
+&"character": "Jason",
+&"id": "89",
+&"next_id": "90",
+&"text": "🤤",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Player",
+&"id": "9",
+&"next_id": "10",
+&"text": "Not too into that?",
+&"type": "dialogue"
+},
+"90": {
+&"character": "Jason",
+&"id": "90",
+&"next_id": "91",
+&"text": "She probably got a soft cooch too damn",
+&"type": "dialogue"
+},
+"91": {
+&"character": "Jason",
+&"id": "91",
+&"next_id": "92",
+&"text": "Like a little landing pad on each thrust 😩",
+&"type": "dialogue"
+},
+"92": {
+&"character": "Player",
+&"id": "92",
+&"next_id": "93",
+&"text": "👀",
+&"type": "dialogue"
+},
+"93": {
+&"character": "Jason",
+&"id": "93",
+&"next_id": "94",
+&"text": "I'd wanna hear those moans when she struggles to take me in",
+&"type": "dialogue"
+},
+"94": {
+&"character": "Jason",
+&"id": "94",
+&"next_id": "95",
+&"text": "I know your girl's gonna be TIGHT bro",
+&"type": "dialogue"
+},
+"95": {
+&"character": "Jason",
+&"id": "95",
+&"next_id": "96",
+&"text": "But I won't stop till she's broken in a little and quivering for it and making this face 🤪",
+&"type": "dialogue"
+},
+"96": {
+&"character": "Jason",
+&"id": "96",
+&"next_id": "97",
+&"text": "Alright, I can't cum like this lmao",
+&"type": "dialogue"
+},
+"97": {
+&"character": "Jason",
+&"id": "97",
+&"next_id": "98",
+&"text": "Maybe next time 🤣",
+&"type": "dialogue"
+},
+"98": {
+&"character": "Player",
+&"id": "98",
+&"next_id": "99",
+&"text": "Fair enough 😄",
+&"type": "dialogue"
+},
+"99": {
+&"character": "Jason",
+&"id": "99",
+&"next_id": "100",
+&"text": "I'mma sign off for now and finish up 👀",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+Player: Hey
+Player: I see you online at this time lol
+Jason: Yoo, been a while
+Player: You're not... \"busy\" are you? 😁
+Jason: I WISH BRO
+Jason: My main club's under maintenance and the other ones are no good
+Jason: I've been trying other ones but they're just older ladies y'know
+Player: Not too into that?
+Jason: I was but after about like 10 of them you kinda get bored
+Player: Wow lol
+Player: When does the club reopen?
+Jason: No idea... Not even over the weekend
+Jason: Maybe Monday or Tuesday?
+Jason: I got no plans!!
+Jason: I hate it
+Jason: img: jason/5
+Player: Dang
+Player: The life's drained from your eyes
+Jason: Tell me about it..
+Player: Lonely evenings then? 😅
+Jason: For real, can't even get a girl in bed this week
+Jason: I've been trying to beat off ngl but there ain't that many college cuties my type 😂
+Player: Maybe I could help 😌
+Jason: No offense dude, but I ain't beatin off to you
+Jason: I'm sure you got a nice personality and all..
+Player: Not what I meant 😆
+Jason: Lol just busting your balls chief
+Jason: What's on your mind?
+Player: My girlfriend might be able to help?
+Jason: Seriously bro?
+Jason: You sending her over to me or something?
+- No 😆
+	Player: No 😆
+	Jason: You greedy boy
+- Not yet 😏
+	Player: Not yet 😏
+	Jason: It was just a joke but damn you really are too nice
+Player: I just mean I got a spicy pic if you're interested.. 👀
+Jason: Damn, that's exactly what I need
+if Story.has_flag(\"JasonKnowsMabel\"):
+	Jason: I remember her yo, she was FINE
+else:
+	Jason: I finally get to see what all your fuss is about haha
+Player: Sure?
+Jason: Stop teasing me
+Player: img: mabel/150
+Jason: Damn bro this is insaaaane
+Jason: Please tell me you got a little more
+- [Show]
+	Player: Sure do!
+	Player: img: mabel/115
+	Jason: Bro..
+	Jason: img: jason/6
+	Player: Haha 🤣
+	Jason: I'm rock hard rn
+- [Don't show]
+	Player: Nope, that's all you get right now haha
+	Jason: You monster!
+	Jason: But you're an awesome monster haha
+Player: Would you go on a date with someone like her?
+Jason: Heck yeah?? 
+Jason: Is that even a serious question?
+Player: Just checking if you're the dating type lol
+Jason: Yeah sometimes
+Jason: You mind if I smash it to this pic? 😜
+- Not at all
+	Player: Not at all
+	Player: Enjoy
+- I'd mind if you didn't
+	Player: I'd mind if you didn't
+Jason: Damn bro, you're a saint
+Jason: I got my head primed with dirty thoughts now 😂
+- Well you can keep those to yourself LOL
+	Player: Well you can keep those to yourself LOL
+	Jason: Deffo
+	Jason: They're so dirty
+	Player: 😆
+- Maybe I wanna hear some of them
+	Player: Maybe I wanna hear some of them
+	Jason: I don't usually do that but since you've been a bro
+	Jason: Why the hell not
+	Player: 🧐
+	Jason: Damn bro
+	Jason: Your girl seems like she's soft in all the right places
+	Jason: I wanna know how those tits feel against my face bro and my dick
+	Jason: Holy, she's a mashmallow girl
+	Player: She is a softie
+	Jason: 🤤
+	Jason: She probably got a soft cooch too damn
+	Jason: Like a little landing pad on each thrust 😩
+	Player: 👀
+	Jason: I'd wanna hear those moans when she struggles to take me in
+	Jason: I know your girl's gonna be TIGHT bro
+	Jason: But I won't stop till she's broken in a little and quivering for it and making this face 🤪
+	Jason: Alright, I can't cum like this lmao
+	Jason: Maybe next time 🤣
+	Player: Fair enough 😄
+	Jason: I'mma sign off for now and finish up 👀
+	Jason: Thanks chief, for the spot 😉
+	Jason: I gotta get you a lady too in exchange
+	Player: Don't worry about it 😁
+Jason: Night my hero
+Player: Good night! 😂
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

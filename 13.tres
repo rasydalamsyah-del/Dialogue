@@ -1,0 +1,723 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_pdfkk"]
+
+[resource]
+script = ExtResource("1_pdfkk")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Mabel", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Player",
+&"id": "10",
+&"next_id": "11",
+&"text": "Looking fancy today!",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Mabel",
+&"id": "11",
+&"next_id": "12",
+&"text": "Am I?",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Mabel",
+&"id": "12",
+&"next_id": "13",
+&"text": "Trying to look a bit smarter today for a change 🤓",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Mabel",
+&"id": "13",
+&"next_id": "14",
+&"text": "Mom's boxes of clothes are literally never ending 😂",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Mabel",
+&"id": "14",
+&"next_id": "15",
+&"text": "So... I'm just experimenting a little 😇",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Mabel",
+&"id": "15",
+&"next_id": "16",
+&"text": "Is it too formal?",
+&"type": "dialogue"
+},
+"16": {
+&"id": "16",
+&"next_id": "17",
+&"responses": PackedStringArray("16", "21"),
+&"tags": PackedStringArray("trust"),
+&"text": "I think it's perfect",
+&"type": "response"
+},
+"17": {
+&"id": "17",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "18",
+&"type": "mutation"
+},
+"18": {
+&"character": "Player",
+&"id": "18",
+&"next_id": "19",
+&"text": "I think it's perfect!",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Mabel",
+&"id": "19",
+&"next_id": "20",
+&"text": "Awwh really?",
+&"type": "dialogue"
+},
+"2": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"i": 9,
+&"type": &"variable",
+&"value": "mabel_desire"
+}, {
+&"i": 22,
+&"type": &"comparison",
+&"value": ">"
+}, {
+&"i": 24,
+&"type": &"number",
+&"value": 0
+}])
+},
+&"id": "2",
+&"next_id": "3",
+&"next_id_after": "7",
+&"type": "condition"
+},
+"20": {
+&"character": "Mabel",
+&"id": "20",
+&"next_id": "26",
+&"text": "Maybe the nerd look is perfect for me afterall lol",
+&"type": "dialogue"
+},
+"21": {
+&"id": "21",
+&"next_id": "22",
+&"tags": PackedStringArray("lust"),
+&"text": "Maybe just a little",
+&"type": "response"
+},
+"22": {
+&"id": "22",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_desire"
+}, {
+&"i": 23,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 26,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "23",
+&"type": "mutation"
+},
+"23": {
+&"character": "Player",
+&"id": "23",
+&"next_id": "24",
+&"text": "Maybe just a little",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Player",
+&"id": "24",
+&"next_id": "25",
+&"text": "But suits you",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Mabel",
+&"id": "25",
+&"next_id": "26",
+&"text": "I was thinking the same",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Mabel",
+&"id": "26",
+&"next_id": "27",
+&"text": "I'm taking a page out of Naomi's style hehe",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Mabel",
+&"id": "27",
+&"next_id": "28",
+&"text": "😊",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Player",
+&"id": "28",
+&"next_id": "29",
+&"text": "Awwh",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Mabel",
+&"id": "29",
+&"next_id": "30",
+&"text": "I'm packing my books for my class 🤓",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Mabel",
+&"id": "3",
+&"next_id": "4",
+&"text": "delete: img: mabel/75",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Mabel",
+&"id": "30",
+&"next_id": "31",
+&"text": "Whatcha doing?",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Player",
+&"id": "31",
+&"next_id": "32",
+&"text": "Quick breakfast!",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Mabel",
+&"id": "32",
+&"next_id": "33",
+&"text": "I don't know if this is weird to bring up buuut",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Mabel",
+&"id": "33",
+&"next_id": "34",
+&"text": "I feel like a grown up already!",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Mabel",
+&"id": "34",
+&"next_id": "35",
+&"text": "Just living alone, making my own breakfast, laundry on the weekends, studying in the evening",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Mabel",
+&"id": "35",
+&"next_id": "36",
+&"text": "And nobody to tell me to do these things",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Player",
+&"id": "36",
+&"next_id": "37",
+&"text": "Yeah, same here",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Player",
+&"id": "37",
+&"next_id": "38",
+&"text": "Sometimes it's a lot of work lol",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Mabel",
+&"id": "38",
+&"next_id": "39",
+&"text": "Yeah! Totally",
+&"type": "dialogue"
+},
+"39": {
+&"id": "39",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "social_post",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 15,
+&"type": &"string",
+&"value": "erika_sunbathing"
+}, {
+&"i": 33,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "40",
+&"type": "mutation"
+},
+"4": {
+&"character": "Mabel",
+&"id": "4",
+&"next_id": "5",
+&"text": "Thought: I FORGOT TO WEAR MY SHIRT",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Mabel",
+&"id": "40",
+&"next_id": "41",
+&"text": "I feel like there's a lot of adulting left to do 👀",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Mabel",
+&"id": "41",
+&"next_id": "42",
+&"text": "Other girls look like they've already figured it out tbh 👉👈",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Mabel",
+&"id": "42",
+&"next_id": "43",
+&"text": "Thought: Maybe we could do something... like that eventually I mean... No rush",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Player",
+&"id": "43",
+&"next_id": "44",
+&"text": "What do you mean?",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Mabel",
+&"id": "44",
+&"next_id": "45",
+&"text": "Nothing, just getting ahead of myself 😇",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Player",
+&"id": "45",
+&"next_id": "46",
+&"text": "Still missing home?",
+&"type": "dialogue"
+},
+"46": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"i": 9,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 21,
+&"type": &"comparison",
+&"value": ">="
+}, {
+&"i": 24,
+&"type": &"number",
+&"value": 50
+}])
+},
+&"id": "46",
+&"next_id": "47",
+&"next_id_after": "69",
+&"next_sibling_id": "58",
+&"type": "condition"
+},
+"47": {
+&"character": "Mabel",
+&"id": "47",
+&"next_id": "48",
+&"text": "I don't!",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Player",
+&"id": "48",
+&"next_id": "49",
+&"text": "Wow, didn't expect that!",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Mabel",
+&"id": "49",
+&"next_id": "50",
+&"text": "Ask me why silly 😉",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Mabel",
+&"id": "5",
+&"next_id": "6",
+&"text": "Whoops, bad angle 😅 Hope you didn't see that",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Player",
+&"id": "50",
+&"next_id": "51",
+&"text": "Why?? 😄",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Mabel",
+&"id": "51",
+&"next_id": "52",
+&"text": "Because I have you with me 🥰",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Mabel",
+&"id": "52",
+&"next_id": "53",
+&"text": "I've been feeling safe and protected with you around",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Mabel",
+&"id": "53",
+&"next_id": "54",
+&"text": "I know you live a bit far but still",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Mabel",
+&"id": "54",
+&"next_id": "55",
+&"text": "Somehow I know you're right around the corner when I need you to be 🩷",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Mabel",
+&"id": "55",
+&"next_id": "56",
+&"text": "🫶",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Player",
+&"id": "56",
+&"next_id": "57",
+&"text": "Awwh",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Player",
+&"id": "57",
+&"next_id": "69",
+&"text": "🫶",
+&"type": "dialogue"
+},
+"58": {
+&"condition": {},
+&"id": "58",
+&"next_id": "59",
+&"next_id_after": "69",
+&"type": "condition"
+},
+"59": {
+&"character": "Mabel",
+&"id": "59",
+&"next_id": "60",
+&"text": "I do but",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Mabel",
+&"id": "6",
+&"next_id": "7",
+&"text": "Here's a better one 👀",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Mabel",
+&"id": "60",
+&"next_id": "61",
+&"text": "In a different way now",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Mabel",
+&"id": "61",
+&"next_id": "62",
+&"text": "I feel like... the Mabel that left home isn't the same one that's going to return home one day",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Player",
+&"id": "62",
+&"next_id": "63",
+&"text": "Wow, that sounds sad!",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Mabel",
+&"id": "63",
+&"next_id": "64",
+&"text": "Is it?",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Mabel",
+&"id": "64",
+&"next_id": "65",
+&"text": "In a way I guess",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Mabel",
+&"id": "65",
+&"next_id": "66",
+&"text": "But I don't know, it doesn't scare me as much as it should",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Mabel",
+&"id": "66",
+&"next_id": "67",
+&"text": "I'll be more of a lady and less a girl 💅🤭",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Player",
+&"id": "67",
+&"next_id": "68",
+&"text": "A lovely lady 😁",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Mabel",
+&"id": "68",
+&"next_id": "69",
+&"text": "🤭",
+&"type": "dialogue"
+},
+"69": {
+&"character": "Mabel",
+&"id": "69",
+&"next_id": "70",
+&"text": "Alright packing done!",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Mabel",
+&"id": "7",
+&"next_id": "8",
+&"text": "img: mabel/76",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Mabel",
+&"id": "70",
+&"next_id": "71",
+&"text": "Gotta go",
+&"type": "dialogue"
+},
+"71": {
+&"id": "71",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"72": {
+&"id": "72",
+&"next_id": "73",
+&"type": ""
+},
+"73": {
+&"id": "73",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"8": {
+&"character": "Mabel",
+&"id": "8",
+&"next_id": "9",
+&"text": "What do you think hehe",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Player",
+&"id": "9",
+&"next_id": "10",
+&"text": "Whoa!",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+if Story.mabel_desire > 0:
+	Mabel: delete: img: mabel/75
+	Mabel: Thought: I FORGOT TO WEAR MY SHIRT
+	Mabel: Whoops, bad angle 😅 Hope you didn't see that 
+	Mabel: Here's a better one 👀
+Mabel: img: mabel/76
+Mabel: What do you think hehe
+Player: Whoa!
+Player: Looking fancy today!
+Mabel: Am I?
+Mabel: Trying to look a bit smarter today for a change 🤓
+Mabel: Mom's boxes of clothes are literally never ending 😂
+Mabel: So... I'm just experimenting a little 😇
+Mabel: Is it too formal?
+- I think it's perfect [#trust]
+	set Story.mabel_trust += 1
+	Player: I think it's perfect!
+	Mabel: Awwh really?
+	Mabel: Maybe the nerd look is perfect for me afterall lol
+- Maybe just a little [#lust]
+	set Story.mabel_desire += 1
+	Player: Maybe just a little
+	Player: But suits you
+	Mabel: I was thinking the same 
+Mabel: I'm taking a page out of Naomi's style hehe
+Mabel: 😊
+Player: Awwh
+Mabel: I'm packing my books for my class 🤓
+Mabel: Whatcha doing?
+Player: Quick breakfast!
+Mabel: I don't know if this is weird to bring up buuut
+Mabel: I feel like a grown up already!
+Mabel: Just living alone, making my own breakfast, laundry on the weekends, studying in the evening
+Mabel: And nobody to tell me to do these things
+Player: Yeah, same here
+Player: Sometimes it's a lot of work lol
+Mabel: Yeah! Totally
+do social_post(\"erika_sunbathing\")
+Mabel: I feel like there's a lot of adulting left to do 👀
+Mabel: Other girls look like they've already figured it out tbh 👉👈
+Mabel: Thought: Maybe we could do something... like that eventually I mean... No rush
+Player: What do you mean?
+Mabel: Nothing, just getting ahead of myself 😇
+Player: Still missing home?
+if Story.mabel_trust >= 50:
+	Mabel: I don't!
+	Player: Wow, didn't expect that!
+	Mabel: Ask me why silly 😉
+	Player: Why?? 😄
+	Mabel: Because I have you with me 🥰
+	Mabel: I've been feeling safe and protected with you around
+	Mabel: I know you live a bit far but still
+	Mabel: Somehow I know you're right around the corner when I need you to be 🩷
+	Mabel: 🫶
+	Player: Awwh
+	Player: 🫶
+else:
+	Mabel: I do but
+	Mabel: In a different way now
+	Mabel: I feel like... the Mabel that left home isn't the same one that's going to return home one day
+	Player: Wow, that sounds sad!
+	Mabel: Is it? 
+	Mabel: In a way I guess
+	Mabel: But I don't know, it doesn't scare me as much as it should
+	Mabel: I'll be more of a lady and less a girl 💅🤭
+	Player: A lovely lady 😁
+	Mabel: 🤭
+Mabel: Alright packing done!
+Mabel: Gotta go
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

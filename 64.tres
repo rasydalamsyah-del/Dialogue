@@ -1,0 +1,1218 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_oe62p"]
+
+[resource]
+script = ExtResource("1_oe62p")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Naomi", "Mabel", "Paige", "Player", "Caleb", "Alice")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Paige",
+&"id": "10",
+&"next_id": "11",
+&"text": "img: paige/11",
+&"type": "dialogue"
+},
+"100": {
+&"character": "Paige",
+&"id": "100",
+&"next_id": "101",
+&"text": "NINA??",
+&"type": "dialogue"
+},
+"101": {
+&"character": "Paige",
+&"id": "101",
+&"next_id": "102",
+&"text": "No way, don't you dare invite that cruel gremlin 😡",
+&"type": "dialogue"
+},
+"102": {
+&"character": "Mabel",
+&"id": "102",
+&"next_id": "103",
+&"text": "Eep.",
+&"type": "dialogue"
+},
+"103": {
+&"character": "Mabel",
+&"id": "103",
+&"next_id": "104",
+&"text": "Okay, sorry!",
+&"type": "dialogue"
+},
+"104": {
+&"character": "Paige",
+&"id": "104",
+&"next_id": "105",
+&"text": "Not your fault, she's just an annoying person 🙄",
+&"type": "dialogue"
+},
+"105": {
+&"character": "Naomi",
+&"id": "105",
+&"next_id": "106",
+&"text": "Ladies, lets not invite conflict okay?",
+&"type": "dialogue"
+},
+"106": {
+&"character": "Naomi",
+&"id": "106",
+&"next_id": "107",
+&"text": "Prioritize our club members' feelings!",
+&"type": "dialogue"
+},
+"107": {
+&"character": "Mabel",
+&"id": "107",
+&"next_id": "108",
+&"text": "Sowwy Naomi 🥺",
+&"type": "dialogue"
+},
+"108": {
+&"character": "Naomi",
+&"id": "108",
+&"next_id": "109",
+&"text": "Don't worry sweetie ❤️",
+&"type": "dialogue"
+},
+"109": {
+&"character": "Player",
+&"id": "109",
+&"next_id": "110",
+&"text": "Is Alice coming?",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Naomi",
+&"id": "11",
+&"next_id": "12",
+&"text": "😅",
+&"type": "dialogue"
+},
+"110": {
+&"character": "Naomi",
+&"id": "110",
+&"next_id": "111",
+&"text": "Probably not, she doesn't mesh well with parties she said",
+&"type": "dialogue"
+},
+"111": {
+&"character": "Alice",
+&"id": "111",
+&"next_id": "112",
+&"text": "Sorry.",
+&"type": "dialogue"
+},
+"112": {
+&"character": "Mabel",
+&"id": "112",
+&"next_id": "113",
+&"text": "Don't worry Alice!",
+&"type": "dialogue"
+},
+"113": {
+&"character": "Mabel",
+&"id": "113",
+&"next_id": "114",
+&"text": "I hope you can come next time!",
+&"type": "dialogue"
+},
+"114": {
+&"character": "Alice",
+&"id": "114",
+&"next_id": "115",
+&"text": "Uhm..",
+&"type": "dialogue"
+},
+"115": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"i": 9,
+&"type": &"variable",
+&"value": "white_heart"
+}, {
+&"i": 21,
+&"type": &"comparison",
+&"value": ">="
+}, {
+&"i": 24,
+&"type": &"number",
+&"value": 2
+}])
+},
+&"id": "115",
+&"next_id": "116",
+&"next_id_after": "118",
+&"type": "condition"
+},
+"116": {
+&"character": "Player",
+&"id": "116",
+&"next_id": "117",
+&"text": "I hope so too",
+&"type": "dialogue"
+},
+"117": {
+&"character": "Alice",
+&"id": "117",
+&"next_id": "118",
+&"text": "Thank you 😊",
+&"type": "dialogue"
+},
+"118": {
+&"character": "Naomi",
+&"id": "118",
+&"next_id": "119",
+&"text": "It was a nice chat everyone, hopefully we have a high turnout and a lot of fun this Sunday!",
+&"type": "dialogue"
+},
+"119": {
+&"character": "Mabel",
+&"id": "119",
+&"next_id": "120",
+&"text": "Can't wait!",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Naomi",
+&"id": "12",
+&"next_id": "13",
+&"text": "Anyway, the party is going to be on Sunday and we'll have drinks!",
+&"type": "dialogue"
+},
+"120": {
+&"character": "Caleb",
+&"id": "120",
+&"next_id": "121",
+&"text": "Same",
+&"type": "dialogue"
+},
+"121": {
+&"character": "Paige",
+&"id": "121",
+&"next_id": "122",
+&"text": "Finally",
+&"type": "dialogue"
+},
+"122": {
+&"character": "Player",
+&"id": "122",
+&"next_id": "123",
+&"text": "Exciting",
+&"type": "dialogue"
+},
+"123": {
+&"character": "Naomi",
+&"id": "123",
+&"next_id": "124",
+&"text": "Ciao everyone!",
+&"type": "dialogue"
+},
+"124": {
+&"id": "124",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "social_post",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 15,
+&"type": &"string",
+&"value": "naomi_party_announce"
+}, {
+&"i": 37,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "125",
+&"type": "mutation"
+},
+"125": {
+&"id": "125",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"126": {
+&"id": "126",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"13": {
+&"character": "Naomi",
+&"id": "13",
+&"next_id": "14",
+&"text": "We'll play some of our old club games since we're big enough to now",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Player",
+&"id": "14",
+&"next_id": "15",
+&"text": "What kind of games?",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Naomi",
+&"id": "15",
+&"next_id": "16",
+&"text": "I'm glad you asked",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Naomi",
+&"id": "16",
+&"next_id": "17",
+&"text": "All sorts!",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Naomi",
+&"id": "17",
+&"next_id": "18",
+&"text": "One of my personal favorites is the dark room game 🤭",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Caleb",
+&"id": "18",
+&"next_id": "19",
+&"text": "Oh.. that game 😳",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Mabel",
+&"id": "19",
+&"next_id": "20",
+&"text": "What's that? 🤔",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Naomi",
+&"id": "2",
+&"next_id": "3",
+&"text": "Hey all!",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Caleb",
+&"id": "20",
+&"next_id": "21",
+&"text": "🙉",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Naomi",
+&"id": "21",
+&"next_id": "22",
+&"text": "It's a little party game me and Caleb cooked up",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Naomi",
+&"id": "22",
+&"next_id": "23",
+&"text": "One participant goes into the photography dark room",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Naomi",
+&"id": "23",
+&"next_id": "24",
+&"text": "and the rest of us vote on one of the others to go in to kiss that person",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Mabel",
+&"id": "24",
+&"next_id": "25",
+&"text": "Kiss!?",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Player",
+&"id": "25",
+&"next_id": "26",
+&"text": "Wow 😆",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Naomi",
+&"id": "26",
+&"next_id": "27",
+&"text": "Mhmm!",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Naomi",
+&"id": "27",
+&"next_id": "28",
+&"text": "Naturally so the first person doesn't know who their partner is",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Naomi",
+&"id": "28",
+&"next_id": "29",
+&"text": "But that makes the kiss more exciting doesn't it? 😊",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Naomi",
+&"id": "29",
+&"next_id": "30",
+&"text": "We'll make sure everyone gets a chance",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Naomi",
+&"id": "3",
+&"next_id": "4",
+&"text": "Congratulations on everyone for completing the first week's tasks!",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Naomi",
+&"id": "30",
+&"next_id": "31",
+&"text": "Oh and we might take a silhouette shot too 😉📷",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Paige",
+&"id": "31",
+&"next_id": "32",
+&"text": "Sounds like my kinda game 😌",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Mabel",
+&"id": "32",
+&"next_id": "33",
+&"text": "What kinda game is that 🙊",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Naomi",
+&"id": "33",
+&"next_id": "34",
+&"text": "Are you coming as well?",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Player",
+&"id": "34",
+&"next_id": "35",
+&"text": "Yeah why not",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Mabel",
+&"id": "35",
+&"next_id": "36",
+&"text": "B-babe!!",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Naomi",
+&"id": "36",
+&"next_id": "37",
+&"text": "What do you think Mabel? 🤭",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Naomi",
+&"id": "37",
+&"next_id": "38",
+&"text": "You in?",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Mabel",
+&"id": "38",
+&"next_id": "39",
+&"text": "I mean if everyone else is going... then I guess I should too 🙈",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Mabel",
+&"id": "39",
+&"next_id": "40",
+&"text": "What do you think babe",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Naomi",
+&"id": "4",
+&"next_id": "5",
+&"text": "Caleb especially took on some heavy lifting",
+&"type": "dialogue"
+},
+"40": {
+&"id": "40",
+&"next_id": "41",
+&"responses": PackedStringArray("40", "44"),
+&"text": "It'll be fun!",
+&"type": "response"
+},
+"41": {
+&"character": "Player",
+&"id": "41",
+&"next_id": "42",
+&"text": "It'll be fun",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Naomi",
+&"id": "42",
+&"next_id": "43",
+&"text": "It's always fun!",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Mabel",
+&"id": "43",
+&"next_id": "49",
+&"text": "If you say so..",
+&"type": "dialogue"
+},
+"44": {
+&"id": "44",
+&"next_id": "45",
+&"text": "You don't have to come",
+&"type": "response"
+},
+"45": {
+&"character": "Player",
+&"id": "45",
+&"next_id": "46",
+&"text": "You don't have to come",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Player",
+&"id": "46",
+&"next_id": "47",
+&"text": "If you think it won't be fun",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Paige",
+&"id": "47",
+&"next_id": "48",
+&"text": "Yeah, listen to your boyfriend 😘",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Mabel",
+&"id": "48",
+&"next_id": "49",
+&"text": "Hey!! 😤",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Mabel",
+&"id": "49",
+&"next_id": "50",
+&"text": "Then I'm totally coming",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Mabel",
+&"id": "5",
+&"next_id": "6",
+&"text": "That's true! 🤭",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Mabel",
+&"id": "50",
+&"next_id": "51",
+&"text": "img: mabel/141",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Player",
+&"id": "51",
+&"next_id": "52",
+&"text": "😁",
+&"type": "dialogue"
+},
+"52": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "JasonRt"
+}, {
+&"i": 27,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "52",
+&"next_id": "53",
+&"next_id_after": "99",
+&"next_sibling_id": "67",
+&"type": "condition"
+},
+"53": {
+&"character": "Player",
+&"id": "53",
+&"next_id": "54",
+&"text": "Would you mind if I invite my friend, Naomi?",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Naomi",
+&"id": "54",
+&"next_id": "55",
+&"text": "Not at all, it's an open party!",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Player",
+&"id": "55",
+&"next_id": "56",
+&"text": "Awesome!",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Mabel",
+&"id": "56",
+&"next_id": "57",
+&"text": "Is that the friend you've been talking about?",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Mabel",
+&"id": "57",
+&"next_id": "58",
+&"text": "The one you met on the first week? 🤔",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Player",
+&"id": "58",
+&"next_id": "59",
+&"text": "Yeah!",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Player",
+&"id": "59",
+&"next_id": "60",
+&"text": "I think you and him would get along",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Naomi",
+&"id": "6",
+&"next_id": "7",
+&"text": "So I decided to throw a little welcome party this weekend",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Player",
+&"id": "60",
+&"next_id": "61",
+&"text": "He knows a lot about you 😄",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Mabel",
+&"id": "61",
+&"next_id": "62",
+&"text": "Omg that makes me so nervous 🫢",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Mabel",
+&"id": "62",
+&"next_id": "63",
+&"text": "I hope you said good things 👀",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Player",
+&"id": "63",
+&"next_id": "64",
+&"text": "The best things",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Player",
+&"id": "64",
+&"next_id": "65",
+&"text": "He's excited to meet you",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Mabel",
+&"id": "65",
+&"next_id": "66",
+&"text": "Yay, I am too 🥰🥳",
+&"type": "dialogue"
+},
+"66": {
+&"id": "66",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "queue_social_post",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 21,
+&"type": &"string",
+&"value": "jason_party_hype"
+}, {
+&"i": 39,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "99",
+&"type": "mutation"
+},
+"67": {
+&"condition": {},
+&"id": "67",
+&"next_id": "68",
+&"next_id_after": "99",
+&"type": "condition"
+},
+"68": {
+&"id": "68",
+&"next_id": "69",
+&"responses": PackedStringArray("68", "97"),
+&"text": "[Invite Jason]",
+&"type": "response"
+},
+"69": {
+&"id": "69",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "queue_social_post",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 21,
+&"type": &"string",
+&"value": "jason_party_hype"
+}, {
+&"i": 39,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "70",
+&"type": "mutation"
+},
+"7": {
+&"character": "Naomi",
+&"id": "7",
+&"next_id": "8",
+&"text": "I don't think we all got a chance to mingle properly",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Player",
+&"id": "70",
+&"next_id": "71",
+&"text": "Would you mind if I invite my friend, Naomi?",
+&"type": "dialogue"
+},
+"71": {
+&"character": "Naomi",
+&"id": "71",
+&"next_id": "72",
+&"text": "Not at all, it's an open party!",
+&"type": "dialogue"
+},
+"72": {
+&"character": "Player",
+&"id": "72",
+&"next_id": "73",
+&"text": "Awesome!",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Mabel",
+&"id": "73",
+&"next_id": "74",
+&"text": "Is that the friend you've been talking about?",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Mabel",
+&"id": "74",
+&"next_id": "75",
+&"text": "The one you met on the first week? 🤔",
+&"type": "dialogue"
+},
+"75": {
+&"character": "Player",
+&"id": "75",
+&"next_id": "76",
+&"text": "Yeah!",
+&"type": "dialogue"
+},
+"76": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 35,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 40,
+&"type": &"dot"
+}, {
+&"i": 41,
+&"type": &"variable",
+&"value": "red_heart"
+}, {
+&"i": 51,
+&"type": &"comparison",
+&"value": ">="
+}, {
+&"i": 54,
+&"type": &"number",
+&"value": 3
+}])
+},
+&"condition_as_text": "Story.red_heart >= 3",
+&"id": "76",
+&"next_id": "77",
+&"responses": PackedStringArray("76", "85", "94"),
+&"text": "I think Naomi would like him",
+&"type": "response"
+},
+"77": {
+&"id": "77",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "JasonNaomiEvent"
+}]),
+&"is_blocking": true
+},
+&"next_id": "78",
+&"type": "mutation"
+},
+"78": {
+&"character": "Player",
+&"id": "78",
+&"next_id": "79",
+&"text": "I think Naomi would like him",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Naomi",
+&"id": "79",
+&"next_id": "80",
+&"text": "Got me on your mind, do ya? 🤭",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Paige",
+&"id": "8",
+&"next_id": "9",
+&"text": "Finally, something fun",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Naomi",
+&"id": "80",
+&"next_id": "81",
+&"text": "Or are you trying to ship me with this mysterious boy 😏",
+&"type": "dialogue"
+},
+"81": {
+&"character": "Player",
+&"id": "81",
+&"next_id": "82",
+&"text": "No comment! 🙂",
+&"type": "dialogue"
+},
+"82": {
+&"character": "Naomi",
+&"id": "82",
+&"next_id": "83",
+&"text": "img: naomi/25",
+&"type": "dialogue"
+},
+"83": {
+&"character": "Naomi",
+&"id": "83",
+&"next_id": "84",
+&"text": "If he's your friend, he's gotta be some one interesting hehe",
+&"type": "dialogue"
+},
+"84": {
+&"character": "Naomi",
+&"id": "84",
+&"next_id": "99",
+&"text": "I'll give him a chance 😉",
+&"type": "dialogue"
+},
+"85": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 45,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 50,
+&"type": &"dot"
+}, {
+&"i": 51,
+&"type": &"variable",
+&"value": "blue_heart"
+}, {
+&"i": 62,
+&"type": &"comparison",
+&"value": ">="
+}, {
+&"i": 65,
+&"type": &"number",
+&"value": 3
+}])
+},
+&"condition_as_text": "Story.blue_heart >= 3",
+&"id": "85",
+&"next_id": "86",
+&"text": "I think Paige would get along with him",
+&"type": "response"
+},
+"86": {
+&"id": "86",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "JasonPaigeEvent"
+}]),
+&"is_blocking": true
+},
+&"next_id": "87",
+&"type": "mutation"
+},
+"87": {
+&"character": "Player",
+&"id": "87",
+&"next_id": "88",
+&"text": "I think Paige would get along with him",
+&"type": "dialogue"
+},
+"88": {
+&"character": "Paige",
+&"id": "88",
+&"next_id": "89",
+&"text": "You really think you know all about me after our one \"photography session\" huh 🙂‍↔️",
+&"type": "dialogue"
+},
+"89": {
+&"character": "Paige",
+&"id": "89",
+&"next_id": "90",
+&"text": "You that confident?",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Paige",
+&"id": "9",
+&"next_id": "10",
+&"text": "I was getting super bored on weekends",
+&"type": "dialogue"
+},
+"90": {
+&"character": "Player",
+&"id": "90",
+&"next_id": "91",
+&"text": "Maybe 🙂",
+&"type": "dialogue"
+},
+"91": {
+&"character": "Paige",
+&"id": "91",
+&"next_id": "92",
+&"text": "img: paige/12",
+&"type": "dialogue"
+},
+"92": {
+&"character": "Paige",
+&"id": "92",
+&"next_id": "93",
+&"text": "I'll be there to totally party, like everyone else",
+&"type": "dialogue"
+},
+"93": {
+&"character": "Paige",
+&"id": "93",
+&"next_id": "99",
+&"text": "And boys that give me attention are the ones that get my attention",
+&"type": "dialogue"
+},
+"94": {
+&"id": "94",
+&"next_id": "95",
+&"text": "He's a fun guy!",
+&"type": "response"
+},
+"95": {
+&"character": "Player",
+&"id": "95",
+&"next_id": "96",
+&"text": "He's a fun guy!",
+&"type": "dialogue"
+},
+"96": {
+&"character": "Naomi",
+&"id": "96",
+&"next_id": "99",
+&"text": "Neato, he's welcome!",
+&"type": "dialogue"
+},
+"97": {
+&"id": "97",
+&"next_id": "98",
+&"text": "[Don't invite Jason]",
+&"type": "response"
+},
+"98": {
+&"character": "Player",
+&"id": "98",
+&"next_id": "99",
+&"text": "Is anyone else coming?",
+&"type": "dialogue"
+},
+"99": {
+&"character": "Mabel",
+&"id": "99",
+&"next_id": "100",
+&"text": "Maybe I should invite Nina 🤔",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+Naomi: Hey all!
+Naomi: Congratulations on everyone for completing the first week's tasks!
+Naomi: Caleb especially took on some heavy lifting
+Mabel: That's true! 🤭
+Naomi: So I decided to throw a little welcome party this weekend
+Naomi: I don't think we all got a chance to mingle properly
+Paige: Finally, something fun
+Paige: I was getting super bored on weekends
+Paige: img: paige/11
+Naomi: 😅
+Naomi: Anyway, the party is going to be on Sunday and we'll have drinks!
+Naomi: We'll play some of our old club games since we're big enough to now
+Player: What kind of games?
+Naomi: I'm glad you asked
+Naomi: All sorts!
+Naomi: One of my personal favorites is the dark room game 🤭
+Caleb: Oh.. that game 😳
+Mabel: What's that? 🤔
+Caleb: 🙉
+Naomi: It's a little party game me and Caleb cooked up
+Naomi: One participant goes into the photography dark room
+Naomi: and the rest of us vote on one of the others to go in to kiss that person 
+Mabel: Kiss!?
+Player: Wow 😆
+Naomi: Mhmm!
+Naomi: Naturally so the first person doesn't know who their partner is
+Naomi: But that makes the kiss more exciting doesn't it? 😊
+Naomi: We'll make sure everyone gets a chance
+Naomi: Oh and we might take a silhouette shot too 😉📷
+Paige: Sounds like my kinda game 😌
+Mabel: What kinda game is that 🙊
+Naomi: Are you coming as well?
+Player: Yeah why not
+Mabel: B-babe!!
+Naomi: What do you think Mabel? 🤭
+Naomi: You in?
+Mabel: I mean if everyone else is going... then I guess I should too 🙈
+Mabel: What do you think babe
+- It'll be fun!
+	Player: It'll be fun
+	Naomi: It's always fun!
+	Mabel: If you say so..
+- You don't have to come
+	Player: You don't have to come
+	Player: If you think it won't be fun
+	Paige: Yeah, listen to your boyfriend 😘
+	Mabel: Hey!! 😤
+Mabel: Then I'm totally coming
+Mabel: img: mabel/141
+Player: 😁
+if Story.has_flag(\"JasonRt\")
+	Player: Would you mind if I invite my friend, Naomi?
+	Naomi: Not at all, it's an open party!
+	Player: Awesome!
+	Mabel: Is that the friend you've been talking about?
+	Mabel: The one you met on the first week? 🤔
+	Player: Yeah!
+	Player: I think you and him would get along
+	Player: He knows a lot about you 😄
+	Mabel: Omg that makes me so nervous 🫢
+	Mabel: I hope you said good things 👀
+	Player: The best things
+	Player: He's excited to meet you
+	Mabel: Yay, I am too 🥰🥳
+	do queue_social_post(\"jason_party_hype\")
+else:
+	- [Invite Jason]
+		do queue_social_post(\"jason_party_hype\")
+		Player: Would you mind if I invite my friend, Naomi?
+		Naomi: Not at all, it's an open party!
+		Player: Awesome!
+		Mabel: Is that the friend you've been talking about?
+		Mabel: The one you met on the first week? 🤔
+		Player: Yeah!
+		- I think Naomi would like him [if Story.red_heart >= 3]
+			set Story.flag = \"JasonNaomiEvent\"
+			Player: I think Naomi would like him
+			Naomi: Got me on your mind, do ya? 🤭
+			Naomi: Or are you trying to ship me with this mysterious boy 😏
+			Player: No comment! 🙂
+			Naomi: img: naomi/25
+			Naomi: If he's your friend, he's gotta be some one interesting hehe
+			Naomi: I'll give him a chance 😉
+		- I think Paige would get along with him [if Story.blue_heart >= 3]
+			set Story.flag = \"JasonPaigeEvent\"
+			Player: I think Paige would get along with him
+			Paige: You really think you know all about me after our one \"photography session\" huh 🙂‍↔️
+			Paige: You that confident?
+			Player: Maybe 🙂
+			Paige: img: paige/12
+			Paige: I'll be there to totally party, like everyone else
+			Paige: And boys that give me attention are the ones that get my attention
+		- He's a fun guy!
+			Player: He's a fun guy!
+			Naomi: Neato, he's welcome!
+	- [Don't invite Jason]
+		Player: Is anyone else coming?
+Mabel: Maybe I should invite Nina 🤔
+Paige: NINA??
+Paige: No way, don't you dare invite that cruel gremlin 😡
+Mabel: Eep.
+Mabel: Okay, sorry!
+Paige: Not your fault, she's just an annoying person 🙄
+Naomi: Ladies, lets not invite conflict okay?
+Naomi: Prioritize our club members' feelings!
+Mabel: Sowwy Naomi 🥺
+Naomi: Don't worry sweetie ❤️
+Player: Is Alice coming?
+Naomi: Probably not, she doesn't mesh well with parties she said
+Alice: Sorry.
+Mabel: Don't worry Alice!
+Mabel: I hope you can come next time!
+Alice: Uhm..
+if Story.white_heart >= 2:
+	Player: I hope so too
+	Alice: Thank you 😊
+Naomi: It was a nice chat everyone, hopefully we have a high turnout and a lot of fun this Sunday!
+Mabel: Can't wait!
+Caleb: Same
+Paige: Finally
+Player: Exciting
+Naomi: Ciao everyone!
+do social_post(\"naomi_party_announce\")
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

@@ -1,0 +1,500 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_lju7i"]
+
+[resource]
+script = ExtResource("1_lju7i")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Mabel", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Player",
+&"id": "10",
+&"next_id": "11",
+&"text": "It's past noon",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Mabel",
+&"id": "11",
+&"next_id": "12",
+&"text": "Hey I was having a lazy day 🫠",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Player",
+&"id": "12",
+&"next_id": "13",
+&"text": "I'll be on my way soon 😄",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Mabel",
+&"id": "13",
+&"next_id": "14",
+&"text": "Gah!!",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Mabel",
+&"id": "14",
+&"next_id": "15",
+&"text": "Oki dokes!! Gotta change",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Mabel",
+&"id": "15",
+&"next_id": "16",
+&"text": "I want today to be extra special 🤭",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Mabel",
+&"id": "16",
+&"next_id": "17",
+&"text": "Hmmmmm",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Mabel",
+&"id": "17",
+&"next_id": "18",
+&"text": "img: mabel/88",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Mabel",
+&"id": "18",
+&"next_id": "19",
+&"text": "OMG",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Mabel",
+&"id": "19",
+&"next_id": "20",
+&"text": "I totally know! 🤩",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Mabel",
+&"id": "2",
+&"next_id": "3",
+&"text": "img: mabel/87",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Mabel",
+&"id": "20",
+&"next_id": "21",
+&"text": "I found something in one of the clothing boxes that I wanted to try on 😇",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Player",
+&"id": "21",
+&"next_id": "22",
+&"text": "Why not wear it for class?",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Mabel",
+&"id": "22",
+&"next_id": "23",
+&"text": "It's not that kind of thing silly 🤭",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Mabel",
+&"id": "23",
+&"next_id": "24",
+&"text": "Thought: Well... now that I think about it, some girls DO come to college almost dressed in a bikini",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Player",
+&"id": "24",
+&"next_id": "25",
+&"text": "So where are we going?",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Mabel",
+&"id": "25",
+&"next_id": "26",
+&"text": "I want it to be a surprise!!",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Mabel",
+&"id": "26",
+&"next_id": "27",
+&"text": "Uhm... can you bring swimming shorts? 🫣",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Player",
+&"id": "27",
+&"next_id": "28",
+&"text": "Not much of a surprise anymore haha",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Mabel",
+&"id": "28",
+&"next_id": "29",
+&"text": "SHH, just grab them and don't think about it 😌",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Player",
+&"id": "29",
+&"next_id": "30",
+&"text": "😂👍",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Mabel",
+&"id": "3",
+&"next_id": "4",
+&"text": "Psssst",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Mabel",
+&"id": "30",
+&"next_id": "31",
+&"text": "☺️",
+&"type": "dialogue"
+},
+"31": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "LOVE"
+}, {
+&"i": 24,
+&"type": &"parens_close"
+}])])
+}, {
+&"i": 26,
+&"type": &"and_or",
+&"value": "and"
+}, {
+&"i": 29,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 34,
+&"type": &"dot"
+}, {
+&"i": 35,
+&"type": &"variable",
+&"value": "pink_heart"
+}, {
+&"i": 46,
+&"type": &"comparison",
+&"value": ">="
+}, {
+&"i": 49,
+&"type": &"number",
+&"value": 3
+}])
+},
+&"id": "31",
+&"next_id": "32",
+&"next_id_after": "35",
+&"type": "condition"
+},
+"32": {
+&"character": "Mabel",
+&"id": "32",
+&"next_id": "33",
+&"text": "PinkThought: This is it Mabel!",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Mabel",
+&"id": "33",
+&"next_id": "34",
+&"text": "PinkThought: You gotta lean in and flutter your eyes!",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Mabel",
+&"id": "34",
+&"next_id": "35",
+&"text": "PinkThought: That's what the girls mag on social scene says anyway",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Player",
+&"id": "35",
+&"next_id": "36",
+&"text": "I'll be there in an hour then!",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Mabel",
+&"id": "36",
+&"next_id": "37",
+&"text": "Okay!",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Mabel",
+&"id": "37",
+&"next_id": "38",
+&"text": "See you soon!",
+&"type": "dialogue"
+},
+"38": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "LOVE"
+}, {
+&"i": 24,
+&"type": &"parens_close"
+}])])
+}, {
+&"i": 26,
+&"type": &"and_or",
+&"value": "and"
+}, {
+&"i": 29,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 34,
+&"type": &"dot"
+}, {
+&"i": 35,
+&"type": &"variable",
+&"value": "pink_heart"
+}, {
+&"i": 46,
+&"type": &"comparison",
+&"value": ">="
+}, {
+&"i": 49,
+&"type": &"number",
+&"value": 3
+}])
+},
+&"id": "38",
+&"next_id": "39",
+&"next_id_after": "41",
+&"type": "condition"
+},
+"39": {
+&"id": "39",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "mabel_kissed",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"string",
+&"value": "Player"
+}, {
+&"i": 24,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "40",
+&"type": "mutation"
+},
+"4": {
+&"character": "Mabel",
+&"id": "4",
+&"next_id": "5",
+&"text": "Heya!",
+&"type": "dialogue"
+},
+"40": {
+&"id": "40",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "PhoneUnlocks"
+}, {
+&"i": 16,
+&"type": &"dot"
+}, {
+&"i": 17,
+&"type": &"variable",
+&"value": "leak"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 24,
+&"type": &"string",
+&"value": "naomi2"
+}]),
+&"is_blocking": true
+},
+&"next_id": "41",
+&"type": "mutation"
+},
+"41": {
+&"id": "41",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"42": {
+&"id": "42",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"5": {
+&"character": "Player",
+&"id": "5",
+&"next_id": "6",
+&"text": "Ready to go out?",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Mabel",
+&"id": "6",
+&"next_id": "7",
+&"text": "Mhmm!",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Mabel",
+&"id": "7",
+&"next_id": "8",
+&"text": "But I'm still thinking about where we should go!",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Player",
+&"id": "8",
+&"next_id": "9",
+&"text": "You're still in PJs?",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Mabel",
+&"id": "9",
+&"next_id": "10",
+&"text": "Yeah!",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+Mabel: img: mabel/87
+Mabel: Psssst
+Mabel: Heya!
+Player: Ready to go out?
+Mabel: Mhmm!
+Mabel: But I'm still thinking about where we should go!
+Player: You're still in PJs?
+Mabel: Yeah!
+Player: It's past noon
+Mabel: Hey I was having a lazy day 🫠
+Player: I'll be on my way soon 😄
+Mabel: Gah!!
+Mabel: Oki dokes!! Gotta change
+Mabel: I want today to be extra special 🤭
+Mabel: Hmmmmm
+Mabel: img: mabel/88
+Mabel: OMG
+Mabel: I totally know! 🤩
+Mabel: I found something in one of the clothing boxes that I wanted to try on 😇
+Player: Why not wear it for class?
+Mabel: It's not that kind of thing silly 🤭
+Mabel: Thought: Well... now that I think about it, some girls DO come to college almost dressed in a bikini
+Player: So where are we going?
+Mabel: I want it to be a surprise!!
+Mabel: Uhm... can you bring swimming shorts? 🫣
+Player: Not much of a surprise anymore haha
+Mabel: SHH, just grab them and don't think about it 😌
+Player: 😂👍
+Mabel: ☺️
+if Story.has_flag(\"LOVE\") && Story.pink_heart >= 3:
+	Mabel: PinkThought: This is it Mabel!
+	Mabel: PinkThought: You gotta lean in and flutter your eyes!
+	Mabel: PinkThought: That's what the girls mag on social scene says anyway
+Player: I'll be there in an hour then!
+Mabel: Okay!
+Mabel: See you soon!
+if Story.has_flag(\"LOVE\") && Story.pink_heart >= 3:
+	do mabel_kissed(\"Player\")
+	set PhoneUnlocks.leak = \"naomi2\"
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

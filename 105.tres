@@ -1,0 +1,338 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_an7rg"]
+
+[resource]
+script = ExtResource("1_an7rg")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Nina", "PlayerM")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "Nina",
+&"id": "1",
+&"next_id": "2",
+&"text": "Heyyy girlie pop",
+&"type": "dialogue"
+},
+"10": {
+&"character": "Nina",
+&"id": "10",
+&"next_id": "11",
+&"text": "The boys are gonna eat this up 🤤",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Nina",
+&"id": "11",
+&"next_id": "12",
+&"text": "You'll be popular in no time",
+&"type": "dialogue"
+},
+"12": {
+&"character": "PlayerM",
+&"id": "12",
+&"next_id": "13",
+&"text": "Wait what?",
+&"type": "dialogue"
+},
+"13": {
+&"character": "PlayerM",
+&"id": "13",
+&"next_id": "14",
+&"text": "Boys?? 😳",
+&"type": "dialogue"
+},
+"14": {
+&"character": "PlayerM",
+&"id": "14",
+&"next_id": "15",
+&"text": "Isn't the sorority a girls club?",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Nina",
+&"id": "15",
+&"next_id": "16",
+&"text": "Aww sweet little Maple",
+&"type": "dialogue"
+},
+"16": {
+&"character": "PlayerM",
+&"id": "16",
+&"next_id": "17",
+&"text": "Mabel*",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Nina",
+&"id": "17",
+&"next_id": "18",
+&"text": "Where girls go, the boys always follow",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Nina",
+&"id": "18",
+&"next_id": "19",
+&"text": "And we take FULL advantage of that 😏",
+&"type": "dialogue"
+},
+"19": {
+&"character": "PlayerM",
+&"id": "19",
+&"next_id": "20",
+&"text": "I don't really get what you mean",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Nina",
+&"id": "2",
+&"next_id": "3",
+&"text": "Wanna see how the shoot came out? 😏",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Nina",
+&"id": "20",
+&"next_id": "21",
+&"text": "You will",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Nina",
+&"id": "21",
+&"next_id": "22",
+&"text": "It's only a matter of time before you figure it out babe",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Nina",
+&"id": "22",
+&"next_id": "23",
+&"text": "Anyway, your club account's all set up",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Nina",
+&"id": "23",
+&"next_id": "24",
+&"text": "Everything looks good and sexy, a starlet in the making if you ask me",
+&"type": "dialogue"
+},
+"24": {
+&"character": "PlayerM",
+&"id": "24",
+&"next_id": "25",
+&"text": "My account?",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Nina",
+&"id": "25",
+&"next_id": "26",
+&"text": "Yeah I just sent it to you",
+&"type": "dialogue"
+},
+"26": {
+&"character": "PlayerM",
+&"id": "26",
+&"next_id": "27",
+&"text": "\"SorSlutMaple\"?",
+&"type": "dialogue"
+},
+"27": {
+&"character": "PlayerM",
+&"id": "27",
+&"next_id": "28",
+&"text": "You spelled my name wrong AGAIN 😭",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Nina",
+&"id": "28",
+&"next_id": "29",
+&"text": "Lmao whatever",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Nina",
+&"id": "29",
+&"next_id": "30",
+&"text": "Just own it pinkie",
+&"type": "dialogue"
+},
+"3": {
+&"character": "PlayerM",
+&"id": "3",
+&"next_id": "4",
+&"text": "Oh! Uhm..",
+&"type": "dialogue"
+},
+"30": {
+&"character": "PlayerM",
+&"id": "30",
+&"next_id": "31",
+&"text": "What do I do with this account?",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Nina",
+&"id": "31",
+&"next_id": "32",
+&"text": "You'll get messages to that account with club tasks and a deadline",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Nina",
+&"id": "32",
+&"next_id": "33",
+&"text": "I won't spoil the fun 😜",
+&"type": "dialogue"
+},
+"33": {
+&"character": "PlayerM",
+&"id": "33",
+&"next_id": "34",
+&"text": "And I have to take pictures of them?",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Nina",
+&"id": "34",
+&"next_id": "35",
+&"text": "Yep",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Nina",
+&"id": "35",
+&"next_id": "36",
+&"text": "And don't forget... Or Jessica is gonna come after you 😈",
+&"type": "dialogue"
+},
+"36": {
+&"character": "PlayerM",
+&"id": "36",
+&"next_id": "37",
+&"text": "SorSlut.. 😣 Not what I had in mind",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Nina",
+&"id": "37",
+&"next_id": "38",
+&"text": "Just enjoy Slut 😘",
+&"type": "dialogue"
+},
+"38": {
+&"id": "38",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"39": {
+&"id": "39",
+&"next_id": "40",
+&"type": ""
+},
+"4": {
+&"character": "Nina",
+&"id": "4",
+&"next_id": "5",
+&"text": "img: mabel/189",
+&"type": "dialogue"
+},
+"40": {
+&"id": "40",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"5": {
+&"character": "PlayerM",
+&"id": "5",
+&"next_id": "6",
+&"text": "😳😳",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Nina",
+&"id": "6",
+&"next_id": "7",
+&"text": "Hot isn't it? Wish you'd give a more seductive smile though",
+&"type": "dialogue"
+},
+"7": {
+&"character": "PlayerM",
+&"id": "7",
+&"next_id": "8",
+&"text": "Do we really need to take pictures like that Nina?",
+&"type": "dialogue"
+},
+"8": {
+&"character": "PlayerM",
+&"id": "8",
+&"next_id": "9",
+&"text": "It felt kinda weird being all exposed like that 🙈",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Nina",
+&"id": "9",
+&"next_id": "10",
+&"text": "Weird?? Girl you have NO idea",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+Nina: Heyyy girlie pop
+Nina: Wanna see how the shoot came out? 😏
+PlayerM: Oh! Uhm..
+Nina: img: mabel/189
+PlayerM: 😳😳
+Nina: Hot isn't it? Wish you'd give a more seductive smile though
+PlayerM: Do we really need to take pictures like that Nina?
+PlayerM: It felt kinda weird being all exposed like that 🙈
+Nina: Weird?? Girl you have NO idea
+Nina: The boys are gonna eat this up 🤤
+Nina: You'll be popular in no time
+PlayerM: Wait what?
+PlayerM: Boys?? 😳
+PlayerM: Isn't the sorority a girls club?
+Nina: Aww sweet little Maple
+PlayerM: Mabel*
+Nina: Where girls go, the boys always follow
+Nina: And we take FULL advantage of that 😏
+PlayerM: I don't really get what you mean
+Nina: You will
+Nina: It's only a matter of time before you figure it out babe
+Nina: Anyway, your club account's all set up
+Nina: Everything looks good and sexy, a starlet in the making if you ask me
+PlayerM: My account?
+Nina: Yeah I just sent it to you
+PlayerM: \"SorSlutMaple\"?
+PlayerM: You spelled my name wrong AGAIN 😭
+Nina: Lmao whatever
+Nina: Just own it pinkie
+PlayerM: What do I do with this account?
+Nina: You'll get messages to that account with club tasks and a deadline
+Nina: I won't spoil the fun 😜
+PlayerM: And I have to take pictures of them?
+Nina: Yep
+Nina: And don't forget... Or Jessica is gonna come after you 😈
+PlayerM: SorSlut.. 😣 Not what I had in mind
+Nina: Just enjoy Slut 😘
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

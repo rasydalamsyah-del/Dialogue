@@ -1,0 +1,1149 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_v5dg4"]
+
+[resource]
+script = ExtResource("1_v5dg4")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Jessica", "Jason", "Player", "Alex", "Erika", "Nina")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "sorority_house"
+}, {
+&"i": 38,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Jason",
+&"id": "10",
+&"next_id": "11",
+&"text": "Whoa",
+&"type": "dialogue"
+},
+"11": {
+&"id": "11",
+&"next_id": "12",
+&"responses": PackedStringArray("11", "15"),
+&"text": "Hot",
+&"type": "response"
+},
+"12": {
+&"character": "Player",
+&"id": "12",
+&"next_id": "13",
+&"text": "Hot",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Jessica",
+&"id": "13",
+&"next_id": "14",
+&"text": "😉",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Jessica",
+&"id": "14",
+&"next_id": "16",
+&"text": "Too bad you're just cubs 💜",
+&"type": "dialogue"
+},
+"15": {
+&"id": "15",
+&"next_id": "16",
+&"text": "[...]",
+&"type": "response"
+},
+"16": {
+&"character": "Jessica",
+&"id": "16",
+&"next_id": "17",
+&"text": "First let's get the weekly grant out of the way",
+&"type": "dialogue"
+},
+"17": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 32,
+&"type": &"variable",
+&"value": "PhoneUnlocks"
+}, {
+&"i": 44,
+&"type": &"dot"
+}, {
+&"function": "is_claimed",
+&"i": 45,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 56,
+&"type": &"string",
+&"value": "Frat1"
+}, {
+&"i": 63,
+&"type": &"parens_close"
+}])])
+}, {
+&"i": 65,
+&"type": &"comparison",
+&"value": "=="
+}, {
+&"i": 68,
+&"type": &"variable",
+&"value": "false"
+}])
+},
+&"condition_as_text": "PhoneUnlocks.is_claimed(\"Frat1\") == false",
+&"id": "17",
+&"next_id": "18",
+&"responses": PackedStringArray("17", "20"),
+&"tags": PackedStringArray("dollar"),
+&"text": "[Claim]",
+&"type": "response"
+},
+"18": {
+&"id": "18",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "PhoneUnlocks"
+}, {
+&"i": 16,
+&"type": &"dot"
+}, {
+&"i": 17,
+&"type": &"variable",
+&"value": "claim"
+}, {
+&"i": 23,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 25,
+&"type": &"string",
+&"value": "Frat1"
+}]),
+&"is_blocking": true
+},
+&"next_id": "19",
+&"type": "mutation"
+},
+"19": {
+&"id": "19",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "PhoneUnlocks"
+}, {
+&"i": 16,
+&"type": &"dot"
+}, {
+&"i": 17,
+&"type": &"variable",
+&"value": "dollars"
+}, {
+&"i": 25,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 28,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "21",
+&"type": "mutation"
+},
+"2": {
+&"character": "Jessica",
+&"id": "2",
+&"next_id": "3",
+&"text": "Good morning future frat members",
+&"type": "dialogue"
+},
+"20": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 22,
+&"type": &"variable",
+&"value": "PhoneUnlocks"
+}, {
+&"i": 34,
+&"type": &"dot"
+}, {
+&"function": "is_claimed",
+&"i": 35,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 46,
+&"type": &"string",
+&"value": "Frat1"
+}, {
+&"i": 53,
+&"type": &"parens_close"
+}])])
+}, {
+&"i": 55,
+&"type": &"comparison",
+&"value": "=="
+}, {
+&"i": 58,
+&"type": &"variable",
+&"value": "true"
+}])
+},
+&"condition_as_text": "PhoneUnlocks.is_claimed(\"Frat1\") == true",
+&"id": "20",
+&"next_id": "21",
+&"text": "[Already Claimed]",
+&"type": "response"
+},
+"21": {
+&"character": "Jason",
+&"id": "21",
+&"next_id": "22",
+&"text": "Whoa thanks, this is awesome",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Alex",
+&"id": "22",
+&"next_id": "23",
+&"text": "That's it?",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Jessica",
+&"id": "23",
+&"next_id": "24",
+&"text": "Now now, the girls worked really hard to keep club income high",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Jessica",
+&"id": "24",
+&"next_id": "25",
+&"text": "Isn't that right girls?",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Erika",
+&"id": "25",
+&"next_id": "26",
+&"text": "Oh yes, such hard work... 😉",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Nina",
+&"id": "26",
+&"next_id": "27",
+&"text": "Pfft",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Erika",
+&"id": "27",
+&"next_id": "28",
+&"text": "Your back couldn't handle it babe?",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Erika",
+&"id": "28",
+&"next_id": "29",
+&"text": "img: erika/11",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Nina",
+&"id": "29",
+&"next_id": "30",
+&"text": "Not in the mood for you today",
+&"type": "dialogue"
+},
+"3": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"i": 9,
+&"type": &"variable",
+&"value": "black_heart"
+}, {
+&"i": 21,
+&"type": &"comparison",
+&"value": ">"
+}, {
+&"i": 23,
+&"type": &"number",
+&"value": 0
+}])
+},
+&"id": "3",
+&"next_id": "4",
+&"next_id_after": "5",
+&"type": "condition"
+},
+"30": {
+&"character": "Erika",
+&"id": "30",
+&"next_id": "31",
+&"text": "Yes you are, you love me 🥰",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Jessica",
+&"id": "31",
+&"next_id": "32",
+&"text": "I have an idea",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Jessica",
+&"id": "32",
+&"next_id": "33",
+&"text": "Since they Nina and Erika have been working so hard",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Jessica",
+&"id": "33",
+&"next_id": "34",
+&"text": "Why don't you three boys call out who you'd like to take out on a date?",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Jessica",
+&"id": "34",
+&"next_id": "35",
+&"text": "All expenses paid for, let's give our girls a little break",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Erika",
+&"id": "35",
+&"next_id": "36",
+&"text": "That's so sweet Jess",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Nina",
+&"id": "36",
+&"next_id": "37",
+&"text": "What!?",
+&"type": "dialogue"
+},
+"37": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 25,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 30,
+&"type": &"dot"
+}, {
+&"i": 31,
+&"type": &"variable",
+&"value": "yellow_heart"
+}, {
+&"i": 44,
+&"type": &"comparison",
+&"value": ">="
+}, {
+&"i": 47,
+&"type": &"number",
+&"value": 1
+}])
+},
+&"condition_as_text": "Story.yellow_heart >= 1",
+&"id": "37",
+&"next_id": "38",
+&"responses": PackedStringArray("37", "50", "69"),
+&"tags": PackedStringArray("yellowheart"),
+&"text": "Erika",
+&"type": "response"
+},
+"38": {
+&"id": "38",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "yellow_heart"
+}, {
+&"i": 23,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 26,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "39",
+&"type": "mutation"
+},
+"39": {
+&"id": "39",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "Erika1"
+}]),
+&"is_blocking": true
+},
+&"next_id": "40",
+&"type": "mutation"
+},
+"4": {
+&"id": "4",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "black_heart"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 24,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "5",
+&"type": "mutation"
+},
+"40": {
+&"character": "Player",
+&"id": "40",
+&"next_id": "41",
+&"text": "Erika",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Erika",
+&"id": "41",
+&"next_id": "42",
+&"text": "Oh my... that was so quick 😳💛",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Erika",
+&"id": "42",
+&"next_id": "43",
+&"text": "You'd take someone like me on a date?",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Player",
+&"id": "43",
+&"next_id": "44",
+&"text": "Yeah, why not?",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Erika",
+&"id": "44",
+&"next_id": "45",
+&"text": "My heart skipped a beat 🥰",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Erika",
+&"id": "45",
+&"next_id": "46",
+&"text": "I'd love to go on a date with you",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Erika",
+&"id": "46",
+&"next_id": "47",
+&"text": "img: erika/12",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Nina",
+&"id": "47",
+&"next_id": "48",
+&"text": "Oh brother.. why are you acting like a princess you hoe",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Alex",
+&"id": "48",
+&"next_id": "49",
+&"text": "I'll take the Nina chic then",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Jason",
+&"id": "49",
+&"next_id": "74",
+&"text": "Awh man, I was too hesitant and couldn't decide lol",
+&"type": "dialogue"
+},
+"5": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"i": 9,
+&"type": &"variable",
+&"value": "yellow_heart"
+}, {
+&"i": 22,
+&"type": &"comparison",
+&"value": ">"
+}, {
+&"i": 24,
+&"type": &"number",
+&"value": 0
+}])
+},
+&"id": "5",
+&"next_id": "6",
+&"next_id_after": "7",
+&"type": "condition"
+},
+"50": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 23,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 28,
+&"type": &"dot"
+}, {
+&"i": 29,
+&"type": &"variable",
+&"value": "black_heart"
+}, {
+&"i": 41,
+&"type": &"comparison",
+&"value": ">="
+}, {
+&"i": 44,
+&"type": &"number",
+&"value": 1
+}])
+},
+&"condition_as_text": "Story.black_heart >= 1",
+&"id": "50",
+&"next_id": "51",
+&"tags": PackedStringArray("blackheart"),
+&"text": "Nina",
+&"type": "response"
+},
+"51": {
+&"id": "51",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "black_heart"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "52",
+&"type": "mutation"
+},
+"52": {
+&"id": "52",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "Nina1"
+}]),
+&"is_blocking": true
+},
+&"next_id": "53",
+&"type": "mutation"
+},
+"53": {
+&"character": "Player",
+&"id": "53",
+&"next_id": "54",
+&"text": "Nina",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Nina",
+&"id": "54",
+&"next_id": "55",
+&"text": "What do you want?",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Nina",
+&"id": "55",
+&"next_id": "56",
+&"text": "Wait wtf.. seriously!?",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Nina",
+&"id": "56",
+&"next_id": "57",
+&"text": "Hell no, I'm not",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Jessica",
+&"id": "57",
+&"next_id": "58",
+&"text": "Now now Nina, rules are rules",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Nina",
+&"id": "58",
+&"next_id": "59",
+&"text": "Tsk, fuck this",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Nina",
+&"id": "59",
+&"next_id": "60",
+&"text": "You fuckin perv 🤬",
+&"type": "dialogue"
+},
+"6": {
+&"id": "6",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "yellow_heart"
+}, {
+&"i": 23,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "7",
+&"type": "mutation"
+},
+"60": {
+&"character": "Nina",
+&"id": "60",
+&"next_id": "61",
+&"text": "img: nina/17",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Player",
+&"id": "61",
+&"next_id": "62",
+&"text": "😌",
+&"type": "dialogue"
+},
+"62": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 10,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 19,
+&"type": &"string",
+&"value": "NinasPanties"
+}, {
+&"i": 33,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "62",
+&"next_id": "63",
+&"next_id_after": "66",
+&"type": "condition"
+},
+"63": {
+&"character": "Erika",
+&"id": "63",
+&"next_id": "64",
+&"text": "Congratulations Nina 🥰 My favorite ship is sailing",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Erika",
+&"id": "64",
+&"next_id": "65",
+&"text": "Please treat her well",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Nina",
+&"id": "65",
+&"next_id": "66",
+&"text": "Fuck you too",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Alex",
+&"id": "66",
+&"next_id": "67",
+&"text": "I guess I'll take the Erika chic then",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Erika",
+&"id": "67",
+&"next_id": "68",
+&"text": "Hey hot stuff 🥰",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Jason",
+&"id": "68",
+&"next_id": "74",
+&"text": "Awh man, I was too hesitant and couldn't decide lol",
+&"type": "dialogue"
+},
+"69": {
+&"id": "69",
+&"next_id": "70",
+&"text": "[...]",
+&"type": "response"
+},
+"7": {
+&"character": "Jessica",
+&"id": "7",
+&"next_id": "8",
+&"text": "I'd like to congratulate you all on the record for making it",
+&"type": "dialogue"
+},
+"70": {
+&"id": "70",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "FratNoDate1"
+}]),
+&"is_blocking": true
+},
+&"next_id": "71",
+&"type": "mutation"
+},
+"71": {
+&"character": "Alex",
+&"id": "71",
+&"next_id": "72",
+&"text": "I'll take the Nina chic then",
+&"type": "dialogue"
+},
+"72": {
+&"character": "Jason",
+&"id": "72",
+&"next_id": "73",
+&"text": "Sure, I'll go with Erika woo",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Erika",
+&"id": "73",
+&"next_id": "74",
+&"text": "Can't wait 🥰",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Jessica",
+&"id": "74",
+&"next_id": "75",
+&"text": "The last member will have to sit this week out unfortunately",
+&"type": "dialogue"
+},
+"75": {
+&"character": "Nina",
+&"id": "75",
+&"next_id": "76",
+&"text": "Tch, we're not up for grabs",
+&"type": "dialogue"
+},
+"76": {
+&"character": "Nina",
+&"id": "76",
+&"next_id": "77",
+&"text": "Besides, why didn't you include Val?",
+&"type": "dialogue"
+},
+"77": {
+&"character": "Jessica",
+&"id": "77",
+&"next_id": "78",
+&"text": "Val's currently occupied with a little task I set up for her tonight",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Jessica",
+&"id": "78",
+&"next_id": "79",
+&"text": "That new girl needs a little exposure",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Nina",
+&"id": "79",
+&"next_id": "80",
+&"text": "Heh, I see",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Jessica",
+&"id": "8",
+&"next_id": "9",
+&"text": "img: jessica/2",
+&"type": "dialogue"
+},
+"80": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "NinasPanties"
+}, {
+&"i": 32,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "80",
+&"next_id": "81",
+&"next_id_after": "83",
+&"type": "condition"
+},
+"81": {
+&"character": "Nina",
+&"id": "81",
+&"next_id": "82",
+&"text": "I wouldn't mind volunteering for that",
+&"type": "dialogue"
+},
+"82": {
+&"character": "Jessica",
+&"id": "82",
+&"next_id": "83",
+&"text": "Noted",
+&"type": "dialogue"
+},
+"83": {
+&"character": "Erika",
+&"id": "83",
+&"next_id": "84",
+&"text": "👀",
+&"type": "dialogue"
+},
+"84": {
+&"character": "Jessica",
+&"id": "84",
+&"next_id": "85",
+&"text": "Anyway, you have until next week to set something up in your pairs",
+&"type": "dialogue"
+},
+"85": {
+&"character": "Jessica",
+&"id": "85",
+&"next_id": "86",
+&"text": "The girls will report back to me and tell me how it went",
+&"type": "dialogue"
+},
+"86": {
+&"character": "Jessica",
+&"id": "86",
+&"next_id": "87",
+&"text": "Oh, and Frat cubs aren't allowed to screw until they're fully fledged",
+&"type": "dialogue"
+},
+"87": {
+&"character": "Erika",
+&"id": "87",
+&"next_id": "88",
+&"text": "I hate that rule 😣",
+&"type": "dialogue"
+},
+"88": {
+&"character": "Jessica",
+&"id": "88",
+&"next_id": "89",
+&"text": "Rules are rules",
+&"type": "dialogue"
+},
+"89": {
+&"character": "Jessica",
+&"id": "89",
+&"next_id": "90",
+&"text": "See you next week",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Jessica",
+&"id": "9",
+&"next_id": "10",
+&"text": "Here's a little congratulation picture for you",
+&"type": "dialogue"
+},
+"90": {
+&"id": "90",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"91": {
+&"id": "91",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"sorority_house\")
+Jessica: Good morning future frat members
+if Story.black_heart > 0:
+	set Story.black_heart = 1
+if Story.yellow_heart > 0:
+	set Story.yellow_heart = 1
+Jessica: I'd like to congratulate you all on the record for making it
+Jessica: img: jessica/2
+Jessica: Here's a little congratulation picture for you
+Jason: Whoa
+- Hot
+	Player: Hot
+	Jessica: 😉
+	Jessica: Too bad you're just cubs 💜
+- [...]
+Jessica: First let's get the weekly grant out of the way
+- [Claim] [#dollar] [#dollar] [if PhoneUnlocks.is_claimed(\"Frat1\") == false]
+	set PhoneUnlocks.claim = \"Frat1\"
+	set PhoneUnlocks.dollars += 1
+- [Already Claimed] [if PhoneUnlocks.is_claimed(\"Frat1\") == true]
+Jason: Whoa thanks, this is awesome
+Alex: That's it?
+Jessica: Now now, the girls worked really hard to keep club income high
+Jessica: Isn't that right girls?
+Erika: Oh yes, such hard work... 😉
+Nina: Pfft
+Erika: Your back couldn't handle it babe?
+Erika: img: erika/11
+Nina: Not in the mood for you today
+Erika: Yes you are, you love me 🥰
+Jessica: I have an idea
+Jessica: Since they Nina and Erika have been working so hard
+Jessica: Why don't you three boys call out who you'd like to take out on a date?
+Jessica: All expenses paid for, let's give our girls a little break
+Erika: That's so sweet Jess
+Nina: What!?
+- Erika [#yellowheart] [if Story.yellow_heart >= 1]
+	set Story.yellow_heart += 1
+	set Story.flag = \"Erika1\"
+	Player: Erika
+	Erika: Oh my... that was so quick 😳💛
+	Erika: You'd take someone like me on a date?
+	Player: Yeah, why not?
+	Erika: My heart skipped a beat 🥰
+	Erika: I'd love to go on a date with you
+	Erika: img: erika/12
+	Nina: Oh brother.. why are you acting like a princess you hoe
+	Alex: I'll take the Nina chic then
+	Jason: Awh man, I was too hesitant and couldn't decide lol
+- Nina [#blackheart] [if Story.black_heart >= 1]
+	set Story.black_heart += 1
+	set Story.flag = \"Nina1\"
+	Player: Nina
+	Nina: What do you want?
+	Nina: Wait wtf.. seriously!?
+	Nina: Hell no, I'm not
+	Jessica: Now now Nina, rules are rules
+	Nina: Tsk, fuck this
+	Nina: You fuckin perv 🤬
+	Nina: img: nina/17
+	Player: 😌
+	if Story.has_flag(\"NinasPanties\"):
+		Erika: Congratulations Nina 🥰 My favorite ship is sailing
+		Erika: Please treat her well
+		Nina: Fuck you too
+	Alex: I guess I'll take the Erika chic then
+	Erika: Hey hot stuff 🥰
+	Jason: Awh man, I was too hesitant and couldn't decide lol
+- [...]
+	set Story.flag = \"FratNoDate1\"
+	Alex: I'll take the Nina chic then
+	Jason: Sure, I'll go with Erika woo
+	Erika: Can't wait 🥰
+Jessica: The last member will have to sit this week out unfortunately
+Nina: Tch, we're not up for grabs
+Nina: Besides, why didn't you include Val?
+Jessica: Val's currently occupied with a little task I set up for her tonight
+Jessica: That new girl needs a little exposure
+Nina: Heh, I see
+if Story.has_flag(\"NinasPanties\"):
+	Nina: I wouldn't mind volunteering for that
+	Jessica: Noted
+Erika: 👀
+Jessica: Anyway, you have until next week to set something up in your pairs
+Jessica: The girls will report back to me and tell me how it went
+Jessica: Oh, and Frat cubs aren't allowed to screw until they're fully fledged
+Erika: I hate that rule 😣
+Jessica: Rules are rules
+Jessica: See you next week
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

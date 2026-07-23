@@ -1,0 +1,734 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_40go0"]
+
+[resource]
+script = ExtResource("1_40go0")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Mabel", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "dorm_kitchen"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Player",
+&"id": "10",
+&"next_id": "11",
+&"text": "Wow, chef Mabel",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Player",
+&"id": "11",
+&"next_id": "12",
+&"text": "Getting comfy with dorm life?",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Mabel",
+&"id": "12",
+&"next_id": "13",
+&"text": "Mhmm!",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Mabel",
+&"id": "13",
+&"next_id": "14",
+&"text": "If you were closer I'd have eggs and toast ready for you now 🍳",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Player",
+&"id": "14",
+&"next_id": "15",
+&"text": "That sounds amazing",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Mabel",
+&"id": "15",
+&"next_id": "16",
+&"text": "Thought: Is that smoke?",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Mabel",
+&"id": "16",
+&"next_id": "17",
+&"text": "Uhm... yeah",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Mabel",
+&"id": "17",
+&"next_id": "18",
+&"text": "One day! 😊",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Mabel",
+&"id": "18",
+&"next_id": "19",
+&"text": "Thought: That's definitely smoke",
+&"type": "dialogue"
+},
+"19": {
+&"id": "19",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_set",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 12,
+&"type": &"array",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 13,
+&"type": &"string",
+&"value": "18"
+}, {
+&"i": 17,
+&"type": &"bracket_close"
+}])])
+}, {
+&"i": 18,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "20",
+&"type": "mutation"
+},
+"2": {
+&"character": "Mabel",
+&"id": "2",
+&"next_id": "3",
+&"text": "Whoaaa I feel sooo refreshed!",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Mabel",
+&"id": "20",
+&"next_id": "21",
+&"text": "Brb!!",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Player",
+&"id": "21",
+&"next_id": "22",
+&"text": "Are you okay?",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Mabel",
+&"id": "22",
+&"next_id": "23",
+&"text": "Ok I'm back 😅",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Player",
+&"id": "23",
+&"next_id": "24",
+&"text": "What happened?",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Mabel",
+&"id": "24",
+&"next_id": "25",
+&"text": "Nothing!!",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Mabel",
+&"id": "25",
+&"next_id": "26",
+&"text": "Everything is okie dokes!",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Mabel",
+&"id": "26",
+&"next_id": "27",
+&"text": "Yep! All good here, nothing to see haha 😇",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Mabel",
+&"id": "27",
+&"next_id": "28",
+&"text": "Thought: He doesn't need to know about that",
+&"type": "dialogue"
+},
+"28": {
+&"id": "28",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_clear",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 14,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "29",
+&"type": "mutation"
+},
+"29": {
+&"id": "29",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "30",
+&"type": "mutation"
+},
+"3": {
+&"character": "Mabel",
+&"id": "3",
+&"next_id": "4",
+&"text": "GOOD MORNING 🥳",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Player",
+&"id": "30",
+&"next_id": "31",
+&"text": "What were you doing last night anyway?",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Mabel",
+&"id": "31",
+&"next_id": "32",
+&"text": "I video called mom and saw Ms Whiskers 🥹",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Mabel",
+&"id": "32",
+&"next_id": "33",
+&"text": "She didn't even pay any attention to me 😭",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Mabel",
+&"id": "33",
+&"next_id": "34",
+&"text": "I was just a little sad about it but I watched Bond until I fell asleep hehe",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Player",
+&"id": "34",
+&"next_id": "35",
+&"text": "You're adorable",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Player",
+&"id": "35",
+&"next_id": "36",
+&"text": "Everyone's socializing and you're sitting in with Bond movies in PJs at 7pm",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Mabel",
+&"id": "36",
+&"next_id": "37",
+&"text": "Sounds more like you're calling me weird 😂",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Player",
+&"id": "37",
+&"next_id": "38",
+&"text": "Not what I said!",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Mabel",
+&"id": "38",
+&"next_id": "39",
+&"text": "But yeah I don't know if I could ever get used to all this out-doorsy social stuff",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Mabel",
+&"id": "39",
+&"next_id": "40",
+&"text": "You know how I grew up 😩",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Mabel",
+&"id": "4",
+&"next_id": "5",
+&"text": "Wake up alreadyyy 🥰",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Player",
+&"id": "40",
+&"next_id": "41",
+&"text": "Who knows, life changes people right?",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Mabel",
+&"id": "41",
+&"next_id": "42",
+&"text": "I don't know about changing that much 😆",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Mabel",
+&"id": "42",
+&"next_id": "43",
+&"text": "Thought: Could I actually change?",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Mabel",
+&"id": "43",
+&"next_id": "44",
+&"text": "Imagine that, me going out for \"drinks\" whatever that means 😂",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Player",
+&"id": "44",
+&"next_id": "45",
+&"text": "Lmao 😂 Strange image for sure",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Mabel",
+&"id": "45",
+&"next_id": "46",
+&"text": "Yeah well, I guess that's just how it is huh",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Mabel",
+&"id": "46",
+&"next_id": "47",
+&"text": "Gotta focus up on my studies though",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Mabel",
+&"id": "47",
+&"next_id": "48",
+&"text": "That's what we're here for, right?!",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Player",
+&"id": "48",
+&"next_id": "49",
+&"text": "Of course",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Player",
+&"id": "49",
+&"next_id": "50",
+&"text": "That and maybe make a few friends?",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Mabel",
+&"id": "5",
+&"next_id": "6",
+&"text": "Thought: Am I being too needy?",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Mabel",
+&"id": "50",
+&"next_id": "51",
+&"text": "We have each other, it should be enough!!",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Player",
+&"id": "51",
+&"next_id": "52",
+&"text": "You got me there but",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Player",
+&"id": "52",
+&"next_id": "53",
+&"text": "That's not the kind of friend I meant 😂",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Mabel",
+&"id": "53",
+&"next_id": "54",
+&"text": "🙃",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Player",
+&"id": "54",
+&"next_id": "55",
+&"text": "The weekend is coming up",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Player",
+&"id": "55",
+&"next_id": "56",
+&"text": "Might be a good opportunity to make a few more friends",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Mabel",
+&"id": "56",
+&"next_id": "57",
+&"text": "Thought: Maybe I'll watch some more Bond movies instead hehe",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Player",
+&"id": "57",
+&"next_id": "58",
+&"text": "And please don't say you're gonna watch Bond movies",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Mabel",
+&"id": "58",
+&"next_id": "59",
+&"text": "What the heck, you can read minds! 🤯",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Mabel",
+&"id": "59",
+&"next_id": "60",
+&"text": "Okay fine",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Player",
+&"id": "6",
+&"next_id": "7",
+&"text": "It's like 7am",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Mabel",
+&"id": "60",
+&"next_id": "61",
+&"text": "Even mom's been saying that",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Mabel",
+&"id": "61",
+&"next_id": "62",
+&"text": "I should do something",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Mabel",
+&"id": "62",
+&"next_id": "63",
+&"text": "I guess I can ask Nina if she's free 🤔",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Player",
+&"id": "63",
+&"next_id": "64",
+&"text": "Maybe she'll be your gateway to making new friends!",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Mabel",
+&"id": "64",
+&"next_id": "65",
+&"text": "Yeah I think it would be easier if I had someone with me",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Player",
+&"id": "65",
+&"next_id": "66",
+&"text": "True!",
+&"type": "dialogue"
+},
+"66": {
+&"id": "66",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "social_post",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 15,
+&"type": &"string",
+&"value": "collegelife_clubopening"
+}, {
+&"i": 40,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "67",
+&"type": "mutation"
+},
+"67": {
+&"character": "Mabel",
+&"id": "67",
+&"next_id": "68",
+&"text": "Thanks my cute boy 😘",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Player",
+&"id": "68",
+&"next_id": "69",
+&"text": "Anytime 😁",
+&"type": "dialogue"
+},
+"69": {
+&"character": "Mabel",
+&"id": "69",
+&"next_id": "70",
+&"text": "I'm gonna eat now and text her soon",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Mabel",
+&"id": "7",
+&"next_id": "8",
+&"text": "I knowww",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Mabel",
+&"id": "70",
+&"next_id": "71",
+&"text": "img: mabel/19",
+&"type": "dialogue"
+},
+"71": {
+&"character": "Player",
+&"id": "71",
+&"next_id": "72",
+&"text": "Ok good luck!",
+&"type": "dialogue"
+},
+"72": {
+&"character": "Mabel",
+&"id": "72",
+&"next_id": "73",
+&"text": "Ttyl mwah!",
+&"type": "dialogue"
+},
+"73": {
+&"id": "73",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "PhoneUnlocks"
+}, {
+&"i": 16,
+&"type": &"dot"
+}, {
+&"i": 17,
+&"type": &"variable",
+&"value": "leak"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 24,
+&"type": &"string",
+&"value": "nina1"
+}]),
+&"is_blocking": true
+},
+&"next_id": "75",
+&"type": "mutation"
+},
+"74": {
+&"id": "74",
+&"next_id": "75",
+&"type": ""
+},
+"75": {
+&"id": "75",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"76": {
+&"id": "76",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"8": {
+&"character": "Mabel",
+&"id": "8",
+&"next_id": "9",
+&"text": "But I slept so early last night 😆",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Mabel",
+&"id": "9",
+&"next_id": "10",
+&"text": "img: mabel/17",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"dorm_kitchen\")
+Mabel: Whoaaa I feel sooo refreshed!
+Mabel: GOOD MORNING 🥳
+Mabel: Wake up alreadyyy 🥰
+Mabel: Thought: Am I being too needy?
+Player: It's like 7am
+Mabel: I knowww
+Mabel: But I slept so early last night 😆
+Mabel: img: mabel/17
+Player: Wow, chef Mabel
+Player: Getting comfy with dorm life?
+Mabel: Mhmm!
+Mabel: If you were closer I'd have eggs and toast ready for you now 🍳
+Player: That sounds amazing
+Mabel: Thought: Is that smoke?
+Mabel: Uhm... yeah
+Mabel: One day! 😊
+Mabel: Thought: That's definitely smoke
+do echo_set([\"18\"])
+Mabel: Brb!!
+Player: Are you okay?
+Mabel: Ok I'm back 😅
+Player: What happened?
+Mabel: Nothing!!
+Mabel: Everything is okie dokes!
+Mabel: Yep! All good here, nothing to see haha 😇
+Mabel: Thought: He doesn't need to know about that
+do echo_clear()
+do Story.set_location(\"mabels_room\")
+Player: What were you doing last night anyway?
+Mabel: I video called mom and saw Ms Whiskers 🥹
+Mabel: She didn't even pay any attention to me 😭
+Mabel: I was just a little sad about it but I watched Bond until I fell asleep hehe 
+Player: You're adorable
+Player: Everyone's socializing and you're sitting in with Bond movies in PJs at 7pm
+Mabel: Sounds more like you're calling me weird 😂
+Player: Not what I said!
+Mabel: But yeah I don't know if I could ever get used to all this out-doorsy social stuff
+Mabel: You know how I grew up 😩
+Player: Who knows, life changes people right?
+Mabel: I don't know about changing that much 😆
+Mabel: Thought: Could I actually change?
+Mabel: Imagine that, me going out for \"drinks\" whatever that means 😂
+Player: Lmao 😂 Strange image for sure
+Mabel: Yeah well, I guess that's just how it is huh
+Mabel: Gotta focus up on my studies though
+Mabel: That's what we're here for, right?!
+Player: Of course
+Player: That and maybe make a few friends?
+Mabel: We have each other, it should be enough!!
+Player: You got me there but
+Player: That's not the kind of friend I meant 😂
+Mabel: 🙃
+Player: The weekend is coming up
+Player: Might be a good opportunity to make a few more friends
+Mabel: Thought: Maybe I'll watch some more Bond movies instead hehe
+Player: And please don't say you're gonna watch Bond movies
+Mabel: What the heck, you can read minds! 🤯
+Mabel: Okay fine
+Mabel: Even mom's been saying that
+Mabel: I should do something
+Mabel: I guess I can ask Nina if she's free 🤔
+Player: Maybe she'll be your gateway to making new friends!
+Mabel: Yeah I think it would be easier if I had someone with me
+Player: True!
+do social_post(\"collegelife_clubopening\")
+Mabel: Thanks my cute boy 😘
+Player: Anytime 😁
+Mabel: I'm gonna eat now and text her soon
+Mabel: img: mabel/19
+Player: Ok good luck!
+Mabel: Ttyl mwah!
+set PhoneUnlocks.leak = \"nina1\"
+#Social - Main campus club opening night!
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

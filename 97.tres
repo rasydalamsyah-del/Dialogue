@@ -1,0 +1,754 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_12v8o"]
+
+[resource]
+script = ExtResource("1_12v8o")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("PlayerM", "Mom")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "PlayerM",
+&"id": "1",
+&"next_id": "2",
+&"text": "Mom!",
+&"type": "dialogue"
+},
+"10": {
+&"character": "Mom",
+&"id": "10",
+&"next_id": "11",
+&"text": "Sorry darling, I had no idea!",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Mom",
+&"id": "11",
+&"next_id": "12",
+&"text": "I won't respond to your friends again! 😇",
+&"type": "dialogue"
+},
+"12": {
+&"character": "PlayerM",
+&"id": "12",
+&"next_id": "13",
+&"text": "Ugh he's NOT my friend 🙄",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Mom",
+&"id": "13",
+&"next_id": "14",
+&"text": "🫢",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Mom",
+&"id": "14",
+&"next_id": "15",
+&"text": "You know I'm not good with all this social media stuff",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Mom",
+&"id": "15",
+&"next_id": "16",
+&"text": "I just wanted to be supportive of you honey",
+&"type": "dialogue"
+},
+"16": {
+&"character": "PlayerM",
+&"id": "16",
+&"next_id": "17",
+&"text": "...",
+&"type": "dialogue"
+},
+"17": {
+&"character": "PlayerM",
+&"id": "17",
+&"next_id": "18",
+&"text": "Okay fine, I know you were just trying to be nice",
+&"type": "dialogue"
+},
+"18": {
+&"character": "PlayerM",
+&"id": "18",
+&"next_id": "19",
+&"text": "But please don't do that again 😩",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Mom",
+&"id": "19",
+&"next_id": "20",
+&"text": "I promise promise I'll be more careful sweetheart 🙈",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Mom",
+&"id": "2",
+&"next_id": "3",
+&"text": "Yes honey? 😊",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Mom",
+&"id": "20",
+&"next_id": "21",
+&"text": "But you know",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Mom",
+&"id": "21",
+&"next_id": "22",
+&"text": "Seeing your date photo really made me smile",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Mom",
+&"id": "22",
+&"next_id": "23",
+&"text": "You looked so beautiful",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Mom",
+&"id": "23",
+&"next_id": "24",
+&"text": "Seriously making Mom feel old haha",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Mom",
+&"id": "24",
+&"next_id": "25",
+&"text": "img: mom/1",
+&"type": "dialogue"
+},
+"25": {
+&"character": "PlayerM",
+&"id": "25",
+&"next_id": "26",
+&"text": "Thanks mom 🥺 You're not old though",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Mom",
+&"id": "26",
+&"next_id": "27",
+&"text": "Oh Mabel, you don't know how fast time flies honey 😊",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Mom",
+&"id": "27",
+&"next_id": "28",
+&"text": "But I'm happy because you're the best daughter I could ask for",
+&"type": "dialogue"
+},
+"28": {
+&"character": "PlayerM",
+&"id": "28",
+&"next_id": "29",
+&"text": "I love you mom 🥺🩷",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Mom",
+&"id": "29",
+&"next_id": "30",
+&"text": "Love you too precious 😘",
+&"type": "dialogue"
+},
+"3": {
+&"character": "PlayerM",
+&"id": "3",
+&"next_id": "4",
+&"text": "Don't \"yes honey\" me!! 😭",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Mom",
+&"id": "30",
+&"next_id": "31",
+&"text": "My my, I've been getting a little nostalgic seeing all your pictures",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Mom",
+&"id": "31",
+&"next_id": "32",
+&"text": "It reminded me of my college days",
+&"type": "dialogue"
+},
+"32": {
+&"character": "PlayerM",
+&"id": "32",
+&"next_id": "33",
+&"text": "You never talked about it much 😅",
+&"type": "dialogue"
+},
+"33": {
+&"character": "PlayerM",
+&"id": "33",
+&"next_id": "34",
+&"text": "You met dad there right?",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Mom",
+&"id": "34",
+&"next_id": "35",
+&"text": "I did 🙈",
+&"type": "dialogue"
+},
+"35": {
+&"character": "PlayerM",
+&"id": "35",
+&"next_id": "36",
+&"text": "How come you never talked about it? 🤔",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Mom",
+&"id": "36",
+&"next_id": "37",
+&"text": "Well it's a long and complicated story but maybe now you're old enough to hear some of the girl talk 🤭",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Mom",
+&"id": "37",
+&"next_id": "38",
+&"text": "Mom used to be hip and cool y'know 😌",
+&"type": "dialogue"
+},
+"38": {
+&"character": "PlayerM",
+&"id": "38",
+&"next_id": "39",
+&"text": "Mom, NOBODY says \"hip and cool\" 😂",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Mom",
+&"id": "39",
+&"next_id": "40",
+&"text": "Really? Well anyway!",
+&"type": "dialogue"
+},
+"4": {
+&"character": "PlayerM",
+&"id": "4",
+&"next_id": "5",
+&"text": "That guy on my post?? You literally told him he could take me out on a date!",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Mom",
+&"id": "40",
+&"next_id": "41",
+&"text": "Do you want to hear about my very first college date?",
+&"type": "dialogue"
+},
+"41": {
+&"character": "PlayerM",
+&"id": "41",
+&"next_id": "42",
+&"text": "Omg yess!",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Mom",
+&"id": "42",
+&"next_id": "43",
+&"text": "I was so nervous, I changed outfits like five times",
+&"type": "dialogue"
+},
+"43": {
+&"character": "PlayerM",
+&"id": "43",
+&"next_id": "44",
+&"text": "Same 😆",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Mom",
+&"id": "44",
+&"next_id": "45",
+&"text": "I wore this little sundress that I thought made me look so grown up",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Mom",
+&"id": "45",
+&"next_id": "46",
+&"text": "I like to keep all my pictures on my phone",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Mom",
+&"id": "46",
+&"next_id": "47",
+&"text": "Let me see..",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Mom",
+&"id": "47",
+&"next_id": "48",
+&"text": "Oh here it is!",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Mom",
+&"id": "48",
+&"next_id": "49",
+&"text": "img: mom/2",
+&"type": "dialogue"
+},
+"49": {
+&"character": "PlayerM",
+&"id": "49",
+&"next_id": "50",
+&"text": "I don't remember you taking this picture of me? 🤔",
+&"type": "dialogue"
+},
+"5": {
+&"character": "PlayerM",
+&"id": "5",
+&"next_id": "6",
+&"text": "Why would you do that??",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Mom",
+&"id": "50",
+&"next_id": "51",
+&"text": "That's your momma 😂",
+&"type": "dialogue"
+},
+"51": {
+&"character": "PlayerM",
+&"id": "51",
+&"next_id": "52",
+&"text": "Whaaa??",
+&"type": "dialogue"
+},
+"52": {
+&"character": "PlayerM",
+&"id": "52",
+&"next_id": "53",
+&"text": "Is that seriously you??",
+&"type": "dialogue"
+},
+"53": {
+&"character": "PlayerM",
+&"id": "53",
+&"next_id": "54",
+&"text": "Omg you look just like me!?",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Mom",
+&"id": "54",
+&"next_id": "55",
+&"text": "Of course, how do you think babies work honey 😂",
+&"type": "dialogue"
+},
+"55": {
+&"character": "PlayerM",
+&"id": "55",
+&"next_id": "56",
+&"text": "Omg that's so cute 😭",
+&"type": "dialogue"
+},
+"56": {
+&"character": "PlayerM",
+&"id": "56",
+&"next_id": "57",
+&"text": "I'm a mini version of mom 🥹🩷",
+&"type": "dialogue"
+},
+"57": {
+&"character": "PlayerM",
+&"id": "57",
+&"next_id": "58",
+&"text": "Where did you go? What did you do?",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Mom",
+&"id": "58",
+&"next_id": "59",
+&"text": "He took me to this tiny restaurant near our little campus",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Mom",
+&"id": "59",
+&"next_id": "60",
+&"text": "It was nothing fancy but I felt like a princess haha",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Mom",
+&"id": "6",
+&"next_id": "7",
+&"text": "What? No no honey",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Mom",
+&"id": "60",
+&"next_id": "61",
+&"text": "He was a really sweet boy, did everything to make me feel comfortable",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Mom",
+&"id": "61",
+&"next_id": "62",
+&"text": "I don't know how to explain it",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Mom",
+&"id": "62",
+&"next_id": "63",
+&"text": "Like your heart is beating so fast you can barely eat",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Mom",
+&"id": "63",
+&"next_id": "64",
+&"text": "img: mom/3",
+&"type": "dialogue"
+},
+"64": {
+&"character": "PlayerM",
+&"id": "64",
+&"next_id": "65",
+&"text": "That's SO adorable mom 🥰",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Mom",
+&"id": "65",
+&"next_id": "66",
+&"text": "I remember I could barely look him in the eyes, I was that shy",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Mom",
+&"id": "66",
+&"next_id": "67",
+&"text": "And he was too! It was a whole cute experience 🥰",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Mom",
+&"id": "67",
+&"next_id": "68",
+&"text": "But when our eyes met, it was like we were the only two in the world hehe",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Mom",
+&"id": "68",
+&"next_id": "69",
+&"text": "I'd never felt anything like that before that point",
+&"type": "dialogue"
+},
+"69": {
+&"character": "PlayerM",
+&"id": "69",
+&"next_id": "70",
+&"text": "Aww 🥺 Were you seriously in love?",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Mom",
+&"id": "7",
+&"next_id": "8",
+&"text": "I thought he was a new friend! 🫢",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Mom",
+&"id": "70",
+&"next_id": "71",
+&"text": "Head over heels, he was my first and only at the time",
+&"type": "dialogue"
+},
+"71": {
+&"character": "Mom",
+&"id": "71",
+&"next_id": "72",
+&"text": "We were neighbors too so we spent all day every day together!",
+&"type": "dialogue"
+},
+"72": {
+&"character": "Mom",
+&"id": "72",
+&"next_id": "73",
+&"text": "He was all I'd think about",
+&"type": "dialogue"
+},
+"73": {
+&"character": "PlayerM",
+&"id": "73",
+&"next_id": "74",
+&"text": "So what happened if you and dad felt that strongly about each other 🫠",
+&"type": "dialogue"
+},
+"74": {
+&"character": "PlayerM",
+&"id": "74",
+&"next_id": "75",
+&"text": "I didn't know you knew him for that long!",
+&"type": "dialogue"
+},
+"75": {
+&"character": "PlayerM",
+&"id": "75",
+&"next_id": "76",
+&"text": "What went wrong? 🥺",
+&"type": "dialogue"
+},
+"76": {
+&"character": "Mom",
+&"id": "76",
+&"next_id": "77",
+&"text": "Oh",
+&"type": "dialogue"
+},
+"77": {
+&"character": "Mom",
+&"id": "77",
+&"next_id": "78",
+&"text": "No honey, that wasn't your father 🤭",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Mom",
+&"id": "78",
+&"next_id": "79",
+&"text": "That was a boy I grew up with",
+&"type": "dialogue"
+},
+"79": {
+&"character": "PlayerM",
+&"id": "79",
+&"next_id": "80",
+&"text": "Wait what??",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Mom",
+&"id": "8",
+&"next_id": "9",
+&"text": "He said he wanted to take you out so I assumed he meant like a nice friendly outing",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Mom",
+&"id": "80",
+&"next_id": "81",
+&"text": "Mhmm! Your dad came after him 😅",
+&"type": "dialogue"
+},
+"81": {
+&"character": "Mom",
+&"id": "81",
+&"next_id": "82",
+&"text": "But that's a story for another time 😊",
+&"type": "dialogue"
+},
+"82": {
+&"character": "PlayerM",
+&"id": "82",
+&"next_id": "83",
+&"text": "Wait seriously? 🥹 That was such a cute story but I feel really sad",
+&"type": "dialogue"
+},
+"83": {
+&"character": "Mom",
+&"id": "83",
+&"next_id": "84",
+&"text": "Well if I kept seeing him, I wouldn't have had you 🥰",
+&"type": "dialogue"
+},
+"84": {
+&"character": "PlayerM",
+&"id": "84",
+&"next_id": "85",
+&"text": "I guess, but that's still so sad 😣",
+&"type": "dialogue"
+},
+"85": {
+&"character": "Mom",
+&"id": "85",
+&"next_id": "86",
+&"text": "I'll tell you the rest when I can honey, mom's got chores to do",
+&"type": "dialogue"
+},
+"86": {
+&"character": "Mom",
+&"id": "86",
+&"next_id": "87",
+&"text": "And Ms Whiskers is meowing at me",
+&"type": "dialogue"
+},
+"87": {
+&"character": "PlayerM",
+&"id": "87",
+&"next_id": "88",
+&"text": "Give her some extra treats 😍",
+&"type": "dialogue"
+},
+"88": {
+&"character": "Mom",
+&"id": "88",
+&"next_id": "89",
+&"text": "I will! Love you baby ❤️",
+&"type": "dialogue"
+},
+"89": {
+&"character": "PlayerM",
+&"id": "89",
+&"next_id": "90",
+&"text": "Love you Mom 😭",
+&"type": "dialogue"
+},
+"9": {
+&"character": "PlayerM",
+&"id": "9",
+&"next_id": "10",
+&"text": "Mom he was clearly saying weird stuff 😭",
+&"type": "dialogue"
+},
+"90": {
+&"id": "90",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"91": {
+&"id": "91",
+&"next_id": "92",
+&"type": ""
+},
+"92": {
+&"id": "92",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "~ start
+PlayerM: Mom!
+Mom: Yes honey? 😊
+PlayerM: Don't \"yes honey\" me!! 😭
+PlayerM: That guy on my post?? You literally told him he could take me out on a date!
+PlayerM: Why would you do that??
+Mom: What? No no honey
+Mom: I thought he was a new friend! 🫢
+Mom: He said he wanted to take you out so I assumed he meant like a nice friendly outing
+PlayerM: Mom he was clearly saying weird stuff 😭
+Mom: Sorry darling, I had no idea!
+Mom: I won't respond to your friends again! 😇
+PlayerM: Ugh he's NOT my friend 🙄
+Mom: 🫢
+Mom: You know I'm not good with all this social media stuff
+Mom: I just wanted to be supportive of you honey
+PlayerM: ...
+PlayerM: Okay fine, I know you were just trying to be nice
+PlayerM: But please don't do that again 😩
+Mom: I promise promise I'll be more careful sweetheart 🙈
+Mom: But you know
+Mom: Seeing your date photo really made me smile
+Mom: You looked so beautiful
+Mom: Seriously making Mom feel old haha
+Mom: img: mom/1
+PlayerM: Thanks mom 🥺 You're not old though
+Mom: Oh Mabel, you don't know how fast time flies honey 😊
+Mom: But I'm happy because you're the best daughter I could ask for
+PlayerM: I love you mom 🥺🩷
+Mom: Love you too precious 😘
+Mom: My my, I've been getting a little nostalgic seeing all your pictures
+Mom: It reminded me of my college days
+PlayerM: You never talked about it much 😅
+PlayerM: You met dad there right?
+Mom: I did 🙈
+PlayerM: How come you never talked about it? 🤔
+Mom: Well it's a long and complicated story but maybe now you're old enough to hear some of the girl talk 🤭
+Mom: Mom used to be hip and cool y'know 😌
+PlayerM: Mom, NOBODY says \"hip and cool\" 😂
+Mom: Really? Well anyway!
+Mom: Do you want to hear about my very first college date?
+PlayerM: Omg yess!
+Mom: I was so nervous, I changed outfits like five times
+PlayerM: Same 😆
+Mom: I wore this little sundress that I thought made me look so grown up
+Mom: I like to keep all my pictures on my phone
+Mom: Let me see..
+Mom: Oh here it is!
+Mom: img: mom/2
+PlayerM: I don't remember you taking this picture of me? 🤔
+Mom: That's your momma 😂
+PlayerM: Whaaa??
+PlayerM: Is that seriously you??
+PlayerM: Omg you look just like me!?
+Mom: Of course, how do you think babies work honey 😂
+PlayerM: Omg that's so cute 😭 
+PlayerM: I'm a mini version of mom 🥹🩷
+PlayerM: Where did you go? What did you do?
+Mom: He took me to this tiny restaurant near our little campus
+Mom: It was nothing fancy but I felt like a princess haha
+Mom: He was a really sweet boy, did everything to make me feel comfortable
+Mom: I don't know how to explain it
+Mom: Like your heart is beating so fast you can barely eat
+Mom: img: mom/3
+PlayerM: That's SO adorable mom 🥰
+Mom: I remember I could barely look him in the eyes, I was that shy
+Mom: And he was too! It was a whole cute experience 🥰
+Mom: But when our eyes met, it was like we were the only two in the world hehe
+Mom: I'd never felt anything like that before that point
+PlayerM: Aww 🥺 Were you seriously in love?
+Mom: Head over heels, he was my first and only at the time
+Mom: We were neighbors too so we spent all day every day together! 
+Mom: He was all I'd think about
+PlayerM: So what happened if you and dad felt that strongly about each other 🫠 
+PlayerM: I didn't know you knew him for that long!
+PlayerM: What went wrong? 🥺
+Mom: Oh
+Mom: No honey, that wasn't your father 🤭 
+Mom: That was a boy I grew up with
+PlayerM: Wait what??
+Mom: Mhmm! Your dad came after him 😅
+Mom: But that's a story for another time 😊
+PlayerM: Wait seriously? 🥹 That was such a cute story but I feel really sad
+Mom: Well if I kept seeing him, I wouldn't have had you 🥰
+PlayerM: I guess, but that's still so sad 😣
+Mom: I'll tell you the rest when I can honey, mom's got chores to do
+Mom: And Ms Whiskers is meowing at me
+PlayerM: Give her some extra treats 😍
+Mom: I will! Love you baby ❤️
+PlayerM: Love you Mom 😭
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

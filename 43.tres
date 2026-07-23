@@ -1,0 +1,538 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_6ydyk"]
+
+[resource]
+script = ExtResource("1_6ydyk")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Suzanna", "Mabel", "Naomi", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Mabel",
+&"id": "10",
+&"next_id": "11",
+&"text": "Babe, do you think you can help them? 🥺",
+&"type": "dialogue"
+},
+"11": {
+&"id": "11",
+&"next_id": "12",
+&"responses": PackedStringArray("11", "22", "38"),
+&"tags": PackedStringArray("orangeheart"),
+&"text": "[Help Suzanna]",
+&"type": "response"
+},
+"12": {
+&"id": "12",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "orange_heart"
+}, {
+&"i": 23,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 26,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "13",
+&"type": "mutation"
+},
+"13": {
+&"id": "13",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "Suzanna1"
+}]),
+&"is_blocking": true
+},
+&"next_id": "14",
+&"type": "mutation"
+},
+"14": {
+&"character": "Player",
+&"id": "14",
+&"next_id": "15",
+&"text": "Sure",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Player",
+&"id": "15",
+&"next_id": "16",
+&"text": "What can I do for you Suzanna?",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Suzanna",
+&"id": "16",
+&"next_id": "17",
+&"text": "My hero 🥹",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Suzanna",
+&"id": "17",
+&"next_id": "18",
+&"text": "Okay I have some preparations to make tonight but I'll let you know first thing in the morning",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Suzanna",
+&"id": "18",
+&"next_id": "19",
+&"text": "Please keep Saturday free",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Player",
+&"id": "19",
+&"next_id": "20",
+&"text": "Okay! 😅",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Suzanna",
+&"id": "2",
+&"next_id": "3",
+&"text": "Hello everyone 😥",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Mabel",
+&"id": "20",
+&"next_id": "21",
+&"text": "Babe you're a hero!",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Player",
+&"id": "21",
+&"next_id": "43",
+&"text": "Am I? 😆",
+&"type": "dialogue"
+},
+"22": {
+&"id": "22",
+&"next_id": "23",
+&"tags": PackedStringArray("redheart"),
+&"text": "[Help Naomi]",
+&"type": "response"
+},
+"23": {
+&"id": "23",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "red_heart"
+}, {
+&"i": 20,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 23,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "24",
+&"type": "mutation"
+},
+"24": {
+&"id": "24",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "Naomi1"
+}]),
+&"is_blocking": true
+},
+&"next_id": "25",
+&"type": "mutation"
+},
+"25": {
+&"character": "Player",
+&"id": "25",
+&"next_id": "26",
+&"text": "Is there any way I can help you Naomi?",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Player",
+&"id": "26",
+&"next_id": "27",
+&"text": "Maybe Caleb can help Suzanna then",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Naomi",
+&"id": "27",
+&"next_id": "28",
+&"text": "Actually... 🤔",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Naomi",
+&"id": "28",
+&"next_id": "29",
+&"text": "You can",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Naomi",
+&"id": "29",
+&"next_id": "30",
+&"text": "I'll have to chit chat about it with Caleb tonight then tomorrow we can talk about it",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Suzanna",
+&"id": "3",
+&"next_id": "4",
+&"text": "I'm looking for a sub-in for a little emergency",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Player",
+&"id": "30",
+&"next_id": "31",
+&"text": "Sure 🫡",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Naomi",
+&"id": "31",
+&"next_id": "32",
+&"text": "Thanks!",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Naomi",
+&"id": "32",
+&"next_id": "33",
+&"text": "I'll make sure Caleb's free for Sat then Prof",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Suzanna",
+&"id": "33",
+&"next_id": "34",
+&"text": "Oh that's great to hear 🥹",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Suzanna",
+&"id": "34",
+&"next_id": "35",
+&"text": "I'll have to make some preparations then, thanks again",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Naomi",
+&"id": "35",
+&"next_id": "36",
+&"text": "No worries!",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Mabel",
+&"id": "36",
+&"next_id": "37",
+&"text": "Babe, you're a hero!",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Player",
+&"id": "37",
+&"next_id": "43",
+&"text": "Am I? 😆",
+&"type": "dialogue"
+},
+"38": {
+&"id": "38",
+&"next_id": "39",
+&"text": "[Help Neither]",
+&"type": "response"
+},
+"39": {
+&"id": "39",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "Nobody2"
+}]),
+&"is_blocking": true
+},
+&"next_id": "40",
+&"type": "mutation"
+},
+"4": {
+&"character": "Mabel",
+&"id": "4",
+&"next_id": "5",
+&"text": "Oh no! What's the problem Professor!?",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Player",
+&"id": "40",
+&"next_id": "41",
+&"text": "I've got some plans for Saturday so sorry about that 😅",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Suzanna",
+&"id": "41",
+&"next_id": "42",
+&"text": "That's quite unlucky for me then 😓",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Suzanna",
+&"id": "42",
+&"next_id": "43",
+&"text": "Alright, thank you anyway",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Suzanna",
+&"id": "43",
+&"next_id": "44",
+&"text": "Gotta run, thanks everyone",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Mabel",
+&"id": "44",
+&"next_id": "45",
+&"text": "Hope it goes well!",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Mabel",
+&"id": "45",
+&"next_id": "46",
+&"text": "I wonder what she's struggling with",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Naomi",
+&"id": "46",
+&"next_id": "47",
+&"text": "Suzanna's got some unique situations on her hands",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Naomi",
+&"id": "47",
+&"next_id": "48",
+&"text": "😅",
+&"type": "dialogue"
+},
+"48": {
+&"id": "48",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"49": {
+&"id": "49",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"5": {
+&"character": "Suzanna",
+&"id": "5",
+&"next_id": "6",
+&"text": "I can't disclose the details unfortunately but I'm in need of one of the boys here",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Suzanna",
+&"id": "6",
+&"next_id": "7",
+&"text": "Caleb said he would but he has a schedule conflict on Saturday",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Naomi",
+&"id": "7",
+&"next_id": "8",
+&"text": "Right 😅 I'm sorry about that Suzanna",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Naomi",
+&"id": "8",
+&"next_id": "9",
+&"text": "I'd have someone else volunteer but ours is a sensitive topic as well 😅",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Suzanna",
+&"id": "9",
+&"next_id": "10",
+&"text": "That's fine Naomi, I'm not faulting you for this",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+Suzanna: Hello everyone 😥
+Suzanna: I'm looking for a sub-in for a little emergency
+Mabel: Oh no! What's the problem Professor!?
+Suzanna: I can't disclose the details unfortunately but I'm in need of one of the boys here
+Suzanna: Caleb said he would but he has a schedule conflict on Saturday
+Naomi: Right 😅 I'm sorry about that Suzanna
+Naomi: I'd have someone else volunteer but ours is a sensitive topic as well 😅
+Suzanna: That's fine Naomi, I'm not faulting you for this
+Mabel: Babe, do you think you can help them? 🥺
+- [Help Suzanna] [#orangeheart]
+	set Story.orange_heart += 1
+	set Story.flag = \"Suzanna1\"
+	Player: Sure
+	Player: What can I do for you Suzanna?
+	Suzanna: My hero 🥹
+	Suzanna: Okay I have some preparations to make tonight but I'll let you know first thing in the morning
+	Suzanna: Please keep Saturday free
+	Player: Okay! 😅
+	Mabel: Babe you're a hero!
+	Player: Am I? 😆
+- [Help Naomi] [#redheart]
+	set Story.red_heart += 1
+	set Story.flag = \"Naomi1\"
+	Player: Is there any way I can help you Naomi?
+	Player: Maybe Caleb can help Suzanna then
+	Naomi: Actually... 🤔
+	Naomi: You can
+	Naomi: I'll have to chit chat about it with Caleb tonight then tomorrow we can talk about it
+	Player: Sure 🫡
+	Naomi: Thanks!
+	Naomi: I'll make sure Caleb's free for Sat then Prof
+	Suzanna: Oh that's great to hear 🥹
+	Suzanna: I'll have to make some preparations then, thanks again
+	Naomi: No worries!
+	Mabel: Babe, you're a hero!
+	Player: Am I? 😆
+- [Help Neither]
+	set Story.flag = \"Nobody2\"
+	Player: I've got some plans for Saturday so sorry about that 😅
+	Suzanna: That's quite unlucky for me then 😓
+	Suzanna: Alright, thank you anyway
+Suzanna: Gotta run, thanks everyone
+Mabel: Hope it goes well!
+Mabel: I wonder what she's struggling with
+Naomi: Suzanna's got some unique situations on her hands
+Naomi: 😅
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

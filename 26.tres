@@ -1,0 +1,1342 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_4y5q3"]
+
+[resource]
+script = ExtResource("1_4y5q3")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Erika", "Nina", "Valerie", "Player", "Jason", "Alex", "Jessica")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Erika",
+&"id": "10",
+&"next_id": "11",
+&"text": "Only the dorm brides are special 😘",
+&"type": "dialogue"
+},
+"100": {
+&"character": "Nina",
+&"id": "100",
+&"next_id": "101",
+&"text": "Gym boy huh? 😏",
+&"type": "dialogue"
+},
+"101": {
+&"character": "Nina",
+&"id": "101",
+&"next_id": "102",
+&"text": "A cut above the other two dweebs",
+&"type": "dialogue"
+},
+"102": {
+&"character": "Jessica",
+&"id": "102",
+&"next_id": "103",
+&"text": "I see everyone's been thoroughly introducing themselves",
+&"type": "dialogue"
+},
+"103": {
+&"character": "Jessica",
+&"id": "103",
+&"next_id": "104",
+&"text": "A friendly word of advice to you new boys",
+&"type": "dialogue"
+},
+"104": {
+&"character": "Jessica",
+&"id": "104",
+&"next_id": "105",
+&"text": "The girls here might all be forward but don't get any ideas",
+&"type": "dialogue"
+},
+"105": {
+&"character": "Jessica",
+&"id": "105",
+&"next_id": "106",
+&"text": "img: jessica/1",
+&"type": "dialogue"
+},
+"106": {
+&"id": "106",
+&"next_id": "107",
+&"responses": PackedStringArray("106"),
+&"text": "[...]",
+&"type": "response"
+},
+"107": {
+&"character": "Jessica",
+&"id": "107",
+&"next_id": "108",
+&"text": "I am the queen of the sorority and my word is law",
+&"type": "dialogue"
+},
+"108": {
+&"character": "Jessica",
+&"id": "108",
+&"next_id": "109",
+&"text": "And these girls are here to make sure you follow that law at all times",
+&"type": "dialogue"
+},
+"109": {
+&"character": "Jessica",
+&"id": "109",
+&"next_id": "110",
+&"text": "They might even allow you to have a good time",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Nina",
+&"id": "11",
+&"next_id": "12",
+&"text": "Ugh, that old tradition has to die",
+&"type": "dialogue"
+},
+"110": {
+&"character": "Jessica",
+&"id": "110",
+&"next_id": "111",
+&"text": "Can I get a \"Yes ma'am\"?",
+&"type": "dialogue"
+},
+"111": {
+&"character": "Jason",
+&"id": "111",
+&"next_id": "112",
+&"text": "Yes ma'am",
+&"type": "dialogue"
+},
+"112": {
+&"character": "Player",
+&"id": "112",
+&"next_id": "113",
+&"text": "Yes ma'am",
+&"type": "dialogue"
+},
+"113": {
+&"character": "Alex",
+&"id": "113",
+&"next_id": "114",
+&"text": "Yes queen",
+&"type": "dialogue"
+},
+"114": {
+&"character": "Jessica",
+&"id": "114",
+&"next_id": "115",
+&"text": "Good boys",
+&"type": "dialogue"
+},
+"115": {
+&"character": "Jessica",
+&"id": "115",
+&"next_id": "116",
+&"text": "You will be given the full benefits of the frat like the grant",
+&"type": "dialogue"
+},
+"116": {
+&"character": "Jessica",
+&"id": "116",
+&"next_id": "117",
+&"text": "And if we're really happy with your progress, you can even pick out a dorm wife from the sorority",
+&"type": "dialogue"
+},
+"117": {
+&"character": "Jessica",
+&"id": "117",
+&"next_id": "118",
+&"text": "Any questions?",
+&"type": "dialogue"
+},
+"118": {
+&"character": "Jason",
+&"id": "118",
+&"next_id": "119",
+&"text": "Oh sweet 🤑",
+&"type": "dialogue"
+},
+"119": {
+&"id": "119",
+&"next_id": "120",
+&"responses": PackedStringArray("119", "124", "136"),
+&"text": "What's the grant exactly?",
+&"type": "response"
+},
+"12": {
+&"id": "12",
+&"next_id": "13",
+&"responses": PackedStringArray("12"),
+&"text": "[...]",
+&"type": "response"
+},
+"120": {
+&"character": "Player",
+&"id": "120",
+&"next_id": "121",
+&"text": "What's the grant exactly?",
+&"type": "dialogue"
+},
+"121": {
+&"character": "Jessica",
+&"id": "121",
+&"next_id": "122",
+&"text": "The club will distribute 2 💵 every week",
+&"type": "dialogue"
+},
+"122": {
+&"character": "Jessica",
+&"id": "122",
+&"next_id": "123",
+&"text": "It should happen every Monday when club check-in occurs",
+&"type": "dialogue"
+},
+"123": {
+&"character": "Jason",
+&"id": "123",
+&"next_id": "150",
+&"text": "Not too shabby",
+&"type": "dialogue"
+},
+"124": {
+&"id": "124",
+&"next_id": "125",
+&"text": "What's a dorm wife?",
+&"type": "response"
+},
+"125": {
+&"character": "Player",
+&"id": "125",
+&"next_id": "126",
+&"text": "What's a dorm wife?",
+&"type": "dialogue"
+},
+"126": {
+&"character": "Player",
+&"id": "126",
+&"next_id": "127",
+&"text": "It was mentioned before too",
+&"type": "dialogue"
+},
+"127": {
+&"character": "Jessica",
+&"id": "127",
+&"next_id": "128",
+&"text": "I'm glad you asked",
+&"type": "dialogue"
+},
+"128": {
+&"character": "Jessica",
+&"id": "128",
+&"next_id": "129",
+&"text": "A dorm wife is a sacred binding between a frat member and a hand picked sorority slut",
+&"type": "dialogue"
+},
+"129": {
+&"character": "Jessica",
+&"id": "129",
+&"next_id": "130",
+&"text": "When the time is right, a proven frat member can select a one of the club girls to take for their...",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Valerie",
+&"id": "13",
+&"next_id": "14",
+&"text": "Wow, it's so cool to be up here with you girls 😍",
+&"type": "dialogue"
+},
+"130": {
+&"character": "Jessica",
+&"id": "130",
+&"next_id": "131",
+&"text": "Lets say \"personal\" use. The slut will move into her new man's room and become his personal bitch for the rest of her college years",
+&"type": "dialogue"
+},
+"131": {
+&"character": "Jason",
+&"id": "131",
+&"next_id": "132",
+&"text": "Can they refuse? 🤔",
+&"type": "dialogue"
+},
+"132": {
+&"character": "Alex",
+&"id": "132",
+&"next_id": "133",
+&"text": "Who'd wanna refuse me?",
+&"type": "dialogue"
+},
+"133": {
+&"character": "Jessica",
+&"id": "133",
+&"next_id": "134",
+&"text": "If she does refuse however, she is removed from the club for breaking sorority law simply",
+&"type": "dialogue"
+},
+"134": {
+&"character": "Jessica",
+&"id": "134",
+&"next_id": "135",
+&"text": "We've had one such case of this recently but rest assured that it's exceptionally rare for a girl to not comply",
+&"type": "dialogue"
+},
+"135": {
+&"character": "Jessica",
+&"id": "135",
+&"next_id": "150",
+&"text": "We will do everything in our capacity to make sure it is a smooth transition",
+&"type": "dialogue"
+},
+"136": {
+&"id": "136",
+&"next_id": "137",
+&"text": "Are you available too?",
+&"type": "response"
+},
+"137": {
+&"character": "Player",
+&"id": "137",
+&"next_id": "138",
+&"text": "Are you available too?",
+&"type": "dialogue"
+},
+"138": {
+&"character": "Jessica",
+&"id": "138",
+&"next_id": "139",
+&"text": "What a bold one you are",
+&"type": "dialogue"
+},
+"139": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 10,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 19,
+&"type": &"string",
+&"value": "NinasPanties"
+}, {
+&"i": 33,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "139",
+&"next_id": "140",
+&"next_id_after": "144",
+&"type": "condition"
+},
+"14": {
+&"character": "Erika",
+&"id": "14",
+&"next_id": "15",
+&"text": "Hi my lovely 🥰",
+&"type": "dialogue"
+},
+"140": {
+&"character": "Jessica",
+&"id": "140",
+&"next_id": "141",
+&"text": "I heard you took up an invite through Nina",
+&"type": "dialogue"
+},
+"141": {
+&"character": "Jessica",
+&"id": "141",
+&"next_id": "142",
+&"text": "Quite a special feat already",
+&"type": "dialogue"
+},
+"142": {
+&"character": "Nina",
+&"id": "142",
+&"next_id": "143",
+&"text": "Oh brother am I starting to regret that 🙄",
+&"type": "dialogue"
+},
+"143": {
+&"character": "Jessica",
+&"id": "143",
+&"next_id": "144",
+&"text": "But not nearly special enough to be able to grab the queen",
+&"type": "dialogue"
+},
+"144": {
+&"character": "Jessica",
+&"id": "144",
+&"next_id": "145",
+&"text": "You'd need to prove to me that you are eligible",
+&"type": "dialogue"
+},
+"145": {
+&"character": "Jessica",
+&"id": "145",
+&"next_id": "146",
+&"text": "So give it your all okay? 😘",
+&"type": "dialogue"
+},
+"146": {
+&"character": "Jason",
+&"id": "146",
+&"next_id": "147",
+&"text": "Was not expecting that answer 😁",
+&"type": "dialogue"
+},
+"147": {
+&"character": "Jessica",
+&"id": "147",
+&"next_id": "148",
+&"text": "You think as queen, I'd be some sort of heartless monster?",
+&"type": "dialogue"
+},
+"148": {
+&"character": "Jessica",
+&"id": "148",
+&"next_id": "149",
+&"text": "If I can make a committed member out of him, I'll get what I want and a slim chance he might as well 😉",
+&"type": "dialogue"
+},
+"149": {
+&"character": "Jason",
+&"id": "149",
+&"next_id": "150",
+&"text": "Makes sense",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Valerie",
+&"id": "15",
+&"next_id": "16",
+&"text": "Erika 😍",
+&"type": "dialogue"
+},
+"150": {
+&"character": "Jessica",
+&"id": "150",
+&"next_id": "151",
+&"text": "Any further questions?",
+&"type": "dialogue"
+},
+"151": {
+&"character": "Jason",
+&"id": "151",
+&"next_id": "152",
+&"text": "Nopez",
+&"type": "dialogue"
+},
+"152": {
+&"character": "Player",
+&"id": "152",
+&"next_id": "153",
+&"text": "That's all I got",
+&"type": "dialogue"
+},
+"153": {
+&"character": "Nina",
+&"id": "153",
+&"next_id": "154",
+&"text": "Great, can I go now?",
+&"type": "dialogue"
+},
+"154": {
+&"character": "Jessica",
+&"id": "154",
+&"next_id": "155",
+&"text": "You're all dismissed",
+&"type": "dialogue"
+},
+"155": {
+&"character": "Jessica",
+&"id": "155",
+&"next_id": "156",
+&"text": "We'll start initiations on Monday",
+&"type": "dialogue"
+},
+"156": {
+&"character": "Jessica",
+&"id": "156",
+&"next_id": "157",
+&"text": "So be ready for anything boys and sluts",
+&"type": "dialogue"
+},
+"157": {
+&"id": "157",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"158": {
+&"id": "158",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"16": {
+&"character": "Valerie",
+&"id": "16",
+&"next_id": "17",
+&"text": "Its my first time getting to see the new boys 🤭",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Valerie",
+&"id": "17",
+&"next_id": "18",
+&"text": "Let's see who we have 🤩",
+&"type": "dialogue"
+},
+"18": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "NinasPanties"
+}, {
+&"i": 32,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "18",
+&"next_id": "19",
+&"next_id_after": "47",
+&"type": "condition"
+},
+"19": {
+&"character": "Erika",
+&"id": "19",
+&"next_id": "20",
+&"text": "Well well well, I hear one of you got in through Nina",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Erika",
+&"id": "2",
+&"next_id": "3",
+&"text": "Well hellooo there new recruits 💋",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Player",
+&"id": "20",
+&"next_id": "21",
+&"text": "👋",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Erika",
+&"id": "21",
+&"next_id": "22",
+&"text": "So you're it huh?",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Erika",
+&"id": "22",
+&"next_id": "23",
+&"text": "I knew she'd fall in love one day 🥰",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Nina",
+&"id": "23",
+&"next_id": "24",
+&"text": "Shut up slut",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Nina",
+&"id": "24",
+&"next_id": "25",
+&"text": "I only let him in to watch him suffer 😒",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Valerie",
+&"id": "25",
+&"next_id": "26",
+&"text": "Wow, he must be special then",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Nina",
+&"id": "26",
+&"next_id": "27",
+&"text": "Ugh for the love of fuck, not you too",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Erika",
+&"id": "27",
+&"next_id": "28",
+&"text": "Tell us dear",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Erika",
+&"id": "28",
+&"next_id": "29",
+&"text": "Are you and Nina lovers yet? 😘",
+&"type": "dialogue"
+},
+"29": {
+&"id": "29",
+&"next_id": "30",
+&"responses": PackedStringArray("29", "36"),
+&"text": "No",
+&"type": "response"
+},
+"3": {
+&"character": "Erika",
+&"id": "3",
+&"next_id": "4",
+&"text": "Pleased to see a new batch of boys are interested in the frat 🥰",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Player",
+&"id": "30",
+&"next_id": "31",
+&"text": "No",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Nina",
+&"id": "31",
+&"next_id": "32",
+&"text": "Why would you even ask him that stupid question when I already told you a hundred times?",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Erika",
+&"id": "32",
+&"next_id": "33",
+&"text": "You telling me you aren't keeping any secrets from us? 🤭",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Nina",
+&"id": "33",
+&"next_id": "34",
+&"text": "Why would I keep this like this a secret?",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Nina",
+&"id": "34",
+&"next_id": "35",
+&"text": "Besides he probably has a tiny dick, I don't even give a fuck",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Erika",
+&"id": "35",
+&"next_id": "45",
+&"text": "You don't know that yet 😉",
+&"type": "dialogue"
+},
+"36": {
+&"id": "36",
+&"next_id": "37",
+&"text": "Not yet",
+&"type": "response"
+},
+"37": {
+&"character": "Player",
+&"id": "37",
+&"next_id": "38",
+&"text": "Not yet",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Nina",
+&"id": "38",
+&"next_id": "39",
+&"text": "img: nina/15",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Nina",
+&"id": "39",
+&"next_id": "40",
+&"text": "Fuck you mean not yet",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Nina",
+&"id": "4",
+&"next_id": "5",
+&"text": "Knock it off, they're here to worship us",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Erika",
+&"id": "40",
+&"next_id": "41",
+&"text": "It means what it means babe",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Erika",
+&"id": "41",
+&"next_id": "42",
+&"text": "This boy is serious about being all tied up with you 🤭",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Erika",
+&"id": "42",
+&"next_id": "43",
+&"text": "I think it would do you a lot of good hehe",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Erika",
+&"id": "43",
+&"next_id": "44",
+&"text": "Hopefully you can fix Nina dear boy 🥰",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Erika",
+&"id": "44",
+&"next_id": "45",
+&"text": "And I'm rooting for you lovers",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Nina",
+&"id": "45",
+&"next_id": "46",
+&"text": "🙄",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Nina",
+&"id": "46",
+&"next_id": "47",
+&"text": "Maybe I'll just slam my head against a wall for an hour",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Valerie",
+&"id": "47",
+&"next_id": "48",
+&"text": "Jason is here 🥰",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Jason",
+&"id": "48",
+&"next_id": "49",
+&"text": "Hi Val, brought my friend with me 😉",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Valerie",
+&"id": "49",
+&"next_id": "50",
+&"text": "Hiii nice to meet you Jason's friend 🥳🥰",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Nina",
+&"id": "5",
+&"next_id": "6",
+&"text": "Stop making'em think they're special",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Valerie",
+&"id": "50",
+&"next_id": "51",
+&"text": "img: valerie/8",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Valerie",
+&"id": "51",
+&"next_id": "52",
+&"text": "I'm Valerie, but you can call me Val",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Player",
+&"id": "52",
+&"next_id": "53",
+&"text": "Hi Val",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Valerie",
+&"id": "53",
+&"next_id": "54",
+&"text": "Jason tell meee",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Valerie",
+&"id": "54",
+&"next_id": "55",
+&"text": "Is he big like you 🥰",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Jason",
+&"id": "55",
+&"next_id": "56",
+&"text": "You'll have to ask him yourself",
+&"type": "dialogue"
+},
+"56": {
+&"id": "56",
+&"next_id": "57",
+&"responses": PackedStringArray("56", "71"),
+&"text": "I have a girlfriend",
+&"type": "response"
+},
+"57": {
+&"character": "Player",
+&"id": "57",
+&"next_id": "58",
+&"text": "I have a girlfriend",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Valerie",
+&"id": "58",
+&"next_id": "59",
+&"text": "Y-you have a girlfriend?",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Nina",
+&"id": "59",
+&"next_id": "60",
+&"text": "Oh brother, you shouldn't have said that",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Erika",
+&"id": "6",
+&"next_id": "7",
+&"text": "But they are special 🥰",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Erika",
+&"id": "60",
+&"next_id": "61",
+&"text": "Hehe",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Valerie",
+&"id": "61",
+&"next_id": "62",
+&"text": "😳😳😳",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Valerie",
+&"id": "62",
+&"next_id": "63",
+&"text": "OMGGGGGGG",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Valerie",
+&"id": "63",
+&"next_id": "64",
+&"text": "I loooove boys that have girlfriends 😭🤎🤎",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Valerie",
+&"id": "64",
+&"next_id": "65",
+&"text": "Maybe I can convince you?",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Valerie",
+&"id": "65",
+&"next_id": "66",
+&"text": "img: valerie/1",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Nina",
+&"id": "66",
+&"next_id": "67",
+&"text": "🤮",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Valerie",
+&"id": "67",
+&"next_id": "68",
+&"text": "Can I have him all to myself Jess?? PLEAAASE",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Valerie",
+&"id": "68",
+&"next_id": "69",
+&"text": "I want him all for me me me 🥰",
+&"type": "dialogue"
+},
+"69": {
+&"character": "Erika",
+&"id": "69",
+&"next_id": "70",
+&"text": "Jess is gonna be here shortly 🤭",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Erika",
+&"id": "7",
+&"next_id": "8",
+&"text": "Afterall, maybe I'll be lucky enough to be a dorm bride 🥰",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Nina",
+&"id": "70",
+&"next_id": "77",
+&"text": "Jeez, someone's in heat",
+&"type": "dialogue"
+},
+"71": {
+&"id": "71",
+&"next_id": "72",
+&"text": "You'll have to find out",
+&"type": "response"
+},
+"72": {
+&"character": "Player",
+&"id": "72",
+&"next_id": "73",
+&"text": "You'll have to find out",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Valerie",
+&"id": "73",
+&"next_id": "74",
+&"text": "Omg he dooooes 😍",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Jason",
+&"id": "74",
+&"next_id": "75",
+&"text": "Of course, all my buds got huge ones",
+&"type": "dialogue"
+},
+"75": {
+&"character": "Player",
+&"id": "75",
+&"next_id": "76",
+&"text": "Jason 😂",
+&"type": "dialogue"
+},
+"76": {
+&"character": "Jason",
+&"id": "76",
+&"next_id": "77",
+&"text": "🤪",
+&"type": "dialogue"
+},
+"77": {
+&"character": "Valerie",
+&"id": "77",
+&"next_id": "78",
+&"text": "Jeez, I suck at this patience thing 😫",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Valerie",
+&"id": "78",
+&"next_id": "79",
+&"text": "Hehe 😇",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Erika",
+&"id": "79",
+&"next_id": "80",
+&"text": "Well now that everyone's introducing themselves",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Nina",
+&"id": "8",
+&"next_id": "9",
+&"text": "Don't you have a boyfriend or someshit?",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Erika",
+&"id": "80",
+&"next_id": "81",
+&"text": "I'm Erika and it's a pleasure to meet you all",
+&"type": "dialogue"
+},
+"81": {
+&"character": "Erika",
+&"id": "81",
+&"next_id": "82",
+&"text": "😉💛",
+&"type": "dialogue"
+},
+"82": {
+&"character": "Erika",
+&"id": "82",
+&"next_id": "83",
+&"text": "Oh my, we also have Alex finally join the batch too",
+&"type": "dialogue"
+},
+"83": {
+&"character": "Erika",
+&"id": "83",
+&"next_id": "84",
+&"text": "And I'm already... familiar with Jason",
+&"type": "dialogue"
+},
+"84": {
+&"character": "Erika",
+&"id": "84",
+&"next_id": "85",
+&"text": "That leaves the new boy ☺️",
+&"type": "dialogue"
+},
+"85": {
+&"character": "Erika",
+&"id": "85",
+&"next_id": "86",
+&"text": "img: erika/10",
+&"type": "dialogue"
+},
+"86": {
+&"character": "Erika",
+&"id": "86",
+&"next_id": "87",
+&"text": "Tell me new boy, do I look good or what?",
+&"type": "dialogue"
+},
+"87": {
+&"id": "87",
+&"next_id": "88",
+&"responses": PackedStringArray("87", "90"),
+&"text": "Yeah!",
+&"type": "response"
+},
+"88": {
+&"character": "Player",
+&"id": "88",
+&"next_id": "89",
+&"text": "Yeah!",
+&"type": "dialogue"
+},
+"89": {
+&"character": "Erika",
+&"id": "89",
+&"next_id": "94",
+&"text": "🥰",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Erika",
+&"id": "9",
+&"next_id": "10",
+&"text": "We both know that term doesn't mean anything under Jessica",
+&"type": "dialogue"
+},
+"90": {
+&"id": "90",
+&"next_id": "91",
+&"text": "Like a goddess 😍",
+&"type": "response"
+},
+"91": {
+&"character": "Player",
+&"id": "91",
+&"next_id": "92",
+&"text": "Like a goddess",
+&"type": "dialogue"
+},
+"92": {
+&"character": "Erika",
+&"id": "92",
+&"next_id": "93",
+&"text": "No need to try to get on my good side",
+&"type": "dialogue"
+},
+"93": {
+&"character": "Erika",
+&"id": "93",
+&"next_id": "94",
+&"text": "You already are 😘",
+&"type": "dialogue"
+},
+"94": {
+&"character": "Nina",
+&"id": "94",
+&"next_id": "95",
+&"text": "Alex huh?",
+&"type": "dialogue"
+},
+"95": {
+&"character": "Nina",
+&"id": "95",
+&"next_id": "96",
+&"text": "Hello tall dark and handsome",
+&"type": "dialogue"
+},
+"96": {
+&"character": "Alex",
+&"id": "96",
+&"next_id": "97",
+&"text": "Yeah, finally in this bitch 😤",
+&"type": "dialogue"
+},
+"97": {
+&"character": "Alex",
+&"id": "97",
+&"next_id": "98",
+&"text": "Sup ladies",
+&"type": "dialogue"
+},
+"98": {
+&"character": "Alex",
+&"id": "98",
+&"next_id": "99",
+&"text": "img: alex/1",
+&"type": "dialogue"
+},
+"99": {
+&"id": "99",
+&"next_id": "100",
+&"responses": PackedStringArray("99"),
+&"text": "[...]",
+&"type": "response"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+Erika: Well hellooo there new recruits 💋
+Erika: Pleased to see a new batch of boys are interested in the frat 🥰
+Nina: Knock it off, they're here to worship us
+Nina: Stop making'em think they're special
+Erika: But they are special 🥰
+Erika: Afterall, maybe I'll be lucky enough to be a dorm bride 🥰
+Nina: Don't you have a boyfriend or someshit?
+Erika: We both know that term doesn't mean anything under Jessica
+Erika: Only the dorm brides are special 😘
+Nina: Ugh, that old tradition has to die
+- [...]
+Valerie: Wow, it's so cool to be up here with you girls 😍
+Erika: Hi my lovely 🥰
+Valerie: Erika 😍
+Valerie: Its my first time getting to see the new boys 🤭
+Valerie: Let's see who we have 🤩
+if Story.has_flag(\"NinasPanties\"):
+	Erika: Well well well, I hear one of you got in through Nina
+	Player: 👋
+	Erika: So you're it huh?
+	Erika: I knew she'd fall in love one day 🥰
+	Nina: Shut up slut
+	Nina: I only let him in to watch him suffer 😒
+	Valerie: Wow, he must be special then
+	Nina: Ugh for the love of fuck, not you too
+	Erika: Tell us dear
+	Erika: Are you and Nina lovers yet? 😘
+	- No
+		Player: No
+		Nina: Why would you even ask him that stupid question when I already told you a hundred times?
+		Erika: You telling me you aren't keeping any secrets from us? 🤭
+		Nina: Why would I keep this like this a secret?
+		Nina: Besides he probably has a tiny dick, I don't even give a fuck
+		Erika: You don't know that yet 😉
+	- Not yet
+		Player: Not yet
+		Nina: img: nina/15
+		Nina: Fuck you mean not yet
+		Erika: It means what it means babe
+		Erika: This boy is serious about being all tied up with you 🤭
+		Erika: I think it would do you a lot of good hehe
+		Erika: Hopefully you can fix Nina dear boy 🥰
+		Erika: And I'm rooting for you lovers
+	Nina: 🙄
+	Nina: Maybe I'll just slam my head against a wall for an hour
+Valerie: Jason is here 🥰
+Jason: Hi Val, brought my friend with me 😉
+Valerie: Hiii nice to meet you Jason's friend 🥳🥰
+Valerie: img: valerie/8
+Valerie: I'm Valerie, but you can call me Val
+Player: Hi Val
+Valerie: Jason tell meee
+Valerie: Is he big like you 🥰
+Jason: You'll have to ask him yourself
+- I have a girlfriend
+	Player: I have a girlfriend
+	Valerie: Y-you have a girlfriend?
+	Nina: Oh brother, you shouldn't have said that
+	Erika: Hehe
+	Valerie: 😳😳😳
+	Valerie: OMGGGGGGG
+	Valerie: I loooove boys that have girlfriends 😭🤎🤎
+	Valerie: Maybe I can convince you?
+	Valerie: img: valerie/1
+	Nina: 🤮
+	Valerie: Can I have him all to myself Jess?? PLEAAASE
+	Valerie: I want him all for me me me 🥰
+	Erika: Jess is gonna be here shortly 🤭
+	Nina: Jeez, someone's in heat
+- You'll have to find out
+	Player: You'll have to find out
+	Valerie: Omg he dooooes 😍
+	Jason: Of course, all my buds got huge ones
+	Player: Jason 😂
+	Jason: 🤪
+Valerie: Jeez, I suck at this patience thing 😫
+Valerie: Hehe 😇
+Erika: Well now that everyone's introducing themselves
+Erika: I'm Erika and it's a pleasure to meet you all
+Erika: 😉💛
+Erika: Oh my, we also have Alex finally join the batch too
+Erika: And I'm already... familiar with Jason
+Erika: That leaves the new boy ☺️
+Erika: img: erika/10
+Erika: Tell me new boy, do I look good or what?
+- Yeah!
+	Player: Yeah!
+	Erika: 🥰
+- Like a goddess 😍
+	Player: Like a goddess
+	Erika: No need to try to get on my good side
+	Erika: You already are 😘
+Nina: Alex huh?
+Nina: Hello tall dark and handsome
+Alex: Yeah, finally in this bitch 😤
+Alex: Sup ladies
+Alex: img: alex/1
+- [...]
+Nina: Gym boy huh? 😏
+Nina: A cut above the other two dweebs
+Jessica: I see everyone's been thoroughly introducing themselves
+Jessica: A friendly word of advice to you new boys
+Jessica: The girls here might all be forward but don't get any ideas
+Jessica: img: jessica/1
+- [...]
+Jessica: I am the queen of the sorority and my word is law
+Jessica: And these girls are here to make sure you follow that law at all times
+Jessica: They might even allow you to have a good time
+Jessica: Can I get a \"Yes ma'am\"?
+Jason: Yes ma'am
+Player: Yes ma'am
+Alex: Yes queen
+Jessica: Good boys
+Jessica: You will be given the full benefits of the frat like the grant
+Jessica: And if we're really happy with your progress, you can even pick out a dorm wife from the sorority
+Jessica: Any questions?
+Jason: Oh sweet 🤑
+- What's the grant exactly?
+	Player: What's the grant exactly?
+	Jessica: The club will distribute 2 💵 every week
+	Jessica: It should happen every Monday when club check-in occurs
+	Jason: Not too shabby
+- What's a dorm wife?
+	Player: What's a dorm wife?
+	Player: It was mentioned before too
+	Jessica: I'm glad you asked
+	Jessica: A dorm wife is a sacred binding between a frat member and a hand picked sorority slut
+	Jessica: When the time is right, a proven frat member can select a one of the club girls to take for their...
+	Jessica: Lets say \"personal\" use. The slut will move into her new man's room and become his personal bitch for the rest of her college years
+	Jason: Can they refuse? 🤔
+	Alex: Who'd wanna refuse me?
+	Jessica: If she does refuse however, she is removed from the club for breaking sorority law simply
+	Jessica: We've had one such case of this recently but rest assured that it's exceptionally rare for a girl to not comply
+	Jessica: We will do everything in our capacity to make sure it is a smooth transition
+- Are you available too?
+	Player: Are you available too?
+	Jessica: What a bold one you are
+	if Story.has_flag(\"NinasPanties\")
+		Jessica: I heard you took up an invite through Nina
+		Jessica: Quite a special feat already
+		Nina: Oh brother am I starting to regret that 🙄
+		Jessica: But not nearly special enough to be able to grab the queen
+	Jessica: You'd need to prove to me that you are eligible
+	Jessica: So give it your all okay? 😘
+	Jason: Was not expecting that answer 😁
+	Jessica: You think as queen, I'd be some sort of heartless monster?
+	Jessica: If I can make a committed member out of him, I'll get what I want and a slim chance he might as well 😉
+	Jason: Makes sense
+Jessica: Any further questions?
+Jason: Nopez
+Player: That's all I got
+Nina: Great, can I go now?
+Jessica: You're all dismissed
+Jessica: We'll start initiations on Monday
+Jessica: So be ready for anything boys and sluts
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

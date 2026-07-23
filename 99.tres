@@ -1,0 +1,1258 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_soivx"]
+
+[resource]
+script = ExtResource("1_soivx")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("PlayerM", "Mom")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "PlayerM",
+&"id": "1",
+&"next_id": "2",
+&"text": "Mom! You're still online?",
+&"type": "dialogue"
+},
+"10": {
+&"character": "PlayerM",
+&"id": "10",
+&"next_id": "11",
+&"text": "That weird guy didn't comment this time 🤔",
+&"type": "dialogue"
+},
+"100": {
+&"character": "Mom",
+&"id": "100",
+&"next_id": "101",
+&"text": "One day Theo was walking back from practice carrying his violin case",
+&"type": "dialogue"
+},
+"101": {
+&"character": "Mom",
+&"id": "101",
+&"next_id": "102",
+&"text": "And your dad was sitting with his little college gang when we passed by",
+&"type": "dialogue"
+},
+"102": {
+&"character": "Mom",
+&"id": "102",
+&"next_id": "103",
+&"text": "He had like four or five guys behind him and two girls hanging off his arms 🙄",
+&"type": "dialogue"
+},
+"103": {
+&"character": "Mom",
+&"id": "103",
+&"next_id": "104",
+&"text": "Like something out of a movie",
+&"type": "dialogue"
+},
+"104": {
+&"character": "PlayerM",
+&"id": "104",
+&"next_id": "105",
+&"text": "Oh seriously? Dad was like that? 🤯",
+&"type": "dialogue"
+},
+"105": {
+&"character": "Mom",
+&"id": "105",
+&"next_id": "106",
+&"text": "100%",
+&"type": "dialogue"
+},
+"106": {
+&"character": "Mom",
+&"id": "106",
+&"next_id": "107",
+&"text": "They started laughing in Theo's direction",
+&"type": "dialogue"
+},
+"107": {
+&"character": "Mom",
+&"id": "107",
+&"next_id": "108",
+&"text": "And poor Theo thought they were laughing at him",
+&"type": "dialogue"
+},
+"108": {
+&"character": "Mom",
+&"id": "108",
+&"next_id": "109",
+&"text": "He decided for some reason to stand up against them 🥺",
+&"type": "dialogue"
+},
+"109": {
+&"character": "PlayerM",
+&"id": "109",
+&"next_id": "110",
+&"text": "Omg",
+&"type": "dialogue"
+},
+"11": {
+&"character": "PlayerM",
+&"id": "11",
+&"next_id": "12",
+&"text": "Huh",
+&"type": "dialogue"
+},
+"110": {
+&"character": "Mom",
+&"id": "110",
+&"next_id": "111",
+&"text": "It was against his nature but honestly, I realized that it was the hottest thing I had ever seen Theo do",
+&"type": "dialogue"
+},
+"111": {
+&"character": "PlayerM",
+&"id": "111",
+&"next_id": "112",
+&"text": "Wow really?",
+&"type": "dialogue"
+},
+"112": {
+&"character": "Mom",
+&"id": "112",
+&"next_id": "113",
+&"text": "Mhmm! My heart was beating so fast so I let him do his thing",
+&"type": "dialogue"
+},
+"113": {
+&"character": "PlayerM",
+&"id": "113",
+&"next_id": "114",
+&"text": "Well.. how did it go?",
+&"type": "dialogue"
+},
+"114": {
+&"character": "Mom",
+&"id": "114",
+&"next_id": "115",
+&"text": "Wellll, he tried his best 😅 They ended up pushing him down",
+&"type": "dialogue"
+},
+"115": {
+&"character": "Mom",
+&"id": "115",
+&"next_id": "116",
+&"text": "It was a very short lived experience",
+&"type": "dialogue"
+},
+"116": {
+&"character": "PlayerM",
+&"id": "116",
+&"next_id": "117",
+&"text": "Poor Theo",
+&"type": "dialogue"
+},
+"117": {
+&"character": "Mom",
+&"id": "117",
+&"next_id": "118",
+&"text": "Mhmm, I had to step in and yell at them",
+&"type": "dialogue"
+},
+"118": {
+&"character": "Mom",
+&"id": "118",
+&"next_id": "119",
+&"text": "Your dad took two steps back the moment he saw me 😆",
+&"type": "dialogue"
+},
+"119": {
+&"character": "Mom",
+&"id": "119",
+&"next_id": "120",
+&"text": "I'm not sure I should have done that",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Mom",
+&"id": "12",
+&"next_id": "13",
+&"text": "Oh really? That's good then right? 😊",
+&"type": "dialogue"
+},
+"120": {
+&"character": "PlayerM",
+&"id": "120",
+&"next_id": "121",
+&"text": "Why not? Weren't you protecting Theo?",
+&"type": "dialogue"
+},
+"121": {
+&"character": "Mom",
+&"id": "121",
+&"next_id": "122",
+&"text": "Yeah but I felt like it got worse after I stepped in",
+&"type": "dialogue"
+},
+"122": {
+&"character": "Mom",
+&"id": "122",
+&"next_id": "123",
+&"text": "I got right in your dad's face and told him he was nothing but a bully",
+&"type": "dialogue"
+},
+"123": {
+&"character": "Mom",
+&"id": "123",
+&"next_id": "124",
+&"text": "That picking on someone half his size didn't make him tough, it made him pathetic",
+&"type": "dialogue"
+},
+"124": {
+&"character": "PlayerM",
+&"id": "124",
+&"next_id": "125",
+&"text": "MOM srsly? 😳",
+&"type": "dialogue"
+},
+"125": {
+&"character": "PlayerM",
+&"id": "125",
+&"next_id": "126",
+&"text": "You said that to his face??",
+&"type": "dialogue"
+},
+"126": {
+&"character": "Mom",
+&"id": "126",
+&"next_id": "127",
+&"text": "I was super mad 😡🤭",
+&"type": "dialogue"
+},
+"127": {
+&"character": "Mom",
+&"id": "127",
+&"next_id": "128",
+&"text": "I think I even took a picture of it",
+&"type": "dialogue"
+},
+"128": {
+&"character": "Mom",
+&"id": "128",
+&"next_id": "129",
+&"text": "img: mom/9",
+&"type": "dialogue"
+},
+"129": {
+&"character": "PlayerM",
+&"id": "129",
+&"next_id": "130",
+&"text": "Omg I've never seen you that mad 😱 SCARY",
+&"type": "dialogue"
+},
+"13": {
+&"character": "PlayerM",
+&"id": "13",
+&"next_id": "14",
+&"text": "Yeah but... I'm sorry you had to see it. It was just a club thing",
+&"type": "dialogue"
+},
+"130": {
+&"character": "Mom",
+&"id": "130",
+&"next_id": "131",
+&"text": "His friends went all quiet",
+&"type": "dialogue"
+},
+"131": {
+&"character": "Mom",
+&"id": "131",
+&"next_id": "132",
+&"text": "Even those girls on his arms didn't know what to do",
+&"type": "dialogue"
+},
+"132": {
+&"character": "Mom",
+&"id": "132",
+&"next_id": "133",
+&"text": "And your dad just looked at me",
+&"type": "dialogue"
+},
+"133": {
+&"character": "Mom",
+&"id": "133",
+&"next_id": "134",
+&"text": "Even I was a bit confused cause he went totally quiet 😅",
+&"type": "dialogue"
+},
+"134": {
+&"character": "PlayerM",
+&"id": "134",
+&"next_id": "135",
+&"text": "Then what happened??",
+&"type": "dialogue"
+},
+"135": {
+&"character": "Mom",
+&"id": "135",
+&"next_id": "136",
+&"text": "I grabbed Theo's hand and pulled him up and walked away",
+&"type": "dialogue"
+},
+"136": {
+&"character": "Mom",
+&"id": "136",
+&"next_id": "137",
+&"text": "I was fuming the whole walk back",
+&"type": "dialogue"
+},
+"137": {
+&"character": "PlayerM",
+&"id": "137",
+&"next_id": "138",
+&"text": "Good! Dad totally deserved that!",
+&"type": "dialogue"
+},
+"138": {
+&"character": "PlayerM",
+&"id": "138",
+&"next_id": "139",
+&"text": "...",
+&"type": "dialogue"
+},
+"139": {
+&"character": "PlayerM",
+&"id": "139",
+&"next_id": "140",
+&"text": "🤔",
+&"type": "dialogue"
+},
+"14": {
+&"character": "PlayerM",
+&"id": "14",
+&"next_id": "15",
+&"text": "So embarrassing 🙈",
+&"type": "dialogue"
+},
+"140": {
+&"character": "PlayerM",
+&"id": "140",
+&"next_id": "141",
+&"text": "WHY IS HE MY DAD THEN??",
+&"type": "dialogue"
+},
+"141": {
+&"character": "Mom",
+&"id": "141",
+&"next_id": "142",
+&"text": "😂",
+&"type": "dialogue"
+},
+"142": {
+&"character": "Mom",
+&"id": "142",
+&"next_id": "143",
+&"text": "It's seriously getting super late honey, you should go to bed",
+&"type": "dialogue"
+},
+"143": {
+&"character": "Mom",
+&"id": "143",
+&"next_id": "144",
+&"text": "We can talk about it more later!",
+&"type": "dialogue"
+},
+"144": {
+&"character": "PlayerM",
+&"id": "144",
+&"next_id": "145",
+&"text": "Mooom I don't want any cliff hangers 😩",
+&"type": "dialogue"
+},
+"145": {
+&"character": "Mom",
+&"id": "145",
+&"next_id": "146",
+&"text": "I promise I'll tell you everything",
+&"type": "dialogue"
+},
+"146": {
+&"character": "Mom",
+&"id": "146",
+&"next_id": "147",
+&"text": "But you have class tomorrow so get some sleep 😠",
+&"type": "dialogue"
+},
+"147": {
+&"character": "PlayerM",
+&"id": "147",
+&"next_id": "148",
+&"text": "Eep! Yes ma'am 🫡",
+&"type": "dialogue"
+},
+"148": {
+&"character": "Mom",
+&"id": "148",
+&"next_id": "149",
+&"text": "Good girl",
+&"type": "dialogue"
+},
+"149": {
+&"character": "PlayerM",
+&"id": "149",
+&"next_id": "150",
+&"text": "But you PROMISE you'll tell me the rest?",
+&"type": "dialogue"
+},
+"15": {
+&"character": "PlayerM",
+&"id": "15",
+&"next_id": "16",
+&"text": "Wait actually, you didn't comment either mom",
+&"type": "dialogue"
+},
+"150": {
+&"character": "Mom",
+&"id": "150",
+&"next_id": "151",
+&"text": "Of course I promise sweetheart 🩷",
+&"type": "dialogue"
+},
+"151": {
+&"character": "Mom",
+&"id": "151",
+&"next_id": "152",
+&"text": "Love you 😘",
+&"type": "dialogue"
+},
+"152": {
+&"character": "PlayerM",
+&"id": "152",
+&"next_id": "153",
+&"text": "Love you too mom 😤🩷 Good night",
+&"type": "dialogue"
+},
+"153": {
+&"id": "153",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"154": {
+&"id": "154",
+&"next_id": "155",
+&"type": ""
+},
+"155": {
+&"id": "155",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"16": {
+&"character": "PlayerM",
+&"id": "16",
+&"next_id": "17",
+&"text": "Did you see it? 🤔",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Mom",
+&"id": "17",
+&"next_id": "18",
+&"text": "Oh! I'm sorry sweetie I didn't, I was so busy today!",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Mom",
+&"id": "18",
+&"next_id": "19",
+&"text": "I didn't get a chance to look at it yet 😞",
+&"type": "dialogue"
+},
+"19": {
+&"character": "PlayerM",
+&"id": "19",
+&"next_id": "20",
+&"text": "Hmm",
+&"type": "dialogue"
+},
+"2": {
+&"character": "PlayerM",
+&"id": "2",
+&"next_id": "3",
+&"text": "You're up way later than usual",
+&"type": "dialogue"
+},
+"20": {
+&"character": "PlayerM",
+&"id": "20",
+&"next_id": "21",
+&"text": "You said last time he wouldn't be commenting anymore",
+&"type": "dialogue"
+},
+"21": {
+&"character": "PlayerM",
+&"id": "21",
+&"next_id": "22",
+&"text": "How did you know that? 🤔",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Mom",
+&"id": "22",
+&"next_id": "23",
+&"text": "I just had a feeling! You know how these internet people are",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Mom",
+&"id": "23",
+&"next_id": "24",
+&"text": "They come and go 😅",
+&"type": "dialogue"
+},
+"24": {
+&"character": "PlayerM",
+&"id": "24",
+&"next_id": "25",
+&"text": "I guess...",
+&"type": "dialogue"
+},
+"25": {
+&"character": "PlayerM",
+&"id": "25",
+&"next_id": "26",
+&"text": "Anyway!",
+&"type": "dialogue"
+},
+"26": {
+&"character": "PlayerM",
+&"id": "26",
+&"next_id": "27",
+&"text": "What were you doing?",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Mom",
+&"id": "27",
+&"next_id": "28",
+&"text": "Oh just you know.. chatting with a friend",
+&"type": "dialogue"
+},
+"28": {
+&"character": "PlayerM",
+&"id": "28",
+&"next_id": "29",
+&"text": "Chatting with a friend? This late? 😆",
+&"type": "dialogue"
+},
+"29": {
+&"character": "PlayerM",
+&"id": "29",
+&"next_id": "30",
+&"text": "Ive never seen you chat on your phone for over a minute unless it's with me",
+&"type": "dialogue"
+},
+"3": {
+&"character": "PlayerM",
+&"id": "3",
+&"next_id": "4",
+&"text": "Mom? You there?",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Mom",
+&"id": "30",
+&"next_id": "31",
+&"text": "You know how it is, household is a bit lonely with you gone so moms gotta socialize a little 🥰",
+&"type": "dialogue"
+},
+"31": {
+&"character": "PlayerM",
+&"id": "31",
+&"next_id": "32",
+&"text": "Well as long as you're happy! 😊",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Mom",
+&"id": "32",
+&"next_id": "33",
+&"text": "Mom is happier and healthier than ever 😌 Look",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Mom",
+&"id": "33",
+&"next_id": "34",
+&"text": "img: mom/7",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Mom",
+&"id": "34",
+&"next_id": "35",
+&"text": "Your mom's doing fine",
+&"type": "dialogue"
+},
+"35": {
+&"character": "PlayerM",
+&"id": "35",
+&"next_id": "36",
+&"text": "Is it hot or something? You're sweating a little",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Mom",
+&"id": "36",
+&"next_id": "37",
+&"text": "Ah right, I'll turn on the AC in a bit",
+&"type": "dialogue"
+},
+"37": {
+&"character": "PlayerM",
+&"id": "37",
+&"next_id": "38",
+&"text": "Yeah make sure you take care of yourself mom, I don't want you getting sick omg",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Mom",
+&"id": "38",
+&"next_id": "39",
+&"text": "Don't worry baby 😘",
+&"type": "dialogue"
+},
+"39": {
+&"character": "PlayerM",
+&"id": "39",
+&"next_id": "40",
+&"text": "You owe me the rest of that story by the way 😁",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Mom",
+&"id": "4",
+&"next_id": "5",
+&"text": "Ah hi baby, just give me a second",
+&"type": "dialogue"
+},
+"40": {
+&"character": "PlayerM",
+&"id": "40",
+&"next_id": "41",
+&"text": "You can't just leave me hanging",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Mom",
+&"id": "41",
+&"next_id": "42",
+&"text": "Haha okay okay",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Mom",
+&"id": "42",
+&"next_id": "43",
+&"text": "Where did I leave off?",
+&"type": "dialogue"
+},
+"43": {
+&"character": "PlayerM",
+&"id": "43",
+&"next_id": "44",
+&"text": "You were telling me about your boyfriend",
+&"type": "dialogue"
+},
+"44": {
+&"character": "PlayerM",
+&"id": "44",
+&"next_id": "45",
+&"text": "The one before dad",
+&"type": "dialogue"
+},
+"45": {
+&"character": "PlayerM",
+&"id": "45",
+&"next_id": "46",
+&"text": "You never told me his name by the way! 😤",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Mom",
+&"id": "46",
+&"next_id": "47",
+&"text": "Oh! His name was Theodore",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Mom",
+&"id": "47",
+&"next_id": "48",
+&"text": "But I always called him Theo ☺️",
+&"type": "dialogue"
+},
+"48": {
+&"character": "PlayerM",
+&"id": "48",
+&"next_id": "49",
+&"text": "Theo 🥺",
+&"type": "dialogue"
+},
+"49": {
+&"character": "PlayerM",
+&"id": "49",
+&"next_id": "50",
+&"text": "That's such a cute name",
+&"type": "dialogue"
+},
+"5": {
+&"character": "PlayerM",
+&"id": "5",
+&"next_id": "6",
+&"text": "Did you see my latest post?",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Mom",
+&"id": "50",
+&"next_id": "51",
+&"text": "He was a cute boy hehe",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Mom",
+&"id": "51",
+&"next_id": "52",
+&"text": "He went to the music school on campus actually",
+&"type": "dialogue"
+},
+"52": {
+&"character": "PlayerM",
+&"id": "52",
+&"next_id": "53",
+&"text": "He was a musician?? 😍",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Mom",
+&"id": "53",
+&"next_id": "54",
+&"text": "Mhmm! He played the violin",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Mom",
+&"id": "54",
+&"next_id": "55",
+&"text": "He was really talented too",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Mom",
+&"id": "55",
+&"next_id": "56",
+&"text": "I used to sit and listen to him practice for hours",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Mom",
+&"id": "56",
+&"next_id": "57",
+&"text": "I'd just curl up nearby with a book and let him play",
+&"type": "dialogue"
+},
+"57": {
+&"character": "PlayerM",
+&"id": "57",
+&"next_id": "58",
+&"text": "That sounds like a dream 🥹",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Mom",
+&"id": "58",
+&"next_id": "59",
+&"text": "It was",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Mom",
+&"id": "59",
+&"next_id": "60",
+&"text": "He actually wrote me a piece once",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Mom",
+&"id": "6",
+&"next_id": "7",
+&"text": "One second baby",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Mom",
+&"id": "60",
+&"next_id": "61",
+&"text": "Just for me",
+&"type": "dialogue"
+},
+"61": {
+&"character": "PlayerM",
+&"id": "61",
+&"next_id": "62",
+&"text": "HE WROTE YOU A SONG??",
+&"type": "dialogue"
+},
+"62": {
+&"character": "PlayerM",
+&"id": "62",
+&"next_id": "63",
+&"text": "That's the most romantic thing I've ever heard 😭",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Mom",
+&"id": "63",
+&"next_id": "64",
+&"text": "It really was",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Mom",
+&"id": "64",
+&"next_id": "65",
+&"text": "When he played it for the first time I cried",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Mom",
+&"id": "65",
+&"next_id": "66",
+&"text": "Mom's tough but there are 3 times in my life I seriously cried and that was one of them",
+&"type": "dialogue"
+},
+"66": {
+&"character": "PlayerM",
+&"id": "66",
+&"next_id": "67",
+&"text": "Oh really?? I cry like every other night LOL",
+&"type": "dialogue"
+},
+"67": {
+&"character": "PlayerM",
+&"id": "67",
+&"next_id": "68",
+&"text": "What were the other two?",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Mom",
+&"id": "68",
+&"next_id": "69",
+&"text": "Well, one is the day you were born 🥰",
+&"type": "dialogue"
+},
+"69": {
+&"character": "PlayerM",
+&"id": "69",
+&"next_id": "70",
+&"text": "Awwh really?",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Mom",
+&"id": "7",
+&"next_id": "8",
+&"text": "Which one honey? 😊",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Mom",
+&"id": "70",
+&"next_id": "71",
+&"text": "Mhmm, I was so happy that I had you I was just so overwhelmed!",
+&"type": "dialogue"
+},
+"71": {
+&"character": "Mom",
+&"id": "71",
+&"next_id": "72",
+&"text": "You were crying with me too 😊",
+&"type": "dialogue"
+},
+"72": {
+&"character": "PlayerM",
+&"id": "72",
+&"next_id": "73",
+&"text": "I was a baby 😆",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Mom",
+&"id": "73",
+&"next_id": "74",
+&"text": "You still are my baby 😘",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Mom",
+&"id": "74",
+&"next_id": "75",
+&"text": "Now where was I?",
+&"type": "dialogue"
+},
+"75": {
+&"character": "PlayerM",
+&"id": "75",
+&"next_id": "76",
+&"text": "He wrote you a song",
+&"type": "dialogue"
+},
+"76": {
+&"character": "Mom",
+&"id": "76",
+&"next_id": "77",
+&"text": "It was sooo beautiful and delicate, just like he was 😊",
+&"type": "dialogue"
+},
+"77": {
+&"character": "Mom",
+&"id": "77",
+&"next_id": "78",
+&"text": "He also had a big performance in the national theater hall",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Mom",
+&"id": "78",
+&"next_id": "79",
+&"text": "img: mom/8",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Mom",
+&"id": "79",
+&"next_id": "80",
+&"text": "I had front seat tickets as a special guest",
+&"type": "dialogue"
+},
+"8": {
+&"character": "PlayerM",
+&"id": "8",
+&"next_id": "9",
+&"text": "The one from today!",
+&"type": "dialogue"
+},
+"80": {
+&"character": "PlayerM",
+&"id": "80",
+&"next_id": "81",
+&"text": "Omg that's so fancy! And you look really pretty!",
+&"type": "dialogue"
+},
+"81": {
+&"character": "Mom",
+&"id": "81",
+&"next_id": "82",
+&"text": "Thanks honey",
+&"type": "dialogue"
+},
+"82": {
+&"character": "Mom",
+&"id": "82",
+&"next_id": "83",
+&"text": "I was so proud of him",
+&"type": "dialogue"
+},
+"83": {
+&"character": "PlayerM",
+&"id": "83",
+&"next_id": "84",
+&"text": "So you're describing the most dreamy guy ever 😂",
+&"type": "dialogue"
+},
+"84": {
+&"character": "PlayerM",
+&"id": "84",
+&"next_id": "85",
+&"text": "But I don't understand",
+&"type": "dialogue"
+},
+"85": {
+&"character": "PlayerM",
+&"id": "85",
+&"next_id": "86",
+&"text": "Why did you break up with him??",
+&"type": "dialogue"
+},
+"86": {
+&"character": "PlayerM",
+&"id": "86",
+&"next_id": "87",
+&"text": "How does dad fit into all of this? 🤔",
+&"type": "dialogue"
+},
+"87": {
+&"character": "PlayerM",
+&"id": "87",
+&"next_id": "88",
+&"text": "You said they didn't get along",
+&"type": "dialogue"
+},
+"88": {
+&"character": "Mom",
+&"id": "88",
+&"next_id": "89",
+&"text": "Slow down honey 😚",
+&"type": "dialogue"
+},
+"89": {
+&"character": "PlayerM",
+&"id": "89",
+&"next_id": "90",
+&"text": "Eep sowwy",
+&"type": "dialogue"
+},
+"9": {
+&"character": "PlayerM",
+&"id": "9",
+&"next_id": "10",
+&"text": "Actually wait",
+&"type": "dialogue"
+},
+"90": {
+&"character": "Mom",
+&"id": "90",
+&"next_id": "91",
+&"text": "So your dad was kind of the opposite of Theo",
+&"type": "dialogue"
+},
+"91": {
+&"character": "Mom",
+&"id": "91",
+&"next_id": "92",
+&"text": "He was loud and confident and still everyone on campus knew who he was and respected him",
+&"type": "dialogue"
+},
+"92": {
+&"character": "Mom",
+&"id": "92",
+&"next_id": "93",
+&"text": "All the girls thought he was hot and all that",
+&"type": "dialogue"
+},
+"93": {
+&"character": "PlayerM",
+&"id": "93",
+&"next_id": "94",
+&"text": "Did you? 😶",
+&"type": "dialogue"
+},
+"94": {
+&"character": "Mom",
+&"id": "94",
+&"next_id": "95",
+&"text": "It was a bit complicated",
+&"type": "dialogue"
+},
+"95": {
+&"character": "Mom",
+&"id": "95",
+&"next_id": "96",
+&"text": "At the time I thought how could anyone like this total muscle head sleazebag",
+&"type": "dialogue"
+},
+"96": {
+&"character": "Mom",
+&"id": "96",
+&"next_id": "97",
+&"text": "So no, I didn't like him at all actually 😄",
+&"type": "dialogue"
+},
+"97": {
+&"character": "Mom",
+&"id": "97",
+&"next_id": "98",
+&"text": "But wrestling team was a pretty big deal at our school",
+&"type": "dialogue"
+},
+"98": {
+&"character": "PlayerM",
+&"id": "98",
+&"next_id": "99",
+&"text": "Did he pick on Theo?",
+&"type": "dialogue"
+},
+"99": {
+&"character": "Mom",
+&"id": "99",
+&"next_id": "100",
+&"text": "Well... yeah 😅",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+PlayerM: Mom! You're still online?
+PlayerM: You're up way later than usual
+PlayerM: Mom? You there?
+Mom: Ah hi baby, just give me a second
+PlayerM: Did you see my latest post?
+Mom: One second baby
+Mom: Which one honey? 😊
+PlayerM: The one from today!
+PlayerM: Actually wait
+PlayerM: That weird guy didn't comment this time 🤔
+PlayerM: Huh
+Mom: Oh really? That's good then right? 😊
+PlayerM: Yeah but... I'm sorry you had to see it. It was just a club thing
+PlayerM: So embarrassing 🙈
+PlayerM: Wait actually, you didn't comment either mom
+PlayerM: Did you see it? 🤔
+Mom: Oh! I'm sorry sweetie I didn't, I was so busy today!
+Mom: I didn't get a chance to look at it yet 😞
+PlayerM: Hmm
+PlayerM: You said last time he wouldn't be commenting anymore
+PlayerM: How did you know that? 🤔
+Mom: I just had a feeling! You know how these internet people are
+Mom: They come and go 😅
+PlayerM: I guess...
+PlayerM: Anyway!
+PlayerM: What were you doing?
+Mom: Oh just you know.. chatting with a friend
+PlayerM: Chatting with a friend? This late? 😆
+PlayerM: Ive never seen you chat on your phone for over a minute unless it's with me
+Mom: You know how it is, household is a bit lonely with you gone so moms gotta socialize a little 🥰
+PlayerM: Well as long as you're happy! 😊
+Mom: Mom is happier and healthier than ever 😌 Look
+Mom: img: mom/7
+Mom: Your mom's doing fine
+PlayerM: Is it hot or something? You're sweating a little
+Mom: Ah right, I'll turn on the AC in a bit
+PlayerM: Yeah make sure you take care of yourself mom, I don't want you getting sick omg
+Mom: Don't worry baby 😘
+PlayerM: You owe me the rest of that story by the way 😁
+PlayerM: You can't just leave me hanging
+Mom: Haha okay okay
+Mom: Where did I leave off? 
+PlayerM: You were telling me about your boyfriend
+PlayerM: The one before dad
+PlayerM: You never told me his name by the way! 😤
+Mom: Oh! His name was Theodore
+Mom: But I always called him Theo ☺️
+PlayerM: Theo 🥺
+PlayerM: That's such a cute name
+Mom: He was a cute boy hehe
+Mom: He went to the music school on campus actually
+PlayerM: He was a musician?? 😍
+Mom: Mhmm! He played the violin
+Mom: He was really talented too
+Mom: I used to sit and listen to him practice for hours
+Mom: I'd just curl up nearby with a book and let him play
+PlayerM: That sounds like a dream 🥹
+Mom: It was
+Mom: He actually wrote me a piece once
+Mom: Just for me
+PlayerM: HE WROTE YOU A SONG??
+PlayerM: That's the most romantic thing I've ever heard 😭
+Mom: It really was
+Mom: When he played it for the first time I cried
+Mom: Mom's tough but there are 3 times in my life I seriously cried and that was one of them
+PlayerM: Oh really?? I cry like every other night LOL
+PlayerM: What were the other two?
+Mom: Well, one is the day you were born 🥰
+PlayerM: Awwh really?
+Mom: Mhmm, I was so happy that I had you I was just so overwhelmed!
+Mom: You were crying with me too 😊
+PlayerM: I was a baby 😆
+Mom: You still are my baby 😘
+Mom: Now where was I?
+PlayerM: He wrote you a song
+Mom: It was sooo beautiful and delicate, just like he was 😊
+Mom: He also had a big performance in the national theater hall
+Mom: img: mom/8
+Mom: I had front seat tickets as a special guest
+PlayerM: Omg that's so fancy! And you look really pretty!
+Mom: Thanks honey
+Mom: I was so proud of him
+PlayerM: So you're describing the most dreamy guy ever 😂
+PlayerM: But I don't understand
+PlayerM: Why did you break up with him??
+PlayerM: How does dad fit into all of this? 🤔
+PlayerM: You said they didn't get along
+Mom: Slow down honey 😚
+PlayerM: Eep sowwy
+Mom: So your dad was kind of the opposite of Theo
+Mom: He was loud and confident and still everyone on campus knew who he was and respected him
+Mom: All the girls thought he was hot and all that
+PlayerM: Did you? 😶
+Mom: It was a bit complicated
+Mom: At the time I thought how could anyone like this total muscle head sleazebag
+Mom: So no, I didn't like him at all actually 😄
+Mom: But wrestling team was a pretty big deal at our school
+PlayerM: Did he pick on Theo?
+Mom: Well... yeah 😅
+Mom: One day Theo was walking back from practice carrying his violin case
+Mom: And your dad was sitting with his little college gang when we passed by
+Mom: He had like four or five guys behind him and two girls hanging off his arms 🙄
+Mom: Like something out of a movie
+PlayerM: Oh seriously? Dad was like that? 🤯
+Mom: 100%
+Mom: They started laughing in Theo's direction
+Mom: And poor Theo thought they were laughing at him
+Mom: He decided for some reason to stand up against them 🥺
+PlayerM: Omg
+Mom: It was against his nature but honestly, I realized that it was the hottest thing I had ever seen Theo do
+PlayerM: Wow really?
+Mom: Mhmm! My heart was beating so fast so I let him do his thing
+PlayerM: Well.. how did it go?
+Mom: Wellll, he tried his best 😅 They ended up pushing him down
+Mom: It was a very short lived experience
+PlayerM: Poor Theo
+Mom: Mhmm, I had to step in and yell at them
+Mom: Your dad took two steps back the moment he saw me 😆
+Mom: I'm not sure I should have done that
+PlayerM: Why not? Weren't you protecting Theo?
+Mom: Yeah but I felt like it got worse after I stepped in
+Mom: I got right in your dad's face and told him he was nothing but a bully
+Mom: That picking on someone half his size didn't make him tough, it made him pathetic
+PlayerM: MOM srsly? 😳
+PlayerM: You said that to his face??
+Mom: I was super mad 😡🤭
+Mom: I think I even took a picture of it
+Mom: img: mom/9
+PlayerM: Omg I've never seen you that mad 😱 SCARY
+Mom: His friends went all quiet
+Mom: Even those girls on his arms didn't know what to do
+Mom: And your dad just looked at me
+Mom: Even I was a bit confused cause he went totally quiet 😅
+PlayerM: Then what happened??
+Mom: I grabbed Theo's hand and pulled him up and walked away
+Mom: I was fuming the whole walk back
+PlayerM: Good! Dad totally deserved that!
+PlayerM: ...
+PlayerM: 🤔
+PlayerM: WHY IS HE MY DAD THEN??
+Mom: 😂
+Mom: It's seriously getting super late honey, you should go to bed
+Mom: We can talk about it more later!
+PlayerM: Mooom I don't want any cliff hangers 😩
+Mom: I promise I'll tell you everything
+Mom: But you have class tomorrow so get some sleep 😠
+PlayerM: Eep! Yes ma'am 🫡
+Mom: Good girl
+PlayerM: But you PROMISE you'll tell me the rest?
+Mom: Of course I promise sweetheart 🩷
+Mom: Love you 😘
+PlayerM: Love you too mom 😤🩷 Good night
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

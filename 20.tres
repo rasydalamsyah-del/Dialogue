@@ -1,0 +1,462 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_qsllc"]
+
+[resource]
+script = ExtResource("1_qsllc")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Caleb", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Player",
+&"id": "10",
+&"next_id": "11",
+&"text": "How did Mabel's application task go?",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Caleb",
+&"id": "11",
+&"next_id": "12",
+&"text": "Oh right, it went well",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Caleb",
+&"id": "12",
+&"next_id": "13",
+&"text": "I can't disclose the picture or details about the picture but",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Caleb",
+&"id": "13",
+&"next_id": "14",
+&"text": "I took this myself, I wanted to share with you",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Caleb",
+&"id": "14",
+&"next_id": "15",
+&"text": "img: mabel/79",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Caleb",
+&"id": "15",
+&"next_id": "16",
+&"text": "It came out pretty well!",
+&"type": "dialogue"
+},
+"16": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"i": 9,
+&"type": &"variable",
+&"value": "mabel_desire"
+}, {
+&"i": 22,
+&"type": &"comparison",
+&"value": ">"
+}, {
+&"i": 24,
+&"type": &"number",
+&"value": 0
+}])
+},
+&"id": "16",
+&"next_id": "17",
+&"next_id_after": "46",
+&"next_sibling_id": "37",
+&"type": "condition"
+},
+"17": {
+&"character": "Caleb",
+&"id": "17",
+&"next_id": "18",
+&"text": "Mabel... has certain charms to her I never expected 😅",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Caleb",
+&"id": "18",
+&"next_id": "19",
+&"text": "I mean I knew she was pretty but...",
+&"type": "dialogue"
+},
+"19": {
+&"id": "19",
+&"next_id": "20",
+&"responses": PackedStringArray("19", "31"),
+&"text": "You can tell me exactly what you think",
+&"type": "response"
+},
+"2": {
+&"character": "Caleb",
+&"id": "2",
+&"next_id": "3",
+&"text": "Morning!",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Player",
+&"id": "20",
+&"next_id": "21",
+&"text": "You can tell me exactly what you think",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Caleb",
+&"id": "21",
+&"next_id": "22",
+&"text": "Really?",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Caleb",
+&"id": "22",
+&"next_id": "23",
+&"text": "I don't want to cross any boundaries here",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Player",
+&"id": "23",
+&"next_id": "24",
+&"text": "Don't worry, we're all friends",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Caleb",
+&"id": "24",
+&"next_id": "25",
+&"text": "Really? If you say so then 😳",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Caleb",
+&"id": "25",
+&"next_id": "26",
+&"text": "I think she could do some modeling too for the club",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Player",
+&"id": "26",
+&"next_id": "27",
+&"text": "Really?",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Caleb",
+&"id": "27",
+&"next_id": "28",
+&"text": "Yeah, I actually kept getting distracted",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Caleb",
+&"id": "28",
+&"next_id": "29",
+&"text": "I almost forgot what we were doing 😆",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Caleb",
+&"id": "29",
+&"next_id": "30",
+&"text": "If you'd like, you could suggest it to her",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Caleb",
+&"id": "3",
+&"next_id": "4",
+&"text": "Hope the task went by smoothly!",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Player",
+&"id": "30",
+&"next_id": "46",
+&"text": "I'll see!",
+&"type": "dialogue"
+},
+"31": {
+&"id": "31",
+&"next_id": "32",
+&"text": "I get the gist of it",
+&"type": "response"
+},
+"32": {
+&"character": "Player",
+&"id": "32",
+&"next_id": "33",
+&"text": "I get the gist of it",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Player",
+&"id": "33",
+&"next_id": "34",
+&"text": "A lot of guys probably find her attractive",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Caleb",
+&"id": "34",
+&"next_id": "35",
+&"text": "That's probably true",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Caleb",
+&"id": "35",
+&"next_id": "36",
+&"text": "You're a lucky guy!",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Player",
+&"id": "36",
+&"next_id": "46",
+&"text": "Thanks! 😁",
+&"type": "dialogue"
+},
+"37": {
+&"condition": {},
+&"id": "37",
+&"next_id": "38",
+&"next_id_after": "46",
+&"type": "condition"
+},
+"38": {
+&"character": "Caleb",
+&"id": "38",
+&"next_id": "39",
+&"text": "She was very well composed!",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Caleb",
+&"id": "39",
+&"next_id": "40",
+&"text": "She focused on her task and had a natural talent for it",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Caleb",
+&"id": "4",
+&"next_id": "5",
+&"text": "Naomi has been telling me she had a good time!",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Player",
+&"id": "40",
+&"next_id": "41",
+&"text": "Really?",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Caleb",
+&"id": "41",
+&"next_id": "42",
+&"text": "Totally! And she wouldn't stop talking about you",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Caleb",
+&"id": "42",
+&"next_id": "43",
+&"text": "Where we went seemed to remind her a lot about somewhere you grew up together!",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Caleb",
+&"id": "43",
+&"next_id": "44",
+&"text": "It was so heartwarming tbh!",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Player",
+&"id": "44",
+&"next_id": "45",
+&"text": "That's my Mabel for ya haha",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Caleb",
+&"id": "45",
+&"next_id": "46",
+&"text": "She's endearing! 👍",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Caleb",
+&"id": "46",
+&"next_id": "47",
+&"text": "Alright I gotta run",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Caleb",
+&"id": "47",
+&"next_id": "48",
+&"text": "Have a few last minute things to take care of!",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Player",
+&"id": "48",
+&"next_id": "49",
+&"text": "Take care!",
+&"type": "dialogue"
+},
+"49": {
+&"id": "49",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"5": {
+&"character": "Player",
+&"id": "5",
+&"next_id": "6",
+&"text": "Glad to hear it",
+&"type": "dialogue"
+},
+"50": {
+&"id": "50",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"6": {
+&"character": "Caleb",
+&"id": "6",
+&"next_id": "7",
+&"text": "She's been bragging about some pictures she can't share yet 😅",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Caleb",
+&"id": "7",
+&"next_id": "8",
+&"text": "So I imagine it was a breeze and that you did well!",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Caleb",
+&"id": "8",
+&"next_id": "9",
+&"text": "I'm expecting you're getting your invite this Saturday then!",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Player",
+&"id": "9",
+&"next_id": "10",
+&"text": "Oh really? That's great to hear!",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+Caleb: Morning!
+Caleb: Hope the task went by smoothly!
+Caleb: Naomi has been telling me she had a good time!
+Player: Glad to hear it
+Caleb: She's been bragging about some pictures she can't share yet 😅
+Caleb: So I imagine it was a breeze and that you did well!
+Caleb: I'm expecting you're getting your invite this Saturday then!
+Player: Oh really? That's great to hear!
+Player: How did Mabel's application task go?
+Caleb: Oh right, it went well
+Caleb: I can't disclose the picture or details about the picture but
+Caleb: I took this myself, I wanted to share with you
+Caleb: img: mabel/79
+Caleb: It came out pretty well!
+if Story.mabel_desire > 0:
+	Caleb: Mabel... has certain charms to her I never expected 😅
+	Caleb: I mean I knew she was pretty but...
+	- You can tell me exactly what you think
+		Player: You can tell me exactly what you think
+		Caleb: Really?
+		Caleb: I don't want to cross any boundaries here
+		Player: Don't worry, we're all friends
+		Caleb: Really? If you say so then 😳
+		Caleb: I think she could do some modeling too for the club
+		Player: Really?
+		Caleb: Yeah, I actually kept getting distracted
+		Caleb: I almost forgot what we were doing 😆
+		Caleb: If you'd like, you could suggest it to her
+		Player: I'll see!
+	- I get the gist of it
+		Player: I get the gist of it
+		Player: A lot of guys probably find her attractive
+		Caleb: That's probably true
+		Caleb: You're a lucky guy!
+		Player: Thanks! 😁
+else:
+	Caleb: She was very well composed!
+	Caleb: She focused on her task and had a natural talent for it
+	Player: Really?
+	Caleb: Totally! And she wouldn't stop talking about you
+	Caleb: Where we went seemed to remind her a lot about somewhere you grew up together!
+	Caleb: It was so heartwarming tbh!
+	Player: That's my Mabel for ya haha
+	Caleb: She's endearing! 👍
+Caleb: Alright I gotta run
+Caleb: Have a few last minute things to take care of!
+Player: Take care!
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

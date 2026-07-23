@@ -1,0 +1,1007 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_ldfce"]
+
+[resource]
+script = ExtResource("1_ldfce")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Player", "Jason")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Jason",
+&"id": "10",
+&"next_id": "11",
+&"text": "Hell yeah dude",
+&"type": "dialogue"
+},
+"100": {
+&"character": "Player",
+&"id": "100",
+&"next_id": "101",
+&"text": "I'll come out for some air then",
+&"type": "dialogue"
+},
+"101": {
+&"character": "Jason",
+&"id": "101",
+&"next_id": "102",
+&"text": "Nice, I'll be expecting you then chief",
+&"type": "dialogue"
+},
+"102": {
+&"character": "Player",
+&"id": "102",
+&"next_id": "103",
+&"text": "See you soon",
+&"type": "dialogue"
+},
+"103": {
+&"id": "103",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "social_post",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 15,
+&"type": &"string",
+&"value": "erika_jason1"
+}, {
+&"i": 29,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "104",
+&"type": "mutation"
+},
+"104": {
+&"id": "104",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"105": {
+&"id": "105",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"11": {
+&"character": "Jason",
+&"id": "11",
+&"next_id": "12",
+&"text": "Plan was to party for longer but",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Jason",
+&"id": "12",
+&"next_id": "13",
+&"text": "Got this baddie in bed sooner than I thought",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Jason",
+&"id": "13",
+&"next_id": "14",
+&"text": "I clapped those cheeks good bro",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Player",
+&"id": "14",
+&"next_id": "15",
+&"text": "Freshman girls that easy?",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Jason",
+&"id": "15",
+&"next_id": "16",
+&"text": "She's not even a freshy bro",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Jason",
+&"id": "16",
+&"next_id": "17",
+&"text": "She's senior year",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Player",
+&"id": "17",
+&"next_id": "18",
+&"text": "Whoa a senior??",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Jason",
+&"id": "18",
+&"next_id": "19",
+&"text": "Hell yea dude",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Jason",
+&"id": "19",
+&"next_id": "20",
+&"text": "She's got all sorts of moves",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Player",
+&"id": "2",
+&"next_id": "3",
+&"text": "Hey",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Jason",
+&"id": "20",
+&"next_id": "21",
+&"text": "One of the sorority girls too",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Jason",
+&"id": "21",
+&"next_id": "22",
+&"text": "What do you think? Hot AF eh?",
+&"type": "dialogue"
+},
+"22": {
+&"id": "22",
+&"next_id": "23",
+&"responses": PackedStringArray("22", "41"),
+&"text": "Super hot",
+&"type": "response"
+},
+"23": {
+&"character": "Player",
+&"id": "23",
+&"next_id": "24",
+&"text": "Super hot",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Jason",
+&"id": "24",
+&"next_id": "25",
+&"text": "Hey man, no need to be jealous",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Jason",
+&"id": "25",
+&"next_id": "26",
+&"text": "Just playin haha",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Jason",
+&"id": "26",
+&"next_id": "27",
+&"text": "If you want, I can hook you up with her socials",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Jason",
+&"id": "27",
+&"next_id": "28",
+&"text": "Maybe you could slide in",
+&"type": "dialogue"
+},
+"28": {
+&"id": "28",
+&"next_id": "29",
+&"responses": PackedStringArray("28", "32"),
+&"text": "Girlfriend, remember? 😅",
+&"type": "response"
+},
+"29": {
+&"character": "Player",
+&"id": "29",
+&"next_id": "30",
+&"text": "Girlfriend, remember? 😅",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Player",
+&"id": "3",
+&"next_id": "4",
+&"text": "I got the night free",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Jason",
+&"id": "30",
+&"next_id": "31",
+&"text": "Oh right 😝",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Jason",
+&"id": "31",
+&"next_id": "47",
+&"text": "You're set or something already huh",
+&"type": "dialogue"
+},
+"32": {
+&"id": "32",
+&"next_id": "33",
+&"tags": PackedStringArray("yellowheart"),
+&"text": "Send them please! 🙏",
+&"type": "response"
+},
+"33": {
+&"id": "33",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "yellow_heart"
+}, {
+&"i": 23,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 26,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "34",
+&"type": "mutation"
+},
+"34": {
+&"character": "Player",
+&"id": "34",
+&"next_id": "35",
+&"text": "Send them please! 🙏",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Jason",
+&"id": "35",
+&"next_id": "36",
+&"text": "Say no more",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Jason",
+&"id": "36",
+&"next_id": "37",
+&"text": "I gotchu fam",
+&"type": "dialogue"
+},
+"37": {
+&"id": "37",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "PhoneUnlocks"
+}, {
+&"i": 16,
+&"type": &"dot"
+}, {
+&"i": 17,
+&"type": &"variable",
+&"value": "reveal"
+}, {
+&"i": 24,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 26,
+&"type": &"string",
+&"value": "erika"
+}]),
+&"is_blocking": true
+},
+&"next_id": "38",
+&"type": "mutation"
+},
+"38": {
+&"character": "Player",
+&"id": "38",
+&"next_id": "39",
+&"text": "Awesome",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Jason",
+&"id": "39",
+&"next_id": "40",
+&"text": "Slide in her DMs when you can",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Player",
+&"id": "4",
+&"next_id": "5",
+&"text": "What are you doing?",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Jason",
+&"id": "40",
+&"next_id": "47",
+&"text": "She's REAL friendly 😉",
+&"type": "dialogue"
+},
+"41": {
+&"id": "41",
+&"next_id": "42",
+&"text": "Not my type",
+&"type": "response"
+},
+"42": {
+&"character": "Player",
+&"id": "42",
+&"next_id": "43",
+&"text": "Not my type",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Jason",
+&"id": "43",
+&"next_id": "44",
+&"text": "Oh I forget you like the cuties",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Jason",
+&"id": "44",
+&"next_id": "45",
+&"text": "Maybe you'll come around and appreciate the big booty",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Jason",
+&"id": "45",
+&"next_id": "46",
+&"text": "See if the grass is greener and all that LOL",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Player",
+&"id": "46",
+&"next_id": "47",
+&"text": "Maybe, who knows haha",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Jason",
+&"id": "47",
+&"next_id": "48",
+&"text": "Anyway, these sorority gals are crazy",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Jason",
+&"id": "48",
+&"next_id": "49",
+&"text": "They're on a mission to show the freshies what they're all about",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Player",
+&"id": "49",
+&"next_id": "50",
+&"text": "That IS crazy!",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Jason",
+&"id": "5",
+&"next_id": "6",
+&"text": "You sure ya wanna know?",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Jason",
+&"id": "50",
+&"next_id": "51",
+&"text": "Hell yeah, they're all smoking hot too",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Jason",
+&"id": "51",
+&"next_id": "52",
+&"text": "Watch out for their leader though",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Jason",
+&"id": "52",
+&"next_id": "53",
+&"text": "She's apparently the devil",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Player",
+&"id": "53",
+&"next_id": "54",
+&"text": "What's her name?",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Jason",
+&"id": "54",
+&"next_id": "55",
+&"text": "No idea lol",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Jason",
+&"id": "55",
+&"next_id": "56",
+&"text": "This college seriously does things to people it look like",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Jason",
+&"id": "56",
+&"next_id": "57",
+&"text": "That girl had so much experience bro you wouldn't believe it",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Player",
+&"id": "57",
+&"next_id": "58",
+&"text": "Whoa",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Jason",
+&"id": "58",
+&"next_id": "59",
+&"text": "The freshy girls were all \"getting to know each other\"",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Jason",
+&"id": "59",
+&"next_id": "60",
+&"text": "This girl was like hell nah and sprinted at me and before I could blink, she was riding me",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Player",
+&"id": "6",
+&"next_id": "7",
+&"text": "Uhh... sure?",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Player",
+&"id": "60",
+&"next_id": "61",
+&"text": "🤣",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Player",
+&"id": "61",
+&"next_id": "62",
+&"text": "That's wild",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Player",
+&"id": "62",
+&"next_id": "63",
+&"text": "So you busy for the rest of the night?",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Jason",
+&"id": "63",
+&"next_id": "64",
+&"text": "Nah I'm done with her but I'm going back to the clubs",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Player",
+&"id": "64",
+&"next_id": "65",
+&"text": "Wow straight back?",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Jason",
+&"id": "65",
+&"next_id": "66",
+&"text": "Gonna find another and hit round 2 homie",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Player",
+&"id": "66",
+&"next_id": "67",
+&"text": "😂 Oh man, you still have energy?",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Jason",
+&"id": "67",
+&"next_id": "68",
+&"text": "100%",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Jason",
+&"id": "68",
+&"next_id": "69",
+&"text": "You should join tho if you're thinkin",
+&"type": "dialogue"
+},
+"69": {
+&"character": "Jason",
+&"id": "69",
+&"next_id": "70",
+&"text": "We can get you something too",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Jason",
+&"id": "7",
+&"next_id": "8",
+&"text": "img: erika/2",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Player",
+&"id": "70",
+&"next_id": "71",
+&"text": "I got a girl though remember? 😅",
+&"type": "dialogue"
+},
+"71": {
+&"character": "Jason",
+&"id": "71",
+&"next_id": "72",
+&"text": "I remember",
+&"type": "dialogue"
+},
+"72": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "JasonKnowsMabel"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "72",
+&"next_id": "73",
+&"next_id_after": "96",
+&"type": "condition"
+},
+"73": {
+&"character": "Jason",
+&"id": "73",
+&"next_id": "74",
+&"text": "Just thought maybe she's hittin' some too",
+&"type": "dialogue"
+},
+"74": {
+&"id": "74",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_set",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 12,
+&"type": &"array",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 13,
+&"type": &"string",
+&"value": "16"
+}, {
+&"i": 17,
+&"type": &"bracket_close"
+}])])
+}, {
+&"i": 18,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "75",
+&"type": "mutation"
+},
+"75": {
+&"id": "75",
+&"next_id": "76",
+&"responses": PackedStringArray("75", "89"),
+&"text": "One can hope",
+&"type": "response"
+},
+"76": {
+&"id": "76",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "JasonPlayerFreaky"
+}]),
+&"is_blocking": true
+},
+&"next_id": "77",
+&"type": "mutation"
+},
+"77": {
+&"character": "Player",
+&"id": "77",
+&"next_id": "78",
+&"text": "One can hope",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Jason",
+&"id": "78",
+&"next_id": "79",
+&"text": "LMAO",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Jason",
+&"id": "79",
+&"next_id": "80",
+&"text": "Did not expect that",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Jason",
+&"id": "8",
+&"next_id": "9",
+&"text": "Her 👀",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Jason",
+&"id": "80",
+&"next_id": "81",
+&"text": "You a freaky dude or smth?",
+&"type": "dialogue"
+},
+"81": {
+&"id": "81",
+&"next_id": "82",
+&"responses": PackedStringArray("81", "84"),
+&"text": "Not really",
+&"type": "response"
+},
+"82": {
+&"character": "Player",
+&"id": "82",
+&"next_id": "83",
+&"text": "Not really",
+&"type": "dialogue"
+},
+"83": {
+&"character": "Jason",
+&"id": "83",
+&"next_id": "95",
+&"text": "Damn you're just messin with me lol",
+&"type": "dialogue"
+},
+"84": {
+&"id": "84",
+&"next_id": "85",
+&"text": "Maybe haha",
+&"type": "response"
+},
+"85": {
+&"character": "Player",
+&"id": "85",
+&"next_id": "86",
+&"text": "Maybe haha",
+&"type": "dialogue"
+},
+"86": {
+&"character": "Jason",
+&"id": "86",
+&"next_id": "87",
+&"text": "Ngl if I saw a girl like that at the club",
+&"type": "dialogue"
+},
+"87": {
+&"character": "Jason",
+&"id": "87",
+&"next_id": "88",
+&"text": "I would NOT hold back 🤑",
+&"type": "dialogue"
+},
+"88": {
+&"character": "Jason",
+&"id": "88",
+&"next_id": "95",
+&"text": "So you better watch what you wish for 😛",
+&"type": "dialogue"
+},
+"89": {
+&"id": "89",
+&"next_id": "90",
+&"text": "No way",
+&"type": "response"
+},
+"9": {
+&"character": "Player",
+&"id": "9",
+&"next_id": "10",
+&"text": "Already? 😆",
+&"type": "dialogue"
+},
+"90": {
+&"character": "Player",
+&"id": "90",
+&"next_id": "91",
+&"text": "No way",
+&"type": "dialogue"
+},
+"91": {
+&"character": "Player",
+&"id": "91",
+&"next_id": "92",
+&"text": "She's totally not like that",
+&"type": "dialogue"
+},
+"92": {
+&"character": "Jason",
+&"id": "92",
+&"next_id": "93",
+&"text": "You sure?",
+&"type": "dialogue"
+},
+"93": {
+&"character": "Player",
+&"id": "93",
+&"next_id": "94",
+&"text": "I'm sure",
+&"type": "dialogue"
+},
+"94": {
+&"character": "Jason",
+&"id": "94",
+&"next_id": "95",
+&"text": "Fair enough then",
+&"type": "dialogue"
+},
+"95": {
+&"id": "95",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_clear",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 14,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "96",
+&"type": "mutation"
+},
+"96": {
+&"character": "Jason",
+&"id": "96",
+&"next_id": "97",
+&"text": "The girl I was just with had a boyfriend too",
+&"type": "dialogue"
+},
+"97": {
+&"character": "Player",
+&"id": "97",
+&"next_id": "98",
+&"text": "Must suck to be that other dude though lol",
+&"type": "dialogue"
+},
+"98": {
+&"character": "Jason",
+&"id": "98",
+&"next_id": "99",
+&"text": "Idgaf 😂",
+&"type": "dialogue"
+},
+"99": {
+&"character": "Player",
+&"id": "99",
+&"next_id": "100",
+&"text": "😂",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+Player: Hey
+Player: I got the night free
+Player: What are you doing?
+Jason: You sure ya wanna know?
+Player: Uhh... sure?
+Jason: img: erika/2
+Jason: Her 👀
+Player: Already? 😆
+Jason: Hell yeah dude
+Jason: Plan was to party for longer but 
+Jason: Got this baddie in bed sooner than I thought
+Jason: I clapped those cheeks good bro
+Player: Freshman girls that easy?
+Jason: She's not even a freshy bro
+Jason: She's senior year
+Player: Whoa a senior??
+Jason: Hell yea dude
+Jason: She's got all sorts of moves
+Jason: One of the sorority girls too
+Jason: What do you think? Hot AF eh?
+- Super hot
+	Player: Super hot
+	Jason: Hey man, no need to be jealous
+	Jason: Just playin haha
+	Jason: If you want, I can hook you up with her socials
+	Jason: Maybe you could slide in
+	- Girlfriend, remember? 😅
+		Player: Girlfriend, remember? 😅
+		Jason: Oh right 😝
+		Jason: You're set or something already huh
+	- Send them please! 🙏 [#yellowheart]
+		set Story.yellow_heart += 1
+		Player: Send them please! 🙏
+		Jason: Say no more
+		Jason: I gotchu fam
+		set PhoneUnlocks.reveal = \"erika\"
+		Player: Awesome
+		Jason: Slide in her DMs when you can
+		Jason: She's REAL friendly 😉
+- Not my type
+	Player: Not my type
+	Jason: Oh I forget you like the cuties
+	Jason: Maybe you'll come around and appreciate the big booty
+	Jason: See if the grass is greener and all that LOL
+	Player: Maybe, who knows haha
+Jason: Anyway, these sorority gals are crazy
+Jason: They're on a mission to show the freshies what they're all about
+Player: That IS crazy!
+Jason: Hell yeah, they're all smoking hot too
+Jason: Watch out for their leader though
+Jason: She's apparently the devil
+Player: What's her name?
+Jason: No idea lol
+Jason: This college seriously does things to people it look like
+Jason: That girl had so much experience bro you wouldn't believe it
+Player: Whoa
+Jason: The freshy girls were all \"getting to know each other\"
+Jason: This girl was like hell nah and sprinted at me and before I could blink, she was riding me
+Player: 🤣
+Player: That's wild
+Player: So you busy for the rest of the night?
+Jason: Nah I'm done with her but I'm going back to the clubs
+Player: Wow straight back?
+Jason: Gonna find another and hit round 2 homie
+Player: 😂 Oh man, you still have energy?
+Jason: 100%
+Jason: You should join tho if you're thinkin
+Jason: We can get you something too
+Player: I got a girl though remember? 😅
+Jason: I remember
+if Story.has_flag(\"JasonKnowsMabel\"):
+	Jason: Just thought maybe she's hittin' some too
+	do echo_set([\"16\"])
+	- One can hope
+		set Story.flag = \"JasonPlayerFreaky\"
+		Player: One can hope
+		Jason: LMAO
+		Jason: Did not expect that
+		Jason: You a freaky dude or smth?
+		- Not really
+			Player: Not really
+			Jason: Damn you're just messin with me lol
+		- Maybe haha
+			Player: Maybe haha
+			Jason: Ngl if I saw a girl like that at the club
+			Jason: I would NOT hold back 🤑
+			Jason: So you better watch what you wish for 😛
+	- No way
+		Player: No way
+		Player: She's totally not like that
+		Jason: You sure?
+		Player: I'm sure
+		Jason: Fair enough then
+	do echo_clear()
+Jason: The girl I was just with had a boyfriend too
+Player: Must suck to be that other dude though lol
+Jason: Idgaf 😂
+Player: 😂
+Player: I'll come out for some air then
+Jason: Nice, I'll be expecting you then chief
+Player: See you soon
+do social_post(\"erika_jason1\")
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

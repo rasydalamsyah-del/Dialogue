@@ -1,0 +1,622 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_6ty4w"]
+
+[resource]
+script = ExtResource("1_6ty4w")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Player", "Mabel")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Mabel",
+&"id": "10",
+&"next_id": "11",
+&"text": "My neighbor has been just a little noisy",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Mabel",
+&"id": "11",
+&"next_id": "18",
+&"text": "And I'm trying to do my assignment",
+&"type": "dialogue"
+},
+"12": {
+&"id": "12",
+&"next_id": "13",
+&"text": "Looking tired",
+&"type": "response"
+},
+"13": {
+&"character": "Player",
+&"id": "13",
+&"next_id": "14",
+&"text": "Looking tired",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Mabel",
+&"id": "14",
+&"next_id": "15",
+&"text": "Yeah.. I am",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Mabel",
+&"id": "15",
+&"next_id": "16",
+&"text": "sfx: bedcreakm6: *creak*",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Mabel",
+&"id": "16",
+&"next_id": "17",
+&"text": "My neighbor has been just a little noisy",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Mabel",
+&"id": "17",
+&"next_id": "18",
+&"text": "I wasn't able to nap properly after class",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Mabel",
+&"id": "18",
+&"next_id": "19",
+&"text": "sfx: bedcreakm3: *creak*",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Player",
+&"id": "19",
+&"next_id": "20",
+&"text": "Srsly? 😓",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Player",
+&"id": "2",
+&"next_id": "3",
+&"text": "Hellooo!",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Mabel",
+&"id": "20",
+&"next_id": "21",
+&"text": "Don't worry, I'll be fine",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Mabel",
+&"id": "21",
+&"next_id": "22",
+&"text": "sfx3: bedcreakm2: *creak*",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Mabel",
+&"id": "22",
+&"next_id": "23",
+&"text": "sfx3: bedcreakm2: *creak*",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Mabel",
+&"id": "23",
+&"next_id": "24",
+&"text": "Thought: Is he tossing and turning in bed?",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Mabel",
+&"id": "24",
+&"next_id": "25",
+&"text": "Thought: I'm so confused",
+&"type": "dialogue"
+},
+"25": {
+&"id": "25",
+&"next_id": "26",
+&"responses": PackedStringArray("25", "35"),
+&"text": "Why not knock and ask them to stop lol",
+&"type": "response"
+},
+"26": {
+&"character": "Player",
+&"id": "26",
+&"next_id": "27",
+&"text": "Why not knock and ask them to stop lol",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Mabel",
+&"id": "27",
+&"next_id": "28",
+&"text": "Yeah that's me!",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Mabel",
+&"id": "28",
+&"next_id": "29",
+&"text": "sfx: bedcreakm4: *creak*",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Mabel",
+&"id": "29",
+&"next_id": "30",
+&"text": "Mabel who's a pro at confronting strangers and telling them to pipe down! 😵",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Mabel",
+&"id": "3",
+&"next_id": "4",
+&"text": "Hi",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Mabel",
+&"id": "30",
+&"next_id": "31",
+&"text": "Sorry, I'm just tired and it's the last thing on my mind to do",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Mabel",
+&"id": "31",
+&"next_id": "32",
+&"text": "sfx: bedcreakm2: *creak*",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Mabel",
+&"id": "32",
+&"next_id": "33",
+&"text": "Maybe if I run into him... or her?",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Mabel",
+&"id": "33",
+&"next_id": "34",
+&"text": "Whoever is noisy",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Mabel",
+&"id": "34",
+&"next_id": "46",
+&"text": "sfx: bedcreakm3: *creak*",
+&"type": "dialogue"
+},
+"35": {
+&"id": "35",
+&"next_id": "36",
+&"text": "What's he doing?",
+&"type": "response"
+},
+"36": {
+&"character": "Player",
+&"id": "36",
+&"next_id": "37",
+&"text": "What are they doing? It's a guy right?",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Mabel",
+&"id": "37",
+&"next_id": "38",
+&"text": "I don't know!? And yeah I think so",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Mabel",
+&"id": "38",
+&"next_id": "39",
+&"text": "sfx: bedcreakm1: *creak*",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Mabel",
+&"id": "39",
+&"next_id": "40",
+&"text": "Maybe moving his bed around?",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Mabel",
+&"id": "4",
+&"next_id": "5",
+&"text": "img: mabel/97",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Mabel",
+&"id": "40",
+&"next_id": "41",
+&"text": "sfx: bedcreakm4: *creak*",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Mabel",
+&"id": "41",
+&"next_id": "42",
+&"text": "I can't tell if there's another person but omg",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Mabel",
+&"id": "42",
+&"next_id": "43",
+&"text": "It's like too late to be doing anything at all tbh",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Player",
+&"id": "43",
+&"next_id": "44",
+&"text": "In Mabel time, for sure",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Mabel",
+&"id": "44",
+&"next_id": "45",
+&"text": "sfx: bedcreakm3: *creak*",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Mabel",
+&"id": "45",
+&"next_id": "46",
+&"text": "Mabel time zone ends at 8pm every day 😆",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Player",
+&"id": "46",
+&"next_id": "47",
+&"text": "Well good luck, hopefully it'll be quiet soon",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Mabel",
+&"id": "47",
+&"next_id": "48",
+&"text": "I hope so too",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Mabel",
+&"id": "48",
+&"next_id": "49",
+&"text": "sfx: bedcreakm3: *creak*",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Mabel",
+&"id": "49",
+&"next_id": "50",
+&"text": "sfx: coveredmoanm2: Ughh...",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Mabel",
+&"id": "5",
+&"next_id": "6",
+&"text": "sfx: bedcreakm2: *creak*",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Mabel",
+&"id": "50",
+&"next_id": "51",
+&"text": "Thought: Was that someone's voice?",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Mabel",
+&"id": "51",
+&"next_id": "52",
+&"text": "Whatever is happening is tiring me out more 😴",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Mabel",
+&"id": "52",
+&"next_id": "53",
+&"text": "Anything fun going on in your club?",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Mabel",
+&"id": "53",
+&"next_id": "54",
+&"text": "sfx: bedcreakm6: *creak*",
+&"type": "dialogue"
+},
+"54": {
+&"id": "54",
+&"next_id": "55",
+&"responses": PackedStringArray("54", "57"),
+&"text": "Not really",
+&"type": "response"
+},
+"55": {
+&"character": "Player",
+&"id": "55",
+&"next_id": "56",
+&"text": "Not really",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Mabel",
+&"id": "56",
+&"next_id": "68",
+&"text": "I see",
+&"type": "dialogue"
+},
+"57": {
+&"id": "57",
+&"next_id": "58",
+&"text": "Not much, you?",
+&"type": "response"
+},
+"58": {
+&"character": "Player",
+&"id": "58",
+&"next_id": "59",
+&"text": "Not much, you?",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Mabel",
+&"id": "59",
+&"next_id": "60",
+&"text": "Uhh I went to visit the club house today",
+&"type": "dialogue"
+},
+"6": {
+&"id": "6",
+&"next_id": "7",
+&"responses": PackedStringArray("6", "12"),
+&"text": "Nice headphones",
+&"type": "response"
+},
+"60": {
+&"character": "Mabel",
+&"id": "60",
+&"next_id": "61",
+&"text": "sfx: bedcreakm2: *creak*",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Mabel",
+&"id": "61",
+&"next_id": "62",
+&"text": "It was really big, much bigger than photography club",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Player",
+&"id": "62",
+&"next_id": "63",
+&"text": "Oh that's cool, anything to do there?",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Mabel",
+&"id": "63",
+&"next_id": "64",
+&"text": "Didn't seem so lively during the day but it looked fancier than where I am now",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Mabel",
+&"id": "64",
+&"next_id": "65",
+&"text": "Thought: Jessica was right.. it is definitely an upgrade",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Mabel",
+&"id": "65",
+&"next_id": "66",
+&"text": "Thought: They also gave me a box of clothes that I'm supposed to wear from now on",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Mabel",
+&"id": "66",
+&"next_id": "67",
+&"text": "sfx: bedcreakm6: *creak*",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Mabel",
+&"id": "67",
+&"next_id": "68",
+&"text": "Thought: Not sure how I'm gonna get through the week ugh",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Mabel",
+&"id": "68",
+&"next_id": "69",
+&"text": "I have a paper to turn in tomorrow so I'll be up just a little longer",
+&"type": "dialogue"
+},
+"69": {
+&"character": "Mabel",
+&"id": "69",
+&"next_id": "70",
+&"text": "sfx: bedcreakm2: *creak*",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Player",
+&"id": "7",
+&"next_id": "8",
+&"text": "Nice headphones",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Player",
+&"id": "70",
+&"next_id": "71",
+&"text": "Alright! Good night",
+&"type": "dialogue"
+},
+"71": {
+&"character": "Mabel",
+&"id": "71",
+&"next_id": "72",
+&"text": "Good night 😮‍💨",
+&"type": "dialogue"
+},
+"72": {
+&"id": "72",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"73": {
+&"id": "73",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"8": {
+&"character": "Mabel",
+&"id": "8",
+&"next_id": "9",
+&"text": "Oh I completely forgot I had those on",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Mabel",
+&"id": "9",
+&"next_id": "10",
+&"text": "sfx: bedcreakm1: *creak*",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+Player: Hellooo!
+Mabel: Hi
+Mabel: img: mabel/97
+Mabel: sfx: bedcreakm2: *creak*
+- Nice headphones
+	Player: Nice headphones
+	Mabel: Oh I completely forgot I had those on
+	Mabel: sfx: bedcreakm1: *creak*
+	Mabel: My neighbor has been just a little noisy
+	Mabel: And I'm trying to do my assignment
+- Looking tired
+	Player: Looking tired
+	Mabel: Yeah.. I am
+	Mabel: sfx: bedcreakm6: *creak*
+	Mabel: My neighbor has been just a little noisy
+	Mabel: I wasn't able to nap properly after class
+Mabel: sfx: bedcreakm3: *creak*
+Player: Srsly? 😓
+Mabel: Don't worry, I'll be fine
+Mabel: sfx3: bedcreakm2: *creak*
+Mabel: sfx3: bedcreakm2: *creak*
+Mabel: Thought: Is he tossing and turning in bed?
+Mabel: Thought: I'm so confused
+- Why not knock and ask them to stop lol
+	Player: Why not knock and ask them to stop lol
+	Mabel: Yeah that's me!
+	Mabel: sfx: bedcreakm4: *creak*
+	Mabel: Mabel who's a pro at confronting strangers and telling them to pipe down! 😵
+	Mabel: Sorry, I'm just tired and it's the last thing on my mind to do
+	Mabel: sfx: bedcreakm2: *creak*
+	Mabel: Maybe if I run into him... or her?
+	Mabel: Whoever is noisy
+	Mabel: sfx: bedcreakm3: *creak*
+- What's he doing?
+	Player: What are they doing? It's a guy right?
+	Mabel: I don't know!? And yeah I think so
+	Mabel: sfx: bedcreakm1: *creak*
+	Mabel: Maybe moving his bed around?
+	Mabel: sfx: bedcreakm4: *creak*
+	Mabel: I can't tell if there's another person but omg
+	Mabel: It's like too late to be doing anything at all tbh
+	Player: In Mabel time, for sure
+	Mabel: sfx: bedcreakm3: *creak*
+	Mabel: Mabel time zone ends at 8pm every day 😆
+Player: Well good luck, hopefully it'll be quiet soon
+Mabel: I hope so too
+Mabel: sfx: bedcreakm3: *creak*
+Mabel: sfx: coveredmoanm2: Ughh...
+Mabel: Thought: Was that someone's voice?
+Mabel: Whatever is happening is tiring me out more 😴
+Mabel: Anything fun going on in your club?
+Mabel: sfx: bedcreakm6: *creak*
+- Not really
+	Player: Not really
+	Mabel: I see
+- Not much, you?
+	Player: Not much, you?
+	Mabel: Uhh I went to visit the club house today
+	Mabel: sfx: bedcreakm2: *creak*
+	Mabel: It was really big, much bigger than photography club
+	Player: Oh that's cool, anything to do there?
+	Mabel: Didn't seem so lively during the day but it looked fancier than where I am now
+	Mabel: Thought: Jessica was right.. it is definitely an upgrade
+	Mabel: Thought: They also gave me a box of clothes that I'm supposed to wear from now on
+	Mabel: sfx: bedcreakm6: *creak*
+	Mabel: Thought: Not sure how I'm gonna get through the week ugh
+Mabel: I have a paper to turn in tomorrow so I'll be up just a little longer
+Mabel: sfx: bedcreakm2: *creak*
+Player: Alright! Good night
+Mabel: Good night 😮‍💨
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

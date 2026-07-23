@@ -1,0 +1,343 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_0yq1o"]
+
+[resource]
+script = ExtResource("1_0yq1o")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Naomi", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Naomi",
+&"id": "10",
+&"next_id": "11",
+&"text": "Buuut...",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Naomi",
+&"id": "11",
+&"next_id": "12",
+&"text": "😉😉👍",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Player",
+&"id": "12",
+&"next_id": "13",
+&"text": "Haha thanks!",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Player",
+&"id": "13",
+&"next_id": "14",
+&"text": "What about Mabel's application?",
+&"type": "dialogue"
+},
+"14": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"i": 9,
+&"type": &"variable",
+&"value": "mabel_desire"
+}, {
+&"i": 22,
+&"type": &"comparison",
+&"value": ">"
+}, {
+&"i": 24,
+&"type": &"number",
+&"value": 0
+}])
+},
+&"id": "14",
+&"next_id": "15",
+&"next_id_after": "26",
+&"next_sibling_id": "21",
+&"type": "condition"
+},
+"15": {
+&"character": "Naomi",
+&"id": "15",
+&"next_id": "16",
+&"text": "I can't comment on that either... but",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Naomi",
+&"id": "16",
+&"next_id": "17",
+&"text": "😳😍🥵🍑",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Player",
+&"id": "17",
+&"next_id": "18",
+&"text": "😳",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Player",
+&"id": "18",
+&"next_id": "19",
+&"text": "Interesting, I wonder if there's something I should know 😁",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Naomi",
+&"id": "19",
+&"next_id": "20",
+&"text": "I wonder too 🤭",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Naomi",
+&"id": "2",
+&"next_id": "3",
+&"text": "Hey!",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Naomi",
+&"id": "20",
+&"next_id": "26",
+&"text": "Feel free to ask her",
+&"type": "dialogue"
+},
+"21": {
+&"condition": {},
+&"id": "21",
+&"next_id": "22",
+&"next_id_after": "26",
+&"type": "condition"
+},
+"22": {
+&"character": "Naomi",
+&"id": "22",
+&"next_id": "23",
+&"text": "I can't comment on that either... but",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Naomi",
+&"id": "23",
+&"next_id": "24",
+&"text": "😂😊🥰",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Player",
+&"id": "24",
+&"next_id": "25",
+&"text": "Sounds like she enjoyed it",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Naomi",
+&"id": "25",
+&"next_id": "26",
+&"text": "Sounds like she did",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Naomi",
+&"id": "26",
+&"next_id": "27",
+&"text": "I seriously wish I could adopt her as my sister or something 🥰",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Naomi",
+&"id": "27",
+&"next_id": "28",
+&"text": "I don't get along with mine",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Naomi",
+&"id": "28",
+&"next_id": "29",
+&"text": "Anyway, I don't want to bother you with that!",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Player",
+&"id": "29",
+&"next_id": "30",
+&"text": "No bother!",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Naomi",
+&"id": "3",
+&"next_id": "4",
+&"text": "Morning!",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Naomi",
+&"id": "30",
+&"next_id": "31",
+&"text": "You and Mabel will get your official invites on Saturday! 🥳",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Player",
+&"id": "31",
+&"next_id": "32",
+&"text": "Glad to hear it!",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Naomi",
+&"id": "32",
+&"next_id": "33",
+&"text": "You'll be invited to our little community group and we'll start discussing club activities and tasks together",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Player",
+&"id": "33",
+&"next_id": "34",
+&"text": "Thanks, looking forward to it!",
+&"type": "dialogue"
+},
+"34": {
+&"id": "34",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"35": {
+&"id": "35",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"4": {
+&"character": "Naomi",
+&"id": "4",
+&"next_id": "5",
+&"text": "img: naomi/11",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Player",
+&"id": "5",
+&"next_id": "6",
+&"text": "Morning",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Naomi",
+&"id": "6",
+&"next_id": "7",
+&"text": "Good work out there with Caleb!",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Naomi",
+&"id": "7",
+&"next_id": "8",
+&"text": "I just got your application put together and everything looks good!",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Player",
+&"id": "8",
+&"next_id": "9",
+&"text": "Awesome",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Naomi",
+&"id": "9",
+&"next_id": "10",
+&"text": "Of course I can't comment on the pictures 😁",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+Naomi: Hey! 
+Naomi: Morning!
+Naomi: img: naomi/11
+Player: Morning
+Naomi: Good work out there with Caleb!
+Naomi: I just got your application put together and everything looks good!
+Player: Awesome
+Naomi: Of course I can't comment on the pictures 😁
+Naomi: Buuut...
+Naomi: 😉😉👍
+Player: Haha thanks!
+Player: What about Mabel's application?
+if Story.mabel_desire > 0:
+	Naomi: I can't comment on that either... but
+	Naomi: 😳😍🥵🍑
+	Player: 😳
+	Player: Interesting, I wonder if there's something I should know 😁
+	Naomi: I wonder too 🤭
+	Naomi: Feel free to ask her
+else:
+	Naomi: I can't comment on that either... but
+	Naomi: 😂😊🥰
+	Player: Sounds like she enjoyed it
+	Naomi: Sounds like she did
+Naomi: I seriously wish I could adopt her as my sister or something 🥰
+Naomi: I don't get along with mine
+Naomi: Anyway, I don't want to bother you with that!
+Player: No bother!
+Naomi: You and Mabel will get your official invites on Saturday! 🥳
+Player: Glad to hear it!
+Naomi: You'll be invited to our little community group and we'll start discussing club activities and tasks together
+Player: Thanks, looking forward to it!
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

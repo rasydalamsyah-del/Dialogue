@@ -1,0 +1,1415 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_ifncn"]
+
+[resource]
+script = ExtResource("1_ifncn")
+using_states = PackedStringArray()
+titles = {
+"start": "2"
+}
+character_names = PackedStringArray("Paige", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "2",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"10": {
+&"character": "Player",
+&"id": "10",
+&"next_id": "11",
+&"text": "Uhh I'm confused 😅",
+&"type": "dialogue"
+},
+"100": {
+&"character": "Player",
+&"id": "100",
+&"next_id": "101",
+&"text": "It only took like 60 attempts until you were satisfied",
+&"type": "dialogue"
+},
+"101": {
+&"character": "Paige",
+&"id": "101",
+&"next_id": "102",
+&"text": "What do you expect, the wind kept blowing my hair into my mouth 😭",
+&"type": "dialogue"
+},
+"102": {
+&"character": "Paige",
+&"id": "102",
+&"next_id": "103",
+&"text": "Okay, what about the other one, with my friend",
+&"type": "dialogue"
+},
+"103": {
+&"character": "Player",
+&"id": "103",
+&"next_id": "104",
+&"text": "img: paige/9",
+&"type": "dialogue"
+},
+"104": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"i": 9,
+&"type": &"variable",
+&"value": "yellow_heart"
+}, {
+&"i": 22,
+&"type": &"comparison",
+&"value": ">"
+}, {
+&"i": 24,
+&"type": &"number",
+&"value": 0
+}])
+},
+&"id": "104",
+&"next_id": "105",
+&"next_id_after": "108",
+&"type": "condition"
+},
+"105": {
+&"character": "Player",
+&"id": "105",
+&"next_id": "106",
+&"text": "She seems familiar",
+&"type": "dialogue"
+},
+"106": {
+&"character": "Paige",
+&"id": "106",
+&"next_id": "107",
+&"text": "Nooo offense buuut",
+&"type": "dialogue"
+},
+"107": {
+&"character": "Paige",
+&"id": "107",
+&"next_id": "108",
+&"text": "I doubt you'd know the Sorority girls personally but you might have seen her around",
+&"type": "dialogue"
+},
+"108": {
+&"character": "Paige",
+&"id": "108",
+&"next_id": "109",
+&"text": "She's the sweetest angel ever y'know",
+&"type": "dialogue"
+},
+"109": {
+&"character": "Paige",
+&"id": "109",
+&"next_id": "110",
+&"text": "When the Sorority turned their backs on me, she never did 😇",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Paige",
+&"id": "11",
+&"next_id": "12",
+&"text": "What's there to be confused about silly",
+&"type": "dialogue"
+},
+"110": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"i": 9,
+&"type": &"variable",
+&"value": "blue_heart"
+}, {
+&"i": 20,
+&"type": &"comparison",
+&"value": ">="
+}, {
+&"i": 23,
+&"type": &"number",
+&"value": 2
+}])
+},
+&"id": "110",
+&"next_id": "111",
+&"next_id_after": "115",
+&"type": "condition"
+},
+"111": {
+&"character": "Paige",
+&"id": "111",
+&"next_id": "112",
+&"text": "But I still can't believe she thought you were my new boyfriend LOL 😭",
+&"type": "dialogue"
+},
+"112": {
+&"character": "Player",
+&"id": "112",
+&"next_id": "113",
+&"text": "She did? 😆",
+&"type": "dialogue"
+},
+"113": {
+&"character": "Paige",
+&"id": "113",
+&"next_id": "114",
+&"text": "Yuhu, she was all giggly and whispering to me that I had quite the catch and I was all like BABE NO 😭",
+&"type": "dialogue"
+},
+"114": {
+&"character": "Paige",
+&"id": "114",
+&"next_id": "115",
+&"text": "Seriously... that girl 😏",
+&"type": "dialogue"
+},
+"115": {
+&"character": "Paige",
+&"id": "115",
+&"next_id": "116",
+&"text": "Well?",
+&"type": "dialogue"
+},
+"116": {
+&"character": "Paige",
+&"id": "116",
+&"next_id": "117",
+&"text": "Aren't you glad you had the honor of going out with me? 😘",
+&"type": "dialogue"
+},
+"117": {
+&"id": "117",
+&"next_id": "118",
+&"responses": PackedStringArray("117", "124"),
+&"tags": PackedStringArray("blueheart"),
+&"text": "I guess it was nice",
+&"type": "response"
+},
+"118": {
+&"id": "118",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "blue_heart"
+}, {
+&"i": 21,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 24,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "119",
+&"type": "mutation"
+},
+"119": {
+&"character": "Player",
+&"id": "119",
+&"next_id": "120",
+&"text": "I guess it was nice",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Player",
+&"id": "12",
+&"next_id": "13",
+&"text": "Well, we're supposed to go over photography foundations right?",
+&"type": "dialogue"
+},
+"120": {
+&"character": "Paige",
+&"id": "120",
+&"next_id": "121",
+&"text": "Really? 🤩",
+&"type": "dialogue"
+},
+"121": {
+&"character": "Paige",
+&"id": "121",
+&"next_id": "122",
+&"text": "So I can rely on you for next time too? 😌",
+&"type": "dialogue"
+},
+"122": {
+&"character": "Player",
+&"id": "122",
+&"next_id": "123",
+&"text": "Maybe once my arms are back in their sockets",
+&"type": "dialogue"
+},
+"123": {
+&"character": "Paige",
+&"id": "123",
+&"next_id": "127",
+&"text": "Oh please, you carried everything easily 😘",
+&"type": "dialogue"
+},
+"124": {
+&"id": "124",
+&"next_id": "125",
+&"text": "It was... something 😅",
+&"type": "response"
+},
+"125": {
+&"character": "Player",
+&"id": "125",
+&"next_id": "126",
+&"text": "It was... something",
+&"type": "dialogue"
+},
+"126": {
+&"character": "Paige",
+&"id": "126",
+&"next_id": "127",
+&"text": "I can't force you to have a good time I guess 🙄",
+&"type": "dialogue"
+},
+"127": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"i": 9,
+&"type": &"variable",
+&"value": "blue_heart"
+}, {
+&"i": 20,
+&"type": &"comparison",
+&"value": ">="
+}, {
+&"i": 23,
+&"type": &"number",
+&"value": 3
+}])
+},
+&"id": "127",
+&"next_id": "128",
+&"next_id_after": "153",
+&"next_sibling_id": "149",
+&"type": "condition"
+},
+"128": {
+&"character": "Paige",
+&"id": "128",
+&"next_id": "129",
+&"text": "Since I'm not in the Sorority anymore, I'll need my own personal pocket boy 😘",
+&"type": "dialogue"
+},
+"129": {
+&"character": "Paige",
+&"id": "129",
+&"next_id": "130",
+&"text": "You'll have to be on call anytime I need you for shopping",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Paige",
+&"id": "13",
+&"next_id": "14",
+&"text": "Ugh, don't be so hung up on that",
+&"type": "dialogue"
+},
+"130": {
+&"character": "Paige",
+&"id": "130",
+&"next_id": "131",
+&"text": "Pick up my packages, sort my mail, do my groceries and laundry, buy my make up, check sales for me",
+&"type": "dialogue"
+},
+"131": {
+&"character": "Paige",
+&"id": "131",
+&"next_id": "132",
+&"text": "Aaaand run some errands for me on campus",
+&"type": "dialogue"
+},
+"132": {
+&"character": "Paige",
+&"id": "132",
+&"next_id": "133",
+&"text": "🤝",
+&"type": "dialogue"
+},
+"133": {
+&"character": "Player",
+&"id": "133",
+&"next_id": "134",
+&"text": "That's a lot of stuff 😱",
+&"type": "dialogue"
+},
+"134": {
+&"character": "Paige",
+&"id": "134",
+&"next_id": "135",
+&"text": "🤭",
+&"type": "dialogue"
+},
+"135": {
+&"character": "Paige",
+&"id": "135",
+&"next_id": "136",
+&"text": "Oh and one last thing",
+&"type": "dialogue"
+},
+"136": {
+&"character": "Player",
+&"id": "136",
+&"next_id": "137",
+&"text": "😩",
+&"type": "dialogue"
+},
+"137": {
+&"character": "Paige",
+&"id": "137",
+&"next_id": "138",
+&"text": "It's been just a little boring since I moved to this area",
+&"type": "dialogue"
+},
+"138": {
+&"character": "Paige",
+&"id": "138",
+&"next_id": "139",
+&"text": "My only friend lives on the other campus sooo",
+&"type": "dialogue"
+},
+"139": {
+&"character": "Paige",
+&"id": "139",
+&"next_id": "140",
+&"text": "It's just a teensy bit lonely",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Paige",
+&"id": "14",
+&"next_id": "15",
+&"text": "We'll improvise... a lot 😜",
+&"type": "dialogue"
+},
+"140": {
+&"character": "Paige",
+&"id": "140",
+&"next_id": "141",
+&"text": "If you'll keep a girl company, that'd be nice",
+&"type": "dialogue"
+},
+"141": {
+&"character": "Paige",
+&"id": "141",
+&"next_id": "142",
+&"text": "img: paige/10",
+&"type": "dialogue"
+},
+"142": {
+&"character": "Player",
+&"id": "142",
+&"next_id": "143",
+&"text": "Yeah, sure",
+&"type": "dialogue"
+},
+"143": {
+&"character": "Player",
+&"id": "143",
+&"next_id": "144",
+&"text": "I can do that",
+&"type": "dialogue"
+},
+"144": {
+&"character": "Paige",
+&"id": "144",
+&"next_id": "145",
+&"text": "GREAT 😍",
+&"type": "dialogue"
+},
+"145": {
+&"character": "Paige",
+&"id": "145",
+&"next_id": "146",
+&"text": "So tomorrow is usually my laundry day",
+&"type": "dialogue"
+},
+"146": {
+&"character": "Paige",
+&"id": "146",
+&"next_id": "147",
+&"text": "You can come by around 4pm to pick it up and return it at night",
+&"type": "dialogue"
+},
+"147": {
+&"character": "Player",
+&"id": "147",
+&"next_id": "148",
+&"text": "🥲",
+&"type": "dialogue"
+},
+"148": {
+&"character": "Paige",
+&"id": "148",
+&"next_id": "153",
+&"text": "Cya 😘",
+&"type": "dialogue"
+},
+"149": {
+&"condition": {},
+&"id": "149",
+&"next_id": "150",
+&"next_id_after": "153",
+&"type": "condition"
+},
+"15": {
+&"character": "Paige",
+&"id": "15",
+&"next_id": "16",
+&"text": "img: paige/5",
+&"type": "dialogue"
+},
+"150": {
+&"character": "Paige",
+&"id": "150",
+&"next_id": "151",
+&"text": "Well, it's been real, toodles!",
+&"type": "dialogue"
+},
+"151": {
+&"character": "Paige",
+&"id": "151",
+&"next_id": "152",
+&"text": "Maybe I'll see you around in club",
+&"type": "dialogue"
+},
+"152": {
+&"character": "Player",
+&"id": "152",
+&"next_id": "153",
+&"text": "Bye Paige",
+&"type": "dialogue"
+},
+"153": {
+&"id": "153",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"154": {
+&"id": "154",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"16": {
+&"character": "Paige",
+&"id": "16",
+&"next_id": "17",
+&"text": "Ok fine we'll do that too",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Paige",
+&"id": "17",
+&"next_id": "18",
+&"text": "But you're gonna take some pictures of me 🫰",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Player",
+&"id": "18",
+&"next_id": "19",
+&"text": "That wasn't what we said in the group chat 😆",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Paige",
+&"id": "19",
+&"next_id": "20",
+&"text": "Oh that",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "lecture_hall"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "3",
+&"type": "mutation"
+},
+"20": {
+&"character": "Paige",
+&"id": "20",
+&"next_id": "21",
+&"text": "Yeah I saw those messages and went back to my beauty sleep 💅",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Player",
+&"id": "21",
+&"next_id": "22",
+&"text": "It was noontime 😳",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Paige",
+&"id": "22",
+&"next_id": "23",
+&"text": "Monday noon is in the middle of prime beauty sleep time, dontcha know anything? 🤣",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Paige",
+&"id": "23",
+&"next_id": "24",
+&"text": "Anyway",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Paige",
+&"id": "24",
+&"next_id": "25",
+&"text": "That Naomi girl is such a boor with all this scheduling and boring events",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Paige",
+&"id": "25",
+&"next_id": "26",
+&"text": "How can a girl like her be so pretty yet so... 🥱🥱🥱",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Paige",
+&"id": "26",
+&"next_id": "27",
+&"text": "Don't you think girl's need to be fun, outgoing and free? 🤭",
+&"type": "dialogue"
+},
+"27": {
+&"id": "27",
+&"next_id": "28",
+&"responses": PackedStringArray("27", "31"),
+&"tags": PackedStringArray("blueheart"),
+&"text": "Maybe, yeah",
+&"type": "response"
+},
+"28": {
+&"id": "28",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "blue_heart"
+}, {
+&"i": 21,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 24,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "29",
+&"type": "mutation"
+},
+"29": {
+&"character": "Player",
+&"id": "29",
+&"next_id": "30",
+&"text": "Maybe, yeah",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Paige",
+&"id": "3",
+&"next_id": "4",
+&"text": "Yoohooooo",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Paige",
+&"id": "30",
+&"next_id": "34",
+&"text": "Great! Now we've established the obvious 😋😋",
+&"type": "dialogue"
+},
+"31": {
+&"id": "31",
+&"next_id": "32",
+&"text": "I like Naomi how she is",
+&"type": "response"
+},
+"32": {
+&"character": "Player",
+&"id": "32",
+&"next_id": "33",
+&"text": "I like Naomi how she is",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Paige",
+&"id": "33",
+&"next_id": "34",
+&"text": "Ugh not you toooo 💀💀💀",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Paige",
+&"id": "34",
+&"next_id": "35",
+&"text": "Anyway hurry up",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Paige",
+&"id": "35",
+&"next_id": "36",
+&"text": "I have to hang out with a girlfriend in an hour and I want to dress up for the occassion",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Paige",
+&"id": "36",
+&"next_id": "37",
+&"text": "And I need to do my nails",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Paige",
+&"id": "37",
+&"next_id": "38",
+&"text": "And go shopping for some new shoes",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Paige",
+&"id": "38",
+&"next_id": "39",
+&"text": "Oh and this new outfit I ordered is arriving today, so you're gonna carry them for me right? 😇",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Player",
+&"id": "39",
+&"next_id": "40",
+&"text": "Wha- hold on 😵‍💫",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Paige",
+&"id": "4",
+&"next_id": "5",
+&"text": "Heeellooo",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Player",
+&"id": "40",
+&"next_id": "41",
+&"text": "You want me to just follow you around all day?",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Paige",
+&"id": "41",
+&"next_id": "42",
+&"text": "Duh",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Paige",
+&"id": "42",
+&"next_id": "43",
+&"text": "The Sorority had so many boys like that 😇",
+&"type": "dialogue"
+},
+"43": {
+&"id": "43",
+&"next_id": "44",
+&"responses": PackedStringArray("43", "50"),
+&"text": "Sure I guess I can",
+&"type": "response"
+},
+"44": {
+&"character": "Player",
+&"id": "44",
+&"next_id": "45",
+&"text": "Sure I guess I can",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Paige",
+&"id": "45",
+&"next_id": "46",
+&"text": "Awwh that's sweet 🥺",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Paige",
+&"id": "46",
+&"next_id": "47",
+&"text": "Great! So while you're at it, you can pick up my groceries too",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Player",
+&"id": "47",
+&"next_id": "48",
+&"text": "😫",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Paige",
+&"id": "48",
+&"next_id": "49",
+&"text": "I'll send you the list rn",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Player",
+&"id": "49",
+&"next_id": "56",
+&"text": "Hold up 😄",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Player",
+&"id": "5",
+&"next_id": "6",
+&"text": "Hi",
+&"type": "dialogue"
+},
+"50": {
+&"id": "50",
+&"next_id": "51",
+&"text": "Ehh do I have to? 😫",
+&"type": "response"
+},
+"51": {
+&"character": "Player",
+&"id": "51",
+&"next_id": "52",
+&"text": "Ehh do I have to? 😫",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Paige",
+&"id": "52",
+&"next_id": "53",
+&"text": "Hmph, yes you do 😠",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Paige",
+&"id": "53",
+&"next_id": "54",
+&"text": "Can you imagine me carrying all those bags? 🥺 With my delicate arms? 😭",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Paige",
+&"id": "54",
+&"next_id": "55",
+&"text": "I'm built like a flower, not a brick 😘",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Player",
+&"id": "55",
+&"next_id": "56",
+&"text": "😒",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Player",
+&"id": "56",
+&"next_id": "57",
+&"text": "We should really get the lessons out of the way",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Paige",
+&"id": "57",
+&"next_id": "58",
+&"text": "Alriiiight I am ready",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Paige",
+&"id": "58",
+&"next_id": "59",
+&"text": "I sent you my location",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Player",
+&"id": "59",
+&"next_id": "60",
+&"text": "Wow, you live nearby",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Paige",
+&"id": "6",
+&"next_id": "7",
+&"text": "I'm told you're my photographer today",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Paige",
+&"id": "60",
+&"next_id": "61",
+&"text": "Well duh, I'm not in the Sorority anymore so no more fancy housing for me",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Paige",
+&"id": "61",
+&"next_id": "62",
+&"text": "Anyway, I'm sooo done with those bitches 🙄",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Paige",
+&"id": "62",
+&"next_id": "63",
+&"text": "They think they can tell me what to do 🤏 squish",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Paige",
+&"id": "63",
+&"next_id": "64",
+&"text": "And I don't care if that means I have to hang out with people like you",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Player",
+&"id": "64",
+&"next_id": "65",
+&"text": "People like me? 😅",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Paige",
+&"id": "65",
+&"next_id": "66",
+&"text": "Like, no offense of course darling 🥰 I'm sure you're lovely... in your own way",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Paige",
+&"id": "66",
+&"next_id": "67",
+&"text": "But hellooo, you coming or what?",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Paige",
+&"id": "67",
+&"next_id": "68",
+&"text": "You sure do like to keep a girl waiting",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Player",
+&"id": "68",
+&"next_id": "69",
+&"text": "Alright I'm on my way 😅",
+&"type": "dialogue"
+},
+"69": {
+&"id": "69",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "advance_time",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"number",
+&"value": 4
+}]), Array[Dictionary]([{
+&"i": 19,
+&"type": &"number",
+&"value": 3
+}, {
+&"i": 20,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "70",
+&"type": "mutation"
+},
+"7": {
+&"character": "Paige",
+&"id": "7",
+&"next_id": "8",
+&"text": "Good, I'm getting dressed right now",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Paige",
+&"id": "70",
+&"next_id": "71",
+&"text": "Omg we forgot to check the outlets for sales on handbags 😭",
+&"type": "dialogue"
+},
+"71": {
+&"character": "Player",
+&"id": "71",
+&"next_id": "72",
+&"text": "I don't know if I'll be feeling my shoulders for the rest of the week 😵",
+&"type": "dialogue"
+},
+"72": {
+&"character": "Paige",
+&"id": "72",
+&"next_id": "73",
+&"text": "img: paige/6",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Player",
+&"id": "73",
+&"next_id": "74",
+&"text": "Lol I couldn't even see where I was going",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Paige",
+&"id": "74",
+&"next_id": "75",
+&"text": "I'll admit that it was cute to see you push yourself so hard for me",
+&"type": "dialogue"
+},
+"75": {
+&"character": "Paige",
+&"id": "75",
+&"next_id": "76",
+&"text": "🤭",
+&"type": "dialogue"
+},
+"76": {
+&"character": "Player",
+&"id": "76",
+&"next_id": "77",
+&"text": "😅",
+&"type": "dialogue"
+},
+"77": {
+&"character": "Player",
+&"id": "77",
+&"next_id": "78",
+&"text": "I wish we had gotten through the assigned work though",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Paige",
+&"id": "78",
+&"next_id": "79",
+&"text": "Oh please, we had so much more fun",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Paige",
+&"id": "79",
+&"next_id": "80",
+&"text": "Besides I already told Naomi we did it 😉",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Paige",
+&"id": "8",
+&"next_id": "9",
+&"text": "img: paige/4",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Player",
+&"id": "80",
+&"next_id": "81",
+&"text": "You did what...? 😵‍💫",
+&"type": "dialogue"
+},
+"81": {
+&"character": "Paige",
+&"id": "81",
+&"next_id": "82",
+&"text": "Don't be such a worry worm LOL",
+&"type": "dialogue"
+},
+"82": {
+&"character": "Paige",
+&"id": "82",
+&"next_id": "83",
+&"text": "If anything happens, I'll just take the blame",
+&"type": "dialogue"
+},
+"83": {
+&"character": "Paige",
+&"id": "83",
+&"next_id": "84",
+&"text": "And then I'll do this",
+&"type": "dialogue"
+},
+"84": {
+&"character": "Paige",
+&"id": "84",
+&"next_id": "85",
+&"text": "img: paige/7",
+&"type": "dialogue"
+},
+"85": {
+&"character": "Paige",
+&"id": "85",
+&"next_id": "86",
+&"text": "And all my problems are solved 😇",
+&"type": "dialogue"
+},
+"86": {
+&"character": "Paige",
+&"id": "86",
+&"next_id": "87",
+&"text": "Could you refuse this face?",
+&"type": "dialogue"
+},
+"87": {
+&"id": "87",
+&"next_id": "88",
+&"responses": PackedStringArray("87", "91"),
+&"tags": PackedStringArray("blueheart"),
+&"text": "No 😣",
+&"type": "response"
+},
+"88": {
+&"id": "88",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "blue_heart"
+}, {
+&"i": 21,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 24,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "89",
+&"type": "mutation"
+},
+"89": {
+&"character": "Player",
+&"id": "89",
+&"next_id": "90",
+&"text": "No 😣",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Paige",
+&"id": "9",
+&"next_id": "10",
+&"text": "😉",
+&"type": "dialogue"
+},
+"90": {
+&"character": "Paige",
+&"id": "90",
+&"next_id": "94",
+&"text": "Of course not 😘",
+&"type": "dialogue"
+},
+"91": {
+&"id": "91",
+&"next_id": "92",
+&"text": "😒",
+&"type": "response"
+},
+"92": {
+&"character": "Player",
+&"id": "92",
+&"next_id": "93",
+&"text": "😒",
+&"type": "dialogue"
+},
+"93": {
+&"character": "Paige",
+&"id": "93",
+&"next_id": "94",
+&"text": "Well it usually works on kind people 😤",
+&"type": "dialogue"
+},
+"94": {
+&"character": "Paige",
+&"id": "94",
+&"next_id": "95",
+&"text": "Send me the pics already, will ya? 🫵 poke",
+&"type": "dialogue"
+},
+"95": {
+&"character": "Paige",
+&"id": "95",
+&"next_id": "96",
+&"text": "I liked how they came out sooo hurry up 😝",
+&"type": "dialogue"
+},
+"96": {
+&"character": "Player",
+&"id": "96",
+&"next_id": "97",
+&"text": "Alright",
+&"type": "dialogue"
+},
+"97": {
+&"character": "Player",
+&"id": "97",
+&"next_id": "98",
+&"text": "img: paige/8",
+&"type": "dialogue"
+},
+"98": {
+&"character": "Paige",
+&"id": "98",
+&"next_id": "99",
+&"text": "Omg this is like totally one of the BEST pics of me I've ever seen",
+&"type": "dialogue"
+},
+"99": {
+&"character": "Paige",
+&"id": "99",
+&"next_id": "100",
+&"text": "I mean I'm sure I'll have a better one next week but rn its my fav 🤭",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+#12pm noon around
+do Story.set_location(\"lecture_hall\")
+Paige: Yoohooooo
+Paige: Heeellooo
+Player: Hi
+Paige: I'm told you're my photographer today
+Paige: Good, I'm getting dressed right now
+Paige: img: paige/4
+Paige: 😉
+Player: Uhh I'm confused 😅
+Paige: What's there to be confused about silly
+Player: Well, we're supposed to go over photography foundations right?
+Paige: Ugh, don't be so hung up on that
+Paige: We'll improvise... a lot 😜
+Paige: img: paige/5
+Paige: Ok fine we'll do that too
+Paige: But you're gonna take some pictures of me 🫰
+Player: That wasn't what we said in the group chat 😆
+Paige: Oh that
+Paige: Yeah I saw those messages and went back to my beauty sleep 💅
+Player: It was noontime 😳
+Paige: Monday noon is in the middle of prime beauty sleep time, dontcha know anything? 🤣
+Paige: Anyway
+Paige: That Naomi girl is such a boor with all this scheduling and boring events
+Paige: How can a girl like her be so pretty yet so... 🥱🥱🥱
+Paige: Don't you think girl's need to be fun, outgoing and free? 🤭
+- Maybe, yeah [#blueheart]
+	set Story.blue_heart += 1
+	Player: Maybe, yeah
+	Paige: Great! Now we've established the obvious 😋😋
+- I like Naomi how she is
+	Player: I like Naomi how she is
+	Paige: Ugh not you toooo 💀💀💀
+Paige: Anyway hurry up
+Paige: I have to hang out with a girlfriend in an hour and I want to dress up for the occassion
+Paige: And I need to do my nails
+Paige: And go shopping for some new shoes
+Paige: Oh and this new outfit I ordered is arriving today, so you're gonna carry them for me right? 😇
+Player: Wha- hold on 😵‍💫
+Player: You want me to just follow you around all day?
+Paige: Duh
+Paige: The Sorority had so many boys like that 😇
+- Sure I guess I can
+	Player: Sure I guess I can
+	Paige: Awwh that's sweet 🥺
+	Paige: Great! So while you're at it, you can pick up my groceries too
+	Player: 😫
+	Paige: I'll send you the list rn
+	Player: Hold up 😄
+- Ehh do I have to? 😫
+	Player: Ehh do I have to? 😫
+	Paige: Hmph, yes you do 😠
+	Paige: Can you imagine me carrying all those bags? 🥺 With my delicate arms? 😭
+	Paige: I'm built like a flower, not a brick 😘
+	Player: 😒
+Player: We should really get the lessons out of the way
+Paige: Alriiiight I am ready
+Paige: I sent you my location
+Player: Wow, you live nearby
+Paige: Well duh, I'm not in the Sorority anymore so no more fancy housing for me
+Paige: Anyway, I'm sooo done with those bitches 🙄
+Paige: They think they can tell me what to do 🤏 squish
+Paige: And I don't care if that means I have to hang out with people like you
+Player: People like me? 😅
+Paige: Like, no offense of course darling 🥰 I'm sure you're lovely... in your own way
+Paige: But hellooo, you coming or what?
+Paige: You sure do like to keep a girl waiting
+Player: Alright I'm on my way 😅
+do advance_time(4, 3)
+Paige: Omg we forgot to check the outlets for sales on handbags 😭
+Player: I don't know if I'll be feeling my shoulders for the rest of the week 😵
+Paige: img: paige/6
+Player: Lol I couldn't even see where I was going
+Paige: I'll admit that it was cute to see you push yourself so hard for me
+Paige: 🤭
+Player: 😅
+Player: I wish we had gotten through the assigned work though
+Paige: Oh please, we had so much more fun
+Paige: Besides I already told Naomi we did it 😉
+Player: You did what...? 😵‍💫
+Paige: Don't be such a worry worm LOL
+Paige: If anything happens, I'll just take the blame
+Paige: And then I'll do this
+Paige: img: paige/7
+Paige: And all my problems are solved 😇
+Paige: Could you refuse this face?
+- No 😣 [#blueheart]
+	set Story.blue_heart += 1
+	Player: No 😣
+	Paige: Of course not 😘
+- 😒
+	Player: 😒
+	Paige: Well it usually works on kind people 😤
+Paige: Send me the pics already, will ya? 🫵 poke
+Paige: I liked how they came out sooo hurry up 😝
+Player: Alright
+Player: img: paige/8
+Paige: Omg this is like totally one of the BEST pics of me I've ever seen
+Paige: I mean I'm sure I'll have a better one next week but rn its my fav 🤭 
+Player: It only took like 60 attempts until you were satisfied
+Paige: What do you expect, the wind kept blowing my hair into my mouth 😭
+Paige: Okay, what about the other one, with my friend
+Player: img: paige/9
+if Story.yellow_heart > 0:
+	Player: She seems familiar
+	Paige: Nooo offense buuut
+	Paige: I doubt you'd know the Sorority girls personally but you might have seen her around
+Paige: She's the sweetest angel ever y'know
+Paige: When the Sorority turned their backs on me, she never did 😇
+if Story.blue_heart >= 2:	
+	Paige: But I still can't believe she thought you were my new boyfriend LOL 😭
+	Player: She did? 😆
+	Paige: Yuhu, she was all giggly and whispering to me that I had quite the catch and I was all like BABE NO 😭
+	Paige: Seriously... that girl 😏
+Paige: Well? 
+Paige: Aren't you glad you had the honor of going out with me? 😘
+- I guess it was nice [#blueheart]
+	set Story.blue_heart += 1
+	Player: I guess it was nice
+	Paige: Really? 🤩
+	Paige: So I can rely on you for next time too? 😌
+	Player: Maybe once my arms are back in their sockets
+	Paige: Oh please, you carried everything easily 😘
+- It was... something 😅
+	Player: It was... something
+	Paige: I can't force you to have a good time I guess 🙄
+if Story.blue_heart >= 3:	
+	Paige: Since I'm not in the Sorority anymore, I'll need my own personal pocket boy 😘
+	Paige: You'll have to be on call anytime I need you for shopping
+	Paige: Pick up my packages, sort my mail, do my groceries and laundry, buy my make up, check sales for me
+	Paige: Aaaand run some errands for me on campus
+	Paige: 🤝
+	Player: That's a lot of stuff 😱
+	Paige: 🤭
+	Paige: Oh and one last thing
+	Player: 😩
+	Paige: It's been just a little boring since I moved to this area
+	Paige: My only friend lives on the other campus sooo
+	Paige: It's just a teensy bit lonely
+	Paige: If you'll keep a girl company, that'd be nice
+	Paige: img: paige/10
+	Player: Yeah, sure
+	Player: I can do that
+	Paige: GREAT 😍
+	Paige: So tomorrow is usually my laundry day
+	Paige: You can come by around 4pm to pick it up and return it at night
+	Player: 🥲
+	Paige: Cya 😘
+else:
+	Paige: Well, it's been real, toodles!
+	Paige: Maybe I'll see you around in club
+	Player: Bye Paige
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

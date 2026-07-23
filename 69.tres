@@ -1,0 +1,987 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_iveg8"]
+
+[resource]
+script = ExtResource("1_iveg8")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Naomi", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"id": "10",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "red_heart"
+}, {
+&"i": 20,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 23,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "11",
+&"type": "mutation"
+},
+"100": {
+&"character": "Naomi",
+&"id": "100",
+&"next_id": "101",
+&"text": "And thanks for helping us out",
+&"type": "dialogue"
+},
+"101": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "LUST"
+}, {
+&"i": 24,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "101",
+&"next_id": "102",
+&"next_id_after": "103",
+&"type": "condition"
+},
+"102": {
+&"character": "Naomi",
+&"id": "102",
+&"next_id": "103",
+&"text": "See ya at the party tomorrow 😉",
+&"type": "dialogue"
+},
+"103": {
+&"character": "Player",
+&"id": "103",
+&"next_id": "104",
+&"text": "Anytime! Gn",
+&"type": "dialogue"
+},
+"104": {
+&"id": "104",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"105": {
+&"id": "105",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"11": {
+&"character": "Player",
+&"id": "11",
+&"next_id": "12",
+&"text": "That idea gets me going 😳",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Naomi",
+&"id": "12",
+&"next_id": "13",
+&"text": "Hehe, perv 😝",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Player",
+&"id": "13",
+&"next_id": "14",
+&"text": "Guilty",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Naomi",
+&"id": "14",
+&"next_id": "15",
+&"text": "Maybe I should give you a little peek",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Naomi",
+&"id": "15",
+&"next_id": "16",
+&"text": "img: naomi/27",
+&"type": "dialogue"
+},
+"16": {
+&"id": "16",
+&"next_id": "17",
+&"responses": PackedStringArray("16", "18"),
+&"text": "😳",
+&"type": "response"
+},
+"17": {
+&"character": "Player",
+&"id": "17",
+&"next_id": "20",
+&"text": "😳",
+&"type": "dialogue"
+},
+"18": {
+&"id": "18",
+&"next_id": "19",
+&"text": "🥵",
+&"type": "response"
+},
+"19": {
+&"character": "Player",
+&"id": "19",
+&"next_id": "20",
+&"text": "🥵",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Naomi",
+&"id": "2",
+&"next_id": "3",
+&"text": "You better be on your way",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Naomi",
+&"id": "20",
+&"next_id": "26",
+&"text": "And maybe that was too much 😏",
+&"type": "dialogue"
+},
+"21": {
+&"id": "21",
+&"next_id": "22",
+&"text": "I'll do my best",
+&"type": "response"
+},
+"22": {
+&"character": "Player",
+&"id": "22",
+&"next_id": "23",
+&"text": "I'll do my best",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Naomi",
+&"id": "23",
+&"next_id": "24",
+&"text": "Don't let it stress you out too much",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Naomi",
+&"id": "24",
+&"next_id": "25",
+&"text": "Bad for performance hehe",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Player",
+&"id": "25",
+&"next_id": "26",
+&"text": "😅",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Naomi",
+&"id": "26",
+&"next_id": "27",
+&"text": "See you soon",
+&"type": "dialogue"
+},
+"27": {
+&"id": "27",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "advance_time",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"number",
+&"value": 3
+}]), Array[Dictionary]([{
+&"i": 19,
+&"type": &"number",
+&"value": 30
+}, {
+&"i": 21,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "28",
+&"type": "mutation"
+},
+"28": {
+&"character": "Player",
+&"id": "28",
+&"next_id": "29",
+&"text": "That was... something",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Player",
+&"id": "29",
+&"next_id": "30",
+&"text": "Mostly embarrassment",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Naomi",
+&"id": "3",
+&"next_id": "4",
+&"text": "Can't have you late on me today 😙",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Naomi",
+&"id": "30",
+&"next_id": "31",
+&"text": "Did I really excite you THAT much? 😂",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Player",
+&"id": "31",
+&"next_id": "32",
+&"text": "😅",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Player",
+&"id": "32",
+&"next_id": "33",
+&"text": "Was it obvious?",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Naomi",
+&"id": "33",
+&"next_id": "34",
+&"text": "Oh yeah... your lil friend told on you real hard 😌",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Naomi",
+&"id": "34",
+&"next_id": "35",
+&"text": "Well.. maybe not so little 😉",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Player",
+&"id": "35",
+&"next_id": "36",
+&"text": "Crap! 😆",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Naomi",
+&"id": "36",
+&"next_id": "37",
+&"text": "You had me feeling some type of way too y'know 🫠",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Naomi",
+&"id": "37",
+&"next_id": "38",
+&"text": "It was tough to maintain my composure hehe",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Naomi",
+&"id": "38",
+&"next_id": "39",
+&"text": "Almost made me forget we were doing a photoshoot",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Player",
+&"id": "39",
+&"next_id": "40",
+&"text": "At least you were composed",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Player",
+&"id": "4",
+&"next_id": "5",
+&"text": "On the way!",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Naomi",
+&"id": "40",
+&"next_id": "41",
+&"text": "True, you were so naughty...",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Player",
+&"id": "41",
+&"next_id": "42",
+&"text": "What 😄",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Naomi",
+&"id": "42",
+&"next_id": "43",
+&"text": "I might have done something I would have regretted later 🤤",
+&"type": "dialogue"
+},
+"43": {
+&"id": "43",
+&"next_id": "44",
+&"responses": PackedStringArray("43", "47"),
+&"text": "I wish we were alone",
+&"type": "response"
+},
+"44": {
+&"character": "Player",
+&"id": "44",
+&"next_id": "45",
+&"text": "I wish we were alone",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Naomi",
+&"id": "45",
+&"next_id": "46",
+&"text": "Hey, don't put naughty ideas in my head 😘",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Player",
+&"id": "46",
+&"next_id": "51",
+&"text": "You started it!",
+&"type": "dialogue"
+},
+"47": {
+&"id": "47",
+&"next_id": "48",
+&"text": "Behave Naomi! 😂",
+&"type": "response"
+},
+"48": {
+&"character": "Player",
+&"id": "48",
+&"next_id": "49",
+&"text": "Behave Naomi! 😂",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Naomi",
+&"id": "49",
+&"next_id": "50",
+&"text": "Ah! You're so right 🤭",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Naomi",
+&"id": "5",
+&"next_id": "6",
+&"text": "Good to hear",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Naomi",
+&"id": "50",
+&"next_id": "51",
+&"text": "It's hard to concentrate with all that tension 🥵",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Naomi",
+&"id": "51",
+&"next_id": "52",
+&"text": "I just got the email of the photos!",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Naomi",
+&"id": "52",
+&"next_id": "53",
+&"text": "Wow they look great! 😏",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Player",
+&"id": "53",
+&"next_id": "54",
+&"text": "You gonna show me?",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Naomi",
+&"id": "54",
+&"next_id": "55",
+&"text": "Why?",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Naomi",
+&"id": "55",
+&"next_id": "56",
+&"text": "Didn't you have enough?",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Naomi",
+&"id": "56",
+&"next_id": "57",
+&"text": "Do you wanna see me again that badly? 😙",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Player",
+&"id": "57",
+&"next_id": "58",
+&"text": "Uhh..",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Naomi",
+&"id": "58",
+&"next_id": "59",
+&"text": "You have to wait patiently first because I promised a certain cutie she gets to see them first 😌",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Player",
+&"id": "59",
+&"next_id": "60",
+&"text": "Okay!",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Naomi",
+&"id": "6",
+&"next_id": "7",
+&"text": "Ready? 😉",
+&"type": "dialogue"
+},
+"60": {
+&"id": "60",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_set",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 12,
+&"type": &"array",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 13,
+&"type": &"string",
+&"value": "162"
+}, {
+&"i": 18,
+&"type": &"bracket_close"
+}])])
+}, {
+&"i": 19,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "61",
+&"type": "mutation"
+},
+"61": {
+&"id": "61",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "advance_time",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"number",
+&"value": 0
+}]), Array[Dictionary]([{
+&"i": 19,
+&"type": &"number",
+&"value": 30
+}, {
+&"i": 21,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "62",
+&"type": "mutation"
+},
+"62": {
+&"character": "Naomi",
+&"id": "62",
+&"next_id": "63",
+&"text": "Hmm...",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Naomi",
+&"id": "63",
+&"next_id": "64",
+&"text": "Maybe",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Player",
+&"id": "64",
+&"next_id": "65",
+&"text": "What? Maybe what? 👀",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Naomi",
+&"id": "65",
+&"next_id": "66",
+&"text": "I'll tell you what 🤭",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Naomi",
+&"id": "66",
+&"next_id": "67",
+&"text": "You get to choose between...",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Naomi",
+&"id": "67",
+&"next_id": "68",
+&"text": "Today's pics!",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Naomi",
+&"id": "68",
+&"next_id": "69",
+&"text": "Ooor a very special private one I'll take, just for you",
+&"type": "dialogue"
+},
+"69": {
+&"character": "Player",
+&"id": "69",
+&"next_id": "70",
+&"text": "The torture 😫",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Naomi",
+&"id": "7",
+&"next_id": "8",
+&"text": "Better get your blood rushing for me",
+&"type": "dialogue"
+},
+"70": {
+&"id": "70",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_clear",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 14,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "71",
+&"type": "mutation"
+},
+"71": {
+&"character": "Naomi",
+&"id": "71",
+&"next_id": "72",
+&"text": "🤭",
+&"type": "dialogue"
+},
+"72": {
+&"id": "72",
+&"next_id": "73",
+&"responses": PackedStringArray("72", "84"),
+&"text": "Today's pictures!",
+&"type": "response"
+},
+"73": {
+&"character": "Player",
+&"id": "73",
+&"next_id": "74",
+&"text": "Today's pictures!",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Naomi",
+&"id": "74",
+&"next_id": "75",
+&"text": "Wow, you really do want to see them huh 🤭",
+&"type": "dialogue"
+},
+"75": {
+&"character": "Naomi",
+&"id": "75",
+&"next_id": "76",
+&"text": "Alright then, here you are! 😜",
+&"type": "dialogue"
+},
+"76": {
+&"character": "Naomi",
+&"id": "76",
+&"next_id": "77",
+&"text": "img: naomi/29",
+&"type": "dialogue"
+},
+"77": {
+&"character": "Naomi",
+&"id": "77",
+&"next_id": "78",
+&"text": "img: naomi/30",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Naomi",
+&"id": "78",
+&"next_id": "79",
+&"text": "And my personal favorite!",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Naomi",
+&"id": "79",
+&"next_id": "80",
+&"text": "img: naomi/31",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Naomi",
+&"id": "8",
+&"next_id": "9",
+&"text": "Or else I might have to punish you 🤭",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Player",
+&"id": "80",
+&"next_id": "81",
+&"text": "Wow these look better than I thought!",
+&"type": "dialogue"
+},
+"81": {
+&"character": "Naomi",
+&"id": "81",
+&"next_id": "82",
+&"text": "You're gonna be looking at them for a while huh",
+&"type": "dialogue"
+},
+"82": {
+&"character": "Player",
+&"id": "82",
+&"next_id": "83",
+&"text": "Maybe..",
+&"type": "dialogue"
+},
+"83": {
+&"character": "Naomi",
+&"id": "83",
+&"next_id": "92",
+&"text": "Well thank your girlfriend for allowing them to be sent to you 😌",
+&"type": "dialogue"
+},
+"84": {
+&"id": "84",
+&"next_id": "85",
+&"text": "Secret picture please!",
+&"type": "response"
+},
+"85": {
+&"character": "Player",
+&"id": "85",
+&"next_id": "86",
+&"text": "Secret picture please!",
+&"type": "dialogue"
+},
+"86": {
+&"character": "Naomi",
+&"id": "86",
+&"next_id": "87",
+&"text": "img: naomi/28",
+&"type": "dialogue"
+},
+"87": {
+&"character": "Player",
+&"id": "87",
+&"next_id": "88",
+&"text": "Wow 😳",
+&"type": "dialogue"
+},
+"88": {
+&"character": "Naomi",
+&"id": "88",
+&"next_id": "89",
+&"text": "🤭",
+&"type": "dialogue"
+},
+"89": {
+&"character": "Naomi",
+&"id": "89",
+&"next_id": "90",
+&"text": "Glad you like it 😉",
+&"type": "dialogue"
+},
+"9": {
+&"id": "9",
+&"next_id": "10",
+&"responses": PackedStringArray("9", "21"),
+&"tags": PackedStringArray("redheart"),
+&"text": "That idea gets me going 😳",
+&"type": "response"
+},
+"90": {
+&"character": "Naomi",
+&"id": "90",
+&"next_id": "91",
+&"text": "Consider that your reward!",
+&"type": "dialogue"
+},
+"91": {
+&"character": "Player",
+&"id": "91",
+&"next_id": "92",
+&"text": "Thanks 🤩",
+&"type": "dialogue"
+},
+"92": {
+&"character": "Naomi",
+&"id": "92",
+&"next_id": "93",
+&"text": "Maybe we can do that again some time",
+&"type": "dialogue"
+},
+"93": {
+&"character": "Naomi",
+&"id": "93",
+&"next_id": "94",
+&"text": "But now I'm totally beat 🥱",
+&"type": "dialogue"
+},
+"94": {
+&"character": "Naomi",
+&"id": "94",
+&"next_id": "95",
+&"text": "I think I'll call it a night",
+&"type": "dialogue"
+},
+"95": {
+&"character": "Naomi",
+&"id": "95",
+&"next_id": "96",
+&"text": "But just know that I'll be thinking about what I saw today until I fall asleep 😘",
+&"type": "dialogue"
+},
+"96": {
+&"character": "Player",
+&"id": "96",
+&"next_id": "97",
+&"text": "Oh no 😆",
+&"type": "dialogue"
+},
+"97": {
+&"character": "Player",
+&"id": "97",
+&"next_id": "98",
+&"text": "I might just be doing the same 🥵",
+&"type": "dialogue"
+},
+"98": {
+&"character": "Naomi",
+&"id": "98",
+&"next_id": "99",
+&"text": "You better.",
+&"type": "dialogue"
+},
+"99": {
+&"character": "Naomi",
+&"id": "99",
+&"next_id": "100",
+&"text": "Good night big boy 😘",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+Naomi: You better be on your way
+Naomi: Can't have you late on me today 😙
+Player: On the way!
+Naomi: Good to hear
+Naomi: Ready? 😉
+Naomi: Better get your blood rushing for me
+Naomi: Or else I might have to punish you 🤭
+- That idea gets me going 😳 [#redheart]
+	set Story.red_heart += 1
+	Player: That idea gets me going 😳
+	Naomi: Hehe, perv 😝
+	Player: Guilty
+	Naomi: Maybe I should give you a little peek
+	Naomi: img: naomi/27
+	- 😳
+		Player: 😳
+	- 🥵
+		Player: 🥵
+	Naomi: And maybe that was too much 😏
+- I'll do my best
+	Player: I'll do my best
+	Naomi: Don't let it stress you out too much
+	Naomi: Bad for performance hehe
+	Player: 😅
+Naomi: See you soon
+do advance_time(3, 30)
+Player: That was... something
+Player: Mostly embarrassment
+Naomi: Did I really excite you THAT much? 😂
+Player: 😅
+Player: Was it obvious?
+Naomi: Oh yeah... your lil friend told on you real hard 😌
+Naomi: Well.. maybe not so little 😉
+Player: Crap! 😆
+Naomi: You had me feeling some type of way too y'know 🫠
+Naomi: It was tough to maintain my composure hehe
+Naomi: Almost made me forget we were doing a photoshoot
+Player: At least you were composed
+Naomi: True, you were so naughty...
+Player: What 😄
+Naomi: I might have done something I would have regretted later 🤤
+- I wish we were alone
+	Player: I wish we were alone
+	Naomi: Hey, don't put naughty ideas in my head 😘
+	Player: You started it!
+- Behave Naomi! 😂
+	Player: Behave Naomi! 😂
+	Naomi: Ah! You're so right 🤭
+	Naomi: It's hard to concentrate with all that tension 🥵
+Naomi: I just got the email of the photos!
+Naomi: Wow they look great! 😏
+Player: You gonna show me?
+Naomi: Why?
+Naomi: Didn't you have enough?
+Naomi: Do you wanna see me again that badly? 😙
+Player: Uhh..
+Naomi: You have to wait patiently first because I promised a certain cutie she gets to see them first 😌
+Player: Okay!
+do echo_set([\"162\"])
+do advance_time(0, 30)
+Naomi: Hmm...
+Naomi: Maybe
+Player: What? Maybe what? 👀
+Naomi: I'll tell you what 🤭
+Naomi: You get to choose between...
+Naomi: Today's pics!
+Naomi: Ooor a very special private one I'll take, just for you
+Player: The torture 😫
+do echo_clear()
+Naomi: 🤭
+- Today's pictures!
+	Player: Today's pictures!
+	Naomi: Wow, you really do want to see them huh 🤭
+	Naomi: Alright then, here you are! 😜
+	Naomi: img: naomi/29
+	Naomi: img: naomi/30
+	Naomi: And my personal favorite!
+	Naomi: img: naomi/31
+	Player: Wow these look better than I thought!
+	Naomi: You're gonna be looking at them for a while huh
+	Player: Maybe..
+	Naomi: Well thank your girlfriend for allowing them to be sent to you 😌
+- Secret picture please!
+	Player: Secret picture please!
+	Naomi: img: naomi/28
+	Player: Wow 😳
+	Naomi: 🤭
+	Naomi: Glad you like it 😉
+	Naomi: Consider that your reward!
+	Player: Thanks 🤩
+Naomi: Maybe we can do that again some time
+Naomi: But now I'm totally beat 🥱
+Naomi: I think I'll call it a night
+Naomi: But just know that I'll be thinking about what I saw today until I fall asleep 😘
+Player: Oh no 😆
+Player: I might just be doing the same 🥵
+Naomi: You better.
+Naomi: Good night big boy 😘
+Naomi: And thanks for helping us out
+if Story.has_flag(\"LUST\"):
+	Naomi: See ya at the party tomorrow 😉
+Player: Anytime! Gn
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

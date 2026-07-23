@@ -1,0 +1,1046 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_0o77y"]
+
+[resource]
+script = ExtResource("1_0o77y")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Jason", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Jason",
+&"id": "10",
+&"next_id": "11",
+&"text": "Yessir",
+&"type": "dialogue"
+},
+"100": {
+&"character": "Jason",
+&"id": "100",
+&"next_id": "101",
+&"text": "She is scorching",
+&"type": "dialogue"
+},
+"101": {
+&"character": "Jason",
+&"id": "101",
+&"next_id": "105",
+&"text": "Got any pics for me tonight?",
+&"type": "dialogue"
+},
+"104": {
+&"id": "104",
+&"next_id": "105",
+&"type": ""
+},
+"105": {
+&"character": "Jason",
+&"id": "105",
+&"next_id": "106",
+&"notes": "CUTE PIC
+MILD PIC
+HOT PIC",
+&"text": "DAMN SON 🤯",
+&"type": "dialogue"
+},
+"106": {
+&"character": "Jason",
+&"id": "106",
+&"next_id": "107",
+&"text": "She is FINE 😩",
+&"type": "dialogue"
+},
+"107": {
+&"character": "Jason",
+&"id": "107",
+&"next_id": "108",
+&"text": "My imagination's pretty good too",
+&"type": "dialogue"
+},
+"108": {
+&"character": "Jason",
+&"id": "108",
+&"next_id": "109",
+&"text": "I already know what's under those clothes and it's pure sweet honey 😛",
+&"type": "dialogue"
+},
+"109": {
+&"character": "Jason",
+&"id": "109",
+&"next_id": "110",
+&"text": "You inviting me to beat my meat to your girl?",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Jason",
+&"id": "11",
+&"next_id": "12",
+&"text": "I'm 4 bottles into this drought",
+&"type": "dialogue"
+},
+"110": {
+&"character": "Player",
+&"id": "110",
+&"next_id": "111",
+&"text": "Maybe",
+&"type": "dialogue"
+},
+"111": {
+&"character": "Jason",
+&"id": "111",
+&"next_id": "112",
+&"text": "You are a serious bro, y'know that?",
+&"type": "dialogue"
+},
+"112": {
+&"character": "Jason",
+&"id": "112",
+&"next_id": "113",
+&"text": "Taking sharing to the next level",
+&"type": "dialogue"
+},
+"113": {
+&"character": "Jason",
+&"id": "113",
+&"next_id": "114",
+&"text": "Brings a tear to my eye... and cum in my pants",
+&"type": "dialogue"
+},
+"114": {
+&"character": "Jason",
+&"id": "114",
+&"next_id": "115",
+&"text": "Lmao sorry, I'll do it quietly",
+&"type": "dialogue"
+},
+"115": {
+&"character": "Player",
+&"id": "115",
+&"next_id": "116",
+&"text": "😆😁",
+&"type": "dialogue"
+},
+"116": {
+&"character": "Jason",
+&"id": "116",
+&"next_id": "117",
+&"text": "I treasure your friendship amigo",
+&"type": "dialogue"
+},
+"117": {
+&"character": "Jason",
+&"id": "117",
+&"next_id": "118",
+&"text": "Now I'm about to get freaky",
+&"type": "dialogue"
+},
+"118": {
+&"id": "118",
+&"next_id": "119",
+&"responses": PackedStringArray("118"),
+&"text": "Rather not say",
+&"type": "response"
+},
+"119": {
+&"character": "Player",
+&"id": "119",
+&"next_id": "120",
+&"text": "Rather not say",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Player",
+&"id": "12",
+&"next_id": "13",
+&"text": "Drunk on a weekday? Haha",
+&"type": "dialogue"
+},
+"120": {
+&"character": "Jason",
+&"id": "120",
+&"next_id": "121",
+&"text": "Awwh man, I'm all jealous now lmao",
+&"type": "dialogue"
+},
+"121": {
+&"character": "Jason",
+&"id": "121",
+&"next_id": "122",
+&"text": "I thought we had a connection",
+&"type": "dialogue"
+},
+"122": {
+&"character": "Jason",
+&"id": "122",
+&"next_id": "123",
+&"text": "But dw, I know some dudes like to keep their cards to their chest 🤪",
+&"type": "dialogue"
+},
+"123": {
+&"character": "Player",
+&"id": "123",
+&"next_id": "124",
+&"text": "That's me",
+&"type": "dialogue"
+},
+"124": {
+&"character": "Jason",
+&"id": "124",
+&"next_id": "126",
+&"text": "Well then...",
+&"type": "dialogue"
+},
+"125": {
+&"id": "125",
+&"next_id": "126",
+&"type": ""
+},
+"126": {
+&"character": "Jason",
+&"id": "126",
+&"next_id": "127",
+&"notes": "I GOT STUFF TO DO",
+&"text": "Wish me luck my dude 😏",
+&"type": "dialogue"
+},
+"127": {
+&"character": "Player",
+&"id": "127",
+&"next_id": "128",
+&"text": "Take it easy 😆",
+&"type": "dialogue"
+},
+"128": {
+&"id": "128",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"129": {
+&"id": "129",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"13": {
+&"character": "Jason",
+&"id": "13",
+&"next_id": "14",
+&"text": "I don't get drunk that quick chief",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Jason",
+&"id": "14",
+&"next_id": "15",
+&"text": "Though sometimes I drink before a tussel if you catch my meaning 😉",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Jason",
+&"id": "15",
+&"next_id": "16",
+&"text": "Lots of dudes say they can't even get hard but not me, no sir",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Jason",
+&"id": "16",
+&"next_id": "17",
+&"text": "I get extra hard and go ham!",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Jason",
+&"id": "17",
+&"next_id": "18",
+&"text": "Girls be begging to slow down but they cum harder than they ever had in their lives 😂",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Player",
+&"id": "18",
+&"next_id": "19",
+&"text": "Wow, it's like your secret weapon",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Jason",
+&"id": "19",
+&"next_id": "20",
+&"text": "Yeah, shame I can't celebrate rn 😁",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Jason",
+&"id": "2",
+&"next_id": "3",
+&"text": "Yo duuuude",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Jason",
+&"id": "20",
+&"next_id": "21",
+&"text": "I'm feelin' real down lol",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Player",
+&"id": "21",
+&"next_id": "22",
+&"text": "What's the plan then?",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Jason",
+&"id": "22",
+&"next_id": "23",
+&"text": "Guess I gotta whip it out and stroke y'know? Fuck it 😂",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Player",
+&"id": "23",
+&"next_id": "24",
+&"text": "TOO MUCH INFO 😂",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Jason",
+&"id": "24",
+&"next_id": "25",
+&"text": "Lmao dw, I'm not a freak",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Jason",
+&"id": "25",
+&"next_id": "26",
+&"text": "I won't be randomly doing it while texting you 😆",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Jason",
+&"id": "26",
+&"next_id": "27",
+&"text": "I don't swing that way lol",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Player",
+&"id": "27",
+&"next_id": "28",
+&"text": "Phew! 😮‍💨",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Jason",
+&"id": "28",
+&"next_id": "29",
+&"text": "But I do want to know what you think",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Player",
+&"id": "29",
+&"next_id": "30",
+&"text": "About what?",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Jason",
+&"id": "3",
+&"next_id": "4",
+&"text": "Wazzuuup",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Jason",
+&"id": "30",
+&"next_id": "31",
+&"text": "About which one was hotter dawg",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Jason",
+&"id": "31",
+&"next_id": "33",
+&"text": "You down for some bro talk?",
+&"type": "dialogue"
+},
+"32": {
+&"id": "32",
+&"next_id": "33",
+&"type": ""
+},
+"33": {
+&"character": "Jason",
+&"id": "33",
+&"next_id": "34",
+&"notes": "YES",
+&"text": "The blondie was Erika",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Jason",
+&"id": "34",
+&"next_id": "35",
+&"text": "She was thicc and had huge tits dude",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Jason",
+&"id": "35",
+&"next_id": "36",
+&"text": "I felt like a baby again suckin on those things 😛",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Jason",
+&"id": "36",
+&"next_id": "37",
+&"text": "She was so deep too, she just kept swallowing me all up with a smile on her face 😩",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Player",
+&"id": "37",
+&"next_id": "38",
+&"text": "That sounds intense",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Jason",
+&"id": "38",
+&"next_id": "39",
+&"text": "You'd think so but she actually quite gentle about the whole thing somehow",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Jason",
+&"id": "39",
+&"next_id": "40",
+&"text": "Even though I was hittin it HARD lmao",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Player",
+&"id": "4",
+&"next_id": "5",
+&"text": "Hey, not much!",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Jason",
+&"id": "40",
+&"next_id": "41",
+&"text": "It really was a goddess pussy",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Player",
+&"id": "41",
+&"next_id": "42",
+&"text": "Lucky dude",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Jason",
+&"id": "42",
+&"next_id": "43",
+&"text": "You know it",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Jason",
+&"id": "43",
+&"next_id": "44",
+&"text": "But the feisty one was Val, that brunette from our class",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Jason",
+&"id": "44",
+&"next_id": "45",
+&"text": "She wouldn't let me get off of her 😝",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Jason",
+&"id": "45",
+&"next_id": "46",
+&"text": "She was so frantically thrusting and grabbing my hand to squeeze her tits n shit",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Jason",
+&"id": "46",
+&"next_id": "47",
+&"text": "I don't think I've had a girl that had a pussy with a death grip before",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Player",
+&"id": "47",
+&"next_id": "48",
+&"text": "That's crazy 😳",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Jason",
+&"id": "48",
+&"next_id": "49",
+&"text": "Okay nuff about me",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Jason",
+&"id": "49",
+&"next_id": "50",
+&"text": "I wanna know which one you'd hit if you could",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Jason",
+&"id": "5",
+&"next_id": "6",
+&"text": "I can't sleep dawg",
+&"type": "dialogue"
+},
+"50": {
+&"id": "50",
+&"next_id": "51",
+&"responses": PackedStringArray("50"),
+&"text": "I'd pick Erika",
+&"type": "response"
+},
+"51": {
+&"character": "Player",
+&"id": "51",
+&"next_id": "52",
+&"text": "I'd pick Erika from the sound of it",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Jason",
+&"id": "52",
+&"next_id": "53",
+&"text": "You are a wise man my friend",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Jason",
+&"id": "53",
+&"next_id": "54",
+&"text": "She is born and bred a S L U T",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Player",
+&"id": "54",
+&"next_id": "55",
+&"text": "That's hot",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Jason",
+&"id": "55",
+&"next_id": "56",
+&"text": "Oh yeah. She's got the college record for having the most boys in the bedroom at once too",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Player",
+&"id": "56",
+&"next_id": "57",
+&"text": "How many? 😳",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Jason",
+&"id": "57",
+&"next_id": "58",
+&"text": "14 or 15, fuck if I know",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Jason",
+&"id": "58",
+&"next_id": "59",
+&"text": "She went through them all with energy to spare",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Jason",
+&"id": "59",
+&"next_id": "60",
+&"text": "🤤",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Jason",
+&"id": "6",
+&"next_id": "7",
+&"text": "I wanted to find a girl for the night but jeez the club's closed for building maintenance",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Jason",
+&"id": "60",
+&"next_id": "61",
+&"text": "If that's the case, I might have to put in a good word for you",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Player",
+&"id": "61",
+&"next_id": "62",
+&"text": "Seriously? 😳",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Jason",
+&"id": "62",
+&"next_id": "63",
+&"text": "Hell yeah dude",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Jason",
+&"id": "63",
+&"next_id": "64",
+&"text": "Think I'm here to just tease you about shit?",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Jason",
+&"id": "64",
+&"next_id": "65",
+&"text": "Nah, bros stick up for each other and share",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Jason",
+&"id": "65",
+&"next_id": "67",
+&"text": "She sent me this today",
+&"type": "dialogue"
+},
+"66": {
+&"id": "66",
+&"next_id": "67",
+&"type": ""
+},
+"67": {
+&"id": "67",
+&"next_id": "68",
+&"responses": PackedStringArray("67"),
+&"text": "Val's my type",
+&"type": "response"
+},
+"68": {
+&"character": "Player",
+&"id": "68",
+&"next_id": "69",
+&"notes": "Erika upskirt",
+&"text": "Val's my type",
+&"type": "dialogue"
+},
+"69": {
+&"character": "Jason",
+&"id": "69",
+&"next_id": "70",
+&"text": "I figured you'd say that",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Jason",
+&"id": "7",
+&"next_id": "8",
+&"text": "Tsk, heartless bastards",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Jason",
+&"id": "70",
+&"next_id": "71",
+&"text": "She got that crazy little lady type that I figured you'd like",
+&"type": "dialogue"
+},
+"71": {
+&"character": "Jason",
+&"id": "71",
+&"next_id": "72",
+&"text": "I may have mentioned it before but she is totally damaged",
+&"type": "dialogue"
+},
+"72": {
+&"character": "Player",
+&"id": "72",
+&"next_id": "73",
+&"text": "What you mean?",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Jason",
+&"id": "73",
+&"next_id": "74",
+&"text": "I mean like, you can tell someone drove this girl crazy to be this way",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Jason",
+&"id": "74",
+&"next_id": "75",
+&"text": "Almost like she's got two personalities or something",
+&"type": "dialogue"
+},
+"75": {
+&"character": "Jason",
+&"id": "75",
+&"next_id": "76",
+&"text": "I'm not a brain scientist though, just a dick doctor",
+&"type": "dialogue"
+},
+"76": {
+&"character": "Jason",
+&"id": "76",
+&"next_id": "77",
+&"text": "And that's my diagnosis",
+&"type": "dialogue"
+},
+"77": {
+&"character": "Jason",
+&"id": "77",
+&"next_id": "78",
+&"text": "It works out though, her body is chiseled tightly 🤤",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Jason",
+&"id": "78",
+&"next_id": "79",
+&"text": "If that's the case, I might have to put in a good word for you",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Player",
+&"id": "79",
+&"next_id": "80",
+&"text": "Seriously? 😳",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Jason",
+&"id": "8",
+&"next_id": "9",
+&"text": "Leavin me out here all dry and shit 😭😭",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Jason",
+&"id": "80",
+&"next_id": "81",
+&"text": "Hell yeah dude",
+&"type": "dialogue"
+},
+"81": {
+&"character": "Jason",
+&"id": "81",
+&"next_id": "82",
+&"text": "Think I'm here to just tease you about shit?",
+&"type": "dialogue"
+},
+"82": {
+&"character": "Jason",
+&"id": "82",
+&"next_id": "83",
+&"text": "Nah, bros stick up for each other and share",
+&"type": "dialogue"
+},
+"83": {
+&"character": "Jason",
+&"id": "83",
+&"next_id": "85",
+&"text": "This was her today",
+&"type": "dialogue"
+},
+"84": {
+&"id": "84",
+&"next_id": "85",
+&"type": ""
+},
+"85": {
+&"id": "85",
+&"next_id": "86",
+&"responses": PackedStringArray("85"),
+&"text": "Neither tbh",
+&"type": "response"
+},
+"86": {
+&"character": "Player",
+&"id": "86",
+&"next_id": "87",
+&"notes": "Val pic",
+&"text": "Neither tbh",
+&"type": "dialogue"
+},
+"87": {
+&"character": "Jason",
+&"id": "87",
+&"next_id": "88",
+&"text": "Wow, hard man to please then haha",
+&"type": "dialogue"
+},
+"88": {
+&"character": "Jason",
+&"id": "88",
+&"next_id": "89",
+&"text": "Wanted to share my spoils of war with you but was not expecting that answer",
+&"type": "dialogue"
+},
+"89": {
+&"character": "Jason",
+&"id": "89",
+&"next_id": "90",
+&"text": "Bros sticking up for each other and all y'know??",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Player",
+&"id": "9",
+&"next_id": "10",
+&"text": "That sucks! 😞",
+&"type": "dialogue"
+},
+"90": {
+&"character": "Player",
+&"id": "90",
+&"next_id": "91",
+&"text": "Thanks though!",
+&"type": "dialogue"
+},
+"91": {
+&"character": "Jason",
+&"id": "91",
+&"next_id": "94",
+&"text": "Fuck, I just let out a huge burp",
+&"type": "dialogue"
+},
+"93": {
+&"id": "93",
+&"next_id": "94",
+&"type": ""
+},
+"94": {
+&"character": "Jason",
+&"id": "94",
+&"next_id": "96",
+&"notes": "if Jason knows gf",
+&"text": "Oh right, you also got that baddie bagged up 🥵",
+&"type": "dialogue"
+},
+"95": {
+&"id": "95",
+&"next_id": "96",
+&"type": ""
+},
+"96": {
+&"id": "96",
+&"next_id": "98",
+&"responses": PackedStringArray("96"),
+&"text": "My girl is hot too isn't she?",
+&"type": "response"
+},
+"97": {
+&"id": "97",
+&"next_id": "98",
+&"type": ""
+},
+"98": {
+&"character": "Player",
+&"id": "98",
+&"next_id": "99",
+&"notes": "Mabel doing HW echo
+Jason pursues Mabel",
+&"text": "My girl's hot too isn't she?",
+&"type": "dialogue"
+},
+"99": {
+&"character": "Jason",
+&"id": "99",
+&"next_id": "100",
+&"text": "I won't lie bro 👀",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+Jason: Yo duuuude
+Jason: Wazzuuup
+Player: Hey, not much!
+Jason: I can't sleep dawg
+Jason: I wanted to find a girl for the night but jeez the club's closed for building maintenance
+Jason: Tsk, heartless bastards
+Jason: Leavin me out here all dry and shit 😭😭
+Player: That sucks! 😞
+Jason: Yessir
+Jason: I'm 4 bottles into this drought
+Player: Drunk on a weekday? Haha
+Jason: I don't get drunk that quick chief
+Jason: Though sometimes I drink before a tussel if you catch my meaning 😉
+Jason: Lots of dudes say they can't even get hard but not me, no sir
+Jason: I get extra hard and go ham!
+Jason: Girls be begging to slow down but they cum harder than they ever had in their lives 😂
+Player: Wow, it's like your secret weapon
+Jason: Yeah, shame I can't celebrate rn 😁
+Jason: I'm feelin' real down lol
+Player: What's the plan then?
+Jason: Guess I gotta whip it out and stroke y'know? Fuck it 😂
+Player: TOO MUCH INFO 😂
+Jason: Lmao dw, I'm not a freak
+Jason: I won't be randomly doing it while texting you 😆
+Jason: I don't swing that way lol
+Player: Phew! 😮‍💨
+Jason: But I do want to know what you think
+Player: About what?
+Jason: About which one was hotter dawg
+Jason: You down for some bro talk?
+##YES
+    Jason: The blondie was Erika
+    Jason: She was thicc and had huge tits dude
+    Jason: I felt like a baby again suckin on those things 😛
+    Jason: She was so deep too, she just kept swallowing me all up with a smile on her face 😩
+    Player: That sounds intense
+    Jason: You'd think so but she actually quite gentle about the whole thing somehow
+    Jason: Even though I was hittin it HARD lmao
+    Jason: It really was a goddess pussy
+    Player: Lucky dude
+    Jason: You know it
+    Jason: But the feisty one was Val, that brunette from our class
+    Jason: She wouldn't let me get off of her 😝
+    Jason: She was so frantically thrusting and grabbing my hand to squeeze her tits n shit
+    Jason: I don't think I've had a girl that had a pussy with a death grip before
+    Player: That's crazy 😳
+    Jason: Okay nuff about me
+    Jason: I wanna know which one you'd hit if you could
+    - I'd pick Erika
+        Player: I'd pick Erika from the sound of it
+        Jason: You are a wise man my friend
+        Jason: She is born and bred a S L U T
+        Player: That's hot
+        Jason: Oh yeah. She's got the college record for having the most boys in the bedroom at once too
+        Player: How many? 😳
+        Jason: 14 or 15, fuck if I know
+        Jason: She went through them all with energy to spare
+        Jason: 🤤
+        Jason: If that's the case, I might have to put in a good word for you
+        Player: Seriously? 😳
+        Jason: Hell yeah dude
+        Jason: Think I'm here to just tease you about shit?
+        Jason: Nah, bros stick up for each other and share
+        Jason: She sent me this today
+        ##Erika upskirt
+    - Val's my type
+        Player: Val's my type
+        Jason: I figured you'd say that
+        Jason: She got that crazy little lady type that I figured you'd like
+        Jason: I may have mentioned it before but she is totally damaged
+        Player: What you mean?
+        Jason: I mean like, you can tell someone drove this girl crazy to be this way
+        Jason: Almost like she's got two personalities or something
+        Jason: I'm not a brain scientist though, just a dick doctor
+        Jason: And that's my diagnosis
+        Jason: It works out though, her body is chiseled tightly 🤤
+        Jason: If that's the case, I might have to put in a good word for you
+        Player: Seriously? 😳
+        Jason: Hell yeah dude
+        Jason: Think I'm here to just tease you about shit?
+        Jason: Nah, bros stick up for each other and share
+        Jason: This was her today
+        ##Val pic
+    - Neither tbh
+        Player: Neither tbh
+        Jason: Wow, hard man to please then haha
+        Jason: Wanted to share my spoils of war with you but was not expecting that answer
+        Jason: Bros sticking up for each other and all y'know??
+        Player: Thanks though!
+    Jason: Fuck, I just let out a huge burp
+    
+    ##if Jason knows gf
+    Jason: Oh right, you also got that baddie bagged up 🥵
+    ##Mabel doing HW echo
+    - My girl is hot too isn't she?
+        ##Jason pursues Mabel
+        Player: My girl's hot too isn't she?
+        Jason: I won't lie bro 👀
+        Jason: She is scorching
+        Jason: Got any pics for me tonight?
+        ##CUTE PIC
+        ##MILD PIC
+        ##HOT PIC
+            Jason: DAMN SON 🤯
+            Jason: She is FINE 😩
+            Jason: My imagination's pretty good too
+            Jason: I already know what's under those clothes and it's pure sweet honey 😛
+            Jason: You inviting me to beat my meat to your girl?
+            Player: Maybe
+            Jason: You are a serious bro, y'know that? 
+            Jason: Taking sharing to the next level
+            Jason: Brings a tear to my eye... and cum in my pants
+            Jason: Lmao sorry, I'll do it quietly
+            Player: 😆😁
+            Jason: I treasure your friendship amigo
+            Jason: Now I'm about to get freaky
+    - Rather not say
+        Player: Rather not say
+        Jason: Awwh man, I'm all jealous now lmao
+        Jason: I thought we had a connection
+        Jason: But dw, I know some dudes like to keep their cards to their chest 🤪
+        Player: That's me
+        Jason: Well then...
+##I GOT STUFF TO DO
+Jason: Wish me luck my dude 😏
+Player: Take it easy 😆
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

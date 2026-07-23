@@ -1,0 +1,706 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_5g2ac"]
+
+[resource]
+script = ExtResource("1_5g2ac")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Mabel", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Player",
+&"id": "10",
+&"next_id": "11",
+&"text": "Mhmm!",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Mabel",
+&"id": "11",
+&"next_id": "12",
+&"text": "Naomi told me she texted you this morning!",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Mabel",
+&"id": "12",
+&"next_id": "13",
+&"text": "So? What did you think??",
+&"type": "dialogue"
+},
+"13": {
+&"id": "13",
+&"next_id": "14",
+&"responses": PackedStringArray("13", "17"),
+&"tags": PackedStringArray("trust"),
+&"text": "She seems nice!",
+&"type": "response"
+},
+"14": {
+&"id": "14",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "15",
+&"type": "mutation"
+},
+"15": {
+&"character": "Player",
+&"id": "15",
+&"next_id": "16",
+&"text": "She seems nice!",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Mabel",
+&"id": "16",
+&"next_id": "19",
+&"text": "Right?? You'll see she's so polite and easy to talk to in person",
+&"type": "dialogue"
+},
+"17": {
+&"id": "17",
+&"next_id": "18",
+&"text": "It was alright",
+&"type": "response"
+},
+"18": {
+&"character": "Player",
+&"id": "18",
+&"next_id": "19",
+&"text": "It was alright",
+&"type": "dialogue"
+},
+"19": {
+&"id": "19",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "social_post",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 15,
+&"type": &"string",
+&"value": "naomi_spank"
+}, {
+&"i": 28,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "20",
+&"type": "mutation"
+},
+"2": {
+&"id": "2",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "social_post",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 15,
+&"type": &"string",
+&"value": "collegelife_clubreg"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "3",
+&"type": "mutation"
+},
+"20": {
+&"character": "Mabel",
+&"id": "20",
+&"next_id": "21",
+&"text": "I can't wait for you to meet them hehe",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Mabel",
+&"id": "21",
+&"next_id": "22",
+&"text": "Well I haven't met ALL of them either but y'know! 😁",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Mabel",
+&"id": "22",
+&"next_id": "23",
+&"text": "I'm a little flustered already too",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Player",
+&"id": "23",
+&"next_id": "24",
+&"text": "You've become quite social in only 2 weeks",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Mabel",
+&"id": "24",
+&"next_id": "25",
+&"text": "😳",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Mabel",
+&"id": "25",
+&"next_id": "26",
+&"text": "No way.",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Mabel",
+&"id": "26",
+&"next_id": "27",
+&"text": "Really?",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Player",
+&"id": "27",
+&"next_id": "28",
+&"text": "Really really 😂",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Mabel",
+&"id": "28",
+&"next_id": "29",
+&"text": "I think you're right",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Mabel",
+&"id": "29",
+&"next_id": "30",
+&"text": "But I can't stop smiling for some reason hehe",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Mabel",
+&"id": "3",
+&"next_id": "4",
+&"text": "DONEE",
+&"type": "dialogue"
+},
+"30": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"i": 9,
+&"type": &"variable",
+&"value": "mabel_desire"
+}, {
+&"i": 22,
+&"type": &"comparison",
+&"value": "<="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 0
+}])
+},
+&"id": "30",
+&"next_id": "31",
+&"next_id_after": "40",
+&"type": "condition"
+},
+"31": {
+&"character": "Mabel",
+&"id": "31",
+&"next_id": "32",
+&"text": "I wish you were here",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Mabel",
+&"id": "32",
+&"next_id": "33",
+&"text": "Lying right next to me 🤭",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Player",
+&"id": "33",
+&"next_id": "34",
+&"text": "Me too 😍",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Mabel",
+&"id": "34",
+&"next_id": "35",
+&"text": "I feel like I could pass out right here right now",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Mabel",
+&"id": "35",
+&"next_id": "36",
+&"text": "I'd want you to be right next to me when I fall asleep and wake up 🥰",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Mabel",
+&"id": "36",
+&"next_id": "37",
+&"text": "Thought: Maybe you could massage my sore butt a little too hehe",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Mabel",
+&"id": "37",
+&"next_id": "38",
+&"text": "Do I look silly? 🤪😂",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Player",
+&"id": "38",
+&"next_id": "39",
+&"text": "Cute!",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Mabel",
+&"id": "39",
+&"next_id": "40",
+&"text": "Gee 🥰",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Mabel",
+&"id": "4",
+&"next_id": "5",
+&"text": "Yippeee",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Mabel",
+&"id": "40",
+&"next_id": "41",
+&"text": "Speaking of all this",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Mabel",
+&"id": "41",
+&"next_id": "42",
+&"text": "Club invites are going out next week!",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Mabel",
+&"id": "42",
+&"next_id": "43",
+&"text": "CollegeLife recommends that we join one",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Player",
+&"id": "43",
+&"next_id": "44",
+&"text": "Any ideas on which one you think you're applying to?",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Mabel",
+&"id": "44",
+&"next_id": "45",
+&"text": "Hmm what do you think? I think the answer is totally obvious! 😌",
+&"type": "dialogue"
+},
+"45": {
+&"id": "45",
+&"next_id": "46",
+&"responses": PackedStringArray("45", "50"),
+&"tags": PackedStringArray("trust"),
+&"text": "Photography Club?",
+&"type": "response"
+},
+"46": {
+&"id": "46",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "47",
+&"type": "mutation"
+},
+"47": {
+&"character": "Player",
+&"id": "47",
+&"next_id": "48",
+&"text": "Photography Club?",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Mabel",
+&"id": "48",
+&"next_id": "49",
+&"text": "Mhmm!",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Mabel",
+&"id": "49",
+&"next_id": "57",
+&"text": "I plan on it!",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Mabel",
+&"id": "5",
+&"next_id": "6",
+&"text": "First week is over 🥳",
+&"type": "dialogue"
+},
+"50": {
+&"id": "50",
+&"next_id": "51",
+&"tags": PackedStringArray("distrust"),
+&"text": "Sorority right?",
+&"type": "response"
+},
+"51": {
+&"id": "51",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "-="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "52",
+&"type": "mutation"
+},
+"52": {
+&"character": "Player",
+&"id": "52",
+&"next_id": "53",
+&"text": "Sorority right?",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Mabel",
+&"id": "53",
+&"next_id": "54",
+&"text": "Wait you thought?",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Mabel",
+&"id": "54",
+&"next_id": "55",
+&"text": "Seriously? 😅",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Mabel",
+&"id": "55",
+&"next_id": "56",
+&"text": "You think I'd be a good match there? Idk",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Mabel",
+&"id": "56",
+&"next_id": "57",
+&"text": "I know Nina wants me to join",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Mabel",
+&"id": "57",
+&"next_id": "58",
+&"text": "Well I haven't decided yet but we'll see!",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Mabel",
+&"id": "58",
+&"next_id": "59",
+&"text": "I better hurry up and decide then 🥰",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Mabel",
+&"id": "59",
+&"next_id": "60",
+&"text": "What about you?",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Player",
+&"id": "6",
+&"next_id": "7",
+&"text": "Same, can catch our breath now",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Player",
+&"id": "60",
+&"next_id": "61",
+&"text": "Might be hard with work but I'll see too",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Mabel",
+&"id": "61",
+&"next_id": "62",
+&"text": "Oh right!",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Mabel",
+&"id": "62",
+&"next_id": "63",
+&"text": "You're such a hard worker when you put your mind to it 🥰",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Mabel",
+&"id": "63",
+&"next_id": "64",
+&"text": "Okay then, I'll do some homework now!",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Mabel",
+&"id": "64",
+&"next_id": "65",
+&"text": "I want the weekend to be free!",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Mabel",
+&"id": "65",
+&"next_id": "66",
+&"text": "Ttyl okay?",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Player",
+&"id": "66",
+&"next_id": "67",
+&"text": "Gn gn!",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Mabel",
+&"id": "67",
+&"next_id": "68",
+&"text": "Gn",
+&"type": "dialogue"
+},
+"68": {
+&"id": "68",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"69": {
+&"id": "69",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"7": {
+&"character": "Mabel",
+&"id": "7",
+&"next_id": "8",
+&"text": "😮‍💨",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Mabel",
+&"id": "8",
+&"next_id": "9",
+&"text": "I can't wait for tomorrow 🥰",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Mabel",
+&"id": "9",
+&"next_id": "10",
+&"text": "Are you as excited as I am??",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+do social_post(\"collegelife_clubreg\")
+Mabel: DONEE
+Mabel: Yippeee
+Mabel: First week is over 🥳
+Player: Same, can catch our breath now
+Mabel: 😮‍💨
+Mabel: I can't wait for tomorrow 🥰
+Mabel: Are you as excited as I am??
+Player: Mhmm!
+Mabel: Naomi told me she texted you this morning!
+Mabel: So? What did you think??
+- She seems nice! [#trust]
+	set Story.mabel_trust += 1
+	Player: She seems nice!
+	Mabel: Right?? You'll see she's so polite and easy to talk to in person
+- It was alright
+	Player: It was alright
+do social_post(\"naomi_spank\")
+Mabel: I can't wait for you to meet them hehe
+Mabel: Well I haven't met ALL of them either but y'know! 😁
+Mabel: I'm a little flustered already too
+Player: You've become quite social in only 2 weeks
+Mabel: 😳
+Mabel: No way.
+Mabel: Really?
+Player: Really really 😂
+Mabel: I think you're right
+Mabel: But I can't stop smiling for some reason hehe
+if Story.mabel_desire <= 0:
+	Mabel: I wish you were here
+	Mabel: Lying right next to me 🤭
+	Player: Me too 😍
+	Mabel: I feel like I could pass out right here right now
+	Mabel: I'd want you to be right next to me when I fall asleep and wake up 🥰
+	Mabel: Thought: Maybe you could massage my sore butt a little too hehe
+	Mabel: Do I look silly? 🤪😂
+	Player: Cute!
+	Mabel: Gee 🥰
+Mabel: Speaking of all this
+Mabel: Club invites are going out next week!
+Mabel: CollegeLife recommends that we join one
+Player: Any ideas on which one you think you're applying to?
+Mabel: Hmm what do you think? I think the answer is totally obvious! 😌
+- Photography Club? [#trust]
+	set Story.mabel_trust += 1
+	Player: Photography Club?
+	Mabel: Mhmm!
+	Mabel: I plan on it!
+- Sorority right? [#distrust]
+	set Story.mabel_trust -= 1
+	Player: Sorority right?
+	Mabel: Wait you thought?
+	Mabel: Seriously? 😅
+	Mabel: You think I'd be a good match there? Idk
+	Mabel: I know Nina wants me to join
+Mabel: Well I haven't decided yet but we'll see!
+Mabel: I better hurry up and decide then 🥰
+Mabel: What about you?
+Player: Might be hard with work but I'll see too
+Mabel: Oh right!
+Mabel: You're such a hard worker when you put your mind to it 🥰
+Mabel: Okay then, I'll do some homework now!
+Mabel: I want the weekend to be free!
+Mabel: Ttyl okay?
+Player: Gn gn!
+Mabel: Gn
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

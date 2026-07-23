@@ -1,0 +1,935 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_65nd3"]
+
+[resource]
+script = ExtResource("1_65nd3")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Player", "Suzanna")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "lecture_hall"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Player",
+&"id": "10",
+&"next_id": "11",
+&"text": "Anything for you!",
+&"type": "dialogue"
+},
+"100": {
+&"character": "Player",
+&"id": "100",
+&"next_id": "101",
+&"text": "Bye 😁",
+&"type": "dialogue"
+},
+"101": {
+&"id": "101",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "social_post",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 15,
+&"type": &"string",
+&"value": "mabel_campus_selfie"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "102",
+&"type": "mutation"
+},
+"102": {
+&"id": "102",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"103": {
+&"id": "103",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"11": {
+&"character": "Suzanna",
+&"id": "11",
+&"next_id": "16",
+&"text": "Well aren't you a charmer",
+&"type": "dialogue"
+},
+"12": {
+&"id": "12",
+&"next_id": "13",
+&"text": "Anything for Mabel's Professor!",
+&"type": "response"
+},
+"13": {
+&"character": "Player",
+&"id": "13",
+&"next_id": "14",
+&"text": "Anything for Mabel's Professor!",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Suzanna",
+&"id": "14",
+&"next_id": "15",
+&"text": "That's so sweet of you",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Suzanna",
+&"id": "15",
+&"next_id": "16",
+&"text": "Mabel is a lucky lady if I say so",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Suzanna",
+&"id": "16",
+&"next_id": "17",
+&"text": "But my request is a little bit unorthodox, I hope you won't mind hearing me out 🙊",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Player",
+&"id": "17",
+&"next_id": "18",
+&"text": "Let's hear it",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Suzanna",
+&"id": "18",
+&"next_id": "19",
+&"text": "Oh gosh where do I start",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Suzanna",
+&"id": "19",
+&"next_id": "20",
+&"text": "I'm a little embarassing already 😥",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "unlock_gallery_image",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 24,
+&"type": &"string",
+&"value": "suzanna"
+}]), Array[Dictionary]([{
+&"i": 35,
+&"type": &"string",
+&"value": "8"
+}, {
+&"i": 38,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "3",
+&"type": "mutation"
+},
+"20": {
+&"character": "Suzanna",
+&"id": "20",
+&"next_id": "21",
+&"text": "There are some rumors among the staff about me that I've been meaning to.. quell",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Player",
+&"id": "21",
+&"next_id": "22",
+&"text": "What kind of rumors?",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Suzanna",
+&"id": "22",
+&"next_id": "23",
+&"text": "Nothing serious that it would harm you or your reputation 😅",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Suzanna",
+&"id": "23",
+&"next_id": "24",
+&"text": "I assure you that much",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Suzanna",
+&"id": "24",
+&"next_id": "25",
+&"text": "Just that you uhm..",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Suzanna",
+&"id": "25",
+&"next_id": "26",
+&"text": "I need you to accompany me for a dinner",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Player",
+&"id": "26",
+&"next_id": "27",
+&"text": "A dinner?",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Suzanna",
+&"id": "27",
+&"next_id": "28",
+&"text": "Yes, a dinner",
+&"type": "dialogue"
+},
+"28": {
+&"id": "28",
+&"next_id": "29",
+&"responses": PackedStringArray("28", "33"),
+&"text": "What kind of dinner?",
+&"type": "response"
+},
+"29": {
+&"character": "Player",
+&"id": "29",
+&"next_id": "30",
+&"text": "What kind of dinner?",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Player",
+&"id": "3",
+&"next_id": "4",
+&"text": "Hi Professor Suzanna",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Suzanna",
+&"id": "30",
+&"next_id": "31",
+&"text": "Oh just a normal formal ocassion",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Suzanna",
+&"id": "31",
+&"next_id": "32",
+&"text": "Think nothing of it",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Suzanna",
+&"id": "32",
+&"next_id": "39",
+&"text": "We might just chat about the weather or such",
+&"type": "dialogue"
+},
+"33": {
+&"id": "33",
+&"next_id": "34",
+&"tags": PackedStringArray("orangeheart"),
+&"text": "Are you asking me out on a date?",
+&"type": "response"
+},
+"34": {
+&"id": "34",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "orange_heart"
+}, {
+&"i": 23,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 26,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "35",
+&"type": "mutation"
+},
+"35": {
+&"character": "Player",
+&"id": "35",
+&"next_id": "36",
+&"text": "Are you asking me out on a date?",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Suzanna",
+&"id": "36",
+&"next_id": "37",
+&"text": "I was hoping to avoid putting it that way but",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Suzanna",
+&"id": "37",
+&"next_id": "38",
+&"text": "Yes, I suppose you could call it that",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Suzanna",
+&"id": "38",
+&"next_id": "39",
+&"text": "A pretend one however",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Suzanna",
+&"id": "39",
+&"next_id": "40",
+&"text": "All expenses covered by me of course",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Player",
+&"id": "4",
+&"next_id": "5",
+&"text": "Naomi forwarded your contact details to me",
+&"type": "dialogue"
+},
+"40": {
+&"id": "40",
+&"next_id": "41",
+&"responses": PackedStringArray("40", "42"),
+&"text": "What would that achieve though?",
+&"type": "response"
+},
+"41": {
+&"character": "Player",
+&"id": "41",
+&"next_id": "44",
+&"text": "What would that achieve though?",
+&"type": "dialogue"
+},
+"42": {
+&"id": "42",
+&"next_id": "43",
+&"text": "What rumors are these going to help with?",
+&"type": "response"
+},
+"43": {
+&"character": "Player",
+&"id": "43",
+&"next_id": "44",
+&"text": "What rumors are these going to help with?",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Suzanna",
+&"id": "44",
+&"next_id": "45",
+&"text": "I suppose I do owe you a bit more of an explanation",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Suzanna",
+&"id": "45",
+&"next_id": "46",
+&"text": "Well you see, things don't change much when you get older",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Suzanna",
+&"id": "46",
+&"next_id": "47",
+&"text": "At least it's true for my age group",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Suzanna",
+&"id": "47",
+&"next_id": "48",
+&"text": "Married staff members start circulating rumors and gossip that some of us are struggling to find a decent man",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Suzanna",
+&"id": "48",
+&"next_id": "49",
+&"text": "And that somehow reflects on how we're intolerable and the like 😣",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Player",
+&"id": "49",
+&"next_id": "50",
+&"text": "That doesn't sound pleasant",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Suzanna",
+&"id": "5",
+&"next_id": "6",
+&"text": "Ah hello!",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Suzanna",
+&"id": "50",
+&"next_id": "51",
+&"text": "It really isn't",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Suzanna",
+&"id": "51",
+&"next_id": "52",
+&"text": "It's quite stressful and the rumors would only get worse and could affect my ability to teach or be taken seriously",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Suzanna",
+&"id": "52",
+&"next_id": "53",
+&"text": "These things eventually get overheard",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Suzanna",
+&"id": "53",
+&"next_id": "54",
+&"text": "So if you'd be so kind as to humor an old lady with this request",
+&"type": "dialogue"
+},
+"54": {
+&"id": "54",
+&"next_id": "55",
+&"responses": PackedStringArray("54", "59"),
+&"text": "I'd be glad to help",
+&"type": "response"
+},
+"55": {
+&"character": "Player",
+&"id": "55",
+&"next_id": "56",
+&"text": "I'd be glad to help",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Suzanna",
+&"id": "56",
+&"next_id": "57",
+&"text": "That's a relief to hear",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Suzanna",
+&"id": "57",
+&"next_id": "58",
+&"text": "Thank you so much for your support",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Suzanna",
+&"id": "58",
+&"next_id": "99",
+&"text": "We've truly nurtured a little trust network with the photography club and I couldn't be more proud of Naomi",
+&"type": "dialogue"
+},
+"59": {
+&"id": "59",
+&"next_id": "60",
+&"tags": PackedStringArray("orangeheart"),
+&"text": "Can it be a real date?",
+&"type": "response"
+},
+"6": {
+&"character": "Suzanna",
+&"id": "6",
+&"next_id": "7",
+&"text": "img: suzanna/6",
+&"type": "dialogue"
+},
+"60": {
+&"id": "60",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "orange_heart"
+}, {
+&"i": 23,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 26,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "61",
+&"type": "mutation"
+},
+"61": {
+&"character": "Player",
+&"id": "61",
+&"next_id": "62",
+&"text": "Can it be a real date?",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Suzanna",
+&"id": "62",
+&"next_id": "63",
+&"text": "A real date??",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Suzanna",
+&"id": "63",
+&"next_id": "64",
+&"text": "I mean that would help with the rumors..",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Suzanna",
+&"id": "64",
+&"next_id": "65",
+&"text": "But you want to go on a date with me? Why? 😅",
+&"type": "dialogue"
+},
+"65": {
+&"id": "65",
+&"next_id": "66",
+&"responses": PackedStringArray("65", "71"),
+&"text": "I think you're attractive",
+&"type": "response"
+},
+"66": {
+&"character": "Player",
+&"id": "66",
+&"next_id": "67",
+&"text": "I think you're attractive",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Suzanna",
+&"id": "67",
+&"next_id": "68",
+&"text": "Oh gosh, you're making me blush. You're too kind",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Player",
+&"id": "68",
+&"next_id": "69",
+&"text": "Really!",
+&"type": "dialogue"
+},
+"69": {
+&"character": "Suzanna",
+&"id": "69",
+&"next_id": "70",
+&"text": "Do I really still have the looks that a younger man would be interested in 🙈",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Suzanna",
+&"id": "7",
+&"next_id": "8",
+&"text": "Nice to finally speak to you",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Suzanna",
+&"id": "70",
+&"next_id": "77",
+&"text": "That's quite adorable of you yet I'm still a little embarassed",
+&"type": "dialogue"
+},
+"71": {
+&"id": "71",
+&"next_id": "72",
+&"text": "I like older women",
+&"type": "response"
+},
+"72": {
+&"character": "Player",
+&"id": "72",
+&"next_id": "73",
+&"text": "I like older women",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Suzanna",
+&"id": "73",
+&"next_id": "74",
+&"text": "R-really? That's not...",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Suzanna",
+&"id": "74",
+&"next_id": "75",
+&"text": "I mean does it not bother you that I'm nearly double your age?",
+&"type": "dialogue"
+},
+"75": {
+&"character": "Player",
+&"id": "75",
+&"next_id": "76",
+&"text": "Not at all",
+&"type": "dialogue"
+},
+"76": {
+&"character": "Suzanna",
+&"id": "76",
+&"next_id": "77",
+&"text": "I've never considered dating a younger man before..",
+&"type": "dialogue"
+},
+"77": {
+&"character": "Suzanna",
+&"id": "77",
+&"next_id": "78",
+&"text": "Ahem.. I am certainly getting off track here",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Suzanna",
+&"id": "78",
+&"next_id": "79",
+&"text": "If you would have me then, I accept",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Suzanna",
+&"id": "79",
+&"next_id": "80",
+&"text": "It's the least I can do for such a kind and forward young man",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Suzanna",
+&"id": "8",
+&"next_id": "9",
+&"text": "Thank you so very much for offering your assistance 🙂",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Player",
+&"id": "80",
+&"next_id": "81",
+&"text": "Sounds good 😁",
+&"type": "dialogue"
+},
+"81": {
+&"character": "Suzanna",
+&"id": "81",
+&"next_id": "82",
+&"text": "I wish we had a moment to get to know each other just a little better before but my schedule is quite tight",
+&"type": "dialogue"
+},
+"82": {
+&"character": "Suzanna",
+&"id": "82",
+&"next_id": "83",
+&"text": "Or that I could pay you back somehow",
+&"type": "dialogue"
+},
+"83": {
+&"character": "Suzanna",
+&"id": "83",
+&"next_id": "84",
+&"text": "And it doesn't help that today's quite a hot day",
+&"type": "dialogue"
+},
+"84": {
+&"character": "Player",
+&"id": "84",
+&"next_id": "85",
+&"text": "It is",
+&"type": "dialogue"
+},
+"85": {
+&"character": "Suzanna",
+&"id": "85",
+&"next_id": "86",
+&"text": "That somehow gives me an idea for repayment",
+&"type": "dialogue"
+},
+"86": {
+&"character": "Suzanna",
+&"id": "86",
+&"next_id": "87",
+&"text": "I know boys can be quite, \"visual\" people so 🤭",
+&"type": "dialogue"
+},
+"87": {
+&"character": "Suzanna",
+&"id": "87",
+&"next_id": "88",
+&"text": "img: suzanna/7",
+&"type": "dialogue"
+},
+"88": {
+&"id": "88",
+&"next_id": "89",
+&"responses": PackedStringArray("88", "90"),
+&"text": "It sure is 🥵",
+&"type": "response"
+},
+"89": {
+&"character": "Player",
+&"id": "89",
+&"next_id": "95",
+&"text": "It sure is 🥵",
+&"type": "dialogue"
+},
+"9": {
+&"id": "9",
+&"next_id": "10",
+&"responses": PackedStringArray("9", "12"),
+&"text": "Anything for you!",
+&"type": "response"
+},
+"90": {
+&"id": "90",
+&"next_id": "91",
+&"text": "Sure it isn't you causing heat? 🥵",
+&"type": "response"
+},
+"91": {
+&"character": "Player",
+&"id": "91",
+&"next_id": "92",
+&"text": "Sure it isn't you causing the heat? 🥵",
+&"type": "dialogue"
+},
+"92": {
+&"character": "Suzanna",
+&"id": "92",
+&"next_id": "93",
+&"text": "Hehe, a man after my own heart",
+&"type": "dialogue"
+},
+"93": {
+&"character": "Suzanna",
+&"id": "93",
+&"next_id": "94",
+&"text": "How nostalgic",
+&"type": "dialogue"
+},
+"94": {
+&"character": "Suzanna",
+&"id": "94",
+&"next_id": "95",
+&"text": "I guess I'm in for a bit of fun soon",
+&"type": "dialogue"
+},
+"95": {
+&"character": "Suzanna",
+&"id": "95",
+&"next_id": "96",
+&"text": "I suppose we can keep it between us for now since it would be a one time event",
+&"type": "dialogue"
+},
+"96": {
+&"character": "Suzanna",
+&"id": "96",
+&"next_id": "97",
+&"text": "I would not want Mabel to be hurt by this exchange of favors",
+&"type": "dialogue"
+},
+"97": {
+&"character": "Suzanna",
+&"id": "97",
+&"next_id": "98",
+&"text": "Perhaps there will be an easy opportunity to explain the situation at a later time to that sweet girl",
+&"type": "dialogue"
+},
+"98": {
+&"character": "Player",
+&"id": "98",
+&"next_id": "99",
+&"text": "I understand",
+&"type": "dialogue"
+},
+"99": {
+&"character": "Suzanna",
+&"id": "99",
+&"next_id": "100",
+&"text": "I have to prepare for a class but thank you again 😉",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"lecture_hall\")
+do unlock_gallery_image(\"suzanna\", \"8\")
+Player: Hi Professor Suzanna
+Player: Naomi forwarded your contact details to me
+Suzanna: Ah hello!
+Suzanna: img: suzanna/6
+Suzanna: Nice to finally speak to you
+Suzanna: Thank you so very much for offering your assistance 🙂
+- Anything for you!
+	Player: Anything for you!
+	Suzanna: Well aren't you a charmer
+- Anything for Mabel's Professor!
+	Player: Anything for Mabel's Professor!
+	Suzanna: That's so sweet of you
+	Suzanna: Mabel is a lucky lady if I say so
+Suzanna: But my request is a little bit unorthodox, I hope you won't mind hearing me out 🙊
+Player: Let's hear it
+Suzanna: Oh gosh where do I start
+Suzanna: I'm a little embarassing already 😥
+Suzanna: There are some rumors among the staff about me that I've been meaning to.. quell
+Player: What kind of rumors?
+Suzanna: Nothing serious that it would harm you or your reputation 😅
+Suzanna: I assure you that much
+Suzanna: Just that you uhm..
+Suzanna: I need you to accompany me for a dinner
+Player: A dinner?
+Suzanna: Yes, a dinner
+- What kind of dinner?
+	Player: What kind of dinner?
+	Suzanna: Oh just a normal formal ocassion
+	Suzanna: Think nothing of it
+	Suzanna: We might just chat about the weather or such
+- Are you asking me out on a date? [#orangeheart]
+	set Story.orange_heart += 1
+	Player: Are you asking me out on a date?
+	Suzanna: I was hoping to avoid putting it that way but 
+	Suzanna: Yes, I suppose you could call it that
+	Suzanna: A pretend one however
+Suzanna: All expenses covered by me of course
+- What would that achieve though?
+	Player: What would that achieve though?
+- What rumors are these going to help with?
+	Player: What rumors are these going to help with?
+Suzanna: I suppose I do owe you a bit more of an explanation
+Suzanna: Well you see, things don't change much when you get older
+Suzanna: At least it's true for my age group
+Suzanna: Married staff members start circulating rumors and gossip that some of us are struggling to find a decent man
+Suzanna: And that somehow reflects on how we're intolerable and the like 😣
+Player: That doesn't sound pleasant
+Suzanna: It really isn't
+Suzanna: It's quite stressful and the rumors would only get worse and could affect my ability to teach or be taken seriously
+Suzanna: These things eventually get overheard
+Suzanna: So if you'd be so kind as to humor an old lady with this request
+- I'd be glad to help
+	Player: I'd be glad to help
+	Suzanna: That's a relief to hear
+	Suzanna: Thank you so much for your support
+	Suzanna: We've truly nurtured a little trust network with the photography club and I couldn't be more proud of Naomi
+- Can it be a real date? [#orangeheart]
+	set Story.orange_heart += 1
+	Player: Can it be a real date?
+	Suzanna: A real date??
+	Suzanna: I mean that would help with the rumors..
+	Suzanna: But you want to go on a date with me? Why? 😅
+	- I think you're attractive
+		Player: I think you're attractive
+		Suzanna: Oh gosh, you're making me blush. You're too kind
+		Player: Really!
+		Suzanna: Do I really still have the looks that a younger man would be interested in 🙈
+		Suzanna: That's quite adorable of you yet I'm still a little embarassed
+	- I like older women
+		Player: I like older women
+		Suzanna: R-really? That's not...
+		Suzanna: I mean does it not bother you that I'm nearly double your age?
+		Player: Not at all
+		Suzanna: I've never considered dating a younger man before..
+	Suzanna: Ahem.. I am certainly getting off track here
+	Suzanna: If you would have me then, I accept
+	Suzanna: It's the least I can do for such a kind and forward young man
+	Player: Sounds good 😁
+	Suzanna: I wish we had a moment to get to know each other just a little better before but my schedule is quite tight
+	Suzanna: Or that I could pay you back somehow
+	Suzanna: And it doesn't help that today's quite a hot day
+	Player: It is
+	Suzanna: That somehow gives me an idea for repayment
+	Suzanna: I know boys can be quite, \"visual\" people so 🤭
+	Suzanna: img: suzanna/7
+	- It sure is 🥵
+		Player: It sure is 🥵
+	- Sure it isn't you causing heat? 🥵
+		Player: Sure it isn't you causing the heat? 🥵
+		Suzanna: Hehe, a man after my own heart
+		Suzanna: How nostalgic
+		Suzanna: I guess I'm in for a bit of fun soon
+	Suzanna: I suppose we can keep it between us for now since it would be a one time event
+	Suzanna: I would not want Mabel to be hurt by this exchange of favors
+	Suzanna: Perhaps there will be an easy opportunity to explain the situation at a later time to that sweet girl
+	Player: I understand
+Suzanna: I have to prepare for a class but thank you again 😉
+Player: Bye 😁
+do social_post(\"mabel_campus_selfie\")
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

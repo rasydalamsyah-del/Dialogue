@@ -1,0 +1,1243 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_eqh5s"]
+
+[resource]
+script = ExtResource("1_eqh5s")
+using_states = PackedStringArray()
+titles = {
+"start": "2"
+}
+character_names = PackedStringArray("Player", "Alice")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "2",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"10": {
+&"character": "Alice",
+&"id": "10",
+&"next_id": "11",
+&"text": "I uhm. Sure, I can",
+&"type": "dialogue"
+},
+"100": {
+&"character": "Alice",
+&"id": "100",
+&"next_id": "101",
+&"text": "Uhm.. sure if you don't mind",
+&"type": "dialogue"
+},
+"101": {
+&"character": "Player",
+&"id": "101",
+&"next_id": "102",
+&"text": "Haha okay one sec",
+&"type": "dialogue"
+},
+"102": {
+&"character": "Player",
+&"id": "102",
+&"next_id": "103",
+&"text": "img: alice/10",
+&"type": "dialogue"
+},
+"103": {
+&"character": "Alice",
+&"id": "103",
+&"next_id": "104",
+&"text": "I like this one too",
+&"type": "dialogue"
+},
+"104": {
+&"character": "Player",
+&"id": "104",
+&"next_id": "105",
+&"text": "Glad to hear that",
+&"type": "dialogue"
+},
+"105": {
+&"character": "Player",
+&"id": "105",
+&"next_id": "106",
+&"text": "img: alice/11",
+&"type": "dialogue"
+},
+"106": {
+&"character": "Alice",
+&"id": "106",
+&"next_id": "107",
+&"text": "You were a little close here",
+&"type": "dialogue"
+},
+"107": {
+&"character": "Player",
+&"id": "107",
+&"next_id": "108",
+&"text": "Ah whoops sorry 😅",
+&"type": "dialogue"
+},
+"108": {
+&"character": "Player",
+&"id": "108",
+&"next_id": "109",
+&"text": "I was trying to find an angle with you and the birdbath",
+&"type": "dialogue"
+},
+"109": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"i": 9,
+&"type": &"variable",
+&"value": "white_heart"
+}, {
+&"i": 21,
+&"type": &"comparison",
+&"value": ">"
+}, {
+&"i": 23,
+&"type": &"number",
+&"value": 0
+}])
+},
+&"id": "109",
+&"next_id": "110",
+&"next_id_after": "111",
+&"type": "condition"
+},
+"11": {
+&"character": "Alice",
+&"id": "11",
+&"next_id": "12",
+&"text": "I just don't want to be a burden",
+&"type": "dialogue"
+},
+"110": {
+&"character": "Alice",
+&"id": "110",
+&"next_id": "111",
+&"text": "It's okay.. I didn't mind it too much",
+&"type": "dialogue"
+},
+"111": {
+&"character": "Alice",
+&"id": "111",
+&"next_id": "112",
+&"text": "..and I can keep these too?",
+&"type": "dialogue"
+},
+"112": {
+&"character": "Player",
+&"id": "112",
+&"next_id": "113",
+&"text": "Mhmm",
+&"type": "dialogue"
+},
+"113": {
+&"character": "Alice",
+&"id": "113",
+&"next_id": "114",
+&"text": "Uhm thanks..",
+&"type": "dialogue"
+},
+"114": {
+&"character": "Alice",
+&"id": "114",
+&"next_id": "115",
+&"text": "For showing me",
+&"type": "dialogue"
+},
+"115": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"i": 9,
+&"type": &"variable",
+&"value": "white_heart"
+}, {
+&"i": 21,
+&"type": &"comparison",
+&"value": ">"
+}, {
+&"i": 23,
+&"type": &"number",
+&"value": 0
+}])
+},
+&"id": "115",
+&"next_id": "116",
+&"next_id_after": "128",
+&"type": "condition"
+},
+"116": {
+&"character": "Alice",
+&"id": "116",
+&"next_id": "117",
+&"text": "Can I ask you something..?",
+&"type": "dialogue"
+},
+"117": {
+&"character": "Player",
+&"id": "117",
+&"next_id": "118",
+&"text": "Sure",
+&"type": "dialogue"
+},
+"118": {
+&"character": "Alice",
+&"id": "118",
+&"next_id": "119",
+&"text": "Was this a date?..",
+&"type": "dialogue"
+},
+"119": {
+&"id": "119",
+&"next_id": "120",
+&"responses": PackedStringArray("119", "124"),
+&"tags": PackedStringArray("whiteheart"),
+&"text": "I guess it was",
+&"type": "response"
+},
+"12": {
+&"character": "Player",
+&"id": "12",
+&"next_id": "13",
+&"text": "It's no bother, happy to help",
+&"type": "dialogue"
+},
+"120": {
+&"id": "120",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "white_heart"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "121",
+&"type": "mutation"
+},
+"121": {
+&"character": "Player",
+&"id": "121",
+&"next_id": "122",
+&"text": "I guess it was",
+&"type": "dialogue"
+},
+"122": {
+&"character": "Alice",
+&"id": "122",
+&"next_id": "123",
+&"text": "Okay..",
+&"type": "dialogue"
+},
+"123": {
+&"id": "123",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_profile_image",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 27,
+&"type": &"string",
+&"value": "alice"
+}]), Array[Dictionary]([{
+&"i": 36,
+&"type": &"string",
+&"value": "alice-8"
+}, {
+&"i": 45,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "128",
+&"type": "mutation"
+},
+"124": {
+&"id": "124",
+&"next_id": "125",
+&"text": "Not really",
+&"type": "response"
+},
+"125": {
+&"character": "Player",
+&"id": "125",
+&"next_id": "126",
+&"text": "Not really",
+&"type": "dialogue"
+},
+"126": {
+&"character": "Player",
+&"id": "126",
+&"next_id": "127",
+&"text": "Just a photography practice session",
+&"type": "dialogue"
+},
+"127": {
+&"character": "Alice",
+&"id": "127",
+&"next_id": "128",
+&"text": "Oh... I see..",
+&"type": "dialogue"
+},
+"128": {
+&"character": "Alice",
+&"id": "128",
+&"next_id": "129",
+&"text": "I have to go now",
+&"type": "dialogue"
+},
+"129": {
+&"character": "Player",
+&"id": "129",
+&"next_id": "130",
+&"text": "Bye Alice",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Alice",
+&"id": "13",
+&"next_id": "14",
+&"text": "Why?",
+&"type": "dialogue"
+},
+"130": {
+&"character": "Alice",
+&"id": "130",
+&"next_id": "131",
+&"text": "Bye",
+&"type": "dialogue"
+},
+"131": {
+&"id": "131",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"132": {
+&"id": "132",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"14": {
+&"character": "Player",
+&"id": "14",
+&"next_id": "15",
+&"text": "Why what?",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Alice",
+&"id": "15",
+&"next_id": "16",
+&"text": "Why do you want to help me?",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Player",
+&"id": "16",
+&"next_id": "17",
+&"text": "Wouldn't anyone want to help?",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Alice",
+&"id": "17",
+&"next_id": "18",
+&"text": "...I don't think so",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Alice",
+&"id": "18",
+&"next_id": "19",
+&"text": "Everyone who helps me is usually just curious about me",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Alice",
+&"id": "19",
+&"next_id": "20",
+&"text": "And then they say not so nice things in the end",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "lecture_hall"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "3",
+&"type": "mutation"
+},
+"20": {
+&"character": "Player",
+&"id": "20",
+&"next_id": "21",
+&"text": "🫤 Sorry to hear that",
+&"type": "dialogue"
+},
+"21": {
+&"id": "21",
+&"next_id": "22",
+&"responses": PackedStringArray("21", "41"),
+&"tags": PackedStringArray("whiteheart"),
+&"text": "I want us to be friends",
+&"type": "response"
+},
+"22": {
+&"character": "Player",
+&"id": "22",
+&"next_id": "23",
+&"text": "I want us to be friends",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Alice",
+&"id": "23",
+&"next_id": "24",
+&"text": "I...",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Alice",
+&"id": "24",
+&"next_id": "25",
+&"text": "Sorry",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Alice",
+&"id": "25",
+&"next_id": "26",
+&"text": "When I joined this college.. that's what a girl said to me",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Alice",
+&"id": "26",
+&"next_id": "27",
+&"text": "And then the next day I had a crowd of people show up and talk about \"that weird looking girl\"",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Alice",
+&"id": "27",
+&"next_id": "28",
+&"text": "My pictures were posted on social and a lot of people started staring",
+&"type": "dialogue"
+},
+"28": {
+&"id": "28",
+&"next_id": "29",
+&"responses": PackedStringArray("28", "34"),
+&"tags": PackedStringArray("whiteheart"),
+&"text": "You're not weird looking!",
+&"type": "response"
+},
+"29": {
+&"id": "29",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "white_heart"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "30",
+&"type": "mutation"
+},
+"3": {
+&"character": "Player",
+&"id": "3",
+&"next_id": "4",
+&"text": "Hi Alice",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Player",
+&"id": "30",
+&"next_id": "31",
+&"text": "You're not weird looking!",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Alice",
+&"id": "31",
+&"next_id": "32",
+&"text": "You know other girls that have this disease?",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Player",
+&"id": "32",
+&"next_id": "33",
+&"text": "No but",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Alice",
+&"id": "33",
+&"next_id": "37",
+&"text": "Then I am",
+&"type": "dialogue"
+},
+"34": {
+&"id": "34",
+&"next_id": "35",
+&"text": "That must have been tough",
+&"type": "response"
+},
+"35": {
+&"character": "Player",
+&"id": "35",
+&"next_id": "36",
+&"text": "That must have been tough 😕",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Player",
+&"id": "36",
+&"next_id": "37",
+&"text": "But don't let bullies ruin your experience here!",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Alice",
+&"id": "37",
+&"next_id": "38",
+&"text": "I'm sorry",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Alice",
+&"id": "38",
+&"next_id": "39",
+&"text": "Maybe you're different..",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Alice",
+&"id": "39",
+&"next_id": "40",
+&"text": "but..",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Alice",
+&"id": "4",
+&"next_id": "5",
+&"text": "Oh uhm...",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Alice",
+&"id": "40",
+&"next_id": "44",
+&"text": "I don't know",
+&"type": "dialogue"
+},
+"41": {
+&"id": "41",
+&"next_id": "42",
+&"text": "I'm just doing as instructed",
+&"type": "response"
+},
+"42": {
+&"character": "Player",
+&"id": "42",
+&"next_id": "43",
+&"text": "I'm just doing as instructed",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Alice",
+&"id": "43",
+&"next_id": "44",
+&"text": "Okay then",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Alice",
+&"id": "44",
+&"next_id": "45",
+&"text": "I'll be in the club house if you want to come",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Player",
+&"id": "45",
+&"next_id": "46",
+&"text": "Club house... 😅",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Alice",
+&"id": "46",
+&"next_id": "47",
+&"text": "You don't have to",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Player",
+&"id": "47",
+&"next_id": "48",
+&"text": "No no, I decided to help you already",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Player",
+&"id": "48",
+&"next_id": "49",
+&"text": "I'll be there in an hour",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Alice",
+&"id": "49",
+&"next_id": "50",
+&"text": "Ok..",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Player",
+&"id": "5",
+&"next_id": "6",
+&"text": "Alice?",
+&"type": "dialogue"
+},
+"50": {
+&"id": "50",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "advance_time",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"number",
+&"value": 3
+}]), Array[Dictionary]([{
+&"i": 19,
+&"type": &"number",
+&"value": 10
+}, {
+&"i": 21,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "51",
+&"type": "mutation"
+},
+"51": {
+&"character": "Player",
+&"id": "51",
+&"next_id": "52",
+&"text": "Did you get home?",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Alice",
+&"id": "52",
+&"next_id": "53",
+&"text": "Yes, I did",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Player",
+&"id": "53",
+&"next_id": "54",
+&"text": "See that wasn't so bad",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Alice",
+&"id": "54",
+&"next_id": "55",
+&"text": "I guess",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Alice",
+&"id": "55",
+&"next_id": "56",
+&"text": "People were looking at me..",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Player",
+&"id": "56",
+&"next_id": "57",
+&"text": "Yeah but that was the worst of it right?",
+&"type": "dialogue"
+},
+"57": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"i": 9,
+&"type": &"variable",
+&"value": "white_heart"
+}, {
+&"i": 21,
+&"type": &"comparison",
+&"value": ">"
+}, {
+&"i": 23,
+&"type": &"number",
+&"value": 0
+}])
+},
+&"id": "57",
+&"next_id": "58",
+&"next_id_after": "63",
+&"type": "condition"
+},
+"58": {
+&"character": "Player",
+&"id": "58",
+&"next_id": "59",
+&"text": "All you need is a friend with you",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Alice",
+&"id": "59",
+&"next_id": "60",
+&"text": "You want to be my friend?",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Alice",
+&"id": "6",
+&"next_id": "7",
+&"text": "Yeah sorry, I'm here",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Player",
+&"id": "60",
+&"next_id": "61",
+&"text": "Yeah why not",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Alice",
+&"id": "61",
+&"next_id": "62",
+&"text": "I guess.. we can try",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Alice",
+&"id": "62",
+&"next_id": "63",
+&"text": "And",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Alice",
+&"id": "63",
+&"next_id": "64",
+&"text": "It was a little nice to go out for a change",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Player",
+&"id": "64",
+&"next_id": "65",
+&"text": "Maybe you can try what you learned",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Alice",
+&"id": "65",
+&"next_id": "66",
+&"text": "Right now?",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Player",
+&"id": "66",
+&"next_id": "67",
+&"text": "Sure",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Alice",
+&"id": "67",
+&"next_id": "68",
+&"text": "Uhm.. okay but we're not outside anymore",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Alice",
+&"id": "68",
+&"next_id": "69",
+&"text": "What am I supposed to take pictures of in my room?",
+&"type": "dialogue"
+},
+"69": {
+&"character": "Player",
+&"id": "69",
+&"next_id": "70",
+&"text": "Maybe yourself?",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Alice",
+&"id": "7",
+&"next_id": "8",
+&"text": "Hi..",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Alice",
+&"id": "70",
+&"next_id": "71",
+&"text": "🫥",
+&"type": "dialogue"
+},
+"71": {
+&"character": "Alice",
+&"id": "71",
+&"next_id": "72",
+&"text": "But..",
+&"type": "dialogue"
+},
+"72": {
+&"character": "Player",
+&"id": "72",
+&"next_id": "73",
+&"text": "Still don't trust me?",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Alice",
+&"id": "73",
+&"next_id": "74",
+&"text": "...",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Alice",
+&"id": "74",
+&"next_id": "75",
+&"text": "I guess I can try one more time",
+&"type": "dialogue"
+},
+"75": {
+&"character": "Player",
+&"id": "75",
+&"next_id": "76",
+&"text": "Thanks Alice 😊👍",
+&"type": "dialogue"
+},
+"76": {
+&"character": "Alice",
+&"id": "76",
+&"next_id": "77",
+&"text": "Uhm.. okay give me a second",
+&"type": "dialogue"
+},
+"77": {
+&"character": "Alice",
+&"id": "77",
+&"next_id": "78",
+&"text": "img: alice/6",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Alice",
+&"id": "78",
+&"next_id": "79",
+&"text": "Oh wait, I have to do the zoom thing",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Player",
+&"id": "79",
+&"next_id": "80",
+&"text": "Yup, give it a pinch",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Player",
+&"id": "8",
+&"next_id": "9",
+&"text": "Uhm, would you be available in an hour?",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Alice",
+&"id": "80",
+&"next_id": "81",
+&"text": "Okay hold on, I think I did it",
+&"type": "dialogue"
+},
+"81": {
+&"character": "Alice",
+&"id": "81",
+&"next_id": "82",
+&"text": "img: alice/7",
+&"type": "dialogue"
+},
+"82": {
+&"character": "Alice",
+&"id": "82",
+&"next_id": "83",
+&"text": "What's wrong with it now?",
+&"type": "dialogue"
+},
+"83": {
+&"character": "Player",
+&"id": "83",
+&"next_id": "84",
+&"text": "Are you sure the focus is on you?",
+&"type": "dialogue"
+},
+"84": {
+&"character": "Alice",
+&"id": "84",
+&"next_id": "85",
+&"text": "Oh, I forgot about that",
+&"type": "dialogue"
+},
+"85": {
+&"character": "Alice",
+&"id": "85",
+&"next_id": "86",
+&"text": "Ok it looks better now",
+&"type": "dialogue"
+},
+"86": {
+&"character": "Alice",
+&"id": "86",
+&"next_id": "87",
+&"text": "img: alice/8",
+&"type": "dialogue"
+},
+"87": {
+&"character": "Alice",
+&"id": "87",
+&"next_id": "88",
+&"text": "It looks clear again 😶",
+&"type": "dialogue"
+},
+"88": {
+&"character": "Alice",
+&"id": "88",
+&"next_id": "89",
+&"text": "I'm happy it works but..",
+&"type": "dialogue"
+},
+"89": {
+&"character": "Alice",
+&"id": "89",
+&"next_id": "90",
+&"text": "I don't like seeing myself in pictures",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Player",
+&"id": "9",
+&"next_id": "10",
+&"text": "I'm supposed to run you through these photography notes",
+&"type": "dialogue"
+},
+"90": {
+&"character": "Player",
+&"id": "90",
+&"next_id": "91",
+&"text": "Well you should because look at this",
+&"type": "dialogue"
+},
+"91": {
+&"character": "Player",
+&"id": "91",
+&"next_id": "92",
+&"text": "img: alice/9",
+&"type": "dialogue"
+},
+"92": {
+&"character": "Alice",
+&"id": "92",
+&"next_id": "93",
+&"text": "I thought you were just using your phone.. You took a picture?",
+&"type": "dialogue"
+},
+"93": {
+&"character": "Player",
+&"id": "93",
+&"next_id": "94",
+&"text": "Yeah, what do you think",
+&"type": "dialogue"
+},
+"94": {
+&"character": "Alice",
+&"id": "94",
+&"next_id": "95",
+&"text": "...",
+&"type": "dialogue"
+},
+"95": {
+&"character": "Alice",
+&"id": "95",
+&"next_id": "96",
+&"text": "Can I keep this one?",
+&"type": "dialogue"
+},
+"96": {
+&"character": "Player",
+&"id": "96",
+&"next_id": "97",
+&"text": "Of course",
+&"type": "dialogue"
+},
+"97": {
+&"character": "Player",
+&"id": "97",
+&"next_id": "98",
+&"text": "I have more lol",
+&"type": "dialogue"
+},
+"98": {
+&"character": "Alice",
+&"id": "98",
+&"next_id": "99",
+&"text": "🫥",
+&"type": "dialogue"
+},
+"99": {
+&"character": "Player",
+&"id": "99",
+&"next_id": "100",
+&"text": "Do you want to see them?",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+#12pm noon around
+do Story.set_location(\"lecture_hall\")
+Player: Hi Alice
+Alice: Oh uhm...
+Player: Alice?
+Alice: Yeah sorry, I'm here
+Alice: Hi..
+Player: Uhm, would you be available in an hour?
+Player: I'm supposed to run you through these photography notes
+Alice: I uhm. Sure, I can
+Alice: I just don't want to be a burden
+Player: It's no bother, happy to help
+Alice: Why?
+Player: Why what?
+Alice: Why do you want to help me?
+Player: Wouldn't anyone want to help?
+Alice: ...I don't think so
+Alice: Everyone who helps me is usually just curious about me
+Alice: And then they say not so nice things in the end
+Player: 🫤 Sorry to hear that
+- I want us to be friends [#whiteheart]
+	Player: I want us to be friends
+	Alice: I...
+	Alice: Sorry
+	Alice: When I joined this college.. that's what a girl said to me
+	Alice: And then the next day I had a crowd of people show up and talk about \"that weird looking girl\"
+	Alice: My pictures were posted on social and a lot of people started staring
+	- You're not weird looking! [#whiteheart]
+		set Story.white_heart += 1
+		Player: You're not weird looking!
+		Alice: You know other girls that have this disease?
+		Player: No but
+		Alice: Then I am
+	- That must have been tough
+		Player: That must have been tough 😕
+		Player: But don't let bullies ruin your experience here!
+	Alice: I'm sorry
+	Alice: Maybe you're different.. 
+	Alice: but.. 
+	Alice: I don't know
+- I'm just doing as instructed
+	Player: I'm just doing as instructed
+	Alice: Okay then
+Alice: I'll be in the club house if you want to come
+Player: Club house... 😅
+Alice: You don't have to
+Player: No no, I decided to help you already
+Player: I'll be there in an hour
+Alice: Ok..
+do advance_time(3, 10)
+Player: Did you get home?
+Alice: Yes, I did
+Player: See that wasn't so bad
+Alice: I guess
+Alice: People were looking at me..
+Player: Yeah but that was the worst of it right?
+if Story.white_heart > 0:
+	Player: All you need is a friend with you
+	Alice: You want to be my friend?
+	Player: Yeah why not
+	Alice: I guess.. we can try
+	Alice: And
+Alice: It was a little nice to go out for a change
+Player: Maybe you can try what you learned
+Alice: Right now?
+Player: Sure
+Alice: Uhm.. okay but we're not outside anymore
+Alice: What am I supposed to take pictures of in my room?
+Player: Maybe yourself?
+Alice: 🫥
+Alice: But..
+Player: Still don't trust me?
+Alice: ...
+Alice: I guess I can try one more time
+Player: Thanks Alice 😊👍
+Alice: Uhm.. okay give me a second
+Alice: img: alice/6
+Alice: Oh wait, I have to do the zoom thing
+Player: Yup, give it a pinch
+Alice: Okay hold on, I think I did it
+Alice: img: alice/7
+Alice: What's wrong with it now?
+Player: Are you sure the focus is on you?
+Alice: Oh, I forgot about that
+Alice: Ok it looks better now
+Alice: img: alice/8
+Alice: It looks clear again 😶
+Alice: I'm happy it works but..
+Alice: I don't like seeing myself in pictures
+Player: Well you should because look at this
+Player: img: alice/9
+Alice: I thought you were just using your phone.. You took a picture?
+Player: Yeah, what do you think
+Alice: ...
+Alice: Can I keep this one?
+Player: Of course
+Player: I have more lol
+Alice: 🫥
+Player: Do you want to see them?
+Alice: Uhm.. sure if you don't mind
+Player: Haha okay one sec
+Player: img: alice/10
+Alice: I like this one too
+Player: Glad to hear that
+Player: img: alice/11
+Alice: You were a little close here
+Player: Ah whoops sorry 😅
+Player: I was trying to find an angle with you and the birdbath
+if Story.white_heart > 0:
+	Alice: It's okay.. I didn't mind it too much
+Alice: ..and I can keep these too?
+Player: Mhmm
+Alice: Uhm thanks..
+Alice: For showing me
+if Story.white_heart > 0:
+	Alice: Can I ask you something..?
+	Player: Sure
+	Alice: Was this a date?..
+	- I guess it was [#whiteheart]
+		set Story.white_heart += 1
+		Player: I guess it was
+		Alice: Okay..
+		do Story.set_profile_image(\"alice\", \"alice-8\")
+	- Not really
+		Player: Not really
+		Player: Just a photography practice session
+		Alice: Oh... I see..
+Alice: I have to go now
+Player: Bye Alice
+Alice: Bye
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

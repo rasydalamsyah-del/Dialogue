@@ -1,0 +1,268 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_x5lqu"]
+
+[resource]
+script = ExtResource("1_x5lqu")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Mom", "PlayerM")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "Mom",
+&"id": "1",
+&"next_id": "2",
+&"text": "Hey honey! How are you settling in?",
+&"type": "dialogue"
+},
+"10": {
+&"character": "Mom",
+&"id": "10",
+&"next_id": "11",
+&"text": "I'm sure you'll make a lot of friends and have a good time soon enough",
+&"type": "dialogue"
+},
+"11": {
+&"character": "PlayerM",
+&"id": "11",
+&"next_id": "12",
+&"text": "I can't, I wanna come home 😭",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Mom",
+&"id": "12",
+&"next_id": "13",
+&"text": "I'd love nothing more to hug my big girl but life is life honey 🥹",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Mom",
+&"id": "13",
+&"next_id": "14",
+&"text": "Don't grow up too fast",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Mom",
+&"id": "14",
+&"next_id": "15",
+&"text": "Doesn't your boyfriend go there too now?",
+&"type": "dialogue"
+},
+"15": {
+&"character": "PlayerM",
+&"id": "15",
+&"next_id": "16",
+&"text": "He does 😊",
+&"type": "dialogue"
+},
+"16": {
+&"character": "PlayerM",
+&"id": "16",
+&"next_id": "17",
+&"text": "He's the best!",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Mom",
+&"id": "17",
+&"next_id": "18",
+&"text": "There you go! You're in good hands",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Mom",
+&"id": "18",
+&"next_id": "19",
+&"text": "Say hi to him for me",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Mom",
+&"id": "19",
+&"next_id": "20",
+&"text": "And make sure to study hard",
+&"type": "dialogue"
+},
+"2": {
+&"character": "PlayerM",
+&"id": "2",
+&"next_id": "3",
+&"text": "Moooom 🥺",
+&"type": "dialogue"
+},
+"20": {
+&"character": "PlayerM",
+&"id": "20",
+&"next_id": "21",
+&"text": "I will mom",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Mom",
+&"id": "21",
+&"next_id": "22",
+&"text": "And eat well okay? No more late night snacking!",
+&"type": "dialogue"
+},
+"22": {
+&"character": "PlayerM",
+&"id": "22",
+&"next_id": "23",
+&"text": "Okay, I promise I won't",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Mom",
+&"id": "23",
+&"next_id": "24",
+&"text": "But if the cafeteria food isn't good then I packed you a box of a few meals that should be good for this month",
+&"type": "dialogue"
+},
+"24": {
+&"character": "PlayerM",
+&"id": "24",
+&"next_id": "25",
+&"text": "Omg thanks Mom, you're the bestest",
+&"type": "dialogue"
+},
+"25": {
+&"character": "PlayerM",
+&"id": "25",
+&"next_id": "26",
+&"text": "That makes me miss you even more omg",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Mom",
+&"id": "26",
+&"next_id": "27",
+&"text": "Love you baby, it's getting late",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Mom",
+&"id": "27",
+&"next_id": "28",
+&"text": "Make sure you don't ruin your sleep okay?",
+&"type": "dialogue"
+},
+"28": {
+&"character": "PlayerM",
+&"id": "28",
+&"next_id": "29",
+&"text": "Okay, good night mom",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Mom",
+&"id": "29",
+&"next_id": "30",
+&"text": "Good night baby ❤️",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Mom",
+&"id": "3",
+&"next_id": "4",
+&"text": "Yes sweeetie",
+&"type": "dialogue"
+},
+"30": {
+&"id": "30",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"31": {
+&"id": "31",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"4": {
+&"character": "PlayerM",
+&"id": "4",
+&"next_id": "5",
+&"text": "Mom I miss youu already",
+&"type": "dialogue"
+},
+"5": {
+&"character": "PlayerM",
+&"id": "5",
+&"next_id": "6",
+&"text": "I miss Ms Whiskers and my bed",
+&"type": "dialogue"
+},
+"6": {
+&"character": "PlayerM",
+&"id": "6",
+&"next_id": "7",
+&"text": "img: mabel/9",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Mom",
+&"id": "7",
+&"next_id": "8",
+&"text": "I miss you too 🥰",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Mom",
+&"id": "8",
+&"next_id": "9",
+&"text": "You can do it honey, hang in there",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Mom",
+&"id": "9",
+&"next_id": "10",
+&"text": "It's only your first day",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+Mom: Hey honey! How are you settling in?
+PlayerM: Moooom 🥺
+Mom: Yes sweeetie
+PlayerM: Mom I miss youu already
+PlayerM: I miss Ms Whiskers and my bed
+PlayerM: img: mabel/9
+Mom: I miss you too 🥰
+Mom: You can do it honey, hang in there
+Mom: It's only your first day
+Mom: I'm sure you'll make a lot of friends and have a good time soon enough
+PlayerM: I can't, I wanna come home 😭
+Mom: I'd love nothing more to hug my big girl but life is life honey 🥹
+Mom: Don't grow up too fast
+Mom: Doesn't your boyfriend go there too now?
+PlayerM: He does 😊
+PlayerM: He's the best!
+Mom: There you go! You're in good hands
+Mom: Say hi to him for me
+Mom: And make sure to study hard
+PlayerM: I will mom
+Mom: And eat well okay? No more late night snacking!
+PlayerM: Okay, I promise I won't
+Mom: But if the cafeteria food isn't good then I packed you a box of a few meals that should be good for this month
+PlayerM: Omg thanks Mom, you're the bestest
+PlayerM: That makes me miss you even more omg
+Mom: Love you baby, it's getting late
+Mom: Make sure you don't ruin your sleep okay?
+PlayerM: Okay, good night mom
+Mom: Good night baby ❤️
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

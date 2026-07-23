@@ -1,0 +1,1241 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_vmipw"]
+
+[resource]
+script = ExtResource("1_vmipw")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Caleb", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Player",
+&"id": "10",
+&"next_id": "11",
+&"text": "No problem!",
+&"type": "dialogue"
+},
+"100": {
+&"id": "100",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "orange_heart"
+}, {
+&"i": 23,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 26,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "101",
+&"type": "mutation"
+},
+"101": {
+&"character": "Player",
+&"id": "101",
+&"next_id": "102",
+&"text": "I wonder if she'd be interested in dating a student",
+&"type": "dialogue"
+},
+"102": {
+&"character": "Caleb",
+&"id": "102",
+&"next_id": "103",
+&"text": "Oh, I have no idea",
+&"type": "dialogue"
+},
+"103": {
+&"character": "Caleb",
+&"id": "103",
+&"next_id": "104",
+&"text": "I don't know how I'd ask her about that so maybe you could ask her yourself",
+&"type": "dialogue"
+},
+"104": {
+&"character": "Caleb",
+&"id": "104",
+&"next_id": "115",
+&"text": "I just always assumed not",
+&"type": "dialogue"
+},
+"105": {
+&"id": "105",
+&"next_id": "106",
+&"text": "That's really cool",
+&"type": "response"
+},
+"106": {
+&"character": "Player",
+&"id": "106",
+&"next_id": "107",
+&"text": "That's really cool",
+&"type": "dialogue"
+},
+"107": {
+&"character": "Caleb",
+&"id": "107",
+&"next_id": "108",
+&"text": "You think so?",
+&"type": "dialogue"
+},
+"108": {
+&"character": "Caleb",
+&"id": "108",
+&"next_id": "109",
+&"text": "A lot of other groups think we're a super lame club",
+&"type": "dialogue"
+},
+"109": {
+&"character": "Caleb",
+&"id": "109",
+&"next_id": "115",
+&"text": "I'm glad you think otherwise!",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Caleb",
+&"id": "11",
+&"next_id": "12",
+&"text": "Actually she was supposed to text you but she got caught up with work 😅",
+&"type": "dialogue"
+},
+"110": {
+&"id": "110",
+&"next_id": "111",
+&"text": "Is she a part of the club?",
+&"type": "response"
+},
+"111": {
+&"character": "Player",
+&"id": "111",
+&"next_id": "112",
+&"text": "Is she a part of the club?",
+&"type": "dialogue"
+},
+"112": {
+&"character": "Caleb",
+&"id": "112",
+&"next_id": "113",
+&"text": "Well sort of",
+&"type": "dialogue"
+},
+"113": {
+&"character": "Caleb",
+&"id": "113",
+&"next_id": "114",
+&"text": "Clubs are usually funded by a faculty member so she backs us",
+&"type": "dialogue"
+},
+"114": {
+&"character": "Caleb",
+&"id": "114",
+&"next_id": "115",
+&"text": "She's really kind to us, hopefully you'll meet her next time",
+&"type": "dialogue"
+},
+"115": {
+&"character": "Player",
+&"id": "115",
+&"next_id": "116",
+&"text": "Thanks for sharing!",
+&"type": "dialogue"
+},
+"116": {
+&"character": "Caleb",
+&"id": "116",
+&"next_id": "117",
+&"text": "Was there anything else?",
+&"type": "dialogue"
+},
+"117": {
+&"id": "117",
+&"next_id": "118",
+&"responses": PackedStringArray("117", "121"),
+&"text": "Do you have a Social acc I could follow?",
+&"type": "response"
+},
+"118": {
+&"character": "Player",
+&"id": "118",
+&"next_id": "119",
+&"text": "Do you have a Social acc I could follow?",
+&"type": "dialogue"
+},
+"119": {
+&"character": "Caleb",
+&"id": "119",
+&"next_id": "120",
+&"text": "Sure!",
+&"type": "dialogue"
+},
+"12": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"i": 9,
+&"type": &"variable",
+&"value": "red_heart"
+}, {
+&"i": 19,
+&"type": &"comparison",
+&"value": ">="
+}, {
+&"i": 22,
+&"type": &"number",
+&"value": 1
+}])
+},
+&"id": "12",
+&"next_id": "13",
+&"next_id_after": "16",
+&"type": "condition"
+},
+"120": {
+&"id": "120",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "PhoneUnlocks"
+}, {
+&"i": 16,
+&"type": &"dot"
+}, {
+&"i": 17,
+&"type": &"variable",
+&"value": "reveal"
+}, {
+&"i": 24,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 26,
+&"type": &"string",
+&"value": "caleb"
+}]),
+&"is_blocking": true
+},
+&"next_id": "123",
+&"type": "mutation"
+},
+"121": {
+&"id": "121",
+&"next_id": "122",
+&"text": "That's all!",
+&"type": "response"
+},
+"122": {
+&"character": "Player",
+&"id": "122",
+&"next_id": "123",
+&"text": "That's all!",
+&"type": "dialogue"
+},
+"123": {
+&"character": "Caleb",
+&"id": "123",
+&"next_id": "124",
+&"text": "I hope you'll visit us more often!",
+&"type": "dialogue"
+},
+"124": {
+&"character": "Caleb",
+&"id": "124",
+&"next_id": "125",
+&"text": "Naomi says hi and to tell you that the both of you are welcome any time!",
+&"type": "dialogue"
+},
+"125": {
+&"character": "Player",
+&"id": "125",
+&"next_id": "126",
+&"text": "Thanks, might do when we can",
+&"type": "dialogue"
+},
+"126": {
+&"id": "126",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"127": {
+&"id": "127",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"13": {
+&"character": "Caleb",
+&"id": "13",
+&"next_id": "14",
+&"text": "She said a lot of nice things about you the other day!",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Player",
+&"id": "14",
+&"next_id": "15",
+&"text": "Really?",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Caleb",
+&"id": "15",
+&"next_id": "16",
+&"text": "Yup!",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Caleb",
+&"id": "16",
+&"next_id": "17",
+&"text": "You might hear from her soon",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Caleb",
+&"id": "17",
+&"next_id": "18",
+&"text": "But anyway!",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Caleb",
+&"id": "18",
+&"next_id": "19",
+&"text": "I also wanted to send you the pictures we took today!",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Player",
+&"id": "19",
+&"next_id": "20",
+&"text": "That sounds good",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "unlock_gallery_image",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 24,
+&"type": &"string",
+&"value": "caleb"
+}]), Array[Dictionary]([{
+&"i": 33,
+&"type": &"string",
+&"value": "1"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "3",
+&"type": "mutation"
+},
+"20": {
+&"character": "Caleb",
+&"id": "20",
+&"next_id": "21",
+&"text": "I had to use an old film that had a bit of space left on it",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Caleb",
+&"id": "21",
+&"next_id": "22",
+&"text": "A lot of them came out nice so I'll forward what I have 😊",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Player",
+&"id": "22",
+&"next_id": "23",
+&"text": "Awesome, lets see",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Caleb",
+&"id": "23",
+&"next_id": "24",
+&"text": "img: mabel/56",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Player",
+&"id": "24",
+&"next_id": "25",
+&"text": "They had a really good time",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Caleb",
+&"id": "25",
+&"next_id": "26",
+&"text": "I'm glad Mabel and Naomi are clicking well together",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Caleb",
+&"id": "26",
+&"next_id": "27",
+&"text": "I feel like it's been a while since the clubhouse was this lively",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Caleb",
+&"id": "27",
+&"next_id": "28",
+&"text": "It's usually a lot more quiet",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Player",
+&"id": "28",
+&"next_id": "29",
+&"text": "Why's that?",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Caleb",
+&"id": "29",
+&"next_id": "30",
+&"text": "Just not as many members as before",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Caleb",
+&"id": "3",
+&"next_id": "4",
+&"text": "Hey friend! 👋",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Caleb",
+&"id": "30",
+&"next_id": "31",
+&"text": "There's been a bit of gossip about us and we've had trouble getting new members since then 😓",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Caleb",
+&"id": "31",
+&"next_id": "32",
+&"text": "Anyway, I don't want to be a downer!",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Caleb",
+&"id": "32",
+&"next_id": "33",
+&"text": "Especially after the two had a really good time!",
+&"type": "dialogue"
+},
+"33": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"i": 9,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 21,
+&"type": &"comparison",
+&"value": ">="
+}, {
+&"i": 24,
+&"type": &"number",
+&"value": 60
+}])
+},
+&"id": "33",
+&"next_id": "34",
+&"next_id_after": "56",
+&"type": "condition"
+},
+"34": {
+&"character": "Caleb",
+&"id": "34",
+&"next_id": "35",
+&"text": "img: alice/1",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Caleb",
+&"id": "35",
+&"next_id": "36",
+&"text": "Alice actually sat down with us for a bit today 🙂",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Caleb",
+&"id": "36",
+&"next_id": "37",
+&"text": "Naomi begged her to meet Mabel",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Caleb",
+&"id": "37",
+&"next_id": "38",
+&"text": "She had a good feeling about them becoming friends I guess!",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Player",
+&"id": "38",
+&"next_id": "39",
+&"text": "She didn't say much",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Caleb",
+&"id": "39",
+&"next_id": "40",
+&"text": "Yeah.. Alice is not much of a talker",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Caleb",
+&"id": "4",
+&"next_id": "5",
+&"text": "Thanks for coming this afternoon",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Player",
+&"id": "40",
+&"next_id": "41",
+&"text": "Is she part of your photography club?",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Caleb",
+&"id": "41",
+&"next_id": "42",
+&"text": "Not exactly...",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Caleb",
+&"id": "42",
+&"next_id": "43",
+&"text": "She's had a pretty bad college experience so far 😞",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Caleb",
+&"id": "43",
+&"next_id": "44",
+&"text": "Sorority girls really pick on her hard because of her appearance",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Caleb",
+&"id": "44",
+&"next_id": "45",
+&"text": "Her eyes and hair really stand out, don't they?",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Caleb",
+&"id": "45",
+&"next_id": "46",
+&"text": "So she hides between classes in the club room, Naomi's special guest",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Caleb",
+&"id": "46",
+&"next_id": "47",
+&"text": "Poor girl 😕",
+&"type": "dialogue"
+},
+"47": {
+&"id": "47",
+&"next_id": "48",
+&"responses": PackedStringArray("47", "55"),
+&"text": "She doesn't look weird to me",
+&"type": "response"
+},
+"48": {
+&"id": "48",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "AliceNotWeird"
+}]),
+&"is_blocking": true
+},
+&"next_id": "49",
+&"type": "mutation"
+},
+"49": {
+&"character": "Player",
+&"id": "49",
+&"next_id": "50",
+&"text": "She doesn't look weird to me",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Player",
+&"id": "5",
+&"next_id": "6",
+&"text": "Caleb?",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Caleb",
+&"id": "50",
+&"next_id": "51",
+&"text": "Really? Have you met girls that look like her before?",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Player",
+&"id": "51",
+&"next_id": "52",
+&"text": "Not really",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Caleb",
+&"id": "52",
+&"next_id": "53",
+&"text": "Oh, well it's just something that's different I guess",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Caleb",
+&"id": "53",
+&"next_id": "54",
+&"text": "Maybe talk to her when you get the chance, I'm sure she'd be happy to hear that",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Caleb",
+&"id": "54",
+&"next_id": "56",
+&"text": "But she's usually quite shy and skittish haha so good luck!",
+&"type": "dialogue"
+},
+"55": {
+&"id": "55",
+&"next_id": "56",
+&"text": "[Say Nothing]",
+&"type": "response"
+},
+"56": {
+&"character": "Caleb",
+&"id": "56",
+&"next_id": "57",
+&"text": "Here's the next one",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Caleb",
+&"id": "57",
+&"next_id": "58",
+&"text": "delete: img: valerie/7",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Caleb",
+&"id": "58",
+&"next_id": "59",
+&"text": "Oh crap",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Caleb",
+&"id": "59",
+&"next_id": "60",
+&"text": "Uhm, wait a sec",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Caleb",
+&"id": "6",
+&"next_id": "7",
+&"text": "Yeah!",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Caleb",
+&"id": "60",
+&"next_id": "61",
+&"text": "Sorry...",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Caleb",
+&"id": "61",
+&"next_id": "62",
+&"text": "Just ignore what you saw 😅 Must've been on the old film",
+&"type": "dialogue"
+},
+"62": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 29,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 34,
+&"type": &"dot"
+}, {
+&"i": 35,
+&"type": &"variable",
+&"value": "brown_heart"
+}, {
+&"i": 47,
+&"type": &"comparison",
+&"value": ">="
+}, {
+&"i": 50,
+&"type": &"number",
+&"value": 1
+}])
+},
+&"condition_as_text": "Story.brown_heart >= 1",
+&"id": "62",
+&"next_id": "63",
+&"responses": PackedStringArray("62", "68"),
+&"text": "She looks a bit familiar",
+&"type": "response"
+},
+"63": {
+&"id": "63",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "CalebActingStrange"
+}]),
+&"is_blocking": true
+},
+&"next_id": "64",
+&"type": "mutation"
+},
+"64": {
+&"character": "Player",
+&"id": "64",
+&"next_id": "65",
+&"text": "She looks a bit familiar..",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Caleb",
+&"id": "65",
+&"next_id": "66",
+&"text": "Ah don't worry about it",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Caleb",
+&"id": "66",
+&"next_id": "67",
+&"text": "It's nothing at all",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Caleb",
+&"id": "67",
+&"next_id": "69",
+&"text": "Just some old memories",
+&"type": "dialogue"
+},
+"68": {
+&"id": "68",
+&"next_id": "69",
+&"text": "[Don't ask]",
+&"type": "response"
+},
+"69": {
+&"character": "Caleb",
+&"id": "69",
+&"next_id": "70",
+&"text": "Here's the one I meant to send",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Player",
+&"id": "7",
+&"next_id": "8",
+&"text": "Thanks for inviting me",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Caleb",
+&"id": "70",
+&"next_id": "71",
+&"text": "img: caleb/2",
+&"type": "dialogue"
+},
+"71": {
+&"character": "Caleb",
+&"id": "71",
+&"next_id": "72",
+&"text": "This turned out to be a good picture of us haha",
+&"type": "dialogue"
+},
+"72": {
+&"character": "Player",
+&"id": "72",
+&"next_id": "73",
+&"text": "Except I'm barely in it lol",
+&"type": "dialogue"
+},
+"73": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"i": 9,
+&"type": &"variable",
+&"value": "mabel_desire"
+}, {
+&"i": 22,
+&"type": &"comparison",
+&"value": ">"
+}, {
+&"i": 24,
+&"type": &"number",
+&"value": 10
+}])
+},
+&"id": "73",
+&"next_id": "74",
+&"next_id_after": "82",
+&"type": "condition"
+},
+"74": {
+&"character": "Caleb",
+&"id": "74",
+&"next_id": "75",
+&"text": "img: mabel/57",
+&"type": "dialogue"
+},
+"75": {
+&"character": "Caleb",
+&"id": "75",
+&"next_id": "76",
+&"text": "Oh and then the AC went down again lol 😰",
+&"type": "dialogue"
+},
+"76": {
+&"character": "Caleb",
+&"id": "76",
+&"next_id": "77",
+&"text": "Sorry about that haha",
+&"type": "dialogue"
+},
+"77": {
+&"character": "Caleb",
+&"id": "77",
+&"next_id": "78",
+&"text": "Naomi's totally gonna be mad at the company 😝",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Player",
+&"id": "78",
+&"next_id": "79",
+&"text": "That's okay, we got this picture out of it 😁",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Caleb",
+&"id": "79",
+&"next_id": "80",
+&"text": "True!",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Caleb",
+&"id": "8",
+&"next_id": "9",
+&"text": "It was awesome to have you!",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Caleb",
+&"id": "80",
+&"next_id": "81",
+&"text": "Oh uhm, I mean of Naomi... 😅",
+&"type": "dialogue"
+},
+"81": {
+&"character": "Caleb",
+&"id": "81",
+&"next_id": "82",
+&"text": "Anywayy",
+&"type": "dialogue"
+},
+"82": {
+&"character": "Caleb",
+&"id": "82",
+&"next_id": "83",
+&"text": "Well that was all that was in my reel",
+&"type": "dialogue"
+},
+"83": {
+&"character": "Caleb",
+&"id": "83",
+&"next_id": "84",
+&"text": "It's a bummer that Ms Suzanna wasn't able to join us today",
+&"type": "dialogue"
+},
+"84": {
+&"character": "Player",
+&"id": "84",
+&"next_id": "85",
+&"text": "Mabel's professor?",
+&"type": "dialogue"
+},
+"85": {
+&"character": "Caleb",
+&"id": "85",
+&"next_id": "86",
+&"text": "Yep!",
+&"type": "dialogue"
+},
+"86": {
+&"character": "Caleb",
+&"id": "86",
+&"next_id": "87",
+&"text": "I think she had a date 😅",
+&"type": "dialogue"
+},
+"87": {
+&"id": "87",
+&"next_id": "88",
+&"responses": PackedStringArray("87", "110"),
+&"text": "Date? She's not married?",
+&"type": "response"
+},
+"88": {
+&"character": "Player",
+&"id": "88",
+&"next_id": "89",
+&"text": "Date? She's not married?",
+&"type": "dialogue"
+},
+"89": {
+&"character": "Caleb",
+&"id": "89",
+&"next_id": "90",
+&"text": "Well, no",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Caleb",
+&"id": "9",
+&"next_id": "10",
+&"text": "I hope you don't mind that Naomi gave me your number",
+&"type": "dialogue"
+},
+"90": {
+&"character": "Caleb",
+&"id": "90",
+&"next_id": "91",
+&"text": "She's having trouble with that 😅",
+&"type": "dialogue"
+},
+"91": {
+&"character": "Caleb",
+&"id": "91",
+&"next_id": "92",
+&"text": "They all seem to be interested in younger women but don't tell her I told you 😓",
+&"type": "dialogue"
+},
+"92": {
+&"character": "Caleb",
+&"id": "92",
+&"next_id": "93",
+&"text": "She's only 31 though!",
+&"type": "dialogue"
+},
+"93": {
+&"character": "Caleb",
+&"id": "93",
+&"next_id": "94",
+&"text": "The ones that do go out with her end up trying to get her into one night stands 🙂",
+&"type": "dialogue"
+},
+"94": {
+&"character": "Caleb",
+&"id": "94",
+&"next_id": "95",
+&"text": "And she's not really into that",
+&"type": "dialogue"
+},
+"95": {
+&"character": "Player",
+&"id": "95",
+&"next_id": "96",
+&"text": "That's sad...",
+&"type": "dialogue"
+},
+"96": {
+&"character": "Player",
+&"id": "96",
+&"next_id": "97",
+&"text": "How do you know all this?",
+&"type": "dialogue"
+},
+"97": {
+&"character": "Caleb",
+&"id": "97",
+&"next_id": "98",
+&"text": "Well... In our club, we've got a pretty strong trust circle and she's a part of it",
+&"type": "dialogue"
+},
+"98": {
+&"character": "Caleb",
+&"id": "98",
+&"next_id": "99",
+&"text": "We tell each other everything and support each other where we can 😇",
+&"type": "dialogue"
+},
+"99": {
+&"id": "99",
+&"next_id": "100",
+&"responses": PackedStringArray("99", "105"),
+&"tags": PackedStringArray("orangeheart"),
+&"text": "I wonder if she'd be interested in dating a student",
+&"type": "response"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+do unlock_gallery_image(\"caleb\", \"1\")
+Caleb: Hey friend! 👋
+Caleb: Thanks for coming this afternoon
+Player: Caleb?
+Caleb: Yeah!
+Player: Thanks for inviting me
+Caleb: It was awesome to have you!
+Caleb: I hope you don't mind that Naomi gave me your number
+Player: No problem!
+Caleb: Actually she was supposed to text you but she got caught up with work 😅
+if Story.red_heart >= 1:
+	Caleb: She said a lot of nice things about you the other day!
+	Player: Really?
+	Caleb: Yup!
+Caleb: You might hear from her soon
+Caleb: But anyway!
+Caleb: I also wanted to send you the pictures we took today!
+Player: That sounds good
+Caleb: I had to use an old film that had a bit of space left on it
+Caleb: A lot of them came out nice so I'll forward what I have 😊
+Player: Awesome, lets see
+Caleb: img: mabel/56
+Player: They had a really good time
+Caleb: I'm glad Mabel and Naomi are clicking well together
+Caleb: I feel like it's been a while since the clubhouse was this lively
+Caleb: It's usually a lot more quiet
+Player: Why's that?
+Caleb: Just not as many members as before
+Caleb: There's been a bit of gossip about us and we've had trouble getting new members since then 😓
+Caleb: Anyway, I don't want to be a downer!
+Caleb: Especially after the two had a really good time!
+if Story.mabel_trust >= 60:
+	Caleb: img: alice/1
+	Caleb: Alice actually sat down with us for a bit today 🙂
+	Caleb: Naomi begged her to meet Mabel
+	Caleb: She had a good feeling about them becoming friends I guess!
+	Player: She didn't say much
+	Caleb: Yeah.. Alice is not much of a talker
+	Player: Is she part of your photography club?
+	Caleb: Not exactly...
+	Caleb: She's had a pretty bad college experience so far 😞
+	Caleb: Sorority girls really pick on her hard because of her appearance
+	Caleb: Her eyes and hair really stand out, don't they?
+	Caleb: So she hides between classes in the club room, Naomi's special guest
+	Caleb: Poor girl 😕
+	- She doesn't look weird to me
+		set Story.flag = \"AliceNotWeird\"
+		Player: She doesn't look weird to me
+		Caleb: Really? Have you met girls that look like her before?
+		Player: Not really
+		Caleb: Oh, well it's just something that's different I guess
+		Caleb: Maybe talk to her when you get the chance, I'm sure she'd be happy to hear that
+		Caleb: But she's usually quite shy and skittish haha so good luck!
+	- [Say Nothing]
+Caleb: Here's the next one
+Caleb: delete: img: valerie/7
+Caleb: Oh crap
+Caleb: Uhm, wait a sec
+Caleb: Sorry...
+Caleb: Just ignore what you saw 😅 Must've been on the old film
+- She looks a bit familiar [if Story.brown_heart >= 1]
+	set Story.flag = \"CalebActingStrange\"
+	Player: She looks a bit familiar..
+	Caleb: Ah don't worry about it
+	Caleb: It's nothing at all
+	Caleb: Just some old memories
+- [Don't ask]
+Caleb: Here's the one I meant to send
+Caleb: img: caleb/2
+Caleb: This turned out to be a good picture of us haha
+Player: Except I'm barely in it lol
+if Story.mabel_desire > 10:
+	Caleb: img: mabel/57
+	Caleb: Oh and then the AC went down again lol 😰
+	Caleb: Sorry about that haha
+	Caleb: Naomi's totally gonna be mad at the company 😝
+	Player: That's okay, we got this picture out of it 😁
+	Caleb: True!
+	Caleb: Oh uhm, I mean of Naomi... 😅
+	Caleb: Anywayy
+Caleb: Well that was all that was in my reel
+Caleb: It's a bummer that Ms Suzanna wasn't able to join us today
+Player: Mabel's professor?
+Caleb: Yep!
+Caleb: I think she had a date 😅
+- Date? She's not married?
+	Player: Date? She's not married?
+	Caleb: Well, no
+	Caleb: She's having trouble with that 😅
+	Caleb: They all seem to be interested in younger women but don't tell her I told you 😓
+	Caleb: She's only 31 though!
+	Caleb: The ones that do go out with her end up trying to get her into one night stands 🙂
+	Caleb: And she's not really into that
+	Player: That's sad...
+	Player: How do you know all this?
+	Caleb: Well... In our club, we've got a pretty strong trust circle and she's a part of it
+	Caleb: We tell each other everything and support each other where we can 😇
+	- I wonder if she'd be interested in dating a student [#orangeheart]
+		set Story.orange_heart += 1
+		Player: I wonder if she'd be interested in dating a student
+		Caleb: Oh, I have no idea
+		Caleb: I don't know how I'd ask her about that so maybe you could ask her yourself
+		Caleb: I just always assumed not
+	- That's really cool
+		Player: That's really cool
+		Caleb: You think so?
+		Caleb: A lot of other groups think we're a super lame club
+		Caleb: I'm glad you think otherwise!
+- Is she a part of the club?
+	Player: Is she a part of the club?
+	Caleb: Well sort of
+	Caleb: Clubs are usually funded by a faculty member so she backs us
+	Caleb: She's really kind to us, hopefully you'll meet her next time
+Player: Thanks for sharing!
+Caleb: Was there anything else?
+- Do you have a Social acc I could follow?
+	Player: Do you have a Social acc I could follow?
+	Caleb: Sure!
+	set PhoneUnlocks.reveal = \"caleb\"
+- That's all!
+	Player: That's all!
+Caleb: I hope you'll visit us more often!
+Caleb: Naomi says hi and to tell you that the both of you are welcome any time!
+Player: Thanks, might do when we can
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

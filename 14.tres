@@ -1,0 +1,1476 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_npfuw"]
+
+[resource]
+script = ExtResource("1_npfuw")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Mabel", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"id": "10",
+&"next_id": "11",
+&"responses": PackedStringArray("10", "14"),
+&"text": "Wow, so pretty",
+&"type": "response"
+},
+"100": {
+&"character": "Player",
+&"id": "100",
+&"next_id": "125",
+&"text": "Bye!",
+&"type": "dialogue"
+},
+"101": {
+&"condition": {},
+&"id": "101",
+&"next_id": "102",
+&"next_id_after": "125",
+&"type": "condition"
+},
+"102": {
+&"id": "102",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "NTS"
+}]),
+&"is_blocking": true
+},
+&"next_id": "103",
+&"type": "mutation"
+},
+"103": {
+&"character": "Mabel",
+&"id": "103",
+&"next_id": "104",
+&"text": "I want to help Naomi with the Photography Club!",
+&"type": "dialogue"
+},
+"104": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_desire"
+}, {
+&"i": 23,
+&"type": &"comparison",
+&"value": ">"
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 0
+}])
+},
+&"id": "104",
+&"next_id": "105",
+&"next_id_after": "108",
+&"next_sibling_id": "106",
+&"type": "condition"
+},
+"105": {
+&"id": "105",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "LUST"
+}]),
+&"is_blocking": true
+},
+&"next_id": "108",
+&"type": "mutation"
+},
+"106": {
+&"condition": {},
+&"id": "106",
+&"next_id": "107",
+&"next_id_after": "108",
+&"type": "condition"
+},
+"107": {
+&"id": "107",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "LOVE"
+}]),
+&"is_blocking": true
+},
+&"next_id": "108",
+&"type": "mutation"
+},
+"108": {
+&"character": "Mabel",
+&"id": "108",
+&"next_id": "109",
+&"text": "She and Ms Suzanna are so nice to me so I thought I'd join",
+&"type": "dialogue"
+},
+"109": {
+&"character": "Mabel",
+&"id": "109",
+&"next_id": "110",
+&"text": "I feel like it'll be a lot of fun",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Player",
+&"id": "11",
+&"next_id": "12",
+&"text": "Wow, so pretty!",
+&"type": "dialogue"
+},
+"110": {
+&"character": "Mabel",
+&"id": "110",
+&"next_id": "111",
+&"text": "Plus you can join too!",
+&"type": "dialogue"
+},
+"111": {
+&"character": "Mabel",
+&"id": "111",
+&"next_id": "112",
+&"text": "Since the Sorority is a girls only club",
+&"type": "dialogue"
+},
+"112": {
+&"character": "Mabel",
+&"id": "112",
+&"next_id": "113",
+&"text": "We can be together 😇",
+&"type": "dialogue"
+},
+"113": {
+&"character": "Mabel",
+&"id": "113",
+&"next_id": "114",
+&"text": "Would you like that?",
+&"type": "dialogue"
+},
+"114": {
+&"character": "Player",
+&"id": "114",
+&"next_id": "115",
+&"text": "I would!",
+&"type": "dialogue"
+},
+"115": {
+&"character": "Mabel",
+&"id": "115",
+&"next_id": "116",
+&"text": "Really? 😍",
+&"type": "dialogue"
+},
+"116": {
+&"character": "Mabel",
+&"id": "116",
+&"next_id": "117",
+&"text": "Omg that's so exciting 😊",
+&"type": "dialogue"
+},
+"117": {
+&"character": "Player",
+&"id": "117",
+&"next_id": "118",
+&"text": "How do I join?",
+&"type": "dialogue"
+},
+"118": {
+&"character": "Mabel",
+&"id": "118",
+&"next_id": "119",
+&"text": "I'll tell Naomi you want to join",
+&"type": "dialogue"
+},
+"119": {
+&"character": "Mabel",
+&"id": "119",
+&"next_id": "120",
+&"text": "I'm sure she'll be happy to hear it!",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Mabel",
+&"id": "12",
+&"next_id": "13",
+&"text": "Thanks!",
+&"type": "dialogue"
+},
+"120": {
+&"character": "Mabel",
+&"id": "120",
+&"next_id": "121",
+&"text": "She can send you an application!",
+&"type": "dialogue"
+},
+"121": {
+&"character": "Player",
+&"id": "121",
+&"next_id": "122",
+&"text": "Sounds good!",
+&"type": "dialogue"
+},
+"122": {
+&"character": "Mabel",
+&"id": "122",
+&"next_id": "123",
+&"text": "Alright I'll go do that now!",
+&"type": "dialogue"
+},
+"123": {
+&"character": "Mabel",
+&"id": "123",
+&"next_id": "124",
+&"text": "TTYL",
+&"type": "dialogue"
+},
+"124": {
+&"character": "Player",
+&"id": "124",
+&"next_id": "125",
+&"text": "Thanks babe",
+&"type": "dialogue"
+},
+"125": {
+&"id": "125",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"126": {
+&"id": "126",
+&"next_id": "127",
+&"type": ""
+},
+"127": {
+&"id": "127",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"13": {
+&"character": "Mabel",
+&"id": "13",
+&"next_id": "19",
+&"text": "Thought: I gotta mention it better next time",
+&"type": "dialogue"
+},
+"14": {
+&"id": "14",
+&"next_id": "15",
+&"text": "Welcome back!",
+&"type": "response"
+},
+"15": {
+&"character": "Player",
+&"id": "15",
+&"next_id": "16",
+&"text": "Welcome back!",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Mabel",
+&"id": "16",
+&"next_id": "17",
+&"text": "Thanks babe 🥰",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Mabel",
+&"id": "17",
+&"next_id": "18",
+&"text": "Thought: OMG he didn't even notice",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Mabel",
+&"id": "18",
+&"next_id": "19",
+&"text": "Thought: I have to take a better one next time",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Mabel",
+&"id": "19",
+&"next_id": "20",
+&"text": "How was your day? 😁..",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Mabel",
+&"id": "2",
+&"next_id": "3",
+&"text": "Waaa what a tiring day",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Mabel",
+&"id": "20",
+&"next_id": "21",
+&"text": "Did you eat healthy??",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Player",
+&"id": "21",
+&"next_id": "22",
+&"text": "It was okay",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Player",
+&"id": "22",
+&"next_id": "23",
+&"text": "I ate my sandwich!",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Mabel",
+&"id": "23",
+&"next_id": "24",
+&"text": "That's good 😊",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Mabel",
+&"id": "24",
+&"next_id": "25",
+&"text": "Be healthy cause we have a long life to live together 🥰",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Mabel",
+&"id": "25",
+&"next_id": "26",
+&"text": "Oh I wanted to ask you",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Mabel",
+&"id": "26",
+&"next_id": "27",
+&"text": "Did you want to maybe go on a date on Sunday?",
+&"type": "dialogue"
+},
+"27": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"i": 9,
+&"type": &"variable",
+&"value": "pink_heart"
+}, {
+&"i": 20,
+&"type": &"comparison",
+&"value": "=="
+}, {
+&"i": 23,
+&"type": &"number",
+&"value": 0
+}])
+},
+&"id": "27",
+&"next_id": "28",
+&"next_id_after": "30",
+&"type": "condition"
+},
+"28": {
+&"character": "Mabel",
+&"id": "28",
+&"next_id": "29",
+&"text": "I know you've been busy but",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Mabel",
+&"id": "29",
+&"next_id": "30",
+&"text": "I really want to see you this time",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Mabel",
+&"id": "3",
+&"next_id": "4",
+&"text": "I just feel like...",
+&"type": "dialogue"
+},
+"30": {
+&"id": "30",
+&"next_id": "31",
+&"responses": PackedStringArray("30", "38", "46"),
+&"tags": PackedStringArray("pinkheart"),
+&"text": "I can",
+&"type": "response"
+},
+"31": {
+&"id": "31",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "pink_heart"
+}, {
+&"i": 21,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 24,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "32",
+&"type": "mutation"
+},
+"32": {
+&"id": "32",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "Date3"
+}]),
+&"is_blocking": true
+},
+&"next_id": "33",
+&"type": "mutation"
+},
+"33": {
+&"character": "Player",
+&"id": "33",
+&"next_id": "34",
+&"text": "I can!",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Mabel",
+&"id": "34",
+&"next_id": "35",
+&"text": "🥹",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Mabel",
+&"id": "35",
+&"next_id": "36",
+&"text": "That makes me so happy",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Mabel",
+&"id": "36",
+&"next_id": "37",
+&"text": "We'll figure something really fun out for the weekend!",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Player",
+&"id": "37",
+&"next_id": "55",
+&"text": "Can't wait!",
+&"type": "dialogue"
+},
+"38": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 31,
+&"type": &"variable",
+&"value": "PhoneUnlocks"
+}, {
+&"i": 43,
+&"type": &"dot"
+}, {
+&"function": "is_claimed",
+&"i": 44,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 55,
+&"type": &"string",
+&"value": "Week3Work"
+}, {
+&"i": 66,
+&"type": &"parens_close"
+}])])
+}, {
+&"i": 68,
+&"type": &"comparison",
+&"value": "=="
+}, {
+&"i": 71,
+&"type": &"variable",
+&"value": "true"
+}])
+},
+&"condition_as_text": "PhoneUnlocks.is_claimed(\"Week3Work\") == true",
+&"id": "38",
+&"next_id": "39",
+&"text": "I can't with work going on",
+&"type": "response"
+},
+"39": {
+&"character": "Player",
+&"id": "39",
+&"next_id": "40",
+&"text": "I can't with work going on babe",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Mabel",
+&"id": "4",
+&"next_id": "5",
+&"text": "sfx: bedcreak2: *creak*",
+&"type": "dialogue"
+},
+"40": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "pink_heart"
+}, {
+&"i": 21,
+&"type": &"comparison",
+&"value": "=="
+}, {
+&"i": 24,
+&"type": &"number",
+&"value": 0
+}])
+},
+&"id": "40",
+&"next_id": "41",
+&"next_id_after": "44",
+&"type": "condition"
+},
+"41": {
+&"id": "41",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "-="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 15
+}]),
+&"is_blocking": true
+},
+&"next_id": "42",
+&"type": "mutation"
+},
+"42": {
+&"character": "Mabel",
+&"id": "42",
+&"next_id": "43",
+&"text": "Thought: Are we ever going to go on a date...?",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Mabel",
+&"id": "43",
+&"next_id": "44",
+&"text": "Thought: I miss being with you",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Player",
+&"id": "44",
+&"next_id": "45",
+&"text": "Sorry",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Mabel",
+&"id": "45",
+&"next_id": "55",
+&"text": "It's okay!",
+&"type": "dialogue"
+},
+"46": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 41,
+&"type": &"variable",
+&"value": "PhoneUnlocks"
+}, {
+&"i": 53,
+&"type": &"dot"
+}, {
+&"function": "is_claimed",
+&"i": 54,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 65,
+&"type": &"string",
+&"value": "Week3Work"
+}, {
+&"i": 76,
+&"type": &"parens_close"
+}])])
+}, {
+&"i": 78,
+&"type": &"comparison",
+&"value": "=="
+}, {
+&"i": 81,
+&"type": &"variable",
+&"value": "false"
+}])
+},
+&"condition_as_text": "PhoneUnlocks.is_claimed(\"Week3Work\") == false",
+&"id": "46",
+&"next_id": "47",
+&"tags": PackedStringArray("dollar"),
+&"text": "I can't with work going on",
+&"type": "response"
+},
+"47": {
+&"id": "47",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "PhoneUnlocks"
+}, {
+&"i": 16,
+&"type": &"dot"
+}, {
+&"i": 17,
+&"type": &"variable",
+&"value": "claim"
+}, {
+&"i": 23,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 25,
+&"type": &"string",
+&"value": "Week3Work"
+}]),
+&"is_blocking": true
+},
+&"next_id": "48",
+&"type": "mutation"
+},
+"48": {
+&"character": "Player",
+&"id": "48",
+&"next_id": "49",
+&"text": "I can't with work going on babe",
+&"type": "dialogue"
+},
+"49": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "pink_heart"
+}, {
+&"i": 21,
+&"type": &"comparison",
+&"value": "=="
+}, {
+&"i": 24,
+&"type": &"number",
+&"value": 0
+}])
+},
+&"id": "49",
+&"next_id": "50",
+&"next_id_after": "53",
+&"type": "condition"
+},
+"5": {
+&"character": "Mabel",
+&"id": "5",
+&"next_id": "6",
+&"text": "Collapsing on my bed 🫠",
+&"type": "dialogue"
+},
+"50": {
+&"id": "50",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "-="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 15
+}]),
+&"is_blocking": true
+},
+&"next_id": "51",
+&"type": "mutation"
+},
+"51": {
+&"character": "Mabel",
+&"id": "51",
+&"next_id": "52",
+&"text": "Thought: Are we ever going to go on a date...?",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Mabel",
+&"id": "52",
+&"next_id": "53",
+&"text": "Thought: I miss being with you",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Player",
+&"id": "53",
+&"next_id": "54",
+&"text": "Sorry",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Mabel",
+&"id": "54",
+&"next_id": "55",
+&"text": "It's okay!",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Player",
+&"id": "55",
+&"next_id": "56",
+&"text": "Have you picked a club yet?",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Mabel",
+&"id": "56",
+&"next_id": "57",
+&"text": "Ohh!!",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Mabel",
+&"id": "57",
+&"next_id": "58",
+&"text": "The clubs!",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Mabel",
+&"id": "58",
+&"next_id": "59",
+&"text": "Almost forgot about that",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Mabel",
+&"id": "59",
+&"next_id": "60",
+&"text": "There's been so much talk about it",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Mabel",
+&"id": "6",
+&"next_id": "7",
+&"text": "PinkThought: I couldn't do it yesterday, maybe today?",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Mabel",
+&"id": "60",
+&"next_id": "61",
+&"text": "All the huge signs and posters everywhere..",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Mabel",
+&"id": "61",
+&"next_id": "62",
+&"text": "It's seriously a bigger thing than I thought lol",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Player",
+&"id": "62",
+&"next_id": "63",
+&"text": "Yeah it seems like it",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Mabel",
+&"id": "63",
+&"next_id": "64",
+&"text": "Naomi and Nina have been both asking me to join all week 😵‍💫",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Mabel",
+&"id": "64",
+&"next_id": "65",
+&"text": "Some other clubs were stopping me in the hallways too begging me 🥹",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Mabel",
+&"id": "65",
+&"next_id": "66",
+&"text": "I felt so bad when I told them no 😭",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Player",
+&"id": "66",
+&"next_id": "67",
+&"text": "So undecided still?",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Mabel",
+&"id": "67",
+&"next_id": "68",
+&"text": "Actually...",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Mabel",
+&"id": "68",
+&"next_id": "69",
+&"text": "I did decide!",
+&"type": "dialogue"
+},
+"69": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"i": 9,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 21,
+&"type": &"comparison",
+&"value": "<"
+}, {
+&"i": 23,
+&"type": &"number",
+&"value": 50
+}])
+},
+&"id": "69",
+&"next_id": "70",
+&"next_id_after": "125",
+&"next_sibling_id": "101",
+&"type": "condition"
+},
+"7": {
+&"character": "Mabel",
+&"id": "7",
+&"next_id": "8",
+&"text": "PinkThought: Here goes..",
+&"type": "dialogue"
+},
+"70": {
+&"id": "70",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "NTR"
+}]),
+&"is_blocking": true
+},
+&"next_id": "71",
+&"type": "mutation"
+},
+"71": {
+&"character": "Mabel",
+&"id": "71",
+&"next_id": "72",
+&"text": "I thought the Sorority club is quite popular but not many girls get in",
+&"type": "dialogue"
+},
+"72": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_desire"
+}, {
+&"i": 23,
+&"type": &"comparison",
+&"value": ">"
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 0
+}])
+},
+&"id": "72",
+&"next_id": "73",
+&"next_id_after": "78",
+&"next_sibling_id": "75",
+&"type": "condition"
+},
+"73": {
+&"id": "73",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "LUST"
+}]),
+&"is_blocking": true
+},
+&"next_id": "74",
+&"type": "mutation"
+},
+"74": {
+&"character": "Mabel",
+&"id": "74",
+&"next_id": "78",
+&"text": "And looks like the girls there have a lot of status or something lol 🤔",
+&"type": "dialogue"
+},
+"75": {
+&"condition": {},
+&"id": "75",
+&"next_id": "76",
+&"next_id_after": "78",
+&"type": "condition"
+},
+"76": {
+&"id": "76",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "LOVE"
+}]),
+&"is_blocking": true
+},
+&"next_id": "77",
+&"type": "mutation"
+},
+"77": {
+&"character": "Mabel",
+&"id": "77",
+&"next_id": "78",
+&"text": "And looks like the girls there have a lot of status or something lol 🤔",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Mabel",
+&"id": "78",
+&"next_id": "79",
+&"text": "The grant and benefits are really good!",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Mabel",
+&"id": "79",
+&"next_id": "80",
+&"text": "I'm not sure about all the details of what they do but Nina says it'll be a lot of fun 😇",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Mabel",
+&"id": "8",
+&"next_id": "9",
+&"text": "img: mabel/77",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Mabel",
+&"id": "80",
+&"next_id": "81",
+&"text": "So I can't wait!!",
+&"type": "dialogue"
+},
+"81": {
+&"character": "Player",
+&"id": "81",
+&"next_id": "82",
+&"text": "Nice, sounds great!",
+&"type": "dialogue"
+},
+"82": {
+&"character": "Mabel",
+&"id": "82",
+&"next_id": "83",
+&"text": "Thanks! 🥰",
+&"type": "dialogue"
+},
+"83": {
+&"character": "Mabel",
+&"id": "83",
+&"next_id": "84",
+&"text": "I'm gonna fill in my sign up sheet tomorrow and apply on Friday!",
+&"type": "dialogue"
+},
+"84": {
+&"character": "Mabel",
+&"id": "84",
+&"next_id": "85",
+&"text": "Apparently I'm a lucky one to get in 🤭",
+&"type": "dialogue"
+},
+"85": {
+&"character": "Mabel",
+&"id": "85",
+&"next_id": "86",
+&"text": "But I was hoping we could be in the same club but Sorority thing is only for girls 🥺",
+&"type": "dialogue"
+},
+"86": {
+&"character": "Mabel",
+&"id": "86",
+&"next_id": "87",
+&"text": "Are you going to join a club?",
+&"type": "dialogue"
+},
+"87": {
+&"character": "Player",
+&"id": "87",
+&"next_id": "88",
+&"text": "Hmm, I haven't had the same luck",
+&"type": "dialogue"
+},
+"88": {
+&"character": "Player",
+&"id": "88",
+&"next_id": "89",
+&"text": "I'll have to find one soon I guess",
+&"type": "dialogue"
+},
+"89": {
+&"character": "Mabel",
+&"id": "89",
+&"next_id": "90",
+&"text": "What about that friend of yours?",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Mabel",
+&"id": "9",
+&"next_id": "10",
+&"text": "😊",
+&"type": "dialogue"
+},
+"90": {
+&"character": "Player",
+&"id": "90",
+&"next_id": "91",
+&"text": "Oh right, maybe I'll ask",
+&"type": "dialogue"
+},
+"91": {
+&"character": "Mabel",
+&"id": "91",
+&"next_id": "92",
+&"text": "You could also have no club I guess but that's up to you",
+&"type": "dialogue"
+},
+"92": {
+&"character": "Mabel",
+&"id": "92",
+&"next_id": "93",
+&"text": "Curious to see what you might join 😁",
+&"type": "dialogue"
+},
+"93": {
+&"character": "Mabel",
+&"id": "93",
+&"next_id": "94",
+&"text": "But I'll tell you all about our girls club when I can!",
+&"type": "dialogue"
+},
+"94": {
+&"character": "Player",
+&"id": "94",
+&"next_id": "95",
+&"text": "For sure",
+&"type": "dialogue"
+},
+"95": {
+&"character": "Mabel",
+&"id": "95",
+&"next_id": "96",
+&"text": "Can't wait to know what you join hehe",
+&"type": "dialogue"
+},
+"96": {
+&"character": "Mabel",
+&"id": "96",
+&"next_id": "97",
+&"text": "I gotta go and start my assignment",
+&"type": "dialogue"
+},
+"97": {
+&"character": "Mabel",
+&"id": "97",
+&"next_id": "98",
+&"text": "I just wanna nap like a big ol' lazy cat though 😩",
+&"type": "dialogue"
+},
+"98": {
+&"character": "Player",
+&"id": "98",
+&"next_id": "99",
+&"text": "Get your work done!",
+&"type": "dialogue"
+},
+"99": {
+&"character": "Mabel",
+&"id": "99",
+&"next_id": "100",
+&"text": "Jeez fine, ttyl 😘",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+Mabel: Waaa what a tiring day
+Mabel: I just feel like...
+Mabel: sfx: bedcreak2: *creak*
+Mabel: Collapsing on my bed 🫠
+Mabel: PinkThought: I couldn't do it yesterday, maybe today?
+Mabel: PinkThought: Here goes..
+Mabel: img: mabel/77
+Mabel: 😊
+- Wow, so pretty
+	Player: Wow, so pretty!
+	Mabel: Thanks!
+	Mabel: Thought: I gotta mention it better next time
+- Welcome back!
+	Player: Welcome back!
+	Mabel: Thanks babe 🥰
+	Mabel: Thought: OMG he didn't even notice
+	Mabel: Thought: I have to take a better one next time
+Mabel: How was your day? 😁..
+Mabel: Did you eat healthy??
+Player: It was okay
+Player: I ate my sandwich!
+Mabel: That's good 😊
+Mabel: Be healthy cause we have a long life to live together 🥰
+Mabel: Oh I wanted to ask you
+Mabel: Did you want to maybe go on a date on Sunday?
+if Story.pink_heart == 0:
+	Mabel: I know you've been busy but
+	Mabel: I really want to see you this time
+- I can [#pinkheart]
+	set Story.pink_heart += 1
+	set Story.flag = \"Date3\"
+	Player: I can!
+	Mabel: 🥹
+	Mabel: That makes me so happy
+	Mabel: We'll figure something really fun out for the weekend!
+	Player: Can't wait!
+- I can't with work going on [if PhoneUnlocks.is_claimed(\"Week3Work\") == true]
+	Player: I can't with work going on babe
+	if Story.pink_heart == 0:
+		set Story.mabel_trust -= 15
+		Mabel: Thought: Are we ever going to go on a date...?
+		Mabel: Thought: I miss being with you
+	Player: Sorry
+	Mabel: It's okay!
+- I can't with work going on [#dollar] [if PhoneUnlocks.is_claimed(\"Week3Work\") == false]
+	set PhoneUnlocks.claim = \"Week3Work\"
+	Player: I can't with work going on babe
+	if Story.pink_heart == 0:
+		set Story.mabel_trust -= 15
+		Mabel: Thought: Are we ever going to go on a date...?
+		Mabel: Thought: I miss being with you
+	Player: Sorry
+	Mabel: It's okay!
+Player: Have you picked a club yet?
+Mabel: Ohh!!
+Mabel: The clubs! 
+Mabel: Almost forgot about that
+Mabel: There's been so much talk about it
+Mabel: All the huge signs and posters everywhere..
+Mabel: It's seriously a bigger thing than I thought lol
+Player: Yeah it seems like it
+Mabel: Naomi and Nina have been both asking me to join all week 😵‍💫
+Mabel: Some other clubs were stopping me in the hallways too begging me 🥹
+Mabel: I felt so bad when I told them no 😭
+Player: So undecided still?
+Mabel: Actually...
+Mabel: I did decide!
+if Story.mabel_trust < 50:
+	set Story.flag = \"NTR\"
+	Mabel: I thought the Sorority club is quite popular but not many girls get in
+	if Story.mabel_desire > 0:
+		set Story.flag = \"LUST\"
+		Mabel: And looks like the girls there have a lot of status or something lol 🤔
+	else:
+		set Story.flag = \"LOVE\"
+		Mabel: And looks like the girls there have a lot of status or something lol 🤔
+	Mabel: The grant and benefits are really good!
+	Mabel: I'm not sure about all the details of what they do but Nina says it'll be a lot of fun 😇
+	Mabel: So I can't wait!!
+	Player: Nice, sounds great!
+	Mabel: Thanks! 🥰
+	Mabel: I'm gonna fill in my sign up sheet tomorrow and apply on Friday!
+	Mabel: Apparently I'm a lucky one to get in 🤭
+	Mabel: But I was hoping we could be in the same club but Sorority thing is only for girls 🥺
+	Mabel: Are you going to join a club?
+	Player: Hmm, I haven't had the same luck
+	Player: I'll have to find one soon I guess
+	Mabel: What about that friend of yours?
+	Player: Oh right, maybe I'll ask
+	Mabel: You could also have no club I guess but that's up to you
+	Mabel: Curious to see what you might join 😁
+	Mabel: But I'll tell you all about our girls club when I can!
+	Player: For sure
+	Mabel: Can't wait to know what you join hehe
+	Mabel: I gotta go and start my assignment
+	Mabel: I just wanna nap like a big ol' lazy cat though 😩
+	Player: Get your work done!
+	Mabel: Jeez fine, ttyl 😘
+	Player: Bye!
+else:
+	set Story.flag = \"NTS\"
+	Mabel: I want to help Naomi with the Photography Club!
+	if Story.mabel_desire > 0:
+		set Story.flag = \"LUST\"
+	else:
+		set Story.flag = \"LOVE\"
+	Mabel: She and Ms Suzanna are so nice to me so I thought I'd join
+	Mabel: I feel like it'll be a lot of fun
+	Mabel: Plus you can join too! 
+	Mabel: Since the Sorority is a girls only club
+	Mabel: We can be together 😇
+	Mabel: Would you like that?
+	Player: I would!
+	Mabel: Really? 😍
+	Mabel: Omg that's so exciting 😊
+	Player: How do I join?
+	Mabel: I'll tell Naomi you want to join
+	Mabel: I'm sure she'll be happy to hear it!
+	Mabel: She can send you an application!
+	Player: Sounds good!
+	Mabel: Alright I'll go do that now!
+	Mabel: TTYL
+	Player: Thanks babe
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

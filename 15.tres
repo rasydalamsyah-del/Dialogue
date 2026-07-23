@@ -1,0 +1,901 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_rhclm"]
+
+[resource]
+script = ExtResource("1_rhclm")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Jason", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "Jason",
+&"id": "1",
+&"next_id": "2",
+&"text": "YO!!",
+&"type": "dialogue"
+},
+"10": {
+&"character": "Jason",
+&"id": "10",
+&"next_id": "11",
+&"text": "but also we gotta find our crew y'know",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Jason",
+&"id": "11",
+&"next_id": "12",
+&"text": "One with all the bitches haha",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Player",
+&"id": "12",
+&"next_id": "13",
+&"text": "Lol had a feeling you'd say that 😂",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Jason",
+&"id": "13",
+&"next_id": "14",
+&"text": "😆",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Jason",
+&"id": "14",
+&"next_id": "15",
+&"text": "You know me",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Jason",
+&"id": "15",
+&"next_id": "16",
+&"text": "Dick first. Ask questions later.",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Jason",
+&"id": "16",
+&"next_id": "17",
+&"text": "So I found the perfect one just for us dude",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Player",
+&"id": "17",
+&"next_id": "18",
+&"text": "Oh yeah? Which one?",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Jason",
+&"id": "18",
+&"next_id": "19",
+&"text": "FRATS bro duh",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Jason",
+&"id": "19",
+&"next_id": "20",
+&"text": "What did you think I'd say, the Hockey team?",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Jason",
+&"id": "2",
+&"next_id": "3",
+&"text": "You free for a sec?",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Player",
+&"id": "20",
+&"next_id": "21",
+&"text": "Frats?",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Jason",
+&"id": "21",
+&"next_id": "22",
+&"text": "Yessir, closely tied to the Sorority y'know",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Jason",
+&"id": "22",
+&"next_id": "23",
+&"text": "Where all the hotties are roaming?",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Player",
+&"id": "23",
+&"next_id": "24",
+&"text": "Are we even allowed into that club?",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Jason",
+&"id": "24",
+&"next_id": "25",
+&"text": "Hell yeah we are...",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Jason",
+&"id": "25",
+&"next_id": "26",
+&"text": "Okay maybe not THAT easily",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Jason",
+&"id": "26",
+&"next_id": "27",
+&"text": "They've got a \"requirement\" 👀",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Player",
+&"id": "27",
+&"next_id": "28",
+&"text": "Which is?",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Jason",
+&"id": "28",
+&"next_id": "29",
+&"text": "Well.. you need to be vouched for",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Jason",
+&"id": "29",
+&"next_id": "30",
+&"text": "So an invitation from one of the girls that is",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Player",
+&"id": "3",
+&"next_id": "4",
+&"text": "Hey dude, what's up?",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Player",
+&"id": "30",
+&"next_id": "31",
+&"text": "Like a ticket?",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Jason",
+&"id": "31",
+&"next_id": "32",
+&"text": "No dude 😂",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Jason",
+&"id": "32",
+&"next_id": "33",
+&"text": "What the fuck you think this is, an airport?",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Player",
+&"id": "33",
+&"next_id": "34",
+&"text": "How am I supposed to know 😆",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Jason",
+&"id": "34",
+&"next_id": "35",
+&"text": "Fair enough",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Jason",
+&"id": "35",
+&"next_id": "36",
+&"text": "You need panties from one of the Sorority gals",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Player",
+&"id": "36",
+&"next_id": "37",
+&"text": "What the...?",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Player",
+&"id": "37",
+&"next_id": "38",
+&"text": "How the heck are you going to get that?",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Jason",
+&"id": "38",
+&"next_id": "39",
+&"text": "Well you gotta fuck one, duh",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Player",
+&"id": "39",
+&"next_id": "40",
+&"text": "That's not happening in such a short time even if I wanted to 😅",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Jason",
+&"id": "4",
+&"next_id": "5",
+&"text": "Clubs be coming man",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Jason",
+&"id": "40",
+&"next_id": "41",
+&"text": "Okay well you don't GOTTA fuck one but you just gotta get their panties lol",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Player",
+&"id": "41",
+&"next_id": "42",
+&"text": "Before Friday? 🤯",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Jason",
+&"id": "42",
+&"next_id": "43",
+&"text": "Yessir",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Jason",
+&"id": "43",
+&"next_id": "44",
+&"text": "I know you got game bro, I believe in you",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Jason",
+&"id": "44",
+&"next_id": "45",
+&"text": "Or this about your girl?",
+&"type": "dialogue"
+},
+"45": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "JasonKnowsMabel"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "45",
+&"next_id": "46",
+&"next_id_after": "56",
+&"type": "condition"
+},
+"46": {
+&"character": "Jason",
+&"id": "46",
+&"next_id": "47",
+&"text": "Where's your hot gf goin anyway?",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Player",
+&"id": "47",
+&"next_id": "48",
+&"text": "She's in the sorority",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Jason",
+&"id": "48",
+&"next_id": "49",
+&"text": "Oh srsly?",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Jason",
+&"id": "49",
+&"next_id": "50",
+&"text": "She's in the wolves den my guy",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Player",
+&"id": "5",
+&"next_id": "6",
+&"text": "Yeah I've been thinking about them too",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Player",
+&"id": "50",
+&"next_id": "51",
+&"text": "Wym?",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Jason",
+&"id": "51",
+&"next_id": "52",
+&"text": "I mean we're talking the sorority here 😅",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Jason",
+&"id": "52",
+&"next_id": "53",
+&"text": "Every guy's gonna try to get with her",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Jason",
+&"id": "53",
+&"next_id": "54",
+&"text": "delete: I make no promises either if she falls on my lap",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Jason",
+&"id": "54",
+&"next_id": "55",
+&"text": "Was just a joke lol",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Jason",
+&"id": "55",
+&"next_id": "56",
+&"text": "But then that's all the more reason to join the frat lol",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Jason",
+&"id": "56",
+&"next_id": "57",
+&"text": "So what'll it be bro, you coming?",
+&"type": "dialogue"
+},
+"57": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 46,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 51,
+&"type": &"dot"
+}, {
+&"i": 52,
+&"type": &"variable",
+&"value": "black_heart"
+}, {
+&"i": 64,
+&"type": &"comparison",
+&"value": ">="
+}, {
+&"i": 67,
+&"type": &"number",
+&"value": 3
+}])
+},
+&"condition_as_text": "Story.black_heart >= 3",
+&"id": "57",
+&"next_id": "58",
+&"responses": PackedStringArray("57", "83"),
+&"tags": PackedStringArray("blackheart"),
+&"text": "I might be able to actually",
+&"type": "response"
+},
+"58": {
+&"id": "58",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "NinasPanties"
+}]),
+&"is_blocking": true
+},
+&"next_id": "59",
+&"type": "mutation"
+},
+"59": {
+&"id": "59",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "black_heart"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "60",
+&"type": "mutation"
+},
+"6": {
+&"character": "Player",
+&"id": "6",
+&"next_id": "7",
+&"text": "Are they really that big of a deal?",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Player",
+&"id": "60",
+&"next_id": "61",
+&"text": "I might be able to actually",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Player",
+&"id": "61",
+&"next_id": "62",
+&"text": "I know one of the Sorority girls",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Jason",
+&"id": "62",
+&"next_id": "63",
+&"text": "Oh sweet, which one?",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Player",
+&"id": "63",
+&"next_id": "64",
+&"text": "Nina",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Jason",
+&"id": "64",
+&"next_id": "65",
+&"text": "YOU KNOW NINA!? 😱😱😱",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Player",
+&"id": "65",
+&"next_id": "66",
+&"text": "Why? 😅",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Jason",
+&"id": "66",
+&"next_id": "67",
+&"text": "She does NOT fuck with anyone my dude",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Jason",
+&"id": "67",
+&"next_id": "68",
+&"text": "How the fuck you slide into that??",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Jason",
+&"id": "68",
+&"next_id": "69",
+&"text": "I knew you had game holy shit 😆",
+&"type": "dialogue"
+},
+"69": {
+&"character": "Player",
+&"id": "69",
+&"next_id": "70",
+&"text": "Wow this is a bit surprising lol",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Jason",
+&"id": "7",
+&"next_id": "8",
+&"text": "100% bro",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Jason",
+&"id": "70",
+&"next_id": "71",
+&"text": "You're telling me lmao",
+&"type": "dialogue"
+},
+"71": {
+&"character": "Jason",
+&"id": "71",
+&"next_id": "72",
+&"text": "She's a top of the food chain kinda girl",
+&"type": "dialogue"
+},
+"72": {
+&"character": "Jason",
+&"id": "72",
+&"next_id": "73",
+&"text": "Good shit man 😂",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Player",
+&"id": "73",
+&"next_id": "74",
+&"text": "Thanks I guess",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Jason",
+&"id": "74",
+&"next_id": "75",
+&"text": "You planning to fuck her?",
+&"type": "dialogue"
+},
+"75": {
+&"character": "Jason",
+&"id": "75",
+&"next_id": "76",
+&"text": "Actually don't tell me, I wanna watch things build up",
+&"type": "dialogue"
+},
+"76": {
+&"character": "Player",
+&"id": "76",
+&"next_id": "77",
+&"text": "lol 😁",
+&"type": "dialogue"
+},
+"77": {
+&"character": "Jason",
+&"id": "77",
+&"next_id": "78",
+&"text": "Right, you go get Nina's panties dawg",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Jason",
+&"id": "78",
+&"next_id": "79",
+&"text": "Crazy dog 😆",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Jason",
+&"id": "79",
+&"next_id": "80",
+&"text": "The entire frat circle is going to know if you do though lmao",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Jason",
+&"id": "8",
+&"next_id": "9",
+&"text": "You get a weekly grant for being in one",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Jason",
+&"id": "80",
+&"next_id": "81",
+&"text": "And let me know when you do, I'll sign us up on Friday",
+&"type": "dialogue"
+},
+"81": {
+&"character": "Jason",
+&"id": "81",
+&"next_id": "82",
+&"text": "Good luck my guy",
+&"type": "dialogue"
+},
+"82": {
+&"character": "Player",
+&"id": "82",
+&"next_id": "95",
+&"text": "Thanks 😅 Might need it!",
+&"type": "dialogue"
+},
+"83": {
+&"id": "83",
+&"next_id": "84",
+&"text": "I want to join but how can I?",
+&"type": "response"
+},
+"84": {
+&"id": "84",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "JasonsFavor"
+}]),
+&"is_blocking": true
+},
+&"next_id": "85",
+&"type": "mutation"
+},
+"85": {
+&"character": "Player",
+&"id": "85",
+&"next_id": "86",
+&"text": "I want to join but how can I?",
+&"type": "dialogue"
+},
+"86": {
+&"character": "Jason",
+&"id": "86",
+&"next_id": "87",
+&"text": "Hmm, I'll have to think of something",
+&"type": "dialogue"
+},
+"87": {
+&"character": "Jason",
+&"id": "87",
+&"next_id": "88",
+&"text": "I don't wanna be in there without you",
+&"type": "dialogue"
+},
+"88": {
+&"character": "Jason",
+&"id": "88",
+&"next_id": "89",
+&"text": "So gimme until tomorrow or something to deal with this",
+&"type": "dialogue"
+},
+"89": {
+&"character": "Player",
+&"id": "89",
+&"next_id": "90",
+&"text": "Really?",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Jason",
+&"id": "9",
+&"next_id": "10",
+&"text": "Free dolla",
+&"type": "dialogue"
+},
+"90": {
+&"character": "Jason",
+&"id": "90",
+&"next_id": "91",
+&"text": "Hell yeah dude, I got you fam",
+&"type": "dialogue"
+},
+"91": {
+&"character": "Jason",
+&"id": "91",
+&"next_id": "92",
+&"text": "What are friends for??",
+&"type": "dialogue"
+},
+"92": {
+&"character": "Player",
+&"id": "92",
+&"next_id": "93",
+&"text": "Thanks bro",
+&"type": "dialogue"
+},
+"93": {
+&"character": "Jason",
+&"id": "93",
+&"next_id": "94",
+&"text": "Alright, gotta run and see what I can do",
+&"type": "dialogue"
+},
+"94": {
+&"character": "Player",
+&"id": "94",
+&"next_id": "95",
+&"text": "Thanks!",
+&"type": "dialogue"
+},
+"95": {
+&"id": "95",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"96": {
+&"id": "96",
+&"next_id": "97",
+&"type": ""
+},
+"97": {
+&"id": "97",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "~ start
+Jason: YO!!
+Jason: You free for a sec?
+Player: Hey dude, what's up?
+Jason: Clubs be coming man
+Player: Yeah I've been thinking about them too
+Player: Are they really that big of a deal?
+Jason: 100% bro
+Jason: You get a weekly grant for being in one
+Jason: Free dolla
+Jason: but also we gotta find our crew y'know
+Jason: One with all the bitches haha
+Player: Lol had a feeling you'd say that 😂
+Jason: 😆
+Jason: You know me
+Jason: Dick first. Ask questions later.
+Jason: So I found the perfect one just for us dude
+Player: Oh yeah? Which one?
+Jason: FRATS bro duh
+Jason: What did you think I'd say, the Hockey team?
+Player: Frats?
+Jason: Yessir, closely tied to the Sorority y'know
+Jason: Where all the hotties are roaming?
+Player: Are we even allowed into that club?
+Jason: Hell yeah we are...
+Jason: Okay maybe not THAT easily
+Jason: They've got a \"requirement\" 👀
+Player: Which is?
+Jason: Well.. you need to be vouched for
+Jason: So an invitation from one of the girls that is
+Player: Like a ticket?
+Jason: No dude 😂
+Jason: What the fuck you think this is, an airport? 
+Player: How am I supposed to know 😆
+Jason: Fair enough
+Jason: You need panties from one of the Sorority gals
+Player: What the...?
+Player: How the heck are you going to get that?
+Jason: Well you gotta fuck one, duh
+Player: That's not happening in such a short time even if I wanted to 😅
+Jason: Okay well you don't GOTTA fuck one but you just gotta get their panties lol
+Player: Before Friday? 🤯
+Jason: Yessir
+Jason: I know you got game bro, I believe in you
+Jason: Or this about your girl?
+if Story.has_flag(\"JasonKnowsMabel\"):
+	Jason: Where's your hot gf goin anyway?
+	Player: She's in the sorority
+	Jason: Oh srsly?
+	Jason: She's in the wolves den my guy
+	Player: Wym?
+	Jason: I mean we're talking the sorority here 😅
+	Jason: Every guy's gonna try to get with her
+	Jason: delete: I make no promises either if she falls on my lap
+	Jason: Was just a joke lol
+	Jason: But then that's all the more reason to join the frat lol
+Jason: So what'll it be bro, you coming?
+- I might be able to actually [#blackheart] [if Story.black_heart >= 3]
+	set Story.flag = \"NinasPanties\"
+	set Story.black_heart += 1
+	Player: I might be able to actually
+	Player: I know one of the Sorority girls
+	Jason: Oh sweet, which one?
+	Player: Nina
+	Jason: YOU KNOW NINA!? 😱😱😱
+	Player: Why? 😅
+	Jason: She does NOT fuck with anyone my dude
+	Jason: How the fuck you slide into that??
+	Jason: I knew you had game holy shit 😆
+	Player: Wow this is a bit surprising lol
+	Jason: You're telling me lmao
+	Jason: She's a top of the food chain kinda girl
+	Jason: Good shit man 😂
+	Player: Thanks I guess
+	Jason: You planning to fuck her?
+	Jason: Actually don't tell me, I wanna watch things build up
+	Player: lol 😁
+	Jason: Right, you go get Nina's panties dawg
+	Jason: Crazy dog 😆
+	Jason: The entire frat circle is going to know if you do though lmao
+	Jason: And let me know when you do, I'll sign us up on Friday
+	Jason: Good luck my guy
+	Player: Thanks 😅 Might need it!
+- I want to join but how can I?
+	set Story.flag = \"JasonsFavor\"
+	Player: I want to join but how can I?
+	Jason: Hmm, I'll have to think of something
+	Jason: I don't wanna be in there without you
+	Jason: So gimme until tomorrow or something to deal with this
+	Player: Really?
+	Jason: Hell yeah dude, I got you fam
+	Jason: What are friends for??
+	Player: Thanks bro
+	Jason: Alright, gotta run and see what I can do
+	Player: Thanks!
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

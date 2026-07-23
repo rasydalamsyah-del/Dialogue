@@ -1,0 +1,602 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_7sg6o"]
+
+[resource]
+script = ExtResource("1_7sg6o")
+using_states = PackedStringArray()
+titles = {
+"start": "2"
+}
+character_names = PackedStringArray("Erika", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "2",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"10": {
+&"character": "Erika",
+&"id": "10",
+&"next_id": "11",
+&"text": "Mhmm, I'm currently assigned as \"your girl\"",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Erika",
+&"id": "11",
+&"next_id": "12",
+&"text": "Just makes me want to bury your face in my chest 🥰",
+&"type": "dialogue"
+},
+"12": {
+&"id": "12",
+&"next_id": "13",
+&"responses": PackedStringArray("12", "16"),
+&"tags": PackedStringArray("yellowheart"),
+&"text": "I like it",
+&"type": "response"
+},
+"13": {
+&"id": "13",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "yellow_heart"
+}, {
+&"i": 23,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 26,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "14",
+&"type": "mutation"
+},
+"14": {
+&"character": "Player",
+&"id": "14",
+&"next_id": "15",
+&"text": "I like it",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Erika",
+&"id": "15",
+&"next_id": "18",
+&"text": "I'm about to faint 🥰",
+&"type": "dialogue"
+},
+"16": {
+&"id": "16",
+&"next_id": "17",
+&"text": "I guess 😅",
+&"type": "response"
+},
+"17": {
+&"character": "Player",
+&"id": "17",
+&"next_id": "18",
+&"text": "I guess 😅",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Erika",
+&"id": "18",
+&"next_id": "19",
+&"text": "I've already tried on some of the outfits I think you'd like hehe",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Erika",
+&"id": "19",
+&"next_id": "20",
+&"text": "So tell me... which Erika would you like today? 🤭",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "lecture_hall"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "3",
+&"type": "mutation"
+},
+"20": {
+&"character": "Erika",
+&"id": "20",
+&"next_id": "21",
+&"text": "img: erika/18",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Erika",
+&"id": "21",
+&"next_id": "22",
+&"text": "Perhaps your professors aren't eye candy enough",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Erika",
+&"id": "22",
+&"next_id": "23",
+&"text": "And maybe you'd like to vent the boredom of class on my bed hehe",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Erika",
+&"id": "23",
+&"next_id": "24",
+&"text": "Do I look like your personal use nerd?",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Erika",
+&"id": "24",
+&"next_id": "25",
+&"text": "Or maybe",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Erika",
+&"id": "25",
+&"next_id": "26",
+&"text": "You'd like me to be the girlfriend that turns heads",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Erika",
+&"id": "26",
+&"next_id": "27",
+&"text": "Your personal bimbo",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Erika",
+&"id": "27",
+&"next_id": "28",
+&"text": "Would you mind if I got a lot of looks while we were on a date?",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Erika",
+&"id": "28",
+&"next_id": "29",
+&"text": "Hungry eyes tend to stray hehe",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Erika",
+&"id": "29",
+&"next_id": "30",
+&"text": "img: erika/19",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Erika",
+&"id": "3",
+&"next_id": "4",
+&"notes": "1pm",
+&"text": "Knock knock, hansome 🥰",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Erika",
+&"id": "30",
+&"next_id": "31",
+&"text": "Or you could even wear me 🫦",
+&"type": "dialogue"
+},
+"31": {
+&"id": "31",
+&"next_id": "32",
+&"responses": PackedStringArray("31", "36"),
+&"text": "The first one",
+&"type": "response"
+},
+"32": {
+&"id": "32",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "Erika1A"
+}]),
+&"is_blocking": true
+},
+&"next_id": "33",
+&"type": "mutation"
+},
+"33": {
+&"character": "Player",
+&"id": "33",
+&"next_id": "34",
+&"text": "The first one",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Erika",
+&"id": "34",
+&"next_id": "35",
+&"text": "Ooh, a gentleman 🥰",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Erika",
+&"id": "35",
+&"next_id": "41",
+&"text": "Careful sugar, I might not want it too gentle",
+&"type": "dialogue"
+},
+"36": {
+&"id": "36",
+&"next_id": "37",
+&"text": "The second one",
+&"type": "response"
+},
+"37": {
+&"id": "37",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "Erika1B"
+}]),
+&"is_blocking": true
+},
+&"next_id": "38",
+&"type": "mutation"
+},
+"38": {
+&"character": "Player",
+&"id": "38",
+&"next_id": "39",
+&"text": "The second one",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Erika",
+&"id": "39",
+&"next_id": "40",
+&"text": "Mmmh, good choice 😍",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Erika",
+&"id": "4",
+&"next_id": "5",
+&"text": "Guess who got the FUN little task today",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Erika",
+&"id": "40",
+&"next_id": "41",
+&"text": "A boy who likes attention huh?",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Erika",
+&"id": "41",
+&"next_id": "42",
+&"text": "You have no idea how happy this makes me, sweetheart",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Erika",
+&"id": "42",
+&"next_id": "43",
+&"text": "A man who actually tells me what he wants 💛",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Erika",
+&"id": "43",
+&"next_id": "44",
+&"text": "Maybe we can sneak a quick link behind Jessica's back hehe 🤭",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Erika",
+&"id": "44",
+&"next_id": "45",
+&"text": "Anyway! I'm off to slip into your pick",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Erika",
+&"id": "45",
+&"next_id": "46",
+&"text": "Take care lover boy 😉",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Player",
+&"id": "46",
+&"next_id": "47",
+&"text": "Bye Erika 😀",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Erika",
+&"id": "47",
+&"next_id": "48",
+&"text": "💋",
+&"type": "dialogue"
+},
+"48": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "Erika1A"
+}, {
+&"i": 27,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "48",
+&"next_id": "49",
+&"next_id_after": "50",
+&"type": "condition"
+},
+"49": {
+&"id": "49",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "social_post",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 15,
+&"type": &"string",
+&"value": "erika_dressup_nerd"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "50",
+&"type": "mutation"
+},
+"5": {
+&"character": "Player",
+&"id": "5",
+&"next_id": "6",
+&"text": "Hi Erika",
+&"type": "dialogue"
+},
+"50": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "Erika1B"
+}, {
+&"i": 27,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "50",
+&"next_id": "51",
+&"next_id_after": "52",
+&"type": "condition"
+},
+"51": {
+&"id": "51",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "social_post",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 15,
+&"type": &"string",
+&"value": "erika_dressup_bimbo"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "52",
+&"type": "mutation"
+},
+"52": {
+&"id": "52",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"53": {
+&"id": "53",
+&"next_id": "54",
+&"type": ""
+},
+"54": {
+&"id": "54",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"6": {
+&"character": "Player",
+&"id": "6",
+&"next_id": "7",
+&"text": "What task?",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Erika",
+&"id": "7",
+&"next_id": "8",
+&"text": "The boys get to deside how their girl dresses for the day 😉",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Erika",
+&"id": "8",
+&"next_id": "9",
+&"text": "And lucky lucky me, that means YOU get to dress me up 💛",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Player",
+&"id": "9",
+&"next_id": "10",
+&"text": "Oh 😳",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+## 1pm
+do Story.set_location(\"lecture_hall\")
+Erika: Knock knock, hansome 🥰
+Erika: Guess who got the FUN little task today
+Player: Hi Erika
+Player: What task?
+Erika: The boys get to deside how their girl dresses for the day 😉
+Erika: And lucky lucky me, that means YOU get to dress me up 💛
+Player: Oh 😳
+Erika: Mhmm, I'm currently assigned as \"your girl\"
+Erika: Just makes me want to bury your face in my chest 🥰
+- I like it [#yellowheart]
+	set Story.yellow_heart += 1
+	Player: I like it
+	Erika: I'm about to faint 🥰
+- I guess 😅
+	Player: I guess 😅
+Erika: I've already tried on some of the outfits I think you'd like hehe
+Erika: So tell me... which Erika would you like today? 🤭
+Erika: img: erika/18
+Erika: Perhaps your professors aren't eye candy enough
+Erika: And maybe you'd like to vent the boredom of class on my bed hehe
+Erika: Do I look like your personal use nerd?
+Erika: Or maybe
+Erika: You'd like me to be the girlfriend that turns heads
+Erika: Your personal bimbo
+Erika: Would you mind if I got a lot of looks while we were on a date?
+Erika: Hungry eyes tend to stray hehe
+Erika: img: erika/19
+Erika: Or you could even wear me 🫦
+- The first one
+	set Story.flag = \"Erika1A\"
+	Player: The first one
+	Erika: Ooh, a gentleman 🥰
+	Erika: Careful sugar, I might not want it too gentle
+- The second one
+	set Story.flag = \"Erika1B\"
+	Player: The second one
+	Erika: Mmmh, good choice 😍
+	Erika: A boy who likes attention huh?
+Erika: You have no idea how happy this makes me, sweetheart
+Erika: A man who actually tells me what he wants 💛
+Erika: Maybe we can sneak a quick link behind Jessica's back hehe 🤭
+Erika: Anyway! I'm off to slip into your pick
+Erika: Take care lover boy 😉
+Player: Bye Erika 😀
+Erika: 💋
+if Story.has_flag(\"Erika1A\"):
+	do social_post(\"erika_dressup_nerd\")
+if Story.has_flag(\"Erika1B\"):
+	do social_post(\"erika_dressup_bimbo\")
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

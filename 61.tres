@@ -1,0 +1,585 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_hb2qu"]
+
+[resource]
+script = ExtResource("1_hb2qu")
+using_states = PackedStringArray()
+titles = {
+"start": "2"
+}
+character_names = PackedStringArray("Valerie", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "2",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"10": {
+&"character": "Valerie",
+&"id": "10",
+&"next_id": "11",
+&"text": "Sorry I was sooo busy 😩",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Valerie",
+&"id": "11",
+&"next_id": "12",
+&"text": "But I'll make it up to you 🥰",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Valerie",
+&"id": "12",
+&"next_id": "13",
+&"text": "You even realize how yummy you look?",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Player",
+&"id": "13",
+&"next_id": "14",
+&"text": "Huh, yummy? 😀",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Valerie",
+&"id": "14",
+&"next_id": "15",
+&"text": "Mhmm... All tied up closely with THAT girl 🙄",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Valerie",
+&"id": "15",
+&"next_id": "16",
+&"text": "It seriously makes me giddy",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Player",
+&"id": "16",
+&"next_id": "17",
+&"text": "😅",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Valerie",
+&"id": "17",
+&"next_id": "18",
+&"text": "Mabel, riiight? Your girlfriend",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Valerie",
+&"id": "18",
+&"next_id": "19",
+&"text": "Suuuper cute, I loooove her hair and her adorable frame 🥰",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Valerie",
+&"id": "19",
+&"next_id": "20",
+&"text": "And how she gets to go on dates so often",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "lecture_hall"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "3",
+&"type": "mutation"
+},
+"20": {
+&"character": "Valerie",
+&"id": "20",
+&"next_id": "21",
+&"text": "You take her out literally EVERY weekend 😩",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Valerie",
+&"id": "21",
+&"next_id": "22",
+&"text": "You're not missing a moment with her, are you?",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Valerie",
+&"id": "22",
+&"next_id": "23",
+&"text": "Do you have any idea how rare a boy like you is??",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Player",
+&"id": "23",
+&"next_id": "24",
+&"text": "How..??",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Valerie",
+&"id": "24",
+&"next_id": "25",
+&"text": "☺️",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Valerie",
+&"id": "25",
+&"next_id": "26",
+&"text": "Devoted boys are my absolute favorite kind of flower to pick and wear in my hair 🥰",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Valerie",
+&"id": "26",
+&"next_id": "27",
+&"text": "And I want all that honey for myself 🤭",
+&"type": "dialogue"
+},
+"27": {
+&"id": "27",
+&"next_id": "28",
+&"responses": PackedStringArray("27", "30"),
+&"text": "That's not going to happen",
+&"type": "response"
+},
+"28": {
+&"character": "Player",
+&"id": "28",
+&"next_id": "29",
+&"text": "That's not going to happen",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Valerie",
+&"id": "29",
+&"next_id": "34",
+&"text": "Honestly.. That just makes me want you more 😬😍",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Valerie",
+&"id": "3",
+&"next_id": "4",
+&"notes": "2pm",
+&"text": "Heyyy you 🥰",
+&"type": "dialogue"
+},
+"30": {
+&"id": "30",
+&"next_id": "31",
+&"text": "You're actually insane 😅",
+&"type": "response"
+},
+"31": {
+&"character": "Player",
+&"id": "31",
+&"next_id": "32",
+&"text": "You're actually insane 😅",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Valerie",
+&"id": "32",
+&"next_id": "33",
+&"text": "The cute kind though, riiight?? 🥰🥰",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Valerie",
+&"id": "33",
+&"next_id": "34",
+&"text": "More exciting than that boring ol Mabel",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Valerie",
+&"id": "34",
+&"next_id": "35",
+&"text": "How many foot jobs has she given you?",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Player",
+&"id": "35",
+&"next_id": "36",
+&"text": "😶",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Valerie",
+&"id": "36",
+&"next_id": "37",
+&"text": "My guess is 0",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Valerie",
+&"id": "37",
+&"next_id": "38",
+&"text": "Anywayyy, let's talk about Sunday 🤭",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Valerie",
+&"id": "38",
+&"next_id": "39",
+&"text": "That's your special little date day with Mabel, isn't it",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Valerie",
+&"id": "39",
+&"next_id": "40",
+&"text": "Don't even ask how I know. Homework 😇",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Valerie",
+&"id": "4",
+&"next_id": "5",
+&"text": "It's Valerie!! 😇",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Player",
+&"id": "40",
+&"next_id": "41",
+&"text": "😳",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Valerie",
+&"id": "41",
+&"next_id": "42",
+&"text": "So here's the fun part, listen close",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Valerie",
+&"id": "42",
+&"next_id": "43",
+&"text": "This Sunday? You're not taking her out",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Valerie",
+&"id": "43",
+&"next_id": "44",
+&"text": "You're taking ME instead 🥰",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Valerie",
+&"id": "44",
+&"next_id": "45",
+&"text": "I'll make it sooo worth it, promise promise 🥺",
+&"type": "dialogue"
+},
+"45": {
+&"id": "45",
+&"next_id": "46",
+&"responses": PackedStringArray("45", "51"),
+&"text": "I can't do that",
+&"type": "response"
+},
+"46": {
+&"character": "Player",
+&"id": "46",
+&"next_id": "47",
+&"text": "I can't do that",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Valerie",
+&"id": "47",
+&"next_id": "48",
+&"text": "Mmmm, a challenge 😍",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Valerie",
+&"id": "48",
+&"next_id": "49",
+&"text": "That's okay, I'm a verryy patient girl",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Valerie",
+&"id": "49",
+&"next_id": "50",
+&"text": "I always get my boy in the end 😘",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Valerie",
+&"id": "5",
+&"next_id": "6",
+&"text": "img: valerie/9",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Valerie",
+&"id": "50",
+&"next_id": "62",
+&"text": "See you soon, cutie",
+&"type": "dialogue"
+},
+"51": {
+&"id": "51",
+&"next_id": "52",
+&"tags": PackedStringArray("brownheart"),
+&"text": "If you insist 😅",
+&"type": "response"
+},
+"52": {
+&"id": "52",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "brown_heart"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "53",
+&"type": "mutation"
+},
+"53": {
+&"id": "53",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "Date4Val"
+}]),
+&"is_blocking": true
+},
+&"next_id": "54",
+&"type": "mutation"
+},
+"54": {
+&"character": "Player",
+&"id": "54",
+&"next_id": "55",
+&"text": "If you insist 😅",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Valerie",
+&"id": "55",
+&"next_id": "56",
+&"text": "I do!!",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Valerie",
+&"id": "56",
+&"next_id": "57",
+&"text": "I KNEW you had good taste hehe 🥰🥰",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Valerie",
+&"id": "57",
+&"next_id": "58",
+&"text": "Good boys get rewarded, and you're a good boy hehe",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Valerie",
+&"id": "58",
+&"next_id": "59",
+&"text": "img: valerie/10",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Player",
+&"id": "59",
+&"next_id": "60",
+&"text": "😳",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Valerie",
+&"id": "6",
+&"next_id": "7",
+&"text": "You remember me riiight?",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Valerie",
+&"id": "60",
+&"next_id": "61",
+&"text": "😉",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Valerie",
+&"id": "61",
+&"next_id": "62",
+&"text": "It's going to be the best date you'll ever have",
+&"type": "dialogue"
+},
+"62": {
+&"id": "62",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"63": {
+&"id": "63",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"7": {
+&"character": "Player",
+&"id": "7",
+&"next_id": "8",
+&"text": "How did you get my number? 😅",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Valerie",
+&"id": "8",
+&"next_id": "9",
+&"text": "Silly, all frat boys are basically easy access",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Valerie",
+&"id": "9",
+&"next_id": "10",
+&"text": "I've had my eye on you for a whiiile now",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+## 2pm
+do Story.set_location(\"lecture_hall\")
+Valerie: Heyyy you 🥰
+Valerie: It's Valerie!! 😇
+Valerie: img: valerie/9
+Valerie: You remember me riiight?
+Player: How did you get my number? 😅
+Valerie: Silly, all frat boys are basically easy access
+Valerie: I've had my eye on you for a whiiile now
+Valerie: Sorry I was sooo busy 😩
+Valerie: But I'll make it up to you 🥰
+Valerie: You even realize how yummy you look?
+Player: Huh, yummy? 😀
+Valerie: Mhmm... All tied up closely with THAT girl 🙄
+Valerie: It seriously makes me giddy
+Player: 😅
+Valerie: Mabel, riiight? Your girlfriend
+Valerie: Suuuper cute, I loooove her hair and her adorable frame 🥰
+Valerie: And how she gets to go on dates so often
+Valerie: You take her out literally EVERY weekend 😩
+Valerie: You're not missing a moment with her, are you?
+Valerie: Do you have any idea how rare a boy like you is??
+Player: How..??
+Valerie: ☺️
+Valerie: Devoted boys are my absolute favorite kind of flower to pick and wear in my hair 🥰
+Valerie: And I want all that honey for myself 🤭
+- That's not going to happen
+	Player: That's not going to happen
+	Valerie: Honestly.. That just makes me want you more 😬😍
+- You're actually insane 😅
+	Player: You're actually insane 😅
+	Valerie: The cute kind though, riiight?? 🥰🥰
+	Valerie: More exciting than that boring ol Mabel
+Valerie: How many foot jobs has she given you?
+Player: 😶
+Valerie: My guess is 0
+Valerie: Anywayyy, let's talk about Sunday 🤭
+Valerie: That's your special little date day with Mabel, isn't it
+Valerie: Don't even ask how I know. Homework 😇
+Player: 😳
+Valerie: So here's the fun part, listen close
+Valerie: This Sunday? You're not taking her out
+Valerie: You're taking ME instead 🥰
+Valerie: I'll make it sooo worth it, promise promise 🥺
+- I can't do that
+	Player: I can't do that
+	Valerie: Mmmm, a challenge 😍
+	Valerie: That's okay, I'm a verryy patient girl
+	Valerie: I always get my boy in the end 😘
+	Valerie: See you soon, cutie
+- If you insist 😅 [#brownheart]
+	set Story.brown_heart += 1
+	set Story.flag = \"Date4Val\"
+	Player: If you insist 😅
+	Valerie: I do!!
+	Valerie: I KNEW you had good taste hehe 🥰🥰
+	Valerie: Good boys get rewarded, and you're a good boy hehe
+	Valerie: img: valerie/10
+	Player: 😳
+	Valerie: 😉
+	Valerie: It's going to be the best date you'll ever have
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

@@ -1,0 +1,427 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_7ghch"]
+
+[resource]
+script = ExtResource("1_7ghch")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Valerie", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "Valerie",
+&"id": "1",
+&"next_id": "2",
+&"text": "Omg you're that boy that came to see me right??",
+&"type": "dialogue"
+},
+"10": {
+&"character": "Valerie",
+&"id": "10",
+&"next_id": "11",
+&"text": "Mabel right?",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Player",
+&"id": "11",
+&"next_id": "12",
+&"text": "What? How did you?",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Valerie",
+&"id": "12",
+&"next_id": "13",
+&"text": "It's like a little side hobby of mine 🤭",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Valerie",
+&"id": "13",
+&"next_id": "14",
+&"text": "She's a cute one, I love her hair",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Player",
+&"id": "14",
+&"next_id": "15",
+&"text": "That's... a little scary",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Player",
+&"id": "15",
+&"next_id": "16",
+&"text": "What's the point of this?",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Valerie",
+&"id": "16",
+&"next_id": "17",
+&"text": "Because I want to take the boy all to myself, duh 🤪",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Player",
+&"id": "17",
+&"next_id": "18",
+&"text": "Seriously? 😳",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Valerie",
+&"id": "18",
+&"next_id": "19",
+&"text": "Yep!",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Valerie",
+&"id": "19",
+&"next_id": "20",
+&"text": "I want to HAVE boys that are in a relationship",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Player",
+&"id": "2",
+&"next_id": "3",
+&"text": "Yeah today? Hi again",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Valerie",
+&"id": "20",
+&"next_id": "21",
+&"text": "And my body 🥰",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Valerie",
+&"id": "21",
+&"next_id": "22",
+&"text": "I want to ride you so badddd 😩",
+&"type": "dialogue"
+},
+"22": {
+&"id": "22",
+&"next_id": "23",
+&"responses": PackedStringArray("22"),
+&"text": "Are you a homewrecker?",
+&"type": "response"
+},
+"23": {
+&"character": "Player",
+&"id": "23",
+&"next_id": "24",
+&"text": "Are you like, a homewrecker?",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Valerie",
+&"id": "24",
+&"next_id": "25",
+&"text": "I guess you could say that ☺️",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Valerie",
+&"id": "25",
+&"next_id": "26",
+&"text": "Okay maybe you can say it again cause it makes me all giddy",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Player",
+&"id": "26",
+&"next_id": "27",
+&"text": "What? Homewrecker?",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Valerie",
+&"id": "27",
+&"next_id": "28",
+&"text": "Ugh I seriously just came in my panties 😩",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Valerie",
+&"id": "28",
+&"next_id": "29",
+&"text": "Want me to send them to you? 🙊",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Valerie",
+&"id": "29",
+&"next_id": "30",
+&"text": "Just kidding, you'll have to earn them",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Valerie",
+&"id": "3",
+&"next_id": "4",
+&"text": "I finally found you!",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Valerie",
+&"id": "30",
+&"next_id": "31",
+&"text": "No freebies, these things have an order to them silly 😁",
+&"type": "dialogue"
+},
+"31": {
+&"id": "31",
+&"next_id": "32",
+&"responses": PackedStringArray("31"),
+&"text": "What happens if I'm not interested?",
+&"type": "response"
+},
+"32": {
+&"character": "Player",
+&"id": "32",
+&"next_id": "33",
+&"text": "What happens if I'm not interested?",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Valerie",
+&"id": "33",
+&"next_id": "34",
+&"text": "You can't doubt it silly",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Valerie",
+&"id": "34",
+&"next_id": "35",
+&"text": "You have to be all in on this too",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Valerie",
+&"id": "35",
+&"next_id": "36",
+&"text": "How else are you going to enjoy the tightest pussy in the sorority 🥺",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Valerie",
+&"id": "36",
+&"next_id": "37",
+&"text": "I have a certificate for it you know! 😌",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Player",
+&"id": "37",
+&"next_id": "38",
+&"text": "How did they...? Nevermind 🙂",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Player",
+&"id": "38",
+&"next_id": "39",
+&"text": "So what happens now?",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Valerie",
+&"id": "39",
+&"next_id": "40",
+&"text": "When do you usually go on dates with your girlfriend?",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Valerie",
+&"id": "4",
+&"next_id": "5",
+&"text": "Our little chat was interesting hehe",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Valerie",
+&"id": "40",
+&"next_id": "41",
+&"text": "Jk, I already know",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Valerie",
+&"id": "41",
+&"next_id": "42",
+&"text": "She's usually free on Sunday!",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Player",
+&"id": "42",
+&"next_id": "43",
+&"text": "😳",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Valerie",
+&"id": "43",
+&"next_id": "44",
+&"text": "So",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Valerie",
+&"id": "44",
+&"next_id": "45",
+&"text": "Next Sunday",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Valerie",
+&"id": "45",
+&"next_id": "46",
+&"text": "Your girlfriend is gonna expect to go on a date with you",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Valerie",
+&"id": "46",
+&"next_id": "47",
+&"text": "You're not going because me and you are going out",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Valerie",
+&"id": "47",
+&"next_id": "48",
+&"text": "And we're going to be the cutest couple ever",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Valerie",
+&"id": "48",
+&"next_id": "51",
+&"text": "And I'm going to kiss you",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Valerie",
+&"id": "5",
+&"next_id": "6",
+&"text": "A little on the short side but it really made me 🤩",
+&"type": "dialogue"
+},
+"50": {
+&"id": "50",
+&"next_id": "51",
+&"type": ""
+},
+"51": {
+&"id": "51",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"52": {
+&"id": "52",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"6": {
+&"character": "Player",
+&"id": "6",
+&"next_id": "7",
+&"text": "Really? Just small talk about the girlfriend stuff?",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Valerie",
+&"id": "7",
+&"next_id": "8",
+&"text": "Yeah, I like to hear about other boy's girlfriends!!",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Player",
+&"id": "8",
+&"next_id": "9",
+&"text": "I didn't say I had one though",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Valerie",
+&"id": "9",
+&"next_id": "10",
+&"text": "I know you have one",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+Valerie: Omg you're that boy that came to see me right??
+Player: Yeah today? Hi again
+Valerie: I finally found you!
+Valerie: Our little chat was interesting hehe
+Valerie: A little on the short side but it really made me 🤩
+Player: Really? Just small talk about the girlfriend stuff?
+Valerie: Yeah, I like to hear about other boy's girlfriends!!
+Player: I didn't say I had one though
+Valerie: I know you have one
+Valerie: Mabel right?
+Player: What? How did you?
+Valerie: It's like a little side hobby of mine 🤭
+Valerie: She's a cute one, I love her hair
+Player: That's... a little scary
+Player: What's the point of this?
+Valerie: Because I want to take the boy all to myself, duh 🤪
+Player: Seriously? 😳
+Valerie: Yep!
+Valerie: I want to HAVE boys that are in a relationship
+Valerie: And my body 🥰
+Valerie: I want to ride you so badddd 😩
+- Are you a homewrecker?
+    Player: Are you like, a homewrecker?
+    Valerie: I guess you could say that ☺️
+    Valerie: Okay maybe you can say it again cause it makes me all giddy
+    Player: What? Homewrecker?
+    Valerie: Ugh I seriously just came in my panties 😩
+    Valerie: Want me to send them to you? 🙊
+    Valerie: Just kidding, you'll have to earn them
+    Valerie: No freebies, these things have an order to them silly 😁
+- What happens if I'm not interested?
+    Player: What happens if I'm not interested?
+    Valerie: You can't doubt it silly
+    Valerie: You have to be all in on this too
+    Valerie: How else are you going to enjoy the tightest pussy in the sorority 🥺
+    Valerie: I have a certificate for it you know! 😌
+    Player: How did they...? Nevermind 🙂
+Player: So what happens now?
+Valerie: When do you usually go on dates with your girlfriend?
+Valerie: Jk, I already know
+Valerie: She's usually free on Sunday!
+Player: 😳
+Valerie: So
+Valerie: Next Sunday
+Valerie: Your girlfriend is gonna expect to go on a date with you
+Valerie: You're not going because me and you are going out
+Valerie: And we're going to be the cutest couple ever
+Valerie: And I'm going to kiss you
+
+
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

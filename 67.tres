@@ -1,0 +1,493 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_3v1xq"]
+
+[resource]
+script = ExtResource("1_3v1xq")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Mabel", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Mabel",
+&"id": "10",
+&"next_id": "11",
+&"text": "img: mabel/139",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Player",
+&"id": "11",
+&"next_id": "12",
+&"text": "Scary!",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Player",
+&"id": "12",
+&"next_id": "13",
+&"text": "I'll show him this and tell him to step on it!!",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Mabel",
+&"id": "13",
+&"next_id": "14",
+&"text": "Good! 😇",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Mabel",
+&"id": "14",
+&"next_id": "15",
+&"text": "Okay I'll sweep the floors again just in case",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Mabel",
+&"id": "15",
+&"next_id": "16",
+&"text": "This is the first time you're coming over so things have to be perfect ☺️",
+&"type": "dialogue"
+},
+"16": {
+&"id": "16",
+&"next_id": "17",
+&"responses": PackedStringArray("16", "21"),
+&"text": "Don't push yourself!",
+&"type": "response"
+},
+"17": {
+&"character": "Player",
+&"id": "17",
+&"next_id": "18",
+&"text": "Don't push yourself!",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Mabel",
+&"id": "18",
+&"next_id": "19",
+&"text": "I have to 🥰",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Mabel",
+&"id": "19",
+&"next_id": "20",
+&"text": "I'm excited that I get to spend the night with you 😭",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Mabel",
+&"id": "2",
+&"next_id": "3",
+&"text": "Are you here yet? 👀",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Player",
+&"id": "20",
+&"next_id": "26",
+&"text": "Me too",
+&"type": "dialogue"
+},
+"21": {
+&"id": "21",
+&"next_id": "22",
+&"text": "I stepped on something gross",
+&"type": "response"
+},
+"22": {
+&"character": "Player",
+&"id": "22",
+&"next_id": "23",
+&"text": "I stepped on something gross",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Mabel",
+&"id": "23",
+&"next_id": "24",
+&"text": "😑",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Mabel",
+&"id": "24",
+&"next_id": "25",
+&"text": "You can take the first bus back",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Player",
+&"id": "25",
+&"next_id": "26",
+&"text": "I'm kidding 😂",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Mabel",
+&"id": "26",
+&"next_id": "27",
+&"text": "Thought: Okay everything's set up",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Mabel",
+&"id": "27",
+&"next_id": "28",
+&"text": "Thought: Snacks, movies, pillows...",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Mabel",
+&"id": "28",
+&"next_id": "29",
+&"text": "Thought: I hope the perfume isn't too much",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Mabel",
+&"id": "29",
+&"next_id": "30",
+&"text": "Hey so uhm",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Player",
+&"id": "3",
+&"next_id": "4",
+&"text": "Almost",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Mabel",
+&"id": "30",
+&"next_id": "31",
+&"text": "Since it's just the two of us tonight 👉👈",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Mabel",
+&"id": "31",
+&"next_id": "32",
+&"text": "Do you wanna maybe...",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Mabel",
+&"id": "32",
+&"next_id": "33",
+&"text": "Practice... y'know 😶",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Mabel",
+&"id": "33",
+&"next_id": "34",
+&"text": "Maybe.. 😚🙈",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Mabel",
+&"id": "34",
+&"next_id": "35",
+&"text": "Thought: Why is this so hard to say when we've already done it",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Mabel",
+&"id": "35",
+&"next_id": "36",
+&"text": "I just want tonight to feel... special? 🙈",
+&"type": "dialogue"
+},
+"36": {
+&"id": "36",
+&"next_id": "37",
+&"responses": PackedStringArray("36", "40"),
+&"text": "I'll make sure it does 😘",
+&"type": "response"
+},
+"37": {
+&"character": "Player",
+&"id": "37",
+&"next_id": "38",
+&"text": "I'll make sure it does 😘",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Mabel",
+&"id": "38",
+&"next_id": "39",
+&"text": "PinkThought: My chest feels so warm right now",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Mabel",
+&"id": "39",
+&"next_id": "44",
+&"text": "You better 🥰",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Mabel",
+&"id": "4",
+&"next_id": "5",
+&"text": "Are you almost here yet? 👀",
+&"type": "dialogue"
+},
+"40": {
+&"id": "40",
+&"next_id": "41",
+&"text": "You're already making it special",
+&"type": "response"
+},
+"41": {
+&"character": "Player",
+&"id": "41",
+&"next_id": "42",
+&"text": "You're already making it special",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Mabel",
+&"id": "42",
+&"next_id": "43",
+&"text": "Stoooop 😭",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Mabel",
+&"id": "43",
+&"next_id": "44",
+&"text": "You can't say stuff like that when I'm already this nervous",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Player",
+&"id": "44",
+&"next_id": "45",
+&"text": "Of course 😚",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Mabel",
+&"id": "45",
+&"next_id": "46",
+&"text": "img: mabel/140",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Mabel",
+&"id": "46",
+&"next_id": "47",
+&"text": "PinkThought: I want him to hold me tonight",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Mabel",
+&"id": "47",
+&"next_id": "48",
+&"text": "Well hurry..",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Mabel",
+&"id": "48",
+&"next_id": "49",
+&"text": "I can't wait omg",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Player",
+&"id": "49",
+&"next_id": "50",
+&"text": "🫠",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Player",
+&"id": "5",
+&"next_id": "6",
+&"text": "Yes? I think?",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Player",
+&"id": "50",
+&"next_id": "51",
+&"text": "I just reached",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Mabel",
+&"id": "51",
+&"next_id": "52",
+&"text": "🥰",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Mabel",
+&"id": "52",
+&"next_id": "53",
+&"text": "Thought: Deep breaths Mabel",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Mabel",
+&"id": "53",
+&"next_id": "54",
+&"text": "Thought: It's just your boyfriend staying the night",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Mabel",
+&"id": "54",
+&"next_id": "56",
+&"text": "PinkThought: ...just your boyfriend staying the night",
+&"type": "dialogue"
+},
+"55": {
+&"id": "55",
+&"next_id": "56",
+&"type": ""
+},
+"56": {
+&"id": "56",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"57": {
+&"id": "57",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"6": {
+&"character": "Player",
+&"id": "6",
+&"next_id": "7",
+&"text": "What's that supposed to mean 😀",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Mabel",
+&"id": "7",
+&"next_id": "8",
+&"text": "It means I'm impatient!! 😗",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Mabel",
+&"id": "8",
+&"next_id": "9",
+&"text": "Can you tell the driver to go faster?",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Mabel",
+&"id": "9",
+&"next_id": "10",
+&"text": "I'm gonna be mad at him",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+Mabel: Are you here yet? 👀
+Player: Almost
+Mabel: Are you almost here yet? 👀
+Player: Yes? I think?
+Player: What's that supposed to mean 😀
+Mabel: It means I'm impatient!! 😗
+Mabel: Can you tell the driver to go faster?
+Mabel: I'm gonna be mad at him
+Mabel: img: mabel/139
+Player: Scary!
+Player: I'll show him this and tell him to step on it!!
+Mabel: Good! 😇
+Mabel: Okay I'll sweep the floors again just in case
+Mabel: This is the first time you're coming over so things have to be perfect ☺️
+- Don't push yourself!
+	Player: Don't push yourself!
+	Mabel: I have to 🥰
+	Mabel: I'm excited that I get to spend the night with you 😭
+	Player: Me too
+- I stepped on something gross
+	Player: I stepped on something gross
+	Mabel: 😑
+	Mabel: You can take the first bus back
+	Player: I'm kidding 😂
+Mabel: Thought: Okay everything's set up
+Mabel: Thought: Snacks, movies, pillows...
+Mabel: Thought: I hope the perfume isn't too much
+Mabel: Hey so uhm
+Mabel: Since it's just the two of us tonight 👉👈
+Mabel: Do you wanna maybe...
+Mabel: Practice... y'know 😶
+Mabel: Maybe.. 😚🙈
+Mabel: Thought: Why is this so hard to say when we've already done it
+Mabel: I just want tonight to feel... special? 🙈
+- I'll make sure it does 😘
+	Player: I'll make sure it does 😘
+	Mabel: PinkThought: My chest feels so warm right now
+	Mabel: You better 🥰
+- You're already making it special
+	Player: You're already making it special
+	Mabel: Stoooop 😭
+	Mabel: You can't say stuff like that when I'm already this nervous
+Player: Of course 😚
+Mabel: img: mabel/140
+Mabel: PinkThought: I want him to hold me tonight
+Mabel: Well hurry..
+Mabel: I can't wait omg
+Player: 🫠
+Player: I just reached
+Mabel: 🥰
+Mabel: Thought: Deep breaths Mabel
+Mabel: Thought: It's just your boyfriend staying the night
+Mabel: PinkThought: ...just your boyfriend staying the night
+## Social
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

@@ -1,0 +1,623 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_mmgm5"]
+
+[resource]
+script = ExtResource("1_mmgm5")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Mabel", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Player",
+&"id": "10",
+&"next_id": "11",
+&"text": "Did you fall asleep on your phone?",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Player",
+&"id": "11",
+&"next_id": "12",
+&"text": "It's been a while since you've done that lol",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Mabel",
+&"id": "12",
+&"next_id": "13",
+&"text": "img: mabel/125",
+&"type": "dialogue"
+},
+"13": {
+&"id": "13",
+&"next_id": "14",
+&"responses": PackedStringArray("13", "15"),
+&"text": "Waah gross 😆",
+&"type": "response"
+},
+"14": {
+&"character": "Player",
+&"id": "14",
+&"next_id": "17",
+&"text": "Waah gross 😆",
+&"type": "dialogue"
+},
+"15": {
+&"id": "15",
+&"next_id": "16",
+&"text": "Just a lil lower 👀",
+&"type": "response"
+},
+"16": {
+&"character": "Player",
+&"id": "16",
+&"next_id": "17",
+&"text": "Just a lil lower 👀",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Mabel",
+&"id": "17",
+&"next_id": "18",
+&"text": "tnbs hj",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Mabel",
+&"id": "18",
+&"next_id": "19",
+&"text": "Thought: You're so warm silly",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Mabel",
+&"id": "19",
+&"next_id": "20",
+&"text": "PinkThought: I have to take off my PJs cause I'm sweating..",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Mabel",
+&"id": "2",
+&"next_id": "3",
+&"text": "Wwqq",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Mabel",
+&"id": "20",
+&"next_id": "21",
+&"text": "sfx: bedcreak3: *creak*",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Mabel",
+&"id": "21",
+&"next_id": "22",
+&"text": "dbbbbb",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Mabel",
+&"id": "22",
+&"next_id": "23",
+&"text": "PinkThought: Promise not to look?",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Player",
+&"id": "23",
+&"next_id": "24",
+&"text": "Should I call you?",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Mabel",
+&"id": "24",
+&"next_id": "25",
+&"text": "32qed2q",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Mabel",
+&"id": "25",
+&"next_id": "26",
+&"text": "PinkThought: I know you're peeking babe, I'm not a dummy",
+&"type": "dialogue"
+},
+"26": {
+&"id": "26",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "heart",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 9,
+&"type": &"number",
+&"value": 1
+}, {
+&"i": 10,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "27",
+&"type": "mutation"
+},
+"27": {
+&"id": "27",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_set",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 12,
+&"type": &"array",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 13,
+&"type": &"string",
+&"value": "126"
+}, {
+&"i": 18,
+&"type": &"bracket_close"
+}])])
+}, {
+&"i": 19,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "28",
+&"type": "mutation"
+},
+"28": {
+&"character": "Mabel",
+&"id": "28",
+&"next_id": "29",
+&"text": "PinkThought: Fine, only cause you're my boyfriend and I love you hehe",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Mabel",
+&"id": "29",
+&"next_id": "30",
+&"text": "sfx: breath4: Ughh...",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Mabel",
+&"id": "3",
+&"next_id": "4",
+&"text": "Thought: Babe.. what are you doing in my room?",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Mabel",
+&"id": "30",
+&"next_id": "31",
+&"text": "PinkThought: Hey don't touch me there silly",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Mabel",
+&"id": "31",
+&"next_id": "32",
+&"text": "PinkThought: At least be a little gentle hehe",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Mabel",
+&"id": "32",
+&"next_id": "33",
+&"text": "PinkThought: That feels really good..",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Player",
+&"id": "33",
+&"next_id": "34",
+&"text": "But that never wakes you up anyway lol",
+&"type": "dialogue"
+},
+"34": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "Naomi1"
+}, {
+&"i": 26,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "34",
+&"next_id": "35",
+&"next_id_after": "37",
+&"type": "condition"
+},
+"35": {
+&"character": "Mabel",
+&"id": "35",
+&"next_id": "36",
+&"text": "PinkThought: Don't look at Naomi anymore hehe",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Mabel",
+&"id": "36",
+&"next_id": "37",
+&"text": "PinkThought: I'll be extra cute just for you",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Player",
+&"id": "37",
+&"next_id": "38",
+&"text": "Okay well, good night then haha",
+&"type": "dialogue"
+},
+"38": {
+&"id": "38",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_clear",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 14,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "39",
+&"type": "mutation"
+},
+"39": {
+&"character": "Mabel",
+&"id": "39",
+&"next_id": "40",
+&"text": "sfx: bedcreak4: *creak*",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Mabel",
+&"id": "4",
+&"next_id": "5",
+&"text": "111",
+&"type": "dialogue"
+},
+"40": {
+&"id": "40",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "heart",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 9,
+&"type": &"number",
+&"value": 0
+}, {
+&"i": 10,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "41",
+&"type": "mutation"
+},
+"41": {
+&"character": "Mabel",
+&"id": "41",
+&"next_id": "42",
+&"text": "Thought: What's that light?",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Mabel",
+&"id": "42",
+&"next_id": "43",
+&"text": "Thought: Is someone messaging me?",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Mabel",
+&"id": "43",
+&"next_id": "44",
+&"text": "Baeb? I m slepping",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Mabel",
+&"id": "44",
+&"next_id": "45",
+&"text": "do u need somehing?",
+&"type": "dialogue"
+},
+"45": {
+&"id": "45",
+&"next_id": "46",
+&"responses": PackedStringArray("45", "48"),
+&"text": "What were you doing?",
+&"type": "response"
+},
+"46": {
+&"character": "Player",
+&"id": "46",
+&"next_id": "47",
+&"text": "What were you doing?",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Mabel",
+&"id": "47",
+&"next_id": "52",
+&"text": "What do you mean?",
+&"type": "dialogue"
+},
+"48": {
+&"id": "48",
+&"next_id": "49",
+&"text": "You should get some sleep",
+&"type": "response"
+},
+"49": {
+&"character": "Player",
+&"id": "49",
+&"next_id": "50",
+&"text": "You should get some sleep",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Player",
+&"id": "5",
+&"next_id": "6",
+&"text": "Is that a secret message? 😆",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Mabel",
+&"id": "50",
+&"next_id": "51",
+&"text": "I'm so sleepy",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Mabel",
+&"id": "51",
+&"next_id": "52",
+&"text": "You too, but where did you go?",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Mabel",
+&"id": "52",
+&"next_id": "53",
+&"text": "You were just here?",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Mabel",
+&"id": "53",
+&"next_id": "54",
+&"text": "Thought: Wait, was I dreaming??",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Mabel",
+&"id": "54",
+&"next_id": "55",
+&"text": "Thought: Omg I was...",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Mabel",
+&"id": "55",
+&"next_id": "56",
+&"text": "PinkThought: And here I thought we... ugh gotta go through all that again",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Player",
+&"id": "56",
+&"next_id": "57",
+&"text": "Were you dreaming about me?",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Mabel",
+&"id": "57",
+&"next_id": "58",
+&"text": "WAS NOT 😶",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Mabel",
+&"id": "58",
+&"next_id": "59",
+&"text": "Thought: This is so embarassing!",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Mabel",
+&"id": "59",
+&"next_id": "60",
+&"text": "BYE!!",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Mabel",
+&"id": "6",
+&"next_id": "7",
+&"text": "sfx: bedcreak2: *creak*",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Player",
+&"id": "60",
+&"next_id": "61",
+&"text": "Noo wait!",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Player",
+&"id": "61",
+&"next_id": "62",
+&"text": "Babe?? 🥲",
+&"type": "dialogue"
+},
+"62": {
+&"id": "62",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"63": {
+&"id": "63",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"7": {
+&"character": "Mabel",
+&"id": "7",
+&"next_id": "8",
+&"text": "aaaaa",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Mabel",
+&"id": "8",
+&"next_id": "9",
+&"text": "Thought: It's okay you can sleep here",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Mabel",
+&"id": "9",
+&"next_id": "10",
+&"text": "Thought: But it's a little tight",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+Mabel: Wwqq
+Mabel: Thought: Babe.. what are you doing in my room?
+Mabel: 111
+Player: Is that a secret message? 😆
+Mabel: sfx: bedcreak2: *creak*
+Mabel: aaaaa
+Mabel: Thought: It's okay you can sleep here
+Mabel: Thought: But it's a little tight
+Player: Did you fall asleep on your phone?
+Player: It's been a while since you've done that lol
+Mabel: img: mabel/125
+- Waah gross 😆
+	Player: Waah gross 😆
+- Just a lil lower 👀
+	Player: Just a lil lower 👀
+Mabel: tnbs hj
+Mabel: Thought: You're so warm silly
+Mabel: PinkThought: I have to take off my PJs cause I'm sweating..
+Mabel: sfx: bedcreak3: *creak*
+Mabel: dbbbbb
+Mabel: PinkThought: Promise not to look?
+Player: Should I call you?
+Mabel: 32qed2q
+Mabel: PinkThought: I know you're peeking babe, I'm not a dummy
+do heart(1)
+do echo_set([\"126\"])
+Mabel: PinkThought: Fine, only cause you're my boyfriend and I love you hehe
+Mabel: sfx: breath4: Ughh...
+Mabel: PinkThought: Hey don't touch me there silly
+Mabel: PinkThought: At least be a little gentle hehe
+Mabel: PinkThought: That feels really good..
+Player: But that never wakes you up anyway lol
+if Story.has_flag(\"Naomi1\")
+	Mabel: PinkThought: Don't look at Naomi anymore hehe
+	Mabel: PinkThought: I'll be extra cute just for you
+Player: Okay well, good night then haha
+do echo_clear()
+Mabel: sfx: bedcreak4: *creak*
+do heart(0)
+Mabel: Thought: What's that light?
+Mabel: Thought: Is someone messaging me?
+Mabel: Baeb? I m slepping
+Mabel: do u need somehing?
+- What were you doing?
+	Player: What were you doing?
+	Mabel: What do you mean?
+- You should get some sleep
+	Player: You should get some sleep
+	Mabel: I'm so sleepy
+	Mabel: You too, but where did you go?
+Mabel: You were just here?
+Mabel: Thought: Wait, was I dreaming??
+Mabel: Thought: Omg I was...
+Mabel: PinkThought: And here I thought we... ugh gotta go through all that again
+Player: Were you dreaming about me?
+Mabel: WAS NOT 😶
+Mabel: Thought: This is so embarassing!
+Mabel: BYE!!
+Player: Noo wait!
+Player: Babe?? 🥲
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

@@ -1,0 +1,636 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_ahv3u"]
+
+[resource]
+script = ExtResource("1_ahv3u")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Erika", "PlayerM", "Nina", "Jessica", "Mabel")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "Erika",
+&"id": "1",
+&"next_id": "2",
+&"text": "Hello lovely pink bunny",
+&"type": "dialogue"
+},
+"10": {
+&"character": "Jessica",
+&"id": "10",
+&"next_id": "11",
+&"text": "The three of us will keep an eye out for you, making sure you fall in line with the rest of us",
+&"type": "dialogue"
+},
+"11": {
+&"character": "PlayerM",
+&"id": "11",
+&"next_id": "12",
+&"text": "Hiya! Nice to meet you Jessica 😁",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Jessica",
+&"id": "12",
+&"next_id": "13",
+&"text": "Erika is right, what a darling you are",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Jessica",
+&"id": "13",
+&"next_id": "14",
+&"text": "I'm sure it'll be fun to... work with you",
+&"type": "dialogue"
+},
+"14": {
+&"character": "PlayerM",
+&"id": "14",
+&"next_id": "15",
+&"text": "😁",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Jessica",
+&"id": "15",
+&"next_id": "16",
+&"text": "Tell me Mabel, do you have any pics of pictures of yourself?",
+&"type": "dialogue"
+},
+"16": {
+&"character": "PlayerM",
+&"id": "16",
+&"next_id": "17",
+&"text": "Yeah, I have a bunch on Social Scene",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Mabel",
+&"id": "17",
+&"next_id": "18",
+&"text": "img: mabel/98",
+&"type": "dialogue"
+},
+"18": {
+&"character": "PlayerM",
+&"id": "18",
+&"next_id": "19",
+&"text": "Like this?",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Erika",
+&"id": "19",
+&"next_id": "20",
+&"text": "Oh my, what fun this will be",
+&"type": "dialogue"
+},
+"2": {
+&"character": "PlayerM",
+&"id": "2",
+&"next_id": "3",
+&"text": "Hello?",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Jessica",
+&"id": "20",
+&"next_id": "21",
+&"text": "Not quite",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Jessica",
+&"id": "21",
+&"next_id": "22",
+&"text": "I've seen those and I was thinking a little more brave",
+&"type": "dialogue"
+},
+"22": {
+&"character": "PlayerM",
+&"id": "22",
+&"next_id": "23",
+&"text": "Brave? Like what?",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Jessica",
+&"id": "23",
+&"next_id": "24",
+&"text": "Like a bikini shot, or maybe a lingerie shot?",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Jessica",
+&"id": "24",
+&"next_id": "25",
+&"text": "Something we could hang up as a portrait",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Jessica",
+&"id": "25",
+&"next_id": "26",
+&"text": "Show everyone who Mabel really is",
+&"type": "dialogue"
+},
+"26": {
+&"character": "PlayerM",
+&"id": "26",
+&"next_id": "27",
+&"text": "😳",
+&"type": "dialogue"
+},
+"27": {
+&"character": "PlayerM",
+&"id": "27",
+&"next_id": "28",
+&"text": "I already uhm... is that a requirement?",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Jessica",
+&"id": "28",
+&"next_id": "29",
+&"text": "Yes, it is",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Jessica",
+&"id": "29",
+&"next_id": "30",
+&"text": "When I ask something of you, it usually is a requirement",
+&"type": "dialogue"
+},
+"3": {
+&"character": "PlayerM",
+&"id": "3",
+&"next_id": "4",
+&"text": "Is this the Sorority club?",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Jessica",
+&"id": "30",
+&"next_id": "31",
+&"text": "I wouldn't waste your precious time",
+&"type": "dialogue"
+},
+"31": {
+&"character": "PlayerM",
+&"id": "31",
+&"next_id": "32",
+&"text": "I see, okay!",
+&"type": "dialogue"
+},
+"32": {
+&"character": "PlayerM",
+&"id": "32",
+&"next_id": "33",
+&"text": "And who's going to see the picture?",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Jessica",
+&"id": "33",
+&"next_id": "34",
+&"text": "We'll hang it up on the wall of girls in the lobby",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Jessica",
+&"id": "34",
+&"next_id": "35",
+&"text": "So everyone can see how hot you are",
+&"type": "dialogue"
+},
+"35": {
+&"character": "PlayerM",
+&"id": "35",
+&"next_id": "36",
+&"text": "O-oh!! 🙃",
+&"type": "dialogue"
+},
+"36": {
+&"character": "PlayerM",
+&"id": "36",
+&"next_id": "37",
+&"text": "I have to ask my boyfriend if that's okay",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Nina",
+&"id": "37",
+&"next_id": "38",
+&"text": "Tsk",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Jessica",
+&"id": "38",
+&"next_id": "39",
+&"text": "Part of the sorority rules dictates that you are a sorority member first",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Jessica",
+&"id": "39",
+&"next_id": "40",
+&"text": "While you're allowed to have that outside life, we don't really consider it here",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Erika",
+&"id": "4",
+&"next_id": "5",
+&"text": "Why yes, yes it is lovely",
+&"type": "dialogue"
+},
+"40": {
+&"character": "PlayerM",
+&"id": "40",
+&"next_id": "41",
+&"text": "What's that mean?",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Erika",
+&"id": "41",
+&"next_id": "42",
+&"text": "I have a boyfriend too honey but we still have to follow club rules 😘",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Erika",
+&"id": "42",
+&"next_id": "43",
+&"text": "Don't worry too much, you won't be forced to do anything you don't want to do",
+&"type": "dialogue"
+},
+"43": {
+&"character": "PlayerM",
+&"id": "43",
+&"next_id": "44",
+&"text": "Okay, I guess that's just how clubs work huh",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Jessica",
+&"id": "44",
+&"next_id": "45",
+&"text": "Would you be able to take one by Monday?",
+&"type": "dialogue"
+},
+"45": {
+&"character": "PlayerM",
+&"id": "45",
+&"next_id": "46",
+&"text": "I can try 😅",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Jessica",
+&"id": "46",
+&"next_id": "47",
+&"text": "Wonderful",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Erika",
+&"id": "47",
+&"next_id": "48",
+&"text": "Don't worry sweetheart, I know it's intimidating at first but you'll see a whole new side to you",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Erika",
+&"id": "48",
+&"next_id": "49",
+&"text": "img: nina/16",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Erika",
+&"id": "49",
+&"next_id": "50",
+&"text": "Something like this hun!",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Erika",
+&"id": "5",
+&"next_id": "6",
+&"text": "You must be Nina's darling girl, Mabel",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Nina",
+&"id": "50",
+&"next_id": "51",
+&"text": "What the??",
+&"type": "dialogue"
+},
+"51": {
+&"character": "PlayerM",
+&"id": "51",
+&"next_id": "52",
+&"text": "Wow, is that Nina?",
+&"type": "dialogue"
+},
+"52": {
+&"character": "PlayerM",
+&"id": "52",
+&"next_id": "53",
+&"text": "Wow!! Pretty",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Nina",
+&"id": "53",
+&"next_id": "54",
+&"text": "Where the fuck did you get that??",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Erika",
+&"id": "54",
+&"next_id": "55",
+&"text": "Trade secret 🤭",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Nina",
+&"id": "55",
+&"next_id": "56",
+&"text": "You little bitch",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Jessica",
+&"id": "56",
+&"next_id": "57",
+&"text": "Girls, be nice or you'll do a shift at Queen's",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Nina",
+&"id": "57",
+&"next_id": "58",
+&"text": "Fuck that..",
+&"type": "dialogue"
+},
+"58": {
+&"character": "PlayerM",
+&"id": "58",
+&"next_id": "59",
+&"text": "Shift at where? 😅",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Jessica",
+&"id": "59",
+&"next_id": "60",
+&"text": "You don't have to worry about that",
+&"type": "dialogue"
+},
+"6": {
+&"character": "PlayerM",
+&"id": "6",
+&"next_id": "7",
+&"text": "Hi!",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Jessica",
+&"id": "60",
+&"next_id": "61",
+&"text": "Just focus on your task sweetheart 😘",
+&"type": "dialogue"
+},
+"61": {
+&"character": "PlayerM",
+&"id": "61",
+&"next_id": "62",
+&"text": "Oh so you want me to take a picture like that?",
+&"type": "dialogue"
+},
+"62": {
+&"character": "PlayerM",
+&"id": "62",
+&"next_id": "63",
+&"text": "I guess I can try, it doesn't look so bad",
+&"type": "dialogue"
+},
+"63": {
+&"character": "PlayerM",
+&"id": "63",
+&"next_id": "64",
+&"text": "I don't know if I have any clothes like that though",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Jessica",
+&"id": "64",
+&"next_id": "65",
+&"text": "If you do need, you can pick up the set we provide",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Jessica",
+&"id": "65",
+&"next_id": "66",
+&"text": "We'll go through it all in more detail on Monday when you come by the Sorority house",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Jessica",
+&"id": "66",
+&"next_id": "67",
+&"text": "By the way, do you plan to move in?",
+&"type": "dialogue"
+},
+"67": {
+&"character": "PlayerM",
+&"id": "67",
+&"next_id": "68",
+&"text": "Oh I didn't know I could!",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Erika",
+&"id": "68",
+&"next_id": "69",
+&"text": "You should, the beds are much bigger and more comfortable than those tiny dorm room 🥰",
+&"type": "dialogue"
+},
+"69": {
+&"character": "Erika",
+&"id": "69",
+&"next_id": "70",
+&"text": "Silk sheets and a bed big enough for a whole group 😉",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Nina",
+&"id": "7",
+&"next_id": "8",
+&"text": "Tsk",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Erika",
+&"id": "70",
+&"next_id": "71",
+&"text": "And the girl gossip is soooo juicy honey",
+&"type": "dialogue"
+},
+"71": {
+&"character": "Nina",
+&"id": "71",
+&"next_id": "72",
+&"text": "Not to mention only hot girls and hot guys, nothing less 😒",
+&"type": "dialogue"
+},
+"72": {
+&"character": "PlayerM",
+&"id": "72",
+&"next_id": "73",
+&"text": "Maybe not then but I'll think about it 😅",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Jessica",
+&"id": "73",
+&"next_id": "74",
+&"text": "Lovely, if you change your mind, we can open up a room for you",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Jessica",
+&"id": "74",
+&"next_id": "75",
+&"text": "See you on Monday",
+&"type": "dialogue"
+},
+"75": {
+&"character": "PlayerM",
+&"id": "75",
+&"next_id": "76",
+&"text": "Thanks, bye!",
+&"type": "dialogue"
+},
+"76": {
+&"id": "76",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"77": {
+&"id": "77",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"8": {
+&"character": "Jessica",
+&"id": "8",
+&"next_id": "9",
+&"text": "Hello Mabel, welcome to the Sorority!",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Jessica",
+&"id": "9",
+&"next_id": "10",
+&"text": "This is your initiation group chat",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+Erika: Hello lovely pink bunny
+PlayerM: Hello?
+PlayerM: Is this the Sorority club?
+Erika: Why yes, yes it is lovely
+Erika: You must be Nina's darling girl, Mabel
+PlayerM: Hi!
+Nina: Tsk
+Jessica: Hello Mabel, welcome to the Sorority!
+Jessica: This is your initiation group chat
+Jessica: The three of us will keep an eye out for you, making sure you fall in line with the rest of us
+PlayerM: Hiya! Nice to meet you Jessica 😁
+Jessica: Erika is right, what a darling you are
+Jessica: I'm sure it'll be fun to... work with you
+PlayerM: 😁
+Jessica: Tell me Mabel, do you have any pics of pictures of yourself?
+PlayerM: Yeah, I have a bunch on Social Scene
+Mabel: img: mabel/98
+PlayerM: Like this?
+Erika: Oh my, what fun this will be
+Jessica: Not quite
+Jessica: I've seen those and I was thinking a little more brave
+PlayerM: Brave? Like what?
+Jessica: Like a bikini shot, or maybe a lingerie shot?
+Jessica: Something we could hang up as a portrait
+Jessica: Show everyone who Mabel really is
+PlayerM: 😳
+PlayerM: I already uhm... is that a requirement?
+Jessica: Yes, it is
+Jessica: When I ask something of you, it usually is a requirement
+Jessica: I wouldn't waste your precious time
+PlayerM: I see, okay!
+PlayerM: And who's going to see the picture?
+Jessica: We'll hang it up on the wall of girls in the lobby
+Jessica: So everyone can see how hot you are
+PlayerM: O-oh!! 🙃
+PlayerM: I have to ask my boyfriend if that's okay
+Nina: Tsk
+Jessica: Part of the sorority rules dictates that you are a sorority member first
+Jessica: While you're allowed to have that outside life, we don't really consider it here
+PlayerM: What's that mean?
+Erika: I have a boyfriend too honey but we still have to follow club rules 😘
+Erika: Don't worry too much, you won't be forced to do anything you don't want to do
+PlayerM: Okay, I guess that's just how clubs work huh
+Jessica: Would you be able to take one by Monday?
+PlayerM: I can try 😅
+Jessica: Wonderful
+Erika: Don't worry sweetheart, I know it's intimidating at first but you'll see a whole new side to you
+Erika: img: nina/16
+Erika: Something like this hun!
+Nina: What the??
+PlayerM: Wow, is that Nina?
+PlayerM: Wow!! Pretty
+Nina: Where the fuck did you get that??
+Erika: Trade secret 🤭
+Nina: You little bitch
+Jessica: Girls, be nice or you'll do a shift at Queen's
+Nina: Fuck that..
+PlayerM: Shift at where? 😅
+Jessica: You don't have to worry about that
+Jessica: Just focus on your task sweetheart 😘
+PlayerM: Oh so you want me to take a picture like that?
+PlayerM: I guess I can try, it doesn't look so bad
+PlayerM: I don't know if I have any clothes like that though
+Jessica: If you do need, you can pick up the set we provide
+Jessica: We'll go through it all in more detail on Monday when you come by the Sorority house
+Jessica: By the way, do you plan to move in?
+PlayerM: Oh I didn't know I could!
+Erika: You should, the beds are much bigger and more comfortable than those tiny dorm room 🥰
+Erika: Silk sheets and a bed big enough for a whole group 😉
+Erika: And the girl gossip is soooo juicy honey
+Nina: Not to mention only hot girls and hot guys, nothing less 😒
+PlayerM: Maybe not then but I'll think about it 😅
+Jessica: Lovely, if you change your mind, we can open up a room for you
+Jessica: See you on Monday
+PlayerM: Thanks, bye!
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

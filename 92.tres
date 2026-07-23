@@ -1,0 +1,1206 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_y1wbp"]
+
+[resource]
+script = ExtResource("1_y1wbp")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Erika", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "Erika",
+&"id": "1",
+&"next_id": "2",
+&"text": "Mmmh hello there handsome",
+&"type": "dialogue"
+},
+"10": {
+&"character": "Erika",
+&"id": "10",
+&"next_id": "11",
+&"text": "That is until you showed up ☺️",
+&"type": "dialogue"
+},
+"100": {
+&"character": "Erika",
+&"id": "100",
+&"next_id": "101",
+&"text": "Or I might not... depends on my mood 🤭",
+&"type": "dialogue"
+},
+"101": {
+&"character": "Erika",
+&"id": "101",
+&"next_id": "103",
+&"text": "Take a look for yourself",
+&"type": "dialogue"
+},
+"102": {
+&"id": "102",
+&"next_id": "103",
+&"type": ""
+},
+"103": {
+&"character": "Player",
+&"id": "103",
+&"next_id": "104",
+&"notes": "Erika's pussy masturbate",
+&"text": "🥵",
+&"type": "dialogue"
+},
+"104": {
+&"character": "Erika",
+&"id": "104",
+&"next_id": "105",
+&"text": "Do you see how hot and sweaty I am for you?",
+&"type": "dialogue"
+},
+"105": {
+&"character": "Erika",
+&"id": "105",
+&"next_id": "106",
+&"text": "I meant it when I said the only thing I want to do is pleasure you",
+&"type": "dialogue"
+},
+"106": {
+&"character": "Erika",
+&"id": "106",
+&"next_id": "107",
+&"text": "It'll be all yours soon",
+&"type": "dialogue"
+},
+"107": {
+&"character": "Erika",
+&"id": "107",
+&"next_id": "108",
+&"text": "Say it handsome, say \"all mine\"",
+&"type": "dialogue"
+},
+"108": {
+&"character": "Erika",
+&"id": "108",
+&"next_id": "109",
+&"text": "I want you to whisper it to me when you take me and fuck me fervently 🤭",
+&"type": "dialogue"
+},
+"109": {
+&"character": "Player",
+&"id": "109",
+&"next_id": "110",
+&"text": "All mine 🫠",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Erika",
+&"id": "11",
+&"next_id": "12",
+&"text": "Something about you was a little different from the rest",
+&"type": "dialogue"
+},
+"110": {
+&"character": "Erika",
+&"id": "110",
+&"next_id": "111",
+&"text": "Good",
+&"type": "dialogue"
+},
+"111": {
+&"character": "Erika",
+&"id": "111",
+&"next_id": "112",
+&"text": "You'll melt inside me and we're going to be an ooey-gooey mess together 🥰",
+&"type": "dialogue"
+},
+"112": {
+&"character": "Erika",
+&"id": "112",
+&"next_id": "113",
+&"text": "Mmmh ugh rubbing myself isn't enough",
+&"type": "dialogue"
+},
+"113": {
+&"character": "Erika",
+&"id": "113",
+&"next_id": "114",
+&"text": "I seriously need you inside me",
+&"type": "dialogue"
+},
+"114": {
+&"character": "Player",
+&"id": "114",
+&"next_id": "115",
+&"text": "Me too...",
+&"type": "dialogue"
+},
+"115": {
+&"character": "Erika",
+&"id": "115",
+&"next_id": "116",
+&"text": "I'm moaning your name so hard 😩",
+&"type": "dialogue"
+},
+"116": {
+&"character": "Erika",
+&"id": "116",
+&"next_id": "117",
+&"text": "I'm sure everyone in the house knows it now 🤭",
+&"type": "dialogue"
+},
+"117": {
+&"character": "Erika",
+&"id": "117",
+&"next_id": "118",
+&"text": "I need your cum inside me",
+&"type": "dialogue"
+},
+"118": {
+&"character": "Erika",
+&"id": "118",
+&"next_id": "120",
+&"text": "I want your first cum ever to be inside me 😍",
+&"type": "dialogue"
+},
+"119": {
+&"id": "119",
+&"next_id": "120",
+&"type": ""
+},
+"12": {
+&"character": "Player",
+&"id": "12",
+&"next_id": "13",
+&"text": "What was it? 😊",
+&"type": "dialogue"
+},
+"120": {
+&"character": "Erika",
+&"id": "120",
+&"next_id": "121",
+&"notes": "Spread pussy",
+&"text": "Right here, all the way inside me",
+&"type": "dialogue"
+},
+"121": {
+&"character": "Erika",
+&"id": "121",
+&"next_id": "122",
+&"text": "I want my womb to drink you and taste you 🥰",
+&"type": "dialogue"
+},
+"122": {
+&"character": "Player",
+&"id": "122",
+&"next_id": "123",
+&"text": "Fuck... 😫",
+&"type": "dialogue"
+},
+"123": {
+&"character": "Erika",
+&"id": "123",
+&"next_id": "124",
+&"text": "Ah hah",
+&"type": "dialogue"
+},
+"124": {
+&"character": "Erika",
+&"id": "124",
+&"next_id": "125",
+&"text": "I'm cumminggg",
+&"type": "dialogue"
+},
+"125": {
+&"character": "Erika",
+&"id": "125",
+&"next_id": "126",
+&"text": "Ah... that was.. something",
+&"type": "dialogue"
+},
+"126": {
+&"character": "Erika",
+&"id": "126",
+&"next_id": "127",
+&"text": "Oh my what a mess I made too 🤭",
+&"type": "dialogue"
+},
+"127": {
+&"character": "Erika",
+&"id": "127",
+&"next_id": "128",
+&"text": "I don't usually cum first either",
+&"type": "dialogue"
+},
+"128": {
+&"character": "Erika",
+&"id": "128",
+&"next_id": "129",
+&"text": "It's unusual but I knew my body wanted you just as much as my mind",
+&"type": "dialogue"
+},
+"129": {
+&"character": "Erika",
+&"id": "129",
+&"next_id": "130",
+&"text": "Did you cum for me sweetheart?",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Erika",
+&"id": "13",
+&"next_id": "14",
+&"text": "I can't put my finger on it",
+&"type": "dialogue"
+},
+"130": {
+&"character": "Player",
+&"id": "130",
+&"next_id": "131",
+&"text": "I did.",
+&"type": "dialogue"
+},
+"131": {
+&"character": "Erika",
+&"id": "131",
+&"next_id": "132",
+&"text": "Good, now",
+&"type": "dialogue"
+},
+"132": {
+&"character": "Erika",
+&"id": "132",
+&"next_id": "133",
+&"text": "It's getting quite late but",
+&"type": "dialogue"
+},
+"133": {
+&"character": "Erika",
+&"id": "133",
+&"next_id": "134",
+&"text": "I want you to promise me you'll visit me in person",
+&"type": "dialogue"
+},
+"134": {
+&"character": "Erika",
+&"id": "134",
+&"next_id": "135",
+&"text": "And make my little dreams from today come true",
+&"type": "dialogue"
+},
+"135": {
+&"character": "Erika",
+&"id": "135",
+&"next_id": "136",
+&"text": "Will you do that for me?",
+&"type": "dialogue"
+},
+"136": {
+&"id": "136",
+&"next_id": "137",
+&"responses": PackedStringArray("136"),
+&"tags": PackedStringArray("yellowheart"),
+&"text": "I promise",
+&"type": "response"
+},
+"137": {
+&"character": "Player",
+&"id": "137",
+&"next_id": "138",
+&"text": "I promise",
+&"type": "dialogue"
+},
+"138": {
+&"character": "Erika",
+&"id": "138",
+&"next_id": "139",
+&"text": "If I wasn't a slut, I'd have been your wife and rode you until your babies were inside me 🥰",
+&"type": "dialogue"
+},
+"139": {
+&"character": "Erika",
+&"id": "139",
+&"next_id": "141",
+&"text": "You seriously know how to treat a lady",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Erika",
+&"id": "14",
+&"next_id": "15",
+&"text": "That rarely happens so count yourself as an oddity sugar",
+&"type": "dialogue"
+},
+"140": {
+&"id": "140",
+&"next_id": "141",
+&"type": ""
+},
+"141": {
+&"id": "141",
+&"next_id": "142",
+&"responses": PackedStringArray("141"),
+&"text": "I'll try my best",
+&"type": "response"
+},
+"142": {
+&"character": "Player",
+&"id": "142",
+&"next_id": "143",
+&"notes": "Social post about having someone in mind for body 200 and eager but period coming soon",
+&"text": "I'll try my best",
+&"type": "dialogue"
+},
+"143": {
+&"character": "Erika",
+&"id": "143",
+&"next_id": "144",
+&"text": "Boys and their fake promises",
+&"type": "dialogue"
+},
+"144": {
+&"character": "Erika",
+&"id": "144",
+&"next_id": "145",
+&"text": "That's okay though 🥰",
+&"type": "dialogue"
+},
+"145": {
+&"character": "Erika",
+&"id": "145",
+&"next_id": "146",
+&"text": "I never really expect anything, I only take 😉",
+&"type": "dialogue"
+},
+"146": {
+&"character": "Erika",
+&"id": "146",
+&"next_id": "147",
+&"text": "💋 For the tip of your tired dick",
+&"type": "dialogue"
+},
+"147": {
+&"character": "Player",
+&"id": "147",
+&"next_id": "148",
+&"text": "Good night 😊",
+&"type": "dialogue"
+},
+"148": {
+&"id": "148",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"149": {
+&"id": "149",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"15": {
+&"character": "Erika",
+&"id": "15",
+&"next_id": "17",
+&"text": "That doesn't mean anything bad, in fact it's quite lucky",
+&"type": "dialogue"
+},
+"16": {
+&"id": "16",
+&"next_id": "17",
+&"type": ""
+},
+"17": {
+&"character": "Erika",
+&"id": "17",
+&"next_id": "18",
+&"notes": "Erika in Lingerie drinking wine in bed",
+&"text": "Do you like what you see?",
+&"type": "dialogue"
+},
+"18": {
+&"id": "18",
+&"next_id": "19",
+&"responses": PackedStringArray("18"),
+&"text": "Yes",
+&"type": "response"
+},
+"19": {
+&"character": "Player",
+&"id": "19",
+&"next_id": "20",
+&"text": "Yes",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Erika",
+&"id": "2",
+&"next_id": "3",
+&"text": "Remember me?",
+&"type": "dialogue"
+},
+"20": {
+&"id": "20",
+&"next_id": "21",
+&"responses": PackedStringArray("20"),
+&"text": "Yes Mommy",
+&"type": "response"
+},
+"21": {
+&"character": "Player",
+&"id": "21",
+&"next_id": "22",
+&"text": "Yes Mommy",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Erika",
+&"id": "22",
+&"next_id": "23",
+&"text": "Wow, a boy with manners 🥰",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Erika",
+&"id": "23",
+&"next_id": "24",
+&"text": "After my heart here are we?",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Erika",
+&"id": "24",
+&"next_id": "25",
+&"text": "Do you want to see more?",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Player",
+&"id": "25",
+&"next_id": "26",
+&"text": "Yes.. 😳",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Erika",
+&"id": "26",
+&"next_id": "27",
+&"text": "Good, cause I'm really horny right now",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Erika",
+&"id": "27",
+&"next_id": "28",
+&"text": "And I NEED a good dicking but none nearby 🥺",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Erika",
+&"id": "28",
+&"next_id": "29",
+&"text": "Don't you think I deserves one?",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Player",
+&"id": "29",
+&"next_id": "30",
+&"text": "You do",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Player",
+&"id": "3",
+&"next_id": "4",
+&"text": "Hey.. Erika 🙂",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Erika",
+&"id": "30",
+&"next_id": "31",
+&"text": "Good, because I want you to see me for what I am",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Erika",
+&"id": "31",
+&"next_id": "32",
+&"text": "Do you know what I am?",
+&"type": "dialogue"
+},
+"32": {
+&"id": "32",
+&"next_id": "33",
+&"responses": PackedStringArray("32"),
+&"text": "A beautiful woman?",
+&"type": "response"
+},
+"33": {
+&"character": "Player",
+&"id": "33",
+&"next_id": "34",
+&"text": "A beautiful woman?",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Erika",
+&"id": "34",
+&"next_id": "35",
+&"text": "Every woman is beautiful when she spreads her legs honey",
+&"type": "dialogue"
+},
+"35": {
+&"id": "35",
+&"next_id": "36",
+&"responses": PackedStringArray("35"),
+&"text": "A goddess",
+&"type": "response"
+},
+"36": {
+&"character": "Player",
+&"id": "36",
+&"next_id": "37",
+&"text": "A goddess",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Erika",
+&"id": "37",
+&"next_id": "38",
+&"text": "Oh what an adorable little flirt we have here 🥰",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Erika",
+&"id": "38",
+&"next_id": "39",
+&"text": "Now I want you even more",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Erika",
+&"id": "39",
+&"next_id": "40",
+&"text": "But I'm a lady of the sorority",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Erika",
+&"id": "4",
+&"next_id": "5",
+&"text": "I think you'll do just fine for tonight",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Erika",
+&"id": "40",
+&"next_id": "41",
+&"text": "That means I'm pure",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Erika",
+&"id": "41",
+&"next_id": "42",
+&"text": "Pure lust",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Erika",
+&"id": "42",
+&"next_id": "43",
+&"text": "And right now every inch of me is screaming for you",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Erika",
+&"id": "43",
+&"next_id": "44",
+&"text": "Your shape, your size, how hard it is",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Erika",
+&"id": "44",
+&"next_id": "45",
+&"text": "I want to feel it all when it slides inside me",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Erika",
+&"id": "45",
+&"next_id": "46",
+&"text": "And I never forget.",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Player",
+&"id": "46",
+&"next_id": "47",
+&"text": "😩",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Erika",
+&"id": "47",
+&"next_id": "48",
+&"text": "Mmmh did you like that?",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Erika",
+&"id": "48",
+&"next_id": "49",
+&"text": "It's true y'know",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Erika",
+&"id": "49",
+&"next_id": "50",
+&"text": "I think a woman should never forget a man she's been with",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Erika",
+&"id": "5",
+&"next_id": "6",
+&"text": "You've been on my mind my sweet boy",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Erika",
+&"id": "50",
+&"next_id": "51",
+&"text": "Even if they find someone else, or date or even get married",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Erika",
+&"id": "51",
+&"next_id": "52",
+&"text": "They should always remember every man they've ever been with every time they have sex",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Erika",
+&"id": "52",
+&"next_id": "53",
+&"text": "Because those are all trophies 🥰 The number of men that a girl has made happy",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Erika",
+&"id": "53",
+&"next_id": "54",
+&"text": "Don't you think?",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Player",
+&"id": "54",
+&"next_id": "55",
+&"text": "It's interesting... 😳",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Erika",
+&"id": "55",
+&"next_id": "56",
+&"text": "Well you're just a boy, I can't expect you to know what an older girl like me thinks 🥰",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Erika",
+&"id": "56",
+&"next_id": "57",
+&"text": "But neither should a man forget how badly a woman needs him",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Erika",
+&"id": "57",
+&"next_id": "58",
+&"text": "Because I want us to make each other happy soon okay?",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Player",
+&"id": "58",
+&"next_id": "60",
+&"text": "Okay",
+&"type": "dialogue"
+},
+"59": {
+&"id": "59",
+&"next_id": "60",
+&"type": ""
+},
+"6": {
+&"character": "Player",
+&"id": "6",
+&"next_id": "7",
+&"text": "Huh really?",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Erika",
+&"id": "60",
+&"next_id": "61",
+&"notes": "Breast peek",
+&"text": "Do you see my lovely girls?",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Erika",
+&"id": "61",
+&"next_id": "62",
+&"text": "They're here for you",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Erika",
+&"id": "62",
+&"next_id": "63",
+&"text": "What do you think of them?",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Player",
+&"id": "63",
+&"next_id": "64",
+&"text": "Lovely",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Erika",
+&"id": "64",
+&"next_id": "65",
+&"text": "Just lovely?",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Erika",
+&"id": "65",
+&"next_id": "66",
+&"text": "Do they make you feel anything?",
+&"type": "dialogue"
+},
+"66": {
+&"id": "66",
+&"next_id": "67",
+&"responses": PackedStringArray("66"),
+&"text": "I want to suck on them",
+&"type": "response"
+},
+"67": {
+&"character": "Player",
+&"id": "67",
+&"next_id": "68",
+&"text": "I want to suck on them",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Erika",
+&"id": "68",
+&"next_id": "69",
+&"text": "Oh my, what a thirsty young man 🤭",
+&"type": "dialogue"
+},
+"69": {
+&"character": "Erika",
+&"id": "69",
+&"next_id": "70",
+&"text": "Come quench it hehe",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Erika",
+&"id": "7",
+&"next_id": "8",
+&"text": "Mhmm",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Erika",
+&"id": "70",
+&"next_id": "71",
+&"text": "They're all yours",
+&"type": "dialogue"
+},
+"71": {
+&"id": "71",
+&"next_id": "72",
+&"responses": PackedStringArray("71"),
+&"text": "I want to feel my dick against them",
+&"type": "response"
+},
+"72": {
+&"character": "Player",
+&"id": "72",
+&"next_id": "73",
+&"text": "I want to feel my dick against them",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Erika",
+&"id": "73",
+&"next_id": "74",
+&"text": "😳",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Erika",
+&"id": "74",
+&"next_id": "75",
+&"text": "Rare to see a man cut from the same cloth as me 🥰",
+&"type": "dialogue"
+},
+"75": {
+&"character": "Erika",
+&"id": "75",
+&"next_id": "77",
+&"text": "My tits were made for dick",
+&"type": "dialogue"
+},
+"76": {
+&"id": "76",
+&"next_id": "77",
+&"type": ""
+},
+"77": {
+&"character": "Erika",
+&"id": "77",
+&"next_id": "78",
+&"notes": "Erika breast squeeze",
+&"text": "I know you're hard right now",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Erika",
+&"id": "78",
+&"next_id": "79",
+&"text": "And I need to know you're pleasuring yourself sweetheart",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Erika",
+&"id": "79",
+&"next_id": "80",
+&"text": "I need to know I'm making you happy right now",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Erika",
+&"id": "8",
+&"next_id": "9",
+&"text": "I saw that little crowd of boys with their yellow tickets around me and I was ready to go back upstairs",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Player",
+&"id": "80",
+&"next_id": "81",
+&"text": "Y-yeah I am..",
+&"type": "dialogue"
+},
+"81": {
+&"character": "Erika",
+&"id": "81",
+&"next_id": "82",
+&"text": "Mmmh good",
+&"type": "dialogue"
+},
+"82": {
+&"character": "Erika",
+&"id": "82",
+&"next_id": "83",
+&"text": "I'd ask for a picture but I have a feeling I'm going to be seeing it for myself sooner than later 🤭",
+&"type": "dialogue"
+},
+"83": {
+&"character": "Player",
+&"id": "83",
+&"next_id": "84",
+&"text": "🙃",
+&"type": "dialogue"
+},
+"84": {
+&"character": "Erika",
+&"id": "84",
+&"next_id": "85",
+&"text": "You're going to be my lucky number 200 🥰",
+&"type": "dialogue"
+},
+"85": {
+&"character": "Erika",
+&"id": "85",
+&"next_id": "86",
+&"text": "I can't wait for when you're inside me but I shouldn't get ahead of myself",
+&"type": "dialogue"
+},
+"86": {
+&"character": "Erika",
+&"id": "86",
+&"next_id": "87",
+&"text": "What number will I be on your list handsome?",
+&"type": "dialogue"
+},
+"87": {
+&"character": "Player",
+&"id": "87",
+&"next_id": "88",
+&"text": "Uhm... 1?",
+&"type": "dialogue"
+},
+"88": {
+&"character": "Erika",
+&"id": "88",
+&"next_id": "89",
+&"text": "Wait.",
+&"type": "dialogue"
+},
+"89": {
+&"character": "Erika",
+&"id": "89",
+&"next_id": "90",
+&"text": "You mean...",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Erika",
+&"id": "9",
+&"next_id": "10",
+&"text": "I was sooo disappointed 🙄",
+&"type": "dialogue"
+},
+"90": {
+&"character": "Erika",
+&"id": "90",
+&"next_id": "91",
+&"text": "I'M GOING TO BE YOUR FIRST 😍",
+&"type": "dialogue"
+},
+"91": {
+&"character": "Erika",
+&"id": "91",
+&"next_id": "92",
+&"text": "You should have said so from the beginning",
+&"type": "dialogue"
+},
+"92": {
+&"character": "Erika",
+&"id": "92",
+&"next_id": "93",
+&"text": "Oh this is so exciting",
+&"type": "dialogue"
+},
+"93": {
+&"character": "Erika",
+&"id": "93",
+&"next_id": "94",
+&"text": "Did you know that the first time you're inside a woman, it'll be imprinted on your mind forever",
+&"type": "dialogue"
+},
+"94": {
+&"character": "Erika",
+&"id": "94",
+&"next_id": "95",
+&"text": "Oh sweet thing",
+&"type": "dialogue"
+},
+"95": {
+&"character": "Erika",
+&"id": "95",
+&"next_id": "97",
+&"text": "I plan to leave a mark on you alright",
+&"type": "dialogue"
+},
+"96": {
+&"id": "96",
+&"next_id": "97",
+&"type": ""
+},
+"97": {
+&"character": "Erika",
+&"id": "97",
+&"next_id": "98",
+&"notes": "Erika's pussy show",
+&"text": "This will be your first home and you'll never forget 🥰🥰",
+&"type": "dialogue"
+},
+"98": {
+&"character": "Player",
+&"id": "98",
+&"next_id": "99",
+&"text": "😳",
+&"type": "dialogue"
+},
+"99": {
+&"character": "Erika",
+&"id": "99",
+&"next_id": "100",
+&"text": "Don't worryyy, I'll be gentle",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+Erika: Mmmh hello there handsome
+Erika: Remember me?
+Player: Hey.. Erika 🙂
+Erika: I think you'll do just fine for tonight
+Erika: You've been on my mind my sweet boy
+Player: Huh really?
+Erika: Mhmm
+Erika: I saw that little crowd of boys with their yellow tickets around me and I was ready to go back upstairs
+Erika: I was sooo disappointed 🙄
+Erika: That is until you showed up ☺️
+Erika: Something about you was a little different from the rest
+Player: What was it? 😊
+Erika: I can't put my finger on it
+Erika: That rarely happens so count yourself as an oddity sugar
+Erika: That doesn't mean anything bad, in fact it's quite lucky
+## Erika in Lingerie drinking wine in bed
+Erika: Do you like what you see?
+- Yes
+    Player: Yes
+- Yes Mommy
+    Player: Yes Mommy
+    Erika: Wow, a boy with manners 🥰
+    Erika: After my heart here are we?
+Erika: Do you want to see more?
+Player: Yes.. 😳
+Erika: Good, cause I'm really horny right now
+Erika: And I NEED a good dicking but none nearby 🥺
+Erika: Don't you think I deserves one?
+Player: You do
+Erika: Good, because I want you to see me for what I am
+Erika: Do you know what I am?
+- A beautiful woman?
+    Player: A beautiful woman?
+    Erika: Every woman is beautiful when she spreads her legs honey
+- A goddess
+    Player: A goddess
+    Erika: Oh what an adorable little flirt we have here 🥰
+    Erika: Now I want you even more
+Erika: But I'm a lady of the sorority
+Erika: That means I'm pure
+Erika: Pure lust
+Erika: And right now every inch of me is screaming for you
+Erika: Your shape, your size, how hard it is
+Erika: I want to feel it all when it slides inside me
+Erika: And I never forget.
+Player: 😩
+Erika: Mmmh did you like that?
+Erika: It's true y'know
+Erika: I think a woman should never forget a man she's been with
+Erika: Even if they find someone else, or date or even get married
+Erika: They should always remember every man they've ever been with every time they have sex
+Erika: Because those are all trophies 🥰 The number of men that a girl has made happy
+Erika: Don't you think?
+Player: It's interesting... 😳
+Erika: Well you're just a boy, I can't expect you to know what an older girl like me thinks 🥰
+Erika: But neither should a man forget how badly a woman needs him
+Erika: Because I want us to make each other happy soon okay?
+Player: Okay
+##Breast peek
+Erika: Do you see my lovely girls?
+Erika: They're here for you
+Erika: What do you think of them?
+Player: Lovely
+Erika: Just lovely?
+Erika: Do they make you feel anything?
+- I want to suck on them
+    Player: I want to suck on them
+    Erika: Oh my, what a thirsty young man 🤭
+    Erika: Come quench it hehe
+    Erika: They're all yours
+- I want to feel my dick against them
+    Player: I want to feel my dick against them
+    Erika: 😳
+    Erika: Rare to see a man cut from the same cloth as me 🥰
+    Erika: My tits were made for dick
+    ##Erika breast squeeze
+Erika: I know you're hard right now
+Erika: And I need to know you're pleasuring yourself sweetheart
+Erika: I need to know I'm making you happy right now
+Player: Y-yeah I am..
+Erika: Mmmh good
+Erika: I'd ask for a picture but I have a feeling I'm going to be seeing it for myself sooner than later 🤭
+Player: 🙃
+Erika: You're going to be my lucky number 200 🥰
+Erika: I can't wait for when you're inside me but I shouldn't get ahead of myself
+Erika: What number will I be on your list handsome?
+Player: Uhm... 1?
+Erika: Wait.
+Erika: You mean...
+Erika: I'M GOING TO BE YOUR FIRST 😍
+Erika: You should have said so from the beginning
+Erika: Oh this is so exciting
+Erika: Did you know that the first time you're inside a woman, it'll be imprinted on your mind forever
+Erika: Oh sweet thing
+Erika: I plan to leave a mark on you alright
+##Erika's pussy show
+Erika: This will be your first home and you'll never forget 🥰🥰
+Player: 😳
+Erika: Don't worryyy, I'll be gentle
+Erika: Or I might not... depends on my mood 🤭
+Erika: Take a look for yourself
+##Erika's pussy masturbate
+Player: 🥵
+Erika: Do you see how hot and sweaty I am for you?
+Erika: I meant it when I said the only thing I want to do is pleasure you
+Erika: It'll be all yours soon
+Erika: Say it handsome, say \"all mine\"
+Erika: I want you to whisper it to me when you take me and fuck me fervently 🤭
+Player: All mine 🫠
+Erika: Good
+Erika: You'll melt inside me and we're going to be an ooey-gooey mess together 🥰
+Erika: Mmmh ugh rubbing myself isn't enough
+Erika: I seriously need you inside me
+Player: Me too...
+Erika: I'm moaning your name so hard 😩
+Erika: I'm sure everyone in the house knows it now 🤭
+Erika: I need your cum inside me
+Erika: I want your first cum ever to be inside me 😍
+##Spread pussy
+Erika: Right here, all the way inside me
+Erika: I want my womb to drink you and taste you 🥰
+Player: Fuck... 😫
+Erika: Ah hah
+Erika: I'm cumminggg
+Erika: Ah... that was.. something
+Erika: Oh my what a mess I made too 🤭
+Erika: I don't usually cum first either 
+Erika: It's unusual but I knew my body wanted you just as much as my mind
+Erika: Did you cum for me sweetheart?
+Player: I did.
+Erika: Good, now
+Erika: It's getting quite late but
+Erika: I want you to promise me you'll visit me in person
+Erika: And make my little dreams from today come true
+Erika: Will you do that for me?
+- I promise [#yellowheart]
+    Player: I promise
+    Erika: If I wasn't a slut, I'd have been your wife and rode you until your babies were inside me 🥰
+    Erika: You seriously know how to treat a lady
+    ##Social post about having someone in mind for body 200 and eager but period coming soon
+- I'll try my best
+    Player: I'll try my best
+    Erika: Boys and their fake promises
+    Erika: That's okay though 🥰
+    Erika: I never really expect anything, I only take 😉
+Erika: 💋 For the tip of your tired dick
+Player: Good night 😊
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

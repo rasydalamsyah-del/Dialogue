@@ -1,0 +1,1054 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_3wn5k"]
+
+[resource]
+script = ExtResource("1_3wn5k")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Mabel", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Mabel",
+&"id": "10",
+&"next_id": "11",
+&"text": "What about you?",
+&"type": "dialogue"
+},
+"100": {
+&"id": "100",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"101": {
+&"id": "101",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"11": {
+&"character": "Player",
+&"id": "11",
+&"next_id": "12",
+&"text": "Same!",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Mabel",
+&"id": "12",
+&"next_id": "13",
+&"text": "Got a picture?",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Mabel",
+&"id": "13",
+&"next_id": "14",
+&"text": "Thought: I hope it's not a girl",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Player",
+&"id": "14",
+&"next_id": "15",
+&"text": "Of him? No 😂",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Mabel",
+&"id": "15",
+&"next_id": "16",
+&"text": "Thought: Phew",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Mabel",
+&"id": "16",
+&"next_id": "17",
+&"text": "I meant WITH him silly",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Mabel",
+&"id": "17",
+&"next_id": "18",
+&"text": "Oh is this like a boys and girls thing?",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Player",
+&"id": "18",
+&"next_id": "19",
+&"text": "Probably haha",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Mabel",
+&"id": "19",
+&"next_id": "20",
+&"text": "Well check us out 😎",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Mabel",
+&"id": "2",
+&"next_id": "3",
+&"text": "Hey partner!",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Mabel",
+&"id": "20",
+&"next_id": "21",
+&"text": "img: mabel/13",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Player",
+&"id": "21",
+&"next_id": "22",
+&"text": "Wow, she looks tough!",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Mabel",
+&"id": "22",
+&"next_id": "23",
+&"text": "She looks cool doesn't she!?",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Mabel",
+&"id": "23",
+&"next_id": "24",
+&"text": "Better keep up babe",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Mabel",
+&"id": "24",
+&"next_id": "25",
+&"text": "Delete: She might steal me from you",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Mabel",
+&"id": "25",
+&"next_id": "26",
+&"text": "Jk 🤭",
+&"type": "dialogue"
+},
+"26": {
+&"id": "26",
+&"next_id": "27",
+&"responses": PackedStringArray("26", "51"),
+&"tags": PackedStringArray("distrust"),
+&"text": "She might steal me too",
+&"type": "response"
+},
+"27": {
+&"id": "27",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "-="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "28",
+&"type": "mutation"
+},
+"28": {
+&"character": "Player",
+&"id": "28",
+&"next_id": "29",
+&"text": "She might steal me too 😂",
+&"type": "dialogue"
+},
+"29": {
+&"id": "29",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "heart",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 9,
+&"type": &"number",
+&"value": 1
+}, {
+&"i": 10,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "30",
+&"type": "mutation"
+},
+"3": {
+&"character": "Player",
+&"id": "3",
+&"next_id": "4",
+&"text": "Heya!",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Mabel",
+&"id": "30",
+&"next_id": "31",
+&"text": "Babe I was kiddinggg 😭",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Player",
+&"id": "31",
+&"next_id": "32",
+&"text": "Hey I'm kidding too",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Mabel",
+&"id": "32",
+&"next_id": "33",
+&"text": "You mean it? Say Promise",
+&"type": "dialogue"
+},
+"33": {
+&"id": "33",
+&"next_id": "34",
+&"responses": PackedStringArray("33", "42"),
+&"tags": PackedStringArray("blackheart"),
+&"text": "Or what? 😝",
+&"type": "response"
+},
+"34": {
+&"id": "34",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "StolenByNina"
+}]),
+&"is_blocking": true
+},
+&"next_id": "35",
+&"type": "mutation"
+},
+"35": {
+&"id": "35",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "black_heart"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "36",
+&"type": "mutation"
+},
+"36": {
+&"id": "36",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "-="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "37",
+&"type": "mutation"
+},
+"37": {
+&"character": "Player",
+&"id": "37",
+&"next_id": "38",
+&"text": "Or what? 😝",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Mabel",
+&"id": "38",
+&"next_id": "39",
+&"text": "Babe I'm serious!",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Mabel",
+&"id": "39",
+&"next_id": "40",
+&"text": "Say it 🥺",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Player",
+&"id": "4",
+&"next_id": "5",
+&"text": "How was orientation?",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Player",
+&"id": "40",
+&"next_id": "41",
+&"text": "Fiiine, promise.",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Mabel",
+&"id": "41",
+&"next_id": "47",
+&"text": "Thought: Hmph, meanie..",
+&"type": "dialogue"
+},
+"42": {
+&"id": "42",
+&"next_id": "43",
+&"tags": PackedStringArray("trust"),
+&"text": "Promise!",
+&"type": "response"
+},
+"43": {
+&"id": "43",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "44",
+&"type": "mutation"
+},
+"44": {
+&"character": "Player",
+&"id": "44",
+&"next_id": "45",
+&"text": "Promise!",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Mabel",
+&"id": "45",
+&"next_id": "46",
+&"text": "img: mabel/14",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Mabel",
+&"id": "46",
+&"next_id": "47",
+&"text": "Hmph, you're teasing me too much today! 🥹",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Mabel",
+&"id": "47",
+&"next_id": "48",
+&"text": "Okay then..",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Mabel",
+&"id": "48",
+&"next_id": "49",
+&"text": "If you say so 😊",
+&"type": "dialogue"
+},
+"49": {
+&"id": "49",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "heart",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 9,
+&"type": &"number",
+&"value": 0
+}, {
+&"i": 10,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "50",
+&"type": "mutation"
+},
+"5": {
+&"character": "Mabel",
+&"id": "5",
+&"next_id": "6",
+&"text": "SO overwhelming though",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Mabel",
+&"id": "50",
+&"next_id": "60",
+&"text": "PinkThought: Nobody would ever steal me from you anyway",
+&"type": "dialogue"
+},
+"51": {
+&"id": "51",
+&"next_id": "52",
+&"tags": PackedStringArray("love", "trust"),
+&"text": "She could never steal you from me",
+&"type": "response"
+},
+"52": {
+&"id": "52",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_trust"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "53",
+&"type": "mutation"
+},
+"53": {
+&"id": "53",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "mabel_desire"
+}, {
+&"i": 23,
+&"type": &"assignment",
+&"value": "-="
+}, {
+&"i": 26,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "54",
+&"type": "mutation"
+},
+"54": {
+&"character": "Player",
+&"id": "54",
+&"next_id": "55",
+&"text": "She could never steal you from me",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Mabel",
+&"id": "55",
+&"next_id": "56",
+&"text": "Omg shush you're making me blush 😊",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Mabel",
+&"id": "56",
+&"next_id": "57",
+&"text": "I was just teasing you",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Mabel",
+&"id": "57",
+&"next_id": "58",
+&"text": "Why'd you have to be all cute suddenly 🫣",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Player",
+&"id": "58",
+&"next_id": "59",
+&"text": "Mission accomplished hehe",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Mabel",
+&"id": "59",
+&"next_id": "60",
+&"text": "Oh you 🥰",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Mabel",
+&"id": "6",
+&"next_id": "7",
+&"text": "Like 200 people in a room",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Mabel",
+&"id": "60",
+&"next_id": "61",
+&"text": "Anyway her name is Nina",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Player",
+&"id": "61",
+&"next_id": "62",
+&"text": "What's she like?",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Mabel",
+&"id": "62",
+&"next_id": "63",
+&"text": "Well she approached me",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Mabel",
+&"id": "63",
+&"next_id": "64",
+&"text": "And she sort of put her arm around me like a hug from behind 😅",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Mabel",
+&"id": "64",
+&"next_id": "65",
+&"text": "She said something like \"Wow ur a cutie\"",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Mabel",
+&"id": "65",
+&"next_id": "66",
+&"text": "I was like uhm... Uhh.. H-hello do I know you 😫",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Player",
+&"id": "66",
+&"next_id": "67",
+&"text": "Wow 😂",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Mabel",
+&"id": "67",
+&"next_id": "68",
+&"text": "She was so forward huh 😳",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Mabel",
+&"id": "68",
+&"next_id": "69",
+&"text": "I felt my heart beating like crazy 😅",
+&"type": "dialogue"
+},
+"69": {
+&"character": "Mabel",
+&"id": "69",
+&"next_id": "70",
+&"text": "Then she introduced herself and said that she was in the sorority",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Player",
+&"id": "7",
+&"next_id": "8",
+&"text": "Haha mine was about the same",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Mabel",
+&"id": "70",
+&"next_id": "71",
+&"text": "It was scary at first but she ended up being really excited to get my number and stuff",
+&"type": "dialogue"
+},
+"71": {
+&"character": "Player",
+&"id": "71",
+&"next_id": "72",
+&"text": "Oh good for you! First friend",
+&"type": "dialogue"
+},
+"72": {
+&"character": "Mabel",
+&"id": "72",
+&"next_id": "73",
+&"text": "I guess so 😅 Not how I expected it!",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Mabel",
+&"id": "73",
+&"next_id": "74",
+&"text": "Uhm Babe...",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Mabel",
+&"id": "74",
+&"next_id": "75",
+&"text": "What's a sorority? 🙂",
+&"type": "dialogue"
+},
+"75": {
+&"character": "Player",
+&"id": "75",
+&"next_id": "76",
+&"text": "Well, its like a girls club almost",
+&"type": "dialogue"
+},
+"76": {
+&"character": "Player",
+&"id": "76",
+&"next_id": "77",
+&"text": "They have an interesting reputation to say the least",
+&"type": "dialogue"
+},
+"77": {
+&"character": "Mabel",
+&"id": "77",
+&"next_id": "78",
+&"text": "What do you mean?",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Player",
+&"id": "78",
+&"next_id": "79",
+&"text": "The one in this college is known for social events like parties and stuff",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Mabel",
+&"id": "79",
+&"next_id": "80",
+&"text": "More party people?? 😫",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Player",
+&"id": "8",
+&"next_id": "9",
+&"text": "Made any new friends yet?",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Mabel",
+&"id": "80",
+&"next_id": "81",
+&"text": "Well, I can't say I'm surprised",
+&"type": "dialogue"
+},
+"81": {
+&"character": "Mabel",
+&"id": "81",
+&"next_id": "82",
+&"text": "It's all everyone's been doing so far 😒",
+&"type": "dialogue"
+},
+"82": {
+&"character": "Mabel",
+&"id": "82",
+&"next_id": "83",
+&"text": "Well at least I made a friend I think",
+&"type": "dialogue"
+},
+"83": {
+&"character": "Mabel",
+&"id": "83",
+&"next_id": "84",
+&"text": "Maybe she could teach me how to survive college",
+&"type": "dialogue"
+},
+"84": {
+&"character": "Mabel",
+&"id": "84",
+&"next_id": "85",
+&"text": "She seemed pretty relaxed about the whole thing",
+&"type": "dialogue"
+},
+"85": {
+&"character": "Player",
+&"id": "85",
+&"next_id": "86",
+&"text": "That's great!",
+&"type": "dialogue"
+},
+"86": {
+&"character": "Player",
+&"id": "86",
+&"next_id": "87",
+&"text": "Good friends are gonna make it all easier",
+&"type": "dialogue"
+},
+"87": {
+&"character": "Mabel",
+&"id": "87",
+&"next_id": "88",
+&"text": "I seriously feel like I'm one of those kids in kindergarten that realized their mom isn't in the room anymore 😭",
+&"type": "dialogue"
+},
+"88": {
+&"character": "Player",
+&"id": "88",
+&"next_id": "89",
+&"text": "You'll be fine haha",
+&"type": "dialogue"
+},
+"89": {
+&"character": "Mabel",
+&"id": "89",
+&"next_id": "90",
+&"text": "Yeah... I think so 😊",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Mabel",
+&"id": "9",
+&"next_id": "10",
+&"text": "I think I did! 🤩",
+&"type": "dialogue"
+},
+"90": {
+&"character": "Mabel",
+&"id": "90",
+&"next_id": "91",
+&"text": "PinkThought: I'll be fine knowing you're here",
+&"type": "dialogue"
+},
+"91": {
+&"character": "Mabel",
+&"id": "91",
+&"next_id": "92",
+&"text": "sfx: bedcreak2: *creak*",
+&"type": "dialogue"
+},
+"92": {
+&"character": "Mabel",
+&"id": "92",
+&"next_id": "93",
+&"text": "I'm gonna get some sleep now",
+&"type": "dialogue"
+},
+"93": {
+&"character": "Mabel",
+&"id": "93",
+&"next_id": "94",
+&"text": "We have to be up early for tomorrow too",
+&"type": "dialogue"
+},
+"94": {
+&"character": "Mabel",
+&"id": "94",
+&"next_id": "95",
+&"text": "So talk to you tomorrow okay? 😘",
+&"type": "dialogue"
+},
+"95": {
+&"character": "Player",
+&"id": "95",
+&"next_id": "96",
+&"text": "Sure thing babe",
+&"type": "dialogue"
+},
+"96": {
+&"character": "Mabel",
+&"id": "96",
+&"next_id": "97",
+&"text": "Good night! ❤️",
+&"type": "dialogue"
+},
+"97": {
+&"character": "Player",
+&"id": "97",
+&"next_id": "98",
+&"text": "Nighty!",
+&"type": "dialogue"
+},
+"98": {
+&"id": "98",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "queue_social_post",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 21,
+&"type": &"string",
+&"value": "jason_drinking"
+}, {
+&"i": 37,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "99",
+&"type": "mutation"
+},
+"99": {
+&"id": "99",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "random_post",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 15,
+&"type": &"string",
+&"value": "campus_life"
+}, {
+&"i": 28,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "100",
+&"type": "mutation"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+Mabel: Hey partner!
+Player: Heya!
+Player: How was orientation?
+Mabel: SO overwhelming though
+Mabel: Like 200 people in a room
+Player: Haha mine was about the same
+Player: Made any new friends yet?
+Mabel: I think I did! 🤩
+Mabel: What about you?
+Player: Same!
+Mabel: Got a picture?
+Mabel: Thought: I hope it's not a girl
+Player: Of him? No 😂
+Mabel: Thought: Phew
+Mabel: I meant WITH him silly
+Mabel: Oh is this like a boys and girls thing?
+Player: Probably haha
+Mabel: Well check us out 😎
+Mabel: img: mabel/13
+Player: Wow, she looks tough!
+Mabel: She looks cool doesn't she!?
+Mabel: Better keep up babe
+Mabel: Delete: She might steal me from you
+Mabel: Jk 🤭
+- She might steal me too [#distrust]
+	set Story.mabel_trust -= 1
+	Player: She might steal me too 😂
+	do heart(1)
+	Mabel: Babe I was kiddinggg 😭
+	Player: Hey I'm kidding too
+	Mabel: You mean it? Say Promise
+	- Or what? 😝 [#blackheart]
+		set Story.flag = \"StolenByNina\"
+		set Story.black_heart += 1
+		set Story.mabel_trust -= 1
+		Player: Or what? 😝
+		Mabel: Babe I'm serious!
+		Mabel: Say it 🥺
+		Player: Fiiine, promise.
+		Mabel: Thought: Hmph, meanie..
+	- Promise! [#trust]
+		set Story.mabel_trust += 1
+		Player: Promise!
+		Mabel: img: mabel/14
+		Mabel: Hmph, you're teasing me too much today! 🥹
+	Mabel: Okay then..
+	Mabel: If you say so 😊
+	do heart(0)
+	Mabel: PinkThought: Nobody would ever steal me from you anyway
+- She could never steal you from me [#love] [#trust]
+	set Story.mabel_trust += 1
+	set Story.mabel_desire -= 1
+	Player: She could never steal you from me
+	Mabel: Omg shush you're making me blush 😊
+	Mabel: I was just teasing you
+	Mabel: Why'd you have to be all cute suddenly 🫣
+	Player: Mission accomplished hehe
+	Mabel: Oh you 🥰
+Mabel: Anyway her name is Nina
+Player: What's she like?
+Mabel: Well she approached me
+Mabel: And she sort of put her arm around me like a hug from behind 😅
+Mabel: She said something like \"Wow ur a cutie\"
+Mabel: I was like uhm... Uhh.. H-hello do I know you 😫
+Player: Wow 😂
+Mabel: She was so forward huh 😳
+Mabel: I felt my heart beating like crazy 😅
+Mabel: Then she introduced herself and said that she was in the sorority
+Mabel: It was scary at first but she ended up being really excited to get my number and stuff
+Player: Oh good for you! First friend
+Mabel: I guess so 😅 Not how I expected it!
+Mabel: Uhm Babe...
+Mabel: What's a sorority? 🙂
+Player: Well, its like a girls club almost
+Player: They have an interesting reputation to say the least
+Mabel: What do you mean?
+Player: The one in this college is known for social events like parties and stuff
+Mabel: More party people?? 😫
+Mabel: Well, I can't say I'm surprised
+Mabel: It's all everyone's been doing so far 😒
+Mabel: Well at least I made a friend I think
+Mabel: Maybe she could teach me how to survive college
+Mabel: She seemed pretty relaxed about the whole thing
+Player: That's great!
+Player: Good friends are gonna make it all easier
+Mabel: I seriously feel like I'm one of those kids in kindergarten that realized their mom isn't in the room anymore 😭
+Player: You'll be fine haha
+Mabel: Yeah... I think so 😊
+Mabel: PinkThought: I'll be fine knowing you're here
+Mabel: sfx: bedcreak2: *creak*
+Mabel: I'm gonna get some sleep now
+Mabel: We have to be up early for tomorrow too
+Mabel: So talk to you tomorrow okay? 😘
+Player: Sure thing babe
+Mabel: Good night! ❤️
+Player: Nighty!
+do queue_social_post(\"jason_drinking\")
+do random_post(\"campus_life\")
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

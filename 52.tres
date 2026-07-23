@@ -1,0 +1,521 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_7x1pu"]
+
+[resource]
+script = ExtResource("1_7x1pu")
+using_states = PackedStringArray()
+titles = {
+"start": "2"
+}
+character_names = PackedStringArray("Nina", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "2",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"10": {
+&"character": "Nina",
+&"id": "10",
+&"next_id": "11",
+&"text": "Boys pick what girls wear today 🙄",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Nina",
+&"id": "11",
+&"next_id": "12",
+&"text": "So apparently I gotta let you play dress up with me. Kill me now",
+&"type": "dialogue"
+},
+"12": {
+&"id": "12",
+&"next_id": "13",
+&"responses": PackedStringArray("12", "17"),
+&"tags": PackedStringArray("blackheart"),
+&"text": "Sounds fun to me",
+&"type": "response"
+},
+"13": {
+&"id": "13",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "black_heart"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "14",
+&"type": "mutation"
+},
+"14": {
+&"character": "Player",
+&"id": "14",
+&"next_id": "15",
+&"text": "Sounds fun to me",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Nina",
+&"id": "15",
+&"next_id": "16",
+&"text": "HAH. Course you'd say that, perv",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Nina",
+&"id": "16",
+&"next_id": "20",
+&"text": "Keep grinning, genius, see where it gets you",
+&"type": "dialogue"
+},
+"17": {
+&"id": "17",
+&"next_id": "18",
+&"text": "Whatever you want",
+&"type": "response"
+},
+"18": {
+&"character": "Player",
+&"id": "18",
+&"next_id": "19",
+&"text": "Whatever you want",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Nina",
+&"id": "19",
+&"next_id": "20",
+&"text": "Ugh. Spineless. Why am I not surprised",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "lecture_hall"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "3",
+&"type": "mutation"
+},
+"20": {
+&"character": "Nina",
+&"id": "20",
+&"next_id": "21",
+&"text": "Let's get this over with before I torch the whole idea",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Nina",
+&"id": "21",
+&"next_id": "22",
+&"text": "I laid out two things",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Nina",
+&"id": "22",
+&"next_id": "23",
+&"text": "Don't overthink it, it's not like your taste matters",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Nina",
+&"id": "23",
+&"next_id": "24",
+&"text": "Just pick your poison and let me be on my way",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Nina",
+&"id": "24",
+&"next_id": "25",
+&"text": "img: nina/22",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Nina",
+&"id": "25",
+&"next_id": "26",
+&"text": "This is what I was gonna wear",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Nina",
+&"id": "26",
+&"next_id": "27",
+&"text": "img: nina/23",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Nina",
+&"id": "27",
+&"next_id": "28",
+&"text": "But I guess I could go with this too",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Nina",
+&"id": "28",
+&"next_id": "29",
+&"text": "I'd rather set it on fire but, y'know. \"Rules are rules\" apparently 🙄",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Nina",
+&"id": "29",
+&"next_id": "30",
+&"text": "So spit it out already",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Nina",
+&"id": "3",
+&"next_id": "4",
+&"notes": "1pm",
+&"text": "Ugh. Of course it had to be this",
+&"type": "dialogue"
+},
+"30": {
+&"id": "30",
+&"next_id": "31",
+&"responses": PackedStringArray("30", "35"),
+&"text": "Leather Jacket",
+&"type": "response"
+},
+"31": {
+&"id": "31",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "Nina1A"
+}]),
+&"is_blocking": true
+},
+&"next_id": "32",
+&"type": "mutation"
+},
+"32": {
+&"character": "Player",
+&"id": "32",
+&"next_id": "33",
+&"text": "Leather Jacket",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Nina",
+&"id": "33",
+&"next_id": "34",
+&"text": "Didn't think you were into that kind of thing loser",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Nina",
+&"id": "34",
+&"next_id": "41",
+&"text": "Fine",
+&"type": "dialogue"
+},
+"35": {
+&"id": "35",
+&"next_id": "36",
+&"text": "Hoodie",
+&"type": "response"
+},
+"36": {
+&"id": "36",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "Nina1B"
+}]),
+&"is_blocking": true
+},
+&"next_id": "37",
+&"type": "mutation"
+},
+"37": {
+&"character": "Player",
+&"id": "37",
+&"next_id": "38",
+&"text": "Hoodie 👀",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Nina",
+&"id": "38",
+&"next_id": "39",
+&"text": "Knew you were a simpleton",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Nina",
+&"id": "39",
+&"next_id": "40",
+&"text": "Bet you're staring at my tits huh?",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Player",
+&"id": "4",
+&"next_id": "5",
+&"text": "Nina?",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Nina",
+&"id": "40",
+&"next_id": "41",
+&"text": "Closest you'll ever get, so savor it",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Nina",
+&"id": "41",
+&"next_id": "42",
+&"text": "Finally done with this weird convo",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Nina",
+&"id": "42",
+&"next_id": "43",
+&"text": "Now buzz off, I've got real things to do",
+&"type": "dialogue"
+},
+"43": {
+&"id": "43",
+&"next_id": "44",
+&"responses": PackedStringArray("43", "45"),
+&"text": "Cya",
+&"type": "response"
+},
+"44": {
+&"character": "Player",
+&"id": "44",
+&"next_id": "47",
+&"text": "Cya",
+&"type": "dialogue"
+},
+"45": {
+&"id": "45",
+&"next_id": "46",
+&"text": "🖕",
+&"type": "response"
+},
+"46": {
+&"character": "Player",
+&"id": "46",
+&"next_id": "47",
+&"text": "🖕",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Nina",
+&"id": "47",
+&"next_id": "48",
+&"text": "🖕",
+&"type": "dialogue"
+},
+"48": {
+&"id": "48",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "social_post",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 15,
+&"type": &"string",
+&"value": "nina_dressup"
+}, {
+&"i": 29,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "49",
+&"type": "mutation"
+},
+"49": {
+&"id": "49",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"5": {
+&"character": "Nina",
+&"id": "5",
+&"next_id": "6",
+&"text": "Don't get excited, this isn't a social call",
+&"type": "dialogue"
+},
+"50": {
+&"id": "50",
+&"next_id": "51",
+&"type": ""
+},
+"51": {
+&"id": "51",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"6": {
+&"character": "Nina",
+&"id": "6",
+&"next_id": "7",
+&"text": "Jessica cooked up some dumbass \"task\" for us girls today",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Nina",
+&"id": "7",
+&"next_id": "8",
+&"text": "And it was a short straw for me",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Player",
+&"id": "8",
+&"next_id": "9",
+&"text": "Doing what exactly?",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Nina",
+&"id": "9",
+&"next_id": "10",
+&"text": "...",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+## 1pm
+do Story.set_location(\"lecture_hall\")
+Nina: Ugh. Of course it had to be this
+Player: Nina?
+Nina: Don't get excited, this isn't a social call
+Nina: Jessica cooked up some dumbass \"task\" for us girls today
+Nina: And it was a short straw for me
+Player: Doing what exactly?
+Nina: ...
+Nina: Boys pick what girls wear today 🙄
+Nina: So apparently I gotta let you play dress up with me. Kill me now
+- Sounds fun to me [#blackheart]
+	set Story.black_heart += 1
+	Player: Sounds fun to me
+	Nina: HAH. Course you'd say that, perv
+	Nina: Keep grinning, genius, see where it gets you
+- Whatever you want
+	Player: Whatever you want
+	Nina: Ugh. Spineless. Why am I not surprised
+Nina: Let's get this over with before I torch the whole idea
+Nina: I laid out two things
+Nina: Don't overthink it, it's not like your taste matters
+Nina: Just pick your poison and let me be on my way
+Nina: img: nina/22
+Nina: This is what I was gonna wear
+Nina: img: nina/23
+Nina: But I guess I could go with this too
+Nina: I'd rather set it on fire but, y'know. \"Rules are rules\" apparently 🙄
+Nina: So spit it out already
+- Leather Jacket
+	set Story.flag = \"Nina1A\"
+	Player: Leather Jacket
+	Nina: Didn't think you were into that kind of thing loser
+	Nina: Fine
+- Hoodie
+	set Story.flag = \"Nina1B\"
+	Player: Hoodie 👀
+	Nina: Knew you were a simpleton
+	Nina: Bet you're staring at my tits huh?
+	Nina: Closest you'll ever get, so savor it
+Nina: Finally done with this weird convo
+Nina: Now buzz off, I've got real things to do
+- Cya
+	Player: Cya
+- 🖕
+	Player: 🖕
+Nina: 🖕
+do social_post(\"nina_dressup\")
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

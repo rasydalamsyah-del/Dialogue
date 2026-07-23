@@ -1,0 +1,482 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_o8e1y"]
+
+[resource]
+script = ExtResource("1_o8e1y")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Mabel", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Mabel",
+&"id": "10",
+&"next_id": "11",
+&"text": "Really?",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Mabel",
+&"id": "11",
+&"next_id": "12",
+&"text": "Same here lol",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Mabel",
+&"id": "12",
+&"next_id": "13",
+&"text": "Actually, uhm.. random question",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Mabel",
+&"id": "13",
+&"next_id": "14",
+&"text": "Did they say you have to do anything?",
+&"type": "dialogue"
+},
+"14": {
+&"id": "14",
+&"next_id": "15",
+&"responses": PackedStringArray("14", "20"),
+&"text": "Like what?",
+&"type": "response"
+},
+"15": {
+&"character": "Player",
+&"id": "15",
+&"next_id": "16",
+&"text": "Like what?",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Mabel",
+&"id": "16",
+&"next_id": "17",
+&"text": "Yeah! Like I dunno, a task or so",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Mabel",
+&"id": "17",
+&"next_id": "18",
+&"text": "Maybe like take pictures of yourself or something (totally random example!)",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Player",
+&"id": "18",
+&"next_id": "19",
+&"text": "No lol",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Mabel",
+&"id": "19",
+&"next_id": "28",
+&"text": "Really? Awh well that's it I guess",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "PhoneUnlocks"
+}, {
+&"i": 16,
+&"type": &"dot"
+}, {
+&"i": 17,
+&"type": &"variable",
+&"value": "leak"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 24,
+&"type": &"string",
+&"value": "sorgroup1"
+}]),
+&"is_blocking": true
+},
+&"next_id": "3",
+&"type": "mutation"
+},
+"20": {
+&"id": "20",
+&"next_id": "21",
+&"text": "No, do you?",
+&"type": "response"
+},
+"21": {
+&"id": "21",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_set",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 12,
+&"type": &"array",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 13,
+&"type": &"string",
+&"value": "96"
+}, {
+&"i": 17,
+&"type": &"bracket_close"
+}])])
+}, {
+&"i": 18,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "22",
+&"type": "mutation"
+},
+"22": {
+&"character": "Player",
+&"id": "22",
+&"next_id": "23",
+&"text": "No, do you?",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Mabel",
+&"id": "23",
+&"next_id": "24",
+&"text": "Nope! Nothing 😅",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Mabel",
+&"id": "24",
+&"next_id": "25",
+&"text": "Thought: Only THAT...",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Mabel",
+&"id": "25",
+&"next_id": "26",
+&"text": "Thought: Hopefully I can quickly do that and never think about it again",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Mabel",
+&"id": "26",
+&"next_id": "27",
+&"text": "Mhmm!",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Mabel",
+&"id": "27",
+&"next_id": "28",
+&"text": "Totally a nothing burger see!",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Player",
+&"id": "28",
+&"next_id": "29",
+&"text": "If you say so",
+&"type": "dialogue"
+},
+"29": {
+&"id": "29",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_clear",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 14,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "30",
+&"type": "mutation"
+},
+"3": {
+&"character": "Mabel",
+&"id": "3",
+&"next_id": "4",
+&"text": "Hey babe!",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Player",
+&"id": "30",
+&"next_id": "31",
+&"text": "Any plans for the weekend?",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Mabel",
+&"id": "31",
+&"next_id": "32",
+&"text": "Just doing some homework!",
+&"type": "dialogue"
+},
+"32": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "has_flag",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 18,
+&"type": &"string",
+&"value": "Date3"
+}, {
+&"i": 25,
+&"type": &"parens_close"
+}])])
+}])
+},
+&"id": "32",
+&"next_id": "33",
+&"next_id_after": "41",
+&"next_sibling_id": "37",
+&"type": "condition"
+},
+"33": {
+&"character": "Mabel",
+&"id": "33",
+&"next_id": "34",
+&"text": "But I'm gonna see you tomorrow for our date 😊",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Player",
+&"id": "34",
+&"next_id": "35",
+&"text": "Yep!",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Mabel",
+&"id": "35",
+&"next_id": "36",
+&"text": "Excitinggg",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Mabel",
+&"id": "36",
+&"next_id": "41",
+&"text": "Can't wait hehe",
+&"type": "dialogue"
+},
+"37": {
+&"condition": {},
+&"id": "37",
+&"next_id": "38",
+&"next_id_after": "41",
+&"type": "condition"
+},
+"38": {
+&"character": "Mabel",
+&"id": "38",
+&"next_id": "39",
+&"text": "Maybe I'll go shopping tomorrow too",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Mabel",
+&"id": "39",
+&"next_id": "40",
+&"text": "Thought: I don't really have outfits like they want me to wear so I think I'll buy one",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Mabel",
+&"id": "4",
+&"next_id": "5",
+&"text": "img: mabel/95",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Mabel",
+&"id": "40",
+&"next_id": "41",
+&"text": "Not sure yet",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Player",
+&"id": "41",
+&"next_id": "42",
+&"text": "Okay! I'll let you finish up then",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Mabel",
+&"id": "42",
+&"next_id": "43",
+&"text": "Thanks babe!",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Mabel",
+&"id": "43",
+&"next_id": "44",
+&"text": "Talk soon?",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Player",
+&"id": "44",
+&"next_id": "45",
+&"text": "Yup 👍",
+&"type": "dialogue"
+},
+"45": {
+&"id": "45",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"46": {
+&"id": "46",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"5": {
+&"character": "Mabel",
+&"id": "5",
+&"next_id": "6",
+&"text": "How did your uhm... club intro go? 👀",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Player",
+&"id": "6",
+&"next_id": "7",
+&"text": "It went okay I think",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Mabel",
+&"id": "7",
+&"next_id": "8",
+&"text": "You're with your friend at least!",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Mabel",
+&"id": "8",
+&"next_id": "9",
+&"text": "How are the other members?",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Player",
+&"id": "9",
+&"next_id": "10",
+&"text": "Some interesting people in there 😅",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+set PhoneUnlocks.leak = \"sorgroup1\"
+Mabel: Hey babe!
+Mabel: img: mabel/95
+Mabel: How did your uhm... club intro go? 👀
+Player: It went okay I think
+Mabel: You're with your friend at least!
+Mabel: How are the other members?
+Player: Some interesting people in there 😅
+Mabel: Really?
+Mabel: Same here lol
+Mabel: Actually, uhm.. random question
+Mabel: Did they say you have to do anything?
+- Like what?
+	Player: Like what?
+	Mabel: Yeah! Like I dunno, a task or so
+	Mabel: Maybe like take pictures of yourself or something (totally random example!)
+	Player: No lol
+	Mabel: Really? Awh well that's it I guess
+- No, do you?
+	do echo_set([\"96\"])
+	Player: No, do you?
+	Mabel: Nope! Nothing 😅
+	Mabel: Thought: Only THAT...
+	Mabel: Thought: Hopefully I can quickly do that and never think about it again
+	Mabel: Mhmm!
+	Mabel: Totally a nothing burger see!
+Player: If you say so
+do echo_clear()
+Player: Any plans for the weekend?
+Mabel: Just doing some homework!
+if Story.has_flag(\"Date3\"):
+	Mabel: But I'm gonna see you tomorrow for our date 😊
+	Player: Yep!
+	Mabel: Excitinggg
+	Mabel: Can't wait hehe
+else:
+	Mabel: Maybe I'll go shopping tomorrow too
+	Mabel: Thought: I don't really have outfits like they want me to wear so I think I'll buy one
+	Mabel: Not sure yet
+Player: Okay! I'll let you finish up then
+Mabel: Thanks babe!
+Mabel: Talk soon?
+Player: Yup 👍
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

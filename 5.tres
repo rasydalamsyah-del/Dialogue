@@ -1,0 +1,832 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_ioktt"]
+
+[resource]
+script = ExtResource("1_ioktt")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Naomi", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "lecture_hall"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Player",
+&"id": "10",
+&"next_id": "11",
+&"text": "Really? 😄",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Naomi",
+&"id": "11",
+&"next_id": "12",
+&"text": "Mhmm!",
+&"type": "dialogue"
+},
+"12": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"i": 9,
+&"type": &"variable",
+&"value": "pink_heart"
+}, {
+&"i": 20,
+&"type": &"comparison",
+&"value": ">="
+}, {
+&"i": 23,
+&"type": &"number",
+&"value": 1
+}])
+},
+&"id": "12",
+&"next_id": "13",
+&"next_id_after": "21",
+&"next_sibling_id": "17",
+&"type": "condition"
+},
+"13": {
+&"character": "Naomi",
+&"id": "13",
+&"next_id": "14",
+&"text": "She told me about the date you guys went on",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Naomi",
+&"id": "14",
+&"next_id": "15",
+&"text": "She showed me the pictures and was all blushy",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Naomi",
+&"id": "15",
+&"next_id": "16",
+&"text": "It was so adorable",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Player",
+&"id": "16",
+&"next_id": "21",
+&"text": "Thanks 😊",
+&"type": "dialogue"
+},
+"17": {
+&"condition": {},
+&"id": "17",
+&"next_id": "18",
+&"next_id_after": "21",
+&"type": "condition"
+},
+"18": {
+&"character": "Naomi",
+&"id": "18",
+&"next_id": "19",
+&"text": "She told me she wanted to go out with you but seems like you've been busy",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Naomi",
+&"id": "19",
+&"next_id": "20",
+&"text": "Hopefully you guys get to meet up soon!",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "unlock_gallery_image",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 24,
+&"type": &"string",
+&"value": "naomi"
+}]), Array[Dictionary]([{
+&"i": 33,
+&"type": &"string",
+&"value": "1"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "3",
+&"type": "mutation"
+},
+"20": {
+&"character": "Player",
+&"id": "20",
+&"next_id": "21",
+&"text": "Hope so too",
+&"type": "dialogue"
+},
+"21": {
+&"condition": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"i": 9,
+&"type": &"variable",
+&"value": "mabel_desire"
+}, {
+&"i": 22,
+&"type": &"comparison",
+&"value": ">"
+}, {
+&"i": 24,
+&"type": &"number",
+&"value": 0
+}])
+},
+&"id": "21",
+&"next_id": "22",
+&"next_id_after": "29",
+&"next_sibling_id": "25",
+&"type": "condition"
+},
+"22": {
+&"character": "Naomi",
+&"id": "22",
+&"next_id": "23",
+&"text": "She also says that you've been helping her build her confidence a lot",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Naomi",
+&"id": "23",
+&"next_id": "24",
+&"text": "Keep this between us but we had a lot of girltalk and she's been trying to look a little more sexy for you 🤭",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Player",
+&"id": "24",
+&"next_id": "29",
+&"text": "No way, wow!",
+&"type": "dialogue"
+},
+"25": {
+&"condition": {},
+&"id": "25",
+&"next_id": "26",
+&"next_id_after": "29",
+&"type": "condition"
+},
+"26": {
+&"character": "Naomi",
+&"id": "26",
+&"next_id": "27",
+&"text": "She's shy as a button and loves relying on you",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Naomi",
+&"id": "27",
+&"next_id": "28",
+&"text": "She said she really wants to move in with her boyfriend soon and cuddle up every day with him",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Player",
+&"id": "28",
+&"next_id": "29",
+&"text": "😇",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Naomi",
+&"id": "29",
+&"next_id": "30",
+&"text": "Anyway I'm sure you probably know all that better than I do!",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Naomi",
+&"id": "3",
+&"next_id": "4",
+&"text": "Hiya!",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Naomi",
+&"id": "30",
+&"next_id": "31",
+&"text": "Buuut since I went off on a slight tangent",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Naomi",
+&"id": "31",
+&"next_id": "32",
+&"text": "Did you have any questions about us?",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Naomi",
+&"id": "32",
+&"next_id": "33",
+&"text": "Me or the photography club? 😊",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Naomi",
+&"id": "33",
+&"next_id": "34",
+&"text": "I'd be happy to answer anything!",
+&"type": "dialogue"
+},
+"34": {
+&"id": "34",
+&"next_id": "35",
+&"responses": PackedStringArray("34", "75"),
+&"text": "Could I get your Social account?",
+&"type": "response"
+},
+"35": {
+&"character": "Player",
+&"id": "35",
+&"next_id": "36",
+&"text": "Could I get your Social account?",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Naomi",
+&"id": "36",
+&"next_id": "37",
+&"text": "Of course! 👍",
+&"type": "dialogue"
+},
+"37": {
+&"id": "37",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "PhoneUnlocks"
+}, {
+&"i": 16,
+&"type": &"dot"
+}, {
+&"i": 17,
+&"type": &"variable",
+&"value": "reveal"
+}, {
+&"i": 24,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 26,
+&"type": &"string",
+&"value": "naomi"
+}]),
+&"is_blocking": true
+},
+&"next_id": "38",
+&"type": "mutation"
+},
+"38": {
+&"character": "Naomi",
+&"id": "38",
+&"next_id": "39",
+&"text": "You should get it now!",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Player",
+&"id": "39",
+&"next_id": "40",
+&"text": "Thanks",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Naomi",
+&"id": "4",
+&"next_id": "5",
+&"text": "Is this Mabel's Boyfriend?",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Naomi",
+&"id": "40",
+&"next_id": "41",
+&"text": "Don't peep too hard!",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Naomi",
+&"id": "41",
+&"next_id": "42",
+&"text": "Just kidding haha 😉",
+&"type": "dialogue"
+},
+"42": {
+&"id": "42",
+&"next_id": "43",
+&"responses": PackedStringArray("42", "70"),
+&"tags": PackedStringArray("Redheart"),
+&"text": "What if I do?",
+&"type": "response"
+},
+"43": {
+&"id": "43",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "red_heart"
+}, {
+&"i": 20,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 23,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "44",
+&"type": "mutation"
+},
+"44": {
+&"character": "Player",
+&"id": "44",
+&"next_id": "45",
+&"text": "What if I do?",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Naomi",
+&"id": "45",
+&"next_id": "46",
+&"text": "😳",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Naomi",
+&"id": "46",
+&"next_id": "47",
+&"text": "Wasn't expecting that 😏",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Player",
+&"id": "47",
+&"next_id": "48",
+&"text": "Too much?",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Naomi",
+&"id": "48",
+&"next_id": "49",
+&"text": "No actually",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Naomi",
+&"id": "49",
+&"next_id": "50",
+&"text": "That's kind of hot 🤭 I do love an upfront guy",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Naomi",
+&"id": "5",
+&"next_id": "6",
+&"text": "It's Naomi!",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Naomi",
+&"id": "50",
+&"next_id": "51",
+&"text": "I'm tempted to send you a little something between us but I'm not a home wrecker ❤️",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Naomi",
+&"id": "51",
+&"next_id": "52",
+&"text": "And I love Mabel too much",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Naomi",
+&"id": "52",
+&"next_id": "53",
+&"text": "I'll have to know she's okay with something like that first!",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Player",
+&"id": "53",
+&"next_id": "54",
+&"text": "Isn't Caleb your boyfriend?",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Player",
+&"id": "54",
+&"next_id": "55",
+&"text": "Shouldn't he be okay with it too?",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Naomi",
+&"id": "55",
+&"next_id": "56",
+&"text": "Yes! He is!",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Naomi",
+&"id": "56",
+&"next_id": "57",
+&"text": "Though our relationship came out of a... not so nice mutual experience 😅",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Naomi",
+&"id": "57",
+&"next_id": "58",
+&"text": "I'd be happy to talk about it with you after your visit!",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Naomi",
+&"id": "58",
+&"next_id": "59",
+&"text": "I'm not the type to keep secrets but I also do think I'd like to get to know you a little better first",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Naomi",
+&"id": "59",
+&"next_id": "60",
+&"text": "Hmmmm",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Naomi",
+&"id": "6",
+&"next_id": "7",
+&"text": "img: naomi/2",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Naomi",
+&"id": "60",
+&"next_id": "61",
+&"text": "There is... something I can share..",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Naomi",
+&"id": "61",
+&"next_id": "62",
+&"text": "It's a little less personal buuut...",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Naomi",
+&"id": "62",
+&"next_id": "63",
+&"text": "It might scratch the itch 😇",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Player",
+&"id": "63",
+&"next_id": "64",
+&"text": "I'm listening",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Naomi",
+&"id": "64",
+&"next_id": "65",
+&"text": "Well I do happen to have an exclusive fans account alongside my regular one",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Naomi",
+&"id": "65",
+&"next_id": "66",
+&"text": "I might be interested in sharing it eventually 🤭",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Player",
+&"id": "66",
+&"next_id": "67",
+&"text": "You're teasing me 😩",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Naomi",
+&"id": "67",
+&"next_id": "68",
+&"text": "Hey you started it 😇",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Naomi",
+&"id": "68",
+&"next_id": "69",
+&"text": "I'll remember to post something special just for you tonight then",
+&"type": "dialogue"
+},
+"69": {
+&"character": "Naomi",
+&"id": "69",
+&"next_id": "77",
+&"text": "We'll talk more about that later, I gotta get to this",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Player",
+&"id": "7",
+&"next_id": "8",
+&"text": "Hello, Naomi",
+&"type": "dialogue"
+},
+"70": {
+&"id": "70",
+&"next_id": "71",
+&"text": "Don't worry, I love Mabel too much for that",
+&"type": "response"
+},
+"71": {
+&"character": "Player",
+&"id": "71",
+&"next_id": "72",
+&"text": "Don't worry, I love Mabel too much for that",
+&"type": "dialogue"
+},
+"72": {
+&"character": "Naomi",
+&"id": "72",
+&"next_id": "73",
+&"text": "That's like the cutest thing ever!",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Naomi",
+&"id": "73",
+&"next_id": "74",
+&"text": "You two are such a lovely couple",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Naomi",
+&"id": "74",
+&"next_id": "77",
+&"text": "I'll be sure to tell her too hehe",
+&"type": "dialogue"
+},
+"75": {
+&"id": "75",
+&"next_id": "76",
+&"text": "I got nothing, thanks!",
+&"type": "response"
+},
+"76": {
+&"character": "Player",
+&"id": "76",
+&"next_id": "77",
+&"text": "I got nothing, thanks!",
+&"type": "dialogue"
+},
+"77": {
+&"character": "Naomi",
+&"id": "77",
+&"next_id": "78",
+&"text": "Oh right! The address!!",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Naomi",
+&"id": "78",
+&"next_id": "79",
+&"text": "So next to the main offices, there's a short blue building",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Naomi",
+&"id": "79",
+&"next_id": "80",
+&"text": "Ground floor, 2nd door to your right and voila!",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Naomi",
+&"id": "8",
+&"next_id": "9",
+&"text": "Heyy nice to finally meet you!",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Naomi",
+&"id": "80",
+&"next_id": "81",
+&"text": "It should say \"Photography Club\" on the door",
+&"type": "dialogue"
+},
+"81": {
+&"character": "Naomi",
+&"id": "81",
+&"next_id": "82",
+&"text": "Just give us a knock and someone will let you in!",
+&"type": "dialogue"
+},
+"82": {
+&"character": "Player",
+&"id": "82",
+&"next_id": "83",
+&"text": "Oh cool! Thank you",
+&"type": "dialogue"
+},
+"83": {
+&"character": "Naomi",
+&"id": "83",
+&"next_id": "84",
+&"text": "Looking forward to seeing you guys!",
+&"type": "dialogue"
+},
+"84": {
+&"character": "Player",
+&"id": "84",
+&"next_id": "85",
+&"text": "See you then!",
+&"type": "dialogue"
+},
+"85": {
+&"id": "85",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"86": {
+&"id": "86",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"9": {
+&"character": "Naomi",
+&"id": "9",
+&"next_id": "10",
+&"text": "I mean I know it's only been 2 days that I know Mabel but you're almost all she talks about 🤭",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"lecture_hall\")
+do unlock_gallery_image(\"naomi\", \"1\")
+Naomi: Hiya!
+Naomi: Is this Mabel's Boyfriend?
+Naomi: It's Naomi!
+Naomi: img: naomi/2
+Player: Hello, Naomi
+Naomi: Heyy nice to finally meet you!
+Naomi: I mean I know it's only been 2 days that I know Mabel but you're almost all she talks about 🤭
+Player: Really? 😄
+Naomi: Mhmm!
+if Story.pink_heart >= 1:
+	Naomi: She told me about the date you guys went on
+	Naomi: She showed me the pictures and was all blushy
+	Naomi: It was so adorable
+	Player: Thanks 😊
+else:
+	Naomi: She told me she wanted to go out with you but seems like you've been busy
+	Naomi: Hopefully you guys get to meet up soon!
+	Player: Hope so too
+if Story.mabel_desire > 0:
+	Naomi: She also says that you've been helping her build her confidence a lot
+	Naomi: Keep this between us but we had a lot of girltalk and she's been trying to look a little more sexy for you 🤭
+	Player: No way, wow!
+else:
+	Naomi: She's shy as a button and loves relying on you
+	Naomi: She said she really wants to move in with her boyfriend soon and cuddle up every day with him
+	Player: 😇
+Naomi: Anyway I'm sure you probably know all that better than I do!
+Naomi: Buuut since I went off on a slight tangent
+Naomi: Did you have any questions about us?
+Naomi: Me or the photography club? 😊
+Naomi: I'd be happy to answer anything!
+- Could I get your Social account?
+	Player: Could I get your Social account?
+	Naomi: Of course! 👍
+	set PhoneUnlocks.reveal = \"naomi\"
+	Naomi: You should get it now!
+	Player: Thanks
+	Naomi: Don't peep too hard!
+	Naomi: Just kidding haha 😉
+	- What if I do? [#Redheart]
+		set Story.red_heart += 1
+		Player: What if I do?
+		Naomi: 😳
+		Naomi: Wasn't expecting that 😏
+		Player: Too much?
+		Naomi: No actually
+		Naomi: That's kind of hot 🤭 I do love an upfront guy
+		Naomi: I'm tempted to send you a little something between us but I'm not a home wrecker ❤️
+		Naomi: And I love Mabel too much
+		Naomi: I'll have to know she's okay with something like that first!
+		Player: Isn't Caleb your boyfriend?
+		Player: Shouldn't he be okay with it too?
+		Naomi: Yes! He is!
+		Naomi: Though our relationship came out of a... not so nice mutual experience 😅
+		Naomi: I'd be happy to talk about it with you after your visit!
+		Naomi: I'm not the type to keep secrets but I also do think I'd like to get to know you a little better first
+		Naomi: Hmmmm
+		Naomi: There is... something I can share..
+		Naomi: It's a little less personal buuut...
+		Naomi: It might scratch the itch 😇
+		Player: I'm listening
+		Naomi: Well I do happen to have an exclusive fans account alongside my regular one
+		Naomi: I might be interested in sharing it eventually 🤭
+		Player: You're teasing me 😩
+		Naomi: Hey you started it 😇
+		Naomi: I'll remember to post something special just for you tonight then
+		Naomi: We'll talk more about that later, I gotta get to this
+	- Don't worry, I love Mabel too much for that
+		Player: Don't worry, I love Mabel too much for that
+		Naomi: That's like the cutest thing ever!
+		Naomi: You two are such a lovely couple
+		Naomi: I'll be sure to tell her too hehe
+- I got nothing, thanks!
+	Player: I got nothing, thanks!
+Naomi: Oh right! The address!!
+Naomi: So next to the main offices, there's a short blue building
+Naomi: Ground floor, 2nd door to your right and voila!
+Naomi: It should say \"Photography Club\" on the door
+Naomi: Just give us a knock and someone will let you in!
+Player: Oh cool! Thank you
+Naomi: Looking forward to seeing you guys!
+Player: See you then!
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

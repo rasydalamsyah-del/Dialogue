@@ -1,0 +1,469 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_u1w5m"]
+
+[resource]
+script = ExtResource("1_u1w5m")
+using_states = PackedStringArray()
+titles = {
+"start": "2"
+}
+character_names = PackedStringArray("Player", "Mabel")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "2",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"10": {
+&"character": "Mabel",
+&"id": "10",
+&"next_id": "11",
+&"text": "Barely, but I did it",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Player",
+&"id": "11",
+&"next_id": "12",
+&"text": "🥳 Awesome",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Mabel",
+&"id": "12",
+&"next_id": "13",
+&"text": "I hope I didn't look like a train wreck",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Player",
+&"id": "13",
+&"next_id": "14",
+&"text": "You still pulled it off!",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Mabel",
+&"id": "14",
+&"next_id": "15",
+&"text": "🥹 I did didn't I?",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Mabel",
+&"id": "15",
+&"next_id": "16",
+&"text": "Thanks babe",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Mabel",
+&"id": "16",
+&"next_id": "17",
+&"text": "What would I do without my adorable boyfriend 🥰",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Mabel",
+&"id": "17",
+&"next_id": "18",
+&"text": "It's DONE and I never have to think about it again!! Hooray!",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Player",
+&"id": "18",
+&"next_id": "19",
+&"text": "🥳",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Mabel",
+&"id": "19",
+&"next_id": "20",
+&"text": "Hehe",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "3",
+&"type": "mutation"
+},
+"20": {
+&"character": "Mabel",
+&"id": "20",
+&"next_id": "21",
+&"text": "Ooh speaking of stuff to do 😅",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Mabel",
+&"id": "21",
+&"next_id": "22",
+&"text": "That Sorority thing is this Friday right?",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Mabel",
+&"id": "22",
+&"next_id": "23",
+&"text": "Are you gonna be able to come? 🥺",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Mabel",
+&"id": "23",
+&"next_id": "24",
+&"text": "I'd feel a million times less nervous if you were there with me",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Mabel",
+&"id": "24",
+&"next_id": "25",
+&"text": "Thought: Something tells me there's gonna be a lot of boys",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Player",
+&"id": "25",
+&"next_id": "26",
+&"text": "I don't think I can make it babe",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Player",
+&"id": "26",
+&"next_id": "27",
+&"text": "The invite went to someone else 🥲",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Mabel",
+&"id": "27",
+&"next_id": "28",
+&"text": "Oh..",
+&"type": "dialogue"
+},
+"28": {
+&"id": "28",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_set",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 12,
+&"type": &"array",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 13,
+&"type": &"string",
+&"value": "192"
+}, {
+&"i": 18,
+&"type": &"bracket_close"
+}])])
+}, {
+&"i": 19,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "29",
+&"type": "mutation"
+},
+"29": {
+&"character": "Mabel",
+&"id": "29",
+&"next_id": "30",
+&"text": "Thought: Totally fine right?",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Player",
+&"id": "3",
+&"next_id": "4",
+&"notes": "5pm",
+&"text": "Hey Mabes, how'd the presentation go??",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Mabel",
+&"id": "30",
+&"next_id": "31",
+&"text": "Thought: Don't tear up now Mabes...",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Mabel",
+&"id": "31",
+&"next_id": "32",
+&"text": "Thought: It'll be totally okay!",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Mabel",
+&"id": "32",
+&"next_id": "33",
+&"text": "Oh okay! 😊",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Player",
+&"id": "33",
+&"next_id": "34",
+&"text": "They only had only one spot",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Mabel",
+&"id": "34",
+&"next_id": "35",
+&"text": "Ugh that sucks",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Player",
+&"id": "35",
+&"next_id": "36",
+&"text": "Sorry..",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Mabel",
+&"id": "36",
+&"next_id": "37",
+&"text": "Noo it's okay, I totally get it! 🥰",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Mabel",
+&"id": "37",
+&"next_id": "38",
+&"text": "Thought: I really wanted you there but..",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Mabel",
+&"id": "38",
+&"next_id": "39",
+&"text": "Thought: It's fine. I'm a big girl, I can do one party on my own...",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Mabel",
+&"id": "39",
+&"next_id": "40",
+&"text": "I'll just have to be a brave Agent for the night hehe!",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Mabel",
+&"id": "4",
+&"next_id": "5",
+&"text": "BABE",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Player",
+&"id": "40",
+&"next_id": "41",
+&"text": "Yeah. Have fun, okay?",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Player",
+&"id": "41",
+&"next_id": "42",
+&"text": "I'll try to be in the next one!",
+&"type": "dialogue"
+},
+"42": {
+&"id": "42",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_clear",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 14,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "43",
+&"type": "mutation"
+},
+"43": {
+&"character": "Mabel",
+&"id": "43",
+&"next_id": "44",
+&"text": "I'll try my best! And okay! I'll hold you to it 😚",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Mabel",
+&"id": "44",
+&"next_id": "45",
+&"text": "Okay I need to sleep before I fully zombify",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Mabel",
+&"id": "45",
+&"next_id": "46",
+&"text": "You don't want me turning into one 😘",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Mabel",
+&"id": "46",
+&"next_id": "47",
+&"text": "So gn babe hehe",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Player",
+&"id": "47",
+&"next_id": "48",
+&"text": "Night Mabes",
+&"type": "dialogue"
+},
+"48": {
+&"id": "48",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"49": {
+&"id": "49",
+&"next_id": "50",
+&"type": ""
+},
+"5": {
+&"character": "Mabel",
+&"id": "5",
+&"next_id": "6",
+&"text": "I survived 🥲",
+&"type": "dialogue"
+},
+"50": {
+&"id": "50",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"6": {
+&"character": "Mabel",
+&"id": "6",
+&"next_id": "7",
+&"text": "I was picked first and ugh",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Mabel",
+&"id": "7",
+&"next_id": "8",
+&"text": "ALL eyes were on me and it was so nervewrecking!!",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Mabel",
+&"id": "8",
+&"next_id": "9",
+&"text": "Thought: My class is all boys and they were just staring at me...",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Mabel",
+&"id": "9",
+&"next_id": "10",
+&"text": "img: mabel/191",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+## 5pm
+do Story.set_location(\"mabels_room\")
+Player: Hey Mabes, how'd the presentation go??
+Mabel: BABE
+Mabel: I survived 🥲
+Mabel: I was picked first and ugh
+Mabel: ALL eyes were on me and it was so nervewrecking!!
+Mabel: Thought: My class is all boys and they were just staring at me...
+Mabel: img: mabel/191
+Mabel: Barely, but I did it
+Player: 🥳 Awesome
+Mabel: I hope I didn't look like a train wreck
+Player: You still pulled it off!
+Mabel: 🥹 I did didn't I?
+Mabel: Thanks babe
+Mabel: What would I do without my adorable boyfriend 🥰
+Mabel: It's DONE and I never have to think about it again!! Hooray!
+Player: 🥳
+Mabel: Hehe
+Mabel: Ooh speaking of stuff to do 😅
+Mabel: That Sorority thing is this Friday right?
+Mabel: Are you gonna be able to come? 🥺
+Mabel: I'd feel a million times less nervous if you were there with me
+Mabel: Thought: Something tells me there's gonna be a lot of boys
+Player: I don't think I can make it babe
+Player: The invite went to someone else 🥲
+Mabel: Oh..
+do echo_set([\"192\"])
+Mabel: Thought: Totally fine right?
+Mabel: Thought: Don't tear up now Mabes...
+Mabel: Thought: It'll be totally okay!
+Mabel: Oh okay! 😊
+Player: They only had only one spot
+Mabel: Ugh that sucks
+Player: Sorry..
+Mabel: Noo it's okay, I totally get it! 🥰
+Mabel: Thought: I really wanted you there but..
+Mabel: Thought: It's fine. I'm a big girl, I can do one party on my own...
+Mabel: I'll just have to be a brave Agent for the night hehe!
+Player: Yeah. Have fun, okay?
+Player: I'll try to be in the next one!
+do echo_clear()
+Mabel: I'll try my best! And okay! I'll hold you to it 😚
+Mabel: Okay I need to sleep before I fully zombify
+Mabel: You don't want me turning into one 😘
+Mabel: So gn babe hehe
+Player: Night Mabes
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

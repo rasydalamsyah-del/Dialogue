@@ -1,0 +1,742 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_y6w2o"]
+
+[resource]
+script = ExtResource("1_y6w2o")
+using_states = PackedStringArray()
+titles = {
+"start": "2"
+}
+character_names = PackedStringArray("Jessica", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "2",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"10": {
+&"character": "Jessica",
+&"id": "10",
+&"next_id": "11",
+&"text": "\"Do what\" he says",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Jessica",
+&"id": "11",
+&"next_id": "12",
+&"text": "When the queen asks.",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Jessica",
+&"id": "12",
+&"next_id": "13",
+&"text": "You answer.",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Jessica",
+&"id": "13",
+&"next_id": "14",
+&"text": "You don't play games.",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Jessica",
+&"id": "14",
+&"next_id": "15",
+&"text": "I can have you expelled anytime, you know?",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Jessica",
+&"id": "15",
+&"next_id": "16",
+&"text": "I could also make sure you never get into another college as well",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Jessica",
+&"id": "16",
+&"next_id": "17",
+&"text": "The only job you'd have is sweeping cum off of urinals",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Jessica",
+&"id": "17",
+&"next_id": "18",
+&"text": "img: jessica/3",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Jessica",
+&"id": "18",
+&"next_id": "19",
+&"text": "You might not believe it now, but do you really wanna test it",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Player",
+&"id": "19",
+&"next_id": "20",
+&"text": "Calm down 🙃 I wasn't sure what you were referring to",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "lecture_hall"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "3",
+&"type": "mutation"
+},
+"20": {
+&"character": "Jessica",
+&"id": "20",
+&"next_id": "21",
+&"text": "...",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Jessica",
+&"id": "21",
+&"next_id": "22",
+&"text": "You're probably all tensed up right now",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Jessica",
+&"id": "22",
+&"next_id": "23",
+&"text": "Relax Cub, I'm only teasing you 😉",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Jessica",
+&"id": "23",
+&"next_id": "24",
+&"text": "I'd never do something like that to my loyal little Cub",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Jessica",
+&"id": "24",
+&"next_id": "25",
+&"text": "You are my loyal little Cub aren't you?",
+&"type": "dialogue"
+},
+"25": {
+&"id": "25",
+&"next_id": "26",
+&"responses": PackedStringArray("25", "27"),
+&"text": "Yes",
+&"type": "response"
+},
+"26": {
+&"character": "Player",
+&"id": "26",
+&"next_id": "29",
+&"text": "Yes",
+&"type": "dialogue"
+},
+"27": {
+&"id": "27",
+&"next_id": "28",
+&"text": "Of course",
+&"type": "response"
+},
+"28": {
+&"character": "Player",
+&"id": "28",
+&"next_id": "29",
+&"text": "Of course",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Jessica",
+&"id": "29",
+&"next_id": "30",
+&"text": "Good!",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Jessica",
+&"id": "3",
+&"next_id": "4",
+&"notes": "2pm",
+&"text": "Hey Cub",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Jessica",
+&"id": "30",
+&"next_id": "31",
+&"text": "What lovely weather we have today, don't you think?",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Jessica",
+&"id": "31",
+&"next_id": "32",
+&"text": "img: jessica/4",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Player",
+&"id": "32",
+&"next_id": "33",
+&"text": "I guess",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Jessica",
+&"id": "33",
+&"next_id": "34",
+&"text": "Anyway",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Jessica",
+&"id": "34",
+&"next_id": "35",
+&"text": "About my question",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Jessica",
+&"id": "35",
+&"next_id": "36",
+&"text": "I am curious how you were able to bag this girl of yours",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Player",
+&"id": "36",
+&"next_id": "37",
+&"text": "Mabel? Why?",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Jessica",
+&"id": "37",
+&"next_id": "38",
+&"text": "It's rude to answer a question with another question",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Jessica",
+&"id": "38",
+&"next_id": "39",
+&"text": "But you're still new here so I'll let you try again",
+&"type": "dialogue"
+},
+"39": {
+&"id": "39",
+&"next_id": "40",
+&"responses": PackedStringArray("39", "44"),
+&"text": "She's been my friend for as long as I can remember 😅",
+&"type": "response"
+},
+"4": {
+&"character": "Jessica",
+&"id": "4",
+&"next_id": "5",
+&"text": "It's your queen",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Player",
+&"id": "40",
+&"next_id": "41",
+&"text": "She's been my friend for as long as I can remember 😅",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Jessica",
+&"id": "41",
+&"next_id": "42",
+&"text": "No such thing",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Jessica",
+&"id": "42",
+&"next_id": "43",
+&"text": "We're meant to fuck each other's brains out",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Jessica",
+&"id": "43",
+&"next_id": "48",
+&"text": "Not play friends",
+&"type": "dialogue"
+},
+"44": {
+&"id": "44",
+&"next_id": "45",
+&"text": "We've been together since the beginning",
+&"type": "response"
+},
+"45": {
+&"character": "Player",
+&"id": "45",
+&"next_id": "46",
+&"text": "We've been together since the beginning",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Jessica",
+&"id": "46",
+&"next_id": "47",
+&"text": "Since the beginning, huh..?",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Jessica",
+&"id": "47",
+&"next_id": "48",
+&"text": "Color me impressed by your adorable little romantic affairs",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Jessica",
+&"id": "48",
+&"next_id": "49",
+&"text": "Then if it's truly all that special, why haven't you taken her out on a date?",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Player",
+&"id": "49",
+&"next_id": "50",
+&"text": "How did you..?",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Player",
+&"id": "5",
+&"next_id": "6",
+&"text": "Hi Jessica 👋",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Jessica",
+&"id": "50",
+&"next_id": "51",
+&"text": "He does it again",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Player",
+&"id": "51",
+&"next_id": "52",
+&"text": "I've been busy with work",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Jessica",
+&"id": "52",
+&"next_id": "53",
+&"text": "My my, what a cold answer",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Jessica",
+&"id": "53",
+&"next_id": "54",
+&"text": "Yet she still follows you around",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Jessica",
+&"id": "54",
+&"next_id": "55",
+&"text": "I'm not here to judge you, don't worry",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Jessica",
+&"id": "55",
+&"next_id": "56",
+&"text": "You see, I need someone like you",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Jessica",
+&"id": "56",
+&"next_id": "57",
+&"text": "There are some girls I'd like to recruit but they're a bit on the stubborn side",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Jessica",
+&"id": "57",
+&"next_id": "58",
+&"text": "I need someone who can loosen them up",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Player",
+&"id": "58",
+&"next_id": "59",
+&"text": "What do you need me to do exactly?",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Jessica",
+&"id": "59",
+&"next_id": "60",
+&"text": "Oh.. nothing you don't want to do",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Jessica",
+&"id": "6",
+&"next_id": "7",
+&"text": "Well if it isn't the most interesting person on my radar",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Jessica",
+&"id": "60",
+&"next_id": "61",
+&"text": "Just date and fuck a few girls into submission",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Jessica",
+&"id": "61",
+&"next_id": "62",
+&"text": "Then I pull them into the Sorority",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Jessica",
+&"id": "62",
+&"next_id": "63",
+&"text": "Doesn't that sound wonderful?",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Jessica",
+&"id": "63",
+&"next_id": "64",
+&"text": "Guys dream of this college experience, but you'll get to live it",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Jessica",
+&"id": "64",
+&"next_id": "65",
+&"text": "I get what I want, and you'll get what you want",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Jessica",
+&"id": "65",
+&"next_id": "66",
+&"text": "And maybe",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Jessica",
+&"id": "66",
+&"next_id": "67",
+&"text": "We'll both get a bit more than just that 🫦",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Jessica",
+&"id": "67",
+&"next_id": "68",
+&"text": "So, are you in?",
+&"type": "dialogue"
+},
+"68": {
+&"id": "68",
+&"next_id": "69",
+&"responses": PackedStringArray("68", "75"),
+&"tags": PackedStringArray("purpleheart"),
+&"text": "Okay, I'll do it",
+&"type": "response"
+},
+"69": {
+&"id": "69",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "flag"
+}, {
+&"i": 15,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 17,
+&"type": &"string",
+&"value": "Jessica1"
+}]),
+&"is_blocking": true
+},
+&"next_id": "70",
+&"type": "mutation"
+},
+"7": {
+&"character": "Jessica",
+&"id": "7",
+&"next_id": "8",
+&"text": "Tell me",
+&"type": "dialogue"
+},
+"70": {
+&"id": "70",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "purple_heart"
+}, {
+&"i": 23,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 26,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "71",
+&"type": "mutation"
+},
+"71": {
+&"character": "Player",
+&"id": "71",
+&"next_id": "72",
+&"text": "Okay, I'll do it",
+&"type": "dialogue"
+},
+"72": {
+&"character": "Jessica",
+&"id": "72",
+&"next_id": "73",
+&"text": "Just what I like to hear",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Jessica",
+&"id": "73",
+&"next_id": "74",
+&"text": "You'll hear from me again real soon",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Jessica",
+&"id": "74",
+&"next_id": "81",
+&"text": "I've already got someone in mind for you 💜",
+&"type": "dialogue"
+},
+"75": {
+&"id": "75",
+&"next_id": "76",
+&"text": "I can't do something like that",
+&"type": "response"
+},
+"76": {
+&"character": "Player",
+&"id": "76",
+&"next_id": "77",
+&"text": "I can't do something like that",
+&"type": "dialogue"
+},
+"77": {
+&"character": "Jessica",
+&"id": "77",
+&"next_id": "78",
+&"text": "How disappointing",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Jessica",
+&"id": "78",
+&"next_id": "79",
+&"text": "Maybe Nina was right",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Jessica",
+&"id": "79",
+&"next_id": "80",
+&"text": "Maybe you're just another little Cub who got lucky",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Jessica",
+&"id": "8",
+&"next_id": "9",
+&"text": "How do you do it?",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Jessica",
+&"id": "80",
+&"next_id": "81",
+&"text": "We'll see how long that luck holds 😉",
+&"type": "dialogue"
+},
+"81": {
+&"id": "81",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"82": {
+&"id": "82",
+&"next_id": "83",
+&"type": ""
+},
+"83": {
+&"id": "83",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"9": {
+&"character": "Player",
+&"id": "9",
+&"next_id": "10",
+&"text": "Do what? 😅",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+## 2pm
+do Story.set_location(\"lecture_hall\")
+Jessica: Hey Cub
+Jessica: It's your queen
+Player: Hi Jessica 👋
+Jessica: Well if it isn't the most interesting person on my radar
+Jessica: Tell me
+Jessica: How do you do it?
+Player: Do what? 😅
+Jessica: \"Do what\" he says
+Jessica: When the queen asks.
+Jessica: You answer.
+Jessica: You don't play games.
+Jessica: I can have you expelled anytime, you know?
+Jessica: I could also make sure you never get into another college as well
+Jessica: The only job you'd have is sweeping cum off of urinals
+Jessica: img: jessica/3
+Jessica: You might not believe it now, but do you really wanna test it
+Player: Calm down 🙃 I wasn't sure what you were referring to
+Jessica: ...
+Jessica: You're probably all tensed up right now
+Jessica: Relax Cub, I'm only teasing you 😉
+Jessica: I'd never do something like that to my loyal little Cub
+Jessica: You are my loyal little Cub aren't you?
+- Yes
+	Player: Yes
+- Of course
+	Player: Of course
+Jessica: Good!
+Jessica: What lovely weather we have today, don't you think?
+Jessica: img: jessica/4
+Player: I guess
+Jessica: Anyway
+Jessica: About my question
+Jessica: I am curious how you were able to bag this girl of yours
+Player: Mabel? Why?
+Jessica: It's rude to answer a question with another question
+Jessica: But you're still new here so I'll let you try again
+- She's been my friend for as long as I can remember 😅
+	Player: She's been my friend for as long as I can remember 😅
+	Jessica: No such thing
+	Jessica: We're meant to fuck each other's brains out
+	Jessica: Not play friends
+- We've been together since the beginning
+	Player: We've been together since the beginning
+	Jessica: Since the beginning, huh..?
+	Jessica: Color me impressed by your adorable little romantic affairs
+Jessica: Then if it's truly all that special, why haven't you taken her out on a date?
+Player: How did you..?
+Jessica: He does it again
+Player: I've been busy with work
+Jessica: My my, what a cold answer
+Jessica: Yet she still follows you around
+Jessica: I'm not here to judge you, don't worry
+Jessica: You see, I need someone like you
+Jessica: There are some girls I'd like to recruit but they're a bit on the stubborn side
+Jessica: I need someone who can loosen them up
+Player: What do you need me to do exactly?
+Jessica: Oh.. nothing you don't want to do
+Jessica: Just date and fuck a few girls into submission
+Jessica: Then I pull them into the Sorority
+Jessica: Doesn't that sound wonderful?
+Jessica: Guys dream of this college experience, but you'll get to live it
+Jessica: I get what I want, and you'll get what you want
+Jessica: And maybe
+Jessica: We'll both get a bit more than just that 🫦
+Jessica: So, are you in?
+- Okay, I'll do it [#purpleheart]
+	set Story.flag = \"Jessica1\"
+	set Story.purple_heart += 1
+	Player: Okay, I'll do it
+	Jessica: Just what I like to hear
+	Jessica: You'll hear from me again real soon
+	Jessica: I've already got someone in mind for you 💜
+- I can't do something like that
+	Player: I can't do something like that
+	Jessica: How disappointing
+	Jessica: Maybe Nina was right
+	Jessica: Maybe you're just another little Cub who got lucky
+	Jessica: We'll see how long that luck holds 😉
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

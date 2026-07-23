@@ -1,0 +1,662 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_v0b8l"]
+
+[resource]
+script = ExtResource("1_v0b8l")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Player", "Nina")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Nina",
+&"id": "10",
+&"next_id": "11",
+&"text": "Oh, this is about little Maple isn't it?",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Nina",
+&"id": "11",
+&"next_id": "12",
+&"text": "I told you I'm taking her",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Nina",
+&"id": "12",
+&"next_id": "13",
+&"text": "You didn't believe me",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Nina",
+&"id": "13",
+&"next_id": "14",
+&"text": "Now look at you, coming to me on your knees",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Nina",
+&"id": "14",
+&"next_id": "15",
+&"text": "So I take it you want to watch over little Maple?",
+&"type": "dialogue"
+},
+"15": {
+&"id": "15",
+&"next_id": "16",
+&"responses": PackedStringArray("15", "22"),
+&"tags": PackedStringArray("blackheart"),
+&"text": "I'm joining for my own reasons",
+&"type": "response"
+},
+"16": {
+&"id": "16",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "black_heart"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "17",
+&"type": "mutation"
+},
+"17": {
+&"character": "Player",
+&"id": "17",
+&"next_id": "18",
+&"text": "I'm joining for my own reasons",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Nina",
+&"id": "18",
+&"next_id": "19",
+&"text": "Hmm?",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Nina",
+&"id": "19",
+&"next_id": "20",
+&"text": "And what might those reasons be",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Player",
+&"id": "2",
+&"next_id": "3",
+&"text": "Yo",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Player",
+&"id": "20",
+&"next_id": "21",
+&"text": "I don't need to tell you",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Nina",
+&"id": "21",
+&"next_id": "30",
+&"text": "Fine bitch",
+&"type": "dialogue"
+},
+"22": {
+&"id": "22",
+&"next_id": "23",
+&"text": "I do, she's my girlfriend",
+&"type": "response"
+},
+"23": {
+&"character": "Player",
+&"id": "23",
+&"next_id": "24",
+&"text": "I do, she's my girlfriend",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Nina",
+&"id": "24",
+&"next_id": "25",
+&"text": "Poor thing",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Nina",
+&"id": "25",
+&"next_id": "26",
+&"text": "You should really take my advice and buzz off",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Nina",
+&"id": "26",
+&"next_id": "27",
+&"text": "It's seriously going to hurt you",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Player",
+&"id": "27",
+&"next_id": "28",
+&"text": "I don't care",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Nina",
+&"id": "28",
+&"next_id": "29",
+&"text": "🙄",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Nina",
+&"id": "29",
+&"next_id": "30",
+&"text": "Fucking annoying",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Nina",
+&"id": "3",
+&"next_id": "4",
+&"text": "Pfft haha",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Nina",
+&"id": "30",
+&"next_id": "31",
+&"text": "Well anyway, I am obligated to tell you the rules",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Nina",
+&"id": "31",
+&"next_id": "32",
+&"text": "You know what you need right?",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Nina",
+&"id": "32",
+&"next_id": "33",
+&"text": "You got someone's panties already or you just wasting my time?",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Player",
+&"id": "33",
+&"next_id": "34",
+&"text": "I don't",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Nina",
+&"id": "34",
+&"next_id": "35",
+&"text": "So why the fuck did you text me in the first place then?",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Nina",
+&"id": "35",
+&"next_id": "36",
+&"text": "Are you stupid?",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Player",
+&"id": "36",
+&"next_id": "37",
+&"text": "I want yours",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Nina",
+&"id": "37",
+&"next_id": "38",
+&"text": "...",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Nina",
+&"id": "38",
+&"next_id": "39",
+&"text": "......",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Nina",
+&"id": "39",
+&"next_id": "40",
+&"text": "You want MY panties?",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Nina",
+&"id": "4",
+&"next_id": "5",
+&"text": "You got some balls texting me",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Player",
+&"id": "40",
+&"next_id": "41",
+&"text": "That's what I'm here for",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Nina",
+&"id": "41",
+&"next_id": "42",
+&"text": "🤣",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Nina",
+&"id": "42",
+&"next_id": "43",
+&"text": "You know what, maybe I underestimated you",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Nina",
+&"id": "43",
+&"next_id": "44",
+&"text": "You're far worse than a hopeless stupid boy",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Nina",
+&"id": "44",
+&"next_id": "45",
+&"text": "It's honestly so funny",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Nina",
+&"id": "45",
+&"next_id": "46",
+&"text": "img: nina/12",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Nina",
+&"id": "46",
+&"next_id": "47",
+&"text": "Look how hard I'm laughing",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Nina",
+&"id": "47",
+&"next_id": "48",
+&"text": "Jeez fuck, I can barely breathe",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Nina",
+&"id": "48",
+&"next_id": "49",
+&"text": "I'll give you that you're entertaining though",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Player",
+&"id": "49",
+&"next_id": "50",
+&"text": "So is that a yes?",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Nina",
+&"id": "5",
+&"next_id": "6",
+&"text": "I guess I can appreciate that... in a pathetic way",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Nina",
+&"id": "50",
+&"next_id": "51",
+&"text": "You know no one's ever asked for mine right?",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Nina",
+&"id": "51",
+&"next_id": "52",
+&"text": "You might genuinely be the stupidest person I've ever met",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Nina",
+&"id": "52",
+&"next_id": "53",
+&"text": "...",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Nina",
+&"id": "53",
+&"next_id": "54",
+&"text": "Fuck it",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Nina",
+&"id": "54",
+&"next_id": "55",
+&"text": "I was trying to be nice at first and look out for you",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Player",
+&"id": "55",
+&"next_id": "56",
+&"text": "That's you being nice?",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Nina",
+&"id": "56",
+&"next_id": "57",
+&"text": "Mhmm, but now that you've seriously made a clown out of yourself",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Nina",
+&"id": "57",
+&"next_id": "58",
+&"text": "And came with your tail between your legs",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Nina",
+&"id": "58",
+&"next_id": "59",
+&"text": "I want to watch you get real hurt since you didn't listen to a single one of my warning",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Nina",
+&"id": "59",
+&"next_id": "60",
+&"text": "So sure, I'll give you my panties",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Player",
+&"id": "6",
+&"next_id": "7",
+&"text": "I'm doing fine too, thanks for asking",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Nina",
+&"id": "60",
+&"next_id": "61",
+&"text": "I'll send someone over to your room with it",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Player",
+&"id": "61",
+&"next_id": "62",
+&"text": "You know where I live?",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Nina",
+&"id": "62",
+&"next_id": "63",
+&"text": "Pfft please, like I give a fuck about the dump that you live in",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Nina",
+&"id": "63",
+&"next_id": "64",
+&"text": "But the little cuck boys do errands for us sometimes, they'll figure it out",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Nina",
+&"id": "64",
+&"next_id": "65",
+&"text": "You'll get them before tomorrow, should be enough time",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Nina",
+&"id": "65",
+&"next_id": "66",
+&"text": "They won't believe someone like you has my panties so you might need to show them this pic",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Nina",
+&"id": "66",
+&"next_id": "67",
+&"text": "img: nina/13",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Player",
+&"id": "67",
+&"next_id": "68",
+&"text": "Wow you're almost sweet",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Nina",
+&"id": "68",
+&"next_id": "69",
+&"text": "Jeez do you ever shut up",
+&"type": "dialogue"
+},
+"69": {
+&"character": "Nina",
+&"id": "69",
+&"next_id": "70",
+&"text": "Eugh, you'll probably be a creep with my panties",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Nina",
+&"id": "7",
+&"next_id": "8",
+&"text": "Lmao",
+&"type": "dialogue"
+},
+"70": {
+&"character": "Nina",
+&"id": "70",
+&"next_id": "71",
+&"text": "Anyway shoo, I don't want to think about you anymore",
+&"type": "dialogue"
+},
+"71": {
+&"character": "Nina",
+&"id": "71",
+&"next_id": "72",
+&"text": "I'll have to deal with you later anyway",
+&"type": "dialogue"
+},
+"72": {
+&"character": "Player",
+&"id": "72",
+&"next_id": "73",
+&"text": "Thanks Nina",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Nina",
+&"id": "73",
+&"next_id": "74",
+&"text": "Whatever",
+&"type": "dialogue"
+},
+"74": {
+&"id": "74",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"75": {
+&"id": "75",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"8": {
+&"character": "Nina",
+&"id": "8",
+&"next_id": "9",
+&"text": "Whaddya want, I don't got time for your dumb ego",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Player",
+&"id": "9",
+&"next_id": "10",
+&"text": "I want to join the Frats",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+Player: Yo
+Nina: Pfft haha
+Nina: You got some balls texting me
+Nina: I guess I can appreciate that... in a pathetic way
+Player: I'm doing fine too, thanks for asking
+Nina: Lmao
+Nina: Whaddya want, I don't got time for your dumb ego
+Player: I want to join the Frats
+Nina: Oh, this is about little Maple isn't it?
+Nina: I told you I'm taking her
+Nina: You didn't believe me
+Nina: Now look at you, coming to me on your knees
+Nina: So I take it you want to watch over little Maple?
+- I'm joining for my own reasons [#blackheart]
+	set Story.black_heart += 1
+	Player: I'm joining for my own reasons
+	Nina: Hmm?
+	Nina: And what might those reasons be
+	Player: I don't need to tell you
+	Nina: Fine bitch
+- I do, she's my girlfriend
+	Player: I do, she's my girlfriend
+	Nina: Poor thing
+	Nina: You should really take my advice and buzz off
+	Nina: It's seriously going to hurt you
+	Player: I don't care
+	Nina: 🙄
+	Nina: Fucking annoying
+Nina: Well anyway, I am obligated to tell you the rules
+Nina: You know what you need right?
+Nina: You got someone's panties already or you just wasting my time?
+Player: I don't
+Nina: So why the fuck did you text me in the first place then?
+Nina: Are you stupid?
+Player: I want yours
+Nina: ...
+Nina: ......
+Nina: You want MY panties?
+Player: That's what I'm here for
+Nina: 🤣
+Nina: You know what, maybe I underestimated you
+Nina: You're far worse than a hopeless stupid boy
+Nina: It's honestly so funny
+Nina: img: nina/12
+Nina: Look how hard I'm laughing
+Nina: Jeez fuck, I can barely breathe
+Nina: I'll give you that you're entertaining though
+Player: So is that a yes?
+Nina: You know no one's ever asked for mine right?
+Nina: You might genuinely be the stupidest person I've ever met
+Nina: ...
+Nina: Fuck it
+Nina: I was trying to be nice at first and look out for you
+Player: That's you being nice?
+Nina: Mhmm, but now that you've seriously made a clown out of yourself
+Nina: And came with your tail between your legs
+Nina: I want to watch you get real hurt since you didn't listen to a single one of my warning
+Nina: So sure, I'll give you my panties
+Nina: I'll send someone over to your room with it
+Player: You know where I live?
+Nina: Pfft please, like I give a fuck about the dump that you live in
+Nina: But the little cuck boys do errands for us sometimes, they'll figure it out
+Nina: You'll get them before tomorrow, should be enough time
+Nina: They won't believe someone like you has my panties so you might need to show them this pic
+Nina: img: nina/13
+Player: Wow you're almost sweet
+Nina: Jeez do you ever shut up
+Nina: Eugh, you'll probably be a creep with my panties
+Nina: Anyway shoo, I don't want to think about you anymore
+Nina: I'll have to deal with you later anyway
+Player: Thanks Nina
+Nina: Whatever
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

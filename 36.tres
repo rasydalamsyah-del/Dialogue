@@ -1,0 +1,855 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_s0cwc"]
+
+[resource]
+script = ExtResource("1_s0cwc")
+using_states = PackedStringArray()
+titles = {
+"start": "2"
+}
+character_names = PackedStringArray("Mabel", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "2",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"10": {
+&"character": "Player",
+&"id": "10",
+&"next_id": "11",
+&"text": "You look wiped out 😟",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Mabel",
+&"id": "11",
+&"next_id": "15",
+&"text": "Is it that obvious 😭",
+&"type": "dialogue"
+},
+"12": {
+&"id": "12",
+&"next_id": "13",
+&"text": "Rough day?",
+&"type": "response"
+},
+"13": {
+&"character": "Player",
+&"id": "13",
+&"next_id": "14",
+&"text": "Rough day?",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Mabel",
+&"id": "14",
+&"next_id": "15",
+&"text": "The roughest 🫡",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Mabel",
+&"id": "15",
+&"next_id": "16",
+&"text": "I look like I got run over by the sleep deprivation truck I knowww 😭",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Mabel",
+&"id": "16",
+&"next_id": "17",
+&"text": "Do I still look cute babe? 🥲",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Player",
+&"id": "17",
+&"next_id": "18",
+&"text": "Always",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Mabel",
+&"id": "18",
+&"next_id": "19",
+&"text": "🥰",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Mabel",
+&"id": "19",
+&"next_id": "20",
+&"text": "It's all because of the noise from last night 🙄🙄",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "lecture_hall"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "3",
+&"type": "mutation"
+},
+"20": {
+&"character": "Player",
+&"id": "20",
+&"next_id": "21",
+&"text": "The noisy neighbor?",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Mabel",
+&"id": "21",
+&"next_id": "22",
+&"text": "Yep!! He did NOT stop last night",
+&"type": "dialogue"
+},
+"22": {
+&"character": "Mabel",
+&"id": "22",
+&"next_id": "23",
+&"text": "Like at all",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Mabel",
+&"id": "23",
+&"next_id": "24",
+&"text": "It went on basically till morning omg 😵‍💫",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Mabel",
+&"id": "24",
+&"next_id": "25",
+&"text": "Thought: There was definitely a girl in that room too",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Player",
+&"id": "25",
+&"next_id": "26",
+&"text": "Seriously? The whole night?",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Mabel",
+&"id": "26",
+&"next_id": "27",
+&"text": "The WHOLE night",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Mabel",
+&"id": "27",
+&"next_id": "28",
+&"text": "I got maybe two hours of sleep 😭",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Mabel",
+&"id": "28",
+&"next_id": "29",
+&"text": "Thought: Those sounds were so... strange",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Mabel",
+&"id": "29",
+&"next_id": "30",
+&"text": "Thought: What do you have to be doing to make sounds like that??",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Mabel",
+&"id": "3",
+&"next_id": "4",
+&"notes": "11:34am",
+&"text": "Ello",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Mabel",
+&"id": "30",
+&"next_id": "31",
+&"text": "My eyebags have eyebags now 🐼 I'm full panda now",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Mabel",
+&"id": "31",
+&"next_id": "32",
+&"text": "Would you still love me if I turned into a panda??",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Player",
+&"id": "32",
+&"next_id": "33",
+&"text": "Uh.. sure? 😅",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Mabel",
+&"id": "33",
+&"next_id": "34",
+&"text": "Excuse you, answer is \"YES!\" 😤",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Player",
+&"id": "34",
+&"next_id": "35",
+&"text": "YES!",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Mabel",
+&"id": "35",
+&"next_id": "36",
+&"text": "I'm just teasing you babe 😚",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Mabel",
+&"id": "36",
+&"next_id": "37",
+&"text": "But ugh..",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Mabel",
+&"id": "37",
+&"next_id": "38",
+&"text": "And I can't even nap yet 😣",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Mabel",
+&"id": "38",
+&"next_id": "39",
+&"text": "Gotta swing by the sorority house first 🥲",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Player",
+&"id": "39",
+&"next_id": "40",
+&"text": "Oh? What for?",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Mabel",
+&"id": "4",
+&"next_id": "5",
+&"text": "Claaaass is finally over 😩",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Mabel",
+&"id": "40",
+&"next_id": "41",
+&"text": "Honestly not totally sure 🤔",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Mabel",
+&"id": "41",
+&"next_id": "42",
+&"text": "Nina just said they need me for \"\"something\"\"",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Mabel",
+&"id": "42",
+&"next_id": "43",
+&"text": "Whatever that means lol",
+&"type": "dialogue"
+},
+"43": {
+&"character": "Mabel",
+&"id": "43",
+&"next_id": "44",
+&"text": "I'll be quick and then SLEEEEP forever",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Player",
+&"id": "44",
+&"next_id": "45",
+&"text": "Lol okay, don't overdo it",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Mabel",
+&"id": "45",
+&"next_id": "46",
+&"text": "Never 🫡 I'm too tired for that anyway lol",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Mabel",
+&"id": "46",
+&"next_id": "47",
+&"text": "Okay wish me luck",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Player",
+&"id": "47",
+&"next_id": "48",
+&"text": "Good luck!!",
+&"type": "dialogue"
+},
+"48": {
+&"id": "48",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "advance_time",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 16,
+&"type": &"number",
+&"value": 3
+}]), Array[Dictionary]([{
+&"i": 19,
+&"type": &"number",
+&"value": 20
+}, {
+&"i": 21,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "49",
+&"type": "mutation"
+},
+"49": {
+&"id": "49",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "50",
+&"type": "mutation"
+},
+"5": {
+&"character": "Player",
+&"id": "5",
+&"next_id": "6",
+&"text": "Hey Mabes, how'd it go?",
+&"type": "dialogue"
+},
+"50": {
+&"id": "50",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "PhoneUnlocks"
+}, {
+&"i": 16,
+&"type": &"dot"
+}, {
+&"i": 17,
+&"type": &"variable",
+&"value": "leak"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "="
+}, {
+&"i": 24,
+&"type": &"string",
+&"value": "nina3"
+}]),
+&"is_blocking": true
+},
+&"next_id": "51",
+&"type": "mutation"
+},
+"51": {
+&"character": "Player",
+&"id": "51",
+&"next_id": "52",
+&"text": "Hey Mabes, finished with the club stuff?",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Mabel",
+&"id": "52",
+&"next_id": "53",
+&"text": "Oh!!",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Mabel",
+&"id": "53",
+&"next_id": "54",
+&"text": "H-hi babe 😅",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Mabel",
+&"id": "54",
+&"next_id": "55",
+&"text": "Yep! Yes. All done. Totally fine 👍",
+&"type": "dialogue"
+},
+"55": {
+&"character": "Player",
+&"id": "55",
+&"next_id": "56",
+&"text": "You ok? 😄",
+&"type": "dialogue"
+},
+"56": {
+&"character": "Mabel",
+&"id": "56",
+&"next_id": "57",
+&"text": "Yes!! Why wouldn't I be hehe",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Mabel",
+&"id": "57",
+&"next_id": "58",
+&"text": "Thought: Am I seriously still sweating?",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Mabel",
+&"id": "58",
+&"next_id": "59",
+&"text": "Thought: Did they really need to give me all these??",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Mabel",
+&"id": "59",
+&"next_id": "60",
+&"text": "It just uh... wasn't really the kind of \"something\" I was picturing 😳",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Mabel",
+&"id": "6",
+&"next_id": "7",
+&"text": "I think my brain melted somewhere around the second lecture",
+&"type": "dialogue"
+},
+"60": {
+&"id": "60",
+&"next_id": "61",
+&"responses": PackedStringArray("60", "68"),
+&"text": "What did they have you do?",
+&"type": "response"
+},
+"61": {
+&"character": "Player",
+&"id": "61",
+&"next_id": "62",
+&"text": "What did they have you do?",
+&"type": "dialogue"
+},
+"62": {
+&"character": "Mabel",
+&"id": "62",
+&"next_id": "63",
+&"text": "Oh just, club stuff! 😅",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Mabel",
+&"id": "63",
+&"next_id": "64",
+&"text": "They wanted a few pictures for my uhm... to set up my club social account",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Mabel",
+&"id": "64",
+&"next_id": "65",
+&"text": "Thought: Quite a few...",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Player",
+&"id": "65",
+&"next_id": "66",
+&"text": "That was all? 🤔",
+&"type": "dialogue"
+},
+"66": {
+&"character": "Mabel",
+&"id": "66",
+&"next_id": "67",
+&"text": "Yep!",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Mabel",
+&"id": "67",
+&"next_id": "75",
+&"text": "Guess it was no biggie huh, might just be tired then 😝 so dw",
+&"type": "dialogue"
+},
+"68": {
+&"id": "68",
+&"next_id": "69",
+&"text": "You sure you're okay?",
+&"type": "response"
+},
+"69": {
+&"character": "Player",
+&"id": "69",
+&"next_id": "70",
+&"text": "You sure you're okay?",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Mabel",
+&"id": "7",
+&"next_id": "8",
+&"text": "img: mabel/180",
+&"type": "dialogue"
+},
+"70": {
+&"id": "70",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_set",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 12,
+&"type": &"array",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 13,
+&"type": &"string",
+&"value": "181"
+}, {
+&"i": 18,
+&"type": &"bracket_close"
+}])])
+}, {
+&"i": 19,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "71",
+&"type": "mutation"
+},
+"71": {
+&"character": "Mabel",
+&"id": "71",
+&"next_id": "72",
+&"text": "Thought: Did I say something to give it away??",
+&"type": "dialogue"
+},
+"72": {
+&"character": "Mabel",
+&"id": "72",
+&"next_id": "73",
+&"text": "Thought: The last thing I want to do is worry babe...",
+&"type": "dialogue"
+},
+"73": {
+&"character": "Mabel",
+&"id": "73",
+&"next_id": "74",
+&"text": "I'm sure!! Promise 🥺",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Mabel",
+&"id": "74",
+&"next_id": "75",
+&"text": "Just a loooong tiring day",
+&"type": "dialogue"
+},
+"75": {
+&"character": "Mabel",
+&"id": "75",
+&"next_id": "76",
+&"text": "Thought: My face is still so red omg",
+&"type": "dialogue"
+},
+"76": {
+&"character": "Mabel",
+&"id": "76",
+&"next_id": "77",
+&"text": "😮‍💨",
+&"type": "dialogue"
+},
+"77": {
+&"character": "Mabel",
+&"id": "77",
+&"next_id": "78",
+&"text": "Would it be okay if I went quiet tonight? 🥺",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Mabel",
+&"id": "78",
+&"next_id": "79",
+&"text": "I have SO much coursework piling up",
+&"type": "dialogue"
+},
+"79": {
+&"character": "Mabel",
+&"id": "79",
+&"next_id": "80",
+&"text": "And I really really need to actually sleep afterward",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Mabel",
+&"id": "8",
+&"next_id": "9",
+&"text": "Behold... your very fried agent 🫠😋🥰",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Mabel",
+&"id": "80",
+&"next_id": "81",
+&"text": "After last night I'm basically the walking dead",
+&"type": "dialogue"
+},
+"81": {
+&"character": "Player",
+&"id": "81",
+&"next_id": "82",
+&"text": "Of course, get some rest",
+&"type": "dialogue"
+},
+"82": {
+&"id": "82",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "echo_clear",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 14,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "83",
+&"type": "mutation"
+},
+"83": {
+&"character": "Mabel",
+&"id": "83",
+&"next_id": "84",
+&"text": "Thank youuu!!",
+&"type": "dialogue"
+},
+"84": {
+&"character": "Mabel",
+&"id": "84",
+&"next_id": "85",
+&"text": "You're seriously the best",
+&"type": "dialogue"
+},
+"85": {
+&"character": "Mabel",
+&"id": "85",
+&"next_id": "86",
+&"text": "I'll be a functioning human again tomorrow I promise",
+&"type": "dialogue"
+},
+"86": {
+&"character": "Mabel",
+&"id": "86",
+&"next_id": "87",
+&"text": "Thought: And maybe by then I'll have stopped thinking about that picture",
+&"type": "dialogue"
+},
+"87": {
+&"character": "Mabel",
+&"id": "87",
+&"next_id": "88",
+&"text": "Good night Babe, thanks for worrying about me 🩷",
+&"type": "dialogue"
+},
+"88": {
+&"character": "Player",
+&"id": "88",
+&"next_id": "89",
+&"text": "Night Mabes",
+&"type": "dialogue"
+},
+"89": {
+&"id": "89",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"9": {
+&"id": "9",
+&"next_id": "10",
+&"responses": PackedStringArray("9", "12"),
+&"text": "You look wiped out 😟",
+&"type": "response"
+},
+"90": {
+&"id": "90",
+&"next_id": "91",
+&"type": ""
+},
+"91": {
+&"id": "91",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "~ start
+## 11:34am
+do Story.set_location(\"lecture_hall\")
+Mabel: Ello
+Mabel: Claaaass is finally over 😩
+Player: Hey Mabes, how'd it go?
+Mabel: I think my brain melted somewhere around the second lecture
+Mabel: img: mabel/180
+Mabel: Behold... your very fried agent 🫠😋🥰
+- You look wiped out 😟
+	Player: You look wiped out 😟
+	Mabel: Is it that obvious 😭
+- Rough day?
+	Player: Rough day?
+	Mabel: The roughest 🫡
+Mabel: I look like I got run over by the sleep deprivation truck I knowww 😭
+Mabel: Do I still look cute babe? 🥲
+Player: Always
+Mabel: 🥰
+Mabel: It's all because of the noise from last night 🙄🙄
+Player: The noisy neighbor?
+Mabel: Yep!! He did NOT stop last night
+Mabel: Like at all
+Mabel: It went on basically till morning omg 😵‍💫
+Mabel: Thought: There was definitely a girl in that room too
+Player: Seriously? The whole night?
+Mabel: The WHOLE night
+Mabel: I got maybe two hours of sleep 😭
+Mabel: Thought: Those sounds were so... strange
+Mabel: Thought: What do you have to be doing to make sounds like that??
+Mabel: My eyebags have eyebags now 🐼 I'm full panda now
+Mabel: Would you still love me if I turned into a panda??
+Player: Uh.. sure? 😅
+Mabel: Excuse you, answer is \"YES!\" 😤
+Player: YES!
+Mabel: I'm just teasing you babe 😚
+Mabel: But ugh..
+Mabel: And I can't even nap yet 😣
+Mabel: Gotta swing by the sorority house first 🥲
+Player: Oh? What for?
+Mabel: Honestly not totally sure 🤔
+Mabel: Nina just said they need me for \"\"something\"\"
+Mabel: Whatever that means lol
+Mabel: I'll be quick and then SLEEEEP forever
+Player: Lol okay, don't overdo it
+Mabel: Never 🫡 I'm too tired for that anyway lol
+Mabel: Okay wish me luck
+Player: Good luck!!
+do advance_time(3, 20)
+do Story.set_location(\"mabels_room\")
+set PhoneUnlocks.leak = \"nina3\"
+Player: Hey Mabes, finished with the club stuff?
+Mabel: Oh!!
+Mabel: H-hi babe 😅
+Mabel: Yep! Yes. All done. Totally fine 👍
+Player: You ok? 😄
+Mabel: Yes!! Why wouldn't I be hehe
+Mabel: Thought: Am I seriously still sweating?
+Mabel: Thought: Did they really need to give me all these??
+Mabel: It just uh... wasn't really the kind of \"something\" I was picturing 😳
+- What did they have you do?
+	Player: What did they have you do?
+	Mabel: Oh just, club stuff! 😅
+	Mabel: They wanted a few pictures for my uhm... to set up my club social account
+	Mabel: Thought: Quite a few...
+	Player: That was all? 🤔
+	Mabel: Yep! 
+	Mabel: Guess it was no biggie huh, might just be tired then 😝 so dw
+- You sure you're okay?
+	Player: You sure you're okay?
+	do echo_set([\"181\"])
+	Mabel: Thought: Did I say something to give it away??
+	Mabel: Thought: The last thing I want to do is worry babe...
+	Mabel: I'm sure!! Promise 🥺
+	Mabel: Just a loooong tiring day
+Mabel: Thought: My face is still so red omg
+Mabel: 😮‍💨
+Mabel: Would it be okay if I went quiet tonight? 🥺
+Mabel: I have SO much coursework piling up
+Mabel: And I really really need to actually sleep afterward
+Mabel: After last night I'm basically the walking dead
+Player: Of course, get some rest
+do echo_clear()
+Mabel: Thank youuu!!
+Mabel: You're seriously the best
+Mabel: I'll be a functioning human again tomorrow I promise
+Mabel: Thought: And maybe by then I'll have stopped thinking about that picture
+Mabel: Good night Babe, thanks for worrying about me 🩷
+Player: Night Mabes
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"
