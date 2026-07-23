@@ -1,0 +1,812 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_nxqn3"]
+
+[resource]
+script = ExtResource("1_nxqn3")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Naomi", "PlayerM")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "Naomi",
+&"id": "1",
+&"next_id": "2",
+&"text": "Heyy Mabel, you got a sec? 😊",
+&"type": "dialogue"
+},
+"10": {
+&"character": "Naomi",
+&"id": "10",
+&"next_id": "11",
+&"text": "A nude photoshoot 🤭",
+&"type": "dialogue"
+},
+"11": {
+&"character": "PlayerM",
+&"id": "11",
+&"next_id": "12",
+&"text": "Oh wow okay 😳",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Naomi",
+&"id": "12",
+&"next_id": "13",
+&"text": "Well here's the thing",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Naomi",
+&"id": "13",
+&"next_id": "14",
+&"text": "It was supposed to be me and Caleb",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Naomi",
+&"id": "14",
+&"next_id": "15",
+&"text": "But Suzanna needed him for something urgent so he can't make it",
+&"type": "dialogue"
+},
+"15": {
+&"character": "PlayerM",
+&"id": "15",
+&"next_id": "16",
+&"text": "Oh no 😕",
+&"type": "dialogue"
+},
+"16": {
+&"character": "PlayerM",
+&"id": "16",
+&"next_id": "17",
+&"text": "So you need to find someone else?",
+&"type": "dialogue"
+},
+"17": {
+&"character": "PlayerM",
+&"id": "17",
+&"next_id": "18",
+&"text": "Waaait, is that what my boyfriend volunteered for!?",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Naomi",
+&"id": "18",
+&"next_id": "19",
+&"text": "Yeah 🤣",
+&"type": "dialogue"
+},
+"19": {
+&"character": "PlayerM",
+&"id": "19",
+&"next_id": "20",
+&"text": "...",
+&"type": "dialogue"
+},
+"2": {
+&"character": "PlayerM",
+&"id": "2",
+&"next_id": "3",
+&"text": "Always! What's up?",
+&"type": "dialogue"
+},
+"20": {
+&"character": "PlayerM",
+&"id": "20",
+&"next_id": "21",
+&"text": "Naomi 🥺",
+&"type": "dialogue"
+},
+"21": {
+&"character": "PlayerM",
+&"id": "21",
+&"next_id": "22",
+&"text": "NAOMI 😭",
+&"type": "dialogue"
+},
+"22": {
+&"character": "PlayerM",
+&"id": "22",
+&"next_id": "23",
+&"text": "😱😱😱",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Naomi",
+&"id": "23",
+&"next_id": "24",
+&"text": "SEE this is exactly why I said don't freak out 😂",
+&"type": "dialogue"
+},
+"24": {
+&"character": "PlayerM",
+&"id": "24",
+&"next_id": "25",
+&"text": "How am I supposed to NOT freak out!?",
+&"type": "dialogue"
+},
+"25": {
+&"character": "PlayerM",
+&"id": "25",
+&"next_id": "26",
+&"text": "My boyfriend is going to be NAKED",
+&"type": "dialogue"
+},
+"26": {
+&"character": "PlayerM",
+&"id": "26",
+&"next_id": "27",
+&"text": "With YOU",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Naomi",
+&"id": "27",
+&"next_id": "28",
+&"text": "Girl breathe 😂",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Naomi",
+&"id": "28",
+&"next_id": "29",
+&"text": "I promise it's just professional work okay?",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Naomi",
+&"id": "29",
+&"next_id": "30",
+&"text": "It's for a softcore college magazine",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Naomi",
+&"id": "3",
+&"next_id": "4",
+&"text": "Okay so I have something to tell you",
+&"type": "dialogue"
+},
+"30": {
+&"character": "PlayerM",
+&"id": "30",
+&"next_id": "31",
+&"text": "NUDE! 😭",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Naomi",
+&"id": "31",
+&"next_id": "32",
+&"text": "Listen",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Naomi",
+&"id": "32",
+&"next_id": "33",
+&"text": "He won't be showing his face",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Naomi",
+&"id": "33",
+&"next_id": "34",
+&"text": "And I'll be directing the whole thing so nothing weird is gonna happen, pinky promise",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Naomi",
+&"id": "34",
+&"next_id": "35",
+&"text": "You trust me right? That's why I'm out here telling you lovely",
+&"type": "dialogue"
+},
+"35": {
+&"character": "PlayerM",
+&"id": "35",
+&"next_id": "36",
+&"text": "Of course I trust you...",
+&"type": "dialogue"
+},
+"36": {
+&"character": "PlayerM",
+&"id": "36",
+&"next_id": "37",
+&"text": "It's just",
+&"type": "dialogue"
+},
+"37": {
+&"character": "PlayerM",
+&"id": "37",
+&"next_id": "38",
+&"text": "I don't know how to feel about it 🙈",
+&"type": "dialogue"
+},
+"38": {
+&"character": "Naomi",
+&"id": "38",
+&"next_id": "39",
+&"text": "That's totally fair",
+&"type": "dialogue"
+},
+"39": {
+&"character": "Naomi",
+&"id": "39",
+&"next_id": "40",
+&"text": "But think about it this way",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Naomi",
+&"id": "4",
+&"next_id": "5",
+&"text": "And I need you to hear me out before you freak out 😂",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Naomi",
+&"id": "40",
+&"next_id": "41",
+&"text": "He didn't know what he was signing up for and I didn't want to feel like I tricked him into this",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Naomi",
+&"id": "41",
+&"next_id": "42",
+&"text": "That's why I'm telling you both within the same day",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Naomi",
+&"id": "42",
+&"next_id": "43",
+&"text": "I know he's respectful and I feel safe with him too!",
+&"type": "dialogue"
+},
+"43": {
+&"character": "PlayerM",
+&"id": "43",
+&"next_id": "44",
+&"text": "Okay that's actually really sweet 🥺",
+&"type": "dialogue"
+},
+"44": {
+&"character": "Naomi",
+&"id": "44",
+&"next_id": "45",
+&"text": "Right?",
+&"type": "dialogue"
+},
+"45": {
+&"character": "Naomi",
+&"id": "45",
+&"next_id": "46",
+&"text": "And honestly he was worried about you and so I wanted to do the girl talk",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Naomi",
+&"id": "46",
+&"next_id": "47",
+&"text": "He definitely wouldn't do it if you weren't okay with it",
+&"type": "dialogue"
+},
+"47": {
+&"character": "PlayerM",
+&"id": "47",
+&"next_id": "48",
+&"text": "I believe it 🥺🩷",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Naomi",
+&"id": "48",
+&"next_id": "49",
+&"text": "Mhm!",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Naomi",
+&"id": "49",
+&"next_id": "50",
+&"text": "So it's really up to you girl",
+&"type": "dialogue"
+},
+"5": {
+&"character": "PlayerM",
+&"id": "5",
+&"next_id": "6",
+&"text": "That's literally the scariest way to start a conversation Naomi 😰",
+&"type": "dialogue"
+},
+"50": {
+&"character": "PlayerM",
+&"id": "50",
+&"next_id": "51",
+&"text": "Ughh",
+&"type": "dialogue"
+},
+"51": {
+&"character": "PlayerM",
+&"id": "51",
+&"next_id": "52",
+&"text": "I mean...",
+&"type": "dialogue"
+},
+"52": {
+&"character": "PlayerM",
+&"id": "52",
+&"next_id": "53",
+&"text": "Could I maybe do it?",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Naomi",
+&"id": "53",
+&"next_id": "54",
+&"text": "The shoot?",
+&"type": "dialogue"
+},
+"54": {
+&"character": "Naomi",
+&"id": "54",
+&"next_id": "55",
+&"text": "Do you want to get in front of the camera naked? 😜",
+&"type": "dialogue"
+},
+"55": {
+&"character": "PlayerM",
+&"id": "55",
+&"next_id": "56",
+&"text": "Nonono not naked",
+&"type": "dialogue"
+},
+"56": {
+&"character": "PlayerM",
+&"id": "56",
+&"next_id": "57",
+&"text": "If you both feel comfortable with it then",
+&"type": "dialogue"
+},
+"57": {
+&"character": "PlayerM",
+&"id": "57",
+&"next_id": "58",
+&"text": "I guess I can try to be okay with it? 😣",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Naomi",
+&"id": "58",
+&"next_id": "59",
+&"text": "That's my girl 🤗",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Naomi",
+&"id": "59",
+&"next_id": "60",
+&"text": "And hey",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Naomi",
+&"id": "6",
+&"next_id": "7",
+&"text": "I know I know",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Naomi",
+&"id": "60",
+&"next_id": "61",
+&"text": "Can I tell you a small secret?",
+&"type": "dialogue"
+},
+"61": {
+&"character": "Naomi",
+&"id": "61",
+&"next_id": "62",
+&"text": "Something that I haven't even told my closest friends?",
+&"type": "dialogue"
+},
+"62": {
+&"character": "PlayerM",
+&"id": "62",
+&"next_id": "63",
+&"text": "What 😳",
+&"type": "dialogue"
+},
+"63": {
+&"character": "Naomi",
+&"id": "63",
+&"next_id": "64",
+&"text": "I was really afraid of losing your trust about this",
+&"type": "dialogue"
+},
+"64": {
+&"character": "Naomi",
+&"id": "64",
+&"next_id": "65",
+&"text": "I lost my sister's trust because of a vile trick orchestrated by one of the sorority girls",
+&"type": "dialogue"
+},
+"65": {
+&"character": "Naomi",
+&"id": "65",
+&"next_id": "66",
+&"text": "That's why I'm honest about everything now",
+&"type": "dialogue"
+},
+"66": {
+&"character": "PlayerM",
+&"id": "66",
+&"next_id": "67",
+&"text": "What happened??",
+&"type": "dialogue"
+},
+"67": {
+&"character": "Naomi",
+&"id": "67",
+&"next_id": "68",
+&"text": "I have a sister in the sorority and.. it's no use talking to her anymore",
+&"type": "dialogue"
+},
+"68": {
+&"character": "Naomi",
+&"id": "68",
+&"next_id": "69",
+&"text": "I broke her heart and I haven't gotten over it until now",
+&"type": "dialogue"
+},
+"69": {
+&"character": "PlayerM",
+&"id": "69",
+&"next_id": "70",
+&"text": "I'm sorry to hear that Naomi 🥺",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Naomi",
+&"id": "7",
+&"next_id": "8",
+&"text": "So you know how I do modeling work on the side right?",
+&"type": "dialogue"
+},
+"70": {
+&"character": "PlayerM",
+&"id": "70",
+&"next_id": "71",
+&"text": "If it makes you feel better, I think of you as a big sis 😊",
+&"type": "dialogue"
+},
+"71": {
+&"character": "Naomi",
+&"id": "71",
+&"next_id": "72",
+&"text": "Awwh, I think of you as my little sis too",
+&"type": "dialogue"
+},
+"72": {
+&"character": "Naomi",
+&"id": "72",
+&"next_id": "73",
+&"text": "I'd seriously squeeze you all tight right now",
+&"type": "dialogue"
+},
+"73": {
+&"character": "PlayerM",
+&"id": "73",
+&"next_id": "74",
+&"text": "No way, your boobs are bigger than mine ☺️",
+&"type": "dialogue"
+},
+"74": {
+&"character": "Naomi",
+&"id": "74",
+&"next_id": "75",
+&"text": "Haha shush, I saw a little of you and I was impressed 😍",
+&"type": "dialogue"
+},
+"75": {
+&"character": "PlayerM",
+&"id": "75",
+&"next_id": "76",
+&"text": "Stop omg 🙈",
+&"type": "dialogue"
+},
+"76": {
+&"character": "PlayerM",
+&"id": "76",
+&"next_id": "77",
+&"text": "Is Caleb okay with you doing stuff like that?",
+&"type": "dialogue"
+},
+"77": {
+&"character": "Naomi",
+&"id": "77",
+&"next_id": "78",
+&"text": "Caleb has zero issues with it!",
+&"type": "dialogue"
+},
+"78": {
+&"character": "Naomi",
+&"id": "78",
+&"next_id": "79",
+&"text": "He actually said your boyfriend seems like a stand-up guy",
+&"type": "dialogue"
+},
+"79": {
+&"character": "PlayerM",
+&"id": "79",
+&"next_id": "80",
+&"text": "Caleb is so sweet 😭",
+&"type": "dialogue"
+},
+"8": {
+&"character": "PlayerM",
+&"id": "8",
+&"next_id": "9",
+&"text": "Yeah?",
+&"type": "dialogue"
+},
+"80": {
+&"character": "Naomi",
+&"id": "80",
+&"next_id": "81",
+&"text": "He really is",
+&"type": "dialogue"
+},
+"81": {
+&"character": "PlayerM",
+&"id": "81",
+&"next_id": "82",
+&"text": "I guess me and babe could learn a bit from you two ☺️",
+&"type": "dialogue"
+},
+"82": {
+&"character": "Naomi",
+&"id": "82",
+&"next_id": "83",
+&"text": "Awwh you're such a darling",
+&"type": "dialogue"
+},
+"83": {
+&"character": "Naomi",
+&"id": "83",
+&"next_id": "84",
+&"text": "So we're good? 😊",
+&"type": "dialogue"
+},
+"84": {
+&"character": "PlayerM",
+&"id": "84",
+&"next_id": "85",
+&"text": "Yeah, of course. Thanks for explaining it to me 😊",
+&"type": "dialogue"
+},
+"85": {
+&"character": "PlayerM",
+&"id": "85",
+&"next_id": "86",
+&"text": "But uhm..",
+&"type": "dialogue"
+},
+"86": {
+&"character": "PlayerM",
+&"id": "86",
+&"next_id": "87",
+&"text": "I want to see the photos before, is that okay?",
+&"type": "dialogue"
+},
+"87": {
+&"character": "Naomi",
+&"id": "87",
+&"next_id": "88",
+&"text": "Deal! 😘",
+&"type": "dialogue"
+},
+"88": {
+&"character": "Naomi",
+&"id": "88",
+&"next_id": "89",
+&"text": "You might actually like them hehe",
+&"type": "dialogue"
+},
+"89": {
+&"character": "PlayerM",
+&"id": "89",
+&"next_id": "90",
+&"text": "NAOMI 🙈",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Naomi",
+&"id": "9",
+&"next_id": "10",
+&"text": "Well I got booked for a shoot this Saturday",
+&"type": "dialogue"
+},
+"90": {
+&"character": "PlayerM",
+&"id": "90",
+&"next_id": "91",
+&"text": "I'm not a perv... I don't think..",
+&"type": "dialogue"
+},
+"91": {
+&"character": "Naomi",
+&"id": "91",
+&"next_id": "92",
+&"text": "What! I'm just saying 😇",
+&"type": "dialogue"
+},
+"92": {
+&"character": "Naomi",
+&"id": "92",
+&"next_id": "93",
+&"text": "Alright I gotta go prep some stuff",
+&"type": "dialogue"
+},
+"93": {
+&"character": "Naomi",
+&"id": "93",
+&"next_id": "94",
+&"text": "Love you girl ❤️",
+&"type": "dialogue"
+},
+"94": {
+&"character": "PlayerM",
+&"id": "94",
+&"next_id": "95",
+&"text": "Love you too 🩷",
+&"type": "dialogue"
+},
+"95": {
+&"character": "PlayerM",
+&"id": "95",
+&"next_id": "96",
+&"text": "Even though you're trying to give me a heart attack 🫠",
+&"type": "dialogue"
+},
+"96": {
+&"character": "Naomi",
+&"id": "96",
+&"next_id": "97",
+&"text": "That's what big sisters are for 😘",
+&"type": "dialogue"
+},
+"97": {
+&"character": "Naomi",
+&"id": "97",
+&"next_id": "98",
+&"text": "Full of surprises!",
+&"type": "dialogue"
+},
+"98": {
+&"id": "98",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"99": {
+&"id": "99",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "~ start
+Naomi: Heyy Mabel, you got a sec? 😊
+PlayerM: Always! What's up?
+Naomi: Okay so I have something to tell you
+Naomi: And I need you to hear me out before you freak out 😂
+PlayerM: That's literally the scariest way to start a conversation Naomi 😰
+Naomi: I know I know
+Naomi: So you know how I do modeling work on the side right?
+PlayerM: Yeah?
+Naomi: Well I got booked for a shoot this Saturday
+Naomi: A nude photoshoot 🤭
+PlayerM: Oh wow okay 😳
+Naomi: Well here's the thing
+Naomi: It was supposed to be me and Caleb
+Naomi: But Suzanna needed him for something urgent so he can't make it
+PlayerM: Oh no 😕
+PlayerM: So you need to find someone else?
+PlayerM: Waaait, is that what my boyfriend volunteered for!?
+Naomi: Yeah 🤣
+PlayerM: ...
+PlayerM: Naomi 🥺
+PlayerM: NAOMI 😭
+PlayerM: 😱😱😱
+Naomi: SEE this is exactly why I said don't freak out 😂
+PlayerM: How am I supposed to NOT freak out!?
+PlayerM: My boyfriend is going to be NAKED
+PlayerM: With YOU
+Naomi: Girl breathe 😂
+Naomi: I promise it's just professional work okay?
+Naomi: It's for a softcore college magazine
+PlayerM: NUDE! 😭
+Naomi: Listen
+Naomi: He won't be showing his face
+Naomi: And I'll be directing the whole thing so nothing weird is gonna happen, pinky promise
+Naomi: You trust me right? That's why I'm out here telling you lovely
+PlayerM: Of course I trust you...
+PlayerM: It's just
+PlayerM: I don't know how to feel about it 🙈
+Naomi: That's totally fair
+Naomi: But think about it this way
+Naomi: He didn't know what he was signing up for and I didn't want to feel like I tricked him into this
+Naomi: That's why I'm telling you both within the same day
+Naomi: I know he's respectful and I feel safe with him too!
+PlayerM: Okay that's actually really sweet 🥺
+Naomi: Right?
+Naomi: And honestly he was worried about you and so I wanted to do the girl talk
+Naomi: He definitely wouldn't do it if you weren't okay with it
+PlayerM: I believe it 🥺🩷
+Naomi: Mhm!
+Naomi: So it's really up to you girl
+PlayerM: Ughh
+PlayerM: I mean...
+PlayerM: Could I maybe do it?
+Naomi: The shoot?
+Naomi: Do you want to get in front of the camera naked? 😜
+PlayerM: Nonono not naked
+PlayerM: If you both feel comfortable with it then
+PlayerM: I guess I can try to be okay with it? 😣
+Naomi: That's my girl 🤗
+Naomi: And hey
+Naomi: Can I tell you a small secret?
+Naomi: Something that I haven't even told my closest friends?
+PlayerM: What 😳
+Naomi: I was really afraid of losing your trust about this
+Naomi: I lost my sister's trust because of a vile trick orchestrated by one of the sorority girls
+Naomi: That's why I'm honest about everything now
+PlayerM: What happened??
+Naomi: I have a sister in the sorority and.. it's no use talking to her anymore
+Naomi: I broke her heart and I haven't gotten over it until now
+PlayerM: I'm sorry to hear that Naomi 🥺
+PlayerM: If it makes you feel better, I think of you as a big sis 😊
+Naomi: Awwh, I think of you as my little sis too
+Naomi: I'd seriously squeeze you all tight right now
+PlayerM: No way, your boobs are bigger than mine ☺️
+Naomi: Haha shush, I saw a little of you and I was impressed 😍
+PlayerM: Stop omg 🙈
+PlayerM: Is Caleb okay with you doing stuff like that?
+Naomi: Caleb has zero issues with it!
+Naomi: He actually said your boyfriend seems like a stand-up guy
+PlayerM: Caleb is so sweet 😭
+Naomi: He really is
+PlayerM: I guess me and babe could learn a bit from you two ☺️
+Naomi: Awwh you're such a darling
+Naomi: So we're good? 😊
+PlayerM: Yeah, of course. Thanks for explaining it to me 😊
+PlayerM: But uhm..
+PlayerM: I want to see the photos before, is that okay?
+Naomi: Deal! 😘
+Naomi: You might actually like them hehe
+PlayerM: NAOMI 🙈
+PlayerM: I'm not a perv... I don't think..
+Naomi: What! I'm just saying 😇
+Naomi: Alright I gotta go prep some stuff
+Naomi: Love you girl ❤️
+PlayerM: Love you too 🩷
+PlayerM: Even though you're trying to give me a heart attack 🫠
+Naomi: That's what big sisters are for 😘
+Naomi: Full of surprises!
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

@@ -1,0 +1,276 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_8ek18"]
+
+[resource]
+script = ExtResource("1_8ek18")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("PlayerM", "Nina")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "PlayerM",
+&"id": "1",
+&"next_id": "2",
+&"text": "Hey Nina!",
+&"type": "dialogue"
+},
+"10": {
+&"character": "PlayerM",
+&"id": "10",
+&"next_id": "11",
+&"text": "Oh uhm, I was wondering if you were doing anything tomorrow?",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Nina",
+&"id": "11",
+&"next_id": "12",
+&"text": "I was gonna go to the club tomorrow",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Nina",
+&"id": "12",
+&"next_id": "13",
+&"text": "Meet up with this dude who's been begging me for some time together",
+&"type": "dialogue"
+},
+"13": {
+&"character": "PlayerM",
+&"id": "13",
+&"next_id": "14",
+&"text": "Oh is he like someone you're dating?",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Nina",
+&"id": "14",
+&"next_id": "15",
+&"text": "Pfft fuck no",
+&"type": "dialogue"
+},
+"15": {
+&"character": "PlayerM",
+&"id": "15",
+&"next_id": "16",
+&"text": "Oh I see, I hope it goes well then",
+&"type": "dialogue"
+},
+"16": {
+&"character": "PlayerM",
+&"id": "16",
+&"next_id": "17",
+&"text": "I guess you're busy",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Nina",
+&"id": "17",
+&"next_id": "18",
+&"text": "Hold up",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Nina",
+&"id": "18",
+&"next_id": "19",
+&"text": "I'm coming over to grab you tomorrow",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Nina",
+&"id": "19",
+&"next_id": "20",
+&"text": "But I seriously need to dig into your closet",
+&"type": "dialogue"
+},
+"2": {
+&"character": "PlayerM",
+&"id": "2",
+&"next_id": "3",
+&"text": "I was wondering if you're free for the weekend?",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Nina",
+&"id": "20",
+&"next_id": "21",
+&"text": "I can't have you embarassing me like a chihuahua with a bowtie",
+&"type": "dialogue"
+},
+"21": {
+&"character": "PlayerM",
+&"id": "21",
+&"next_id": "22",
+&"text": "Oh well, yeah!",
+&"type": "dialogue"
+},
+"22": {
+&"character": "PlayerM",
+&"id": "22",
+&"next_id": "23",
+&"text": "I'm okay with wearing anything",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Nina",
+&"id": "23",
+&"next_id": "24",
+&"text": "Perfect",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Nina",
+&"id": "24",
+&"next_id": "25",
+&"text": "I need to do some recruiting anyway or Jess is gonna yank my ear off",
+&"type": "dialogue"
+},
+"25": {
+&"character": "PlayerM",
+&"id": "25",
+&"next_id": "26",
+&"text": "Recruiting? For what?",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Nina",
+&"id": "26",
+&"next_id": "27",
+&"text": "Nevermind your pretty little head about that girlie pop",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Nina",
+&"id": "27",
+&"next_id": "28",
+&"text": "I'll come by tomorrow... whenever I feel like it",
+&"type": "dialogue"
+},
+"28": {
+&"character": "PlayerM",
+&"id": "28",
+&"next_id": "29",
+&"text": "That's a little hard to prepare for but sure thing!",
+&"type": "dialogue"
+},
+"29": {
+&"character": "PlayerM",
+&"id": "29",
+&"next_id": "30",
+&"text": "Have a nice day!",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Nina",
+&"id": "3",
+&"next_id": "4",
+&"text": "Who the hell is this?",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Nina",
+&"id": "30",
+&"next_id": "31",
+&"text": "Wth 😂",
+&"type": "dialogue"
+},
+"31": {
+&"id": "31",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"32": {
+&"id": "32",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"4": {
+&"character": "PlayerM",
+&"id": "4",
+&"next_id": "5",
+&"text": "Oh uhm... It's Mabel? We met in orientation?",
+&"type": "dialogue"
+},
+"5": {
+&"character": "PlayerM",
+&"id": "5",
+&"next_id": "6",
+&"text": "Sorry if I'm bothering you",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Nina",
+&"id": "6",
+&"next_id": "7",
+&"text": "Wait I remember you LMAO",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Nina",
+&"id": "7",
+&"next_id": "8",
+&"text": "That cute little pink thing",
+&"type": "dialogue"
+},
+"8": {
+&"character": "PlayerM",
+&"id": "8",
+&"next_id": "9",
+&"text": "That's me!",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Nina",
+&"id": "9",
+&"next_id": "10",
+&"text": "Whaddya want girlie pop",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+PlayerM: Hey Nina!
+PlayerM: I was wondering if you're free for the weekend?
+Nina: Who the hell is this?
+PlayerM: Oh uhm... It's Mabel? We met in orientation?
+PlayerM: Sorry if I'm bothering you
+Nina: Wait I remember you LMAO
+Nina: That cute little pink thing
+PlayerM: That's me!
+Nina: Whaddya want girlie pop
+PlayerM: Oh uhm, I was wondering if you were doing anything tomorrow?
+Nina: I was gonna go to the club tomorrow
+Nina: Meet up with this dude who's been begging me for some time together
+PlayerM: Oh is he like someone you're dating?
+Nina: Pfft fuck no
+PlayerM: Oh I see, I hope it goes well then
+PlayerM: I guess you're busy
+Nina: Hold up
+Nina: I'm coming over to grab you tomorrow
+Nina: But I seriously need to dig into your closet
+Nina: I can't have you embarassing me like a chihuahua with a bowtie
+PlayerM: Oh well, yeah! 
+PlayerM: I'm okay with wearing anything
+Nina: Perfect
+Nina: I need to do some recruiting anyway or Jess is gonna yank my ear off
+PlayerM: Recruiting? For what?
+Nina: Nevermind your pretty little head about that girlie pop
+Nina: I'll come by tomorrow... whenever I feel like it
+PlayerM: That's a little hard to prepare for but sure thing!
+PlayerM: Have a nice day!
+Nina: Wth 😂
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

@@ -1,0 +1,298 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_xi3xh"]
+
+[resource]
+script = ExtResource("1_xi3xh")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("PlayerM", "Naomi")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "PlayerM",
+&"id": "1",
+&"next_id": "2",
+&"text": "Hey Naomi! Sorry about Nina 😅",
+&"type": "dialogue"
+},
+"10": {
+&"character": "PlayerM",
+&"id": "10",
+&"next_id": "11",
+&"text": "What do you mean? 🤔",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Naomi",
+&"id": "11",
+&"next_id": "12",
+&"text": "They have a way of \"befriending\" and pulling people in and before you know it you're part of their world",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Naomi",
+&"id": "12",
+&"next_id": "13",
+&"text": "They prey on boys and girls alike... and they convince you into doing their erotic rites of passage",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Naomi",
+&"id": "13",
+&"next_id": "14",
+&"text": "Before you know it, you're not even yourself anymore",
+&"type": "dialogue"
+},
+"14": {
+&"character": "PlayerM",
+&"id": "14",
+&"next_id": "15",
+&"text": "Oh 😱 I'd be too scared to do any of that omg",
+&"type": "dialogue"
+},
+"15": {
+&"character": "PlayerM",
+&"id": "15",
+&"next_id": "16",
+&"text": "But I have one question, what did she mean when she said \"afraid to lose someone else\"?",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Naomi",
+&"id": "16",
+&"next_id": "17",
+&"text": "I don't know how that Nina girl knows this actually",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Naomi",
+&"id": "17",
+&"next_id": "18",
+&"text": "But she might be higher up in their chain of command I suppose",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Naomi",
+&"id": "18",
+&"next_id": "19",
+&"text": "Basically.. My younger sister got recruited 😞",
+&"type": "dialogue"
+},
+"19": {
+&"character": "PlayerM",
+&"id": "19",
+&"next_id": "20",
+&"text": "Oh no",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Naomi",
+&"id": "2",
+&"next_id": "3",
+&"text": "Haha don't worry about it!",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Naomi",
+&"id": "20",
+&"next_id": "21",
+&"text": "But that's my fault.. I should have been a better big sister and protected her",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Naomi",
+&"id": "21",
+&"next_id": "22",
+&"text": "We used to be super close but then something happened and she didn't trust me anymore",
+&"type": "dialogue"
+},
+"22": {
+&"character": "PlayerM",
+&"id": "22",
+&"next_id": "23",
+&"text": "Oh Naomi... I'm so sorry 🥺",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Naomi",
+&"id": "23",
+&"next_id": "24",
+&"text": "It's okay, I'm still working on myself",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Naomi",
+&"id": "24",
+&"next_id": "25",
+&"text": "I just don't want that happening to anyone else",
+&"type": "dialogue"
+},
+"25": {
+&"character": "PlayerM",
+&"id": "25",
+&"next_id": "26",
+&"text": "Well you're NOT losing me okay? 😤",
+&"type": "dialogue"
+},
+"26": {
+&"character": "PlayerM",
+&"id": "26",
+&"next_id": "27",
+&"text": "You're stuck with me now 🩷",
+&"type": "dialogue"
+},
+"27": {
+&"character": "PlayerM",
+&"id": "27",
+&"next_id": "28",
+&"text": "img: mabel/105",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Naomi",
+&"id": "28",
+&"next_id": "29",
+&"text": "🥹 Thanks Mabel",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Naomi",
+&"id": "29",
+&"next_id": "30",
+&"text": "Now seriously, come check out the photography club 😂",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Naomi",
+&"id": "3",
+&"next_id": "4",
+&"text": "But who was that sorority girl?",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Naomi",
+&"id": "30",
+&"next_id": "31",
+&"text": "I'll have a seat with your name on it 😘",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Naomi",
+&"id": "31",
+&"next_id": "32",
+&"text": "img: naomi/17",
+&"type": "dialogue"
+},
+"32": {
+&"character": "PlayerM",
+&"id": "32",
+&"next_id": "33",
+&"text": "Hehe okay okay I'll think about it!! 😊",
+&"type": "dialogue"
+},
+"33": {
+&"id": "33",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"34": {
+&"id": "34",
+&"next_id": "35",
+&"type": ""
+},
+"35": {
+&"id": "35",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"4": {
+&"character": "Naomi",
+&"id": "4",
+&"next_id": "5",
+&"text": "How do you know her? 🤔",
+&"type": "dialogue"
+},
+"5": {
+&"character": "PlayerM",
+&"id": "5",
+&"next_id": "6",
+&"text": "Oh that's Nina! We met during orientation",
+&"type": "dialogue"
+},
+"6": {
+&"character": "PlayerM",
+&"id": "6",
+&"next_id": "7",
+&"text": "She kind of just came up to me and started talking",
+&"type": "dialogue"
+},
+"7": {
+&"character": "PlayerM",
+&"id": "7",
+&"next_id": "8",
+&"text": "She's actually pretty nice once you get past the scary part 😅",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Naomi",
+&"id": "8",
+&"next_id": "9",
+&"text": "Hmm just be careful with those sorority girls okay?",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Naomi",
+&"id": "9",
+&"next_id": "10",
+&"text": "They're a bit on the crazy side",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+PlayerM: Hey Naomi! Sorry about Nina 😅
+Naomi: Haha don't worry about it!
+Naomi: But who was that sorority girl?
+Naomi: How do you know her? 🤔
+PlayerM: Oh that's Nina! We met during orientation
+PlayerM: She kind of just came up to me and started talking
+PlayerM: She's actually pretty nice once you get past the scary part 😅
+Naomi: Hmm just be careful with those sorority girls okay?
+Naomi: They're a bit on the crazy side
+PlayerM: What do you mean? 🤔
+Naomi: They have a way of \"befriending\" and pulling people in and before you know it you're part of their world
+Naomi: They prey on boys and girls alike... and they convince you into doing their erotic rites of passage
+Naomi: Before you know it, you're not even yourself anymore
+PlayerM: Oh 😱 I'd be too scared to do any of that omg
+PlayerM: But I have one question, what did she mean when she said \"afraid to lose someone else\"?
+Naomi: I don't know how that Nina girl knows this actually
+Naomi: But she might be higher up in their chain of command I suppose
+Naomi: Basically.. My younger sister got recruited 😞
+PlayerM: Oh no
+Naomi: But that's my fault.. I should have been a better big sister and protected her
+Naomi: We used to be super close but then something happened and she didn't trust me anymore
+PlayerM: Oh Naomi... I'm so sorry 🥺
+Naomi: It's okay, I'm still working on myself
+Naomi: I just don't want that happening to anyone else
+PlayerM: Well you're NOT losing me okay? 😤
+PlayerM: You're stuck with me now 🩷
+PlayerM: img: mabel/105
+Naomi: 🥹 Thanks Mabel
+Naomi: Now seriously, come check out the photography club 😂
+Naomi: I'll have a seat with your name on it 😘
+Naomi: img: naomi/17
+PlayerM: Hehe okay okay I'll think about it!! 😊
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

@@ -1,0 +1,371 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_m8pse"]
+
+[resource]
+script = ExtResource("1_m8pse")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Nina", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "mabels_room"
+}, {
+&"i": 35,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Nina",
+&"id": "10",
+&"next_id": "11",
+&"text": "Find some other girl, there's like dozens of them or some shit",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Nina",
+&"id": "11",
+&"next_id": "12",
+&"text": "Spare yourself the headache, y'know I've seen it before",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Nina",
+&"id": "12",
+&"next_id": "13",
+&"text": "Ain't pretty bucko",
+&"type": "dialogue"
+},
+"13": {
+&"id": "13",
+&"next_id": "14",
+&"responses": PackedStringArray("13", "21"),
+&"text": "I won't give up on her",
+&"type": "response"
+},
+"14": {
+&"character": "Player",
+&"id": "14",
+&"next_id": "15",
+&"text": "I won't give up on her",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Player",
+&"id": "15",
+&"next_id": "16",
+&"text": "She's my girlfriend",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Nina",
+&"id": "16",
+&"next_id": "17",
+&"text": "Awwh so sad",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Nina",
+&"id": "17",
+&"next_id": "18",
+&"text": "You're just another one of those lost boys with something you shouldn't have",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Nina",
+&"id": "18",
+&"next_id": "19",
+&"text": "We're just here to collect what belongs to us",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Nina",
+&"id": "19",
+&"next_id": "20",
+&"text": "Don't say I didn't warn you loser",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Nina",
+&"id": "2",
+&"next_id": "3",
+&"text": "Hey biatch",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Nina",
+&"id": "20",
+&"next_id": "37",
+&"text": "Pathetic",
+&"type": "dialogue"
+},
+"21": {
+&"id": "21",
+&"next_id": "22",
+&"text": "Wow, you have a heart?",
+&"type": "response"
+},
+"22": {
+&"character": "Player",
+&"id": "22",
+&"next_id": "23",
+&"text": "Wow, you have a heart?",
+&"type": "dialogue"
+},
+"23": {
+&"character": "Nina",
+&"id": "23",
+&"next_id": "24",
+&"text": "You don't even realize how much you piss me off",
+&"type": "dialogue"
+},
+"24": {
+&"id": "24",
+&"next_id": "25",
+&"responses": PackedStringArray("24", "28"),
+&"text": "Thanks",
+&"type": "response"
+},
+"25": {
+&"character": "Player",
+&"id": "25",
+&"next_id": "26",
+&"text": "Thanks",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Nina",
+&"id": "26",
+&"next_id": "27",
+&"text": "Whatever dude",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Nina",
+&"id": "27",
+&"next_id": "37",
+&"text": "I have better things to do than to play your stupid games",
+&"type": "dialogue"
+},
+"28": {
+&"id": "28",
+&"next_id": "29",
+&"tags": PackedStringArray("blackheart"),
+&"text": "Glad you feel so strongly about me",
+&"type": "response"
+},
+"29": {
+&"id": "29",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "black_heart"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "30",
+&"type": "mutation"
+},
+"3": {
+&"character": "Nina",
+&"id": "3",
+&"next_id": "4",
+&"text": "Remember me?",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Player",
+&"id": "30",
+&"next_id": "31",
+&"text": "Glad you feel so strongly about me",
+&"type": "dialogue"
+},
+"31": {
+&"character": "Nina",
+&"id": "31",
+&"next_id": "32",
+&"text": "FUCK. OFF.",
+&"type": "dialogue"
+},
+"32": {
+&"character": "Nina",
+&"id": "32",
+&"next_id": "33",
+&"text": "I better not run into you or you'll fuckin' see",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Nina",
+&"id": "33",
+&"next_id": "34",
+&"text": "I'll wipe that grin off your face",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Player",
+&"id": "34",
+&"next_id": "35",
+&"text": "Great, pick you up at 7?",
+&"type": "dialogue"
+},
+"35": {
+&"character": "Nina",
+&"id": "35",
+&"next_id": "36",
+&"text": "🖕",
+&"type": "dialogue"
+},
+"36": {
+&"character": "Nina",
+&"id": "36",
+&"next_id": "37",
+&"text": "img: nina/11",
+&"type": "dialogue"
+},
+"37": {
+&"id": "37",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"38": {
+&"id": "38",
+&"next_id": "39",
+&"type": ""
+},
+"39": {
+&"id": "39",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"4": {
+&"character": "Player",
+&"id": "4",
+&"next_id": "5",
+&"text": "How could I forget?",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Nina",
+&"id": "5",
+&"next_id": "6",
+&"text": "Hah, you're really something y'know?",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Nina",
+&"id": "6",
+&"next_id": "7",
+&"text": "Anyway",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Nina",
+&"id": "7",
+&"next_id": "8",
+&"text": "Look",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Nina",
+&"id": "8",
+&"next_id": "9",
+&"text": "Gonna try to be \"nice\" and throw you a bone here buddy",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Nina",
+&"id": "9",
+&"next_id": "10",
+&"text": "Just let go of Maple while you can",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"mabels_room\")
+Nina: Hey biatch
+Nina: Remember me?
+Player: How could I forget?
+Nina: Hah, you're really something y'know?
+Nina: Anyway
+Nina: Look
+Nina: Gonna try to be \"nice\" and throw you a bone here buddy
+Nina: Just let go of Maple while you can
+Nina: Find some other girl, there's like dozens of them or some shit
+Nina: Spare yourself the headache, y'know I've seen it before
+Nina: Ain't pretty bucko
+- I won't give up on her
+	Player: I won't give up on her
+	Player: She's my girlfriend
+	Nina: Awwh so sad
+	Nina: You're just another one of those lost boys with something you shouldn't have
+	Nina: We're just here to collect what belongs to us
+	Nina: Don't say I didn't warn you loser
+	Nina: Pathetic
+- Wow, you have a heart?
+	Player: Wow, you have a heart?
+	Nina: You don't even realize how much you piss me off
+	- Thanks
+		Player: Thanks
+		Nina: Whatever dude
+		Nina: I have better things to do than to play your stupid games
+	- Glad you feel so strongly about me [#blackheart]
+		set Story.black_heart += 1
+		Player: Glad you feel so strongly about me
+		Nina: FUCK. OFF.
+		Nina: I better not run into you or you'll fuckin' see
+		Nina: I'll wipe that grin off your face
+		Player: Great, pick you up at 7?
+		Nina: 🖕
+		Nina: img: nina/11
+=> END
+"
+metadata/dialogue_manager_version = "3.7.1"

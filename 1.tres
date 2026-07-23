@@ -1,0 +1,570 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_gymmc"]
+
+[resource]
+script = ExtResource("1_gymmc")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Nina", "Player")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 3,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 8,
+&"type": &"dot"
+}, {
+&"function": "set_location",
+&"i": 9,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 22,
+&"type": &"string",
+&"value": "lecture_hall"
+}, {
+&"i": 36,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "2",
+&"type": "mutation"
+},
+"10": {
+&"character": "Player",
+&"id": "10",
+&"next_id": "11",
+&"text": "You mean Mabel?",
+&"type": "dialogue"
+},
+"11": {
+&"character": "Nina",
+&"id": "11",
+&"next_id": "12",
+&"text": "I don't give a damn how you spell it",
+&"type": "dialogue"
+},
+"12": {
+&"character": "Nina",
+&"id": "12",
+&"next_id": "13",
+&"text": "So what are you, some kinda stalker weirdo?",
+&"type": "dialogue"
+},
+"13": {
+&"character": "Player",
+&"id": "13",
+&"next_id": "14",
+&"text": "Was just curious who my girlfriend's been hanging out with",
+&"type": "dialogue"
+},
+"14": {
+&"character": "Nina",
+&"id": "14",
+&"next_id": "15",
+&"text": "Yeah, not with YOU",
+&"type": "dialogue"
+},
+"15": {
+&"character": "Nina",
+&"id": "15",
+&"next_id": "16",
+&"text": "That's all you should know",
+&"type": "dialogue"
+},
+"16": {
+&"character": "Nina",
+&"id": "16",
+&"next_id": "17",
+&"text": "Look, I'll cut to the chase",
+&"type": "dialogue"
+},
+"17": {
+&"character": "Nina",
+&"id": "17",
+&"next_id": "18",
+&"text": "I'm bringing Mabel in to the sorority",
+&"type": "dialogue"
+},
+"18": {
+&"character": "Nina",
+&"id": "18",
+&"next_id": "19",
+&"text": "She's made for it",
+&"type": "dialogue"
+},
+"19": {
+&"character": "Nina",
+&"id": "19",
+&"next_id": "20",
+&"text": "Girl like her were literally made to get fucked and have no place with you",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Nina",
+&"id": "2",
+&"next_id": "3",
+&"text": "Yo is this Maple's Boytoy?",
+&"type": "dialogue"
+},
+"20": {
+&"character": "Nina",
+&"id": "20",
+&"next_id": "21",
+&"text": "Don't take it personally",
+&"type": "dialogue"
+},
+"21": {
+&"character": "Nina",
+&"id": "21",
+&"next_id": "22",
+&"text": "Actually, take it personally. I couldn't give less of a shit! 🖕",
+&"type": "dialogue"
+},
+"22": {
+&"id": "22",
+&"next_id": "23",
+&"responses": PackedStringArray("22", "31"),
+&"text": "Wow, you're pleasant",
+&"type": "response"
+},
+"23": {
+&"character": "Player",
+&"id": "23",
+&"next_id": "24",
+&"text": "Wow, you're pleasant",
+&"type": "dialogue"
+},
+"24": {
+&"character": "Nina",
+&"id": "24",
+&"next_id": "25",
+&"text": "I'm only this pleasant to uglies and weirdos who date out their league",
+&"type": "dialogue"
+},
+"25": {
+&"character": "Nina",
+&"id": "25",
+&"next_id": "26",
+&"text": "Maple needs someone better than you",
+&"type": "dialogue"
+},
+"26": {
+&"character": "Nina",
+&"id": "26",
+&"next_id": "27",
+&"text": "Bitch like you is holding her back from her potential",
+&"type": "dialogue"
+},
+"27": {
+&"character": "Nina",
+&"id": "27",
+&"next_id": "28",
+&"text": "Trust me, I've seen it all before",
+&"type": "dialogue"
+},
+"28": {
+&"character": "Nina",
+&"id": "28",
+&"next_id": "29",
+&"text": "But don't break up with her yet",
+&"type": "dialogue"
+},
+"29": {
+&"character": "Nina",
+&"id": "29",
+&"next_id": "30",
+&"text": "I want to watch you squirm all alone when she's thrusting her hips all psychotically 🤤",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Player",
+&"id": "3",
+&"next_id": "4",
+&"text": "Yeah?",
+&"type": "dialogue"
+},
+"30": {
+&"character": "Nina",
+&"id": "30",
+&"next_id": "61",
+&"text": "THAT'S ALL YOU'LL GET FROM ME HAHAHA",
+&"type": "dialogue"
+},
+"31": {
+&"id": "31",
+&"next_id": "32",
+&"text": "Why are you telling me all this?",
+&"type": "response"
+},
+"32": {
+&"character": "Player",
+&"id": "32",
+&"next_id": "33",
+&"text": "Why are you telling me all this?",
+&"type": "dialogue"
+},
+"33": {
+&"character": "Nina",
+&"id": "33",
+&"next_id": "34",
+&"text": "Well duh",
+&"type": "dialogue"
+},
+"34": {
+&"character": "Nina",
+&"id": "34",
+&"next_id": "35",
+&"text": "It messes with your head, don't it?",
+&"type": "dialogue"
+},
+"35": {
+&"id": "35",
+&"next_id": "36",
+&"responses": PackedStringArray("35", "55"),
+&"text": "Doesn't bother me at all",
+&"type": "response"
+},
+"36": {
+&"character": "Player",
+&"id": "36",
+&"next_id": "37",
+&"text": "Doesn't bother me at all",
+&"type": "dialogue"
+},
+"37": {
+&"character": "Nina",
+&"id": "37",
+&"next_id": "38",
+&"text": "You're lying",
+&"type": "dialogue"
+},
+"38": {
+&"id": "38",
+&"next_id": "39",
+&"responses": PackedStringArray("38", "43"),
+&"text": "Why would I be?",
+&"type": "response"
+},
+"39": {
+&"character": "Player",
+&"id": "39",
+&"next_id": "40",
+&"text": "Why would I be?",
+&"type": "dialogue"
+},
+"4": {
+&"character": "Player",
+&"id": "4",
+&"next_id": "5",
+&"text": "Who's this?",
+&"type": "dialogue"
+},
+"40": {
+&"character": "Nina",
+&"id": "40",
+&"next_id": "41",
+&"text": "Don't play tough guy now",
+&"type": "dialogue"
+},
+"41": {
+&"character": "Nina",
+&"id": "41",
+&"next_id": "42",
+&"text": "I know a bluff when I see it",
+&"type": "dialogue"
+},
+"42": {
+&"character": "Nina",
+&"id": "42",
+&"next_id": "61",
+&"text": "THAT'S ALL YOU'LL GET FROM ME HAHAHA",
+&"type": "dialogue"
+},
+"43": {
+&"id": "43",
+&"next_id": "44",
+&"tags": PackedStringArray("blackheart"),
+&"text": "You texted me first",
+&"type": "response"
+},
+"44": {
+&"id": "44",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"i": 4,
+&"type": &"variable",
+&"value": "Story"
+}, {
+&"i": 9,
+&"type": &"dot"
+}, {
+&"i": 10,
+&"type": &"variable",
+&"value": "black_heart"
+}, {
+&"i": 22,
+&"type": &"assignment",
+&"value": "+="
+}, {
+&"i": 25,
+&"type": &"number",
+&"value": 1
+}]),
+&"is_blocking": true
+},
+&"next_id": "45",
+&"type": "mutation"
+},
+"45": {
+&"character": "Player",
+&"id": "45",
+&"next_id": "46",
+&"text": "You texted me first",
+&"type": "dialogue"
+},
+"46": {
+&"character": "Player",
+&"id": "46",
+&"next_id": "47",
+&"text": "If you were lonely, just say so",
+&"type": "dialogue"
+},
+"47": {
+&"character": "Nina",
+&"id": "47",
+&"next_id": "48",
+&"text": "Why you little shit",
+&"type": "dialogue"
+},
+"48": {
+&"character": "Nina",
+&"id": "48",
+&"next_id": "49",
+&"text": "You really think you're somebody, eh?",
+&"type": "dialogue"
+},
+"49": {
+&"character": "Nina",
+&"id": "49",
+&"next_id": "50",
+&"text": "Won't be the last time you hear from me",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Nina",
+&"id": "5",
+&"next_id": "6",
+&"text": "Don't fuck with me",
+&"type": "dialogue"
+},
+"50": {
+&"character": "Player",
+&"id": "50",
+&"next_id": "51",
+&"text": "Yeah, I'm sure you'll get lonely again",
+&"type": "dialogue"
+},
+"51": {
+&"character": "Player",
+&"id": "51",
+&"next_id": "52",
+&"text": "I'll be waiting",
+&"type": "dialogue"
+},
+"52": {
+&"character": "Nina",
+&"id": "52",
+&"next_id": "53",
+&"text": "FUCK YOU",
+&"type": "dialogue"
+},
+"53": {
+&"character": "Nina",
+&"id": "53",
+&"next_id": "54",
+&"text": "img: nina/8",
+&"type": "dialogue"
+},
+"54": {
+&"id": "54",
+&"mutation": {
+&"expression": Array[Dictionary]([{
+&"function": "social_post",
+&"i": 3,
+&"type": &"function",
+&"value": Array[Array]([Array[Dictionary]([{
+&"i": 15,
+&"type": &"string",
+&"value": "ninas_rage"
+}, {
+&"i": 27,
+&"type": &"parens_close"
+}])])
+}]),
+&"is_blocking": true
+},
+&"next_id": "61",
+&"type": "mutation"
+},
+"55": {
+&"id": "55",
+&"next_id": "56",
+&"text": "Why would I admit that to you?",
+&"type": "response"
+},
+"56": {
+&"character": "Player",
+&"id": "56",
+&"next_id": "57",
+&"text": "Why would I admit that to you?",
+&"type": "dialogue"
+},
+"57": {
+&"character": "Nina",
+&"id": "57",
+&"next_id": "58",
+&"text": "You don't need to admit it",
+&"type": "dialogue"
+},
+"58": {
+&"character": "Nina",
+&"id": "58",
+&"next_id": "59",
+&"text": "But now I know it's true hah",
+&"type": "dialogue"
+},
+"59": {
+&"character": "Nina",
+&"id": "59",
+&"next_id": "60",
+&"text": "Knew you were a loser",
+&"type": "dialogue"
+},
+"6": {
+&"character": "Nina",
+&"id": "6",
+&"next_id": "7",
+&"text": "You know who I am",
+&"type": "dialogue"
+},
+"60": {
+&"character": "Nina",
+&"id": "60",
+&"next_id": "61",
+&"text": "THAT'S ALL YOU'LL GET FROM ME HAHAHA",
+&"type": "dialogue"
+},
+"61": {
+&"id": "61",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"62": {
+&"id": "62",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"7": {
+&"character": "Nina",
+&"id": "7",
+&"next_id": "8",
+&"text": "Think I wouldn't notice you creeping on my Socials huh?",
+&"type": "dialogue"
+},
+"8": {
+&"character": "Nina",
+&"id": "8",
+&"next_id": "9",
+&"text": "Maple's been saying you've been mentioning me",
+&"type": "dialogue"
+},
+"9": {
+&"character": "Player",
+&"id": "9",
+&"next_id": "10",
+&"text": "Maple?",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+do Story.set_location(\"lecture_hall\")
+Nina: Yo is this Maple's Boytoy?
+Player: Yeah?
+Player: Who's this?
+Nina: Don't fuck with me
+Nina: You know who I am
+Nina: Think I wouldn't notice you creeping on my Socials huh?
+Nina: Maple's been saying you've been mentioning me
+Player: Maple?
+Player: You mean Mabel?
+Nina: I don't give a damn how you spell it
+Nina: So what are you, some kinda stalker weirdo?
+Player: Was just curious who my girlfriend's been hanging out with
+Nina: Yeah, not with YOU
+Nina: That's all you should know
+Nina: Look, I'll cut to the chase
+Nina: I'm bringing Mabel in to the sorority
+Nina: She's made for it
+Nina: Girl like her were literally made to get fucked and have no place with you
+Nina: Don't take it personally
+Nina: Actually, take it personally. I couldn't give less of a shit! 🖕
+- Wow, you're pleasant
+	Player: Wow, you're pleasant
+	Nina: I'm only this pleasant to uglies and weirdos who date out their league
+	Nina: Maple needs someone better than you
+	Nina: Bitch like you is holding her back from her potential
+	Nina: Trust me, I've seen it all before
+	Nina: But don't break up with her yet
+	Nina: I want to watch you squirm all alone when she's thrusting her hips all psychotically 🤤
+	Nina: THAT'S ALL YOU'LL GET FROM ME HAHAHA
+- Why are you telling me all this?
+	Player: Why are you telling me all this?
+	Nina: Well duh
+	Nina: It messes with your head, don't it?
+	- Doesn't bother me at all
+		Player: Doesn't bother me at all
+		Nina: You're lying
+		- Why would I be?
+			Player: Why would I be?
+			Nina: Don't play tough guy now
+			Nina: I know a bluff when I see it
+			Nina: THAT'S ALL YOU'LL GET FROM ME HAHAHA
+		- You texted me first [#blackheart]
+			set Story.black_heart += 1
+			Player: You texted me first
+			Player: If you were lonely, just say so
+			Nina: Why you little shit
+			Nina: You really think you're somebody, eh?
+			Nina: Won't be the last time you hear from me
+			Player: Yeah, I'm sure you'll get lonely again
+			Player: I'll be waiting
+			Nina: FUCK YOU
+			Nina: img: nina/8
+			do social_post(\"ninas_rage\")
+	- Why would I admit that to you?
+		Player: Why would I admit that to you?
+		Nina: You don't need to admit it
+		Nina: But now I know it's true hah
+		Nina: Knew you were a loser
+		Nina: THAT'S ALL YOU'LL GET FROM ME HAHAHA
+=> END"
+metadata/dialogue_manager_version = "3.7.1"
